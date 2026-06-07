@@ -9,6 +9,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
     @StateObject private var audio: AudioEngine
@@ -18,6 +19,13 @@ struct ContentView: View {
     /// only the play + tools buttons show. Starts hidden for a clean sheet.
     @State private var showControls = false
     @State private var showSettings = false
+
+    // Reference-photo import ("photograph two measures, transcribe by hand").
+    @StateObject private var reference = ReferenceStore()
+    @State private var showSourceDialog = false
+    @State private var showCamera = false
+    @State private var showLibrary = false
+    @State private var cropItem: PickedImage? = nil
 
     private var panelSpring: Animation { .spring(response: 0.35, dampingFraction: 0.85) }
 
@@ -38,13 +46,48 @@ struct ContentView: View {
             VStack(spacing: 0) {
                 topBar
                 Spacer(minLength: 0)
+                if let pitch = vm.liveReadout {
+                    positionReadout(pitch)
+                        .transition(.move(edge: .bottom).combined(with: .opacity))
+                }
                 bottomArea
             }
+            .animation(.easeOut(duration: 0.15), value: vm.liveReadout)
+
+            // Floating reference photo (drag/opacity/hide), above everything.
+            ReferenceOverlay(store: reference)
+        }
+        .confirmationDialog("악보 사진", isPresented: $showSourceDialog,
+                            titleVisibility: .visible) {
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
+                Button("카메라로 촬영") { showCamera = true }
+            }
+            Button("사진 보관함에서 선택") { showLibrary = true }
+            if reference.image != nil {
+                Button("참고 사진 삭제", role: .destructive) { reference.clear() }
+            }
+            Button("취소", role: .cancel) {}
+        }
+        .sheet(isPresented: $showCamera) {
+            CameraPicker { img in queueForCrop(img) }
+                .ignoresSafeArea()
+        }
+        .sheet(isPresented: $showLibrary) {
+            LibraryPicker { img in queueForCrop(img) }
+        }
+        .fullScreenCover(item: $cropItem) { item in
+            ImageCropView(
+                image: item.image,
+                onCancel: { cropItem = nil },
+                onDone: { cropped in
+                    reference.set(cropped)
+                    cropItem = nil
+                })
         }
         // Paper color is applied as a background so it bleeds edge-to-edge
         // WITHOUT pulling the content out of the safe area.
         .background(
-            Color(red: 0.99, green: 0.98, blue: 0.95).ignoresSafeArea()
+            Color.white.ignoresSafeArea()
         )
         .sheet(isPresented: $showSettings) {
             SettingsSheet(vm: vm, audio: audio)
@@ -59,13 +102,28 @@ struct ContentView: View {
         !vm.score.notes.isEmpty || showControls
     }
 
+    /// Defer the crop screen until the picker sheet has dismissed, so the two
+    /// presentations don't collide.
+    private func queueForCrop(_ img: UIImage) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) {
+            cropItem = PickedImage(image: img)
+        }
+    }
+
+    /// " · ♯2"-style suffix for the header, empty in C major.
+    private var keySuffix: String {
+        let s = KeySignature(count: vm.score.keySignature).shortLabel
+        return s.isEmpty ? "" : " · \(s)"
+    }
+
     private var topBar: some View {
         HStack(alignment: .top, spacing: 10) {
             if showControls {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(vm.score.title)
                         .font(.headline).lineLimit(1)
-                    Text("\(Int(vm.score.tempo)) BPM · \(vm.score.beatsPerMeasure)/\(vm.score.beatUnit)")
+                    Text("\(Int(vm.score.tempo)) BPM · \(vm.score.beatsPerMeasure)/\(vm.score.beatUnit)"
+                         + keySuffix)
                         .font(.caption).foregroundColor(.secondary)
                 }
                 .padding(.top, 6)
@@ -73,6 +131,12 @@ struct ContentView: View {
             }
 
             Spacer(minLength: 0)
+
+            // Always available, even on a blank sheet: bring in a reference photo.
+            circleButton(systemImage: "camera.viewfinder", tint: .primary) {
+                showSourceDialog = true
+            }
+            .transition(.scale.combined(with: .opacity))
 
             if controlsVisible {
                 if showControls {
@@ -127,6 +191,29 @@ struct ContentView: View {
                 .background(.ultraThinMaterial, in: Circle())
                 .overlay(Circle().stroke(.black.opacity(0.05), lineWidth: 1))
         }
+    }
+
+    // MARK: - Live position read-out (shown while placing / moving a note)
+
+    /// A big, finger-proof label of where the note currently sits, so the user
+    /// always knows the pitch even while their hand covers the staff.
+    private func positionReadout(_ pitch: Pitch) -> some View {
+        HStack(spacing: 14) {
+            Text(pitch.solfege)
+                .font(.system(size: 40, weight: .heavy, design: .rounded))
+            Text("\(pitch.name)\(pitch.octave)")
+                .font(.system(size: 30, weight: .semibold, design: .rounded))
+                .monospacedDigit()
+                .foregroundColor(.secondary)
+        }
+        .foregroundColor(.accentColor)
+        .padding(.horizontal, 28)
+        .padding(.vertical, 12)
+        .background(.regularMaterial, in: Capsule())
+        .overlay(Capsule().stroke(Color.accentColor.opacity(0.35), lineWidth: 1.5))
+        .shadow(color: .black.opacity(0.18), radius: 10, y: 4)
+        .padding(.bottom, 16)
+        .allowsHitTesting(false)
     }
 
     // MARK: - Bottom area (note-tool panel ⇄ slim grabber)
@@ -187,7 +274,7 @@ struct ContentView: View {
                     .font(.title3.bold().monospaced())
                 Text(n.pitch.solfege)
                     .font(.headline).foregroundColor(.accentColor)
-                Text(n.duration.displayName)
+                Text(n.durationLabel)
                     .font(.subheadline).foregroundColor(.secondary)
             } else if vm.chordMode {
                 Label("화음 모드: 선택한 음 위에 쌓입니다", systemImage: "square.stack.3d.up.fill")

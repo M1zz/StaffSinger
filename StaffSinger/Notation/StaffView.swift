@@ -26,6 +26,12 @@ struct StaffView: View {
     @State private var haptics = UISelectionFeedbackGenerator()
     @State private var commitHaptic = UIImpactFeedbackGenerator(style: .light)
     @State private var deleteHaptic = UIImpactFeedbackGenerator(style: .heavy)
+    @State private var editHaptic = UIImpactFeedbackGenerator(style: .medium)
+
+    /// The note whose long-press editor (change length / delete) is open, and
+    /// the on-screen point its glyph sits at (so the popover can anchor to it).
+    @State private var editingNoteID: UUID? = nil
+    @State private var editingAnchor: CGPoint = .zero
 
     private let staffSpace = "staff"
 
@@ -41,7 +47,9 @@ struct StaffView: View {
 
     private func metrics(width: CGFloat) -> Metrics {
         let sideMargin: CGFloat = 30
-        let clefSpace: CGFloat = 58
+        // Widen the clef gutter to make room for the key-signature accidentals.
+        let keyCount = min(7, abs(vm.score.keySignature))
+        let clefSpace: CGFloat = 56 + CGFloat(keyCount) * 12
         let measureBeats = max(1, CGFloat(vm.score.quarterBeatsPerMeasure))
         let leftEdge = sideMargin
         let rightEdge = width - sideMargin
@@ -59,19 +67,24 @@ struct StaffView: View {
                                (geo.size.height - 4 * lineSpacing) / 2)
             let layout = StaffLayout(lineSpacing: lineSpacing, topLineY: topLineY)
             let m = metrics(width: geo.size.width)
+            let beams = beamData(layout: layout, m: m)
 
             ZStack(alignment: .topLeading) {
                 staffLines(layout: layout, m: m)
                 barlines(layout: layout, m: m)
                 clef(layout: layout, m: m)
+                keySignatureView(layout: layout, m: m)
                 tapCatcher(layout: layout)        // empty-staff taps (add) — below notes
-                noteLayer(layout: layout, m: m)   // existing notes (move/delete) — on top
+                beamLayer(beams.groups, layout: layout)             // stems + beams
+                noteLayer(layout: layout, m: m,
+                          beamedIDs: beams.beamedIDs)               // notes on top
                 ghostLayer(layout: layout, m: m)
+                editorOverlay(geo: geo)           // long-press editor — top-most
             }
             .frame(width: geo.size.width, height: geo.size.height)
             .coordinateSpace(name: staffSpace)
         }
-        .background(Color(red: 0.99, green: 0.98, blue: 0.95))
+        .background(Color.white)
     }
 
     // MARK: - Staff lines
@@ -131,6 +144,27 @@ struct StaffView: View {
         }
     }
 
+    // MARK: - Key signature (accidentals after the clef)
+
+    @ViewBuilder
+    private func keySignatureView(layout: StaffLayout, m: Metrics) -> some View {
+        let count = vm.score.keySignature
+        if count != 0 {
+            let n = min(7, abs(count))
+            let useFlats = count < 0
+            let refs = useFlats ? KeySignature.flatRefMidi : KeySignature.sharpRefMidi
+            let glyph = useFlats ? "\u{266D}" : "\u{266F}"   // ♭ / ♯
+            ForEach(0..<n, id: \.self) { i in
+                let yy = layout.y(for: Pitch(midi: refs[i]))
+                Text(glyph)
+                    .font(.system(size: 22, weight: .semibold))
+                    .foregroundColor(.black)
+                    .position(x: m.leftEdge + 40 + CGFloat(i) * 12,
+                              y: useFlats ? yy - 3 : yy)
+            }
+        }
+    }
+
     // MARK: - Notes (only those within the two visible measures)
 
     /// The start beat of the group currently sounding, for the play highlight.
@@ -140,7 +174,8 @@ struct StaffView: View {
         return idx < groups.count ? groups[idx].beat : nil
     }
 
-    private func noteLayer(layout: StaffLayout, m: Metrics) -> some View {
+    private func noteLayer(layout: StaffLayout, m: Metrics,
+                           beamedIDs: Set<UUID>) -> some View {
         // Flat iteration keyed by note id keeps each note's drag stable even
         // as beats/chords shift around it.
         ForEach(vm.score.notes) { note in
@@ -152,12 +187,14 @@ struct StaffView: View {
                 ZStack {
                     NoteGlyph(
                         note: note, x: x, layout: layout, radius: noteRadius,
-                        isSelected: vm.selectedNoteID == note.id, isActive: isActive
+                        isSelected: vm.selectedNoteID == note.id, isActive: isActive,
+                        beamed: beamedIDs.contains(note.id),
+                        keySignature: vm.score.keySignature
                     )
                     .allowsHitTesting(false)
 
-                    // Compact hit target: tap = select, long-press = delete,
-                    // drag = move (pitch by Y, beat by X).
+                    // Compact hit target: tap = select, long-press = open the
+                    // length/delete editor, drag = move (pitch by Y, beat by X).
                     Color.clear
                         .frame(width: 46, height: 46)
                         .contentShape(Rectangle())
@@ -166,8 +203,12 @@ struct StaffView: View {
                             if !note.isRest { audio.audition(note.pitch) }
                         }
                         .onLongPressGesture(minimumDuration: 0.4) {
-                            deleteHaptic.impactOccurred()
-                            vm.deleteNote(note.id)
+                            editHaptic.impactOccurred()
+                            vm.selectedNoteID = note.id
+                            editingAnchor = CGPoint(x: x, y: y)
+                            withAnimation(.spring(response: 0.3, dampingFraction: 0.75)) {
+                                editingNoteID = note.id
+                            }
                         }
                         .gesture(noteDrag(note: note, layout: layout, m: m))
                         .position(x: x, y: y)
@@ -182,16 +223,19 @@ struct StaffView: View {
         DragGesture(minimumDistance: 8, coordinateSpace: .named(staffSpace))
             .onChanged { value in
                 vm.selectedNoteID = note.id
-                let newPitch = layout.pitch(forY: value.location.y)
+                let newPitch = vm.keyed(layout.pitch(forY: value.location.y))
 
                 let snap = 0.5
                 let raw = Double((value.location.x - m.musicStartX) / m.beatWidth)
                 let beat = min(max(0, (raw / snap).rounded() * snap),
                                Double(m.beatLimit) - 0.25)
 
-                if !note.isRest, movingPitch != newPitch {
+                if movingPitch != newPitch {
                     movingPitch = newPitch
-                    audio.previewNote(newPitch)
+                    vm.liveReadout = newPitch        // big bottom read-out
+                    if !note.isRest {
+                        audio.previewNote(newPitch)
+                    }
                     haptics.selectionChanged()
                     haptics.prepare()
                 }
@@ -200,6 +244,7 @@ struct StaffView: View {
             .onEnded { _ in
                 audio.endPreview()
                 movingPitch = nil
+                vm.liveReadout = nil
                 commitHaptic.impactOccurred()
             }
     }
@@ -215,19 +260,21 @@ struct StaffView: View {
             .gesture(
                 DragGesture(minimumDistance: 0)
                     .onChanged { value in
-                        let pitch = layout.pitch(forY: value.location.y)
+                        let pitch = vm.keyed(layout.pitch(forY: value.location.y))
                         if previewPitch != pitch {
                             if previewPitch == nil { haptics.prepare() }
                             previewPitch = pitch
+                            vm.liveReadout = pitch           // big bottom read-out
                             audio.previewNote(pitch)        // sound on change
                             haptics.selectionChanged()      // haptic on change
                             haptics.prepare()
                         }
                     }
                     .onEnded { value in
-                        let committed = previewPitch ?? layout.pitch(forY: value.location.y)
+                        let committed = previewPitch ?? vm.keyed(layout.pitch(forY: value.location.y))
                         audio.endPreview()
                         previewPitch = nil
+                        vm.liveReadout = nil
                         vm.addNote(pitch: committed)         // commit on release
                         commitHaptic.impactOccurred()
                     }
@@ -249,6 +296,259 @@ struct StaffView: View {
             GhostPreview(pitch: pitch, pitchY: layout.y(for: pitch),
                          landingX: lx, leftEdge: m.leftEdge, rightEdge: m.rightEdge,
                          layout: layout, radius: noteRadius)
+        }
+    }
+
+    // MARK: - Long-press editor (change length / delete)
+
+    /// A floating card that pops up over a long-pressed note, letting the user
+    /// swap its duration or delete it. Tapping anywhere else dismisses it.
+    @ViewBuilder
+    private func editorOverlay(geo: GeometryProxy) -> some View {
+        if let id = editingNoteID,
+           let note = vm.score.notes.first(where: { $0.id == id }) {
+            // Dim + dismiss catcher behind the card.
+            Color.black.opacity(0.06)
+                .ignoresSafeArea()
+                .contentShape(Rectangle())
+                .onTapGesture { dismissEditor() }
+
+            NoteEditorPopover(
+                note: note,
+                onPick: { dur in
+                    editHaptic.impactOccurred()
+                    vm.changeDuration(of: id, to: dur)
+                },
+                onAccidental: { semitones in
+                    editHaptic.impactOccurred()
+                    vm.changePitch(of: id, semitones: semitones)
+                },
+                onToggleDot: {
+                    editHaptic.impactOccurred()
+                    vm.toggleDot(of: id)
+                },
+                onDelete: {
+                    deleteHaptic.impactOccurred()
+                    dismissEditor()
+                    vm.deleteNote(id)
+                }
+            )
+            .position(editorPosition(in: geo.size))
+            .transition(.scale(scale: 0.85).combined(with: .opacity))
+        }
+    }
+
+    /// Anchor the card just above the note, flipping below it when there's no
+    /// room, and keeping it clear of the screen edges.
+    private func editorPosition(in size: CGSize) -> CGPoint {
+        let halfWidth: CGFloat = 248
+        let halfHeight: CGFloat = 36
+        let gap: CGFloat = 64
+        let x = min(max(halfWidth + 8, editingAnchor.x), size.width - halfWidth - 8)
+        var y = editingAnchor.y - gap
+        if y - halfHeight < 8 { y = editingAnchor.y + gap }   // not enough room above
+        return CGPoint(x: x, y: y)
+    }
+
+    private func dismissEditor() {
+        withAnimation(.easeOut(duration: 0.18)) { editingNoteID = nil }
+    }
+
+    // MARK: - Beaming (auto-connect eighth / sixteenth notes within a beat)
+
+    /// One stemmed column of the music — a single note or a whole chord that
+    /// shares a start beat. Beams join consecutive columns.
+    private struct BeamColumn {
+        let x: CGFloat
+        let topY: CGFloat       // highest notehead (smallest y)
+        let bottomY: CGFloat    // lowest notehead (largest y)
+        let avgMidi: Double
+        let isSixteenth: Bool
+        let ids: [UUID]
+    }
+
+    private struct BeamGroup {
+        let columns: [BeamColumn]
+        let stemUp: Bool
+    }
+
+    /// Group consecutive eighth/sixteenth columns that fall in the same beat,
+    /// so they can be drawn with a shared beam instead of separate flags.
+    /// Returns the groups (≥2 columns each) plus the set of note ids that are
+    /// beamed, so `NoteGlyph` can skip their individual stems/flags.
+    private func beamData(layout: StaffLayout, m: Metrics) -> (groups: [BeamGroup], beamedIDs: Set<UUID>) {
+        let columns = vm.score.chordGroups.filter { $0.beat < Double(m.beatLimit) }
+
+        var runs: [[BeamColumn]] = []
+        var current: [BeamColumn] = []
+        var currentUnit: Int? = nil
+
+        func flush() {
+            if current.count >= 2 { runs.append(current) }
+            current = []
+            currentUnit = nil
+        }
+
+        for g in columns {
+            let voiced = g.notes.filter { !$0.isRest }
+            let beamable = voiced.contains { $0.duration == .eighth || $0.duration == .sixteenth }
+            guard beamable else { flush(); continue }
+
+            let unit = Int((g.beat + 0.0001).rounded(.down))   // one beam per quarter beat
+            if let cu = currentUnit, cu != unit { flush() }
+
+            let ys = voiced.map { layout.y(for: $0.pitch) }
+            let col = BeamColumn(
+                x: m.musicStartX + CGFloat(g.beat) * m.beatWidth + 16,
+                topY: ys.min() ?? 0,
+                bottomY: ys.max() ?? 0,
+                avgMidi: Double(voiced.map { $0.pitch.midi }.reduce(0, +)) / Double(voiced.count),
+                isSixteenth: voiced.contains { $0.duration == .sixteenth },
+                ids: voiced.map { $0.id })
+            current.append(col)
+            currentUnit = unit
+        }
+        flush()
+
+        var beamedIDs = Set<UUID>()
+        let groups = runs.map { run -> BeamGroup in
+            run.forEach { beamedIDs.formUnion($0.ids) }
+            let avg = run.map { $0.avgMidi }.reduce(0, +) / Double(run.count)
+            return BeamGroup(columns: run, stemUp: avg < 71)  // below B4 → stems up
+        }
+        return (groups, beamedIDs)
+    }
+
+    private func beamLayer(_ groups: [BeamGroup], layout: StaffLayout) -> some View {
+        Canvas { ctx, _ in
+            let reach: CGFloat = 36
+            let thick: CGFloat = 4
+
+            func rect(_ a: CGFloat, _ b: CGFloat, _ y: CGFloat) -> Path {
+                Path(CGRect(x: min(a, b), y: y - thick / 2,
+                            width: abs(b - a), height: thick))
+            }
+
+            for grp in groups {
+                let up = grp.stemUp
+                let cols = grp.columns
+                func stemX(_ c: BeamColumn) -> CGFloat { up ? c.x + noteRadius - 1 : c.x - noteRadius + 1 }
+
+                // A single horizontal beam line, beyond the outermost notehead.
+                let beamY = up
+                    ? (cols.map { $0.topY }.min() ?? 0) - reach
+                    : (cols.map { $0.bottomY }.max() ?? 0) + reach
+
+                // Stems from each column's far notehead up/down to the beam.
+                for c in cols {
+                    let attachY = up ? c.bottomY : c.topY
+                    var p = Path()
+                    p.move(to: CGPoint(x: stemX(c), y: attachY))
+                    p.addLine(to: CGPoint(x: stemX(c), y: beamY))
+                    ctx.stroke(p, with: .color(.black), lineWidth: 1.6)
+                }
+
+                // Primary beam spans the whole group.
+                ctx.fill(rect(stemX(cols.first!), stemX(cols.last!), beamY),
+                         with: .color(.black))
+
+                // Secondary beam for sixteenths: full segments for runs of ≥2,
+                // a short stub for an isolated sixteenth (e.g. dotted-eighth + 16th).
+                let secY = beamY + (up ? thick + 2 : -(thick + 2))
+                var i = 0
+                while i < cols.count {
+                    guard cols[i].isSixteenth else { i += 1; continue }
+                    var j = i
+                    while j + 1 < cols.count && cols[j + 1].isSixteenth { j += 1 }
+                    if j > i {
+                        ctx.fill(rect(stemX(cols[i]), stemX(cols[j]), secY), with: .color(.black))
+                    } else {
+                        let cx = stemX(cols[i])
+                        let dir: CGFloat = i > 0 ? -1 : 1   // point toward a neighbor in the group
+                        ctx.fill(rect(cx, cx + dir * 11, secY), with: .color(.black))
+                    }
+                    i = j + 1
+                }
+            }
+        }
+        .allowsHitTesting(false)
+    }
+}
+
+// MARK: - Note editor popover
+
+private struct NoteEditorPopover: View {
+    let note: ScoreNote
+    let onPick: (NoteDuration) -> Void
+    let onAccidental: (Int) -> Void   // semitone nudge: -1 = flat, +1 = sharp
+    let onToggleDot: () -> Void
+    let onDelete: () -> Void
+
+    var body: some View {
+        HStack(spacing: 6) {
+            // Accidentals — only meaningful for real notes, not rests.
+            if !note.isRest {
+                accidentalButton("\u{266D}", semitones: -1)   // ♭
+                Text(note.pitch.name)
+                    .font(.system(size: 15, weight: .bold, design: .rounded))
+                    .monospacedDigit()
+                    .frame(minWidth: 34)
+                accidentalButton("\u{266F}", semitones: +1)   // ♯
+
+                Divider().frame(height: 30)
+            }
+
+            ForEach(NoteDuration.allCases) { dur in
+                Button { onPick(dur) } label: {
+                    NoteDurationGlyph(duration: dur)
+                        .frame(width: 40, height: 46)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(note.duration == dur
+                                      ? Color.accentColor.opacity(0.22) : Color.clear))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(note.duration == dur ? Color.accentColor : .clear,
+                                        lineWidth: 2))
+                        .foregroundColor(.primary)
+                }
+            }
+
+            // Dot toggle (1.5× length, e.g. dotted quarter = 1.5 beats).
+            Button(action: onToggleDot) {
+                Text("\u{2022}")
+                    .font(.system(size: 34, weight: .black))
+                    .frame(width: 36, height: 46)
+                    .foregroundColor(note.dotted ? .white : .accentColor)
+                    .background(RoundedRectangle(cornerRadius: 10)
+                        .fill(note.dotted ? Color.accentColor : Color.accentColor.opacity(0.12)))
+            }
+
+            Divider().frame(height: 30)
+
+            Button(role: .destructive, action: onDelete) {
+                Image(systemName: "trash.fill")
+                    .font(.system(size: 18))
+                    .frame(width: 42, height: 46)
+                    .foregroundColor(.red)
+                    .background(RoundedRectangle(cornerRadius: 10).fill(Color.red.opacity(0.12)))
+            }
+        }
+        .padding(.horizontal, 10)
+        .padding(.vertical, 6)
+        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 16))
+        .overlay(RoundedRectangle(cornerRadius: 16).stroke(.black.opacity(0.08), lineWidth: 1))
+        .shadow(color: .black.opacity(0.22), radius: 12, y: 5)
+    }
+
+    private func accidentalButton(_ symbol: String, semitones: Int) -> some View {
+        Button { onAccidental(semitones) } label: {
+            Text(symbol)
+                .font(.system(size: 24, weight: .semibold))
+                .frame(width: 38, height: 46)
+                .foregroundColor(.accentColor)
+                .background(RoundedRectangle(cornerRadius: 10)
+                    .fill(Color.accentColor.opacity(0.12)))
         }
     }
 }
@@ -294,7 +594,7 @@ private struct GhostPreview: View {
                 .position(x: landingX, y: pitchY)
 
             // Large pitch read-out, anchored at the landing spot (not the finger).
-            Text("\(pitch.nameSharp)\(pitch.octave) · \(pitch.solfege)")
+            Text("\(pitch.name)\(pitch.octave) · \(pitch.solfege)")
                 .font(.subheadline.weight(.bold))
                 .monospacedDigit()
                 .padding(.horizontal, 9).padding(.vertical, 4)
@@ -316,6 +616,25 @@ private struct NoteGlyph: View {
     let radius: CGFloat
     let isSelected: Bool
     let isActive: Bool
+    /// True when a beam (drawn separately) already provides this note's stem,
+    /// so the glyph must not draw its own stem or flag.
+    var beamed: Bool = false
+    /// The score's key signature, so accidentals already implied by the key
+    /// are left off and only deviations (incl. naturals) are drawn.
+    var keySignature: Int = 0
+
+    /// The accidental glyph to draw, reconciled against the key signature:
+    /// nil when the note matches the key, else ♯ / ♭ / ♮ as appropriate.
+    private var accidentalGlyph: String? {
+        let keyAlt = KeySignature(count: keySignature).alteration(forLetter: note.pitch.letterIndex)
+        let noteAlt = note.pitch.alteration
+        guard noteAlt != keyAlt else { return nil }
+        switch noteAlt {
+        case 1:  return "\u{266F}"   // ♯
+        case -1: return "\u{266D}"   // ♭
+        default: return "\u{266E}"   // ♮ (cancels a key sharp/flat)
+        }
+    }
 
     var body: some View {
         let y = layout.y(for: note.pitch)
@@ -340,17 +659,20 @@ private struct NoteGlyph: View {
                     }
                 }
 
-                // Accidental.
-                if note.pitch.isAccidental {
-                    Text("\u{266F}") // sharp
-                        .font(.system(size: 20, weight: .semibold))
+                // Accidental, reconciled against the key signature (♯ / ♭ / ♮).
+                if let acc = accidentalGlyph {
+                    Text(acc)
+                        .font(.system(size: 22, weight: .semibold))
                         .foregroundColor(color)
-                        .position(x: x - radius - 12, y: y)
+                        // Flats render with their body low, so lift them a touch
+                        // to center on the notehead the way the sharp already does.
+                        .position(x: x - radius - 12,
+                                  y: acc == "\u{266D}" ? y - 3 : y)
                 }
 
-                // Stem.
+                // Stem (skipped when a beam supplies it).
                 let filled = note.duration != .whole
-                if filled {
+                if filled && !beamed {
                     Path { p in
                         let up = note.pitch.midi < 71 // below B4 -> stem up
                         if up {
@@ -374,9 +696,24 @@ private struct NoteGlyph: View {
 
                 // Flags for eighth / sixteenth (drawn as short strokes off
                 // the stem tip — Unicode flag glyphs render inconsistently).
-                if note.duration == .eighth || note.duration == .sixteenth {
+                // Beamed notes get a beam instead of a flag.
+                if !beamed, note.duration == .eighth || note.duration == .sixteenth {
                     flagView(y: y)
                 }
+            }
+
+            // Augmentation dot (1.5× length), to the right of the glyph. On a
+            // line, it nudges up into the space above the way engravers do.
+            if note.dotted {
+                let steps = StaffLayout.diatonicSteps(from: note.pitch.midi,
+                                                      prefersFlat: note.pitch.prefersFlat)
+                let dotY = note.isRest
+                    ? midY - 4
+                    : (steps % 2 == 0 ? y - layout.lineSpacing / 2 : y)
+                Circle()
+                    .fill(color)
+                    .frame(width: 4.4, height: 4.4)
+                    .position(x: x + radius + 8, y: dotY)
             }
 
             // Selection ring / active highlight.

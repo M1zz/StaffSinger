@@ -17,10 +17,17 @@ final class ScoreViewModel: ObservableObject {
 
     // Current editing tools.
     @Published var selectedDuration: NoteDuration = .quarter
+    /// Whether newly placed notes get a dot (1.5× length).
+    @Published var selectedDotted = false
     @Published var selectedNoteID: UUID? = nil
     /// When true, a new tap stacks onto the currently selected note's beat
     /// (i.e. builds a chord) instead of appending after it.
     @Published var chordMode = false
+
+    /// The pitch currently under the finger while placing or moving a note.
+    /// Drives the large position read-out at the bottom of the screen; nil
+    /// when no drag is in progress.
+    @Published var liveReadout: Pitch? = nil
 
     private let audio: AudioEngine
 
@@ -52,7 +59,8 @@ final class ScoreViewModel: ObservableObject {
         } else {
             beat = appendBeat
         }
-        let note = ScoreNote(pitch: pitch, duration: selectedDuration, beatOffset: beat)
+        let note = ScoreNote(pitch: pitch, duration: selectedDuration,
+                             beatOffset: beat, dotted: selectedDotted)
         score.notes.append(note)
         selectedNoteID = note.id
 
@@ -68,7 +76,7 @@ final class ScoreViewModel: ObservableObject {
     func addRest() {
         let note = ScoreNote(
             pitch: .middleC, duration: selectedDuration,
-            beatOffset: appendBeat, isRest: true)
+            beatOffset: appendBeat, isRest: true, dotted: selectedDotted)
         score.notes.append(note)
         selectedNoteID = note.id
     }
@@ -77,7 +85,16 @@ final class ScoreViewModel: ObservableObject {
 
     func changePitch(of id: UUID, semitones: Int) {
         guard let i = score.notes.firstIndex(where: { $0.id == id }) else { return }
-        let newPitch = Pitch(midi: score.notes[i].pitch.midi + semitones)
+        let old = score.notes[i].pitch
+        var newPitch = Pitch(midi: old.midi + semitones)
+        // Spell black keys by the direction of the nudge: a half-step up reads
+        // as a sharp, a half-step down as a flat. Octave jumps keep the note's
+        // existing spelling so they don't silently flip ♯⇄♭.
+        if newPitch.isAccidental {
+            newPitch.prefersFlat = (abs(semitones) % 12 == 0)
+                ? old.prefersFlat
+                : semitones < 0
+        }
         score.notes[i].pitch = newPitch
         if !score.notes[i].isRest { audio.audition(newPitch) }
     }
@@ -85,6 +102,18 @@ final class ScoreViewModel: ObservableObject {
     func changeDuration(of id: UUID, to duration: NoteDuration) {
         guard let i = score.notes.firstIndex(where: { $0.id == id }) else { return }
         score.notes[i].duration = duration
+    }
+
+    /// Toggle the dot (1.5× length) on a specific note.
+    func toggleDot(of id: UUID) {
+        guard let i = score.notes.firstIndex(where: { $0.id == id }) else { return }
+        score.notes[i].dotted.toggle()
+    }
+
+    /// Set the dot on a specific note (used by the toolbar's shared toggle).
+    func setDotted(of id: UUID, _ value: Bool) {
+        guard let i = score.notes.firstIndex(where: { $0.id == id }) else { return }
+        score.notes[i].dotted = value
     }
 
     /// Move an existing note to a new pitch and/or start beat (drag editing).
@@ -119,6 +148,19 @@ final class ScoreViewModel: ObservableObject {
         score.beatUnit = unit
     }
 
+    func setKeySignature(_ count: Int) {
+        score.keySignature = max(-7, min(7, count))
+    }
+
+    /// Apply the current key signature to a natural (white-key) pitch tapped on
+    /// the staff, so placing on the "B" line in a flat key yields B♭, the "F"
+    /// line in a sharp key yields F♯, and so on.
+    func keyed(_ p: Pitch) -> Pitch {
+        let alt = KeySignature(count: score.keySignature).alteration(forLetter: p.letterIndex)
+        guard alt != 0 else { return p }
+        return Pitch(midi: p.midi + alt, prefersFlat: alt < 0)
+    }
+
     // MARK: - Auto-complete with rests
 
     /// Fill any silent gaps between notes — and pad the last measure up to a
@@ -136,7 +178,7 @@ final class ScoreViewModel: ObservableObject {
             if g.beat - cursor > 0.0001 {
                 additions += rests(from: cursor, length: g.beat - cursor)
             }
-            let dur = g.notes.map { $0.duration.beats }.max() ?? 1.0
+            let dur = g.notes.map { $0.beats }.max() ?? 1.0
             cursor = max(cursor, g.beat + dur)
         }
 

@@ -66,24 +66,38 @@ final class AudioEngine: ObservableObject {
         }
     }
 
-    /// Load instrument sounds. We try a bundled SoundFont first; if none is
-    /// present we fall back to the built-in sine/General-MIDI program so the
-    /// app still makes sound out of the box.
+    /// Load instrument sounds. The melody voice uses a bundled acoustic piano
+    /// SoundFont (Upright Piano KW, FreePats, CC0 public domain — see
+    /// Audio/UprightPianoKW-LICENSE.txt). We fall back to the older FluidR3
+    /// bank if present, and finally to the sampler's built-in tone so the app
+    /// always makes sound out of the box.
     private func loadSounds() {
         // Melody / chord voice — a clean piano is easiest to read pitches from.
-        if let sf = Bundle.main.url(forResource: "FluidR3", withExtension: "sf2") {
-            try? melodySampler.loadSoundBankInstrument(
-                at: sf, program: 0,
-                bankMSB: UInt8(kAUSampler_DefaultMelodicBankMSB),
-                bankLSB: UInt8(kAUSampler_DefaultBankLSB))
-            // Woodblock-ish click for the metronome (GM program 115).
+        // The bundled bank holds a single piano preset at bank 0 / program 0.
+        let pianoBanks = ["UprightPianoKW", "FluidR3"]
+        for name in pianoBanks {
+            guard let sf = Bundle.main.url(forResource: name, withExtension: "sf2")
+            else { continue }
+            do {
+                try melodySampler.loadSoundBankInstrument(
+                    at: sf, program: 0,
+                    bankMSB: UInt8(kAUSampler_DefaultMelodicBankMSB),
+                    bankLSB: UInt8(kAUSampler_DefaultBankLSB))
+                break
+            } catch {
+                print("SoundFont load failed for \(name): \(error)")
+            }
+        }
+
+        // Metronome click: prefer a woodblock from a full GM bank if one is
+        // bundled; the piano-only bank has no such program, so the click then
+        // falls back to the sampler's built-in tone — still a clean blip.
+        if let gm = Bundle.main.url(forResource: "FluidR3", withExtension: "sf2") {
             try? clickSampler.loadSoundBankInstrument(
-                at: sf, program: 115,
+                at: gm, program: 115,
                 bankMSB: UInt8(kAUSampler_DefaultMelodicBankMSB),
                 bankLSB: UInt8(kAUSampler_DefaultBankLSB))
         }
-        // If no SoundFont, the sampler still produces a default tone, which
-        // is acceptable for previewing pitch + rhythm.
     }
 
     // MARK: - Single-note audition (used while editing)
@@ -198,7 +212,7 @@ final class AudioEngine: ObservableObject {
                 }
 
                 // Hold for the longest note in the group, then release.
-                let holdBeats = group.notes.map { $0.duration.beats }.max() ?? 1.0
+                let holdBeats = group.notes.map { $0.beats }.max() ?? 1.0
                 try? await Task.sleep(
                     nanoseconds: UInt64(holdBeats * secondsPerBeat * 1_000_000_000))
                 elapsedBeats += holdBeats

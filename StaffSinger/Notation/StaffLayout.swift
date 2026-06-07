@@ -31,23 +31,30 @@ struct StaffLayout {
 
     /// The diatonic "staff position" of a pitch — number of diatonic steps
     /// from F5, counting only the 7 letter names (accidentals share a slot).
-    static func diatonicSteps(from midi: Int) -> Int {
+    ///
+    /// Black keys sit on the line/space of whichever letter their accidental
+    /// implies: a sharp folds to the letter below (C♯ on C), a flat to the
+    /// letter above (D♭ on D).
+    static func diatonicSteps(from midi: Int, prefersFlat: Bool = false) -> Int {
         // Map a midi note to a diatonic index (C=0,D=1,E=2,F=3,G=4,A=5,B=6).
+        let sharpFold = [0,0,1,1,2,3,3,4,4,5,5,6] // black keys fold to letter below
+        let flatFold  = [0,1,1,2,2,3,4,4,5,5,6,6] // black keys fold to letter above
+        let pcToDiatonic = prefersFlat ? flatFold : sharpFold
         let pc = ((midi % 12) + 12) % 12
-        let pcToDiatonic = [0,0,1,1,2,3,3,4,4,5,5,6] // sharps fold to letter below
         let octave = midi / 12 - 1
         let diatonicIndex = pcToDiatonic[pc] + octave * 7
 
         let topPc = ((topLineMidi % 12) + 12) % 12
         let topOctave = topLineMidi / 12 - 1
-        let topDiatonic = pcToDiatonic[topPc] + topOctave * 7
+        let topDiatonic = sharpFold[topPc] + topOctave * 7 // F5 is a white key
 
         return topDiatonic - diatonicIndex // positive = below the top line
     }
 
     /// Y position (center of the notehead) for a pitch.
     func y(for pitch: Pitch) -> CGFloat {
-        let steps = CGFloat(Self.diatonicSteps(from: pitch.midi))
+        let steps = CGFloat(Self.diatonicSteps(from: pitch.midi,
+                                               prefersFlat: pitch.prefersFlat))
         return topLineY + steps * (lineSpacing / 2)
     }
 

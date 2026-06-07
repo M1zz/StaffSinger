@@ -96,6 +96,18 @@ struct SettingsSheet: View {
                     .pickerStyle(.segmented)
                 }
 
+                Section("조표 (Key)") {
+                    Picker("조표", selection: Binding(
+                        get: { vm.score.keySignature },
+                        set: { vm.setKeySignature($0) })) {
+                        // Flats (♭7…♭1), C major, then sharps (♯1…♯7).
+                        ForEach(Array((-7...7).reversed()), id: \.self) { c in
+                            Text(KeySignature(count: c).label).tag(c)
+                        }
+                    }
+                    .pickerStyle(.menu)
+                }
+
                 Section("재생 도우미") {
                     Toggle("메트로놈 (박자 클릭)", isOn: $audio.metronomeEnabled)
                     Toggle("카운트인 (시작 전 한 마디)", isOn: $audio.countInEnabled)

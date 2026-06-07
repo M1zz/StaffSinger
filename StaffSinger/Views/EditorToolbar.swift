@@ -15,31 +15,12 @@ struct EditorToolbar: View {
 
     var body: some View {
         VStack(spacing: 10) {
-            // Row 1: duration values
+            // Row 1: duration values + dot toggle
             HStack(spacing: 8) {
                 ForEach(NoteDuration.allCases) { dur in
-                    Button {
-                        vm.selectedDuration = dur
-                        if let id = vm.selectedNoteID {
-                            vm.changeDuration(of: id, to: dur)
-                        }
-                    } label: {
-                        // Unicode Musical Symbols (U+1D1xx) aren't in the system
-                        // font, so we draw the note glyphs ourselves to guarantee
-                        // they render on every device.
-                        NoteDurationGlyph(duration: dur)
-                            .frame(width: 44, height: 44)
-                            .background(
-                                vm.selectedDuration == dur
-                                ? Color.accentColor.opacity(0.2) : Color(.systemGray6))
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 10)
-                                    .stroke(vm.selectedDuration == dur
-                                            ? Color.accentColor : .clear, lineWidth: 2))
-                            .cornerRadius(10)
-                            .foregroundColor(.primary)
-                    }
+                    durationButton(dur)
                 }
+                dotButton
             }
 
             // Row 2: actions — centered as a group.
@@ -94,6 +75,49 @@ struct EditorToolbar: View {
         .padding(.top, 10)
         .padding(.bottom, 8)
         // Background is provided by the enclosing editor panel.
+    }
+
+    /// One duration value button. Selecting it sets the default for new notes
+    /// and retunes the current selection to match.
+    private func durationButton(_ dur: NoteDuration) -> some View {
+        Button {
+            vm.selectedDuration = dur
+            if let id = vm.selectedNoteID {
+                vm.changeDuration(of: id, to: dur)
+            }
+        } label: {
+            // Unicode Musical Symbols (U+1D1xx) aren't in the system font, so we
+            // draw the note glyphs ourselves to guarantee they render anywhere.
+            let on = vm.selectedDuration == dur
+            NoteDurationGlyph(duration: dur)
+                .frame(width: 44, height: 44)
+                .background(on ? Color.accentColor.opacity(0.2) : Color(.systemGray6))
+                .overlay(RoundedRectangle(cornerRadius: 10)
+                    .stroke(on ? Color.accentColor : .clear, lineWidth: 2))
+                .cornerRadius(10)
+                .foregroundColor(.primary)
+        }
+    }
+
+    /// Dot toggle — newly placed notes get 1.5× length; also dots the current
+    /// selection so it tracks the duration buttons.
+    private var dotButton: some View {
+        Button {
+            vm.selectedDotted.toggle()
+            if let id = vm.selectedNoteID {
+                vm.setDotted(of: id, vm.selectedDotted)
+            }
+        } label: {
+            let on = vm.selectedDotted
+            Text("\u{2022}")
+                .font(.system(size: 30, weight: .black))
+                .frame(width: 44, height: 44)
+                .background(on ? Color.accentColor.opacity(0.2) : Color(.systemGray6))
+                .overlay(RoundedRectangle(cornerRadius: 10)
+                    .stroke(on ? Color.accentColor : .clear, lineWidth: 2))
+                .cornerRadius(10)
+                .foregroundColor(.primary)
+        }
     }
 
     private func nudgeButton(_ label: String, semis: Int) -> some View {
