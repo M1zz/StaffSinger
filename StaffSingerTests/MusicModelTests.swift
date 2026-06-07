@@ -233,3 +233,56 @@ final class MusicModelTests: XCTestCase {
         XCTAssertEqual(layout.y(for: Pitch(midi: 77)), 100, accuracy: 0.001)
     }
 }
+
+// MARK: - Editor behavior (bar-aware note placement)
+
+@MainActor
+final class EditorBehaviorTests: XCTestCase {
+
+    private func makeVM() -> ScoreViewModel {
+        ScoreViewModel(audio: AudioEngine())
+    }
+
+    func testAppendAutoAdvancesAcrossBarline() {
+        let vm = makeVM()
+        vm.setTimeSignature(beats: 4, unit: 4)
+
+        // Three quarters fill beats 0,1,2; then a half note would straddle the
+        // barline — it should jump to the next bar with a rest padding the gap.
+        vm.selectedDuration = .quarter
+        vm.addNote(pitch: .middleC)
+        vm.addNote(pitch: .middleC)
+        vm.addNote(pitch: .middleC)
+        vm.selectedDuration = .half
+        vm.addNote(pitch: .middleC)
+
+        // The half note lands on the downbeat of bar 2 (beat 4), not beat 3.
+        let half = vm.score.notes.first { !$0.isRest && $0.duration == .half }
+        XCTAssertEqual(half?.beatOffset, 4.0, "마디를 넘기는 음표는 다음 마디 첫 박으로")
+        XCTAssertTrue(vm.score.isWellFormed, "자동 처리 후 마디는 잘 맞아야 한다")
+        XCTAssertTrue(vm.score.overfilledMeasures.isEmpty)
+    }
+
+    func testAppendRefusesBeyondTwoMeasures() {
+        let vm = makeVM()
+        vm.setTimeSignature(beats: 4, unit: 4)
+        vm.selectedDuration = .whole
+        vm.addNote(pitch: .middleC)   // bar 1 full (4 beats)
+        vm.addNote(pitch: .middleC)   // bar 2 full (4 beats)
+        let countAfterTwoBars = vm.score.notes.count
+        vm.addNote(pitch: .middleC)   // would be bar 3 — must be refused
+        XCTAssertEqual(vm.score.notes.count, countAfterTwoBars,
+                       "두 마디를 넘는 음표는 추가되지 않아야 한다")
+    }
+
+    func testDottedQuarterAppendStaysWellFormed() {
+        let vm = makeVM()
+        vm.setTimeSignature(beats: 4, unit: 4)
+        vm.selectedDuration = .quarter
+        vm.selectedDotted = true            // dotted quarter = 1.5 beats
+        for _ in 0..<4 { vm.addNote(pitch: .middleC) }
+        // Dotted quarters auto-pad across barlines; the result must still have
+        // no overfilled bar and no barline-crossing note.
+        XCTAssertTrue(vm.score.isWellFormed)
+    }
+}

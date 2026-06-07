@@ -79,6 +79,7 @@ struct StaffView: View {
                 noteLayer(layout: layout, m: m,
                           beamedIDs: beams.beamedIDs)               // notes on top
                 ghostLayer(layout: layout, m: m)
+                measureWarnings(layout: layout, m: m)  // red barline + "초과" badge
                 editorOverlay(geo: geo)           // long-press editor — top-most
             }
             .frame(width: geo.size.width, height: geo.size.height)
@@ -163,6 +164,43 @@ struct StaffView: View {
                               y: useFlats ? yy - 3 : yy)
             }
         }
+    }
+
+    // MARK: - Measure overflow warnings
+
+    /// Flag any visible measure that holds more than one bar's worth of beats
+    /// (the "5 beats in a 4/4 bar" case): a red closing barline and a badge.
+    @ViewBuilder
+    private func measureWarnings(layout: StaffLayout, m: Metrics) -> some View {
+        let cap = vm.score.measureCapacity
+        let loads = vm.score.measureLoads()
+        ForEach(0..<2, id: \.self) { idx in
+            let load = loads[idx] ?? 0
+            if cap > 0, load > cap + 0.0001 {
+                let x0 = m.musicStartX + CGFloat(idx) * m.measureBeats * m.beatWidth
+                let x1 = x0 + m.measureBeats * m.beatWidth
+                let midY = layout.topLineY + 2 * layout.lineSpacing
+
+                // Closing barline of the overfilled measure, in red.
+                Rectangle()
+                    .fill(Color.red)
+                    .frame(width: 2.5, height: 4 * layout.lineSpacing)
+                    .position(x: x1, y: midY)
+
+                // Badge above the measure.
+                Text("⚠︎ \(beatText(load))/\(beatText(cap))박")
+                    .font(.caption2.weight(.bold))
+                    .padding(.horizontal, 7).padding(.vertical, 3)
+                    .background(Capsule().fill(Color.red))
+                    .foregroundColor(.white)
+                    .position(x: (x0 + x1) / 2, y: layout.topLineY - 18)
+            }
+        }
+    }
+
+    /// Compact beat count: "4", "1.5", "4.5".
+    private func beatText(_ v: Double) -> String {
+        v == v.rounded() ? "\(Int(v))" : String(format: "%g", v)
     }
 
     // MARK: - Notes (only those within the two visible measures)

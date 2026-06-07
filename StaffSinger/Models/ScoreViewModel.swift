@@ -53,32 +53,59 @@ final class ScoreViewModel: ObservableObject {
     /// - off: append at the end of the score (melody building)
     /// - on:  stack onto the selected note's beat (chord building)
     func addNote(pitch: Pitch) {
-        let beat: Double
+        // Chord mode: stack onto the selected note's beat — no reflow needed.
         if chordMode, let sel = selectedNote {
-            beat = sel.beatOffset
-        } else {
-            beat = appendBeat
+            let note = ScoreNote(pitch: pitch, duration: selectedDuration,
+                                 beatOffset: sel.beatOffset, dotted: selectedDotted)
+            score.notes.append(note)
+            selectedNoteID = note.id
+            let stack = score.notes.filter { $0.beatOffset == sel.beatOffset && !$0.isRest }
+            audio.auditionChord(stack.map { $0.pitch })
+            return
         }
+
+        // Melody mode: append, but keep the note inside the bar lines.
+        let length = noteLength
+        guard let beat = appendStartRespectingBars(length: length) else { return }
         let note = ScoreNote(pitch: pitch, duration: selectedDuration,
                              beatOffset: beat, dotted: selectedDotted)
         score.notes.append(note)
         selectedNoteID = note.id
-
-        if chordMode, let sel = selectedNote {
-            let stack = score.notes.filter { $0.beatOffset == sel.beatOffset && !$0.isRest }
-            audio.auditionChord(stack.map { $0.pitch })
-        } else {
-            audio.audition(pitch)
-        }
+        audio.audition(pitch)
     }
 
-    /// Insert a rest of the current duration at the end.
+    /// Insert a rest of the current duration at the end (bar-aware).
     func addRest() {
+        guard let beat = appendStartRespectingBars(length: noteLength) else { return }
         let note = ScoreNote(
             pitch: .middleC, duration: selectedDuration,
-            beatOffset: appendBeat, isRest: true, dotted: selectedDotted)
+            beatOffset: beat, isRest: true, dotted: selectedDotted)
         score.notes.append(note)
         selectedNoteID = note.id
+    }
+
+    /// Length in beats of a note placed with the current tools.
+    private var noteLength: Double {
+        selectedDuration.beats * (selectedDotted ? 1.5 : 1.0)
+    }
+
+    /// Where an appended note/rest of `length` beats should start so it never
+    /// straddles a barline and never spills past the two visible measures. If it
+    /// would cross a barline, the rest of the current bar is padded with rests
+    /// and the note starts on the next downbeat. Returns nil if it won't fit.
+    private func appendStartRespectingBars(length: Double) -> Double? {
+        let cap = score.measureCapacity
+        guard cap > 0 else { return appendBeat }
+        let limit = cap * 2
+        let beat = appendBeat
+        let nextBar = (floor((beat + 1e-6) / cap) + 1) * cap
+        let crosses = beat + length > nextBar + 1e-6 && beat + 1e-6 < nextBar
+        let start = crosses ? nextBar : beat
+        guard start + length <= limit + 1e-6 else { return nil }   // won't fit in two bars
+        if crosses {
+            score.notes.append(contentsOf: rests(from: beat, length: nextBar - beat))
+        }
+        return start
     }
 
     // MARK: - Editing existing notes
