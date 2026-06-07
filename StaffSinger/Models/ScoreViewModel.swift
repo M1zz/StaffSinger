@@ -1,0 +1,176 @@
+//
+//  ScoreViewModel.swift
+//  StaffSinger
+//
+//  Owns the editable Score and all mutation logic (placing, moving,
+//  deleting notes, building chords, changing time/tempo). The views stay
+//  dumb; everything that changes the document goes through here.
+//
+
+import Foundation
+import Combine
+
+@MainActor
+final class ScoreViewModel: ObservableObject {
+
+    @Published var score = Score()
+
+    // Current editing tools.
+    @Published var selectedDuration: NoteDuration = .quarter
+    @Published var selectedNoteID: UUID? = nil
+    /// When true, a new tap stacks onto the currently selected note's beat
+    /// (i.e. builds a chord) instead of appending after it.
+    @Published var chordMode = false
+
+    private let audio: AudioEngine
+
+    init(audio: AudioEngine) {
+        self.audio = audio
+    }
+
+    // MARK: - Derived
+
+    /// Next free beat to append a note at (end of the score, snapped).
+    var appendBeat: Double {
+        score.totalBeats
+    }
+
+    var selectedNote: ScoreNote? {
+        guard let id = selectedNoteID else { return nil }
+        return score.notes.first { $0.id == id }
+    }
+
+    // MARK: - Placing notes
+
+    /// Add a note at the given pitch. Behavior depends on `chordMode`:
+    /// - off: append at the end of the score (melody building)
+    /// - on:  stack onto the selected note's beat (chord building)
+    func addNote(pitch: Pitch) {
+        let beat: Double
+        if chordMode, let sel = selectedNote {
+            beat = sel.beatOffset
+        } else {
+            beat = appendBeat
+        }
+        let note = ScoreNote(pitch: pitch, duration: selectedDuration, beatOffset: beat)
+        score.notes.append(note)
+        selectedNoteID = note.id
+
+        if chordMode, let sel = selectedNote {
+            let stack = score.notes.filter { $0.beatOffset == sel.beatOffset && !$0.isRest }
+            audio.auditionChord(stack.map { $0.pitch })
+        } else {
+            audio.audition(pitch)
+        }
+    }
+
+    /// Insert a rest of the current duration at the end.
+    func addRest() {
+        let note = ScoreNote(
+            pitch: .middleC, duration: selectedDuration,
+            beatOffset: appendBeat, isRest: true)
+        score.notes.append(note)
+        selectedNoteID = note.id
+    }
+
+    // MARK: - Editing existing notes
+
+    func changePitch(of id: UUID, semitones: Int) {
+        guard let i = score.notes.firstIndex(where: { $0.id == id }) else { return }
+        let newPitch = Pitch(midi: score.notes[i].pitch.midi + semitones)
+        score.notes[i].pitch = newPitch
+        if !score.notes[i].isRest { audio.audition(newPitch) }
+    }
+
+    func changeDuration(of id: UUID, to duration: NoteDuration) {
+        guard let i = score.notes.firstIndex(where: { $0.id == id }) else { return }
+        score.notes[i].duration = duration
+    }
+
+    /// Move an existing note to a new pitch and/or start beat (drag editing).
+    func moveNote(_ id: UUID, toPitch pitch: Pitch, toBeat beat: Double) {
+        guard let i = score.notes.firstIndex(where: { $0.id == id }) else { return }
+        score.notes[i].pitch = pitch
+        score.notes[i].beatOffset = max(0, beat)
+    }
+
+    func deleteNote(_ id: UUID) {
+        score.notes.removeAll { $0.id == id }
+        if selectedNoteID == id { selectedNoteID = nil }
+    }
+
+    func deleteSelected() {
+        if let id = selectedNoteID { deleteNote(id) }
+    }
+
+    func clearAll() {
+        score.notes.removeAll()
+        selectedNoteID = nil
+    }
+
+    // MARK: - Score settings
+
+    func setTempo(_ bpm: Double) {
+        score.tempo = max(20, min(240, bpm))
+    }
+
+    func setTimeSignature(beats: Int, unit: Int) {
+        score.beatsPerMeasure = beats
+        score.beatUnit = unit
+    }
+
+    // MARK: - Auto-complete with rests
+
+    /// Fill any silent gaps between notes — and pad the last measure up to a
+    /// full bar (capped at two measures) — with rests, so an unfinished score
+    /// becomes a complete, readable one before it plays.
+    func fillRestsForPlayback() {
+        let measureBeats = score.quarterBeatsPerMeasure
+        guard measureBeats > 0 else { return }
+        let groups = score.chordGroups
+        guard !groups.isEmpty else { return }
+
+        var additions: [ScoreNote] = []
+        var cursor = 0.0
+        for g in groups {
+            if g.beat - cursor > 0.0001 {
+                additions += rests(from: cursor, length: g.beat - cursor)
+            }
+            let dur = g.notes.map { $0.duration.beats }.max() ?? 1.0
+            cursor = max(cursor, g.beat + dur)
+        }
+
+        // Pad the trailing partial measure up to a bar line (≤ two measures).
+        let target = min(2 * measureBeats,
+                         (cursor / measureBeats).rounded(.up) * measureBeats)
+        if target - cursor > 0.0001 {
+            additions += rests(from: cursor, length: target - cursor)
+        }
+
+        score.notes.append(contentsOf: additions)
+    }
+
+    /// Greedily express a span of empty beats as the fewest standard rests.
+    private func rests(from start: Double, length: Double) -> [ScoreNote] {
+        let durations: [NoteDuration] = [.whole, .half, .quarter, .eighth, .sixteenth]
+        var result: [ScoreNote] = []
+        var pos = start
+        var remaining = length
+        while remaining > 0.0001 {
+            guard let d = durations.first(where: { $0.beats <= remaining + 0.0001 }) else { break }
+            result.append(ScoreNote(pitch: .middleC, duration: d,
+                                    beatOffset: pos, isRest: true))
+            pos += d.beats
+            remaining -= d.beats
+        }
+        return result
+    }
+
+    // MARK: - Playback proxies
+
+    func play() {
+        fillRestsForPlayback()
+        audio.play(score: score)
+    }
+    func stop() { audio.stop() }
+}
