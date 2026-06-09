@@ -23,7 +23,7 @@ struct ContentView: View {
     // Reference-photo import ("photograph two measures, transcribe by hand").
     @StateObject private var reference = ReferenceStore()
     @State private var showSourceDialog = false
-    @State private var showCamera = false
+    @State private var showApertureCamera = false
     @State private var showLibrary = false
     @State private var cropItem: PickedImage? = nil
     @State private var omrMessage: String? = nil
@@ -67,7 +67,7 @@ struct ContentView: View {
         .confirmationDialog("악보 사진", isPresented: $showSourceDialog,
                             titleVisibility: .visible) {
             if UIImagePickerController.isSourceTypeAvailable(.camera) {
-                Button("카메라로 촬영") { showCamera = true }
+                Button("카메라로 촬영 (2마디 맞춤)") { showApertureCamera = true }
             }
             Button("사진 보관함에서 선택") { showLibrary = true }
             if reference.image != nil {
@@ -75,9 +75,15 @@ struct ContentView: View {
             }
             Button("취소", role: .cancel) {}
         }
-        .sheet(isPresented: $showCamera) {
-            CameraPicker { img in queueForCrop(img) }
-                .ignoresSafeArea()
+        .fullScreenCover(isPresented: $showApertureCamera) {
+            ApertureCameraView(
+                onCapture: { img in
+                    showApertureCamera = false
+                    reference.set(img)          // aperture already framed the 2 measures
+                },
+                onCancel: { showApertureCamera = false }
+            )
+            .ignoresSafeArea()
         }
         .sheet(isPresented: $showLibrary) {
             LibraryPicker { img in queueForCrop(img) }
@@ -102,12 +108,6 @@ struct ContentView: View {
     }
 
     // MARK: - Top bar
-
-    /// On a fresh, empty score we show nothing but the staff. The controls
-    /// appear once there's something to play / edit.
-    private var controlsVisible: Bool {
-        !vm.score.notes.isEmpty || showControls
-    }
 
     /// Experimental: read the cropped photo into notes (clean printed monophonic
     /// single line works best). Replaces the current score on success.
@@ -164,47 +164,43 @@ struct ContentView: View {
             }
             .transition(.scale.combined(with: .opacity))
 
-            if controlsVisible {
-                if showControls {
-                    circleButton(
-                        systemImage: "metronome",
-                        tint: audio.metronomeEnabled ? .accentColor : .secondary
-                    ) { audio.metronomeEnabled.toggle() }
-                        .transition(.scale.combined(with: .opacity))
-
-                    circleButton(systemImage: "slider.horizontal.3", tint: .primary) {
-                        showSettings = true
-                    }
-                    .transition(.scale.combined(with: .opacity))
-                }
-
-                // Show / hide the note-tools panel.
+            // Metronome + settings only matter once the editor panel is open.
+            if showControls {
                 circleButton(
-                    systemImage: showControls ? "chevron.down" : "music.note",
-                    tint: showControls ? .accentColor : .primary
-                ) {
-                    withAnimation(panelSpring) { showControls.toggle() }
-                }
-                .transition(.scale.combined(with: .opacity))
+                    systemImage: "metronome",
+                    tint: audio.metronomeEnabled ? .accentColor : .secondary
+                ) { audio.metronomeEnabled.toggle() }
+                    .transition(.scale.combined(with: .opacity))
 
-                // Play / stop.
-                Button {
-                    if audio.isPlaying { vm.stop() } else { vm.play() }
-                } label: {
-                    Image(systemName: audio.isPlaying ? "stop.fill" : "play.fill")
-                        .font(.title2)
-                        .frame(width: 52, height: 52)
-                        .background(audio.isPlaying ? Color.red : Color.green)
-                        .foregroundColor(.white)
-                        .clipShape(Circle())
-                        .shadow(color: .black.opacity(0.2), radius: 3, y: 1)
+                circleButton(systemImage: "slider.horizontal.3", tint: .primary) {
+                    showSettings = true
                 }
                 .transition(.scale.combined(with: .opacity))
+            }
+
+            // Always visible from launch: note-tools toggle + play.
+            circleButton(
+                systemImage: showControls ? "chevron.down" : "music.note",
+                tint: showControls ? .accentColor : .primary
+            ) {
+                withAnimation(panelSpring) { showControls.toggle() }
+            }
+
+            Button {
+                if audio.isPlaying { vm.stop() } else { vm.play() }
+            } label: {
+                Image(systemName: audio.isPlaying ? "stop.fill" : "play.fill")
+                    .font(.title2)
+                    .frame(width: 52, height: 52)
+                    .background(audio.isPlaying ? Color.red : Color.green)
+                    .foregroundColor(.white)
+                    .clipShape(Circle())
+                    .shadow(color: .black.opacity(0.2), radius: 3, y: 1)
             }
         }
         .padding(.horizontal, 16)
         .padding(.top, 8)
-        .animation(.easeInOut(duration: 0.25), value: controlsVisible)
+        .animation(.easeInOut(duration: 0.25), value: showControls)
     }
 
     private func circleButton(systemImage: String, tint: Color,

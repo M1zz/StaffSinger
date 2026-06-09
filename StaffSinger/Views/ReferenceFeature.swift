@@ -12,6 +12,7 @@
 import SwiftUI
 import PhotosUI
 import UIKit
+import AVFoundation
 
 // MARK: - Shared state
 
@@ -38,38 +39,237 @@ struct PickedImage: Identifiable {
     let image: UIImage
 }
 
-// MARK: - Camera
+// MARK: - Aperture camera
 
-/// Thin wrapper over UIImagePickerController for the camera. (PHPicker can't
-/// take a live photo, so the camera path still needs the older controller.)
-struct CameraPicker: UIViewControllerRepresentable {
-    var onImage: (UIImage) -> Void
-    @Environment(\.dismiss) private var dismiss
+/// A live camera with a fixed "two-measure" cut-out: the user lines the staff up
+/// inside the bright window and shoots, and the photo is cropped to exactly that
+/// window — no separate crop step. Wide (≈3:1) to match a two-measure strip.
+struct ApertureCameraView: UIViewControllerRepresentable {
+    var aspect: CGFloat = 3.0
+    var onCapture: (UIImage) -> Void
+    var onCancel: () -> Void
 
-    func makeUIViewController(context: Context) -> UIImagePickerController {
-        let picker = UIImagePickerController()
-        picker.sourceType = .camera
-        picker.delegate = context.coordinator
-        return picker
+    func makeUIViewController(context: Context) -> ApertureCameraController {
+        let vc = ApertureCameraController()
+        vc.aspect = aspect
+        vc.onCapture = onCapture
+        vc.onCancel = onCancel
+        return vc
     }
 
-    func updateUIViewController(_ vc: UIImagePickerController, context: Context) {}
+    func updateUIViewController(_ vc: ApertureCameraController, context: Context) {}
+}
 
-    func makeCoordinator() -> Coordinator { Coordinator(self) }
+final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDelegate {
+    var aspect: CGFloat = 3.0
+    var onCapture: ((UIImage) -> Void)?
+    var onCancel: (() -> Void)?
 
-    final class Coordinator: NSObject, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
-        let parent: CameraPicker
-        init(_ parent: CameraPicker) { self.parent = parent }
+    private let session = AVCaptureSession()
+    private let output = AVCapturePhotoOutput()
+    private var preview: AVCaptureVideoPreviewLayer?
+    private let dim = CAShapeLayer()
+    private let frameLine = CAShapeLayer()
+    private var apertureRect: CGRect = .zero
 
-        func imagePickerController(_ picker: UIImagePickerController,
-                                   didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
-            let image = info[.originalImage] as? UIImage
-            parent.dismiss()
-            if let image { parent.onImage(image) }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .black
+        if configureSession() {
+            setupOverlay()
+            setupControls()
+        } else {
+            showUnavailable()
         }
+    }
 
-        func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-            parent.dismiss()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        startIfPossible()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        if session.isRunning {
+            DispatchQueue.global(qos: .userInitiated).async { self.session.stopRunning() }
+        }
+    }
+
+    // MARK: Session
+
+    private func configureSession() -> Bool {
+        guard let device = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
+                ?? AVCaptureDevice.default(for: .video),
+              let input = try? AVCaptureDeviceInput(device: device),
+              session.canAddInput(input), session.canAddOutput(output) else { return false }
+
+        session.beginConfiguration()
+        session.sessionPreset = .photo
+        session.addInput(input)
+        session.addOutput(output)
+        session.commitConfiguration()
+
+        let layer = AVCaptureVideoPreviewLayer(session: session)
+        layer.videoGravity = .resizeAspectFill
+        view.layer.insertSublayer(layer, at: 0)
+        preview = layer
+        return true
+    }
+
+    private func startIfPossible() {
+        switch AVCaptureDevice.authorizationStatus(for: .video) {
+        case .authorized:
+            runSession()
+        case .notDetermined:
+            AVCaptureDevice.requestAccess(for: .video) { [weak self] ok in
+                DispatchQueue.main.async { ok ? self?.runSession() : self?.showUnavailable() }
+            }
+        default:
+            showUnavailable()
+        }
+    }
+
+    private func runSession() {
+        guard preview != nil else { return }
+        DispatchQueue.global(qos: .userInitiated).async { self.session.startRunning() }
+    }
+
+    // MARK: Overlay + controls
+
+    private func setupOverlay() {
+        dim.fillRule = .evenOdd
+        dim.fillColor = UIColor.black.withAlphaComponent(0.6).cgColor
+        view.layer.addSublayer(dim)
+        frameLine.fillColor = UIColor.clear.cgColor
+        frameLine.strokeColor = UIColor.white.cgColor
+        frameLine.lineWidth = 2
+        view.layer.addSublayer(frameLine)
+
+        let hint = UILabel()
+        hint.text = "이 칸에 두 마디를 맞추고 촬영하세요"
+        hint.textColor = .white
+        hint.font = .systemFont(ofSize: 15, weight: .semibold)
+        hint.textAlignment = .center
+        hint.translatesAutoresizingMaskIntoConstraints = false
+        hint.tag = 99
+        view.addSubview(hint)
+        NSLayoutConstraint.activate([
+            hint.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            hint.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
+        ])
+    }
+
+    private func setupControls() {
+        let shutter = UIButton(type: .system)
+        shutter.backgroundColor = .white
+        shutter.layer.cornerRadius = 33
+        shutter.layer.borderColor = UIColor.white.cgColor
+        shutter.layer.borderWidth = 4
+        shutter.translatesAutoresizingMaskIntoConstraints = false
+        shutter.addTarget(self, action: #selector(shoot), for: .touchUpInside)
+        view.addSubview(shutter)
+
+        let cancel = UIButton(type: .system)
+        cancel.setTitle("취소", for: .normal)
+        cancel.setTitleColor(.white, for: .normal)
+        cancel.titleLabel?.font = .systemFont(ofSize: 17, weight: .semibold)
+        cancel.translatesAutoresizingMaskIntoConstraints = false
+        cancel.addTarget(self, action: #selector(cancelTapped), for: .touchUpInside)
+        view.addSubview(cancel)
+
+        NSLayoutConstraint.activate([
+            shutter.widthAnchor.constraint(equalToConstant: 66),
+            shutter.heightAnchor.constraint(equalToConstant: 66),
+            shutter.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            shutter.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -24),
+            cancel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 24),
+            cancel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 12),
+        ])
+    }
+
+    private func showUnavailable() {
+        let label = UILabel()
+        label.text = "카메라를 사용할 수 없습니다.\n사진 보관함에서 선택해 주세요."
+        label.numberOfLines = 0
+        label.textColor = .white
+        label.textAlignment = .center
+        label.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(label)
+        let close = UIButton(type: .system)
+        close.setTitle("닫기", for: .normal)
+        close.addTarget(self, action: #selector(cancelTapped), for: .touchUpInside)
+        close.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(close)
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            close.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 20),
+            close.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        ])
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        preview?.frame = view.bounds
+        preview?.connection?.videoOrientation = currentVideoOrientation()
+
+        // Centered wide aperture.
+        let margin: CGFloat = 90
+        let w = min(view.bounds.width - margin * 2, 900)
+        let h = w / aspect
+        apertureRect = CGRect(x: view.bounds.midX - w / 2,
+                              y: view.bounds.midY - h / 2, width: w, height: h)
+
+        let path = UIBezierPath(rect: view.bounds)
+        path.append(UIBezierPath(roundedRect: apertureRect, cornerRadius: 6))
+        dim.path = path.cgPath
+        frameLine.path = UIBezierPath(roundedRect: apertureRect, cornerRadius: 6).cgPath
+    }
+
+    // MARK: Capture
+
+    @objc private func cancelTapped() { onCancel?() }
+
+    @objc private func shoot() {
+        guard session.isRunning else { return }
+        output.connection(with: .video)?.videoOrientation = currentVideoOrientation()
+        output.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
+    }
+
+    func photoOutput(_ output: AVCapturePhotoOutput,
+                     didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+        guard error == nil,
+              let data = photo.fileDataRepresentation(),
+              let image = UIImage(data: data) else { return }
+        let result = cropToAperture(image) ?? image
+        DispatchQueue.main.async { self.onCapture?(result) }
+    }
+
+    /// Map the on-screen aperture rect into the captured image and crop to it.
+    private func cropToAperture(_ image: UIImage) -> UIImage? {
+        guard let preview, let cg = uprightCGImage(image) else { return nil }
+        let r = preview.metadataOutputRectConverted(fromLayerRect: apertureRect)
+        let W = CGFloat(cg.width), H = CGFloat(cg.height)
+        // metadataOutputRect is normalized with the image's natural (sensor)
+        // orientation; once the image is drawn upright it maps directly.
+        let px = CGRect(x: r.origin.x * W, y: r.origin.y * H,
+                        width: r.size.width * W, height: r.size.height * H).integral
+        guard px.width > 1, px.height > 1, let cropped = cg.cropping(to: px) else { return nil }
+        return UIImage(cgImage: cropped, scale: image.scale, orientation: .up)
+    }
+
+    private func uprightCGImage(_ image: UIImage) -> CGImage? {
+        if image.imageOrientation == .up { return image.cgImage }
+        let r = UIGraphicsImageRenderer(size: image.size)
+        return r.image { _ in image.draw(in: CGRect(origin: .zero, size: image.size)) }.cgImage
+    }
+
+    private func currentVideoOrientation() -> AVCaptureVideoOrientation {
+        switch view.window?.windowScene?.interfaceOrientation {
+        case .landscapeLeft: return .landscapeLeft
+        case .landscapeRight: return .landscapeRight
+        case .portraitUpsideDown: return .portraitUpsideDown
+        default: return .portrait
         }
     }
 }
