@@ -429,9 +429,10 @@ struct ImageCropView: View {
 
 // MARK: - Floating reference overlay
 
-/// The cropped photo, floating over the staff. The image itself ignores
-/// touches so notes underneath stay tappable; only the control bar (move
-/// handle, opacity, hide, delete) is interactive.
+/// The cropped photo, floating over the staff. By default the image ignores
+/// touches so notes underneath stay tappable, and the grip in the control bar
+/// moves the card. Tapping the "이동/크기" toggle hands the whole photo over to
+/// touch: drag it anywhere and pinch to resize, freely, until you toggle back.
 struct ReferenceOverlay: View {
     @ObservedObject var store: ReferenceStore
     /// Run experimental auto-transcription on the current crop.
@@ -440,68 +441,105 @@ struct ReferenceOverlay: View {
     @State private var pos: CGSize = .zero
     @GestureState private var dragPos: CGSize = .zero
 
+    @State private var width: CGFloat = 520        // card width in points; pinch resizes it
+    @GestureState private var pinch: CGFloat = 1
+    @State private var editing = false             // when on, the whole photo is draggable & resizable
+
     var body: some View {
         if let img = store.image {
-            if store.visible {
-                card(img)
-            } else {
-                showButton
+            GeometryReader { geo in
+                if store.visible {
+                    card(img, available: geo.size.width)
+                } else {
+                    showButton
+                }
             }
         }
     }
 
-    private func card(_ img: UIImage) -> some View {
-        VStack(spacing: 0) {
-            // Interactive control bar. Only the grip moves the card, so it
-            // doesn't fight the opacity slider for drags.
-            HStack(spacing: 14) {
-                Image(systemName: "arrow.up.and.down.and.arrow.left.and.right")
-                    .font(.subheadline).foregroundColor(.secondary)
-                    .frame(width: 40, height: 30)
-                    .contentShape(Rectangle())
-                    .gesture(
-                        DragGesture()
-                            .updating($dragPos) { v, s, _ in s = v.translation }
-                            .onEnded { v in
-                                pos.width += v.translation.width
-                                pos.height += v.translation.height
-                            }
-                    )
-                Image(systemName: "circle.lefthalf.filled").foregroundColor(.secondary)
-                Slider(value: $store.opacity, in: 0.15...1).frame(width: 110)
-                Spacer(minLength: 4)
-                // Experimental: read the photo into notes.
-                Button(action: onTranscribe) {
-                    Label("채보", systemImage: "wand.and.stars")
-                        .font(.subheadline.weight(.semibold))
-                        .labelStyle(.titleAndIcon)
-                }
-                Button { store.visible = false } label: {
-                    Image(systemName: "eye.slash")
-                }
-                Button { store.clear() } label: {
-                    Image(systemName: "trash").foregroundColor(.red)
-                }
-            }
-            .font(.body)
-            .padding(.horizontal, 12).padding(.vertical, 8)
-            .background(.ultraThinMaterial)
-
+    private func card(_ img: UIImage, available: CGFloat) -> some View {
+        // Keep the card within the screen so a big pinch can't push it off-edge.
+        let liveWidth = max(220, min(width * pinch, available - 16))
+        return VStack(spacing: 0) {
+            controlBar
             Image(uiImage: img)
                 .resizable()
                 .scaledToFit()
                 .frame(maxWidth: .infinity)
                 .opacity(store.opacity)
-                .allowsHitTesting(false)   // taps fall through to the staff
+                .overlay {
+                    if editing {
+                        RoundedRectangle(cornerRadius: 4)
+                            .strokeBorder(Color.accentColor.opacity(0.9),
+                                          style: StrokeStyle(lineWidth: 1.5, dash: [6, 4]))
+                    }
+                }
+                .allowsHitTesting(editing)         // off → taps fall through to the staff
+                .gesture(moveResize(available: available))
         }
-        .frame(maxWidth: 560)
+        .frame(width: liveWidth)
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .overlay(RoundedRectangle(cornerRadius: 12).stroke(.black.opacity(0.12), lineWidth: 1))
         .shadow(color: .black.opacity(0.25), radius: 10, y: 4)
-        .padding(.horizontal, 16)
         .offset(x: pos.width + dragPos.width, y: pos.height + dragPos.height)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .padding(.top, 64)
+    }
+
+    /// Interactive control bar. The grip always moves the card; the pencil-hand
+    /// toggle frees the whole photo for free drag + pinch-to-resize.
+    private var controlBar: some View {
+        HStack(spacing: 12) {
+            Image(systemName: "arrow.up.and.down.and.arrow.left.and.right")
+                .font(.subheadline).foregroundColor(.secondary)
+                .frame(width: 36, height: 30)
+                .contentShape(Rectangle())
+                .gesture(
+                    DragGesture()
+                        .updating($dragPos) { v, s, _ in s = v.translation }
+                        .onEnded { v in
+                            pos.width += v.translation.width
+                            pos.height += v.translation.height
+                        }
+                )
+            Image(systemName: "circle.lefthalf.filled").foregroundColor(.secondary)
+            Slider(value: $store.opacity, in: 0.15...1).frame(width: 84)
+            Spacer(minLength: 4)
+            // Free move/resize: hand the whole photo over to touch.
+            Button { editing.toggle() } label: {
+                Image(systemName: editing ? "hand.draw.fill" : "hand.draw")
+                    .foregroundColor(editing ? .accentColor : .secondary)
+            }
+            // Experimental: read the photo into notes.
+            Button(action: onTranscribe) {
+                Label("채보", systemImage: "wand.and.stars")
+                    .font(.subheadline.weight(.semibold))
+                    .labelStyle(.iconOnly)
+            }
+            Button { store.visible = false } label: {
+                Image(systemName: "eye.slash")
+            }
+            Button { store.clear() } label: {
+                Image(systemName: "trash").foregroundColor(.red)
+            }
+        }
+        .font(.body)
+        .padding(.horizontal, 12).padding(.vertical, 8)
+        .background(.ultraThinMaterial)
+    }
+
+    /// Drag the whole photo anywhere, pinch to resize. Only fires in edit mode
+    /// (otherwise the image isn't hit-testable and taps reach the staff).
+    private func moveResize(available: CGFloat) -> some Gesture {
+        DragGesture()
+            .updating($dragPos) { v, s, _ in s = v.translation }
+            .onEnded { v in
+                pos.width += v.translation.width
+                pos.height += v.translation.height
+            }
+            .simultaneously(with: MagnificationGesture()
+                .updating($pinch) { v, s, _ in s = v }
+                .onEnded { v in width = max(220, min(width * v, available - 16)) })
     }
 
     private var showButton: some View {
