@@ -10,6 +10,13 @@
 import SwiftUI
 import UIKit
 
+/// Distinct color per voice / layer (0 = melody). Shared by the staff and the
+/// toolbar's layer picker so a note's color always matches its voice button.
+func noteLayerColor(_ layer: Int) -> Color {
+    let palette: [Color] = [.black, .purple, .teal]
+    return palette[((layer % palette.count) + palette.count) % palette.count]
+}
+
 struct StaffView: View {
     @ObservedObject var vm: ScoreViewModel
     @ObservedObject var audio: AudioEngine
@@ -811,7 +818,7 @@ private struct NoteGlyph: View {
     }
 
     private var color: Color {
-        isActive ? .orange : (isSelected ? .blue : .black)
+        isActive ? .orange : (isSelected ? .blue : noteLayerColor(note.layer))
     }
 
     @ViewBuilder

@@ -195,6 +195,9 @@ struct ScoreNote: Identifiable, Equatable, Codable {
     var isRest: Bool = false
     /// A dot lengthens the note by half its value (a dotted quarter = 1.5 beats).
     var dotted: Bool = false
+    /// Which voice / layer this note belongs to (0 = melody). Notes in different
+    /// layers that share a beat form a chord; each layer is drawn in its own color.
+    var layer: Int = 0
 
     /// Effective length in quarter-note beats, accounting for any dot.
     var beats: Double { duration.beats * (dotted ? 1.5 : 1.0) }
@@ -244,45 +247,51 @@ struct Score: Codable {
 /// and quarters, but floating point still drifts).
 private let beatEpsilon = 1e-6
 
+/// One voice's event at a start beat — used to validate each layer on its own.
+private struct LayerBeat: Hashable { let layer: Int; let beat: Double }
+
 extension Score {
     /// One measure's worth of quarter-note beats (e.g. 4.0 for 4/4, 3.0 for 6/8).
     var measureCapacity: Double { quarterBeatsPerMeasure }
 
-    /// Beats occupying each measure, keyed by measure index (0-based). A chord
-    /// counts once as its longest member — matching how playback holds a group —
-    /// and a group's full length is charged to the measure where it *starts*.
+    /// Beats occupying each measure, keyed by measure index (0-based). Each voice
+    /// is summed independently and the measure's load is the heaviest voice — so
+    /// two full voices in a bar read as full, not double. A chord within a voice
+    /// (same layer + beat) counts once as its longest member.
     func measureLoads() -> [Int: Double] {
         guard measureCapacity > 0 else { return [:] }
-        var loads: [Int: Double] = [:]
-        for g in chordGroups {
-            let dur = g.notes.map { $0.beats }.max() ?? 0
-            let measure = Int((g.beat + beatEpsilon) / measureCapacity)
-            loads[measure, default: 0] += dur
+        let cap = measureCapacity
+        let grouped = Dictionary(grouping: notes) { LayerBeat(layer: $0.layer, beat: $0.beatOffset) }
+        var perMeasureLayer: [Int: [Int: Double]] = [:]
+        for (key, ns) in grouped {
+            let dur = ns.map { $0.beats }.max() ?? 0
+            let m = Int((key.beat + beatEpsilon) / cap)
+            perMeasureLayer[m, default: [:]][key.layer, default: 0] += dur
         }
-        return loads
+        return perMeasureLayer.mapValues { $0.values.max() ?? 0 }
     }
 
-    /// Measures holding more than one bar's worth of beats — the "5 beats in a
-    /// 4/4 bar" bug. Sorted ascending.
+    /// Measures where some voice holds more than one bar's worth of beats — the
+    /// "5 beats in a 4/4 bar" bug. Sorted ascending.
     var overfilledMeasures: [Int] {
         measureLoads()
             .filter { $0.value > measureCapacity + beatEpsilon }
             .keys.sorted()
     }
 
-    /// Start beats of groups whose sounding length runs past the next barline
-    /// (in real notation these should be split and tied). Sorted ascending.
+    /// Start beats of voice events whose sounding length runs past the next
+    /// barline (in real notation these should be split and tied). Sorted.
     var barlineCrossings: [Double] {
         guard measureCapacity > 0 else { return [] }
-        var result: [Double] = []
-        for g in chordGroups {
-            let dur = g.notes.map { $0.beats }.max() ?? 0
+        let cap = measureCapacity
+        let grouped = Dictionary(grouping: notes) { LayerBeat(layer: $0.layer, beat: $0.beatOffset) }
+        var result: Set<Double> = []
+        for (key, ns) in grouped {
+            let dur = ns.map { $0.beats }.max() ?? 0
             guard dur > beatEpsilon else { continue }
-            let startMeasure = Int((g.beat + beatEpsilon) / measureCapacity)
-            let nextBar = Double(startMeasure + 1) * measureCapacity
-            if g.beat + dur > nextBar + beatEpsilon {
-                result.append(g.beat)
-            }
+            let startMeasure = Int((key.beat + beatEpsilon) / cap)
+            let nextBar = Double(startMeasure + 1) * cap
+            if key.beat + dur > nextBar + beatEpsilon { result.insert(key.beat) }
         }
         return result.sorted()
     }

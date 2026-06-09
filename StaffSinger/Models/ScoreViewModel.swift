@@ -24,6 +24,12 @@ final class ScoreViewModel: ObservableObject {
     /// (i.e. builds a chord) instead of appending after it.
     @Published var chordMode = false
 
+    /// The voice / layer new notes are written into. Each layer builds up its
+    /// own line independently in time; layers overlap to form harmony.
+    @Published var activeLayer = 0
+    /// How many voices the editor exposes.
+    static let layerCount = 3
+
     /// The pitch currently under the finger while placing or moving a note.
     /// Drives the large position read-out at the bottom of the screen; nil
     /// when no drag is in progress.
@@ -37,9 +43,15 @@ final class ScoreViewModel: ObservableObject {
 
     // MARK: - Derived
 
-    /// Next free beat to append a note at (end of the score, snapped).
-    var appendBeat: Double {
-        score.totalBeats
+    /// Next free beat to append in the active layer (end of that voice).
+    var appendBeat: Double { appendBeat(forLayer: activeLayer) }
+
+    /// End beat of a specific voice (where its next note would go).
+    func appendBeat(forLayer layer: Int) -> Double {
+        let ends: [Double] = score.notes
+            .filter { $0.layer == layer }
+            .map { $0.beatOffset + $0.beats }
+        return ends.max() ?? 0
     }
 
     var selectedNote: ScoreNote? {
@@ -56,7 +68,8 @@ final class ScoreViewModel: ObservableObject {
         // Chord mode: stack onto the selected note's beat — no reflow needed.
         if chordMode, let sel = selectedNote {
             let note = ScoreNote(pitch: pitch, duration: selectedDuration,
-                                 beatOffset: sel.beatOffset, dotted: selectedDotted)
+                                 beatOffset: sel.beatOffset, dotted: selectedDotted,
+                                 layer: activeLayer)
             score.notes.append(note)
             selectedNoteID = note.id
             let stack = score.notes.filter { $0.beatOffset == sel.beatOffset && !$0.isRest }
@@ -64,22 +77,21 @@ final class ScoreViewModel: ObservableObject {
             return
         }
 
-        // Melody mode: append, but keep the note inside the bar lines.
-        let length = noteLength
-        guard let beat = appendStartRespectingBars(length: length) else { return }
+        // Melody mode: append into the active voice, inside the bar lines.
+        guard let beat = appendStartRespectingBars(length: noteLength, layer: activeLayer) else { return }
         let note = ScoreNote(pitch: pitch, duration: selectedDuration,
-                             beatOffset: beat, dotted: selectedDotted)
+                             beatOffset: beat, dotted: selectedDotted, layer: activeLayer)
         score.notes.append(note)
         selectedNoteID = note.id
         audio.audition(pitch)
     }
 
-    /// Insert a rest of the current duration at the end (bar-aware).
+    /// Insert a rest of the current duration at the end of the active voice.
     func addRest() {
-        guard let beat = appendStartRespectingBars(length: noteLength) else { return }
+        guard let beat = appendStartRespectingBars(length: noteLength, layer: activeLayer) else { return }
         let note = ScoreNote(
             pitch: .middleC, duration: selectedDuration,
-            beatOffset: beat, isRest: true, dotted: selectedDotted)
+            beatOffset: beat, isRest: true, dotted: selectedDotted, layer: activeLayer)
         score.notes.append(note)
         selectedNoteID = note.id
     }
@@ -93,17 +105,19 @@ final class ScoreViewModel: ObservableObject {
     /// straddles a barline and never spills past the two visible measures. If it
     /// would cross a barline, the rest of the current bar is padded with rests
     /// and the note starts on the next downbeat. Returns nil if it won't fit.
-    private func appendStartRespectingBars(length: Double) -> Double? {
+    private func appendStartRespectingBars(length: Double, layer: Int) -> Double? {
         let cap = score.measureCapacity
-        guard cap > 0 else { return appendBeat }
+        guard cap > 0 else { return appendBeat(forLayer: layer) }
         let limit = cap * 2
-        let beat = appendBeat
+        let beat = appendBeat(forLayer: layer)
         let nextBar = (floor((beat + 1e-6) / cap) + 1) * cap
         let crosses = beat + length > nextBar + 1e-6 && beat + 1e-6 < nextBar
         let start = crosses ? nextBar : beat
         guard start + length <= limit + 1e-6 else { return nil }   // won't fit in two bars
         if crosses {
-            score.notes.append(contentsOf: rests(from: beat, length: nextBar - beat))
+            var gap = rests(from: beat, length: nextBar - beat)
+            for i in gap.indices { gap[i].layer = layer }
+            score.notes.append(contentsOf: gap)
         }
         return start
     }

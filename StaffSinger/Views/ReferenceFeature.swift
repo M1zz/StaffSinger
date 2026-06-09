@@ -70,6 +70,7 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
     private var preview: AVCaptureVideoPreviewLayer?
     private let dim = CAShapeLayer()
     private let frameLine = CAShapeLayer()
+    private let staffGuide = CAShapeLayer()   // faint 5-line guide inside the window
     private var apertureRect: CGRect = .zero
 
     override func viewDidLoad() {
@@ -144,6 +145,11 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         frameLine.strokeColor = UIColor.white.cgColor
         frameLine.lineWidth = 2
         view.layer.addSublayer(frameLine)
+
+        staffGuide.fillColor = UIColor.clear.cgColor
+        staffGuide.strokeColor = UIColor.white.withAlphaComponent(0.5).cgColor
+        staffGuide.lineWidth = 1
+        view.layer.addSublayer(staffGuide)
 
         let hint = UILabel()
         hint.text = "이 칸에 두 마디를 맞추고 촬영하세요"
@@ -224,6 +230,19 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         path.append(UIBezierPath(roundedRect: apertureRect, cornerRadius: 6))
         dim.path = path.cgPath
         frameLine.path = UIBezierPath(roundedRect: apertureRect, cornerRadius: 6).cgPath
+
+        // Faint 5-line staff in the middle of the window so the user lines the
+        // real staff up with where the app's staff sits.
+        let staffH = h * 0.5
+        let gap = staffH / 4
+        let startY = apertureRect.midY - staffH / 2
+        let guide = UIBezierPath()
+        for i in 0..<5 {
+            let y = startY + CGFloat(i) * gap
+            guide.move(to: CGPoint(x: apertureRect.minX + 12, y: y))
+            guide.addLine(to: CGPoint(x: apertureRect.maxX - 12, y: y))
+        }
+        staffGuide.path = guide.cgPath
     }
 
     // MARK: Capture

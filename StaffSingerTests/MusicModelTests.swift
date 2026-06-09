@@ -147,6 +147,30 @@ final class MusicModelTests: XCTestCase {
         XCTAssertTrue(Score().overfilledMeasures.isEmpty)
     }
 
+    func testTwoVoicesFullBarNotOverfilled() {
+        // Each voice independently fills the 4/4 bar — together that's harmony,
+        // not an overfilled measure.
+        var s = Score(); s.beatsPerMeasure = 4; s.beatUnit = 4
+        for b in 0..<4 { s.notes.append(note(.quarter, at: Double(b))) }            // layer 0
+        for b in 0..<4 {
+            var n = note(.quarter, at: Double(b)); n.layer = 1; s.notes.append(n)   // layer 1
+        }
+        XCTAssertEqual(s.measureLoads()[0] ?? .nan, 4.0, accuracy: 1e-9,
+                       "마디 부하는 가장 무거운 성부 기준")
+        XCTAssertTrue(s.overfilledMeasures.isEmpty, "두 성부가 각각 한 마디면 초과 아님")
+    }
+
+    func testOverfillInSecondVoiceIsCaught() {
+        // Layer 0 is fine; layer 1 packs 5 beats into a 4/4 bar → caught.
+        var s = Score(); s.beatsPerMeasure = 4; s.beatUnit = 4
+        s.notes = [note(.quarter, at: 0)]   // layer 0
+        for spec: (NoteDuration, Double) in [(.half, 0), (.half, 2), (.quarter, 3)] {
+            var n = note(spec.0, at: spec.1); n.layer = 1; s.notes.append(n)
+        }
+        XCTAssertEqual(s.measureLoads()[0] ?? .nan, 5.0, accuracy: 1e-9)
+        XCTAssertEqual(s.overfilledMeasures, [0])
+    }
+
     // MARK: - Chord grouping
 
     func testChordGroupsSortedAndGrouped() {
@@ -285,6 +309,22 @@ final class EditorBehaviorTests: XCTestCase {
         // Dotted quarters auto-pad across barlines; the result must still have
         // no overfilled bar and no barline-crossing note.
         XCTAssertTrue(vm.score.isWellFormed)
+    }
+
+    func testActiveLayerRoutesNotesIndependently() {
+        let vm = makeVM()
+        vm.setTimeSignature(beats: 4, unit: 4)
+        vm.selectedDuration = .quarter
+        vm.addNote(pitch: .middleC)      // layer 0, beat 0
+        vm.addNote(pitch: .middleC)      // layer 0, beat 1
+        vm.activeLayer = 1
+        vm.addNote(pitch: Pitch(midi: 64))   // layer 1 — its own cursor starts at 0
+
+        let l0 = vm.score.notes.filter { $0.layer == 0 && !$0.isRest }
+        let l1 = vm.score.notes.filter { $0.layer == 1 && !$0.isRest }
+        XCTAssertEqual(l0.count, 2)
+        XCTAssertEqual(l1.count, 1)
+        XCTAssertEqual(l1.first?.beatOffset, 0.0, "새 성부는 0박부터 독립적으로 쌓인다")
     }
 }
 

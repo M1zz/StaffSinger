@@ -15,12 +15,16 @@ struct EditorToolbar: View {
 
     var body: some View {
         VStack(spacing: 10) {
-            // Row 1: duration values + dot toggle
+            // Row 1: duration values + dot toggle + voice (layer) picker
             HStack(spacing: 8) {
                 ForEach(NoteDuration.allCases) { dur in
                     durationButton(dur)
                 }
                 dotButton
+                Divider().frame(height: 36)
+                ForEach(0..<ScoreViewModel.layerCount, id: \.self) { i in
+                    layerButton(i)
+                }
             }
 
             // Row 2: actions — centered as a group.
@@ -117,6 +121,24 @@ struct EditorToolbar: View {
                     .stroke(on ? Color.accentColor : .clear, lineWidth: 2))
                 .cornerRadius(10)
                 .foregroundColor(.primary)
+        }
+    }
+
+    /// Voice (layer) selector. New notes go into the chosen voice; the dot is
+    /// in that voice's color so it matches the noteheads on the staff.
+    private func layerButton(_ i: Int) -> some View {
+        Button { vm.activeLayer = i } label: {
+            let on = vm.activeLayer == i
+            VStack(spacing: 2) {
+                Circle().fill(noteLayerColor(i)).frame(width: 12, height: 12)
+                Text("\(i + 1)").font(.caption2.weight(.bold))
+            }
+            .frame(width: 44, height: 44)
+            .background(on ? Color.accentColor.opacity(0.2) : Color(.systemGray6))
+            .overlay(RoundedRectangle(cornerRadius: 10)
+                .stroke(on ? Color.accentColor : .clear, lineWidth: 2))
+            .cornerRadius(10)
+            .foregroundColor(.primary)
         }
     }
 
