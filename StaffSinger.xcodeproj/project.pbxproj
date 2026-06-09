@@ -20,6 +20,7 @@
 		A1B2C3D4E5F60001A1B2C3D4 /* UprightPianoKW.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */; };
 		B1B2C3D4E5F60004B1B2C3D4 /* ReferenceFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */; };
 		CC0000000000000000000004 /* MusicModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000003 /* MusicModelTests.swift */; };
+		DD0000000000000000000002 /* OMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0000000000000000000001 /* OMR.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceFeature.swift; sourceTree = "<group>"; };
 		CC0000000000000000000002 /* StaffSingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaffSingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0000000000000000000003 /* MusicModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModelTests.swift; sourceTree = "<group>"; };
+		DD0000000000000000000001 /* OMR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMR.swift; sourceTree = "<group>"; };
 		079D6A2F8E5B416DB84081CB /* StaffSinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaffSinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EAE88B4D7634EEDAF5B7334 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
 		252173120F724CAEA34F22A7 /* TransportBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportBar.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				5E770722A9A6445CB768B0EB /* StaffLayout.swift */,
 				9F76C4695A60486ABD5FADC7 /* StaffView.swift */,
+				DD0000000000000000000001 /* OMR.swift */,
 			);
 			path = Notation;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				B28E59ABD4FD4D81A49E8CD2 /* AudioEngine.swift in Sources */,
 				CFE18438ADB94E5D9F9A8007 /* StaffLayout.swift in Sources */,
 				6D530A84D26E4F83811ACE0B /* StaffView.swift in Sources */,
+				DD0000000000000000000002 /* OMR.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

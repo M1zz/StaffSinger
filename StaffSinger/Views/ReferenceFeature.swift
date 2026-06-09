@@ -215,6 +215,8 @@ struct ImageCropView: View {
 /// handle, opacity, hide, delete) is interactive.
 struct ReferenceOverlay: View {
     @ObservedObject var store: ReferenceStore
+    /// Run experimental auto-transcription on the current crop.
+    var onTranscribe: () -> Void = {}
 
     @State private var pos: CGSize = .zero
     @GestureState private var dragPos: CGSize = .zero
@@ -247,8 +249,14 @@ struct ReferenceOverlay: View {
                             }
                     )
                 Image(systemName: "circle.lefthalf.filled").foregroundColor(.secondary)
-                Slider(value: $store.opacity, in: 0.15...1).frame(width: 130)
+                Slider(value: $store.opacity, in: 0.15...1).frame(width: 110)
                 Spacer(minLength: 4)
+                // Experimental: read the photo into notes.
+                Button(action: onTranscribe) {
+                    Label("채보", systemImage: "wand.and.stars")
+                        .font(.subheadline.weight(.semibold))
+                        .labelStyle(.titleAndIcon)
+                }
                 Button { store.visible = false } label: {
                     Image(systemName: "eye.slash")
                 }

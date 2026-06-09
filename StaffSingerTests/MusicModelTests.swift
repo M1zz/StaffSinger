@@ -8,6 +8,7 @@
 //
 
 import XCTest
+import UIKit
 @testable import StaffSinger
 
 final class MusicModelTests: XCTestCase {
@@ -284,5 +285,56 @@ final class EditorBehaviorTests: XCTestCase {
         // Dotted quarters auto-pad across barlines; the result must still have
         // no overfilled bar and no barline-crossing note.
         XCTAssertTrue(vm.score.isWellFormed)
+    }
+}
+
+// MARK: - OMR (experimental auto-transcribe)
+
+final class OMRTests: XCTestCase {
+
+    /// Render a clean synthetic staff with filled, stemmed noteheads sitting on
+    /// the given staff-line Y positions.
+    private func staffImage(noteYs: [CGFloat],
+                            lineYs: [CGFloat] = [60, 80, 100, 120, 140],
+                            size: CGSize = CGSize(width: 600, height: 220)) -> UIImage {
+        let renderer = UIGraphicsImageRenderer(size: size)
+        return renderer.image { ctx in
+            let c = ctx.cgContext
+            c.setFillColor(UIColor.white.cgColor)
+            c.fill(CGRect(origin: .zero, size: size))
+            c.setStrokeColor(UIColor.black.cgColor)
+            c.setLineWidth(2)
+            for y in lineYs {
+                c.move(to: CGPoint(x: 20, y: y))
+                c.addLine(to: CGPoint(x: size.width - 20, y: y))
+            }
+            c.strokePath()
+            c.setFillColor(UIColor.black.cgColor)
+            let xs: [CGFloat] = [100, 250, 400]
+            for (i, y) in noteYs.enumerated() {
+                let x = xs[i]
+                c.fillEllipse(in: CGRect(x: x - 11, y: y - 8, width: 22, height: 16))
+                c.fill(CGRect(x: x + 9, y: y - 50, width: 3, height: 50))   // stem
+            }
+        }
+    }
+
+    func testTranscribesNotesAndPitches() {
+        // Noteheads on the top line (F5=77), middle line (B4=71), bottom line (E4=64).
+        let img = staffImage(noteYs: [60, 100, 140])
+        let notes = OMR.transcribe(img, maxBeats: 16)
+        XCTAssertEqual(notes.count, 3, "세 음표를 인식해야 한다")
+        XCTAssertEqual(notes.map { $0.pitch.midi }, [77, 71, 64], "F5, B4, E4 순서")
+        XCTAssertTrue(notes.allSatisfy { $0.duration == .quarter }, "채운 머리+기둥 → 4분음표")
+    }
+
+    func testNoStaffReturnsEmpty() {
+        // A blank white image has no staff → nothing to transcribe.
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 300, height: 200))
+        let blank = renderer.image { ctx in
+            UIColor.white.setFill()
+            ctx.fill(CGRect(x: 0, y: 0, width: 300, height: 200))
+        }
+        XCTAssertTrue(OMR.transcribe(blank).isEmpty)
     }
 }

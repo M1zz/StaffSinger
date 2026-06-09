@@ -26,6 +26,7 @@ struct ContentView: View {
     @State private var showCamera = false
     @State private var showLibrary = false
     @State private var cropItem: PickedImage? = nil
+    @State private var omrMessage: String? = nil
 
     private var panelSpring: Animation { .spring(response: 0.35, dampingFraction: 0.85) }
 
@@ -55,7 +56,13 @@ struct ContentView: View {
             .animation(.easeOut(duration: 0.15), value: vm.liveReadout)
 
             // Floating reference photo (drag/opacity/hide), above everything.
-            ReferenceOverlay(store: reference)
+            ReferenceOverlay(store: reference, onTranscribe: runTranscription)
+        }
+        .alert("자동 채보 (실험)", isPresented: Binding(
+            get: { omrMessage != nil }, set: { if !$0 { omrMessage = nil } })) {
+            Button("확인", role: .cancel) { omrMessage = nil }
+        } message: {
+            Text(omrMessage ?? "")
         }
         .confirmationDialog("악보 사진", isPresented: $showSourceDialog,
                             titleVisibility: .visible) {
@@ -100,6 +107,25 @@ struct ContentView: View {
     /// appear once there's something to play / edit.
     private var controlsVisible: Bool {
         !vm.score.notes.isEmpty || showControls
+    }
+
+    /// Experimental: read the cropped photo into notes (clean printed monophonic
+    /// single line works best). Replaces the current score on success.
+    private func runTranscription() {
+        guard let img = reference.image else { return }
+        let maxBeats = vm.score.measureCapacity * 2
+        Task {
+            let notes = await Task.detached(priority: .userInitiated) {
+                OMR.transcribe(img, maxBeats: maxBeats)
+            }.value
+            if notes.isEmpty {
+                omrMessage = "악보를 인식하지 못했습니다. 깨끗한 인쇄·한 줄·정면 사진일수록 잘 됩니다."
+            } else {
+                vm.score.notes = notes
+                vm.selectedNoteID = nil
+                omrMessage = "\(notes.count)개 음표를 인식했습니다 (실험적).\n음높이·길이는 직접 확인하고 고쳐 주세요."
+            }
+        }
     }
 
     /// Defer the crop screen until the picker sheet has dismissed, so the two
