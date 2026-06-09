@@ -143,7 +143,7 @@ struct ContentView: View {
     }
 
     private var topBar: some View {
-        HStack(alignment: .top, spacing: 10) {
+        HStack(alignment: .center, spacing: 10) {
             if showControls {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(vm.score.title)
@@ -152,7 +152,6 @@ struct ContentView: View {
                          + keySuffix)
                         .font(.caption).foregroundColor(.secondary)
                 }
-                .padding(.top, 6)
                 .transition(.opacity)
             }
 
@@ -190,8 +189,8 @@ struct ContentView: View {
                 if audio.isPlaying { vm.stop() } else { vm.play() }
             } label: {
                 Image(systemName: audio.isPlaying ? "stop.fill" : "play.fill")
-                    .font(.title2)
-                    .frame(width: 52, height: 52)
+                    .font(.title3)
+                    .frame(width: 48, height: 48)
                     .background(audio.isPlaying ? Color.red : Color.green)
                     .foregroundColor(.white)
                     .clipShape(Circle())
@@ -209,7 +208,7 @@ struct ContentView: View {
             Image(systemName: systemImage)
                 .font(.title3)
                 .foregroundColor(tint)
-                .frame(width: 44, height: 44)
+                .frame(width: 48, height: 48)
                 .background(.ultraThinMaterial, in: Circle())
                 .overlay(Circle().stroke(.black.opacity(0.05), lineWidth: 1))
         }
