@@ -15,6 +15,11 @@ struct EditorToolbar: View {
 
     var body: some View {
         VStack(spacing: 10) {
+            // Row 0: key signature — build ♯/♭ scores at a tap. Tapping ♯ adds the
+            // next sharp (파 도 솔 레 라 미 시 order), ♭ the next flat (시 미 라 레
+            // 솔 도 파). New notes on white-key lines pick up the key automatically.
+            keyRow
+
             // Row 1: duration values + dot toggle + voice (layer) picker
             HStack(spacing: 8) {
                 ForEach(NoteDuration.allCases) { dur in
@@ -79,6 +84,59 @@ struct EditorToolbar: View {
         .padding(.top, 10)
         .padding(.bottom, 8)
         // Background is provided by the enclosing editor panel.
+    }
+
+    // MARK: - Key signature row
+
+    private var keyRow: some View {
+        let key = vm.score.keySignature
+        return HStack(spacing: 8) {
+            Text("조표")
+                .font(.caption.weight(.semibold)).foregroundColor(.secondary)
+
+            // Add a flat / remove a sharp.
+            keyStepButton("♭", to: key - 1, enabled: key > -7)
+
+            // Current key, e.g. "다장조" or "G ♯1" / "B♭ ♭2".
+            Text(key == 0 ? "다장조"
+                          : "\(KeySignature(count: key).tonic) \(KeySignature(count: key).shortLabel)")
+                .font(.subheadline.weight(.bold).monospaced())
+                .foregroundColor(key == 0 ? .secondary : .accentColor)
+                .frame(minWidth: 86)
+                .animation(.easeOut(duration: 0.15), value: key)
+
+            // Add a sharp / remove a flat.
+            keyStepButton("♯", to: key + 1, enabled: key < 7)
+
+            // Back to C major in one tap (only when there's something to clear).
+            if key != 0 {
+                Button { vm.setKeySignature(0) } label: {
+                    Text("♮")
+                        .font(.title3.weight(.bold))
+                        .frame(width: 38, height: 36)
+                        .background(Color(.systemGray6)).cornerRadius(10)
+                        .foregroundColor(.primary)
+                }
+                .transition(.scale.combined(with: .opacity))
+            }
+
+            Spacer(minLength: 0)
+        }
+        .animation(.easeOut(duration: 0.15), value: key)
+    }
+
+    /// One side of the key stepper. Moves the signature toward sharps or flats,
+    /// clamped to ±7; disabled (greyed) at the ends.
+    private func keyStepButton(_ symbol: String, to target: Int, enabled: Bool) -> some View {
+        Button { vm.setKeySignature(target) } label: {
+            Text(symbol)
+                .font(.title3.weight(.bold))
+                .frame(width: 44, height: 36)
+                .background(Color(.systemGray6)).cornerRadius(10)
+                .foregroundColor(.primary)
+        }
+        .disabled(!enabled)
+        .opacity(enabled ? 1 : 0.35)
     }
 
     /// One duration value button. Selecting it sets the default for new notes

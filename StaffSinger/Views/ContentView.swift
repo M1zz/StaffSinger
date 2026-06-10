@@ -163,14 +163,12 @@ struct ContentView: View {
             }
             .transition(.scale.combined(with: .opacity))
 
-            // Metronome + settings only matter once the editor panel is open.
-            if showControls {
-                circleButton(
-                    systemImage: "metronome",
-                    tint: audio.metronomeEnabled ? .accentColor : .secondary
-                ) { audio.metronomeEnabled.toggle() }
-                    .transition(.scale.combined(with: .opacity))
+            // Always available too: mute/unmute the metronome (and count-in).
+            // A diagonal slash makes the muted state unmistakable.
+            metronomeButton
 
+            // Settings only matters once the editor panel is open.
+            if showControls {
                 circleButton(systemImage: "slider.horizontal.3", tint: .primary) {
                     showSettings = true
                 }
@@ -200,6 +198,29 @@ struct ContentView: View {
         .padding(.horizontal, 16)
         .padding(.top, 8)
         .animation(.easeInOut(duration: 0.25), value: showControls)
+    }
+
+    /// Metronome mute toggle. On = accent metronome; off = greyed with a
+    /// diagonal slash so it clearly reads as "no click".
+    private var metronomeButton: some View {
+        let on = audio.metronomeEnabled
+        return Button { audio.metronomeEnabled.toggle() } label: {
+            ZStack {
+                Image(systemName: "metronome")
+                    .font(.title3)
+                    .foregroundColor(on ? .accentColor : .secondary)
+                if !on {
+                    Capsule()
+                        .fill(Color.secondary)
+                        .frame(width: 28, height: 2.5)
+                        .rotationEffect(.degrees(-45))
+                }
+            }
+            .frame(width: 48, height: 48)
+            .background(.ultraThinMaterial, in: Circle())
+            .overlay(Circle().stroke(.black.opacity(0.05), lineWidth: 1))
+        }
+        .accessibilityLabel(on ? "메트로놈 끄기" : "메트로놈 켜기")
     }
 
     private func circleButton(systemImage: String, tint: Color,

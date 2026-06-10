@@ -175,6 +175,14 @@ struct KeySignature {
         if count == 0 { return "" }
         return count > 0 ? "♯\(count)" : "♭\(-count)"
     }
+
+    /// Tonic note name of the major key, e.g. "C", "G", "B♭" — for compact chips.
+    var tonic: String {
+        let sharpTonic = ["C","G","D","A","E","B","F♯","C♯"]
+        let flatTonic  = ["C","F","B♭","E♭","A♭","D♭","G♭","C♭"]
+        if count >= 0 { return sharpTonic[min(count, 7)] }
+        return flatTonic[min(-count, 7)]
+    }
 }
 
 // MARK: - ScoreNote

@@ -21,9 +21,18 @@ final class AudioEngine: ObservableObject {
     /// Index into `chordGroups` that is currently sounding (for highlight).
     @Published var currentGroupIndex: Int? = nil
 
-    // Settings the user can toggle.
-    @Published var metronomeEnabled = true
-    @Published var countInEnabled = true
+    // Settings the user can toggle. Persisted so a muted metronome stays muted
+    // across launches. `metronomeEnabled` is the master switch for *all* clicks:
+    // turning it off silences both the beat track and the count-in.
+    @Published var metronomeEnabled: Bool {
+        didSet { UserDefaults.standard.set(metronomeEnabled, forKey: Self.metronomeKey) }
+    }
+    @Published var countInEnabled: Bool {
+        didSet { UserDefaults.standard.set(countInEnabled, forKey: Self.countInKey) }
+    }
+
+    private static let metronomeKey = "metronomeEnabled"
+    private static let countInKey = "countInEnabled"
 
     private let engine = AVAudioEngine()
     private let melodySampler = AVAudioUnitSampler()
@@ -33,6 +42,10 @@ final class AudioEngine: ObservableObject {
     private var playbackTask: Task<Void, Never>? = nil
 
     init() {
+        // Default both on the first launch; honor the saved choice afterwards.
+        let defaults = UserDefaults.standard
+        metronomeEnabled = defaults.object(forKey: Self.metronomeKey) as? Bool ?? true
+        countInEnabled = defaults.object(forKey: Self.countInKey) as? Bool ?? true
         configureSession()
         buildGraph()
     }
@@ -158,7 +171,9 @@ final class AudioEngine: ObservableObject {
             guard let self else { return }
 
             // --- Count-in: one full measure of clicks before the music ---
-            if self.countInEnabled {
+            // Suppressed entirely when the metronome is muted, so "metronome
+            // off" means no clicking at all.
+            if self.countInEnabled && self.metronomeEnabled {
                 let count = score.beatsPerMeasure
                 for i in 0..<count {
                     if Task.isCancelled { return }
@@ -173,11 +188,15 @@ final class AudioEngine: ObservableObject {
             let metronomeTask = Task { [weak self] in
                 guard let self else { return }
                 guard self.metronomeEnabled else { return }
-                let totalBeats = Int(ceil(score.totalBeats))
+                // Click each beat the music actually occupies — beats 0 … N-1
+                // for an N-beat score. Using `<` (not `<=`) stops us from
+                // sounding one extra downbeat past the end, which made a full
+                // 4/4 bar (e.g. 8 8 4 4 4) click five times and feel like 5/4.
+                let totalBeats = Int(ceil(score.totalBeats - 0.001))
                 let qbpm = score.quarterBeatsPerMeasure
                 var beat = 0.0
                 var idx = 0
-                while idx <= totalBeats {
+                while idx < totalBeats {
                     if Task.isCancelled { return }
                     let positionInMeasure = beat.truncatingRemainder(dividingBy: qbpm)
                     self.click(strong: abs(positionInMeasure) < 0.001)

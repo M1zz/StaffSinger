@@ -204,14 +204,20 @@ final class ScoreViewModel: ObservableObject {
 
     // MARK: - Auto-complete with rests
 
-    /// Fill any silent gaps between notes — and pad the last measure up to a
-    /// full bar (capped at two measures) — with rests, so an unfinished score
-    /// becomes a complete, readable one before it plays.
-    func fillRestsForPlayback() {
-        let measureBeats = score.quarterBeatsPerMeasure
-        guard measureBeats > 0 else { return }
-        let groups = score.chordGroups
-        guard !groups.isEmpty else { return }
+    /// A copy of the score prepared for playback: any silent gap *between* notes
+    /// is filled with rests so the timing reads right, and a trailing partial
+    /// measure is padded up to its bar line (≤ two measures).
+    ///
+    /// Crucially this is **non-destructive** — it never touches the editable
+    /// `score`, so pressing play never adds rests to what the user sees. When
+    /// every measure is already correctly filled (e.g. 8 8 4 4 4 = a full 4/4
+    /// bar) there are no gaps and nothing to pad, so the score is returned as-is.
+    func scoreForPlayback() -> Score {
+        var result = score
+        let measureBeats = result.quarterBeatsPerMeasure
+        guard measureBeats > 0 else { return result }
+        let groups = result.chordGroups
+        guard !groups.isEmpty else { return result }
 
         var additions: [ScoreNote] = []
         var cursor = 0.0
@@ -224,13 +230,15 @@ final class ScoreViewModel: ObservableObject {
         }
 
         // Pad the trailing partial measure up to a bar line (≤ two measures).
+        // A measure that already lands exactly on a bar line adds nothing.
         let target = min(2 * measureBeats,
                          (cursor / measureBeats).rounded(.up) * measureBeats)
         if target - cursor > 0.0001 {
             additions += rests(from: cursor, length: target - cursor)
         }
 
-        score.notes.append(contentsOf: additions)
+        result.notes.append(contentsOf: additions)
+        return result
     }
 
     /// Greedily express a span of empty beats as the fewest standard rests.
@@ -252,8 +260,7 @@ final class ScoreViewModel: ObservableObject {
     // MARK: - Playback proxies
 
     func play() {
-        fillRestsForPlayback()
-        audio.play(score: score)
+        audio.play(score: scoreForPlayback())
     }
     func stop() { audio.stop() }
 }
