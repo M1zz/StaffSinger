@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StaffSinger</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+    line-height: 1.7; color: #1d2433; background: #f6f9fd;
+  }
+  header {
+    background: linear-gradient(135deg, #5bb8ff 0%, #4facfe 35%, #1d3a8a 100%);
+    color: #fff; text-align: center; padding: 72px 24px 64px;
+  }
+  header h1 { font-size: 2.2rem; letter-spacing: -0.02em; }
+  header p { margin-top: 10px; opacity: 0.92; }
+  main { max-width: 720px; margin: -32px auto 64px; padding: 0 20px; }
+  .card {
+    background: #fff; border-radius: 16px; padding: 28px 28px;
+    box-shadow: 0 8px 24px rgba(29, 58, 138, 0.10); margin-bottom: 20px;
+  }
+  .card h2 { font-size: 1.2rem; margin-bottom: 8px; color: #1d3a8a; }
+  a.btn {
+    display: inline-block; margin-top: 12px; padding: 10px 20px;
+    background: #4facfe; color: #fff; border-radius: 10px;
+    text-decoration: none; font-weight: 600;
+  }
+  a.btn:hover { background: #3d97e8; }
+  footer { text-align: center; color: #8a93a6; font-size: 0.85rem; padding: 24px; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #10141c; color: #e6eaf2; }
+    .card { background: #1a2030; box-shadow: none; }
+    .card h2 { color: #7fc1ff; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>🎼 StaffSinger</h1>
+  <p>오선지에 음표를 찍고, 박자와 음높이를 실제 소리로 들려주는 iOS 앱</p>
+</header>
+<main>
+  <div class="card">
+    <h2>지원 (Support)</h2>
+    <p>사용 방법, 자주 묻는 질문, 문의처를 안내합니다.</p>
+    <a class="btn" href="support.html">지원 페이지 열기</a>
+  </div>
+  <div class="card">
+    <h2>개인정보처리방침 (Privacy Policy)</h2>
+    <p>StaffSinger가 다루는 정보와 그 처리 방식을 안내합니다.</p>
+    <a class="btn" href="privacy.html">개인정보처리방침 보기</a>
+  </div>
+</main>
+<footer>© 2026 StaffSinger · <a href="https://github.com/M1zz/StaffSinger">GitHub</a></footer>
+</body>
+</html>

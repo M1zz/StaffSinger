@@ -66,6 +66,13 @@ Views/
   별도 Task로 동시에 돌려 긴 음/화음 중에도 박이 들립니다.
 - `beats`는 4분음표 = 1.0 기준. 6/8 등은 `quarterBeatsPerMeasure`로 환산합니다.
 
+## 지원 · 개인정보처리방침
+
+GitHub Pages로 제공됩니다 (`docs/` 폴더):
+
+- **지원 페이지**: https://m1zz.github.io/StaffSinger/support.html — FAQ, 문의처
+- **개인정보처리방침**: https://m1zz.github.io/StaffSinger/privacy.html — 개인정보를 수집하지 않는 완전 오프라인 앱입니다
+
 ## 다음 단계 아이디어
 
 - MusicXML / MIDI 임포트(기존 악보 불러오기) — 진짜 "초견 도우미"가 되려면 핵심
