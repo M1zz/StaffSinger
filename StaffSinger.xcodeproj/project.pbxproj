@@ -14,21 +14,26 @@
 		6D530A84D26E4F83811ACE0B /* StaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76C4695A60486ABD5FADC7 /* StaffView.swift */; };
 		79CCAF8A605B449B988677C0 /* MusicModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93642FFEB616429FAD364790 /* MusicModels.swift */; };
 		9DBE349BC29147B7BFBEB84B /* StaffSingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D8653D47A4E599759148D /* StaffSingerApp.swift */; };
-		B28E59ABD4FD4D81A49E8CD2 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAE88B4D7634EEDAF5B7334 /* AudioEngine.swift */; };
-		CFE18438ADB94E5D9F9A8007 /* StaffLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E770722A9A6445CB768B0EB /* StaffLayout.swift */; };
-		EAD0F75BD6DC427F80C0761C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D1B36449F4414884D04043 /* Assets.xcassets */; };
 		A1B2C3D4E5F60001A1B2C3D4 /* UprightPianoKW.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */; };
 		B1B2C3D4E5F60004B1B2C3D4 /* ReferenceFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */; };
+		B28E59ABD4FD4D81A49E8CD2 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAE88B4D7634EEDAF5B7334 /* AudioEngine.swift */; };
 		CC0000000000000000000004 /* MusicModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000003 /* MusicModelTests.swift */; };
+		CFE18438ADB94E5D9F9A8007 /* StaffLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E770722A9A6445CB768B0EB /* StaffLayout.swift */; };
 		DD0000000000000000000002 /* OMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0000000000000000000001 /* OMR.swift */; };
+		EAD0F75BD6DC427F80C0761C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D1B36449F4414884D04043 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CC000000000000000000000D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74C8F414A9144E818D312ACE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F338C2F0ED4B4199A9773044;
+			remoteInfo = StaffSinger;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UprightPianoKW.sf2; sourceTree = "<group>"; };
-		B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceFeature.swift; sourceTree = "<group>"; };
-		CC0000000000000000000002 /* StaffSingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaffSingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC0000000000000000000003 /* MusicModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModelTests.swift; sourceTree = "<group>"; };
-		DD0000000000000000000001 /* OMR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMR.swift; sourceTree = "<group>"; };
 		079D6A2F8E5B416DB84081CB /* StaffSinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaffSinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EAE88B4D7634EEDAF5B7334 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
 		252173120F724CAEA34F22A7 /* TransportBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportBar.swift; sourceTree = "<group>"; };
@@ -40,7 +45,12 @@
 		81FAA96257E3497D8DCC2EA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93642FFEB616429FAD364790 /* MusicModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModels.swift; sourceTree = "<group>"; };
 		9F76C4695A60486ABD5FADC7 /* StaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffView.swift; sourceTree = "<group>"; };
+		A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UprightPianoKW.sf2; sourceTree = "<group>"; };
+		B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceFeature.swift; sourceTree = "<group>"; };
 		C6D1B36449F4414884D04043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC0000000000000000000002 /* StaffSingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaffSingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0000000000000000000003 /* MusicModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModelTests.swift; sourceTree = "<group>"; };
+		DD0000000000000000000001 /* OMR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMR.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,23 +153,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F338C2F0ED4B4199A9773044 /* StaffSinger */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 56D7B90849544BA897E9777A /* Build configuration list for PBXNativeTarget "StaffSinger" */;
-			buildPhases = (
-				9CF8A633FBC441DFB7BFBDBC /* Sources */,
-				9BA13DE5BA7741C482F9EB0A /* Frameworks */,
-				A74C08286DB34717BD5AE249 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = StaffSinger;
-			productName = StaffSinger;
-			productReference = 079D6A2F8E5B416DB84081CB /* StaffSinger.app */;
-			productType = "com.apple.product-type.application";
-		};
 		CC0000000000000000000001 /* StaffSingerTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC0000000000000000000009 /* Build configuration list for PBXNativeTarget "StaffSingerTests" */;
@@ -178,6 +171,23 @@
 			productReference = CC0000000000000000000002 /* StaffSingerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F338C2F0ED4B4199A9773044 /* StaffSinger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 56D7B90849544BA897E9777A /* Build configuration list for PBXNativeTarget "StaffSinger" */;
+			buildPhases = (
+				9CF8A633FBC441DFB7BFBDBC /* Sources */,
+				9BA13DE5BA7741C482F9EB0A /* Frameworks */,
+				A74C08286DB34717BD5AE249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StaffSinger;
+			productName = StaffSinger;
+			productReference = 079D6A2F8E5B416DB84081CB /* StaffSinger.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -188,12 +198,12 @@
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					F338C2F0ED4B4199A9773044 = {
-						CreatedOnToolsVersion = 15.4;
-					};
 					CC0000000000000000000001 = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = F338C2F0ED4B4199A9773044;
+					};
+					F338C2F0ED4B4199A9773044 = {
+						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
@@ -272,16 +282,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXContainerItemProxy section */
-		CC000000000000000000000D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 74C8F414A9144E818D312ACE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F338C2F0ED4B4199A9773044;
-			remoteInfo = StaffSinger;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin XCBuildConfiguration section */
 		75B336110F84425BA246D91D /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -328,57 +328,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.StaffSinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
-		};
-		EC4223F5D0D2438D91A5653B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_OPTIMIZATION_LEVEL = s;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		F0923B00FF574B5DB307BC95 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QGAQ3AY3R3;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = StaffSinger/Info.plist;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				"INFOPLIST_KEY_UISupportedInterfaceOrientations[sdk=iphoneos*]" = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.StaffSinger;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		CC000000000000000000000A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -427,6 +383,54 @@
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StaffSinger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StaffSinger";
 			};
 			name = Release;
+		};
+		EC4223F5D0D2438D91A5653B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0923B00FF574B5DB307BC95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StaffSinger/Info.plist;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				"INFOPLIST_KEY_UISupportedInterfaceOrientations[sdk=iphoneos*]" = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.StaffSinger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
