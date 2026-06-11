@@ -4,6 +4,8 @@
 <dict>
     <key>NSCameraUsageDescription</key>
     <string>악보를 촬영해 참고 이미지로 불러오기 위해 카메라를 사용합니다.</string>
+    <key>UIRequiresFullScreen</key>
+    <true/>
     <key>UILaunchScreen</key>
     <dict/>
     <key>UIApplicationSceneManifest</key>
