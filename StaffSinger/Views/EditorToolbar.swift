@@ -63,12 +63,6 @@ struct EditorToolbar: View {
                 // Small gap before the destructive/utility cluster.
                 Spacer().frame(width: 8)
 
-                Button { vm.addRest() } label: {
-                    Image(systemName: "pause")
-                        .frame(width: 38, height: 38)
-                        .background(Color(.systemGray6)).cornerRadius(10)
-                }
-
                 Button(role: .destructive) { vm.deleteSelected() } label: {
                     Image(systemName: "trash")
                         .frame(width: 38, height: 38)
@@ -140,25 +134,38 @@ struct EditorToolbar: View {
         .opacity(enabled ? 1 : 0.35)
     }
 
-    /// One duration value button. Selecting it sets the default for new notes
-    /// and retunes the current selection to match.
+    /// One duration value button. In note mode it picks the value for new notes
+    /// (and retunes the current selection). In rest mode each button becomes a
+    /// rest of that length: tapping it drops the rest and returns to note mode,
+    /// so every rest value is available in one tap.
     private func durationButton(_ dur: NoteDuration) -> some View {
         Button {
-            vm.selectedDuration = dur
-            if let id = vm.selectedNoteID {
-                vm.changeDuration(of: id, to: dur)
+            if vm.restMode {
+                vm.addRest(duration: dur)
+                vm.restMode = false          // one-shot: back to note mode
+            } else {
+                vm.selectedDuration = dur
+                if let id = vm.selectedNoteID {
+                    vm.changeDuration(of: id, to: dur)
+                }
             }
         } label: {
             // Unicode Musical Symbols (U+1D1xx) aren't in the system font, so we
-            // draw the note glyphs ourselves to guarantee they render anywhere.
-            let on = vm.selectedDuration == dur
-            NoteDurationGlyph(duration: dur)
-                .frame(width: 44, height: 44)
-                .background(on ? Color.accentColor.opacity(0.2) : Color(.systemGray6))
-                .overlay(RoundedRectangle(cornerRadius: 10)
-                    .stroke(on ? Color.accentColor : .clear, lineWidth: 2))
-                .cornerRadius(10)
-                .foregroundColor(.primary)
+            // draw the note / rest glyphs ourselves to guarantee they render.
+            let on = !vm.restMode && vm.selectedDuration == dur
+            Group {
+                if vm.restMode {
+                    RestGlyph(duration: dur)
+                } else {
+                    NoteDurationGlyph(duration: dur)
+                }
+            }
+            .frame(width: 44, height: 44)
+            .background(on ? Color.accentColor.opacity(0.2) : Color(.systemGray6))
+            .overlay(RoundedRectangle(cornerRadius: 10)
+                .stroke(on ? Color.accentColor : .clear, lineWidth: 2))
+            .cornerRadius(10)
+            .foregroundColor(.primary)
         }
     }
 

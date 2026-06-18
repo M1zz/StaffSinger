@@ -107,11 +107,15 @@ final class ScoreViewModel: ObservableObject {
         audio.audition(pitch)
     }
 
-    /// Insert a rest of the current duration at the end of the active voice.
-    func addRest() {
-        guard let beat = appendStartRespectingBars(length: noteLength, layer: activeLayer) else { return }
+    /// Insert a rest at the end of the active voice. Defaults to the current
+    /// tool duration, but a specific value can be passed (the rest-length
+    /// buttons use this so any rest value can be dropped in one tap).
+    func addRest(duration: NoteDuration? = nil) {
+        let dur = duration ?? selectedDuration
+        let length = dur.beats * (selectedDotted ? 1.5 : 1.0)
+        guard let beat = appendStartRespectingBars(length: length, layer: activeLayer) else { return }
         let note = ScoreNote(
-            pitch: .middleC, duration: selectedDuration,
+            pitch: .middleC, duration: dur,
             beatOffset: beat, isRest: true, dotted: selectedDotted, layer: activeLayer)
         score.notes.append(note)
         selectedNoteID = note.id

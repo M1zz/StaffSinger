@@ -95,6 +95,14 @@
     현재 길이의 쉼표가 들어감(`ScoreViewModel.restMode`, `StaffView` 탭 분기).
     하단 안내 스트립에 "쉼표 모드" 표시
   - 테스트 2종 추가(길이 유지·쉼표 추가) — 전체 37개 통과
+- [x] 설정 화면 잘림·쉼표 UX 개선
+  - 설정 화면이 가로모드에서 상단이 잘리던 문제: `.sheet`→`.fullScreenCover`로
+    바꾸고 `navigationBarTitleDisplayMode(.inline)` 적용 → 제목·완료·전 섹션 표시
+  - 쉼표를 한 번 넣으면 자동으로 음표 모드 복귀(one-shot): 쉼표 모드에서 길이
+    버튼을 누르면 그 길이의 쉼표가 들어가고 `restMode` 해제
+  - 쉼표 박자 선택: 쉼표 모드일 때 음길이 줄이 5종 쉼표 버튼(온/2·4·8·16분)으로
+    바뀌어 원하는 길이를 한 번에 입력(기존엔 4분쉼표만 쉽게 됨).
+    `addRest(duration:)`로 길이 지정, 오선 탭 쉼표 분기는 제거
 
 ## 다음 단계 아이디어 (README 참고)
 - [ ] MusicXML / MIDI 임포트

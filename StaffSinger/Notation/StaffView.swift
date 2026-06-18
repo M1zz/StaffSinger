@@ -338,7 +338,6 @@ struct StaffView: View {
             .gesture(
                 DragGesture(minimumDistance: 0)
                     .onChanged { value in
-                        guard !vm.restMode else { return }   // rests ignore pitch
                         let pitch = vm.keyed(layout.pitch(forY: value.location.y))
                         if previewPitch != pitch {
                             if previewPitch == nil { haptics.prepare() }
@@ -350,12 +349,6 @@ struct StaffView: View {
                         }
                     }
                     .onEnded { value in
-                        // Rest mode: drop a rest of the current duration, no pitch.
-                        if vm.restMode {
-                            vm.addRest()
-                            commitHaptic.impactOccurred()
-                            return
-                        }
                         let committed = previewPitch ?? vm.keyed(layout.pitch(forY: value.location.y))
                         audio.endPreview()
                         previewPitch = nil

@@ -137,6 +137,7 @@ struct SettingsSheet: View {
                 }
             }
             .navigationTitle("설정")
+            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) {
                     Button("완료") { dismiss() }
