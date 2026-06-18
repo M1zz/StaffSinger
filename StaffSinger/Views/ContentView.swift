@@ -35,6 +35,8 @@ struct ContentView: View {
     @State private var omrMessage: String? = nil
 
     private var panelSpring: Animation { .spring(response: 0.35, dampingFraction: 0.85) }
+    /// Bottom space the piano + its note-value strip occupy (used to lift the staff).
+    private let keyboardAreaHeight: CGFloat = 196
 
     init() {
         // Create one engine and share it between the view and the view model
@@ -47,8 +49,10 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             // Staff + controls stay inside the safe area so nothing tucks under
-            // the Dynamic Island / camera or the home indicator.
+            // the Dynamic Island / camera or the home indicator. When the piano
+            // is up we reserve the bottom for it so the staff lifts clear.
             StaffView(vm: vm, audio: audio)
+                .padding(.bottom, showKeyboard ? keyboardAreaHeight : 0)
 
             VStack(spacing: 0) {
                 topBar
@@ -58,13 +62,8 @@ struct ContentView: View {
                         .transition(.move(edge: .bottom).combined(with: .opacity))
                 }
                 if showKeyboard {
-                    PianoKeyboard(startOctave: $keyboardStartOctave) { p in
-                        // Apply the key signature to white keys; black keys are
-                        // already spelled, so leave them as-is.
-                        vm.addNote(pitch: p.isAccidental ? p : vm.keyed(p))
-                    }
-                    .background(.ultraThinMaterial)
-                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                    keyboardArea
+                        .transition(.move(edge: .bottom).combined(with: .opacity))
                 }
                 bottomArea
             }
@@ -123,6 +122,67 @@ struct ContentView: View {
         )
         .animation(panelSpring, value: showSettings)
         .animation(panelSpring, value: showKeyboard)
+    }
+
+    // MARK: - Piano keyboard area
+
+    /// The on-screen piano plus a compact note-value strip, so duration/dot/
+    /// triplet stay settable without opening the full editor panel.
+    private var keyboardArea: some View {
+        VStack(spacing: 0) {
+            keyboardToolStrip
+            Divider()
+            PianoKeyboard(startOctave: $keyboardStartOctave) { p in
+                // Apply the key signature to white keys; black keys are already
+                // spelled, so leave them as-is.
+                vm.addNote(pitch: p.isAccidental ? p : vm.keyed(p))
+            }
+        }
+        .background(
+            Rectangle().fill(.ultraThinMaterial).ignoresSafeArea(edges: .bottom)
+        )
+    }
+
+    /// Note value + dot + triplet, sized to sit above the keyboard.
+    private var keyboardToolStrip: some View {
+        HStack(spacing: 6) {
+            ForEach(NoteDuration.allCases) { dur in
+                toolChip(selected: vm.selectedDuration == dur) {
+                    vm.selectedDuration = dur
+                    if let id = vm.selectedNoteID { vm.changeDuration(of: id, to: dur) }
+                } label: {
+                    NoteDurationGlyph(duration: dur)
+                }
+            }
+            toolChip(selected: vm.selectedDotted) {
+                vm.selectedDotted.toggle()
+                if let id = vm.selectedNoteID { vm.setDotted(of: id, vm.selectedDotted) }
+            } label: {
+                Text("\u{2022}").font(.system(size: 26, weight: .black)).foregroundColor(.primary)
+            }
+            toolChip(selected: vm.tripletMode) {
+                vm.tripletMode.toggle()
+            } label: {
+                Text("3").font(.system(size: 19, weight: .heavy, design: .serif)).italic()
+                    .foregroundColor(vm.tripletMode ? .accentColor : .primary)
+            }
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 7)
+    }
+
+    /// A small square button used by the keyboard's tool strip.
+    private func toolChip<Label: View>(selected: Bool, action: @escaping () -> Void,
+                                       @ViewBuilder label: () -> Label) -> some View {
+        Button(action: action) {
+            label()
+                .frame(width: 42, height: 40)
+                .background(selected ? Color.accentColor.opacity(0.2) : Color(.systemGray6))
+                .overlay(RoundedRectangle(cornerRadius: 9)
+                    .stroke(selected ? Color.accentColor : .clear, lineWidth: 2))
+                .cornerRadius(9)
+        }
+        .buttonStyle(.plain)
     }
 
     // MARK: - Settings palette
@@ -197,38 +257,49 @@ struct ContentView: View {
 
             Spacer(minLength: 0)
 
-            // Always available, even on a blank sheet: bring in a reference photo.
-            circleButton(systemImage: "camera.viewfinder", tint: .primary) {
-                showSourceDialog = true
-            }
-            .transition(.scale.combined(with: .opacity))
+            // In keyboard mode the staff lifts above the piano; hide the rest of
+            // the floating chrome so nothing overlaps the score — leave only the
+            // piano toggle (to exit) and play.
+            if !showKeyboard {
+                // Always available, even on a blank sheet: bring in a reference photo.
+                circleButton(systemImage: "camera.viewfinder", tint: .primary) {
+                    showSourceDialog = true
+                }
+                .transition(.scale.combined(with: .opacity))
 
-            // Always available too: mute/unmute the metronome (and count-in).
-            // A diagonal slash makes the muted state unmistakable.
-            metronomeButton
+                // Mute/unmute the metronome (and count-in).
+                metronomeButton
 
-            // Always available: show / hide the on-screen piano for note entry.
-            circleButton(systemImage: "pianokeys",
-                         tint: showKeyboard ? .accentColor : .primary) {
-                withAnimation(panelSpring) { showKeyboard.toggle() }
-            }
-            .transition(.scale.combined(with: .opacity))
+                // Settings only matters once the editor panel is open.
+                if showControls {
+                    circleButton(systemImage: "slider.horizontal.3", tint: .primary) {
+                        showSettings = true
+                    }
+                    .transition(.scale.combined(with: .opacity))
+                }
 
-            // Settings only matters once the editor panel is open.
-            if showControls {
-                circleButton(systemImage: "slider.horizontal.3", tint: .primary) {
-                    showSettings = true
+                // Note-tools toggle (opening it closes the piano).
+                circleButton(
+                    systemImage: showControls ? "chevron.down" : "music.note",
+                    tint: showControls ? .accentColor : .primary
+                ) {
+                    withAnimation(panelSpring) {
+                        showControls.toggle()
+                        if showControls { showKeyboard = false }
+                    }
                 }
                 .transition(.scale.combined(with: .opacity))
             }
 
-            // Always visible from launch: note-tools toggle + play.
-            circleButton(
-                systemImage: showControls ? "chevron.down" : "music.note",
-                tint: showControls ? .accentColor : .primary
-            ) {
-                withAnimation(panelSpring) { showControls.toggle() }
+            // Show / hide the on-screen piano (opening it closes the note panel).
+            circleButton(systemImage: "pianokeys",
+                         tint: showKeyboard ? .accentColor : .primary) {
+                withAnimation(panelSpring) {
+                    showKeyboard.toggle()
+                    if showKeyboard { showControls = false }
+                }
             }
+            .transition(.scale.combined(with: .opacity))
 
             Button {
                 if audio.isPlaying { vm.stop() } else { vm.play() }
