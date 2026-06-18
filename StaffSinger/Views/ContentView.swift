@@ -228,18 +228,25 @@ struct ContentView: View {
     }
 
     /// Metronome mute toggle. On = accent metronome; off = greyed with a
-    /// diagonal slash so it clearly reads as "no click".
+    /// diagonal slash so it clearly reads as "no click". The slash sits in a
+    /// background-colored gap (like a native SF `.slash`) so it doesn't blur
+    /// into the glyph and look like a caution sign.
     private var metronomeButton: some View {
         let on = audio.metronomeEnabled
         return Button { audio.metronomeEnabled.toggle() } label: {
             ZStack {
                 Image(systemName: "metronome")
                     .font(.title3)
-                    .foregroundColor(on ? .accentColor : .secondary)
+                    .foregroundColor(on ? .accentColor : Color.secondary.opacity(0.7))
                 if !on {
+                    // Knockout gap + slash line, drawn corner-to-corner.
+                    Capsule()
+                        .fill(.ultraThinMaterial)
+                        .frame(width: 34, height: 7)
+                        .rotationEffect(.degrees(-45))
                     Capsule()
                         .fill(Color.secondary)
-                        .frame(width: 28, height: 2.5)
+                        .frame(width: 34, height: 3)
                         .rotationEffect(.degrees(-45))
                 }
             }
