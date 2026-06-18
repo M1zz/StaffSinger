@@ -89,6 +89,8 @@ struct StaffView: View {
                 beamLayer(beams.groups, layout: layout)             // stems + beams
                 noteLayer(layout: layout, m: m,
                           beamedIDs: beams.beamedIDs)               // notes on top
+                tripletLayer(tripletGroups(layout: layout, m: m,
+                                           beamedIDs: beams.beamedIDs))   // "3" markers
                 ghostLayer(layout: layout, m: m)
                 measureWarnings(layout: layout, m: m)  // red barline + "초과" badge
                 editorOverlay(geo: geo)           // long-press editor — top-most
@@ -496,6 +498,80 @@ struct StaffView: View {
             return BeamGroup(columns: run, stemUp: avg < Double(layout.clef.middleLineMidi))
         }
         return (groups, beamedIDs)
+    }
+
+    // MARK: - Triplet markers (셋잇단음표)
+
+    private struct TripletGroup {
+        let xL: CGFloat       // x of the first notehead column
+        let xR: CGFloat       // x of the last notehead column
+        let topY: CGFloat     // highest notehead in the group
+        let stemUp: Bool
+        let beamed: Bool      // beamed groups show just "3"; others get a bracket
+    }
+
+    /// Runs of consecutive triplet columns, chunked into threes, so each gets a
+    /// "3" (beamed) or a bracket + "3" (unbeamed) drawn above it.
+    private func tripletGroups(layout: StaffLayout, m: Metrics,
+                               beamedIDs: Set<UUID>) -> [TripletGroup] {
+        let cols = vm.score.chordGroups.filter { $0.beat < Double(m.beatLimit) }
+        var groups: [TripletGroup] = []
+        var run: [(beat: Double, notes: [ScoreNote])] = []
+
+        func flush() {
+            var i = 0
+            while i < run.count {
+                let chunk = Array(run[i..<min(i + 3, run.count)])
+                let xs = chunk.map { m.musicStartX + CGFloat($0.beat) * m.beatWidth + 16 }
+                let voicedYs = chunk.flatMap { $0.notes.filter { !$0.isRest }.map { layout.y(for: $0.pitch) } }
+                let topY = voicedYs.min() ?? (layout.topLineY + 2 * layout.lineSpacing)
+                let midis = chunk.flatMap { $0.notes.filter { !$0.isRest }.map { Double($0.pitch.midi) } }
+                let avg = midis.isEmpty ? 200 : midis.reduce(0, +) / Double(midis.count)
+                let ids = Set(chunk.flatMap { $0.notes.map { $0.id } })
+                groups.append(TripletGroup(
+                    xL: xs.first ?? 0, xR: xs.last ?? 0, topY: topY,
+                    stemUp: avg < Double(layout.clef.middleLineMidi),
+                    beamed: !ids.isDisjoint(with: beamedIDs)))
+                i += 3
+            }
+            run = []
+        }
+
+        for g in cols {
+            if g.notes.contains(where: { $0.triplet }) { run.append(g) } else { flush() }
+        }
+        flush()
+        return groups
+    }
+
+    private func tripletLayer(_ groups: [TripletGroup]) -> some View {
+        Canvas { ctx, _ in
+            for g in groups {
+                // Sit above the noteheads, clearing stems/beam when they point up.
+                let y = g.stemUp ? g.topY - 54 : g.topY - 16
+                let xL = g.xL - noteRadius
+                let xR = g.xR + noteRadius
+                let mid = (xL + xR) / 2
+
+                // The "3", centered.
+                let three = Text("3").font(.system(size: 13, weight: .bold, design: .serif)).italic()
+                ctx.draw(three, at: CGPoint(x: mid, y: y))
+
+                // Unbeamed groups get a square bracket; beamed ones just the "3".
+                if !g.beamed {
+                    var p = Path()
+                    let tick: CGFloat = 5
+                    p.move(to: CGPoint(x: xL, y: y + tick))
+                    p.addLine(to: CGPoint(x: xL, y: y))
+                    p.addLine(to: CGPoint(x: mid - 8, y: y))
+                    p.move(to: CGPoint(x: mid + 8, y: y))
+                    p.addLine(to: CGPoint(x: xR, y: y))
+                    p.addLine(to: CGPoint(x: xR, y: y + tick))
+                    ctx.stroke(p, with: .color(.black.opacity(0.7)), lineWidth: 1.2)
+                }
+            }
+        }
+        .allowsHitTesting(false)
     }
 
     private func beamLayer(_ groups: [BeamGroup], layout: StaffLayout) -> some View {

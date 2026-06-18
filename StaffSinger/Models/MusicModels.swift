@@ -257,12 +257,19 @@ struct ScoreNote: Identifiable, Equatable, Codable {
     /// Which voice / layer this note belongs to (0 = melody). Notes in different
     /// layers that share a beat form a chord; each layer is drawn in its own color.
     var layer: Int = 0
+    /// Part of a triplet (셋잇단음표): three of these fit where two normally would,
+    /// so the value is scaled by 2/3 (an eighth-triplet is 1/3 beat).
+    var triplet: Bool = false
 
-    /// Effective length in quarter-note beats, accounting for any dot.
-    var beats: Double { duration.beats * (dotted ? 1.5 : 1.0) }
+    /// Effective length in quarter-note beats, accounting for any dot or triplet.
+    var beats: Double {
+        duration.beats * (dotted ? 1.5 : 1.0) * (triplet ? 2.0 / 3.0 : 1.0)
+    }
 
-    /// Human label like "4분음표" or "점4분음표".
-    var durationLabel: String { (dotted ? "점" : "") + duration.displayName }
+    /// Human label like "4분음표", "점4분음표", or "셋잇단8분음표".
+    var durationLabel: String {
+        (triplet ? "셋잇단" : "") + (dotted ? "점" : "") + duration.displayName
+    }
 }
 
 // MARK: - Score

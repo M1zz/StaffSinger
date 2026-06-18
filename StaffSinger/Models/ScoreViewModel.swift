@@ -32,6 +32,9 @@ final class ScoreViewModel: ObservableObject {
     /// When true, pressing the staff drops a rest of the current duration
     /// instead of a pitched note.
     @Published var restMode = false
+    /// When true, new notes/rests are triplet-valued (셋잇단음표) — three fit
+    /// in the space of two.
+    @Published var tripletMode = false
 
     // MARK: - Persisted tool defaults
 
@@ -90,7 +93,7 @@ final class ScoreViewModel: ObservableObject {
         if chordMode, let sel = selectedNote {
             let note = ScoreNote(pitch: pitch, duration: selectedDuration,
                                  beatOffset: sel.beatOffset, dotted: selectedDotted,
-                                 layer: activeLayer)
+                                 layer: activeLayer, triplet: sel.triplet)
             score.notes.append(note)
             selectedNoteID = note.id
             let stack = score.notes.filter { $0.beatOffset == sel.beatOffset && !$0.isRest }
@@ -101,7 +104,8 @@ final class ScoreViewModel: ObservableObject {
         // Melody mode: append into the active voice, inside the bar lines.
         guard let beat = appendStartRespectingBars(length: noteLength, layer: activeLayer) else { return }
         let note = ScoreNote(pitch: pitch, duration: selectedDuration,
-                             beatOffset: beat, dotted: selectedDotted, layer: activeLayer)
+                             beatOffset: beat, dotted: selectedDotted,
+                             layer: activeLayer, triplet: tripletMode)
         score.notes.append(note)
         selectedNoteID = note.id
         audio.audition(pitch)
@@ -112,18 +116,19 @@ final class ScoreViewModel: ObservableObject {
     /// buttons use this so any rest value can be dropped in one tap).
     func addRest(duration: NoteDuration? = nil) {
         let dur = duration ?? selectedDuration
-        let length = dur.beats * (selectedDotted ? 1.5 : 1.0)
+        let length = dur.beats * (selectedDotted ? 1.5 : 1.0) * (tripletMode ? 2.0 / 3.0 : 1.0)
         guard let beat = appendStartRespectingBars(length: length, layer: activeLayer) else { return }
         let note = ScoreNote(
             pitch: .middleC, duration: dur,
-            beatOffset: beat, isRest: true, dotted: selectedDotted, layer: activeLayer)
+            beatOffset: beat, isRest: true, dotted: selectedDotted,
+            layer: activeLayer, triplet: tripletMode)
         score.notes.append(note)
         selectedNoteID = note.id
     }
 
     /// Length in beats of a note placed with the current tools.
     private var noteLength: Double {
-        selectedDuration.beats * (selectedDotted ? 1.5 : 1.0)
+        selectedDuration.beats * (selectedDotted ? 1.5 : 1.0) * (tripletMode ? 2.0 / 3.0 : 1.0)
     }
 
     /// Where an appended note/rest of `length` beats should start so it never

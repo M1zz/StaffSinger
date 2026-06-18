@@ -26,6 +26,7 @@ struct EditorToolbar: View {
                     durationButton(dur)
                 }
                 dotButton
+                tripletButton
                 restButton
                 Divider().frame(height: 36)
                 ForEach(0..<ScoreViewModel.layerCount, id: \.self) { i in
@@ -187,6 +188,25 @@ struct EditorToolbar: View {
                     .stroke(on ? Color.accentColor : .clear, lineWidth: 2))
                 .cornerRadius(10)
                 .foregroundColor(.primary)
+        }
+    }
+
+    /// Triplet toggle (셋잇단음표) — when on, new notes are triplet-valued
+    /// (three fit where two would), and three in a beat are beamed under a "3".
+    private var tripletButton: some View {
+        Button {
+            vm.tripletMode.toggle()
+        } label: {
+            let on = vm.tripletMode
+            Text("3")
+                .font(.system(size: 22, weight: .heavy, design: .serif))
+                .italic()
+                .frame(width: 44, height: 44)
+                .background(on ? Color.accentColor.opacity(0.2) : Color(.systemGray6))
+                .overlay(RoundedRectangle(cornerRadius: 10)
+                    .stroke(on ? Color.accentColor : .clear, lineWidth: 2))
+                .cornerRadius(10)
+                .foregroundColor(on ? .accentColor : .primary)
         }
     }
 

@@ -22,6 +22,9 @@ struct ContentView: View {
     /// Which side the settings palette slides in from (persisted). Flip to the
     /// left for left-handed use.
     @AppStorage("settingsPanelOnLeft") private var settingsPanelOnLeft = false
+    /// On-screen piano for tap-to-add note entry.
+    @State private var showKeyboard = false
+    @AppStorage("keyboardStartOctave") private var keyboardStartOctave = 4
 
     // Reference-photo import ("photograph two measures, transcribe by hand").
     @StateObject private var reference = ReferenceStore()
@@ -53,6 +56,15 @@ struct ContentView: View {
                 if let pitch = vm.liveReadout {
                     positionReadout(pitch)
                         .transition(.move(edge: .bottom).combined(with: .opacity))
+                }
+                if showKeyboard {
+                    PianoKeyboard(startOctave: $keyboardStartOctave) { p in
+                        // Apply the key signature to white keys; black keys are
+                        // already spelled, so leave them as-is.
+                        vm.addNote(pitch: p.isAccidental ? p : vm.keyed(p))
+                    }
+                    .background(.ultraThinMaterial)
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
                 }
                 bottomArea
             }
@@ -110,6 +122,7 @@ struct ContentView: View {
             Color.white.ignoresSafeArea()
         )
         .animation(panelSpring, value: showSettings)
+        .animation(panelSpring, value: showKeyboard)
     }
 
     // MARK: - Settings palette
@@ -193,6 +206,13 @@ struct ContentView: View {
             // Always available too: mute/unmute the metronome (and count-in).
             // A diagonal slash makes the muted state unmistakable.
             metronomeButton
+
+            // Always available: show / hide the on-screen piano for note entry.
+            circleButton(systemImage: "pianokeys",
+                         tint: showKeyboard ? .accentColor : .primary) {
+                withAnimation(panelSpring) { showKeyboard.toggle() }
+            }
+            .transition(.scale.combined(with: .opacity))
 
             // Settings only matters once the editor panel is open.
             if showControls {
@@ -358,6 +378,9 @@ struct ContentView: View {
             } else if vm.chordMode {
                 Label("화음 모드: 선택한 음 위에 쌓입니다", systemImage: "square.stack.3d.up.fill")
                     .font(.subheadline).foregroundColor(.indigo)
+            } else if vm.tripletMode {
+                Text("셋잇단음표 모드: 음 3개가 한 박(또는 두 박)에 묶입니다")
+                    .font(.subheadline).foregroundColor(.accentColor)
             } else {
                 Text("오선을 길게 눌러 음을 고르고 떼면 추가됩니다")
                     .font(.subheadline).foregroundColor(.secondary)

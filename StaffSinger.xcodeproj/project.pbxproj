@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0089AF8962C24533A58CB0B3 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384465D4DCDA4767959C4B08 /* ScoreViewModel.swift */; };
 		014ED030B67F40BFA77E987C /* EditorToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808BF62CF65F4AAB80582C9D /* EditorToolbar.swift */; };
+		AA11BB22CC33DD44EE55F001 /* PianoKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */; };
 		3CBC744552774528A3094A23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAA96257E3497D8DCC2EA2 /* ContentView.swift */; };
 		561A9A9C233448E19B4A010A /* TransportBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252173120F724CAEA34F22A7 /* TransportBar.swift */; };
 		6D530A84D26E4F83811ACE0B /* StaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76C4695A60486ABD5FADC7 /* StaffView.swift */; };
@@ -42,6 +43,7 @@
 		5E770722A9A6445CB768B0EB /* StaffLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffLayout.swift; sourceTree = "<group>"; };
 		600872A2ACE94B9C86EF3ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808BF62CF65F4AAB80582C9D /* EditorToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorToolbar.swift; sourceTree = "<group>"; };
+		AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyboard.swift; sourceTree = "<group>"; };
 		81FAA96257E3497D8DCC2EA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93642FFEB616429FAD364790 /* MusicModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModels.swift; sourceTree = "<group>"; };
 		9F76C4695A60486ABD5FADC7 /* StaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffView.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				81FAA96257E3497D8DCC2EA2 /* ContentView.swift */,
 				808BF62CF65F4AAB80582C9D /* EditorToolbar.swift */,
+				AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */,
 				252173120F724CAEA34F22A7 /* TransportBar.swift */,
 				B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */,
 			);
@@ -253,6 +256,7 @@
 				9DBE349BC29147B7BFBEB84B /* StaffSingerApp.swift in Sources */,
 				3CBC744552774528A3094A23 /* ContentView.swift in Sources */,
 				014ED030B67F40BFA77E987C /* EditorToolbar.swift in Sources */,
+				AA11BB22CC33DD44EE55F001 /* PianoKeyboard.swift in Sources */,
 				561A9A9C233448E19B4A010A /* TransportBar.swift in Sources */,
 				79CCAF8A605B449B988677C0 /* MusicModels.swift in Sources */,
 				0089AF8962C24533A58CB0B3 /* ScoreViewModel.swift in Sources */,

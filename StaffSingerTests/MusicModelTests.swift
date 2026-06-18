@@ -62,6 +62,29 @@ final class MusicModelTests: XCTestCase {
         XCTAssertEqual(note(.quarter, at: 0, dotted: true).durationLabel, "점4분음표")
     }
 
+    func testTripletBeats() {
+        // Three eighth-triplets fill one quarter beat (each = 1/3 beat).
+        var n = note(.eighth, at: 0); n.triplet = true
+        XCTAssertEqual(n.beats, 1.0 / 3.0, accuracy: 1e-9, "셋잇단 8분음표는 1/3박")
+        XCTAssertEqual(n.durationLabel, "셋잇단8분음표")
+
+        // Three quarter-triplets fill two beats (each = 2/3 beat).
+        var q = note(.quarter, at: 0); q.triplet = true
+        XCTAssertEqual(q.beats, 2.0 / 3.0, accuracy: 1e-9)
+        XCTAssertEqual(q.beats * 3, 2.0, accuracy: 1e-9, "셋잇단 4분음표 셋 = 2박")
+    }
+
+    func testTripletThreeEighthsFillABeat() {
+        // Three eighth-triplets tile beats 0, 1/3, 2/3 — exactly one quarter beat.
+        var s = Score(); s.beatsPerMeasure = 4; s.beatUnit = 4
+        var beat = 0.0
+        for _ in 0..<3 {
+            var n = note(.eighth, at: beat); n.triplet = true
+            s.notes.append(n); beat += n.beats
+        }
+        XCTAssertEqual(s.totalBeats, 1.0, accuracy: 1e-9, "셋잇단 8분음표 셋은 한 박")
+    }
+
     func testTotalBeats() {
         let score = melody([(.quarter, false), (.half, false), (.quarter, true)])
         // 1.0 + 2.0 + 1.5 = 4.5
@@ -314,6 +337,15 @@ final class MusicModelTests: XCTestCase {
 
 @MainActor
 final class EditorBehaviorTests: XCTestCase {
+
+    /// The editor now persists the last duration & dot to UserDefaults, so each
+    /// test must start from a clean slate or earlier tests leak state into later
+    /// ones (and across runs).
+    override func setUp() {
+        super.setUp()
+        UserDefaults.standard.removeObject(forKey: "editor.selectedDuration")
+        UserDefaults.standard.removeObject(forKey: "editor.selectedDotted")
+    }
 
     private func makeVM() -> ScoreViewModel {
         ScoreViewModel(audio: AudioEngine())
