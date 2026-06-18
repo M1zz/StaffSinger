@@ -318,6 +318,9 @@ struct ContentView: View {
                     .font(.headline).foregroundColor(.accentColor)
                 Text(n.durationLabel)
                     .font(.subheadline).foregroundColor(.secondary)
+            } else if vm.restMode {
+                Label("쉼표 모드: 오선을 누르면 쉼표가 들어갑니다", systemImage: "pause.fill")
+                    .font(.subheadline).foregroundColor(.accentColor)
             } else if vm.chordMode {
                 Label("화음 모드: 선택한 음 위에 쌓입니다", systemImage: "square.stack.3d.up.fill")
                     .font(.subheadline).foregroundColor(.indigo)

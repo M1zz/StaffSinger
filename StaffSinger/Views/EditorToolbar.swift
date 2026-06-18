@@ -26,6 +26,7 @@ struct EditorToolbar: View {
                     durationButton(dur)
                 }
                 dotButton
+                restButton
                 Divider().frame(height: 36)
                 ForEach(0..<ScoreViewModel.layerCount, id: \.self) { i in
                     layerButton(i)
@@ -182,6 +183,23 @@ struct EditorToolbar: View {
         }
     }
 
+    /// Rest mode toggle — when on, pressing the staff drops a rest of the
+    /// currently selected duration (and dot) instead of a pitched note.
+    private var restButton: some View {
+        Button {
+            vm.restMode.toggle()
+        } label: {
+            let on = vm.restMode
+            RestGlyph(duration: vm.selectedDuration)
+                .frame(width: 44, height: 44)
+                .background(on ? Color.accentColor.opacity(0.2) : Color(.systemGray6))
+                .overlay(RoundedRectangle(cornerRadius: 10)
+                    .stroke(on ? Color.accentColor : .clear, lineWidth: 2))
+                .cornerRadius(10)
+                .foregroundColor(on ? .accentColor : .primary)
+        }
+    }
+
     /// Voice (layer) selector. New notes go into the chosen voice; the dot is
     /// in that voice's color so it matches the noteheads on the staff.
     private func layerButton(_ i: Int) -> some View {
@@ -283,5 +301,55 @@ struct NoteDurationGlyph: View {
         case .sixteenth: return 2
         default: return 0
         }
+    }
+}
+
+// MARK: - RestGlyph
+
+/// Draws the rest shape for a duration, so the rest-mode button previews the
+/// exact rest that will be placed. Mirrors the staff's hand-drawn rests (the
+/// Unicode rest glyphs aren't in the system font).
+struct RestGlyph: View {
+    let duration: NoteDuration
+
+    var body: some View {
+        Canvas { ctx, size in
+            let color = Color.primary
+            let cx = size.width / 2
+            let midY = size.height / 2
+            switch duration {
+            case .whole:
+                // Solid bar hanging below a staff line.
+                ctx.fill(Path(CGRect(x: cx - 7, y: midY - 7, width: 14, height: 5)),
+                         with: .color(color))
+            case .half:
+                // Solid bar sitting on a staff line.
+                ctx.fill(Path(CGRect(x: cx - 7, y: midY + 2, width: 14, height: 5)),
+                         with: .color(color))
+            case .quarter:
+                var p = Path()
+                let top = midY - 13
+                p.move(to: CGPoint(x: cx - 4, y: top))
+                p.addLine(to: CGPoint(x: cx + 4, y: top + 7))
+                p.addLine(to: CGPoint(x: cx - 4, y: top + 14))
+                p.addLine(to: CGPoint(x: cx + 5, y: top + 23))
+                p.addQuadCurve(to: CGPoint(x: cx - 3, y: top + 27),
+                               control: CGPoint(x: cx + 7, y: top + 27))
+                ctx.stroke(p, with: .color(color), lineWidth: 2.4)
+            case .eighth, .sixteenth:
+                var stroke = Path()
+                let top = midY - 12
+                stroke.move(to: CGPoint(x: cx + 5, y: top))
+                stroke.addLine(to: CGPoint(x: cx - 5, y: top + 24))
+                ctx.stroke(stroke, with: .color(color), lineWidth: 1.8)
+                let flags = duration == .sixteenth ? 2 : 1
+                for i in 0..<flags {
+                    let fy = top + CGFloat(i) * 8
+                    ctx.fill(Path(ellipseIn: CGRect(x: cx + 1, y: fy, width: 5, height: 5)),
+                             with: .color(color))
+                }
+            }
+        }
+        .frame(width: 26, height: 30)
     }
 }

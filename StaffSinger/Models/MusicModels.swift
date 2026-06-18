@@ -88,6 +88,57 @@ struct Pitch: Equatable, Hashable, Codable {
     static let middleC = Pitch(midi: 60)
 }
 
+// MARK: - Clef
+
+/// Which clef the staff is drawn in. A clef fixes what pitch the top staff
+/// line represents — everything else (note positions, stem direction, where
+/// the key-signature accidentals sit) is derived from that.
+enum Clef: String, CaseIterable, Codable, Identifiable {
+    case treble   // 높은음자리표 (사 음자리표, G clef)
+    case alto     // 가온음자리표 (다 음자리표, C clef — 가운데 줄 = 가온 다 C4)
+    case bass     // 낮은음자리표 (바 음자리표, F clef)
+
+    var id: String { rawValue }
+
+    /// MIDI pitch sitting on the TOP staff line.
+    var topLineMidi: Int {
+        switch self {
+        case .treble: return 77   // F5
+        case .alto:   return 67   // G4 (가운데 줄이 C4)
+        case .bass:   return 57   // A3
+        }
+    }
+
+    /// MIDI pitch on the MIDDLE staff line — the pivot for stem direction
+    /// (notes below it point their stems up, the rest point down).
+    var middleLineMidi: Int {
+        switch self {
+        case .treble: return 71   // B4
+        case .alto:   return 60   // C4 (가온 다)
+        case .bass:   return 50   // D3
+        }
+    }
+
+    /// Octave shift (semitones) applied to the treble key-signature reference
+    /// pitches so the accidentals land on this clef's staff in the usual spot.
+    var keySignatureOctaveShift: Int {
+        switch self {
+        case .treble: return 0
+        case .alto:   return -12
+        case .bass:   return -24
+        }
+    }
+
+    /// Korean name for the settings UI.
+    var displayName: String {
+        switch self {
+        case .treble: return "높은음자리표"
+        case .alto:   return "가온음자리표"
+        case .bass:   return "낮은음자리표"
+        }
+    }
+}
+
 // MARK: - Duration
 
 /// Rhythmic value of a note. `beats` is in quarter-note units so the
@@ -226,6 +277,8 @@ struct Score: Codable {
     var beatUnit: Int = 4
     /// Signed accidental count: + sharps, − flats, 0 = C major.
     var keySignature: Int = 0
+    /// Which clef the staff is drawn in.
+    var clef: Clef = .treble
     var notes: [ScoreNote] = []
 
     /// Total length of the score in beats (where the last sound ends).

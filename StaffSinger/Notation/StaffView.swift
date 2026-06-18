@@ -55,8 +55,11 @@ struct StaffView: View {
     private func metrics(width: CGFloat) -> Metrics {
         let sideMargin: CGFloat = 30
         // Widen the clef gutter to make room for the key-signature accidentals.
+        // The C/F clef glyphs are wider than the treble, so they need a roomier
+        // gutter or the time signature crowds them.
         let keyCount = min(7, abs(vm.score.keySignature))
-        let clefSpace: CGFloat = 56 + CGFloat(keyCount) * 12
+        let clefBase: CGFloat = vm.score.clef == .treble ? 56 : 78
+        let clefSpace: CGFloat = clefBase + CGFloat(keyCount) * 12
         let measureBeats = max(1, CGFloat(vm.score.quarterBeatsPerMeasure))
         let leftEdge = sideMargin
         let rightEdge = width - sideMargin
@@ -72,7 +75,8 @@ struct StaffView: View {
             // Center the five staff lines vertically in the available height.
             let topLineY = max(lineSpacing * 2,
                                (geo.size.height - 4 * lineSpacing) / 2)
-            let layout = StaffLayout(lineSpacing: lineSpacing, topLineY: topLineY)
+            let layout = StaffLayout(lineSpacing: lineSpacing, topLineY: topLineY,
+                                     clef: vm.score.clef)
             let m = metrics(width: geo.size.width)
             let beams = beamData(layout: layout, m: m)
 
@@ -129,18 +133,11 @@ struct StaffView: View {
         }
     }
 
-    // MARK: - Treble clef + time signature
+    // MARK: - Clef glyph + time signature
 
     private func clef(layout: StaffLayout, m: Metrics) -> some View {
-        let midLineY = layout.topLineY + 2 * layout.lineSpacing
-        return ZStack(alignment: .topLeading) {
-            Text("\u{1D11E}") // 𝄞 treble clef
-                .font(.system(size: 84))
-                .foregroundColor(.black)
-                // The glyph's visual center sits ~10pt below its text-box
-                // center, so offset the box up to land exactly on the middle
-                // line (measured against the rendered staff).
-                .position(x: m.leftEdge + 18, y: midLineY - 6)
+        ZStack(alignment: .topLeading) {
+            clefGlyph(layout: layout, m: m)
 
             VStack(spacing: -6) {
                 Text("\(vm.score.beatsPerMeasure)")
@@ -152,6 +149,38 @@ struct StaffView: View {
         }
     }
 
+    /// The clef symbol itself, sized and anchored to its reference line:
+    /// 𝄞 curls on the G4 line (treble), 𝄢's dots straddle the F3 line (bass),
+    /// 𝄡 centers on the middle C4 line (alto). Glyph metrics are tuned by eye
+    /// against the rendered staff.
+    @ViewBuilder
+    private func clefGlyph(layout: StaffLayout, m: Metrics) -> some View {
+        let s = layout.lineSpacing
+        let topY = layout.topLineY
+        let midLineY = topY + 2 * s
+        switch vm.score.clef {
+        case .treble:
+            // 𝄞 — visual center sits ~10pt below its text-box center, so lift
+            // the box to land the curl on the middle line (measured at runtime).
+            Text("\u{1D11E}")
+                .font(.system(size: 84))
+                .foregroundColor(.black)
+                .position(x: m.leftEdge + 18, y: midLineY - 6)
+        case .bass:
+            // 𝄢 — the two dots hug the F3 line (second from the top).
+            Text("\u{1D122}")
+                .font(.system(size: 60))
+                .foregroundColor(.black)
+                .position(x: m.leftEdge + 20, y: topY + s + 6)
+        case .alto:
+            // 𝄡 — the inner cusp points at the middle (C4) line.
+            Text("\u{1D121}")
+                .font(.system(size: 62))
+                .foregroundColor(.black)
+                .position(x: m.leftEdge + 20, y: midLineY)
+        }
+    }
+
     // MARK: - Key signature (accidentals after the clef)
 
     @ViewBuilder
@@ -160,7 +189,11 @@ struct StaffView: View {
         if count != 0 {
             let n = min(7, abs(count))
             let useFlats = count < 0
-            let refs = useFlats ? KeySignature.flatRefMidi : KeySignature.sharpRefMidi
+            // The treble reference pitches, dropped into the current clef's
+            // octave so the accidentals sit on the conventional line/space.
+            let shift = vm.score.clef.keySignatureOctaveShift
+            let refs = (useFlats ? KeySignature.flatRefMidi : KeySignature.sharpRefMidi)
+                .map { $0 + shift }
             let glyph = useFlats ? "\u{266D}" : "\u{266F}"   // ♭ / ♯
             ForEach(0..<n, id: \.self) { i in
                 let yy = layout.y(for: Pitch(midi: refs[i]))
@@ -305,6 +338,7 @@ struct StaffView: View {
             .gesture(
                 DragGesture(minimumDistance: 0)
                     .onChanged { value in
+                        guard !vm.restMode else { return }   // rests ignore pitch
                         let pitch = vm.keyed(layout.pitch(forY: value.location.y))
                         if previewPitch != pitch {
                             if previewPitch == nil { haptics.prepare() }
@@ -316,6 +350,12 @@ struct StaffView: View {
                         }
                     }
                     .onEnded { value in
+                        // Rest mode: drop a rest of the current duration, no pitch.
+                        if vm.restMode {
+                            vm.addRest()
+                            commitHaptic.impactOccurred()
+                            return
+                        }
                         let committed = previewPitch ?? vm.keyed(layout.pitch(forY: value.location.y))
                         audio.endPreview()
                         previewPitch = nil
@@ -459,7 +499,8 @@ struct StaffView: View {
         let groups = runs.map { run -> BeamGroup in
             run.forEach { beamedIDs.formUnion($0.ids) }
             let avg = run.map { $0.avgMidi }.reduce(0, +) / Double(run.count)
-            return BeamGroup(columns: run, stemUp: avg < 71)  // below B4 → stems up
+            // Below the middle line → stems up.
+            return BeamGroup(columns: run, stemUp: avg < Double(layout.clef.middleLineMidi))
         }
         return (groups, beamedIDs)
     }
@@ -719,7 +760,7 @@ private struct NoteGlyph: View {
                 let filled = note.duration != .whole
                 if filled && !beamed {
                     Path { p in
-                        let up = note.pitch.midi < 71 // below B4 -> stem up
+                        let up = note.pitch.midi < layout.clef.middleLineMidi // below middle line -> stem up
                         if up {
                             p.move(to: CGPoint(x: x + radius - 1, y: y))
                             p.addLine(to: CGPoint(x: x + radius - 1, y: y - 42))
@@ -750,8 +791,8 @@ private struct NoteGlyph: View {
             // Augmentation dot (1.5× length), to the right of the glyph. On a
             // line, it nudges up into the space above the way engravers do.
             if note.dotted {
-                let steps = StaffLayout.diatonicSteps(from: note.pitch.midi,
-                                                      prefersFlat: note.pitch.prefersFlat)
+                let steps = layout.diatonicSteps(from: note.pitch.midi,
+                                                 prefersFlat: note.pitch.prefersFlat)
                 let dotY = note.isRest
                     ? midY - 4
                     : (steps % 2 == 0 ? y - layout.lineSpacing / 2 : y)
@@ -823,7 +864,7 @@ private struct NoteGlyph: View {
 
     @ViewBuilder
     private func flagView(y: CGFloat) -> some View {
-        let up = note.pitch.midi < 71
+        let up = note.pitch.midi < layout.clef.middleLineMidi
         let stemX = up ? x + radius - 1 : x - radius + 1
         let tip = up ? y - 42 : y + 42
         let flags = note.duration == .sixteenth ? 2 : 1

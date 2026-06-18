@@ -250,6 +250,6 @@ enum OMR {
     private static func pitch(forY y: Int, staff: Staff) -> Pitch {
         let topRow = staff.lineYs.max() ?? staff.topY
         let steps = Int((Double(topRow - y) / (staff.spacing / 2)).rounded())
-        return StaffLayout.pitch(diatonicStepsBelowTop: steps)
+        return StaffLayout(clef: .treble).pitch(diatonicStepsBelowTop: steps)
     }
 }

@@ -14,20 +14,23 @@ struct StaffLayout {
 
     /// Vertical distance between two adjacent staff lines.
     let lineSpacing: CGFloat
-    /// Y of the TOP staff line (the F5 line on a treble staff).
+    /// Y of the TOP staff line.
     let topLineY: CGFloat
+    /// Which clef we're drawing — fixes the pitch of the top staff line.
+    let clef: Clef
 
-    init(lineSpacing: CGFloat = 14, topLineY: CGFloat = 60) {
+    init(lineSpacing: CGFloat = 14, topLineY: CGFloat = 60, clef: Clef = .treble) {
         self.lineSpacing = lineSpacing
         self.topLineY = topLineY
+        self.clef = clef
     }
 
     // We position by "staff steps": each step is half a line spacing and
     // corresponds to one diatonic step (line -> space -> line ...).
     //
-    // Reference: the top line of a treble staff is F5 (MIDI 77).
-    // Each diatonic step downward adds half a lineSpacing in Y.
-    private static let topLineMidi = 77  // F5
+    // The top staff line's pitch is clef-dependent (F5 in treble, G4 in alto,
+    // A3 in bass). Each diatonic step downward adds half a lineSpacing in Y.
+    private var topLineMidi: Int { clef.topLineMidi }
 
     /// The diatonic "staff position" of a pitch — number of diatonic steps
     /// from F5, counting only the 7 letter names (accidentals share a slot).
@@ -35,7 +38,7 @@ struct StaffLayout {
     /// Black keys sit on the line/space of whichever letter their accidental
     /// implies: a sharp folds to the letter below (C♯ on C), a flat to the
     /// letter above (D♭ on D).
-    static func diatonicSteps(from midi: Int, prefersFlat: Bool = false) -> Int {
+    func diatonicSteps(from midi: Int, prefersFlat: Bool = false) -> Int {
         // Map a midi note to a diatonic index (C=0,D=1,E=2,F=3,G=4,A=5,B=6).
         let sharpFold = [0,0,1,1,2,3,3,4,4,5,5,6] // black keys fold to letter below
         let flatFold  = [0,1,1,2,2,3,4,4,5,5,6,6] // black keys fold to letter above
@@ -53,8 +56,8 @@ struct StaffLayout {
 
     /// Y position (center of the notehead) for a pitch.
     func y(for pitch: Pitch) -> CGFloat {
-        let steps = CGFloat(Self.diatonicSteps(from: pitch.midi,
-                                               prefersFlat: pitch.prefersFlat))
+        let steps = CGFloat(diatonicSteps(from: pitch.midi,
+                                          prefersFlat: pitch.prefersFlat))
         return topLineY + steps * (lineSpacing / 2)
     }
 
@@ -69,11 +72,11 @@ struct StaffLayout {
     func pitch(forY y: CGFloat) -> Pitch {
         let stepsFloat = (y - topLineY) / (lineSpacing / 2)
         let steps = Int(stepsFloat.rounded())
-        return Self.pitch(diatonicStepsBelowTop: steps)
+        return pitch(diatonicStepsBelowTop: steps)
     }
 
     /// Inverse of `diatonicSteps`: build the natural pitch at a given step.
-    static func pitch(diatonicStepsBelowTop steps: Int) -> Pitch {
+    func pitch(diatonicStepsBelowTop steps: Int) -> Pitch {
         let topPc = ((topLineMidi % 12) + 12) % 12
         let topOctave = topLineMidi / 12 - 1
         let pcToDiatonic = [0,0,1,1,2,3,3,4,4,5,5,6]

@@ -257,6 +257,57 @@ final class MusicModelTests: XCTestCase {
         // The top staff line is F5 (MIDI 77) on a treble staff.
         XCTAssertEqual(layout.y(for: Pitch(midi: 77)), 100, accuracy: 0.001)
     }
+
+    // MARK: - Clefs
+
+    func testClefTopLinePitch() {
+        // The top staff line lands on the clef's reference pitch.
+        let s: CGFloat = 18, top: CGFloat = 100
+        XCTAssertEqual(StaffLayout(lineSpacing: s, topLineY: top, clef: .treble)
+                        .y(for: Pitch(midi: 77)), top, accuracy: 0.001, "높은음자리표 윗줄 = F5")
+        XCTAssertEqual(StaffLayout(lineSpacing: s, topLineY: top, clef: .alto)
+                        .y(for: Pitch(midi: 67)), top, accuracy: 0.001, "가온음자리표 윗줄 = G4")
+        XCTAssertEqual(StaffLayout(lineSpacing: s, topLineY: top, clef: .bass)
+                        .y(for: Pitch(midi: 57)), top, accuracy: 0.001, "낮은음자리표 윗줄 = A3")
+    }
+
+    func testAltoClefMiddleLineIsMiddleC() {
+        // The 가온음자리표 (alto) centers middle C (MIDI 60) on the middle line.
+        let s: CGFloat = 18, top: CGFloat = 100
+        let layout = StaffLayout(lineSpacing: s, topLineY: top, clef: .alto)
+        XCTAssertEqual(layout.y(for: Pitch(midi: 60)), top + 2 * s, accuracy: 0.001)
+    }
+
+    func testBassClefMiddleLineIsD3() {
+        // The 낮은음자리표 (bass) middle line is D3 (MIDI 50).
+        let s: CGFloat = 18, top: CGFloat = 100
+        let layout = StaffLayout(lineSpacing: s, topLineY: top, clef: .bass)
+        XCTAssertEqual(layout.y(for: Pitch(midi: 50)), top + 2 * s, accuracy: 0.001)
+    }
+
+    func testClefRoundTripsAcrossClefs() {
+        // Every natural pitch on each clef's staff maps to a Y and back.
+        let ranges: [(Clef, ClosedRange<Int>)] = [
+            (.treble, 64...77),   // E4…F5
+            (.alto, 53...67),     // F3…G4
+            (.bass, 45...57),     // A2…A3
+        ]
+        for (clef, range) in ranges {
+            let layout = StaffLayout(lineSpacing: 18, topLineY: 100, clef: clef)
+            for midi in range {
+                let p = Pitch(midi: midi)
+                guard !p.isAccidental else { continue }
+                XCTAssertEqual(layout.pitch(forY: layout.y(for: p)).midi, midi,
+                               "\(clef) MIDI \(midi) round-trip")
+            }
+        }
+    }
+
+    func testClefMiddleLineMidi() {
+        XCTAssertEqual(Clef.treble.middleLineMidi, 71)   // B4
+        XCTAssertEqual(Clef.alto.middleLineMidi, 60)     // C4
+        XCTAssertEqual(Clef.bass.middleLineMidi, 50)     // D3
+    }
 }
 
 // MARK: - Editor behavior (bar-aware note placement)
@@ -266,6 +317,40 @@ final class EditorBehaviorTests: XCTestCase {
 
     private func makeVM() -> ScoreViewModel {
         ScoreViewModel(audio: AudioEngine())
+    }
+
+    /// The last-chosen duration & dot should carry over to a freshly created
+    /// editor (i.e. persist across launches), not reset to a quarter note.
+    func testSelectedDurationPersistsAcrossInstances() {
+        let defaults = UserDefaults.standard
+        let durKey = "editor.selectedDuration", dotKey = "editor.selectedDotted"
+        let savedDur = defaults.string(forKey: durKey)
+        let savedDot = defaults.object(forKey: dotKey)
+        defer {
+            if let savedDur { defaults.set(savedDur, forKey: durKey) } else { defaults.removeObject(forKey: durKey) }
+            if let savedDot { defaults.set(savedDot, forKey: dotKey) } else { defaults.removeObject(forKey: dotKey) }
+        }
+
+        let vm1 = makeVM()
+        vm1.selectedDuration = .eighth
+        vm1.selectedDotted = true
+
+        let vm2 = makeVM()   // simulates a relaunch
+        XCTAssertEqual(vm2.selectedDuration, .eighth, "마지막 음표 길이가 기본값으로 유지돼야 한다")
+        XCTAssertTrue(vm2.selectedDotted, "마지막 점음표 설정도 유지돼야 한다")
+    }
+
+    /// A rest of the current duration can be inserted (rest-mode placement
+    /// routes a staff tap here).
+    func testAddRestInsertsRestOfSelectedDuration() {
+        let vm = makeVM()
+        vm.setTimeSignature(beats: 4, unit: 4)
+        vm.selectedDuration = .eighth
+        vm.restMode = true
+        vm.addRest()
+        let rest = vm.score.notes.first
+        XCTAssertEqual(rest?.isRest, true, "쉼표가 추가돼야 한다")
+        XCTAssertEqual(rest?.duration, .eighth, "선택한 길이의 쉼표여야 한다")
     }
 
     func testAppendAutoAdvancesAcrossBarline() {

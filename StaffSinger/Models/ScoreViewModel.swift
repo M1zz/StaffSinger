@@ -15,14 +15,35 @@ final class ScoreViewModel: ObservableObject {
 
     @Published var score = Score()
 
-    // Current editing tools.
-    @Published var selectedDuration: NoteDuration = .quarter
+    // Current editing tools. The duration & dot persist across launches so the
+    // editor reopens with whatever the user set last, instead of resetting to a
+    // quarter note every time.
+    @Published var selectedDuration: NoteDuration = ScoreViewModel.savedDuration {
+        didSet { UserDefaults.standard.set(selectedDuration.rawValue, forKey: Self.durationKey) }
+    }
     /// Whether newly placed notes get a dot (1.5× length).
-    @Published var selectedDotted = false
+    @Published var selectedDotted = UserDefaults.standard.bool(forKey: ScoreViewModel.dottedKey) {
+        didSet { UserDefaults.standard.set(selectedDotted, forKey: Self.dottedKey) }
+    }
     @Published var selectedNoteID: UUID? = nil
     /// When true, a new tap stacks onto the currently selected note's beat
     /// (i.e. builds a chord) instead of appending after it.
     @Published var chordMode = false
+    /// When true, pressing the staff drops a rest of the current duration
+    /// instead of a pitched note.
+    @Published var restMode = false
+
+    // MARK: - Persisted tool defaults
+
+    private static let durationKey = "editor.selectedDuration"
+    private static let dottedKey = "editor.selectedDotted"
+
+    /// The last duration the user chose, or a quarter note on first launch.
+    private static var savedDuration: NoteDuration {
+        guard let raw = UserDefaults.standard.string(forKey: durationKey),
+              let d = NoteDuration(rawValue: raw) else { return .quarter }
+        return d
+    }
 
     /// The voice / layer new notes are written into. Each layer builds up its
     /// own line independently in time; layers overlap to form harmony.
@@ -191,6 +212,10 @@ final class ScoreViewModel: ObservableObject {
 
     func setKeySignature(_ count: Int) {
         score.keySignature = max(-7, min(7, count))
+    }
+
+    func setClef(_ clef: Clef) {
+        score.clef = clef
     }
 
     /// Apply the current key signature to a natural (white-key) pitch tapped on

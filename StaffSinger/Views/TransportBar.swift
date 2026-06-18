@@ -96,6 +96,17 @@ struct SettingsSheet: View {
                     .pickerStyle(.segmented)
                 }
 
+                Section("음자리표 (Clef)") {
+                    Picker("음자리표", selection: Binding(
+                        get: { vm.score.clef },
+                        set: { vm.setClef($0) })) {
+                        ForEach(Clef.allCases) { c in
+                            Text(c.displayName).tag(c)
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                }
+
                 Section("조표 (Key)") {
                     Picker("조표", selection: Binding(
                         get: { vm.score.keySignature },

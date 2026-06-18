@@ -71,8 +71,33 @@
     + 크고 선명한 음높이 라벨(예: "C6 · 도"). `GhostPreview` 뷰로 교체,
     미사용 `previewPoint` 제거
 
+- [x] 앱 버전 1.0.1로 상향 (`project.pbxproj` MARKETING_VERSION ×4)
+- [x] 가온음자리표(다, C clef)·낮은음자리표(바, F clef) 추가
+  - `MusicModels.swift`: `Clef` enum(높은/가온/낮은) — `topLineMidi`(F5·G4·A3),
+    `middleLineMidi`(B4·C4·D3, 기둥 방향 기준), `keySignatureOctaveShift`(0·−12·−24),
+    한글 표시명. `Score.clef` 필드 추가(기본 높은음자리표)
+  - `StaffLayout`: 클리프 보유 → `topLineMidi`가 클리프 의존. `diatonicSteps`·
+    `pitch(diatonicStepsBelowTop:)`를 정적→인스턴스 메서드로 전환
+  - `StaffView`: 클리프별 글리프 그리기(𝄞 U+1D11E / 𝄢 U+1D122 / 𝄡 U+1D121),
+    조표 기준음을 클리프 옥타브로 이동, 기둥 방향을 `clef.middleLineMidi` 기준으로
+  - `ScoreViewModel.setClef`, `SettingsSheet`에 "음자리표(Clef)" 세그먼트 피커
+  - 테스트 5종 추가(클리프별 윗줄/가운데줄 음높이, 라운드트립) — 전체 30개 통과
+  - 시뮬레이터에서 세 클리프 글리프 렌더링·위치 육안 확인
+  - 가온/낮은음자리표 글리프가 박자표와 겹치던 문제: 클리프 거터를
+    높은음 56 → 가온·낮은음 78로 넓혀(`metrics`의 `clefBase`) 박자표가 우측으로
+    밀리게 함
+
+- [x] 마지막 음표 길이가 기본값으로 유지 + 쉼표 입력
+  - 마지막으로 고른 음길이·점음표를 `UserDefaults`에 저장(`ScoreViewModel`의
+    `selectedDuration`/`selectedDotted` didSet + `savedDuration` 로드) → 앱을
+    다시 열어도 4분음표로 초기화되지 않고 마지막 설정 유지
+  - 쉼표 모드 추가: 음길이 줄에 쉼표 토글 버튼(`RestGlyph`), 켜면 오선을 누를 때
+    현재 길이의 쉼표가 들어감(`ScoreViewModel.restMode`, `StaffView` 탭 분기).
+    하단 안내 스트립에 "쉼표 모드" 표시
+  - 테스트 2종 추가(길이 유지·쉼표 추가) — 전체 37개 통과
+
 ## 다음 단계 아이디어 (README 참고)
 - [ ] MusicXML / MIDI 임포트
 - [ ] 마디 단위 A–B 루프 연습
 - [ ] 음표 가로 드래그로 박 위치 이동, 빔 그룹핑
-- [ ] 베이스 음자리표 / 큰 보표
+- [ ] 큰 보표(treble + bass grand staff)
