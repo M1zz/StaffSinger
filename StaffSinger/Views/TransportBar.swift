@@ -64,10 +64,75 @@ struct SettingsSheet: View {
     @ObservedObject var audio: AudioEngine
     @Environment(\.dismiss) private var dismiss
 
+    var body: some View {
+        NavigationStack {
+            SettingsForm(vm: vm, audio: audio)
+                .navigationTitle("설정")
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .confirmationAction) {
+                        Button("완료") { dismiss() }
+                    }
+                }
+        }
+    }
+}
+
+// MARK: - Settings side panel (palette)
+
+/// A slim settings palette that slides in from one edge, leaving the staff
+/// visible instead of covering it. The side can flip to the left for
+/// left-handed use.
+struct SettingsSidePanel: View {
+    @ObservedObject var vm: ScoreViewModel
+    @ObservedObject var audio: AudioEngine
+    @Binding var onLeft: Bool
+    let onClose: () -> Void
+
+    var body: some View {
+        VStack(spacing: 0) {
+            // Header: title, left/right side flip, and close.
+            HStack(spacing: 12) {
+                Text("설정").font(.headline)
+                Spacer(minLength: 0)
+                Button { withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) { onLeft.toggle() } } label: {
+                    Image(systemName: onLeft
+                          ? "rectangle.righthalf.inset.filled"
+                          : "rectangle.lefthalf.inset.filled")
+                        .font(.title3)
+                        .foregroundColor(.accentColor)
+                }
+                .accessibilityLabel(onLeft ? "오른쪽에 표시" : "왼쪽에 표시")
+
+                Button(action: onClose) {
+                    Image(systemName: "xmark.circle.fill")
+                        .font(.title2)
+                        .foregroundColor(.secondary)
+                }
+                .accessibilityLabel("닫기")
+            }
+            .padding(.horizontal, 18)
+            .padding(.vertical, 14)
+
+            Divider()
+
+            SettingsForm(vm: vm, audio: audio)
+                .scrollContentBackground(.hidden)   // let the panel material show
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.regularMaterial)
+    }
+}
+
+// MARK: - Settings form (shared by the sheet & the side panel)
+
+struct SettingsForm: View {
+    @ObservedObject var vm: ScoreViewModel
+    @ObservedObject var audio: AudioEngine
+
     private let signatures: [(Int, Int)] = [(4,4),(3,4),(2,4),(6,8),(2,2),(3,8)]
 
     var body: some View {
-        NavigationStack {
             Form {
                 Section("템포") {
                     HStack {
@@ -136,13 +201,5 @@ struct SettingsSheet: View {
                     }
                 }
             }
-            .navigationTitle("설정")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("완료") { dismiss() }
-                }
-            }
-        }
     }
 }

@@ -19,6 +19,9 @@ struct ContentView: View {
     /// only the play + tools buttons show. Starts hidden for a clean sheet.
     @State private var showControls = false
     @State private var showSettings = false
+    /// Which side the settings palette slides in from (persisted). Flip to the
+    /// left for left-handed use.
+    @AppStorage("settingsPanelOnLeft") private var settingsPanelOnLeft = false
 
     // Reference-photo import ("photograph two measures, transcribe by hand").
     @StateObject private var reference = ReferenceStore()
@@ -57,6 +60,10 @@ struct ContentView: View {
 
             // Floating reference photo (drag/opacity/hide), above everything.
             ReferenceOverlay(store: reference, onTranscribe: runTranscription)
+
+            // Settings palette: slides in from one side, leaving the staff
+            // visible rather than covering it.
+            if showSettings { settingsPanelLayer }
         }
         .alert("자동 채보 (실험)", isPresented: Binding(
             get: { omrMessage != nil }, set: { if !$0 { omrMessage = nil } })) {
@@ -102,10 +109,28 @@ struct ContentView: View {
         .background(
             Color.white.ignoresSafeArea()
         )
-        // Full screen rather than a sheet: in landscape a sheet is too short
-        // and its top (nav bar / first rows) gets clipped.
-        .fullScreenCover(isPresented: $showSettings) {
-            SettingsSheet(vm: vm, audio: audio)
+        .animation(panelSpring, value: showSettings)
+    }
+
+    // MARK: - Settings palette
+
+    /// A light scrim (so the staff stays visible) plus the settings palette
+    /// docked to the chosen side. Tapping the staff area closes it.
+    @ViewBuilder
+    private var settingsPanelLayer: some View {
+        ZStack(alignment: settingsPanelOnLeft ? .leading : .trailing) {
+            Color.black.opacity(0.1)
+                .ignoresSafeArea()
+                .contentShape(Rectangle())
+                .onTapGesture { showSettings = false }
+                .transition(.opacity)
+
+            SettingsSidePanel(
+                vm: vm, audio: audio,
+                onLeft: $settingsPanelOnLeft,
+                onClose: { showSettings = false })
+                .frame(width: 360)
+                .transition(.move(edge: settingsPanelOnLeft ? .leading : .trailing))
         }
     }
 
