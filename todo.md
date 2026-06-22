@@ -123,6 +123,18 @@
   - 테스트 3종 추가(셋잇단 박/라벨). 길이·점 영속화로 인한 테스트 오염은 setUp에서
     키 초기화로 격리 — 전체 39개 통과
 
+- [x] 앱 버전 1.0.2로 상향 (`project.pbxproj` MARKETING_VERSION ×4)
+- [x] 텍스트로 악보 붙여넣기 (AI가 규칙대로 적어 준 악보를 오선지로)
+  - `Notation/ScoreTextFormat.swift`(신규): 텍스트↔악보 변환. 토큰 한 개 = 음표
+    하나(`[점][셋잇단][N옥][계이름][#/b][길이]음/쉼`). 옥타브·길이 생략 시 직전 값
+    유지, 한글 계이름·영문 CDEFG 모두 인식, 잘못된 토큰은 건너뜀(전체 실패 방지).
+    `ruleText`(AI에게 줄 규칙 전문) + `parse`/`serialize` 제공
+  - `ScoreViewModel.importFromText`(악보 교체)·`exportToText` 추가
+  - `ContentView`: 상단에 📋(`doc.on.clipboard`) 버튼 + `PasteScoreSheet`
+    (규칙 복사·클립보드 붙여넣기·악보로 변환·현재 악보 복사). 2마디 초과 시 안내
+  - 테스트 10종 추가(파싱·임시표·캐리오버·점/셋잇단·쉼표·영문·라운드트립) — 전체 49개 통과
+  - `project.pbxproj`에 신규 파일 2개 수동 등록(앱·테스트 타깃), 빌드/테스트 성공
+
 ## 다음 단계 아이디어 (README 참고)
 - [ ] MusicXML / MIDI 임포트
 - [ ] 마디 단위 A–B 루프 연습

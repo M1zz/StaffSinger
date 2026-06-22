@@ -21,6 +21,8 @@
 		CC0000000000000000000004 /* MusicModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000003 /* MusicModelTests.swift */; };
 		CFE18438ADB94E5D9F9A8007 /* StaffLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E770722A9A6445CB768B0EB /* StaffLayout.swift */; };
 		DD0000000000000000000002 /* OMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0000000000000000000001 /* OMR.swift */; };
+		EE0000000000000000000002 /* ScoreTextFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000001 /* ScoreTextFormat.swift */; };
+		EE0000000000000000000004 /* ScoreTextFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000003 /* ScoreTextFormatTests.swift */; };
 		EAD0F75BD6DC427F80C0761C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D1B36449F4414884D04043 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		CC0000000000000000000002 /* StaffSingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaffSingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0000000000000000000003 /* MusicModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModelTests.swift; sourceTree = "<group>"; };
 		DD0000000000000000000001 /* OMR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMR.swift; sourceTree = "<group>"; };
+		EE0000000000000000000001 /* ScoreTextFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTextFormat.swift; sourceTree = "<group>"; };
+		EE0000000000000000000003 /* ScoreTextFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTextFormatTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 				5E770722A9A6445CB768B0EB /* StaffLayout.swift */,
 				9F76C4695A60486ABD5FADC7 /* StaffView.swift */,
 				DD0000000000000000000001 /* OMR.swift */,
+				EE0000000000000000000001 /* ScoreTextFormat.swift */,
 			);
 			path = Notation;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				CC0000000000000000000003 /* MusicModelTests.swift */,
+				EE0000000000000000000003 /* ScoreTextFormatTests.swift */,
 			);
 			path = StaffSingerTests;
 			sourceTree = "<group>";
@@ -265,6 +271,7 @@
 				CFE18438ADB94E5D9F9A8007 /* StaffLayout.swift in Sources */,
 				6D530A84D26E4F83811ACE0B /* StaffView.swift in Sources */,
 				DD0000000000000000000002 /* OMR.swift in Sources */,
+				EE0000000000000000000002 /* ScoreTextFormat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC0000000000000000000004 /* MusicModelTests.swift in Sources */,
+				EE0000000000000000000004 /* ScoreTextFormatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +337,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.StaffSinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -355,7 +363,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.StaffSingerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -379,7 +387,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.StaffSingerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -425,7 +433,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.devkoan.StaffSinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

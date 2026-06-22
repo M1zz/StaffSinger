@@ -34,6 +34,9 @@ struct ContentView: View {
     @State private var cropItem: PickedImage? = nil
     @State private var omrMessage: String? = nil
 
+    // Paste-from-text import (hand an AI the format rule, paste its output back).
+    @State private var showPaste = false
+
     private var panelSpring: Animation { .spring(response: 0.35, dampingFraction: 0.85) }
     /// Bottom space the piano + its note-value strip occupy (used to lift the staff).
     private let keyboardAreaHeight: CGFloat = 196
@@ -105,6 +108,15 @@ struct ContentView: View {
         }
         .sheet(isPresented: $showLibrary) {
             LibraryPicker { img in queueForCrop(img) }
+        }
+        .sheet(isPresented: $showPaste) {
+            PasteScoreSheet(
+                currentScoreText: vm.exportToText(),
+                onImport: { text in
+                    showPaste = false
+                    importPasted(text)
+                },
+                onCancel: { showPaste = false })
         }
         .fullScreenCover(item: $cropItem) { item in
             ImageCropView(
@@ -228,6 +240,20 @@ struct ContentView: View {
         }
     }
 
+    /// Import notes from pasted text, replacing the current score, then report
+    /// how many landed (and warn if the score runs past the two visible bars).
+    private func importPasted(_ text: String) {
+        let notes = vm.importFromText(text)
+        guard !notes.isEmpty else {
+            omrMessage = "붙여넣은 텍스트에서 음표를 찾지 못했습니다.\n규칙(예: 4옥도8분음)에 맞는지 확인해 주세요."
+            return
+        }
+        let twoBars = vm.score.measureCapacity * 2
+        let overflows = twoBars > 0 && vm.score.totalBeats > twoBars + 1e-6
+        omrMessage = "\(notes.count)개 음표를 불러왔습니다."
+            + (overflows ? "\n2마디를 넘는 음표는 화면에 보이지 않을 수 있어요." : "")
+    }
+
     /// Defer the crop screen until the picker sheet has dismissed, so the two
     /// presentations don't collide.
     private func queueForCrop(_ img: UIImage) {
@@ -264,6 +290,12 @@ struct ContentView: View {
                 // Always available, even on a blank sheet: bring in a reference photo.
                 circleButton(systemImage: "camera.viewfinder", tint: .primary) {
                     showSourceDialog = true
+                }
+                .transition(.scale.combined(with: .opacity))
+
+                // Paste a score written in the text format (AI-transcribed).
+                circleButton(systemImage: "doc.on.clipboard", tint: .primary) {
+                    showPaste = true
                 }
                 .transition(.scale.combined(with: .opacity))
 
@@ -460,6 +492,106 @@ struct ContentView: View {
         .frame(maxWidth: .infinity, alignment: .center)
         .padding(.horizontal, 16)
         .frame(height: 38)
+    }
+}
+
+// MARK: - Paste-from-text sheet
+
+/// Hand an AI the format rule, let it transcribe a score, then paste the result
+/// here to drop it onto the staff. Also offers the rule and the current score as
+/// copyable text so the AI has a concrete spec and example to work from.
+private struct PasteScoreSheet: View {
+    /// The current score rendered as text (a worked example to show/share).
+    let currentScoreText: String
+    let onImport: (String) -> Void
+    let onCancel: () -> Void
+
+    @State private var text = ""
+    @State private var copiedRule = false
+
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    Text("악보 사진을 AI에게 주고 아래 규칙대로 적어 달라고 한 뒤, "
+                         + "받은 텍스트를 붙여넣으면 오선지에 들어갑니다.")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                        .fixedSize(horizontal: false, vertical: true)
+
+                    Button {
+                        UIPasteboard.general.string = ScoreTextFormat.ruleText
+                        copiedRule = true
+                    } label: {
+                        Label(copiedRule ? "규칙을 복사했어요" : "AI에게 줄 규칙 복사",
+                              systemImage: copiedRule ? "checkmark.circle.fill" : "doc.on.doc")
+                            .font(.headline)
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 12)
+                            .background(Color.accentColor.opacity(0.15))
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                    }
+                    .buttonStyle(.plain)
+
+                    Text(ScoreTextFormat.ruleText)
+                        .font(.footnote.monospaced())
+                        .foregroundColor(.secondary)
+                        .padding(12)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(Color(.systemGray6))
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("여기에 붙여넣기").font(.headline)
+                        TextEditor(text: $text)
+                            .font(.body.monospaced())
+                            .frame(minHeight: 120)
+                            .padding(8)
+                            .background(Color(.systemGray6))
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                            .overlay(alignment: .topLeading) {
+                                if text.isEmpty {
+                                    Text("예: 4옥도4분음 4옥레4분음 4옥미8분음 …")
+                                        .font(.body.monospaced())
+                                        .foregroundColor(Color(.placeholderText))
+                                        .padding(.horizontal, 14)
+                                        .padding(.vertical, 16)
+                                        .allowsHitTesting(false)
+                                }
+                            }
+                        Button {
+                            text = UIPasteboard.general.string ?? text
+                        } label: {
+                            Label("클립보드에서 붙여넣기", systemImage: "clipboard")
+                                .font(.subheadline)
+                        }
+                    }
+
+                    if !currentScoreText.isEmpty {
+                        Button {
+                            UIPasteboard.general.string = currentScoreText
+                        } label: {
+                            Label("현재 악보를 텍스트로 복사 (AI 예시용)", systemImage: "square.and.arrow.up")
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                }
+                .padding(20)
+            }
+            .navigationTitle("악보 붙여넣기")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("취소") { onCancel() }
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("악보로 변환") { onImport(text) }
+                        .fontWeight(.semibold)
+                        .disabled(text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
+                }
+            }
+        }
     }
 }
 

@@ -208,6 +208,27 @@ final class ScoreViewModel: ObservableObject {
         selectedNoteID = nil
     }
 
+    // MARK: - Paste from text
+
+    /// Replace the score with notes parsed from pasted text (the AI-readable
+    /// format in `ScoreTextFormat`). Returns the imported notes so the caller
+    /// can report how many landed; an empty result means nothing parsed and the
+    /// existing score is left untouched.
+    @discardableResult
+    func importFromText(_ text: String) -> [ScoreNote] {
+        let notes = ScoreTextFormat.parse(text)
+        guard !notes.isEmpty else { return [] }
+        score.notes = notes
+        selectedNoteID = nil
+        return notes
+    }
+
+    /// The current score rendered back into the text format — handy to copy out
+    /// as a worked example for the AI.
+    func exportToText() -> String {
+        ScoreTextFormat.serialize(score)
+    }
+
     // MARK: - Score settings
 
     func setTempo(_ bpm: Double) {
