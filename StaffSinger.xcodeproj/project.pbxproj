@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		0089AF8962C24533A58CB0B3 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 384465D4DCDA4767959C4B08 /* ScoreViewModel.swift */; };
 		014ED030B67F40BFA77E987C /* EditorToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808BF62CF65F4AAB80582C9D /* EditorToolbar.swift */; };
-		AA11BB22CC33DD44EE55F001 /* PianoKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */; };
+		25B45BB1FBB2A355CB064A1C /* LeeoKit in Frameworks */ = {isa = PBXBuildFile; productRef = C391A6B0FA94D5396275FF6B /* LeeoKit */; };
 		3CBC744552774528A3094A23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAA96257E3497D8DCC2EA2 /* ContentView.swift */; };
 		561A9A9C233448E19B4A010A /* TransportBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252173120F724CAEA34F22A7 /* TransportBar.swift */; };
 		6D530A84D26E4F83811ACE0B /* StaffView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76C4695A60486ABD5FADC7 /* StaffView.swift */; };
 		79CCAF8A605B449B988677C0 /* MusicModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93642FFEB616429FAD364790 /* MusicModels.swift */; };
+		9A61F60816C54D5A1C12D782 /* StaffSingerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BD3C11EA23DE68FC7F83E6 /* StaffSingerSpec.swift */; };
 		9DBE349BC29147B7BFBEB84B /* StaffSingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D8653D47A4E599759148D /* StaffSingerApp.swift */; };
 		A1B2C3D4E5F60001A1B2C3D4 /* UprightPianoKW.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */; };
+		AA11BB22CC33DD44EE55F001 /* PianoKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */; };
 		B1B2C3D4E5F60004B1B2C3D4 /* ReferenceFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */; };
 		B28E59ABD4FD4D81A49E8CD2 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAE88B4D7634EEDAF5B7334 /* AudioEngine.swift */; };
 		CC0000000000000000000004 /* MusicModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000003 /* MusicModelTests.swift */; };
 		CFE18438ADB94E5D9F9A8007 /* StaffLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E770722A9A6445CB768B0EB /* StaffLayout.swift */; };
 		DD0000000000000000000002 /* OMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0000000000000000000001 /* OMR.swift */; };
+		EAD0F75BD6DC427F80C0761C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D1B36449F4414884D04043 /* Assets.xcassets */; };
 		EE0000000000000000000002 /* ScoreTextFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000001 /* ScoreTextFormat.swift */; };
 		EE0000000000000000000004 /* ScoreTextFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000003 /* ScoreTextFormatTests.swift */; };
-		EAD0F75BD6DC427F80C0761C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D1B36449F4414884D04043 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,11 +47,11 @@
 		5E770722A9A6445CB768B0EB /* StaffLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffLayout.swift; sourceTree = "<group>"; };
 		600872A2ACE94B9C86EF3ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		808BF62CF65F4AAB80582C9D /* EditorToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorToolbar.swift; sourceTree = "<group>"; };
-		AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyboard.swift; sourceTree = "<group>"; };
 		81FAA96257E3497D8DCC2EA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93642FFEB616429FAD364790 /* MusicModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModels.swift; sourceTree = "<group>"; };
 		9F76C4695A60486ABD5FADC7 /* StaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffView.swift; sourceTree = "<group>"; };
 		A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UprightPianoKW.sf2; sourceTree = "<group>"; };
+		AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyboard.swift; sourceTree = "<group>"; };
 		B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceFeature.swift; sourceTree = "<group>"; };
 		C6D1B36449F4414884D04043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC0000000000000000000002 /* StaffSingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaffSingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +59,7 @@
 		DD0000000000000000000001 /* OMR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMR.swift; sourceTree = "<group>"; };
 		EE0000000000000000000001 /* ScoreTextFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTextFormat.swift; sourceTree = "<group>"; };
 		EE0000000000000000000003 /* ScoreTextFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTextFormatTests.swift; sourceTree = "<group>"; };
+		F4BD3C11EA23DE68FC7F83E6 /* StaffSingerSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StaffSingerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B45BB1FBB2A355CB064A1C /* LeeoKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +111,7 @@
 				64367B904C7F41BEB8046DC7 /* Notation */,
 				C6D1B36449F4414884D04043 /* Assets.xcassets */,
 				600872A2ACE94B9C86EF3ABA /* Info.plist */,
+				F4BD3C11EA23DE68FC7F83E6 /* StaffSingerSpec.swift */,
 			);
 			path = StaffSinger;
 			sourceTree = "<group>";
@@ -193,6 +198,9 @@
 			dependencies = (
 			);
 			name = StaffSinger;
+			packageProductDependencies = (
+				C391A6B0FA94D5396275FF6B /* LeeoKit */,
+			);
 			productName = StaffSinger;
 			productReference = 079D6A2F8E5B416DB84081CB /* StaffSinger.app */;
 			productType = "com.apple.product-type.application";
@@ -225,6 +233,9 @@
 				Base,
 			);
 			mainGroup = BAFB7F529F8842D6B5AA9FE0;
+			packageReferences = (
+				8728D4C8BA80E3D0356FA6CD /* XCLocalSwiftPackageReference "LeeoKit" */,
+			);
 			productRefGroup = DD67E8C31DA741D88580D62D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -272,6 +283,7 @@
 				6D530A84D26E4F83811ACE0B /* StaffView.swift in Sources */,
 				DD0000000000000000000002 /* OMR.swift in Sources */,
 				EE0000000000000000000002 /* ScoreTextFormat.swift in Sources */,
+				9A61F60816C54D5A1C12D782 /* StaffSingerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +487,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		8728D4C8BA80E3D0356FA6CD /* XCLocalSwiftPackageReference "LeeoKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../LeeoKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C391A6B0FA94D5396275FF6B /* LeeoKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8728D4C8BA80E3D0356FA6CD /* XCLocalSwiftPackageReference "LeeoKit" */;
+			productName = LeeoKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 74C8F414A9144E818D312ACE /* Project object */;
 }

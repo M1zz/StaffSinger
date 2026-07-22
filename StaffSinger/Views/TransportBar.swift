@@ -8,6 +8,7 @@
 //
 
 import SwiftUI
+import LeeoKit
 
 struct TransportBar: View {
     @ObservedObject var vm: ScoreViewModel
@@ -200,6 +201,32 @@ struct SettingsForm: View {
                         Label("전체 지우기", systemImage: "trash")
                     }
                 }
+
+                Section {
+                    LeeoSupportSection<StaffSingerSpec>()
+                } header: {
+                    Text("지원")
+                }
+
+                DeveloperContactSection()
             }
+    }
+}
+
+// MARK: - 개발자 문의
+struct DeveloperContactSection: View {
+    var body: some View {
+        Section {
+            Link(destination: URL(string: "mailto:leeo@kakao.com")!) {
+                Label("이메일로 문의하기", systemImage: "envelope")
+            }
+            Link(destination: URL(string: "https://instagram.com/lee25_ios")!) {
+                Label("인스타그램 DM (@lee25_ios)", systemImage: "paperplane")
+            }
+        } header: {
+            Text("개발자에게 문의")
+        } footer: {
+            Text("버그 제보와 기능 제안을 환영합니다.")
+        }
     }
 }
