@@ -10,6 +10,6 @@ import LeeoKit
 
 enum StaffSingerSpec: LeeoAppSpec {
     static let appName = "StaffSinger"
-    static let developerEmail = "mizzking75@gmail.com"
+    static let developerEmail = "leeo@kakao.com"
     static let feedback = LeeoFeedbackConfig(containerIdentifier: "iCloud.com.Ysoup.FeedbackHub", appIdentifier: "com.devkoan.StaffSinger")
 }
