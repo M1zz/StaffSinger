@@ -25,6 +25,9 @@
 		DD0000000000000000000002 /* OMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0000000000000000000001 /* OMR.swift */; };
 		EAD0F75BD6DC427F80C0761C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D1B36449F4414884D04043 /* Assets.xcassets */; };
 		EE0000000000000000000002 /* ScoreTextFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000001 /* ScoreTextFormat.swift */; };
+		F10000000000000000000002 /* SpokenSolfege.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000001 /* SpokenSolfege.swift */; };
+		F10000000000000000000004 /* SolfegeDictation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000003 /* SolfegeDictation.swift */; };
+		F10000000000000000000006 /* DictationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000005 /* DictationSheet.swift */; };
 		EE0000000000000000000004 /* ScoreTextFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000003 /* ScoreTextFormatTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +61,9 @@
 		CC0000000000000000000003 /* MusicModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModelTests.swift; sourceTree = "<group>"; };
 		DD0000000000000000000001 /* OMR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMR.swift; sourceTree = "<group>"; };
 		EE0000000000000000000001 /* ScoreTextFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTextFormat.swift; sourceTree = "<group>"; };
+		F10000000000000000000001 /* SpokenSolfege.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpokenSolfege.swift; sourceTree = "<group>"; };
+		F10000000000000000000003 /* SolfegeDictation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolfegeDictation.swift; sourceTree = "<group>"; };
+		F10000000000000000000005 /* DictationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictationSheet.swift; sourceTree = "<group>"; };
 		EE0000000000000000000003 /* ScoreTextFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTextFormatTests.swift; sourceTree = "<group>"; };
 		F4BD3C11EA23DE68FC7F83E6 /* StaffSingerSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StaffSingerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +103,7 @@
 				9F76C4695A60486ABD5FADC7 /* StaffView.swift */,
 				DD0000000000000000000001 /* OMR.swift */,
 				EE0000000000000000000001 /* ScoreTextFormat.swift */,
+				F10000000000000000000001 /* SpokenSolfege.swift */,
 			);
 			path = Notation;
 			sourceTree = "<group>";
@@ -120,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				0EAE88B4D7634EEDAF5B7334 /* AudioEngine.swift */,
+				F10000000000000000000003 /* SolfegeDictation.swift */,
 				A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */,
 			);
 			path = Audio;
@@ -158,6 +166,7 @@
 				81FAA96257E3497D8DCC2EA2 /* ContentView.swift */,
 				808BF62CF65F4AAB80582C9D /* EditorToolbar.swift */,
 				AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */,
+				F10000000000000000000005 /* DictationSheet.swift */,
 				252173120F724CAEA34F22A7 /* TransportBar.swift */,
 				B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */,
 			);
@@ -283,6 +292,9 @@
 				6D530A84D26E4F83811ACE0B /* StaffView.swift in Sources */,
 				DD0000000000000000000002 /* OMR.swift in Sources */,
 				EE0000000000000000000002 /* ScoreTextFormat.swift in Sources */,
+				F10000000000000000000002 /* SpokenSolfege.swift in Sources */,
+				F10000000000000000000004 /* SolfegeDictation.swift in Sources */,
+				F10000000000000000000006 /* DictationSheet.swift in Sources */,
 				9A61F60816C54D5A1C12D782 /* StaffSingerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

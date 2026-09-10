@@ -749,7 +749,7 @@ private struct GhostPreview: View {
                 .position(x: landingX, y: pitchY)
 
             // Large pitch read-out, anchored at the landing spot (not the finger).
-            Text("\(pitch.name)\(pitch.octave) · \(pitch.solfege)")
+            Text(pitch.label)
                 .font(.subheadline.weight(.bold))
                 .monospacedDigit()
                 .padding(.horizontal, 9).padding(.vertical, 4)

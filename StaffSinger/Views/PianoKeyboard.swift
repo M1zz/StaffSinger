@@ -78,7 +78,7 @@ struct PianoKeyboard: View {
         return Button { onPitch(p) } label: {
             VStack {
                 Spacer()
-                Text(p.solfege)
+                Text(p.name)
                     .font(.caption2.weight(.semibold))
                     .foregroundColor(.secondary)
                 // Octave marker on each C so the range is readable.

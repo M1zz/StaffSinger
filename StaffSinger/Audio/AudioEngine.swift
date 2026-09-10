@@ -64,6 +64,43 @@ final class AudioEngine: ObservableObject {
         #endif
     }
 
+    // MARK: - Recording session (voice dictation)
+
+    /// Open the mic for a dictation take.
+    ///
+    /// The session normally sits in `.playback`, which keeps the microphone
+    /// (and its permission prompt / orange indicator) out of the way for the
+    /// vast majority of the app. Dictation flips it to `.playAndRecord` for the
+    /// length of one take and flips it back in `endRecordingSession`.
+    /// `.defaultToSpeaker` matters: without it `.playAndRecord` routes the
+    /// count-in clicks to the earpiece, where the user can't hear them.
+    func beginRecordingSession() {
+        #if !targetEnvironment(simulator)
+        do {
+            let session = AVAudioSession.sharedInstance()
+            try session.setCategory(.playAndRecord, mode: .default,
+                                    options: [.defaultToSpeaker, .allowBluetooth,
+                                              .mixWithOthers])
+            try session.setActive(true)
+        } catch {
+            print("Recording session error: \(error)")
+        }
+        #endif
+        // Swapping the category can knock the playback graph offline; the
+        // count-in needs it running.
+        if !engine.isRunning { try? engine.start() }
+    }
+
+    /// Hand the mic back and return the session to plain playback.
+    func endRecordingSession() {
+        configureSession()
+        if !engine.isRunning { try? engine.start() }
+    }
+
+    /// One metronome click, exposed so dictation can count a take in with the
+    /// exact sound (and therefore the exact tempo) playback uses.
+    func tick(strong: Bool) { click(strong: strong) }
+
     private func buildGraph() {
         engine.attach(melodySampler)
         engine.attach(clickSampler)

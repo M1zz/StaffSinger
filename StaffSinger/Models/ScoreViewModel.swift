@@ -114,16 +114,20 @@ final class ScoreViewModel: ObservableObject {
     /// Insert a rest at the end of the active voice. Defaults to the current
     /// tool duration, but a specific value can be passed (the rest-length
     /// buttons use this so any rest value can be dropped in one tap).
-    func addRest(duration: NoteDuration? = nil) {
+    /// Returns false when the rest wouldn't fit in the two visible measures, so
+    /// callers can skip the "it worked" feedback instead of buzzing at nothing.
+    @discardableResult
+    func addRest(duration: NoteDuration? = nil) -> Bool {
         let dur = duration ?? selectedDuration
         let length = dur.beats * (selectedDotted ? 1.5 : 1.0) * (tripletMode ? 2.0 / 3.0 : 1.0)
-        guard let beat = appendStartRespectingBars(length: length, layer: activeLayer) else { return }
+        guard let beat = appendStartRespectingBars(length: length, layer: activeLayer) else { return false }
         let note = ScoreNote(
             pitch: .middleC, duration: dur,
             beatOffset: beat, isRest: true, dotted: selectedDotted,
             layer: activeLayer, triplet: tripletMode)
         score.notes.append(note)
         selectedNoteID = note.id
+        return true
     }
 
     /// Length in beats of a note placed with the current tools.
@@ -203,6 +207,30 @@ final class ScoreViewModel: ObservableObject {
         if let id = selectedNoteID { deleteNote(id) }
     }
 
+    /// The last event in a voice — whatever ends latest in time.
+    private func lastEvent(inLayer layer: Int) -> ScoreNote? {
+        score.notes
+            .filter { $0.layer == layer }
+            .max { ($0.beatOffset + $0.beats) < ($1.beatOffset + $1.beats) }
+    }
+
+    /// True when there is something for `deleteLast()` to take off.
+    var canDeleteLast: Bool { lastEvent(inLayer: activeLayer) != nil }
+
+    /// Backspace for the piano: drop the most recent event in the active voice.
+    ///
+    /// Exactly one event comes off per press, never a run of them — placing a
+    /// note can pad the bar with rests, and silently eating those too would
+    /// make one tap delete two things the user can see. Pressing again removes
+    /// the next one, the way backspace works everywhere else.
+    @discardableResult
+    func deleteLast() -> Bool {
+        guard let last = lastEvent(inLayer: activeLayer) else { return false }
+        score.notes.removeAll { $0.id == last.id }
+        if selectedNoteID == last.id { selectedNoteID = nil }
+        return true
+    }
+
     func clearAll() {
         score.notes.removeAll()
         selectedNoteID = nil
@@ -221,6 +249,14 @@ final class ScoreViewModel: ObservableObject {
         score.notes = notes
         selectedNoteID = nil
         return notes
+    }
+
+    /// Replace the score with a ready-made list of notes (voice dictation).
+    /// Mirrors `importFromText` so every bulk import lands the same way.
+    func importNotes(_ notes: [ScoreNote]) {
+        guard !notes.isEmpty else { return }
+        score.notes = notes
+        selectedNoteID = nil
     }
 
     /// The current score rendered back into the text format — handy to copy out

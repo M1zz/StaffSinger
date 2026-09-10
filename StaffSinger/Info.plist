@@ -6,6 +6,10 @@
     <string>초견</string>
     <key>NSCameraUsageDescription</key>
     <string>악보를 촬영해 참고 이미지로 불러오기 위해 카메라를 사용합니다.</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>계이름을 말하면 오선지에 음표로 옮기기 위해 마이크를 사용합니다. 녹음은 기기 안에서만 처리되고 저장되지 않습니다.</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>말한 계이름을 음표로 바꾸기 위해 음성 인식을 사용합니다. 인식은 기기 안에서만 이루어집니다.</string>
     <key>UIRequiresFullScreen</key>
     <true/>
     <key>UILaunchScreen</key>

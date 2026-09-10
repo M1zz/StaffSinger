@@ -37,6 +37,10 @@ struct ContentView: View {
     // Paste-from-text import (hand an AI the format rule, paste its output back).
     @State private var showPaste = false
 
+    // Voice dictation ("read the score out loud"). Owns the mic + recognizer.
+    @StateObject private var dictation: SolfegeDictation
+    @State private var showDictation = false
+
     private var panelSpring: Animation { .spring(response: 0.35, dampingFraction: 0.85) }
     /// Bottom space the piano + its note-value strip occupy (used to lift the staff).
     private let keyboardAreaHeight: CGFloat = 196
@@ -47,6 +51,7 @@ struct ContentView: View {
         let engine = AudioEngine()
         _audio = StateObject(wrappedValue: engine)
         _vm = StateObject(wrappedValue: ScoreViewModel(audio: engine))
+        _dictation = StateObject(wrappedValue: SolfegeDictation(audio: engine))
     }
 
     var body: some View {
@@ -109,6 +114,16 @@ struct ContentView: View {
         .sheet(isPresented: $showLibrary) {
             LibraryPicker { img in queueForCrop(img) }
         }
+        .sheet(isPresented: $showDictation) {
+            DictationSheet(
+                dictation: dictation,
+                score: vm.score,
+                onImport: { notes in
+                    showDictation = false
+                    importDictated(notes)
+                },
+                onCancel: { showDictation = false })
+        }
         .sheet(isPresented: $showPaste) {
             PasteScoreSheet(
                 currentScoreText: vm.exportToText(),
@@ -145,6 +160,9 @@ struct ContentView: View {
             keyboardToolStrip
             Divider()
             PianoKeyboard(startOctave: $keyboardStartOctave) { p in
+                // Pressing a key clearly means "a note", so a rest armed and
+                // then abandoned doesn't lie in wait for the next staff tap.
+                vm.restMode = false
                 // Apply the key signature to white keys; black keys are already
                 // spelled, so leave them as-is.
                 vm.addNote(pitch: p.isAccidental ? p : vm.keyed(p))
@@ -155,9 +173,11 @@ struct ContentView: View {
         )
     }
 
-    /// Note value + dot + triplet, sized to sit above the keyboard.
+    /// Note values + dot + triplet + the full row of rests, sized to sit above
+    /// the keyboard.
     private var keyboardToolStrip: some View {
         HStack(spacing: 6) {
+            // Note values: what the next key press writes.
             ForEach(NoteDuration.allCases) { dur in
                 toolChip(selected: vm.selectedDuration == dur) {
                     vm.selectedDuration = dur
@@ -178,6 +198,36 @@ struct ContentView: View {
                 Text("3").font(.system(size: 19, weight: .heavy, design: .serif)).italic()
                     .foregroundColor(vm.tripletMode ? .accentColor : .primary)
             }
+
+            // Everything from here on acts immediately, rather than setting up
+            // what the next key press will write.
+            Divider().frame(height: 26).padding(.horizontal, 4)
+
+            // Every rest value, laid out like the note values beside them, so
+            // silence is written exactly the way sound is: one tap, any length,
+            // nothing to arm first. The dot and triplet chips apply to these
+            // too. Rests used to be reachable only through the editor panel's
+            // two-step rest mode, which made them far harder to write than notes.
+            ForEach(NoteDuration.allCases) { dur in
+                toolChip(selected: false) {
+                    guard vm.addRest(duration: dur) else { return }
+                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                } label: {
+                    RestGlyph(duration: dur)
+                }
+            }
+
+            Divider().frame(height: 26).padding(.horizontal, 4)
+
+            toolChip(selected: false) {
+                guard vm.deleteLast() else { return }
+                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            } label: {
+                Image(systemName: "delete.left")
+                    .font(.system(size: 19, weight: .semibold))
+                    .foregroundColor(vm.canDeleteLast ? .red : .secondary)
+            }
+            .disabled(!vm.canDeleteLast)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 7)
@@ -242,6 +292,14 @@ struct ContentView: View {
 
     /// Import notes from pasted text, replacing the current score, then report
     /// how many landed (and warn if the score runs past the two visible bars).
+    /// Drop a dictated take onto the staff, replacing what's there — the same
+    /// contract as pasting text, so both import paths behave alike.
+    private func importDictated(_ notes: [ScoreNote]) {
+        guard !notes.isEmpty else { return }
+        vm.importNotes(notes)
+        omrMessage = "\(notes.count)개 음표를 받아썼습니다.\n음높이나 길이가 다르면 음표를 끌어서 고쳐 주세요."
+    }
+
     private func importPasted(_ text: String) {
         let notes = vm.importFromText(text)
         guard !notes.isEmpty else {
@@ -296,6 +354,12 @@ struct ContentView: View {
                 // Paste a score written in the text format (AI-transcribed).
                 circleButton(systemImage: "doc.on.clipboard", tint: .primary) {
                     showPaste = true
+                }
+                .transition(.scale.combined(with: .opacity))
+
+                // Read the score out loud and let the mic write it down.
+                circleButton(systemImage: "music.mic", tint: .primary) {
+                    showDictation = true
                 }
                 .transition(.scale.combined(with: .opacity))
 
@@ -398,12 +462,9 @@ struct ContentView: View {
     /// always knows the pitch even while their hand covers the staff.
     private func positionReadout(_ pitch: Pitch) -> some View {
         HStack(spacing: 14) {
-            Text(pitch.solfege)
+            Text(pitch.label)
                 .font(.system(size: 40, weight: .heavy, design: .rounded))
-            Text("\(pitch.name)\(pitch.octave)")
-                .font(.system(size: 30, weight: .semibold, design: .rounded))
                 .monospacedDigit()
-                .foregroundColor(.secondary)
         }
         .foregroundColor(.accentColor)
         .padding(.horizontal, 28)
@@ -471,8 +532,7 @@ struct ContentView: View {
             if let n = vm.selectedNote, !n.isRest {
                 Text(n.pitch.label)
                     .font(.title3.bold().monospaced())
-                Text(n.pitch.solfege)
-                    .font(.headline).foregroundColor(.accentColor)
+                    .foregroundColor(.accentColor)
                 Text(n.durationLabel)
                     .font(.subheadline).foregroundColor(.secondary)
             } else if vm.restMode {
