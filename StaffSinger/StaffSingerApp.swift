@@ -11,7 +11,8 @@ import LeeoKit
 @main
 struct StaffSingerApp: App {
     init() {
-        LeeoEngagement.shared.registerLaunch()
+        // 사용량 기록 · 크래시 진단 · 익명 사용 통계 (FeedbackHub)
+        LeeoKit.bootstrap(StaffSingerSpec.self)
     }
 
     var body: some Scene {

@@ -71,7 +71,7 @@ Views/
 GitHub Pages로 제공됩니다 (`docs/` 폴더):
 
 - **지원 페이지**: https://m1zz.github.io/StaffSinger/support.html — FAQ, 문의처
-- **개인정보처리방침**: https://m1zz.github.io/StaffSinger/privacy.html — 개인정보를 수집하지 않는 완전 오프라인 앱입니다
+- **개인정보처리방침**: https://m1zz.github.io/StaffSinger/privacy.html — 개인정보를 수집하지 않습니다. 익명 사용 통계·오류 보고만 iCloud(CloudKit)로 보냅니다
 
 ## 다음 단계 아이디어
 

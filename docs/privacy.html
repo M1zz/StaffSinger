@@ -54,16 +54,17 @@
   <section>
     <p class="highlight">초견(StaffSinger)은 계정이 없고, 사용자를 식별하는 개인정보를 수집하지 않습니다.
        악보와 설정은 사용자의 기기 안에만 저장됩니다. 기기 밖으로 나가는 정보는
-       사용자가 직접 보내는 피드백뿐입니다.</p>
-    <p class="date">시행일: 2026년 10월 7일</p>
+       앱을 고치기 위한 익명 사용 통계·오류 보고와, 사용자가 직접 보내는 피드백뿐입니다.</p>
+    <p class="date">시행일: 2026년 10월 16일</p>
   </section>
 
   <section>
     <h2>1. 수집하는 개인정보</h2>
-    <p>앱을 쓰는 동안 자동으로 수집하는 개인정보는 없습니다. 계정 가입이 없고,
-       이름·이메일·위치·기기 식별자를 수집하지 않으며, 광고·분석·추적 도구도 쓰지 않습니다.
-       악보 입력, 재생, 계이름 받아쓰기 등 앱의 모든 기능은 인터넷 연결 없이 기기 안에서 동작합니다.</p>
-    <p style="margin-top:8px;">예외는 사용자가 설정 화면의 <strong>피드백 보내기</strong>로 직접 의견을 보낼 때뿐입니다(아래 4항).</p>
+    <p>계정 가입이 없고, 이름·이메일·위치처럼 사용자를 알아볼 수 있는 정보를 수집하지 않으며,
+       광고나 추적 도구를 쓰지 않습니다. 악보 입력, 재생, 계이름 받아쓰기 등 앱의 모든 기능은
+       인터넷 연결 없이 기기 안에서 동작합니다.</p>
+    <p style="margin-top:8px;">기기 밖으로 나가는 정보는 두 가지입니다. 앱이 자동으로 보내는 익명 사용 통계와 오류 보고(아래 5항),
+       그리고 사용자가 설정 화면의 <strong>피드백 보내기</strong>로 직접 보내는 의견(아래 4항)입니다.</p>
   </section>
 
   <section>
@@ -103,30 +104,45 @@
   </section>
 
   <section>
-    <h2>5. 데이터 저장 위치</h2>
+    <h2>5. 익명 사용 통계</h2>
+    <p>앱을 몇 명이 쓰는지 알고 오류를 고치기 위해, 초견은 다음 익명 통계를 Apple iCloud(CloudKit)로 보냅니다.
+       개발자만 읽습니다.</p>
+    <ul>
+      <li>설치할 때 만든 무작위 ID (기기·Apple ID·다른 앱과 연결되지 않으며, 다시 설치하면 바뀝니다)</li>
+      <li>앱 버전, iOS 버전, 지역·언어 설정</li>
+      <li>앱을 연 횟수와 앱을 연 날, 설치한 날짜와 설치 후 지난 일수</li>
+      <li>만족도 질문이 떴는지, 피드백을 보냈는지 같은 앱 안의 이벤트 (보낸 내용은 포함하지 않습니다)</li>
+      <li>앱이 멈추거나 비정상 종료됐을 때의 진단 보고 (앱 버전, iOS 버전, 기기 종류, 오류의 기술적 세부 정보)</li>
+    </ul>
+    <p>이름, 연락처, 위치, 악보 같은 사용자 콘텐츠는 포함하지 않습니다.
+       기기에서 iCloud에 로그인되어 있을 때만 보냅니다.</p>
+  </section>
+
+  <section>
+    <h2>6. 데이터 저장 위치</h2>
     <p>사용자가 작성한 악보와 앱 설정은 사용자 기기 내부에만 저장됩니다.
        개발자를 포함한 누구도 이 데이터에 접근할 수 없습니다. 앱을 삭제하면
        관련 데이터도 함께 삭제됩니다.</p>
   </section>
 
   <section>
-    <h2>6. 제3자 제공 및 분석 도구</h2>
-    <p>광고 SDK, 분석(애널리틱스) 도구, 추적 기술을 일절 사용하지 않습니다.
-       피드백은 Apple의 iCloud(CloudKit)에 보관되며, 그 밖의 제3자에게 정보를 제공하지 않습니다.</p>
+    <h2>7. 제3자 제공 및 분석 도구</h2>
+    <p>광고 SDK, 외부 분석 도구, 추적 기술을 일절 사용하지 않습니다.
+       피드백과 익명 사용 통계는 Apple의 iCloud(CloudKit)에 보관되며, 그 밖의 제3자에게 정보를 제공하지 않습니다.</p>
   </section>
 
   <section>
-    <h2>7. 아동의 개인정보</h2>
-    <p>본 앱은 개인정보를 자동으로 수집하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+    <h2>8. 아동의 개인정보</h2>
+    <p>본 앱은 사용자를 알아볼 수 있는 개인정보를 자동으로 수집하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
   </section>
 
   <section>
-    <h2>8. 방침 변경</h2>
+    <h2>9. 방침 변경</h2>
     <p>본 방침이 변경될 경우 이 페이지를 통해 고지하며, 시행일을 갱신합니다.</p>
   </section>
 
   <section>
-    <h2>9. 문의처</h2>
+    <h2>10. 문의처</h2>
     <p>개인정보처리방침에 관한 문의는 아래로 연락해 주세요.</p>
     <ul>
       <li>이메일: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></li>
@@ -136,15 +152,25 @@
 
   <section>
     <h2>Privacy Policy (English Summary)</h2>
-    <p>StaffSinger has no accounts and does not automatically collect any personal data.
-       Every feature works offline on your device. The camera is used only to capture a reference
+    <p class="date">Last updated: October 16, 2026</p>
+    <p>StaffSinger has no accounts and does not collect personal data such as your name,
+       contact details, or location. Every feature works offline on your device. The camera is used only to capture a reference
        image of sheet music, and photo library access uses Apple's PHPicker so the
        app never sees your whole library. The microphone and speech recognition are used only
        when you dictate note names, and recognition runs on-device; audio is never saved or sent.
-       Scores and settings stay on your device. The only data that leaves your device is feedback
-       you choose to send from Settings (your message, optional name and email, app version,
-       device model, OS version and locale), which is stored in the developer's iCloud (CloudKit)
-       and used only to reply and improve the app. No ads, no analytics, no tracking.
+       Scores and settings stay on your device.</p>
+    <p style="margin-top:8px;"><strong>Anonymous usage statistics.</strong> To learn how many people use the app
+       and to fix crashes, StaffSinger sends anonymous statistics to Apple's iCloud (CloudKit), read only by
+       the developer: a random ID created at install (not linked to your device, your Apple ID, or other apps;
+       it changes if you reinstall), app version, iOS version, region and language setting, how many times
+       and on which days the app was opened, the install date and days since install, in-app events such as
+       whether the satisfaction prompt appeared or feedback was sent (never its content), and crash or freeze
+       reports (app version, iOS version, device type, and technical crash details). No name, contact
+       details, location, or scores are included, and statistics are sent only while you are signed in to iCloud.</p>
+    <p style="margin-top:8px;"><strong>Feedback.</strong> Feedback you choose to send from Settings (your message,
+       optional name and email, app version, device model, OS version and locale) is stored in the
+       developer's iCloud (CloudKit) and used only to reply and improve the app.
+       No ads, no third-party analytics, no tracking.
        Contact: <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
   </section>
 </main>

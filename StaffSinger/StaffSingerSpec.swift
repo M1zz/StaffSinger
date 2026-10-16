@@ -26,4 +26,7 @@ enum StaffSingerSpec: LeeoAppSpec {
 
     /// 결제가 전혀 없는 무료 앱 — 페이월·복원 경로가 따라붙지 않는다.
     static let monetization = LeeoMonetization.free
+
+    /// 익명 사용 통계 → FeedbackHub. 없으면 bootstrap 이 스냅샷·app_open 을 건너뛴다.
+    static let analytics: any LeeoAnalytics = LeeoUsageAnalytics(spec: StaffSingerSpec.self)
 }
