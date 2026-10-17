@@ -21,6 +21,7 @@
 		ACF9F6680A3E6982459C3EE5 /* StaffSingerRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9757B6EED245035218E49DF7 /* StaffSingerRoadmap.swift */; };
 		B1B2C3D4E5F60004B1B2C3D4 /* ReferenceFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */; };
 		B28E59ABD4FD4D81A49E8CD2 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAE88B4D7634EEDAF5B7334 /* AudioEngine.swift */; };
+		B363328784549AFB1DC1DE1F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1A3E8FA04E360F58A75A3DE1 /* Localizable.xcstrings */; };
 		CC0000000000000000000004 /* MusicModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000003 /* MusicModelTests.swift */; };
 		CFE18438ADB94E5D9F9A8007 /* StaffLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E770722A9A6445CB768B0EB /* StaffLayout.swift */; };
 		DD0000000000000000000002 /* OMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0000000000000000000001 /* OMR.swift */; };
@@ -45,6 +46,7 @@
 /* Begin PBXFileReference section */
 		079D6A2F8E5B416DB84081CB /* StaffSinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaffSinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EAE88B4D7634EEDAF5B7334 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		1A3E8FA04E360F58A75A3DE1 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		252173120F724CAEA34F22A7 /* TransportBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportBar.swift; sourceTree = "<group>"; };
 		384465D4DCDA4767959C4B08 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
 		502D8653D47A4E599759148D /* StaffSingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffSingerApp.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				600872A2ACE94B9C86EF3ABA /* Info.plist */,
 				F4BD3C11EA23DE68FC7F83E6 /* StaffSingerSpec.swift */,
 				9757B6EED245035218E49DF7 /* StaffSingerRoadmap.swift */,
+				1A3E8FA04E360F58A75A3DE1 /* Localizable.xcstrings */,
 			);
 			path = StaffSinger;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = BAFB7F529F8842D6B5AA9FE0;
 			packageReferences = (
@@ -265,6 +269,7 @@
 			files = (
 				EAD0F75BD6DC427F80C0761C /* Assets.xcassets in Resources */,
 				A1B2C3D4E5F60001A1B2C3D4 /* UprightPianoKW.sf2 in Resources */,
+				B363328784549AFB1DC1DE1F /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
