@@ -132,6 +132,7 @@ struct SettingsForm: View {
     @ObservedObject var audio: AudioEngine
 
     private let signatures: [(Int, Int)] = [(4,4),(3,4),(2,4),(6,8),(2,2),(3,8)]
+    @State private var showRoadmap = false
 
     var body: some View {
             Form {
@@ -208,8 +209,17 @@ struct SettingsForm: View {
                     Text("지원")
                 }
 
+                Section {
+                    Button {
+                        showRoadmap = true
+                    } label: {
+                        Label(LeeoRoadmapText.entry, systemImage: "calendar")
+                    }
+                }
+
                 DeveloperContactSection()
             }
+            .sheet(isPresented: $showRoadmap) { RoadmapScreen() }
     }
 }
 

@@ -18,6 +18,7 @@
 		9DBE349BC29147B7BFBEB84B /* StaffSingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D8653D47A4E599759148D /* StaffSingerApp.swift */; };
 		A1B2C3D4E5F60001A1B2C3D4 /* UprightPianoKW.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */; };
 		AA11BB22CC33DD44EE55F001 /* PianoKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */; };
+		ACF9F6680A3E6982459C3EE5 /* StaffSingerRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9757B6EED245035218E49DF7 /* StaffSingerRoadmap.swift */; };
 		B1B2C3D4E5F60004B1B2C3D4 /* ReferenceFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */; };
 		B28E59ABD4FD4D81A49E8CD2 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAE88B4D7634EEDAF5B7334 /* AudioEngine.swift */; };
 		CC0000000000000000000004 /* MusicModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000003 /* MusicModelTests.swift */; };
@@ -25,10 +26,10 @@
 		DD0000000000000000000002 /* OMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0000000000000000000001 /* OMR.swift */; };
 		EAD0F75BD6DC427F80C0761C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D1B36449F4414884D04043 /* Assets.xcassets */; };
 		EE0000000000000000000002 /* ScoreTextFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000001 /* ScoreTextFormat.swift */; };
+		EE0000000000000000000004 /* ScoreTextFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000003 /* ScoreTextFormatTests.swift */; };
 		F10000000000000000000002 /* SpokenSolfege.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000001 /* SpokenSolfege.swift */; };
 		F10000000000000000000004 /* SolfegeDictation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000003 /* SolfegeDictation.swift */; };
 		F10000000000000000000006 /* DictationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000005 /* DictationSheet.swift */; };
-		EE0000000000000000000004 /* ScoreTextFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000003 /* ScoreTextFormatTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		808BF62CF65F4AAB80582C9D /* EditorToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorToolbar.swift; sourceTree = "<group>"; };
 		81FAA96257E3497D8DCC2EA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		93642FFEB616429FAD364790 /* MusicModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModels.swift; sourceTree = "<group>"; };
+		9757B6EED245035218E49DF7 /* StaffSingerRoadmap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StaffSingerRoadmap.swift; sourceTree = "<group>"; };
 		9F76C4695A60486ABD5FADC7 /* StaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffView.swift; sourceTree = "<group>"; };
 		A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UprightPianoKW.sf2; sourceTree = "<group>"; };
 		AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyboard.swift; sourceTree = "<group>"; };
@@ -61,10 +63,10 @@
 		CC0000000000000000000003 /* MusicModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModelTests.swift; sourceTree = "<group>"; };
 		DD0000000000000000000001 /* OMR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMR.swift; sourceTree = "<group>"; };
 		EE0000000000000000000001 /* ScoreTextFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTextFormat.swift; sourceTree = "<group>"; };
+		EE0000000000000000000003 /* ScoreTextFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTextFormatTests.swift; sourceTree = "<group>"; };
 		F10000000000000000000001 /* SpokenSolfege.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpokenSolfege.swift; sourceTree = "<group>"; };
 		F10000000000000000000003 /* SolfegeDictation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolfegeDictation.swift; sourceTree = "<group>"; };
 		F10000000000000000000005 /* DictationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictationSheet.swift; sourceTree = "<group>"; };
-		EE0000000000000000000003 /* ScoreTextFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTextFormatTests.swift; sourceTree = "<group>"; };
 		F4BD3C11EA23DE68FC7F83E6 /* StaffSingerSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StaffSingerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 				C6D1B36449F4414884D04043 /* Assets.xcassets */,
 				600872A2ACE94B9C86EF3ABA /* Info.plist */,
 				F4BD3C11EA23DE68FC7F83E6 /* StaffSingerSpec.swift */,
+				9757B6EED245035218E49DF7 /* StaffSingerRoadmap.swift */,
 			);
 			path = StaffSinger;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				F10000000000000000000004 /* SolfegeDictation.swift in Sources */,
 				F10000000000000000000006 /* DictationSheet.swift in Sources */,
 				9A61F60816C54D5A1C12D782 /* StaffSingerSpec.swift in Sources */,
+				ACF9F6680A3E6982459C3EE5 /* StaffSingerRoadmap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +512,7 @@
 			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.7.1;
+				minimumVersion = 3.20.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
