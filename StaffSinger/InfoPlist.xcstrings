@@ -75,6 +75,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -151,6 +157,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O StaffSinger usa a câmera para fotografar uma partitura e carregá-la como imagem de referência."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger ใช้กล้องเพื่อถ่ายภาพโน้ตและโหลดเป็นภาพอ้างอิง"
           }
         }
       }
@@ -229,6 +241,12 @@
             "state" : "translated",
             "value" : "O StaffSinger usa o microfone para transformar os nomes de notas que você fala em notas na pauta. O áudio é processado apenas neste dispositivo e nunca é salvo."
           }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger ใช้ไมโครโฟนเพื่อเปลี่ยนชื่อตัวโน้ตที่คุณพูดให้เป็นตัวโน้ตบนบรรทัดห้าเส้น เสียงจะประมวลผลบนอุปกรณ์นี้เท่านั้นและจะไม่ถูกบันทึก"
+          }
         }
       }
     },
@@ -305,6 +323,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O StaffSinger usa o reconhecimento de voz para transformar os nomes de notas que você fala em notas. O reconhecimento acontece apenas neste dispositivo."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger ใช้การรู้จำเสียงเพื่อเปลี่ยนชื่อตัวโน้ตที่คุณพูดให้เป็นตัวโน้ต การรู้จำเสียงทำงานบนอุปกรณ์นี้เท่านั้น"
           }
         }
       }
