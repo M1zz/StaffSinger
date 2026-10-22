@@ -54,10 +54,10 @@ enum SpokenSolfege {
 
         var label: String {
             switch self {
-            case .quarter: return "4분"
-            case .eighth: return "8분"
-            case .sixteenth: return "16분"
-            case .free: return "리듬 없이"
+            case .quarter: return String(localized: "4분")
+            case .eighth: return String(localized: "8분")
+            case .sixteenth: return String(localized: "16분")
+            case .free: return String(localized: "리듬 없이")
             }
         }
     }

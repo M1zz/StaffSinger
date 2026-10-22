@@ -152,7 +152,7 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         view.layer.addSublayer(staffGuide)
 
         let hint = UILabel()
-        hint.text = "이 칸에 두 마디를 맞추고 촬영하세요"
+        hint.text = String(localized: "이 칸에 두 마디를 맞추고 촬영하세요")
         hint.textColor = .white
         hint.font = .systemFont(ofSize: 15, weight: .semibold)
         hint.textAlignment = .center
@@ -176,7 +176,7 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         view.addSubview(shutter)
 
         let cancel = UIButton(type: .system)
-        cancel.setTitle("취소", for: .normal)
+        cancel.setTitle(String(localized: "취소"), for: .normal)
         cancel.setTitleColor(.white, for: .normal)
         cancel.titleLabel?.font = .systemFont(ofSize: 17, weight: .semibold)
         cancel.translatesAutoresizingMaskIntoConstraints = false
@@ -195,14 +195,14 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
 
     private func showUnavailable() {
         let label = UILabel()
-        label.text = "카메라를 사용할 수 없습니다.\n사진 보관함에서 선택해 주세요."
+        label.text = String(localized: "카메라를 사용할 수 없습니다.\n사진 보관함에서 선택해 주세요.")
         label.numberOfLines = 0
         label.textColor = .white
         label.textAlignment = .center
         label.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(label)
         let close = UIButton(type: .system)
-        close.setTitle("닫기", for: .normal)
+        close.setTitle(String(localized: "닫기"), for: .normal)
         close.addTarget(self, action: #selector(cancelTapped), for: .touchUpInside)
         close.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(close)

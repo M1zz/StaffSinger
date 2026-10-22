@@ -94,7 +94,7 @@ struct EditorToolbar: View {
             keyStepButton("♭", to: key - 1, enabled: key > -7)
 
             // Current key, e.g. "다장조" or "G ♯1" / "B♭ ♭2".
-            Text(key == 0 ? "다장조"
+            Text(key == 0 ? String(localized: "다장조")
                           : "\(KeySignature(count: key).tonic) \(KeySignature(count: key).shortLabel)")
                 .font(.subheadline.weight(.bold).monospaced())
                 .foregroundColor(key == 0 ? .secondary : .accentColor)

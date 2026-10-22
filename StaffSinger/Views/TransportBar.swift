@@ -103,7 +103,7 @@ struct SettingsSidePanel: View {
                         .font(.title3)
                         .foregroundColor(.accentColor)
                 }
-                .accessibilityLabel(onLeft ? "오른쪽에 표시" : "왼쪽에 표시")
+                .accessibilityLabel(onLeft ? String(localized: "오른쪽에 표시") : String(localized: "왼쪽에 표시"))
 
                 Button(action: onClose) {
                     Image(systemName: "xmark.circle.fill")

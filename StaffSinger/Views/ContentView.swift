@@ -281,11 +281,11 @@ struct ContentView: View {
                 OMR.transcribe(img, maxBeats: maxBeats)
             }.value
             if notes.isEmpty {
-                omrMessage = "악보를 인식하지 못했습니다. 깨끗한 인쇄·한 줄·정면 사진일수록 잘 됩니다."
+                omrMessage = String(localized: "악보를 인식하지 못했습니다. 깨끗한 인쇄·한 줄·정면 사진일수록 잘 됩니다.")
             } else {
                 vm.score.notes = notes
                 vm.selectedNoteID = nil
-                omrMessage = "\(notes.count)개 음표를 인식했습니다 (실험적).\n음높이·길이는 직접 확인하고 고쳐 주세요."
+                omrMessage = String(localized: "\(notes.count)개 음표를 인식했습니다 (실험적).\n음높이·길이는 직접 확인하고 고쳐 주세요.")
             }
         }
     }
@@ -297,19 +297,19 @@ struct ContentView: View {
     private func importDictated(_ notes: [ScoreNote]) {
         guard !notes.isEmpty else { return }
         vm.importNotes(notes)
-        omrMessage = "\(notes.count)개 음표를 받아썼습니다.\n음높이나 길이가 다르면 음표를 끌어서 고쳐 주세요."
+        omrMessage = String(localized: "\(notes.count)개 음표를 받아썼습니다.\n음높이나 길이가 다르면 음표를 끌어서 고쳐 주세요.")
     }
 
     private func importPasted(_ text: String) {
         let notes = vm.importFromText(text)
         guard !notes.isEmpty else {
-            omrMessage = "붙여넣은 텍스트에서 음표를 찾지 못했습니다.\n규칙(예: 4옥도8분음)에 맞는지 확인해 주세요."
+            omrMessage = String(localized: "붙여넣은 텍스트에서 음표를 찾지 못했습니다.\n규칙(예: 4옥도8분음)에 맞는지 확인해 주세요.")
             return
         }
         let twoBars = vm.score.measureCapacity * 2
         let overflows = twoBars > 0 && vm.score.totalBeats > twoBars + 1e-6
-        omrMessage = "\(notes.count)개 음표를 불러왔습니다."
-            + (overflows ? "\n2마디를 넘는 음표는 화면에 보이지 않을 수 있어요." : "")
+        omrMessage = String(localized: "\(notes.count)개 음표를 불러왔습니다.")
+            + (overflows ? String(localized: "\n2마디를 넘는 음표는 화면에 보이지 않을 수 있어요.") : "")
     }
 
     /// Defer the crop screen until the picker sheet has dismissed, so the two
@@ -441,7 +441,7 @@ struct ContentView: View {
             .background(.ultraThinMaterial, in: Circle())
             .overlay(Circle().stroke(.black.opacity(0.05), lineWidth: 1))
         }
-        .accessibilityLabel(on ? "메트로놈 끄기" : "메트로놈 켜기")
+        .accessibilityLabel(on ? String(localized: "메트로놈 끄기") : String(localized: "메트로놈 켜기"))
     }
 
     private func circleButton(systemImage: String, tint: Color,
@@ -573,8 +573,7 @@ private struct PasteScoreSheet: View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 16) {
-                    Text("악보 사진을 AI에게 주고 아래 규칙대로 적어 달라고 한 뒤, "
-                         + "받은 텍스트를 붙여넣으면 오선지에 들어갑니다.")
+                    Text("악보 사진을 AI에게 주고 아래 규칙대로 적어 달라고 한 뒤, 받은 텍스트를 붙여넣으면 오선지에 들어갑니다.")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
@@ -583,7 +582,7 @@ private struct PasteScoreSheet: View {
                         UIPasteboard.general.string = ScoreTextFormat.ruleText
                         copiedRule = true
                     } label: {
-                        Label(copiedRule ? "규칙을 복사했어요" : "AI에게 줄 규칙 복사",
+                        Label(copiedRule ? String(localized: "규칙을 복사했어요") : String(localized: "AI에게 줄 규칙 복사"),
                               systemImage: copiedRule ? "checkmark.circle.fill" : "doc.on.doc")
                             .font(.headline)
                             .frame(maxWidth: .infinity)

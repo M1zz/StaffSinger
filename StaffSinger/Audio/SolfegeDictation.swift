@@ -116,25 +116,24 @@ final class SolfegeDictation: ObservableObject {
     /// user-facing reason on failure.
     private func requestPermissions() async -> String? {
         guard let recognizer, recognizer.isAvailable else {
-            return "이 기기에서 한국어 음성 인식을 쓸 수 없습니다."
+            return String(localized: "이 기기에서 한국어 음성 인식을 쓸 수 없습니다.")
         }
         guard recognizer.supportsOnDeviceRecognition else {
-            return "기기 안에서 처리하는 한국어 음성 인식이 준비되지 않았습니다.\n"
-                 + "설정 ▸ 일반 ▸ 키보드 ▸ 받아쓰기에서 한국어를 켜면 필요한 파일이 내려받아집니다."
+            return String(localized: "기기 안에서 처리하는 한국어 음성 인식이 준비되지 않았습니다.\n설정 ▸ 일반 ▸ 키보드 ▸ 받아쓰기에서 한국어를 켜면 필요한 파일이 내려받아집니다.")
         }
 
         let speech = await withCheckedContinuation { continuation in
             SFSpeechRecognizer.requestAuthorization { continuation.resume(returning: $0) }
         }
         guard speech == .authorized else {
-            return "음성 인식 권한이 필요합니다. 설정에서 허용해 주세요."
+            return String(localized: "음성 인식 권한이 필요합니다. 설정에서 허용해 주세요.")
         }
 
         let mic = await withCheckedContinuation { continuation in
             AVAudioApplication.requestRecordPermission { continuation.resume(returning: $0) }
         }
         guard mic else {
-            return "마이크 권한이 필요합니다. 설정에서 허용해 주세요."
+            return String(localized: "마이크 권한이 필요합니다. 설정에서 허용해 주세요.")
         }
         return nil
     }
@@ -168,7 +167,7 @@ final class SolfegeDictation: ObservableObject {
                 }
             } catch {
                 self.teardown()
-                self.phase = .failed("녹음을 시작할 수 없습니다: \(error.localizedDescription)")
+                self.phase = .failed(String(localized: "녹음을 시작할 수 없습니다: \(error.localizedDescription)"))
             }
         }
     }
@@ -261,7 +260,7 @@ final class SolfegeDictation: ObservableObject {
         let format = input.outputFormat(forBus: 0)
         guard format.sampleRate > 0 else {
             throw NSError(domain: "SolfegeDictation", code: 1, userInfo: [
-                NSLocalizedDescriptionKey: "마이크 입력을 찾지 못했습니다."
+                NSLocalizedDescriptionKey: String(localized: "마이크 입력을 찾지 못했습니다.")
             ])
         }
         tapSampleRate = format.sampleRate
@@ -323,8 +322,8 @@ final class SolfegeDictation: ObservableObject {
 
         guard let result, !result.bestTranscription.segments.isEmpty else {
             phase = .failed(latestError == nil
-                ? "계이름을 알아듣지 못했습니다. 메트로놈에 맞춰 또박또박 \"도 레 미\"처럼 말해 보세요."
-                : "음성 인식에 실패했습니다. 잠시 후 다시 시도해 주세요.")
+                ? String(localized: "계이름을 알아듣지 못했습니다. 메트로놈에 맞춰 또박또박 \"도 레 미\"처럼 말해 보세요.")
+                : String(localized: "음성 인식에 실패했습니다. 잠시 후 다시 시도해 주세요."))
             return
         }
 
@@ -340,7 +339,7 @@ final class SolfegeDictation: ObservableObject {
         notes = placed
         heard = result.bestTranscription.formattedString
         phase = placed.isEmpty
-            ? .failed("\"\(heard)\" — 여기서 계이름을 찾지 못했습니다.\n도 레 미 파 솔 라 시 로 말해 주세요.")
+            ? .failed(String(localized: "\"\(heard)\" — 여기서 계이름을 찾지 못했습니다.\n도 레 미 파 솔 라 시 로 말해 주세요."))
             : .done(noteCount: placed.count)
     }
 

@@ -117,7 +117,7 @@ struct DictationSheet: View {
         }
     }
 
-    private func instruction(_ title: String, detail: String) -> some View {
+    private func instruction(_ title: LocalizedStringKey, detail: LocalizedStringKey) -> some View {
         VStack(spacing: 6) {
             Image(systemName: "music.mic")
                 .font(.system(size: 40)).foregroundColor(.accentColor)
@@ -194,8 +194,8 @@ struct DictationSheet: View {
                 }
                 .pickerStyle(.segmented)
                 Text(dictation.grid == .free
-                     ? "말한 순서만 씁니다. 길이는 모두 4분음표로 넣고 나중에 고치세요."
-                     : "말한 시점을 가장 가까운 \(dictation.grid.label)음표 자리로 맞춥니다.")
+                     ? String(localized: "말한 순서만 씁니다. 길이는 모두 4분음표로 넣고 나중에 고치세요.")
+                     : String(localized: "말한 시점을 가장 가까운 \(dictation.grid.label)음표 자리로 맞춥니다."))
                     .font(.caption).foregroundColor(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -207,8 +207,8 @@ struct DictationSheet: View {
                 Toggle("옥타브 자동 맞춤", isOn: $dictation.autoOctave)
                     .font(.subheadline)
                 Text(dictation.autoOctave
-                     ? "앞 음과 가까운 옥타브를 고릅니다. \"시 도\"가 반음 위로 올라갑니다."
-                     : "모든 음이 시작 옥타브에 들어갑니다.")
+                     ? String(localized: "앞 음과 가까운 옥타브를 고릅니다. \"시 도\"가 반음 위로 올라갑니다.")
+                     : String(localized: "모든 음이 시작 옥타브에 들어갑니다."))
                     .font(.caption).foregroundColor(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
             }
@@ -227,7 +227,7 @@ struct DictationSheet: View {
         }
     }
 
-    private func tip(_ text: String) -> some View {
+    private func tip(_ text: LocalizedStringKey) -> some View {
         HStack(alignment: .top, spacing: 5) {
             Text("·").font(.caption).foregroundColor(.secondary)
             Text(text).font(.caption).foregroundColor(.secondary)
@@ -240,6 +240,6 @@ struct DictationSheet: View {
         let perMeasure = max(1.0, score.quarterBeatsPerMeasure)
         let measure = Int(beat / perMeasure) + 1
         let inMeasure = Int(beat.truncatingRemainder(dividingBy: perMeasure)) + 1
-        return "\(measure)마디 \(inMeasure)박"
+        return String(localized: "\(measure)마디 \(inMeasure)박")
     }
 }

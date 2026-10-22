@@ -1,0 +1,74 @@
+{
+  "sourceLanguage" : "ko",
+  "strings" : {
+    "CFBundleDisplayName" : {
+      "comment" : "App name shown on the Home Screen",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "초견"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
+        }
+      }
+    },
+    "NSCameraUsageDescription" : {
+      "comment" : "Camera permission prompt",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "악보를 촬영해 참고 이미지로 불러오기 위해 카메라를 사용합니다."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger uses the camera to take a photo of a score and load it as a reference image."
+          }
+        }
+      }
+    },
+    "NSMicrophoneUsageDescription" : {
+      "comment" : "Microphone permission prompt",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "계이름을 말하면 오선지에 음표로 옮기기 위해 마이크를 사용합니다. 녹음은 기기 안에서만 처리되고 저장되지 않습니다."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger uses the microphone to turn the note names you say into notes on the staff. Audio is processed on this device only and is never saved."
+          }
+        }
+      }
+    },
+    "NSSpeechRecognitionUsageDescription" : {
+      "comment" : "Speech recognition permission prompt",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "말한 계이름을 음표로 바꾸기 위해 음성 인식을 사용합니다. 인식은 기기 안에서만 이루어집니다."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger uses speech recognition to turn the note names you say into notes. Recognition happens on this device only."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

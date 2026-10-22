@@ -132,9 +132,9 @@ enum Clef: String, CaseIterable, Codable, Identifiable {
     /// Korean name for the settings UI.
     var displayName: String {
         switch self {
-        case .treble: return "높은음자리표"
-        case .alto:   return "가온음자리표"
-        case .bass:   return "낮은음자리표"
+        case .treble: return String(localized: "높은음자리표")
+        case .alto:   return String(localized: "가온음자리표")
+        case .bass:   return String(localized: "낮은음자리표")
         }
     }
 }
@@ -176,11 +176,11 @@ enum NoteDuration: String, CaseIterable, Codable, Identifiable {
 
     var displayName: String {
         switch self {
-        case .whole: return "온음표"
-        case .half: return "2분음표"
-        case .quarter: return "4분음표"
-        case .eighth: return "8분음표"
-        case .sixteenth: return "16분음표"
+        case .whole: return String(localized: "온음표")
+        case .half: return String(localized: "2분음표")
+        case .quarter: return String(localized: "4분음표")
+        case .eighth: return String(localized: "8분음표")
+        case .sixteenth: return String(localized: "16분음표")
         }
     }
 }
@@ -216,9 +216,9 @@ struct KeySignature {
     var label: String {
         let sharpTonic = ["C","G","D","A","E","B","F♯","C♯"]
         let flatTonic  = ["C","F","B♭","E♭","A♭","D♭","G♭","C♭"]
-        if count == 0 { return "다장조 C (조표 없음)" }
-        if count > 0 { return "\(sharpTonic[min(count,7)])장조 (♯\(count))" }
-        return "\(flatTonic[min(-count,7)])장조 (♭\(-count))"
+        if count == 0 { return String(localized: "다장조 C (조표 없음)") }
+        if count > 0 { return String(localized: "\(sharpTonic[min(count,7)])장조 (♯\(count))") }
+        return String(localized: "\(flatTonic[min(-count,7)])장조 (♭\(-count))")
     }
 
     /// Compact label for the header, e.g. "♯2" / "♭3" / "" for C major.
@@ -268,7 +268,12 @@ struct ScoreNote: Identifiable, Equatable, Codable {
 
     /// Human label like "4분음표", "점4분음표", or "셋잇단8분음표".
     var durationLabel: String {
-        (triplet ? "셋잇단" : "") + (dotted ? "점" : "") + duration.displayName
+        switch (triplet, dotted) {
+        case (true, true):  return String(localized: "셋잇단점\(duration.displayName)")
+        case (true, false): return String(localized: "셋잇단\(duration.displayName)")
+        case (false, true): return String(localized: "점\(duration.displayName)")
+        default:            return duration.displayName
+        }
     }
 }
 
@@ -276,7 +281,7 @@ struct ScoreNote: Identifiable, Equatable, Codable {
 
 /// The whole document. Notes are stored as a flat, time-ordered list.
 struct Score: Codable {
-    var title: String = "새 악보"
+    var title: String = String(localized: "새 악보")
     /// Beats per minute (quarter note gets the beat).
     var tempo: Double = 90
     /// Numerator / denominator of the time signature, e.g. 4/4, 3/4, 6/8.

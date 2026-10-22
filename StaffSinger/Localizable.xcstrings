@@ -1,6 +1,329 @@
 {
   "sourceLanguage" : "ko",
   "strings" : {
+    "\n2마디를 넘는 음표는 화면에 보이지 않을 수 있어요." : {
+      "comment" : "Paste overflow warning (starts with newline)",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\n2마디를 넘는 음표는 화면에 보이지 않을 수 있어요."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nNotes beyond the second bar may not be visible."
+          }
+        }
+      }
+    },
+    "\"%@\" — 여기서 계이름을 찾지 못했습니다.\n도 레 미 파 솔 라 시 로 말해 주세요." : {
+      "comment" : "Dictation error; %@ = what was heard",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"%@\" — 여기서 계이름을 찾지 못했습니다.\n도 레 미 파 솔 라 시 로 말해 주세요."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"%@\" — no note names found in that.\nPlease say 도 레 미 파 솔 라 시."
+          }
+        }
+      }
+    },
+    "%@ · 듣는 중" : {
+      "comment" : "Dictation: position while listening; %@ is e.g. 'Bar 1, beat 3'",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · 듣는 중"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Listening"
+          }
+        }
+      }
+    },
+    "%@장조 (♭%lld)" : {
+      "comment" : "Key label: tonic letter, flats count",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@장조 (♭%lld)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ major (♭%lld)"
+          }
+        }
+      }
+    },
+    "%@장조 (♯%lld)" : {
+      "comment" : "Key label: tonic letter, sharps count",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@장조 (♯%lld)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ major (♯%lld)"
+          }
+        }
+      }
+    },
+    "%lld개 음표를 받아썼습니다" : {
+      "comment" : "Dictation done; %lld = note count",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld개 음표를 받아썼습니다"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes transcribed: %lld"
+          }
+        }
+      }
+    },
+    "%lld개 음표를 받아썼습니다.\n음높이나 길이가 다르면 음표를 끌어서 고쳐 주세요." : {
+      "comment" : "Dictation import message; %lld = note count",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld개 음표를 받아썼습니다.\n음높이나 길이가 다르면 음표를 끌어서 고쳐 주세요."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes transcribed: %lld.\nIf a pitch or length is off, drag the note to fix it."
+          }
+        }
+      }
+    },
+    "%lld개 음표를 불러왔습니다." : {
+      "comment" : "Paste success; %lld = note count",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld개 음표를 불러왔습니다."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes imported: %lld."
+          }
+        }
+      }
+    },
+    "%lld개 음표를 인식했습니다 (실험적).\n음높이·길이는 직접 확인하고 고쳐 주세요." : {
+      "comment" : "OMR success; %lld = note count",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld개 음표를 인식했습니다 (실험적).\n음높이·길이는 직접 확인하고 고쳐 주세요."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes recognized: %lld (experimental).\nPlease check the pitches and lengths and fix them by hand."
+          }
+        }
+      }
+    },
+    "%lld마디 %lld박" : {
+      "comment" : "Beat counter while listening: bar number, beat number",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld마디 %lld박"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bar %lld, beat %lld"
+          }
+        }
+      }
+    },
+    "16분" : {
+      "comment" : "Rhythm snap grid label",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "16분"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        }
+      }
+    },
+    "16분음표" : {
+      "comment" : "Note name",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "16분음표"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sixteenth note"
+          }
+        }
+      }
+    },
+    "2분음표" : {
+      "comment" : "Note name",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2분음표"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Half note"
+          }
+        }
+      }
+    },
+    "4도보다 넓게 뛸 땐 \"높은 솔\", \"낮은 시\"처럼 말하세요" : {
+      "comment" : "Tip; Korean words are spoken",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4도보다 넓게 뛸 땐 \"높은 솔\", \"낮은 시\"처럼 말하세요"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For leaps wider than a fourth, say \"높은 솔\" (high sol) or \"낮은 시\" (low si)"
+          }
+        }
+      }
+    },
+    "4분" : {
+      "comment" : "Rhythm snap grid label",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4분"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        }
+      }
+    },
+    "4분음표" : {
+      "comment" : "Note name",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4분음표"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quarter note"
+          }
+        }
+      }
+    },
+    "8분" : {
+      "comment" : "Rhythm snap grid label",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8분"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        }
+      }
+    },
+    "8분음표" : {
+      "comment" : "Note name",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8분음표"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eighth note"
+          }
+        }
+      }
+    },
+    "AI에게 줄 규칙 복사" : {
+      "comment" : "Button",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AI에게 줄 규칙 복사"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copy Rule for AI"
+          }
+        }
+      }
+    },
     "Siri에게 말하거나 단축어로 바로 실행해요." : {
       "comment" : "Roadmap item detail: Siri and Shortcuts",
       "localizations" : {
@@ -52,6 +375,108 @@
         }
       }
     },
+    "⚠︎ %@/%@박" : {
+      "comment" : "Over-capacity badge above a bar: used / capacity beats",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@박"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@ beats"
+          }
+        }
+      }
+    },
+    "가온음자리표" : {
+      "comment" : "Clef name (C clef)",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "가온음자리표"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alto clef"
+          }
+        }
+      }
+    },
+    "개발자에게 문의" : {
+      "comment" : "Section header",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "개발자에게 문의"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contact the Developer"
+          }
+        }
+      }
+    },
+    "계이름 받아쓰기" : {
+      "comment" : "Dictation sheet title",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "계이름 받아쓰기"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfège Dictation"
+          }
+        }
+      }
+    },
+    "계이름을 알아듣지 못했습니다. 메트로놈에 맞춰 또박또박 \"도 레 미\"처럼 말해 보세요." : {
+      "comment" : "Dictation error",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "계이름을 알아듣지 못했습니다. 메트로놈에 맞춰 또박또박 \"도 레 미\"처럼 말해 보세요."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't make out any note names. Try saying \"도 레 미\" clearly, in time with the metronome."
+          }
+        }
+      }
+    },
+    "규칙을 복사했어요" : {
+      "comment" : "Button after copying",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "규칙을 복사했어요"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rule copied"
+          }
+        }
+      }
+    },
     "글자 크기를 키워도 잘리지 않고 보기 좋게 다시 배치돼요." : {
       "comment" : "Roadmap item detail: large text layouts",
       "localizations" : {
@@ -65,6 +490,108 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "글자 크기를 키워도 잘리지 않고 보기 좋게 다시 배치돼요."
+          }
+        }
+      }
+    },
+    "기기 안에서 처리하는 한국어 음성 인식이 준비되지 않았습니다.\n설정 ▸ 일반 ▸ 키보드 ▸ 받아쓰기에서 한국어를 켜면 필요한 파일이 내려받아집니다." : {
+      "comment" : "Dictation error",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기기 안에서 처리하는 한국어 음성 인식이 준비되지 않았습니다.\n설정 ▸ 일반 ▸ 키보드 ▸ 받아쓰기에서 한국어를 켜면 필요한 파일이 내려받아집니다."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "On-device Korean speech recognition isn't ready.\nTurn on Korean under Settings ▸ General ▸ Keyboard ▸ Dictation to download what's needed."
+          }
+        }
+      }
+    },
+    "낮은음자리표" : {
+      "comment" : "Clef name",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "낮은음자리표"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bass clef"
+          }
+        }
+      }
+    },
+    "녹음을 시작할 수 없습니다: %@" : {
+      "comment" : "Dictation error; %@ = system error text",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "녹음을 시작할 수 없습니다: %@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't start recording: %@"
+          }
+        }
+      }
+    },
+    "높은음자리표" : {
+      "comment" : "Clef name",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "높은음자리표"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Treble clef"
+          }
+        }
+      }
+    },
+    "다장조" : {
+      "comment" : "Key label for C major",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다장조"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C major"
+          }
+        }
+      }
+    },
+    "다장조 C (조표 없음)" : {
+      "comment" : "Key label",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다장조 C (조표 없음)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C major (no accidentals)"
           }
         }
       }
@@ -154,6 +681,125 @@
         }
       }
     },
+    "도 레 미 파 솔 라 시 · 쉬는 곳은 \"쉼\"" : {
+      "comment" : "Dictation idle detail: Korean solfège syllables are spoken; keep them",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · 쉬는 곳은 \"쉼\""
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · say \"쉼\" for a rest"
+          }
+        }
+      }
+    },
+    "두 마디가 칸에 꽉 차도록 손가락으로 확대·이동하세요" : {
+      "comment" : "Crop screen hint",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "두 마디가 칸에 꽉 차도록 손가락으로 확대·이동하세요"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pinch and drag until two bars fill the box"
+          }
+        }
+      }
+    },
+    "들은 말" : {
+      "comment" : "Dictation: recognized text caption",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "들은 말"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What I Heard"
+          }
+        }
+      }
+    },
+    "리듬 스냅" : {
+      "comment" : "Dictation setting",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "리듬 스냅"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rhythm Snap"
+          }
+        }
+      }
+    },
+    "리듬 없이" : {
+      "comment" : "Rhythm snap: no rhythm",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "리듬 없이"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Free"
+          }
+        }
+      }
+    },
+    "마이크 권한이 필요합니다. 설정에서 허용해 주세요." : {
+      "comment" : "Dictation error",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "마이크 권한이 필요합니다. 설정에서 허용해 주세요."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Microphone permission is required. Please allow it in Settings."
+          }
+        }
+      }
+    },
+    "마이크 입력을 찾지 못했습니다." : {
+      "comment" : "Dictation error",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "마이크 입력을 찾지 못했습니다."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No microphone input was found."
+          }
+        }
+      }
+    },
     "만든 악보를 파일로 저장하고 다시 불러올 수 있어요." : {
       "comment" : "Roadmap item detail: save and export scores",
       "localizations" : {
@@ -171,6 +817,210 @@
         }
       }
     },
+    "말하기 시작" : {
+      "comment" : "Dictation button: start",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "말하기 시작"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start Speaking"
+          }
+        }
+      }
+    },
+    "말한 순서만 씁니다. 길이는 모두 4분음표로 넣고 나중에 고치세요." : {
+      "comment" : "Dictation snap explanation (free)",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "말한 순서만 씁니다. 길이는 모두 4분음표로 넣고 나중에 고치세요."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only the order you spoke is used. Every note goes in as a quarter note; fix lengths later."
+          }
+        }
+      }
+    },
+    "말한 시점을 가장 가까운 %@음표 자리로 맞춥니다." : {
+      "comment" : "Dictation snap explanation; %@ is a grid like 1/4",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "말한 시점을 가장 가까운 %@음표 자리로 맞춥니다."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snaps each spoken moment to the nearest %@ note position."
+          }
+        }
+      }
+    },
+    "멈추기" : {
+      "comment" : "Dictation button: stop",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "멈추기"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop"
+          }
+        }
+      }
+    },
+    "메트로놈 (박자 클릭)" : {
+      "comment" : "Toggle",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "메트로놈 (박자 클릭)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronome (beat click)"
+          }
+        }
+      }
+    },
+    "메트로놈 끄기" : {
+      "comment" : "Accessibility",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "메트로놈 끄기"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turn metronome off"
+          }
+        }
+      }
+    },
+    "메트로놈 네 박을 세고 나면, 박에 맞춰 계이름을 말하세요." : {
+      "comment" : "Dictation idle instruction",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "메트로놈 네 박을 세고 나면, 박에 맞춰 계이름을 말하세요."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "After four metronome beats, say the note names in time."
+          }
+        }
+      }
+    },
+    "메트로놈 켜기" : {
+      "comment" : "Accessibility",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "메트로놈 켜기"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turn metronome on"
+          }
+        }
+      }
+    },
+    "모든 음이 시작 옥타브에 들어갑니다." : {
+      "comment" : "Explanation",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "모든 음이 시작 옥타브에 들어갑니다."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All notes stay in the starting octave."
+          }
+        }
+      }
+    },
+    "박자" : {
+      "comment" : "Picker label: time signature",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "박자"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time Signature"
+          }
+        }
+      }
+    },
+    "박자표" : {
+      "comment" : "Section: time signature",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "박자표"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time Signature"
+          }
+        }
+      }
+    },
+    "버그 제보와 기능 제안을 환영합니다." : {
+      "comment" : "Section footer",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "버그 제보와 기능 제안을 환영합니다."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bug reports and feature ideas are welcome."
+          }
+        }
+      }
+    },
     "보기 편한 색과 대비" : {
       "comment" : "Roadmap item: better colors and contrast",
       "localizations" : {
@@ -184,6 +1034,193 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "보기 편한 색과 대비"
+          }
+        }
+      }
+    },
+    "붙여넣은 텍스트에서 음표를 찾지 못했습니다.\n규칙(예: 4옥도8분음)에 맞는지 확인해 주세요." : {
+      "comment" : "Paste failure; example is Korean format, keep",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "붙여넣은 텍스트에서 음표를 찾지 못했습니다.\n규칙(예: 4옥도8분음)에 맞는지 확인해 주세요."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No notes found in the pasted text.\nCheck that it follows the rule (e.g. 4옥도8분음)."
+          }
+        }
+      }
+    },
+    "빠르면 템포를 낮추세요 (현재 %lld BPM)" : {
+      "comment" : "Tip; %lld = tempo",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "빠르면 템포를 낮추세요 (현재 %lld BPM)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "If it's too fast, lower the tempo (now %lld BPM)"
+          }
+        }
+      }
+    },
+    "사용" : {
+      "comment" : "Button: use cropped photo",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사용"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use"
+          }
+        }
+      }
+    },
+    "사진 보관함에서 선택" : {
+      "comment" : "Dialog button",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사진 보관함에서 선택"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose from Photo Library"
+          }
+        }
+      }
+    },
+    "새 악보" : {
+      "comment" : "Default score title",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "새 악보"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Score"
+          }
+        }
+      }
+    },
+    "설정" : {
+      "comment" : "Settings title",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "설정"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        }
+      }
+    },
+    "셋잇단%@" : {
+      "comment" : "Duration label; %@ is a note name",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "셋잇단%@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triplet %@"
+          }
+        }
+      }
+    },
+    "셋잇단음표 모드: 음 3개가 한 박(또는 두 박)에 묶입니다" : {
+      "comment" : "Mode hint",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "셋잇단음표 모드: 음 3개가 한 박(또는 두 박)에 묶입니다"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triplet mode: three notes share one beat (or two)"
+          }
+        }
+      }
+    },
+    "셋잇단점%@" : {
+      "comment" : "Duration label; %@ is a note name",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "셋잇단점%@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dotted triplet %@"
+          }
+        }
+      }
+    },
+    "쉼표 모드: 원하는 길이를 누르면 쉼표가 들어갑니다" : {
+      "comment" : "Mode hint",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "쉼표 모드: 원하는 길이를 누르면 쉼표가 들어갑니다"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rest mode: tap a length to insert a rest"
+          }
+        }
+      }
+    },
+    "시작 옥타브  %lld옥" : {
+      "comment" : "Stepper: starting octave; %lld = octave number",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "시작 옥타브  %lld옥"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starting octave  %lld"
           }
         }
       }
@@ -222,6 +1259,74 @@
         }
       }
     },
+    "아래에서 확인하고 \"악보에 넣기\"를 누르세요" : {
+      "comment" : "Dictation done hint; quotes the button 악보에 넣기",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아래에서 확인하고 \"악보에 넣기\"를 누르세요"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check them below, then tap \"Add to Score\""
+          }
+        }
+      }
+    },
+    "악보 붙여넣기" : {
+      "comment" : "Sheet title",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "악보 붙여넣기"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paste Score"
+          }
+        }
+      }
+    },
+    "악보 사진" : {
+      "comment" : "Button / dialog title: reference photo of a score",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "악보 사진"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Score Photo"
+          }
+        }
+      }
+    },
+    "악보 사진을 AI에게 주고 아래 규칙대로 적어 달라고 한 뒤, 받은 텍스트를 붙여넣으면 오선지에 들어갑니다." : {
+      "comment" : "Paste sheet intro",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "악보 사진을 AI에게 주고 아래 규칙대로 적어 달라고 한 뒤, 받은 텍스트를 붙여넣으면 오선지에 들어갑니다."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Give a photo of the score to an AI, ask it to write it out by the rule below, then paste the text it returns to fill the staff."
+          }
+        }
+      }
+    },
     "악보 저장과 내보내기" : {
       "comment" : "Roadmap item: save and export scores",
       "localizations" : {
@@ -239,6 +1344,91 @@
         }
       }
     },
+    "악보 제목" : {
+      "comment" : "Section: score title",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "악보 제목"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Score Title"
+          }
+        }
+      }
+    },
+    "악보로 변환" : {
+      "comment" : "Button",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "악보로 변환"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Convert to Score"
+          }
+        }
+      }
+    },
+    "악보를 인식하지 못했습니다. 깨끗한 인쇄·한 줄·정면 사진일수록 잘 됩니다." : {
+      "comment" : "OMR failure message",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "악보를 인식하지 못했습니다. 깨끗한 인쇄·한 줄·정면 사진일수록 잘 됩니다."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't read the score. Clean printed music, a single line and a straight-on photo work best."
+          }
+        }
+      }
+    },
+    "악보에 넣기" : {
+      "comment" : "Button: put dictated notes on the staff",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "악보에 넣기"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to Score"
+          }
+        }
+      }
+    },
+    "악보에 들어갈 음표" : {
+      "comment" : "Dictation: notes preview caption",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "악보에 들어갈 음표"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes to Add"
+          }
+        }
+      }
+    },
     "알아 두면 편한 기능을 알맞은 때에 살짝 알려 줘요." : {
       "comment" : "Roadmap item detail: tips",
       "localizations" : {
@@ -252,6 +1442,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "알아 두면 편한 기능을 알맞은 때에 살짝 알려 줘요."
+          }
+        }
+      }
+    },
+    "앞 음과 가까운 옥타브를 고릅니다. \"시 도\"가 반음 위로 올라갑니다." : {
+      "comment" : "Explanation with Korean syllables in quotes",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앞 음과 가까운 옥타브를 고릅니다. \"시 도\"가 반음 위로 올라갑니다."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Picks the octave closest to the previous note, so \"시 도\" rises by a semitone."
           }
         }
       }
@@ -358,6 +1565,23 @@
         }
       }
     },
+    "여기에 붙여넣기" : {
+      "comment" : "Header",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "여기에 붙여넣기"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paste Here"
+          }
+        }
+      }
+    },
     "연습 알림" : {
       "comment" : "Roadmap item: practice reminders",
       "localizations" : {
@@ -388,6 +1612,125 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "영어 지원"
+          }
+        }
+      }
+    },
+    "예: 4옥도4분음 4옥레4분음 4옥미8분음 …" : {
+      "comment" : "Placeholder; example is in the Korean format the parser needs, keep it",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "예: 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e.g. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
+        }
+      }
+    },
+    "오른쪽에 표시" : {
+      "comment" : "Accessibility: move panel to right",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오른쪽에 표시"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show on the right"
+          }
+        }
+      }
+    },
+    "오선을 길게 눌러 음을 고르고 떼면 추가됩니다" : {
+      "comment" : "Mode hint",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오선을 길게 눌러 음을 고르고 떼면 추가됩니다"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Press and hold the staff to pick a pitch, then release to add it"
+          }
+        }
+      }
+    },
+    "옥타브 자동 맞춤" : {
+      "comment" : "Toggle",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "옥타브 자동 맞춤"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto-match octave"
+          }
+        }
+      }
+    },
+    "온음표" : {
+      "comment" : "Note name",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "온음표"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Whole note"
+          }
+        }
+      }
+    },
+    "완료" : {
+      "comment" : "Button: done",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "완료"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        }
+      }
+    },
+    "왼쪽에 표시" : {
+      "comment" : "Accessibility: move panel to left",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "왼쪽에 표시"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show on the left"
           }
         }
       }
@@ -426,6 +1769,159 @@
         }
       }
     },
+    "음성 인식 권한이 필요합니다. 설정에서 허용해 주세요." : {
+      "comment" : "Dictation error",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "음성 인식 권한이 필요합니다. 설정에서 허용해 주세요."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speech recognition permission is required. Please allow it in Settings."
+          }
+        }
+      }
+    },
+    "음성 인식에 실패했습니다. 잠시 후 다시 시도해 주세요." : {
+      "comment" : "Dictation error",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "음성 인식에 실패했습니다. 잠시 후 다시 시도해 주세요."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speech recognition failed. Please try again in a moment."
+          }
+        }
+      }
+    },
+    "음자리표" : {
+      "comment" : "Picker label: clef",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "음자리표"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clef"
+          }
+        }
+      }
+    },
+    "음자리표 (Clef)" : {
+      "comment" : "Section: clef",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "음자리표 (Clef)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clef"
+          }
+        }
+      }
+    },
+    "이 기기에서 한국어 음성 인식을 쓸 수 없습니다." : {
+      "comment" : "Dictation error",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 기기에서 한국어 음성 인식을 쓸 수 없습니다."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Korean speech recognition isn't available on this device."
+          }
+        }
+      }
+    },
+    "이 칸에 두 마디를 맞추고 촬영하세요" : {
+      "comment" : "Camera hint",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 칸에 두 마디를 맞추고 촬영하세요"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fit two bars in this box and shoot"
+          }
+        }
+      }
+    },
+    "이메일로 문의하기" : {
+      "comment" : "Link",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이메일로 문의하기"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contact by Email"
+          }
+        }
+      }
+    },
+    "이어폰을 쓰면 메트로놈이 마이크에 섞이지 않습니다" : {
+      "comment" : "Tip",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이어폰을 쓰면 메트로놈이 마이크에 섞이지 않습니다"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "With earphones, the metronome won't leak into the microphone"
+          }
+        }
+      }
+    },
+    "인스타그램 DM (@lee25_ios)" : {
+      "comment" : "Link",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "인스타그램 DM (@lee25_ios)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram DM (@lee25_ios)"
+          }
+        }
+      }
+    },
     "잊지 않도록 정한 시간에 시창 연습을 알려 줘요." : {
       "comment" : "Roadmap item detail: practice reminders",
       "localizations" : {
@@ -439,6 +1935,210 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "잊지 않도록 정한 시간에 시창 연습을 알려 줘요."
+          }
+        }
+      }
+    },
+    "자동 채보 (실험)" : {
+      "comment" : "Alert title",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "자동 채보 (실험)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto-Transcribe (Experimental)"
+          }
+        }
+      }
+    },
+    "잘 되게 하려면" : {
+      "comment" : "Tips header",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "잘 되게 하려면"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For best results"
+          }
+        }
+      }
+    },
+    "재생 도우미" : {
+      "comment" : "Section: playback helpers",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "재생 도우미"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Playback Aids"
+          }
+        }
+      }
+    },
+    "전체 지우기" : {
+      "comment" : "Button: clear the whole score",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "전체 지우기"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear All"
+          }
+        }
+      }
+    },
+    "점%@" : {
+      "comment" : "Duration label; %@ is a note name",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "점%@"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dotted %@"
+          }
+        }
+      }
+    },
+    "제목" : {
+      "comment" : "Text field placeholder",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "제목"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title"
+          }
+        }
+      }
+    },
+    "조표" : {
+      "comment" : "Label: key signature",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "조표"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Key"
+          }
+        }
+      }
+    },
+    "조표 (Key)" : {
+      "comment" : "Section: key signature",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "조표 (Key)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Key Signature"
+          }
+        }
+      }
+    },
+    "준비" : {
+      "comment" : "Dictation count-in caption",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "준비"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get ready"
+          }
+        }
+      }
+    },
+    "지원" : {
+      "comment" : "Section header: support",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "지원"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Support"
+          }
+        }
+      }
+    },
+    "참고 사진 삭제" : {
+      "comment" : "Dialog button",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "참고 사진 삭제"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete Reference Photo"
+          }
+        }
+      }
+    },
+    "채보" : {
+      "comment" : "Button: auto-transcribe photo",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "채보"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transcribe"
           }
         }
       }
@@ -477,6 +2177,74 @@
         }
       }
     },
+    "취소" : {
+      "comment" : "Button: cancel",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "취소"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "카메라로 촬영 (2마디 맞춤)" : {
+      "comment" : "Dialog button",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카메라로 촬영 (2마디 맞춤)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Take Photo (fit 2 bars)"
+          }
+        }
+      }
+    },
+    "카메라를 사용할 수 없습니다.\n사진 보관함에서 선택해 주세요." : {
+      "comment" : "Camera unavailable",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카메라를 사용할 수 없습니다.\n사진 보관함에서 선택해 주세요."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The camera isn't available.\nChoose a photo from your library instead."
+          }
+        }
+      }
+    },
+    "카운트인 (시작 전 한 마디)" : {
+      "comment" : "Toggle",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "카운트인 (시작 전 한 마디)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Count-in (one bar before start)"
+          }
+        }
+      }
+    },
     "큰 글씨에 맞춘 화면" : {
       "comment" : "Roadmap item: layouts that fit large text sizes",
       "localizations" : {
@@ -490,6 +2258,40 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "큰 글씨에 맞춘 화면"
+          }
+        }
+      }
+    },
+    "클립보드에서 붙여넣기" : {
+      "comment" : "Button",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "클립보드에서 붙여넣기"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paste from Clipboard"
+          }
+        }
+      }
+    },
+    "템포" : {
+      "comment" : "Section: tempo",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "템포"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo"
           }
         }
       }
@@ -528,6 +2330,40 @@
         }
       }
     },
+    "한 음씩 또박또박, 박에 딱 맞춰 말하세요" : {
+      "comment" : "Tip",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "한 음씩 또박또박, 박에 딱 맞춰 말하세요"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Say one note at a time, clearly and right on the beat"
+          }
+        }
+      }
+    },
+    "현재 악보를 텍스트로 복사 (AI 예시용)" : {
+      "comment" : "Button",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "현재 악보를 텍스트로 복사 (AI 예시용)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copy Current Score as Text (as an example for the AI)"
+          }
+        }
+      }
+    },
     "홈 화면 위젯" : {
       "comment" : "Roadmap item: home screen widgets",
       "localizations" : {
@@ -558,6 +2394,57 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "화면 읽기 기능이 단추와 내용을 빠짐없이, 알맞은 순서로 읽어 줘요."
+          }
+        }
+      }
+    },
+    "화음" : {
+      "comment" : "Toolbar toggle: chord mode",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "화음"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chord"
+          }
+        }
+      }
+    },
+    "화음 모드: 선택한 음 위에 쌓입니다" : {
+      "comment" : "Mode hint",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "화음 모드: 선택한 음 위에 쌓입니다"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chord mode: notes stack on the selected note"
+          }
+        }
+      }
+    },
+    "확인" : {
+      "comment" : "Button: OK",
+      "localizations" : {
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "확인"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
           }
         }
       }
