@@ -21,6 +21,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -43,6 +49,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger uses the camera to take a photo of a score and load it as a reference image."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger 使用相机拍摄乐谱，并将其作为参考图片载入。"
           }
         }
       }
@@ -67,6 +79,12 @@
             "state" : "translated",
             "value" : "StaffSinger uses the microphone to turn the note names you say into notes on the staff. Audio is processed on this device only and is never saved."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger 使用麦克风，把你说出的唱名转成五线谱上的音符。录音只在设备上处理，不会保存。"
+          }
         }
       }
     },
@@ -89,6 +107,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger uses speech recognition to turn the note names you say into notes. Recognition happens on this device only."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger 使用语音识别，把你说出的唱名转成音符。识别只在设备上进行。"
           }
         }
       }

@@ -164,3 +164,58 @@ Reference photo
 Take a photo of the score you are reading and keep it on screen to compare while you copy it out.
 
 Keep it beside you for choir, church music, instrument lessons and music school entrance prep, whenever you need to read music quickly.
+
+## zh-Hans
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger：视奏听音
+
+### 부제
+
+写下的音符，马上听一听
+
+### 키워드
+
+视唱练耳,乐理,五线谱,识谱,作曲,制谱,听写,合唱,钢琴,和弦,节拍器,音乐学习,唱名,试唱,音乐教学,艺考,声乐,练耳,音阶,乐谱,音乐,和声,音乐考试,教会诗班,钢琴课,考级,乐器课,视谱
+
+### 프로모션 텍스트
+
+第一次见到的乐谱，复杂的节奏和弦，现在用耳朵来确认。在五线谱上点按音符再播放，节拍器与预备拍会带你立刻听到成果。
+
+### 설명
+
+第一次见到的乐谱，不要只在脑子里数，用耳朵听一听。
+StaffSinger 能把让你犯难的两个小节抄到五线谱上，并按原本的节奏和音高播放出来。
+
+点按五线谱，或用琴键输入
+长按五线谱选择音高，或点按两个八度的钢琴键盘添加音符。从全音符到十六分音符，还有附点音符、三连音和休止符，都可以选择；刚加入的音符一键即可删除。
+
+跟着节拍器播放
+预备拍之后，乐谱会跟着节拍器的点击声播放，正在发声的音符会用颜色标出。速度和拍号可在设置中调整。
+
+和弦与多声部
+在同一拍上叠加音符就成了和弦，也可以把音乐分成多个声部。支持调号，以及高音、中音、低音谱号。
+
+唱名听写
+跟着节拍器的节拍说出唱名，音符就会写进五线谱；踩准拍子说，节奏也会一并记录。听写识别的是韩语唱名，语音识别完全在设备上进行。
+
+用文字粘贴乐谱
+粘贴按固定规则写成的文字，五线谱就会自动填好。复制规则，连同乐谱照片一起交给AI，再把得到的文字粘贴进来即可。
+
+参考照片
+把正在看的乐谱拍下来，留在屏幕上，一边对照一边抄写。
+
+合唱、唱诗班、乐器课、艺考备考……需要快速读谱的时候，都可以放在身边。
