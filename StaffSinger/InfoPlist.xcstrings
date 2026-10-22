@@ -27,6 +27,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -55,6 +61,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger 使用相机拍摄乐谱，并将其作为参考图片载入。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger 使用相機拍攝樂譜，並將其載入作為參考圖片。"
           }
         }
       }
@@ -85,6 +97,12 @@
             "state" : "translated",
             "value" : "StaffSinger 使用麦克风，把你说出的唱名转成五线谱上的音符。录音只在设备上处理，不会保存。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger 使用麥克風，把你說出的唱名轉成五線譜上的音符。錄音只會在裝置上處理，不會儲存。"
+          }
         }
       }
     },
@@ -113,6 +131,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger 使用语音识别，把你说出的唱名转成音符。识别只在设备上进行。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger 使用語音辨識，把你說出的唱名轉成音符。辨識只會在裝置上進行。"
           }
         }
       }

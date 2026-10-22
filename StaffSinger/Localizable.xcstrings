@@ -27,6 +27,12 @@
             "state" : "translated",
             "value" : "\n超过第2小节的音符可能不会显示在屏幕上。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\n超過第2小節的音符可能不會顯示在畫面上。"
+          }
         }
       }
     },
@@ -55,6 +61,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "“%@”——其中没有找到唱名。\n请按 도 레 미 파 솔 라 시 来说。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「%@」——其中找不到唱名。\n請依 도 레 미 파 솔 라 시 來說。"
           }
         }
       }
@@ -85,6 +97,12 @@
             "state" : "translated",
             "value" : "%@ · 正在聆听"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · 聆聽中"
+          }
         }
       }
     },
@@ -113,6 +131,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@大调（♭%lld）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@大調（♭%lld）"
           }
         }
       }
@@ -143,6 +167,12 @@
             "state" : "translated",
             "value" : "%@大调（♯%lld）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@大調（♯%lld）"
+          }
         }
       }
     },
@@ -171,6 +201,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已听写音符：%lld"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已聽寫音符：%lld"
           }
         }
       }
@@ -201,6 +237,12 @@
             "state" : "translated",
             "value" : "已听写音符：%lld。\n如果音高或时值不对，请拖动音符进行修改。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已聽寫音符：%lld。\n若音高或長度不對，請拖移音符來修改。"
+          }
         }
       }
     },
@@ -229,6 +271,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已导入音符：%lld。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已匯入音符：%lld。"
           }
         }
       }
@@ -259,6 +307,12 @@
             "state" : "translated",
             "value" : "已识别音符：%lld（实验性）。\n请自行核对音高和时值并修改。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已辨識音符：%lld（實驗性）。\n請自行確認音高與長度並加以修改。"
+          }
         }
       }
     },
@@ -288,6 +342,12 @@
             "state" : "translated",
             "value" : "第%lld小节 第%lld拍"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第%lld小節 第%lld拍"
+          }
         }
       }
     },
@@ -313,6 +373,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/16"
@@ -346,6 +412,12 @@
             "state" : "translated",
             "value" : "十六分音符"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "十六分音符"
+          }
         }
       }
     },
@@ -371,6 +443,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "二分音符"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "二分音符"
@@ -404,6 +482,12 @@
             "state" : "translated",
             "value" : "音程跳进超过四度时，请说“높은 솔”（高 sol）或“낮은 시”（低 si）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音程跳進超過四度時，請說「높은 솔」（高 sol）或「낮은 시」（低 si）"
+          }
         }
       }
     },
@@ -429,6 +513,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/4"
@@ -462,6 +552,12 @@
             "state" : "translated",
             "value" : "四分音符"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "四分音符"
+          }
         }
       }
     },
@@ -487,6 +583,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/8"
@@ -520,6 +622,12 @@
             "state" : "translated",
             "value" : "八分音符"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "八分音符"
+          }
         }
       }
     },
@@ -548,6 +656,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "复制给AI的规则"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "複製給 AI 的規則"
           }
         }
       }
@@ -578,6 +692,12 @@
             "state" : "translated",
             "value" : "对 Siri 说一声，或运行快捷指令，立即开始。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "對 Siri 說一聲，或執行捷徑，立即開始。"
+          }
         }
       }
     },
@@ -607,6 +727,12 @@
             "state" : "translated",
             "value" : "Siri 与快捷指令"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri 與捷徑"
+          }
         }
       }
     },
@@ -632,6 +758,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更好用的旁白（VoiceOver）"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "更好用的旁白（VoiceOver）"
@@ -665,6 +797,12 @@
             "state" : "translated",
             "value" : "⚠︎ %@/%@拍"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@拍"
+          }
         }
       }
     },
@@ -693,6 +831,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "中音谱号"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中音譜號"
           }
         }
       }
@@ -723,6 +867,12 @@
             "state" : "translated",
             "value" : "联系开发者"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "聯絡開發者"
+          }
         }
       }
     },
@@ -751,6 +901,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "唱名听写"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "唱名聽寫"
           }
         }
       }
@@ -781,6 +937,12 @@
             "state" : "translated",
             "value" : "没有听清唱名。请跟着节拍器，清楚地说“도 레 미”试试。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "沒有聽清楚唱名。請跟著節拍器，清楚地說「도 레 미」試試。"
+          }
         }
       }
     },
@@ -809,6 +971,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已复制规则"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已複製規則"
           }
         }
       }
@@ -839,6 +1007,12 @@
             "state" : "translated",
             "value" : "放大文字时，界面会重新排布，不会被截断。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "放大文字時，畫面會重新排版，不會被截斷。"
+          }
         }
       }
     },
@@ -867,6 +1041,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "设备端韩语语音识别尚未就绪。\n请在“设置 ▸ 通用 ▸ 键盘 ▸ 听写”中打开韩语，系统会下载所需文件。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "裝置上的韓語語音辨識尚未準備好。\n請在「設定 ▸ 一般 ▸ 鍵盤 ▸ 聽寫」中開啟韓語，系統就會下載所需檔案。"
           }
         }
       }
@@ -897,6 +1077,12 @@
             "state" : "translated",
             "value" : "低音谱号"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "低音譜號"
+          }
         }
       }
     },
@@ -925,6 +1111,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "无法开始录音：%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法開始錄音：%@"
           }
         }
       }
@@ -955,6 +1147,12 @@
             "state" : "translated",
             "value" : "高音谱号"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高音譜號"
+          }
         }
       }
     },
@@ -983,6 +1181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "C大调"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C大調"
           }
         }
       }
@@ -1013,6 +1217,12 @@
             "state" : "translated",
             "value" : "C大调（无升降号）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C大調（無升降記號）"
+          }
         }
       }
     },
@@ -1038,6 +1248,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深色模式"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "深色模式"
@@ -1071,6 +1287,12 @@
             "state" : "translated",
             "value" : "关闭"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關閉"
+          }
         }
       }
     },
@@ -1099,6 +1321,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "即使开启“增强对比度”或难以分辨颜色，内容也清晰可读。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "即使開啟「增強對比」或難以分辨顏色，內容依然清楚易讀。"
           }
         }
       }
@@ -1129,6 +1357,12 @@
             "state" : "translated",
             "value" : "让你用更多语言使用本应用。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "讓你以更多語言使用本 App。"
+          }
         }
       }
     },
@@ -1157,6 +1391,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "更多语言"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更多語言"
           }
         }
       }
@@ -1187,6 +1427,12 @@
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · 休止请说“쉼”"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · 休止請說「쉼」"
+          }
         }
       }
     },
@@ -1215,6 +1461,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "用手指缩放、拖动，让两个小节填满框"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "用手指縮放、拖移，讓兩個小節填滿框"
           }
         }
       }
@@ -1245,6 +1497,12 @@
             "state" : "translated",
             "value" : "听到的内容"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "聽到的內容"
+          }
         }
       }
     },
@@ -1274,6 +1532,12 @@
             "state" : "translated",
             "value" : "节奏对齐"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "節奏對齊"
+          }
         }
       }
     },
@@ -1299,6 +1563,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自由"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "自由"
@@ -1332,6 +1602,12 @@
             "state" : "translated",
             "value" : "需要麦克风权限。请在“设置”中允许。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要麥克風權限。請到「設定」中允許。"
+          }
         }
       }
     },
@@ -1360,6 +1636,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "未找到麦克风输入。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "找不到麥克風輸入。"
           }
         }
       }
@@ -1390,6 +1672,12 @@
             "state" : "translated",
             "value" : "把做好的乐谱保存为文件，之后可以再次打开。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "把做好的樂譜儲存成檔案，之後可以再次開啟。"
+          }
         }
       }
     },
@@ -1418,6 +1706,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "开始说"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開始說"
           }
         }
       }
@@ -1448,6 +1742,12 @@
             "state" : "translated",
             "value" : "只记录你说话的先后顺序。所有音符都按四分音符写入，之后再修改。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "只記錄你說話的先後順序。所有音符都以四分音符寫入，之後再修改。"
+          }
         }
       }
     },
@@ -1477,6 +1777,12 @@
             "state" : "translated",
             "value" : "把你说话的时刻对齐到最近的%@音符位置。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將你說話的時間點對齊到最接近的%@音符位置。"
+          }
         }
       }
     },
@@ -1502,6 +1808,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停止"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "停止"
@@ -1535,6 +1847,12 @@
             "state" : "translated",
             "value" : "节拍器（节拍点击声）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "節拍器（拍點聲）"
+          }
         }
       }
     },
@@ -1563,6 +1881,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "关闭节拍器"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關閉節拍器"
           }
         }
       }
@@ -1593,6 +1917,12 @@
             "state" : "translated",
             "value" : "听完节拍器的四拍后，请跟着节拍说出唱名。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "聽完節拍器的四拍後，請跟著節拍唸出唱名。"
+          }
         }
       }
     },
@@ -1622,6 +1952,12 @@
             "state" : "translated",
             "value" : "开启节拍器"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開啟節拍器"
+          }
         }
       }
     },
@@ -1647,6 +1983,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有音符都放在起始八度。"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "所有音符都放在起始八度。"
@@ -1680,6 +2022,12 @@
             "state" : "translated",
             "value" : "拍号"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拍號"
+          }
         }
       }
     },
@@ -1708,6 +2056,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "拍号"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拍號"
           }
         }
       }
@@ -1738,6 +2092,12 @@
             "state" : "translated",
             "value" : "欢迎反馈问题和提出功能建议。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "歡迎回報問題與提出功能建議。"
+          }
         }
       }
     },
@@ -1766,6 +2126,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "更易看的颜色与对比度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更易閱讀的顏色與對比"
           }
         }
       }
@@ -1796,6 +2162,12 @@
             "state" : "translated",
             "value" : "在粘贴的文字中没有找到音符。\n请确认是否符合规则（例：4옥도8분음）。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在貼上的文字中找不到音符。\n請確認是否符合規則（例：4옥도8분음）。"
+          }
         }
       }
     },
@@ -1825,6 +2197,12 @@
             "state" : "translated",
             "value" : "太快的话请调低速度（当前 %lld BPM）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "太快的話請調低速度（目前 %lld BPM）"
+          }
         }
       }
     },
@@ -1850,6 +2228,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "使用"
@@ -1883,6 +2267,12 @@
             "state" : "translated",
             "value" : "从相册中选择"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "從照片圖庫選擇"
+          }
         }
       }
     },
@@ -1911,6 +2301,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "新乐谱"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新樂譜"
           }
         }
       }
@@ -1941,6 +2337,12 @@
             "state" : "translated",
             "value" : "设置"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
+          }
         }
       }
     },
@@ -1969,6 +2371,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "三连%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "三連%@"
           }
         }
       }
@@ -1999,6 +2407,12 @@
             "state" : "translated",
             "value" : "三连音模式：3个音合成一拍（或两拍）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "三連音模式：3個音合成一拍（或兩拍）"
+          }
         }
       }
     },
@@ -2027,6 +2441,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "附点三连%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "附點三連%@"
           }
         }
       }
@@ -2057,6 +2477,12 @@
             "state" : "translated",
             "value" : "休止符模式：点按想要的时值即可插入休止符"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休止符模式：點選想要的長度即可插入休止符"
+          }
         }
       }
     },
@@ -2082,6 +2508,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "起始八度  %lld"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "起始八度  %lld"
@@ -2115,6 +2547,12 @@
             "state" : "translated",
             "value" : "使用小技巧"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用小技巧"
+          }
         }
       }
     },
@@ -2143,6 +2581,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "接着写上次的乐谱"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "接著寫上次的樂譜"
           }
         }
       }
@@ -2173,6 +2617,12 @@
             "state" : "translated",
             "value" : "请在下方确认，然后点“加入乐谱”"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請在下方確認，然後點「加入樂譜」"
+          }
         }
       }
     },
@@ -2201,6 +2651,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "粘贴乐谱"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "貼上樂譜"
           }
         }
       }
@@ -2231,6 +2687,12 @@
             "state" : "translated",
             "value" : "乐谱照片"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "樂譜照片"
+          }
         }
       }
     },
@@ -2259,6 +2721,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "把乐谱照片交给AI，请它按下面的规则写成文字，再把得到的文字粘贴进来，五线谱就填好了。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "把樂譜照片交給 AI，請它依下面的規則寫成文字，再把得到的文字貼上，五線譜就填好了。"
           }
         }
       }
@@ -2289,6 +2757,12 @@
             "state" : "translated",
             "value" : "保存与导出乐谱"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "儲存與匯出樂譜"
+          }
         }
       }
     },
@@ -2317,6 +2791,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "乐谱标题"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "樂譜標題"
           }
         }
       }
@@ -2347,6 +2827,12 @@
             "state" : "translated",
             "value" : "转换为乐谱"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "轉換為樂譜"
+          }
         }
       }
     },
@@ -2375,6 +2861,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "无法识别乐谱。清晰的印刷谱、单行、正面拍摄的照片效果最好。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法辨識樂譜。清晰的印刷譜、單行、正面拍攝的照片效果最好。"
           }
         }
       }
@@ -2405,6 +2897,12 @@
             "state" : "translated",
             "value" : "加入乐谱"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加入樂譜"
+          }
         }
       }
     },
@@ -2433,6 +2931,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "将加入的音符"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將加入的音符"
           }
         }
       }
@@ -2463,6 +2967,12 @@
             "state" : "translated",
             "value" : "在合适的时机，轻轻提示你实用的功能。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在適當的時機，輕輕提示你好用的功能。"
+          }
         }
       }
     },
@@ -2491,6 +3001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "选择与前一个音最接近的八度，因此“시 도”会升高半音。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇與前一個音最接近的八度，因此「시 도」會升高半音。"
           }
         }
       }
@@ -2521,6 +3037,12 @@
             "state" : "translated",
             "value" : "不用打开应用，直接在主屏幕上开始练习。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不用開啟 App，直接在主畫面開始練習。"
+          }
         }
       }
     },
@@ -2549,6 +3071,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "也可以用英语使用本应用。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "也能以英文使用本 App。"
           }
         }
       }
@@ -2579,6 +3107,12 @@
             "state" : "translated",
             "value" : "即使应用被关闭再打开，正在写的乐谱也原样保留。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "即使 App 被關閉再開啟，正在寫的樂譜也會原樣保留。"
+          }
         }
       }
     },
@@ -2607,6 +3141,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在暗色屏幕上，乐谱和按钮同样清晰醒目。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在深色畫面上，樂譜與按鈕同樣清晰醒目。"
           }
         }
       }
@@ -2637,6 +3177,12 @@
             "state" : "translated",
             "value" : "更新后第一次打开时，告诉你有哪些新内容。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新後第一次開啟時，告訴你有哪些新內容。"
+          }
         }
       }
     },
@@ -2665,6 +3211,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "更新内容"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更新內容"
           }
         }
       }
@@ -2695,6 +3247,12 @@
             "state" : "translated",
             "value" : "在此粘贴"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在此貼上"
+          }
         }
       }
     },
@@ -2723,6 +3281,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "练习提醒"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "練習提醒"
           }
         }
       }
@@ -2753,6 +3317,12 @@
             "state" : "translated",
             "value" : "英语支持"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "英文支援"
+          }
         }
       }
     },
@@ -2778,6 +3348,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "例：4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "例：4옥도4분음 4옥레4분음 4옥미8분음 …"
@@ -2811,6 +3387,12 @@
             "state" : "translated",
             "value" : "显示在右侧"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顯示在右側"
+          }
         }
       }
     },
@@ -2839,6 +3421,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "长按五线谱选择音高，松开即可添加"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "長按五線譜選擇音高，放開即可加入"
           }
         }
       }
@@ -2869,6 +3457,12 @@
             "state" : "translated",
             "value" : "自动匹配八度"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動配合八度"
+          }
         }
       }
     },
@@ -2894,6 +3488,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全音符"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "全音符"
@@ -2927,6 +3527,12 @@
             "state" : "translated",
             "value" : "完成"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完成"
+          }
         }
       }
     },
@@ -2955,6 +3561,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "显示在左侧"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "顯示在左側"
           }
         }
       }
@@ -2985,6 +3597,12 @@
             "state" : "translated",
             "value" : "减弱动态效果"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "減少動態效果"
+          }
         }
       }
     },
@@ -3013,6 +3631,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "开启“减弱动态效果”后，屏幕效果会更平静。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開啟「減少動態效果」後，畫面效果會更平靜。"
           }
         }
       }
@@ -3043,6 +3667,12 @@
             "state" : "translated",
             "value" : "需要语音识别权限。请在“设置”中允许。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "需要語音辨識權限。請到「設定」中允許。"
+          }
         }
       }
     },
@@ -3071,6 +3701,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "语音识别失败。请稍后再试。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "語音辨識失敗。請稍後再試。"
           }
         }
       }
@@ -3101,6 +3737,12 @@
             "state" : "translated",
             "value" : "谱号"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "譜號"
+          }
         }
       }
     },
@@ -3129,6 +3771,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "谱号"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "譜號"
           }
         }
       }
@@ -3159,6 +3807,12 @@
             "state" : "translated",
             "value" : "此设备无法使用韩语语音识别。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "此裝置無法使用韓語語音辨識。"
+          }
         }
       }
     },
@@ -3187,6 +3841,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "把两个小节对准框内再拍摄"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "把兩個小節對準框內再拍攝"
           }
         }
       }
@@ -3217,6 +3877,12 @@
             "state" : "translated",
             "value" : "通过电子邮件联系"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "透過電子郵件聯絡"
+          }
         }
       }
     },
@@ -3245,6 +3911,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "戴上耳机，节拍器的声音就不会混入麦克风"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "戴上耳機，節拍器的聲音就不會混進麥克風"
           }
         }
       }
@@ -3275,6 +3947,12 @@
             "state" : "translated",
             "value" : "Instagram 私信 (@lee25_ios)"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram 私訊 (@lee25_ios)"
+          }
         }
       }
     },
@@ -3303,6 +3981,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在你设定的时间提醒你练习视唱，免得忘记。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在你設定的時間提醒你練習視唱，以免忘記。"
           }
         }
       }
@@ -3333,6 +4017,12 @@
             "state" : "translated",
             "value" : "自动识谱（实验性）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動辨識樂譜（實驗性）"
+          }
         }
       }
     },
@@ -3361,6 +4051,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "想要效果更好"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "想讓辨識更準確"
           }
         }
       }
@@ -3391,6 +4087,12 @@
             "state" : "translated",
             "value" : "播放辅助"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "播放輔助"
+          }
         }
       }
     },
@@ -3416,6 +4118,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全部清除"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "全部清除"
@@ -3449,6 +4157,12 @@
             "state" : "translated",
             "value" : "附点%@"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "附點%@"
+          }
         }
       }
     },
@@ -3477,6 +4191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "标题"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "標題"
           }
         }
       }
@@ -3507,6 +4227,12 @@
             "state" : "translated",
             "value" : "调号"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "調號"
+          }
         }
       }
     },
@@ -3535,6 +4261,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "调号"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "調號"
           }
         }
       }
@@ -3565,6 +4297,12 @@
             "state" : "translated",
             "value" : "准备"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "準備"
+          }
         }
       }
     },
@@ -3593,6 +4331,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "支持"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支援"
           }
         }
       }
@@ -3623,6 +4367,12 @@
             "state" : "translated",
             "value" : "删除参考照片"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "刪除參考照片"
+          }
         }
       }
     },
@@ -3651,6 +4401,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "识谱"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "辨識樂譜"
           }
         }
       }
@@ -3681,6 +4437,12 @@
             "state" : "translated",
             "value" : "给新用户的使用引导"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "給新使用者的操作導覽"
+          }
         }
       }
     },
@@ -3710,6 +4472,12 @@
             "state" : "translated",
             "value" : "第一次打开时，简单介绍你能做什么。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第一次開啟時，簡單介紹你能做什麼。"
+          }
         }
       }
     },
@@ -3735,6 +4503,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "取消"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "取消"
@@ -3768,6 +4542,12 @@
             "state" : "translated",
             "value" : "拍照（对准2小节）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拍照（對準2小節）"
+          }
         }
       }
     },
@@ -3796,6 +4576,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "无法使用相机。\n请改从相册中选择照片。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無法使用相機。\n請改從照片圖庫選擇照片。"
           }
         }
       }
@@ -3826,6 +4612,12 @@
             "state" : "translated",
             "value" : "预备拍（开始前一小节）"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "預備拍（開始前一小節）"
+          }
         }
       }
     },
@@ -3854,6 +4646,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "适配大字体的界面"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "適合大字體的畫面"
           }
         }
       }
@@ -3884,6 +4682,12 @@
             "state" : "translated",
             "value" : "从剪贴板粘贴"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "從剪貼簿貼上"
+          }
         }
       }
     },
@@ -3909,6 +4713,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "速度"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "速度"
@@ -3942,6 +4752,12 @@
             "state" : "translated",
             "value" : "折叠屏 iPhone 布局"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可摺疊 iPhone 版面"
+          }
         }
       }
     },
@@ -3970,6 +4786,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在折叠屏 iPhone 上，把宽屏分成左右两栏使用。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在可摺疊 iPhone 上，把寬螢幕分成左右兩欄使用。"
           }
         }
       }
@@ -4000,6 +4822,12 @@
             "state" : "translated",
             "value" : "一个音一个音，清楚地、准确踩着节拍说"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一個音一個音，清楚地、準確踩著拍子說"
+          }
         }
       }
     },
@@ -4028,6 +4856,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "将当前乐谱复制为文字（给AI做示例）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將目前的樂譜複製為文字（給 AI 當範例）"
           }
         }
       }
@@ -4058,6 +4892,12 @@
             "state" : "translated",
             "value" : "主屏幕小组件"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主畫面小工具"
+          }
         }
       }
     },
@@ -4087,6 +4927,12 @@
             "state" : "translated",
             "value" : "旁白会按合适的顺序读出每个按钮和内容，不遗漏。"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "旁白會依適當的順序讀出每個按鈕與內容，不會遺漏。"
+          }
         }
       }
     },
@@ -4112,6 +4958,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "和弦"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "和弦"
@@ -4145,6 +4997,12 @@
             "state" : "translated",
             "value" : "和弦模式：音符会叠在所选音符之上"
           }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "和弦模式：音符會疊在所選音符之上"
+          }
         }
       }
     },
@@ -4170,6 +5028,12 @@
           }
         },
         "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "好"
