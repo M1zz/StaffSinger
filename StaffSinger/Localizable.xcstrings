@@ -15,6 +15,12 @@
             "state" : "translated",
             "value" : "\nNotes beyond the second bar may not be visible."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nNotes beyond the second bar may not be visible."
+          }
         }
       }
     },
@@ -28,6 +34,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\"%@\" — no note names found in that.\nPlease say 도 레 미 파 솔 라 시."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "\"%@\" — no note names found in that.\nPlease say 도 레 미 파 솔 라 시."
@@ -49,6 +61,12 @@
             "state" : "translated",
             "value" : "%@ · Listening"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Listening"
+          }
         }
       }
     },
@@ -62,6 +80,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ major (♭%lld)"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ major (♭%lld)"
@@ -83,6 +107,12 @@
             "state" : "translated",
             "value" : "%@ major (♯%lld)"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ major (♯%lld)"
+          }
         }
       }
     },
@@ -96,6 +126,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes transcribed: %lld"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notes transcribed: %lld"
@@ -117,6 +153,12 @@
             "state" : "translated",
             "value" : "Notes transcribed: %lld.\nIf a pitch or length is off, drag the note to fix it."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes transcribed: %lld.\nIf a pitch or length is off, drag the note to fix it."
+          }
         }
       }
     },
@@ -130,6 +172,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes imported: %lld."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notes imported: %lld."
@@ -151,6 +199,12 @@
             "state" : "translated",
             "value" : "Notes recognized: %lld (experimental).\nPlease check the pitches and lengths and fix them by hand."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes recognised: %lld (experimental).\nPlease check the pitches and lengths and fix them by hand."
+          }
         }
       }
     },
@@ -164,6 +218,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bar %lld, beat %lld"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bar %lld, beat %lld"
@@ -185,6 +245,12 @@
             "state" : "translated",
             "value" : "1/16"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
         }
       }
     },
@@ -198,6 +264,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sixteenth note"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sixteenth note"
@@ -219,6 +291,12 @@
             "state" : "translated",
             "value" : "Half note"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Half note"
+          }
         }
       }
     },
@@ -232,6 +310,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For leaps wider than a fourth, say \"높은 솔\" (high sol) or \"낮은 시\" (low si)"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "For leaps wider than a fourth, say \"높은 솔\" (high sol) or \"낮은 시\" (low si)"
@@ -253,6 +337,12 @@
             "state" : "translated",
             "value" : "1/4"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
         }
       }
     },
@@ -266,6 +356,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quarter note"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Quarter note"
@@ -287,6 +383,12 @@
             "state" : "translated",
             "value" : "1/8"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
         }
       }
     },
@@ -300,6 +402,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eighth note"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eighth note"
@@ -321,6 +429,12 @@
             "state" : "translated",
             "value" : "Copy Rule for AI"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copy Rule for AI"
+          }
         }
       }
     },
@@ -337,6 +451,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri에게 말하거나 단축어로 바로 실행해요."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jump right in by asking Siri or running a shortcut."
           }
         }
       }
@@ -355,6 +475,12 @@
             "state" : "translated",
             "value" : "Siri와 단축어"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri and Shortcuts"
+          }
         }
       }
     },
@@ -372,6 +498,12 @@
             "state" : "translated",
             "value" : "VoiceOver로 더 편하게"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Better VoiceOver support"
+          }
         }
       }
     },
@@ -385,6 +517,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@ beats"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@ beats"
@@ -406,6 +544,12 @@
             "state" : "translated",
             "value" : "Alto clef"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alto clef"
+          }
         }
       }
     },
@@ -419,6 +563,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contact the Developer"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Contact the Developer"
@@ -440,6 +590,12 @@
             "state" : "translated",
             "value" : "Solfège Dictation"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfège Dictation"
+          }
         }
       }
     },
@@ -453,6 +609,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't make out any note names. Try saying \"도 레 미\" clearly, in time with the metronome."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't make out any note names. Try saying \"도 레 미\" clearly, in time with the metronome."
@@ -474,6 +636,12 @@
             "state" : "translated",
             "value" : "Rule copied"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rule copied"
+          }
         }
       }
     },
@@ -491,6 +659,12 @@
             "state" : "translated",
             "value" : "글자 크기를 키워도 잘리지 않고 보기 좋게 다시 배치돼요."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screens rearrange neatly instead of getting cut off when you enlarge text."
+          }
         }
       }
     },
@@ -504,6 +678,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "On-device Korean speech recognition isn't ready.\nTurn on Korean under Settings ▸ General ▸ Keyboard ▸ Dictation to download what's needed."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "On-device Korean speech recognition isn't ready.\nTurn on Korean under Settings ▸ General ▸ Keyboard ▸ Dictation to download what's needed."
@@ -525,6 +705,12 @@
             "state" : "translated",
             "value" : "Bass clef"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bass clef"
+          }
         }
       }
     },
@@ -538,6 +724,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't start recording: %@"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't start recording: %@"
@@ -559,6 +751,12 @@
             "state" : "translated",
             "value" : "Treble clef"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Treble clef"
+          }
         }
       }
     },
@@ -572,6 +770,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C major"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "C major"
@@ -593,6 +797,12 @@
             "state" : "translated",
             "value" : "C major (no accidentals)"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C major (no accidentals)"
+          }
         }
       }
     },
@@ -609,6 +819,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "다크 모드"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dark Mode"
           }
         }
       }
@@ -627,6 +843,12 @@
             "state" : "translated",
             "value" : "닫기"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Close"
+          }
         }
       }
     },
@@ -643,6 +865,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "대비를 높이거나 색을 구별하기 어려워도 내용을 알아볼 수 있어요."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Everything stays readable, even with Increase Contrast on or if colours are hard to tell apart."
           }
         }
       }
@@ -661,6 +889,12 @@
             "state" : "translated",
             "value" : "더 많은 나라 말로 앱을 쓸 수 있게 해요."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use the app in more languages."
+          }
         }
       }
     },
@@ -678,6 +912,12 @@
             "state" : "translated",
             "value" : "더 많은 언어"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "More languages"
+          }
         }
       }
     },
@@ -691,6 +931,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · say \"쉼\" for a rest"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · say \"쉼\" for a rest"
@@ -712,6 +958,12 @@
             "state" : "translated",
             "value" : "Pinch and drag until two bars fill the box"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pinch and drag until two bars fill the box"
+          }
         }
       }
     },
@@ -725,6 +977,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What I Heard"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "What I Heard"
@@ -746,6 +1004,12 @@
             "state" : "translated",
             "value" : "Rhythm Snap"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rhythm Snap"
+          }
         }
       }
     },
@@ -759,6 +1023,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Free"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Free"
@@ -780,6 +1050,12 @@
             "state" : "translated",
             "value" : "Microphone permission is required. Please allow it in Settings."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Microphone permission is required. Please allow it in Settings."
+          }
         }
       }
     },
@@ -793,6 +1069,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No microphone input was found."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "No microphone input was found."
@@ -814,6 +1096,12 @@
             "state" : "translated",
             "value" : "만든 악보를 파일로 저장하고 다시 불러올 수 있어요."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save your scores to a file and open them again later."
+          }
         }
       }
     },
@@ -827,6 +1115,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start Speaking"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Start Speaking"
@@ -848,6 +1142,12 @@
             "state" : "translated",
             "value" : "Only the order you spoke is used. Every note goes in as a quarter note; fix lengths later."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only the order you spoke is used. Every note goes in as a quarter note; fix lengths later."
+          }
         }
       }
     },
@@ -861,6 +1161,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Snaps each spoken moment to the nearest %@ note position."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Snaps each spoken moment to the nearest %@ note position."
@@ -882,6 +1188,12 @@
             "state" : "translated",
             "value" : "Stop"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop"
+          }
         }
       }
     },
@@ -895,6 +1207,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronome (beat click)"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metronome (beat click)"
@@ -916,6 +1234,12 @@
             "state" : "translated",
             "value" : "Turn metronome off"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turn metronome off"
+          }
         }
       }
     },
@@ -929,6 +1253,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "After four metronome beats, say the note names in time."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "After four metronome beats, say the note names in time."
@@ -950,6 +1280,12 @@
             "state" : "translated",
             "value" : "Turn metronome on"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turn metronome on"
+          }
         }
       }
     },
@@ -963,6 +1299,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All notes stay in the starting octave."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "All notes stay in the starting octave."
@@ -984,6 +1326,12 @@
             "state" : "translated",
             "value" : "Time Signature"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time Signature"
+          }
         }
       }
     },
@@ -997,6 +1345,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Time Signature"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Time Signature"
@@ -1018,6 +1372,12 @@
             "state" : "translated",
             "value" : "Bug reports and feature ideas are welcome."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bug reports and feature ideas are welcome."
+          }
         }
       }
     },
@@ -1035,6 +1395,12 @@
             "state" : "translated",
             "value" : "보기 편한 색과 대비"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Easier colours and contrast"
+          }
         }
       }
     },
@@ -1048,6 +1414,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No notes found in the pasted text.\nCheck that it follows the rule (e.g. 4옥도8분음)."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "No notes found in the pasted text.\nCheck that it follows the rule (e.g. 4옥도8분음)."
@@ -1069,6 +1441,12 @@
             "state" : "translated",
             "value" : "If it's too fast, lower the tempo (now %lld BPM)"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "If it's too fast, lower the tempo (now %lld BPM)"
+          }
         }
       }
     },
@@ -1082,6 +1460,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Use"
@@ -1103,6 +1487,12 @@
             "state" : "translated",
             "value" : "Choose from Photo Library"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose from Photo Library"
+          }
         }
       }
     },
@@ -1116,6 +1506,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Score"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "New Score"
@@ -1137,6 +1533,12 @@
             "state" : "translated",
             "value" : "Settings"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
         }
       }
     },
@@ -1150,6 +1552,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triplet %@"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Triplet %@"
@@ -1171,6 +1579,12 @@
             "state" : "translated",
             "value" : "Triplet mode: three notes share one beat (or two)"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triplet mode: three notes share one beat (or two)"
+          }
         }
       }
     },
@@ -1184,6 +1598,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dotted triplet %@"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dotted triplet %@"
@@ -1205,6 +1625,12 @@
             "state" : "translated",
             "value" : "Rest mode: tap a length to insert a rest"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rest mode: tap a length to insert a rest"
+          }
         }
       }
     },
@@ -1218,6 +1644,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starting octave  %lld"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Starting octave  %lld"
@@ -1239,6 +1671,12 @@
             "state" : "translated",
             "value" : "쓰는 요령 알려 주기"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Handy tips"
+          }
         }
       }
     },
@@ -1256,6 +1694,12 @@
             "state" : "translated",
             "value" : "쓰던 악보 이어서 쓰기"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pick up your score where you left off"
+          }
         }
       }
     },
@@ -1269,6 +1713,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check them below, then tap \"Add to Score\""
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Check them below, then tap \"Add to Score\""
@@ -1290,6 +1740,12 @@
             "state" : "translated",
             "value" : "Paste Score"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paste Score"
+          }
         }
       }
     },
@@ -1303,6 +1759,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Score Photo"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Score Photo"
@@ -1324,6 +1786,12 @@
             "state" : "translated",
             "value" : "Give a photo of the score to an AI, ask it to write it out by the rule below, then paste the text it returns to fill the staff."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Give a photo of the score to an AI, ask it to write it out by the rule below, then paste the text it returns to fill the staff."
+          }
         }
       }
     },
@@ -1341,6 +1809,12 @@
             "state" : "translated",
             "value" : "악보 저장과 내보내기"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save and export scores"
+          }
         }
       }
     },
@@ -1354,6 +1828,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Score Title"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Score Title"
@@ -1375,6 +1855,12 @@
             "state" : "translated",
             "value" : "Convert to Score"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Convert to Score"
+          }
         }
       }
     },
@@ -1388,6 +1874,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't read the score. Clean printed music, a single line and a straight-on photo work best."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn't read the score. Clean printed music, a single line and a straight-on photo work best."
@@ -1409,6 +1901,12 @@
             "state" : "translated",
             "value" : "Add to Score"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add to Score"
+          }
         }
       }
     },
@@ -1422,6 +1920,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notes to Add"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notes to Add"
@@ -1443,6 +1947,12 @@
             "state" : "translated",
             "value" : "알아 두면 편한 기능을 알맞은 때에 살짝 알려 줘요."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gentle hints about useful features, right when you need them."
+          }
         }
       }
     },
@@ -1456,6 +1966,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Picks the octave closest to the previous note, so \"시 도\" rises by a semitone."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Picks the octave closest to the previous note, so \"시 도\" rises by a semitone."
@@ -1477,6 +1993,12 @@
             "state" : "translated",
             "value" : "앱을 열지 않고 홈 화면에서 바로 연습을 시작해요."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start practising right from the Home Screen, without opening the app."
+          }
         }
       }
     },
@@ -1493,6 +2015,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "앱을 영어로도 쓸 수 있어요."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use the whole app in English."
           }
         }
       }
@@ -1511,6 +2039,12 @@
             "state" : "translated",
             "value" : "앱이 꺼졌다 다시 열려도 쓰던 악보가 그대로 남아 있어요."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your score stays just as you left it, even if the app closes."
+          }
         }
       }
     },
@@ -1527,6 +2061,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "어두운 화면에서도 악보와 단추가 또렷하게 보여요."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scores and buttons stay crisp and clear in Dark Mode."
           }
         }
       }
@@ -1545,6 +2085,12 @@
             "state" : "translated",
             "value" : "업데이트 뒤 처음 열 때 무엇이 새로 생겼는지 알려 줘요."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The first time you open the app after an update, see what’s new."
+          }
         }
       }
     },
@@ -1562,6 +2108,12 @@
             "state" : "translated",
             "value" : "업데이트 소식"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What’s new"
+          }
         }
       }
     },
@@ -1575,6 +2127,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paste Here"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Paste Here"
@@ -1596,6 +2154,12 @@
             "state" : "translated",
             "value" : "연습 알림"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Practice reminders"
+          }
         }
       }
     },
@@ -1613,6 +2177,12 @@
             "state" : "translated",
             "value" : "영어 지원"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full English support"
+          }
         }
       }
     },
@@ -1626,6 +2196,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "e.g. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "e.g. 4옥도4분음 4옥레4분음 4옥미8분음 …"
@@ -1647,6 +2223,12 @@
             "state" : "translated",
             "value" : "Show on the right"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show on the right"
+          }
         }
       }
     },
@@ -1660,6 +2242,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Press and hold the staff to pick a pitch, then release to add it"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Press and hold the staff to pick a pitch, then release to add it"
@@ -1681,6 +2269,12 @@
             "state" : "translated",
             "value" : "Auto-match octave"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto-match octave"
+          }
         }
       }
     },
@@ -1694,6 +2288,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Whole note"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Whole note"
@@ -1715,6 +2315,12 @@
             "state" : "translated",
             "value" : "Done"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
         }
       }
     },
@@ -1728,6 +2334,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show on the left"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Show on the left"
@@ -1749,6 +2361,12 @@
             "state" : "translated",
             "value" : "움직임 줄이기"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reduce Motion"
+          }
         }
       }
     },
@@ -1766,6 +2384,12 @@
             "state" : "translated",
             "value" : "움직임 줄이기를 켜면 화면 효과가 차분해져요."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "With Reduce Motion on, screen effects calm down."
+          }
         }
       }
     },
@@ -1779,6 +2403,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speech recognition permission is required. Please allow it in Settings."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Speech recognition permission is required. Please allow it in Settings."
@@ -1800,6 +2430,12 @@
             "state" : "translated",
             "value" : "Speech recognition failed. Please try again in a moment."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speech recognition failed. Please try again in a moment."
+          }
         }
       }
     },
@@ -1813,6 +2449,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clef"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Clef"
@@ -1834,6 +2476,12 @@
             "state" : "translated",
             "value" : "Clef"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clef"
+          }
         }
       }
     },
@@ -1847,6 +2495,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Korean speech recognition isn't available on this device."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Korean speech recognition isn't available on this device."
@@ -1868,6 +2522,12 @@
             "state" : "translated",
             "value" : "Fit two bars in this box and shoot"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fit two bars in this box and shoot"
+          }
         }
       }
     },
@@ -1881,6 +2541,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contact by Email"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Contact by Email"
@@ -1902,6 +2568,12 @@
             "state" : "translated",
             "value" : "With earphones, the metronome won't leak into the microphone"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "With earphones, the metronome won't leak into the microphone"
+          }
         }
       }
     },
@@ -1915,6 +2587,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram DM (@lee25_ios)"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram DM (@lee25_ios)"
@@ -1936,6 +2614,12 @@
             "state" : "translated",
             "value" : "잊지 않도록 정한 시간에 시창 연습을 알려 줘요."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get a reminder to practice sight-singing at a time you choose."
+          }
         }
       }
     },
@@ -1949,6 +2633,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auto-Transcribe (Experimental)"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Auto-Transcribe (Experimental)"
@@ -1970,6 +2660,12 @@
             "state" : "translated",
             "value" : "For best results"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For best results"
+          }
         }
       }
     },
@@ -1983,6 +2679,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Playback Aids"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Playback Aids"
@@ -2004,6 +2706,12 @@
             "state" : "translated",
             "value" : "Clear All"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear All"
+          }
         }
       }
     },
@@ -2017,6 +2725,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dotted %@"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dotted %@"
@@ -2038,6 +2752,12 @@
             "state" : "translated",
             "value" : "Title"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title"
+          }
         }
       }
     },
@@ -2051,6 +2771,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Key"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Key"
@@ -2072,6 +2798,12 @@
             "state" : "translated",
             "value" : "Key Signature"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Key Signature"
+          }
         }
       }
     },
@@ -2085,6 +2817,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Get ready"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Get ready"
@@ -2106,6 +2844,12 @@
             "state" : "translated",
             "value" : "Support"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Support"
+          }
         }
       }
     },
@@ -2119,6 +2863,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete Reference Photo"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Delete Reference Photo"
@@ -2140,6 +2890,12 @@
             "state" : "translated",
             "value" : "Transcribe"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transcribe"
+          }
         }
       }
     },
@@ -2156,6 +2912,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "처음 쓰는 분을 위한 안내"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A quick tour for new users"
           }
         }
       }
@@ -2174,6 +2936,12 @@
             "state" : "translated",
             "value" : "처음 열었을 때 무엇을 할 수 있는지 짧게 보여 줘요."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A short intro to what you can do, the first time you open the app."
+          }
         }
       }
     },
@@ -2187,6 +2955,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancel"
@@ -2208,6 +2982,12 @@
             "state" : "translated",
             "value" : "Take Photo (fit 2 bars)"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Take Photo (fit 2 bars)"
+          }
         }
       }
     },
@@ -2221,6 +3001,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The camera isn't available.\nChoose a photo from your library instead."
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "The camera isn't available.\nChoose a photo from your library instead."
@@ -2242,6 +3028,12 @@
             "state" : "translated",
             "value" : "Count-in (one bar before start)"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Count-in (one bar before start)"
+          }
         }
       }
     },
@@ -2259,6 +3051,12 @@
             "state" : "translated",
             "value" : "큰 글씨에 맞춘 화면"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layouts for larger text"
+          }
         }
       }
     },
@@ -2272,6 +3070,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paste from Clipboard"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Paste from Clipboard"
@@ -2293,6 +3097,12 @@
             "state" : "translated",
             "value" : "Tempo"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo"
+          }
         }
       }
     },
@@ -2309,6 +3119,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "펼치는 아이폰 화면"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foldable iPhone layout"
           }
         }
       }
@@ -2327,6 +3143,12 @@
             "state" : "translated",
             "value" : "펼치는 아이폰에서 넓은 화면을 두 쪽으로 나눠 써요."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Use the wide screen of a foldable iPhone as two side-by-side panes."
+          }
         }
       }
     },
@@ -2340,6 +3162,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Say one note at a time, clearly and right on the beat"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Say one note at a time, clearly and right on the beat"
@@ -2361,6 +3189,12 @@
             "state" : "translated",
             "value" : "Copy Current Score as Text (as an example for the AI)"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copy Current Score as Text (as an example for the AI)"
+          }
         }
       }
     },
@@ -2377,6 +3211,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "홈 화면 위젯"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home Screen widgets"
           }
         }
       }
@@ -2395,6 +3235,12 @@
             "state" : "translated",
             "value" : "화면 읽기 기능이 단추와 내용을 빠짐없이, 알맞은 순서로 읽어 줘요."
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver reads every button and note, in the right order."
+          }
         }
       }
     },
@@ -2408,6 +3254,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chord"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Chord"
@@ -2429,6 +3281,12 @@
             "state" : "translated",
             "value" : "Chord mode: notes stack on the selected note"
           }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chord mode: notes stack on the selected note"
+          }
         }
       }
     },
@@ -2442,6 +3300,12 @@
           }
         },
         "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"

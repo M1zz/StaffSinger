@@ -17,14 +17,14 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 W, H = 2688, 1242   # 아이폰 제출 규격을 가로로 — 앱이 가로 화면으로만 돈다
 
 # 앱 언어 → App Store 로케일
-STORE = {"ko": "ko", "en": "en-US"}
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB"}
 
 # 파일 · 배치 · 언어별 (헤드라인, 보조 문장)
 SHOTS = [
-    ("01-piano.png",     "left-text",  {"ko": ("건반을 누르면<br>오선에 음표가", "음 길이와 쉼표를 고르고 바로 들어요"), "en": ("Press a key,<br>get a note on the staff", "Pick a note length or rest and hear it right away")}),
-    ("02-playback.png",  "top",        {"ko": ("처음 보는 악보도 소리로 확인해요", "메트로놈에 맞춰 지금 음표를 따라가요"), "en": ("Check a new score by ear", "Follow the sounding note in time with the metronome")}),
-    ("03-dictation.png", "right-text", {"ko": ("계이름을 말하면<br>음표가 돼요", "박에 맞춰 말하면 박자까지 함께 잡혀요"), "en": ("Say note names,<br>get notes", "Speak on the beat and the rhythm is captured too")}),
-    ("04-paste.png",     "dark",       {"ko": ("텍스트 악보를 붙여넣어 오선지를 채워요", "정해진 규칙대로 적은 글이 그대로 음표가 돼요"), "en": ("Paste a text score to fill the staff", "Text written by the rule becomes notes as it is")}),
+    ("01-piano.png",     "left-text",  {"ko": ("건반을 누르면<br>오선에 음표가", "음 길이와 쉼표를 고르고 바로 들어요"), "en": ("Press a key,<br>get a note on the staff", "Pick a note length or rest and hear it right away"), "en-GB": ("Press a key,<br>get a note on the staff", "Pick a note length or rest and hear it right away")}),
+    ("02-playback.png",  "top",        {"ko": ("처음 보는 악보도 소리로 확인해요", "메트로놈에 맞춰 지금 음표를 따라가요"), "en": ("Check a new score by ear", "Follow the sounding note in time with the metronome"), "en-GB": ("Check a new score by ear", "Follow the sounding note in time with the metronome")}),
+    ("03-dictation.png", "right-text", {"ko": ("계이름을 말하면<br>음표가 돼요", "박에 맞춰 말하면 박자까지 함께 잡혀요"), "en": ("Say note names,<br>get notes", "Speak on the beat and the rhythm is captured too"), "en-GB": ("Say note names,<br>get notes", "Speak on the beat and the rhythm is captured too")}),
+    ("04-paste.png",     "dark",       {"ko": ("텍스트 악보를 붙여넣어 오선지를 채워요", "정해진 규칙대로 적은 글이 그대로 음표가 돼요"), "en": ("Paste a text score to fill the staff", "Text written by the rule becomes notes as it is"), "en-GB": ("Paste a text score to fill the staff", "Text written by the rule becomes notes as it is")}),
 ]
 
 # 색은 헤더·검색 결과 그림(make_creative_assets.py)과 맞춘다.
