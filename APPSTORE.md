@@ -1154,3 +1154,58 @@ Referentiefoto
 Maak een foto van de partituur die je leest en laat die op het scherm staan om te vergelijken terwijl je overschrijft.
 
 Handig bij de hand voor koor, instrumentles of de voorbereiding op een toelatingsexamen voor het conservatorium – wanneer je maar snel noten moet lezen.
+
+## pl
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger: Czytanie a vista
+
+### 부제
+
+Usłysz nuty, które zapisujesz
+
+### 키워드
+
+solfeż,teoria muzyki,pięciolinia,partytura,chór,pianino,akord,metronom,dyktando,lekcje,śpiew,słuch
+
+### 프로모션 텍스트
+
+Nieznana partytura z trudnym rytmem i akordami? Połóż nuty na pięciolinii i od razu ich posłuchaj z metronomem i odliczaniem.
+
+### 설명
+
+Nowej partytury nie licz tylko w głowie. Posłuchaj jej.
+StaffSinger przepisuje dwa mylące takty na pięciolinię i odtwarza je z dokładnym rytmem i wysokością dźwięków.
+
+Dotknij pięciolinii lub użyj klawiszy
+Przytrzymaj pięciolinię, aby wybrać wysokość, albo dotknij dwuoktawowej klawiatury pianina, aby dodać nutę. Do wyboru masz nuty od całej do szesnastki, nuty z kropką, triole i pauzy, a ostatnio dodaną nutę usuniesz jednym dotknięciem.
+
+Odtwarzanie z metronomem
+Po odliczaniu partytura gra w rytm kliknięć metronomu, a brzmiąca nuta jest podświetlona kolorem. Tempo i metrum zmienisz w Ustawieniach.
+
+Akordy i wiele głosów
+Nałóż nuty na tę samą miarę, aby powstał akord, i podziel muzykę na głosy. Obsługiwane są znaki przykluczowe oraz klucze wiolinowy, altowy i basowy.
+
+Dyktando solfeżowe
+Mów nazwy nut w rytm metronomu, a trafią na pięciolinię jako nuty. Gdy mówisz równo na uderzenie, rejestrowany jest też rytm. Dyktando rozpoznaje koreańskie sylaby solfeżowe, a rozpoznawanie mowy odbywa się w całości na Twoim urządzeniu.
+
+Wklejanie partytury jako tekstu
+Wklej tekst zapisany w ustalonym formacie, a pięciolinia się wypełni. Skopiuj regułę, daj ją sztucznej inteligencji razem ze zdjęciem partytury i wklej to, co zwróci.
+
+Zdjęcie referencyjne
+Zrób zdjęcie czytanej partytury i zostaw je na ekranie, aby porównywać podczas przepisywania.
+
+Miej go pod ręką na próbie chóru, lekcjach gry na instrumencie czy podczas przygotowań do egzaminów do szkoły muzycznej – kiedy tylko musisz szybko czytać nuty.

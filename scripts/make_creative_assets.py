@@ -22,7 +22,7 @@ ICON = ROOT / "StaffSinger" / "Assets.xcassets" / "AppIcon.appiconset" / "AppIco
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # 앱 언어 코드 → App Store Connect 로케일 (make_marketing_screenshots.py 와 같다)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "es": "es-MX", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "no", "nl": "nl-NL"}   # 스토어에는 한국어 한 가지
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "es": "es-MX", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "no", "nl": "nl-NL", "pl": "pl"}   # 스토어에는 한국어 한 가지
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -52,6 +52,7 @@ SEARCH = {
     "id": ("Partitur", "Dengar not<br>yang kamu tulis", "Masukkan dengan tuts,<br>putar dengan ritme yang tepat"),
     "nb": ("Noter", "Hør notene<br>du skriver", "Skriv inn på tangentene,<br>spill av med riktig rytme"),
     "nl": ("Partituur", "Hoor de noten<br>die je schrijft", "Voer in met de toetsen,<br>speel af in het juiste ritme"),
+    "pl": ("Partytura", "Usłysz nuty,<br>które zapisujesz", "Wpisuj na klawiszach,<br>odtwarzaj w dobrym rytmie"),
 }
 
 # 헤더는 한 가지 약속: 처음 보는 악보(초견)도 소리로 확인한다.
@@ -75,6 +76,7 @@ HEADER = {
     "id": ("StaffSinger", "Partitur baru<br>diperiksa dengan telinga"),
     "nb": ("StaffSinger", "Nye noter<br>med gehøret"),
     "nl": ("StaffSinger", "Een nieuwe partituur<br>op gehoor"),
+    "pl": ("StaffSinger", "Nowa partytura<br>ze słuchu"),
 }
 
 # ⚠️ 바탕 · 글자색은 앱 아이콘(파란 바탕 위 흰 오선과 음표)과 AccentColor(#3373D9) 에서 왔다.

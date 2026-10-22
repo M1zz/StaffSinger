@@ -129,6 +129,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -259,6 +265,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger gebruikt de camera om een foto van een partituur te maken en als referentiebeeld te laden."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger używa aparatu do zrobienia zdjęcia partytury i wczytania go jako obrazu referencyjnego."
           }
         }
       }
@@ -391,6 +403,12 @@
             "state" : "translated",
             "value" : "StaffSinger gebruikt de microfoon om de nootnamen die je zegt om te zetten in noten op de notenbalk. Audio wordt alleen op dit apparaat verwerkt en nooit opgeslagen."
           }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger używa mikrofonu, aby zamieniać wypowiadane przez Ciebie nazwy nut na nuty na pięciolinii. Dźwięk jest przetwarzany tylko na tym urządzeniu i nigdy nie jest zapisywany."
+          }
         }
       }
     },
@@ -521,6 +539,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger gebruikt spraakherkenning om de nootnamen die je zegt om te zetten in noten. De herkenning gebeurt alleen op dit apparaat."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger używa rozpoznawania mowy, aby zamieniać wypowiadane przez Ciebie nazwy nut na nuty. Rozpoznawanie odbywa się tylko na tym urządzeniu."
           }
         }
       }
