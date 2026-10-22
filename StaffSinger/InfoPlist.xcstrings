@@ -141,6 +141,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -283,6 +289,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger använder kameran för att ta ett foto av noter och läsa in det som referensbild."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger, bir notanın fotoğrafını çekip referans görüntü olarak yüklemek için kamerayı kullanır."
           }
         }
       }
@@ -427,6 +439,12 @@
             "state" : "translated",
             "value" : "StaffSinger använder mikrofonen för att göra om notnamnen du säger till noter på notsystemet. Ljudet bearbetas bara på den här enheten och sparas aldrig."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger, söylediğin nota adlarını porte üzerinde notaya çevirmek için mikrofonu kullanır. Ses yalnızca bu cihazda işlenir ve asla kaydedilmez."
+          }
         }
       }
     },
@@ -569,6 +587,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger använder taligenkänning för att göra om notnamnen du säger till noter. Igenkänningen sker bara på den här enheten."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger, söylediğin nota adlarını notaya çevirmek için konuşma tanımayı kullanır. Tanıma yalnızca bu cihazda yapılır."
           }
         }
       }

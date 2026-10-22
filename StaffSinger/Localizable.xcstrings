@@ -141,6 +141,12 @@
             "state" : "translated",
             "value" : "\nNoter efter andra takten syns kanske inte på skärmen."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nİkinci ölçüden sonraki notalar ekranda görünmeyebilir."
+          }
         }
       }
     },
@@ -283,6 +289,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "”%@” – inga notnamn hittades.\nSäg 도 레 미 파 솔 라 시."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” — burada nota adı bulunamadı.\nLütfen 도 레 미 파 솔 라 시 de."
           }
         }
       }
@@ -427,6 +439,12 @@
             "state" : "translated",
             "value" : "%@ · Lyssnar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Dinleniyor"
+          }
         }
       }
     },
@@ -569,6 +587,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@-dur (♭%lld)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ majör (♭%lld)"
           }
         }
       }
@@ -713,6 +737,12 @@
             "state" : "translated",
             "value" : "%@-dur (♯%lld)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ majör (♯%lld)"
+          }
         }
       }
     },
@@ -855,6 +885,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dikterade noter: %lld"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dikte edilen nota: %lld"
           }
         }
       }
@@ -999,6 +1035,12 @@
             "state" : "translated",
             "value" : "Dikterade noter: %lld.\nOm en tonhöjd eller längd är fel kan du dra noten för att rätta den."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dikte edilen nota: %lld.\nPerde veya süre yanlışsa notayı sürükleyerek düzelt."
+          }
         }
       }
     },
@@ -1141,6 +1183,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Importerade noter: %lld."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İçe aktarılan nota: %lld."
           }
         }
       }
@@ -1285,6 +1333,12 @@
             "state" : "translated",
             "value" : "Igenkända noter: %lld (experimentell).\nKontrollera tonhöjd och längd och rätta dem själv."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanınan nota: %lld (deneysel).\nPerde ve süreleri kendin kontrol edip düzelt."
+          }
         }
       }
     },
@@ -1428,6 +1482,12 @@
             "state" : "translated",
             "value" : "Takt %lld, slag %lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ölçü %lld, vuruş %lld"
+          }
         }
       }
     },
@@ -1567,6 +1627,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/16"
@@ -1714,6 +1780,12 @@
             "state" : "translated",
             "value" : "Sextondelsnot"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onaltılık nota"
+          }
         }
       }
     },
@@ -1856,6 +1928,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Halvnot"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İkilik nota"
           }
         }
       }
@@ -2000,6 +2078,12 @@
             "state" : "translated",
             "value" : "Vid språng större än en kvart säger du ”높은 솔” (hög sol) eller ”낮은 시” (låg si)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dörtlüden geniş sıçramalarda “높은 솔” (tiz sol) veya “낮은 시” (pes si) de"
+          }
         }
       }
     },
@@ -2139,6 +2223,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/4"
@@ -2286,6 +2376,12 @@
             "state" : "translated",
             "value" : "Fjärdedelsnot"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dörtlük nota"
+          }
         }
       }
     },
@@ -2425,6 +2521,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/8"
@@ -2572,6 +2674,12 @@
             "state" : "translated",
             "value" : "Åttondelsnot"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sekizlik nota"
+          }
         }
       }
     },
@@ -2714,6 +2822,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kopiera regel till AI"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yapay Zekâ İçin Kuralı Kopyala"
           }
         }
       }
@@ -2858,6 +2972,12 @@
             "state" : "translated",
             "value" : "Kom igång direkt genom att fråga Siri eller köra en genväg."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri’ye söyleyerek veya bir kısayol çalıştırarak hemen başla."
+          }
         }
       }
     },
@@ -3000,6 +3120,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri och Genvägar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri ve Kısayollar"
           }
         }
       }
@@ -3144,6 +3270,12 @@
             "state" : "translated",
             "value" : "Bättre VoiceOver"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha iyi VoiceOver"
+          }
         }
       }
     },
@@ -3286,6 +3418,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@ slag"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@ vuruş"
           }
         }
       }
@@ -3430,6 +3568,12 @@
             "state" : "translated",
             "value" : "C-klav"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do anahtarı"
+          }
         }
       }
     },
@@ -3572,6 +3716,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontakta utvecklaren"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geliştiriciye Ulaş"
           }
         }
       }
@@ -3716,6 +3866,12 @@
             "state" : "translated",
             "value" : "Solfège-diktamen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfej Dikte"
+          }
         }
       }
     },
@@ -3858,6 +4014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inga notnamn kunde uppfattas. Försök säga ”도 레 미” tydligt i takt med metronomen."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiçbir nota adı anlaşılamadı. Metronoma uyarak “도 레 미” diye net söylemeyi dene."
           }
         }
       }
@@ -4002,6 +4164,12 @@
             "state" : "translated",
             "value" : "Regeln kopierad"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kural kopyalandı"
+          }
         }
       }
     },
@@ -4144,6 +4312,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "När du förstorar texten ordnas skärmarna om i stället för att klippas av."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metni büyüttüğünde ekranlar kesilmek yerine yeniden düzenlenir."
           }
         }
       }
@@ -4288,6 +4462,12 @@
             "state" : "translated",
             "value" : "Koreansk taligenkänning på enheten är inte redo.\nSlå på koreanska under Inställningar ▸ Allmänt ▸ Tangentbord ▸ Diktering så hämtas de filer som behövs."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cihaz içi Korece konuşma tanıma hazır değil.\nGerekli dosyaların inmesi için Ayarlar ▸ Genel ▸ Klavye ▸ Dikte bölümünden Korece’yi aç."
+          }
         }
       }
     },
@@ -4430,6 +4610,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "F-klav"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fa anahtarı"
           }
         }
       }
@@ -4574,6 +4760,12 @@
             "state" : "translated",
             "value" : "Det gick inte att starta inspelningen: %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kayıt başlatılamadı: %@"
+          }
         }
       }
     },
@@ -4716,6 +4908,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "G-klav"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sol anahtarı"
           }
         }
       }
@@ -4860,6 +5058,12 @@
             "state" : "translated",
             "value" : "C-dur"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do majör"
+          }
         }
       }
     },
@@ -5002,6 +5206,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "C-dur (inga förtecken)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do majör (alterasyon yok)"
           }
         }
       }
@@ -5146,6 +5356,12 @@
             "state" : "translated",
             "value" : "Mörkt läge"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koyu Mod"
+          }
         }
       }
     },
@@ -5288,6 +5504,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stäng"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapat"
           }
         }
       }
@@ -5432,6 +5654,12 @@
             "state" : "translated",
             "value" : "Allt förblir läsbart, även med Öka kontrast eller om färger är svåra att skilja åt."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontrastı artırsan veya renkleri ayırt etmekte zorlansan da her şey okunaklı kalır."
+          }
         }
       }
     },
@@ -5574,6 +5802,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Använd appen på fler språk."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamayı daha fazla dilde kullan."
           }
         }
       }
@@ -5718,6 +5952,12 @@
             "state" : "translated",
             "value" : "Fler språk"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha fazla dil"
+          }
         }
       }
     },
@@ -5860,6 +6100,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · säg ”쉼” för en paus"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · es için “쉼” de"
           }
         }
       }
@@ -6004,6 +6250,12 @@
             "state" : "translated",
             "value" : "Zooma och dra med fingrarna tills två takter fyller rutan"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İki ölçü kutuyu dolduruncaya kadar parmaklarınla yakınlaştır ve kaydır"
+          }
         }
       }
     },
@@ -6146,6 +6398,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vad jag hörde"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duyulan"
           }
         }
       }
@@ -6290,6 +6548,12 @@
             "state" : "translated",
             "value" : "Rytmjustering"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ritim Hizalama"
+          }
         }
       }
     },
@@ -6432,6 +6696,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fritt"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serbest"
           }
         }
       }
@@ -6576,6 +6846,12 @@
             "state" : "translated",
             "value" : "Behörighet för mikrofonen krävs. Tillåt den i Inställningar."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mikrofon izni gerekiyor. Lütfen Ayarlar’dan izin ver."
+          }
         }
       }
     },
@@ -6718,6 +6994,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingen mikrofoningång hittades."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mikrofon girişi bulunamadı."
           }
         }
       }
@@ -6862,6 +7144,12 @@
             "state" : "translated",
             "value" : "Spara dina noter i en fil och öppna dem igen senare."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notalarını bir dosyaya kaydet ve sonra yeniden aç."
+          }
         }
       }
     },
@@ -7004,6 +7292,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Börja prata"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konuşmaya Başla"
           }
         }
       }
@@ -7148,6 +7442,12 @@
             "state" : "translated",
             "value" : "Bara ordningen du säger tonerna i används. Alla noter blir fjärdedelsnoter; rätta längderna efteråt."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yalnızca söylediğin sıra kullanılır. Tüm notalar dörtlük olarak girer; süreleri sonra düzelt."
+          }
         }
       }
     },
@@ -7290,6 +7590,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Justerar varje uttalat ögonblick till närmaste %@-notposition."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Söylediğin her anı en yakın %@ nota konumuna hizalar."
           }
         }
       }
@@ -7434,6 +7740,12 @@
             "state" : "translated",
             "value" : "Stoppa"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durdur"
+          }
         }
       }
     },
@@ -7576,6 +7888,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metronom (slagklick)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronom (vuruş tıkı)"
           }
         }
       }
@@ -7720,6 +8038,12 @@
             "state" : "translated",
             "value" : "Stäng av metronomen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronomu kapat"
+          }
         }
       }
     },
@@ -7862,6 +8186,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Efter fyra slag från metronomen säger du notnamnen i takt."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronomun dört vuruşunu say, sonra nota adlarını ritme uyarak söyle."
           }
         }
       }
@@ -8006,6 +8336,12 @@
             "state" : "translated",
             "value" : "Slå på metronomen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronomu aç"
+          }
         }
       }
     },
@@ -8148,6 +8484,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alla noter stannar i startoktaven."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm notalar başlangıç oktavında kalır."
           }
         }
       }
@@ -8292,6 +8634,12 @@
             "state" : "translated",
             "value" : "Taktart"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ölçü"
+          }
         }
       }
     },
@@ -8434,6 +8782,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Taktart"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ölçü"
           }
         }
       }
@@ -8578,6 +8932,12 @@
             "state" : "translated",
             "value" : "Felrapporter och förslag på funktioner är välkomna."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hata bildirimleri ve özellik önerileri bizim için değerli."
+          }
         }
       }
     },
@@ -8720,6 +9080,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Behagligare färger och kontrast"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha rahat renkler ve kontrast"
           }
         }
       }
@@ -8864,6 +9230,12 @@
             "state" : "translated",
             "value" : "Inga noter hittades i den inklistrade texten.\nKontrollera att den följer regeln (t.ex. 4옥도8분음)."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yapıştırılan metinde nota bulunamadı.\nKurala uyup uymadığını kontrol et (örn. 4옥도8분음)."
+          }
         }
       }
     },
@@ -9006,6 +9378,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Om det går för fort, sänk tempot (nu %lld BPM)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çok hızlıysa tempoyu düşür (şu an %lld BPM)"
           }
         }
       }
@@ -9150,6 +9528,12 @@
             "state" : "translated",
             "value" : "Använd"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullan"
+          }
         }
       }
     },
@@ -9292,6 +9676,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Välj från bildbiblioteket"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fotoğraf Kitaplığından Seç"
           }
         }
       }
@@ -9436,6 +9826,12 @@
             "state" : "translated",
             "value" : "Nya noter"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni Nota"
+          }
         }
       }
     },
@@ -9578,6 +9974,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Inställningar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar"
           }
         }
       }
@@ -9722,6 +10124,12 @@
             "state" : "translated",
             "value" : "Triol: %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Üçleme: %@"
+          }
         }
       }
     },
@@ -9864,6 +10272,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Triolläge: tre noter delar ett slag (eller två)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Üçleme modu: üç nota bir vuruşu (veya iki vuruşu) paylaşır"
           }
         }
       }
@@ -10008,6 +10422,12 @@
             "state" : "translated",
             "value" : "Punkterad triol: %@"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noktalı üçleme: %@"
+          }
         }
       }
     },
@@ -10150,6 +10570,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pausläge: tryck på en längd för att lägga in en paus"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es modu: es eklemek için bir süreye dokun"
           }
         }
       }
@@ -10294,6 +10720,12 @@
             "state" : "translated",
             "value" : "Startoktav  %lld"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlangıç oktavı  %lld"
+          }
         }
       }
     },
@@ -10436,6 +10868,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Användbara tips"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faydalı ipuçları"
           }
         }
       }
@@ -10580,6 +11018,12 @@
             "state" : "translated",
             "value" : "Fortsätt med noterna där du slutade"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notana kaldığın yerden devam et"
+          }
         }
       }
     },
@@ -10722,6 +11166,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontrollera nedan och tryck på ”Lägg till i noterna”"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aşağıda kontrol et, sonra “Notaya Ekle”ye dokun"
           }
         }
       }
@@ -10866,6 +11316,12 @@
             "state" : "translated",
             "value" : "Klistra in noter"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nota Yapıştır"
+          }
         }
       }
     },
@@ -11008,6 +11464,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Foto av noter"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nota Fotoğrafı"
           }
         }
       }
@@ -11152,6 +11614,12 @@
             "state" : "translated",
             "value" : "Ge ett foto av noterna till en AI, be den skriva ut dem enligt regeln nedan och klistra in texten du får tillbaka för att fylla notsystemet."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nota fotoğrafını bir yapay zekâya ver, aşağıdaki kurala göre yazmasını iste, dönen metni yapıştır; porte dolsun."
+          }
         }
       }
     },
@@ -11294,6 +11762,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Spara och exportera noter"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notaları kaydet ve dışa aktar"
           }
         }
       }
@@ -11438,6 +11912,12 @@
             "state" : "translated",
             "value" : "Notens titel"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nota Başlığı"
+          }
         }
       }
     },
@@ -11580,6 +12060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Konvertera till noter"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notaya Çevir"
           }
         }
       }
@@ -11724,6 +12210,12 @@
             "state" : "translated",
             "value" : "Noterna kunde inte läsas. Det fungerar bäst med tydligt tryckta noter, en rad och ett foto taget rakt framifrån."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nota okunamadı. Net basılmış nota, tek satır ve karşıdan çekilmiş fotoğraf en iyi sonucu verir."
+          }
         }
       }
     },
@@ -11866,6 +12358,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lägg till i noterna"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notaya Ekle"
           }
         }
       }
@@ -12010,6 +12508,12 @@
             "state" : "translated",
             "value" : "Noter att lägga till"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eklenecek Notalar"
+          }
         }
       }
     },
@@ -12152,6 +12656,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Diskreta tips om användbara funktioner, precis när du behöver dem."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faydalı özellikler hakkında tam gerektiği anda nazik ipuçları."
           }
         }
       }
@@ -12296,6 +12806,12 @@
             "state" : "translated",
             "value" : "Väljer oktaven närmast föregående not, så ”시 도” går en halvton upp."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Önceki notaya en yakın oktavı seçer, bu yüzden “시 도” yarım ton yükselir."
+          }
         }
       }
     },
@@ -12438,6 +12954,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Börja öva direkt från hemskärmen utan att öppna appen."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamayı açmadan doğrudan Ana Ekran’dan çalışmaya başla."
           }
         }
       }
@@ -12582,6 +13104,12 @@
             "state" : "translated",
             "value" : "Använd hela appen på engelska."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamanın tamamını İngilizce kullan."
+          }
         }
       }
     },
@@ -12724,6 +13252,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dina noter ligger kvar som du lämnade dem, även om appen stängs."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulama kapansa bile notan bıraktığın gibi kalır."
           }
         }
       }
@@ -12868,6 +13402,12 @@
             "state" : "translated",
             "value" : "Noter och knappar förblir skarpa och tydliga i mörkt läge."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koyu Mod’da notalar ve düğmeler net ve belirgin kalır."
+          }
         }
       }
     },
@@ -13010,6 +13550,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Första gången du öppnar appen efter en uppdatering ser du vad som är nytt."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bir güncellemeden sonra uygulamayı ilk açtığında nelerin yeni olduğunu gör."
           }
         }
       }
@@ -13154,6 +13700,12 @@
             "state" : "translated",
             "value" : "Nyheter"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yenilikler"
+          }
         }
       }
     },
@@ -13296,6 +13848,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klistra in här"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buraya Yapıştır"
           }
         }
       }
@@ -13440,6 +13998,12 @@
             "state" : "translated",
             "value" : "Övningspåminnelser"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çalışma hatırlatıcıları"
+          }
         }
       }
     },
@@ -13582,6 +14146,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fullt stöd för engelska"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tam İngilizce desteği"
           }
         }
       }
@@ -13726,6 +14296,12 @@
             "state" : "translated",
             "value" : "t.ex. 4옥도4분음 4옥레4분음 4옥미8분음 …"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "örn. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
         }
       }
     },
@@ -13868,6 +14444,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Visa till höger"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sağda göster"
           }
         }
       }
@@ -14012,6 +14594,12 @@
             "state" : "translated",
             "value" : "Håll ned på notsystemet, välj tonhöjd och släpp för att lägga till noten"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perdeyi seçmek için porteyi basılı tut, eklemek için bırak"
+          }
         }
       }
     },
@@ -14154,6 +14742,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Automatisk oktav"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oktavı otomatik ayarla"
           }
         }
       }
@@ -14298,6 +14892,12 @@
             "state" : "translated",
             "value" : "Helnot"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Birlik nota"
+          }
         }
       }
     },
@@ -14440,6 +15040,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitti"
           }
         }
       }
@@ -14584,6 +15190,12 @@
             "state" : "translated",
             "value" : "Visa till vänster"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solda göster"
+          }
         }
       }
     },
@@ -14726,6 +15338,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reducera rörelse"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hareketi Azalt"
           }
         }
       }
@@ -14870,6 +15488,12 @@
             "state" : "translated",
             "value" : "Med Reducera rörelse på blir skärmeffekterna lugnare."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hareketi Azalt açıkken ekran efektleri sakinleşir."
+          }
         }
       }
     },
@@ -15012,6 +15636,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Behörighet för taligenkänning krävs. Tillåt den i Inställningar."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konuşma tanıma izni gerekiyor. Lütfen Ayarlar’dan izin ver."
           }
         }
       }
@@ -15156,6 +15786,12 @@
             "state" : "translated",
             "value" : "Taligenkänningen misslyckades. Försök igen om en stund."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konuşma tanıma başarısız oldu. Lütfen biraz sonra tekrar dene."
+          }
         }
       }
     },
@@ -15298,6 +15934,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klav"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anahtar"
           }
         }
       }
@@ -15442,6 +16084,12 @@
             "state" : "translated",
             "value" : "Klav"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anahtar"
+          }
         }
       }
     },
@@ -15584,6 +16232,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Koreansk taligenkänning är inte tillgänglig på den här enheten."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu cihazda Korece konuşma tanıma kullanılamıyor."
           }
         }
       }
@@ -15728,6 +16382,12 @@
             "state" : "translated",
             "value" : "Få in två takter i rutan och ta bilden"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İki ölçüyü bu kutuya sığdır ve çek"
+          }
         }
       }
     },
@@ -15870,6 +16530,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontakta via e-post"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "E-posta ile Ulaş"
           }
         }
       }
@@ -16014,6 +16680,12 @@
             "state" : "translated",
             "value" : "Med hörlurar kommer inte metronomen in i mikrofonen"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kulaklık takarsan metronom mikrofona karışmaz"
+          }
         }
       }
     },
@@ -16156,6 +16828,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram-DM (@lee25_ios)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram DM (@lee25_ios)"
           }
         }
       }
@@ -16300,6 +16978,12 @@
             "state" : "translated",
             "value" : "Få en påminnelse om att öva på att sjunga från noter vid en tid du själv väljer."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçtiğin saatte solfej çalışmanı hatırlatan bildirim al."
+          }
         }
       }
     },
@@ -16442,6 +17126,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Automatisk avskrift (experimentell)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Otomatik Notaya Dökme (Deneysel)"
           }
         }
       }
@@ -16586,6 +17276,12 @@
             "state" : "translated",
             "value" : "För bästa resultat"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daha iyi sonuç için"
+          }
         }
       }
     },
@@ -16728,6 +17424,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uppspelningshjälp"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çalma Yardımcıları"
           }
         }
       }
@@ -16872,6 +17574,12 @@
             "state" : "translated",
             "value" : "Rensa allt"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tümünü Temizle"
+          }
         }
       }
     },
@@ -17014,6 +17722,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Punkterad %@"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noktalı %@"
           }
         }
       }
@@ -17158,6 +17872,12 @@
             "state" : "translated",
             "value" : "Titel"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Başlık"
+          }
         }
       }
     },
@@ -17300,6 +18020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Förtecken"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donanım"
           }
         }
       }
@@ -17444,6 +18170,12 @@
             "state" : "translated",
             "value" : "Förtecken"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donanım"
+          }
         }
       }
     },
@@ -17586,6 +18318,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gör dig redo"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hazırlan"
           }
         }
       }
@@ -17730,6 +18468,12 @@
             "state" : "translated",
             "value" : "Support"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Destek"
+          }
         }
       }
     },
@@ -17872,6 +18616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ta bort referensfoto"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Referans Fotoğrafı Sil"
           }
         }
       }
@@ -18016,6 +18766,12 @@
             "state" : "translated",
             "value" : "Skriv av"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notaya Dök"
+          }
         }
       }
     },
@@ -18158,6 +18914,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "En snabb rundtur för nya användare"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni kullanıcılar için kısa tur"
           }
         }
       }
@@ -18302,6 +19064,12 @@
             "state" : "translated",
             "value" : "En kort introduktion till vad du kan göra första gången du öppnar appen."
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamayı ilk açtığında neler yapabileceğine dair kısa bir tanıtım."
+          }
         }
       }
     },
@@ -18444,6 +19212,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avbryt"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İptal"
           }
         }
       }
@@ -18588,6 +19362,12 @@
             "state" : "translated",
             "value" : "Ta foto (anpassa till 2 takter)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fotoğraf Çek (2 ölçüye sığdır)"
+          }
         }
       }
     },
@@ -18730,6 +19510,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kameran är inte tillgänglig.\nVälj ett foto från bildbiblioteket i stället."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamera kullanılamıyor.\nBunun yerine kitaplığından bir fotoğraf seç."
           }
         }
       }
@@ -18874,6 +19660,12 @@
             "state" : "translated",
             "value" : "Förtakt (en takt före start)"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geri sayım (başlamadan önce bir ölçü)"
+          }
         }
       }
     },
@@ -19016,6 +19808,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Layouter för större text"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Büyük yazıya uygun ekranlar"
           }
         }
       }
@@ -19160,6 +19958,12 @@
             "state" : "translated",
             "value" : "Klistra in från urklipp"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Panodan Yapıştır"
+          }
         }
       }
     },
@@ -19299,6 +20103,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo"
@@ -19446,6 +20256,12 @@
             "state" : "translated",
             "value" : "Layout för vikbar iPhone"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Katlanabilir iPhone düzeni"
+          }
         }
       }
     },
@@ -19588,6 +20404,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Använd den breda skärmen på en vikbar iPhone som två paneler bredvid varandra."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Katlanabilir iPhone’un geniş ekranını yan yana iki bölme olarak kullan."
           }
         }
       }
@@ -19732,6 +20554,12 @@
             "state" : "translated",
             "value" : "Säg en not i taget, tydligt och precis på slaget"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notaları tek tek, net bir şekilde ve tam vuruşta söyle"
+          }
         }
       }
     },
@@ -19874,6 +20702,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kopiera nuvarande noter som text (som exempel till AI)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mevcut Notayı Metin Olarak Kopyala (yapay zekâya örnek olsun diye)"
           }
         }
       }
@@ -20018,6 +20852,12 @@
             "state" : "translated",
             "value" : "Hemskärmswidgetar"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ana Ekran widget’ları"
+          }
         }
       }
     },
@@ -20160,6 +21000,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver läser upp varje knapp och not i rätt ordning."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver her düğmeyi ve notayı doğru sırayla okur."
           }
         }
       }
@@ -20304,6 +21150,12 @@
             "state" : "translated",
             "value" : "Ackord"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akor"
+          }
         }
       }
     },
@@ -20447,6 +21299,12 @@
             "state" : "translated",
             "value" : "Ackordläge: noterna staplas på den valda noten"
           }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akor modu: notalar seçili notanın üstüne yığılır"
+          }
         }
       }
     },
@@ -20589,6 +21447,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tamam"
           }
         }
       }

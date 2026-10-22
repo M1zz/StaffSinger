@@ -1264,3 +1264,58 @@ Referensfoto
 Ta ett foto av noterna du läser och låt det ligga kvar på skärmen så att du kan jämföra medan du skriver av.
 
 Bra att ha nära till hands för kören, instrumentlektionerna eller antagningsproven till musikutbildning – när du snabbt behöver läsa noter.
+
+## tr
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger: İlk Görüşte Okuma
+
+### 부제
+
+Yazdığın notaları hemen dinle
+
+### 키워드
+
+solfej,müzik teorisi,porte,partisyon,koro,piyano,akor,metronom,dikte,ders,şarkı,kulak eğitimi
+
+### 프로모션 텍스트
+
+Hiç görmediğin, zor ritimli ve akorlu bir nota mı? Notaları porteye yerleştir, metronom ve geri sayımla hemen dinle.
+
+### 설명
+
+Yeni bir notayı yalnızca kafanda sayma. Dinle.
+StaffSinger kafanı karıştıran iki ölçüyü porteye kopyalar ve tam ritmi ile perdesiyle çalar.
+
+Porteye dokun ya da tuşları kullan
+Perde seçmek için porteyi basılı tut ya da nota eklemek için iki oktavlık piyano tuşlarına dokun. Birlik notadan onaltılık notaya, noktalı notalara, üçlemelere ve eslere kadar seçebilir, az önce eklediğin notayı tek dokunuşla silebilirsin.
+
+Metronomla çal
+Geri sayımdan sonra nota, metronomun tıkına uyarak çalar ve o an çalan nota renkle vurgulanır. Tempoyu ve ölçüyü Ayarlar’dan değiştirirsin.
+
+Akorlar ve birden çok ses
+Notaları aynı vuruşa üst üste koyarak akor oluştur, müziği sesler halinde ayır. Donanım ile Sol, Do ve Fa anahtarları desteklenir.
+
+Solfej dikte
+Nota adlarını metronoma uyarak söyle, porteye nota olarak girsin. Tam vuruşta konuşursan ritim de yakalanır. Dikte, Kore solfej hecelerini tanır; konuşma tanıma tamamen cihazında çalışır.
+
+Notayı metin olarak yapıştır
+Belirli bir biçimde yazılmış metni yapıştır, porte dolsun. Kuralı kopyala, nota fotoğrafınla birlikte bir yapay zekâya ver ve dönen metni yapıştır.
+
+Referans fotoğraf
+Okuduğun notanın fotoğrafını çek ve kopyalarken karşılaştırman için ekranda açık tut.
+
+Koro, enstrüman dersleri ya da müzik bölümü sınavlarına hazırlık için yanında dursun; notaları hızlı okuman gerektiğinde hep elinin altında olsun.
