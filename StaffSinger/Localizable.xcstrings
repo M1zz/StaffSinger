@@ -33,6 +33,12 @@
             "state" : "translated",
             "value" : "\n超過第2小節的音符可能不會顯示在畫面上。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\n2小節を超える音符は画面に表示されないことがあります。"
+          }
         }
       }
     },
@@ -67,6 +73,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "「%@」——其中找不到唱名。\n請依 도 레 미 파 솔 라 시 來說。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「%@」——ここから階名が見つかりませんでした。\n도 레 미 파 솔 라 시 で話してください。"
           }
         }
       }
@@ -103,6 +115,12 @@
             "state" : "translated",
             "value" : "%@ · 聆聽中"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · 聞き取り中"
+          }
         }
       }
     },
@@ -137,6 +155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@大調（♭%lld）"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@長調（♭%lld）"
           }
         }
       }
@@ -173,6 +197,12 @@
             "state" : "translated",
             "value" : "%@大調（♯%lld）"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@長調（♯%lld）"
+          }
         }
       }
     },
@@ -207,6 +237,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已聽寫音符：%lld"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "書き取った音符：%lld"
           }
         }
       }
@@ -243,6 +279,12 @@
             "state" : "translated",
             "value" : "已聽寫音符：%lld。\n若音高或長度不對，請拖移音符來修改。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "書き取った音符：%lld。\n音の高さや長さが違うときは、音符をドラッグして直してください。"
+          }
         }
       }
     },
@@ -277,6 +319,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已匯入音符：%lld。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "読み込んだ音符：%lld。"
           }
         }
       }
@@ -313,6 +361,12 @@
             "state" : "translated",
             "value" : "已辨識音符：%lld（實驗性）。\n請自行確認音高與長度並加以修改。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "認識した音符：%lld（試験機能）。\n音の高さと長さは自分で確認して直してください。"
+          }
         }
       }
     },
@@ -348,6 +402,12 @@
             "state" : "translated",
             "value" : "第%lld小節 第%lld拍"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld小節め %lld拍め"
+          }
         }
       }
     },
@@ -379,6 +439,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        },
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/16"
@@ -418,6 +484,12 @@
             "state" : "translated",
             "value" : "十六分音符"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "16分音符"
+          }
         }
       }
     },
@@ -452,6 +524,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "二分音符"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2分音符"
           }
         }
       }
@@ -488,6 +566,12 @@
             "state" : "translated",
             "value" : "音程跳進超過四度時，請說「높은 솔」（高 sol）或「낮은 시」（低 si）"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4度より大きく跳ぶときは「높은 솔」（高いソ）や「낮은 시」（低いシ）のように言ってください"
+          }
         }
       }
     },
@@ -519,6 +603,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        },
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/4"
@@ -558,6 +648,12 @@
             "state" : "translated",
             "value" : "四分音符"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4分音符"
+          }
         }
       }
     },
@@ -589,6 +685,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        },
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/8"
@@ -628,6 +730,12 @@
             "state" : "translated",
             "value" : "八分音符"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "8分音符"
+          }
         }
       }
     },
@@ -662,6 +770,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "複製給 AI 的規則"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AIに渡すルールをコピー"
           }
         }
       }
@@ -698,6 +812,12 @@
             "state" : "translated",
             "value" : "對 Siri 說一聲，或執行捷徑，立即開始。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siriに話しかけるか、ショートカットで、すぐに始められます。"
+          }
         }
       }
     },
@@ -732,6 +852,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri 與捷徑"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siriとショートカット"
           }
         }
       }
@@ -768,6 +894,12 @@
             "state" : "translated",
             "value" : "更好用的旁白（VoiceOver）"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOverをもっと使いやすく"
+          }
         }
       }
     },
@@ -799,6 +931,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@拍"
+          }
+        },
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@拍"
@@ -838,6 +976,12 @@
             "state" : "translated",
             "value" : "中音譜號"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ハ音記号"
+          }
         }
       }
     },
@@ -872,6 +1016,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "聯絡開發者"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開発者に問い合わせる"
           }
         }
       }
@@ -908,6 +1058,12 @@
             "state" : "translated",
             "value" : "唱名聽寫"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "階名ディクテーション"
+          }
         }
       }
     },
@@ -942,6 +1098,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "沒有聽清楚唱名。請跟著節拍器，清楚地說「도 레 미」試試。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "階名を聞き取れませんでした。メトロノームに合わせて「도 레 미」のようにはっきり言ってみてください。"
           }
         }
       }
@@ -978,6 +1140,12 @@
             "state" : "translated",
             "value" : "已複製規則"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ルールをコピーしました"
+          }
         }
       }
     },
@@ -1012,6 +1180,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "放大文字時，畫面會重新排版，不會被截斷。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文字を大きくしても切れず、見やすく配置し直されます。"
           }
         }
       }
@@ -1048,6 +1222,12 @@
             "state" : "translated",
             "value" : "裝置上的韓語語音辨識尚未準備好。\n請在「設定 ▸ 一般 ▸ 鍵盤 ▸ 聽寫」中開啟韓語，系統就會下載所需檔案。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "端末内で処理する韓国語の音声認識の準備ができていません。\n「設定 ▸ 一般 ▸ キーボード ▸ 音声入力」で韓国語をオンにすると、必要なファイルがダウンロードされます。"
+          }
         }
       }
     },
@@ -1082,6 +1262,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "低音譜號"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ヘ音記号"
           }
         }
       }
@@ -1118,6 +1304,12 @@
             "state" : "translated",
             "value" : "無法開始錄音：%@"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "録音を開始できません：%@"
+          }
         }
       }
     },
@@ -1152,6 +1344,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "高音譜號"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ト音記号"
           }
         }
       }
@@ -1188,6 +1386,12 @@
             "state" : "translated",
             "value" : "C大調"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ハ長調"
+          }
         }
       }
     },
@@ -1222,6 +1426,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "C大調（無升降記號）"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ハ長調（調号なし）"
           }
         }
       }
@@ -1258,6 +1468,12 @@
             "state" : "translated",
             "value" : "深色模式"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ダークモード"
+          }
         }
       }
     },
@@ -1292,6 +1508,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "關閉"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "閉じる"
           }
         }
       }
@@ -1328,6 +1550,12 @@
             "state" : "translated",
             "value" : "即使開啟「增強對比」或難以分辨顏色，內容依然清楚易讀。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コントラストを上げたり、色の区別が難しくても、内容を読み取れます。"
+          }
         }
       }
     },
@@ -1362,6 +1590,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "讓你以更多語言使用本 App。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "もっと多くの言語でアプリを使えるようにします。"
           }
         }
       }
@@ -1398,6 +1632,12 @@
             "state" : "translated",
             "value" : "更多語言"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "さらに多くの言語"
+          }
         }
       }
     },
@@ -1432,6 +1672,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · 休止請說「쉼」"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · 休符は「쉼」と言います"
           }
         }
       }
@@ -1468,6 +1714,12 @@
             "state" : "translated",
             "value" : "用手指縮放、拖移，讓兩個小節填滿框"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "2小節が枠いっぱいになるよう、指で拡大・移動してください"
+          }
         }
       }
     },
@@ -1502,6 +1754,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "聽到的內容"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "聞き取った言葉"
           }
         }
       }
@@ -1538,6 +1796,12 @@
             "state" : "translated",
             "value" : "節奏對齊"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "リズムスナップ"
+          }
         }
       }
     },
@@ -1572,6 +1836,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "自由"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フリー"
           }
         }
       }
@@ -1608,6 +1878,12 @@
             "state" : "translated",
             "value" : "需要麥克風權限。請到「設定」中允許。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "マイクの許可が必要です。設定で許可してください。"
+          }
         }
       }
     },
@@ -1642,6 +1918,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "找不到麥克風輸入。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "マイク入力が見つかりませんでした。"
           }
         }
       }
@@ -1678,6 +1960,12 @@
             "state" : "translated",
             "value" : "把做好的樂譜儲存成檔案，之後可以再次開啟。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "作った譜面をファイルに保存して、あとで開き直せます。"
+          }
         }
       }
     },
@@ -1712,6 +2000,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "開始說"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "話し始める"
           }
         }
       }
@@ -1748,6 +2042,12 @@
             "state" : "translated",
             "value" : "只記錄你說話的先後順序。所有音符都以四分音符寫入，之後再修改。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "話した順番だけを使います。長さはすべて4分音符で入るので、あとで直してください。"
+          }
         }
       }
     },
@@ -1783,6 +2083,12 @@
             "state" : "translated",
             "value" : "將你說話的時間點對齊到最接近的%@音符位置。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "話したタイミングを、いちばん近い%@音符の位置に合わせます。"
+          }
         }
       }
     },
@@ -1814,6 +2120,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "停止"
+          }
+        },
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "停止"
@@ -1853,6 +2165,12 @@
             "state" : "translated",
             "value" : "節拍器（拍點聲）"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メトロノーム（拍のクリック）"
+          }
         }
       }
     },
@@ -1887,6 +2205,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "關閉節拍器"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メトロノームをオフにする"
           }
         }
       }
@@ -1923,6 +2247,12 @@
             "state" : "translated",
             "value" : "聽完節拍器的四拍後，請跟著節拍唸出唱名。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メトロノームの4拍を数えたら、拍に合わせて階名を言ってください。"
+          }
         }
       }
     },
@@ -1957,6 +2287,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "開啟節拍器"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メトロノームをオンにする"
           }
         }
       }
@@ -1993,6 +2329,12 @@
             "state" : "translated",
             "value" : "所有音符都放在起始八度。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべての音が開始オクターブに入ります。"
+          }
         }
       }
     },
@@ -2027,6 +2369,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "拍號"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拍子"
           }
         }
       }
@@ -2063,6 +2411,12 @@
             "state" : "translated",
             "value" : "拍號"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "拍子記号"
+          }
         }
       }
     },
@@ -2097,6 +2451,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "歡迎回報問題與提出功能建議。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不具合の報告や機能のご提案をお待ちしています。"
           }
         }
       }
@@ -2133,6 +2493,12 @@
             "state" : "translated",
             "value" : "更易閱讀的顏色與對比"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "見やすい色とコントラスト"
+          }
         }
       }
     },
@@ -2167,6 +2533,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在貼上的文字中找不到音符。\n請確認是否符合規則（例：4옥도8분음）。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "貼り付けたテキストから音符が見つかりませんでした。\nルール（例：4옥도8분음）に合っているか確認してください。"
           }
         }
       }
@@ -2203,6 +2575,12 @@
             "state" : "translated",
             "value" : "太快的話請調低速度（目前 %lld BPM）"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "速すぎるときはテンポを下げてください（現在 %lld BPM）"
+          }
         }
       }
     },
@@ -2234,6 +2612,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用"
+          }
+        },
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "使用"
@@ -2273,6 +2657,12 @@
             "state" : "translated",
             "value" : "從照片圖庫選擇"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "写真ライブラリから選択"
+          }
         }
       }
     },
@@ -2308,6 +2698,12 @@
             "state" : "translated",
             "value" : "新樂譜"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新しい譜面"
+          }
         }
       }
     },
@@ -2339,6 +2735,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
+          }
+        },
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "設定"
@@ -2378,6 +2780,12 @@
             "state" : "translated",
             "value" : "三連%@"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3連%@"
+          }
         }
       }
     },
@@ -2412,6 +2820,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "三連音模式：3個音合成一拍（或兩拍）"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3連符モード：3つの音が1拍（または2拍）にまとまります"
           }
         }
       }
@@ -2448,6 +2862,12 @@
             "state" : "translated",
             "value" : "附點三連%@"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "付点3連%@"
+          }
         }
       }
     },
@@ -2482,6 +2902,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "休止符模式：點選想要的長度即可插入休止符"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休符モード：入れたい長さをタップすると休符が入ります"
           }
         }
       }
@@ -2518,6 +2944,12 @@
             "state" : "translated",
             "value" : "起始八度  %lld"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開始オクターブ  %lld"
+          }
         }
       }
     },
@@ -2552,6 +2984,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "使用小技巧"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使い方のヒント"
           }
         }
       }
@@ -2588,6 +3026,12 @@
             "state" : "translated",
             "value" : "接著寫上次的樂譜"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "書きかけの譜面を続きから"
+          }
         }
       }
     },
@@ -2622,6 +3066,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "請在下方確認，然後點「加入樂譜」"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下で確認して「譜面に入れる」をタップしてください"
           }
         }
       }
@@ -2658,6 +3108,12 @@
             "state" : "translated",
             "value" : "貼上樂譜"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "譜面を貼り付け"
+          }
         }
       }
     },
@@ -2692,6 +3148,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "樂譜照片"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "譜面の写真"
           }
         }
       }
@@ -2728,6 +3190,12 @@
             "state" : "translated",
             "value" : "把樂譜照片交給 AI，請它依下面的規則寫成文字，再把得到的文字貼上，五線譜就填好了。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "譜面の写真をAIに渡して、下のルールどおりに書いてもらい、返ってきたテキストを貼り付けると五線に入ります。"
+          }
         }
       }
     },
@@ -2762,6 +3230,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "儲存與匯出樂譜"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "譜面の保存と書き出し"
           }
         }
       }
@@ -2798,6 +3272,12 @@
             "state" : "translated",
             "value" : "樂譜標題"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "譜面のタイトル"
+          }
         }
       }
     },
@@ -2832,6 +3312,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "轉換為樂譜"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "譜面に変換"
           }
         }
       }
@@ -2868,6 +3354,12 @@
             "state" : "translated",
             "value" : "無法辨識樂譜。清晰的印刷譜、單行、正面拍攝的照片效果最好。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "譜面を認識できませんでした。きれいな印刷、1段、正面から撮った写真ほどうまくいきます。"
+          }
         }
       }
     },
@@ -2902,6 +3394,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "加入樂譜"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "譜面に入れる"
           }
         }
       }
@@ -2938,6 +3436,12 @@
             "state" : "translated",
             "value" : "將加入的音符"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "譜面に入る音符"
+          }
         }
       }
     },
@@ -2972,6 +3476,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在適當的時機，輕輕提示你好用的功能。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "便利な機能を、ちょうどよいタイミングでそっとお知らせします。"
           }
         }
       }
@@ -3008,6 +3518,12 @@
             "state" : "translated",
             "value" : "選擇與前一個音最接近的八度，因此「시 도」會升高半音。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "直前の音に近いオクターブを選びます。「시 도」は半音上がります。"
+          }
         }
       }
     },
@@ -3042,6 +3558,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "不用開啟 App，直接在主畫面開始練習。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリを開かなくても、ホーム画面からすぐに練習を始められます。"
           }
         }
       }
@@ -3078,6 +3600,12 @@
             "state" : "translated",
             "value" : "也能以英文使用本 App。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリを英語でも使えます。"
+          }
         }
       }
     },
@@ -3112,6 +3640,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "即使 App 被關閉再開啟，正在寫的樂譜也會原樣保留。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリを閉じて開き直しても、書いていた譜面はそのまま残ります。"
           }
         }
       }
@@ -3148,6 +3682,12 @@
             "state" : "translated",
             "value" : "在深色畫面上，樂譜與按鈕同樣清晰醒目。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暗い画面でも、譜面とボタンがくっきり見えます。"
+          }
         }
       }
     },
@@ -3182,6 +3722,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "更新後第一次開啟時，告訴你有哪些新內容。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデート後の初回起動で、新しくなった点をお知らせします。"
           }
         }
       }
@@ -3218,6 +3764,12 @@
             "state" : "translated",
             "value" : "更新內容"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アップデート情報"
+          }
         }
       }
     },
@@ -3252,6 +3804,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在此貼上"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ここに貼り付け"
           }
         }
       }
@@ -3288,6 +3846,12 @@
             "state" : "translated",
             "value" : "練習提醒"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "練習の通知"
+          }
         }
       }
     },
@@ -3323,6 +3887,12 @@
             "state" : "translated",
             "value" : "英文支援"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "英語に対応"
+          }
         }
       }
     },
@@ -3354,6 +3924,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "例：4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
+        },
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "例：4옥도4분음 4옥레4분음 4옥미8분음 …"
@@ -3393,6 +3969,12 @@
             "state" : "translated",
             "value" : "顯示在右側"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "右側に表示"
+          }
         }
       }
     },
@@ -3427,6 +4009,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "長按五線譜選擇音高，放開即可加入"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "五線を長押しして音を選び、指を離すと追加されます"
           }
         }
       }
@@ -3463,6 +4051,12 @@
             "state" : "translated",
             "value" : "自動配合八度"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オクターブ自動調整"
+          }
         }
       }
     },
@@ -3494,6 +4088,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全音符"
+          }
+        },
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "全音符"
@@ -3533,6 +4133,12 @@
             "state" : "translated",
             "value" : "完成"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完了"
+          }
         }
       }
     },
@@ -3567,6 +4173,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "顯示在左側"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "左側に表示"
           }
         }
       }
@@ -3603,6 +4215,12 @@
             "state" : "translated",
             "value" : "減少動態效果"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "視差効果を減らす"
+          }
         }
       }
     },
@@ -3637,6 +4255,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "開啟「減少動態效果」後，畫面效果會更平靜。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "「視差効果を減らす」をオンにすると、画面の動きが穏やかになります。"
           }
         }
       }
@@ -3673,6 +4297,12 @@
             "state" : "translated",
             "value" : "需要語音辨識權限。請到「設定」中允許。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音声認識の許可が必要です。設定で許可してください。"
+          }
         }
       }
     },
@@ -3707,6 +4337,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "語音辨識失敗。請稍後再試。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音声認識に失敗しました。しばらくしてからもう一度お試しください。"
           }
         }
       }
@@ -3743,6 +4379,12 @@
             "state" : "translated",
             "value" : "譜號"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音部記号"
+          }
         }
       }
     },
@@ -3777,6 +4419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "譜號"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音部記号"
           }
         }
       }
@@ -3813,6 +4461,12 @@
             "state" : "translated",
             "value" : "此裝置無法使用韓語語音辨識。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この端末では韓国語の音声認識を使えません。"
+          }
         }
       }
     },
@@ -3847,6 +4501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "把兩個小節對準框內再拍攝"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この枠に2小節を合わせて撮影してください"
           }
         }
       }
@@ -3883,6 +4543,12 @@
             "state" : "translated",
             "value" : "透過電子郵件聯絡"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メールで問い合わせる"
+          }
         }
       }
     },
@@ -3917,6 +4583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "戴上耳機，節拍器的聲音就不會混進麥克風"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "イヤホンを使うと、メトロノームの音がマイクに入りません"
           }
         }
       }
@@ -3953,6 +4625,12 @@
             "state" : "translated",
             "value" : "Instagram 私訊 (@lee25_ios)"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram DM (@lee25_ios)"
+          }
         }
       }
     },
@@ -3987,6 +4665,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在你設定的時間提醒你練習視唱，以免忘記。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "忘れないように、決めた時間に視唱の練習をお知らせします。"
           }
         }
       }
@@ -4023,6 +4707,12 @@
             "state" : "translated",
             "value" : "自動辨識樂譜（實驗性）"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自動採譜（試験機能）"
+          }
         }
       }
     },
@@ -4057,6 +4747,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "想讓辨識更準確"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "うまく認識させるには"
           }
         }
       }
@@ -4093,6 +4789,12 @@
             "state" : "translated",
             "value" : "播放輔助"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再生サポート"
+          }
         }
       }
     },
@@ -4127,6 +4829,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "全部清除"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべて消去"
           }
         }
       }
@@ -4163,6 +4871,12 @@
             "state" : "translated",
             "value" : "附點%@"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "付点%@"
+          }
         }
       }
     },
@@ -4197,6 +4911,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "標題"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "タイトル"
           }
         }
       }
@@ -4233,6 +4953,12 @@
             "state" : "translated",
             "value" : "調號"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "調号"
+          }
         }
       }
     },
@@ -4268,6 +4994,12 @@
             "state" : "translated",
             "value" : "調號"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "調号"
+          }
         }
       }
     },
@@ -4299,6 +5031,12 @@
           }
         },
         "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "準備"
+          }
+        },
+        "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "準備"
@@ -4338,6 +5076,12 @@
             "state" : "translated",
             "value" : "支援"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サポート"
+          }
         }
       }
     },
@@ -4372,6 +5116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "刪除參考照片"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "参考写真を削除"
           }
         }
       }
@@ -4408,6 +5158,12 @@
             "state" : "translated",
             "value" : "辨識樂譜"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "採譜"
+          }
         }
       }
     },
@@ -4442,6 +5198,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "給新使用者的操作導覽"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "はじめての方へのご案内"
           }
         }
       }
@@ -4478,6 +5240,12 @@
             "state" : "translated",
             "value" : "第一次開啟時，簡單介紹你能做什麼。"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "初めて開いたときに、できることを手短に紹介します。"
+          }
         }
       }
     },
@@ -4512,6 +5280,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "取消"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャンセル"
           }
         }
       }
@@ -4548,6 +5322,12 @@
             "state" : "translated",
             "value" : "拍照（對準2小節）"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カメラで撮影（2小節に合わせる）"
+          }
         }
       }
     },
@@ -4582,6 +5362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "無法使用相機。\n請改從照片圖庫選擇照片。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カメラを使用できません。\n写真ライブラリから選んでください。"
           }
         }
       }
@@ -4618,6 +5404,12 @@
             "state" : "translated",
             "value" : "預備拍（開始前一小節）"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カウントイン（開始前に1小節）"
+          }
         }
       }
     },
@@ -4652,6 +5444,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "適合大字體的畫面"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "大きな文字に合わせた画面"
           }
         }
       }
@@ -4688,6 +5486,12 @@
             "state" : "translated",
             "value" : "從剪貼簿貼上"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クリップボードから貼り付け"
+          }
         }
       }
     },
@@ -4722,6 +5526,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "速度"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "テンポ"
           }
         }
       }
@@ -4758,6 +5568,12 @@
             "state" : "translated",
             "value" : "可摺疊 iPhone 版面"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "折りたたみiPhone対応の画面"
+          }
         }
       }
     },
@@ -4792,6 +5608,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在可摺疊 iPhone 上，把寬螢幕分成左右兩欄使用。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "折りたたみiPhoneの広い画面を、左右2つに分けて使えます。"
           }
         }
       }
@@ -4828,6 +5650,12 @@
             "state" : "translated",
             "value" : "一個音一個音，清楚地、準確踩著拍子說"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1音ずつはっきりと、拍にぴったり合わせて話してください"
+          }
         }
       }
     },
@@ -4862,6 +5690,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "將目前的樂譜複製為文字（給 AI 當範例）"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "現在の譜面をテキストでコピー（AIへの例示用）"
           }
         }
       }
@@ -4898,6 +5732,12 @@
             "state" : "translated",
             "value" : "主畫面小工具"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホーム画面ウィジェット"
+          }
         }
       }
     },
@@ -4932,6 +5772,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "旁白會依適當的順序讀出每個按鈕與內容，不會遺漏。"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "画面読み上げが、ボタンと内容をもれなく適切な順番で読み上げます。"
           }
         }
       }
@@ -4968,6 +5814,12 @@
             "state" : "translated",
             "value" : "和弦"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "和音"
+          }
         }
       }
     },
@@ -5003,6 +5855,12 @@
             "state" : "translated",
             "value" : "和弦模式：音符會疊在所選音符之上"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "和音モード：選んだ音の上に音が重なります"
+          }
         }
       }
     },
@@ -5037,6 +5895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "好"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
           }
         }
       }
