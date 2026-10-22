@@ -117,6 +117,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -235,6 +241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger menggunakan kamera untuk memotret partitur dan memuatnya sebagai gambar referensi."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger bruker kameraet til å ta bilde av noter og laste det inn som referansebilde."
           }
         }
       }
@@ -355,6 +367,12 @@
             "state" : "translated",
             "value" : "StaffSinger menggunakan mikrofon untuk mengubah nama nada yang kamu ucapkan menjadi not di paranada. Audio hanya diproses di perangkat ini dan tidak pernah disimpan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger bruker mikrofonen til å gjøre notenavnene du sier om til noter på notesystemet. Lyden behandles bare på denne enheten og lagres aldri."
+          }
         }
       }
     },
@@ -473,6 +491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger menggunakan pengenalan suara untuk mengubah nama nada yang kamu ucapkan menjadi not. Pengenalan hanya berlangsung di perangkat ini."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger bruker talegjenkjenning til å gjøre notenavnene du sier om til noter. Gjenkjenningen skjer bare på denne enheten."
           }
         }
       }

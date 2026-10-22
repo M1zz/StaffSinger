@@ -117,6 +117,12 @@
             "state" : "translated",
             "value" : "\nNot setelah birama kedua mungkin tidak terlihat di layar."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nNoter etter andre takt vises kanskje ikke på skjermen."
+          }
         }
       }
     },
@@ -235,6 +241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "“%@” — tidak ada nama nada yang ditemukan.\nUcapkan 도 레 미 파 솔 라 시."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "«%@» – fant ingen notenavn.\nSi 도 레 미 파 솔 라 시."
           }
         }
       }
@@ -355,6 +367,12 @@
             "state" : "translated",
             "value" : "%@ · Mendengarkan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Lytter"
+          }
         }
       }
     },
@@ -473,6 +491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ mayor (♭%lld)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@-dur (♭%lld)"
           }
         }
       }
@@ -593,6 +617,12 @@
             "state" : "translated",
             "value" : "%@ mayor (♯%lld)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@-dur (♯%lld)"
+          }
         }
       }
     },
@@ -711,6 +741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Not yang didikte: %lld"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dikterte noter: %lld"
           }
         }
       }
@@ -831,6 +867,12 @@
             "state" : "translated",
             "value" : "Not yang didikte: %lld.\nJika tinggi atau panjang nada keliru, seret not untuk memperbaikinya."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dikterte noter: %lld.\nHvis en tonehøyde eller lengde er feil, drar du noten for å rette den."
+          }
         }
       }
     },
@@ -949,6 +991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Not yang diimpor: %lld."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importerte noter: %lld."
           }
         }
       }
@@ -1069,6 +1117,12 @@
             "state" : "translated",
             "value" : "Not yang dikenali: %lld (eksperimen).\nPeriksa tinggi dan panjang nada, lalu perbaiki sendiri."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjenkjente noter: %lld (eksperimentell).\nSjekk tonehøyde og lengde, og rett dem selv."
+          }
         }
       }
     },
@@ -1188,6 +1242,12 @@
             "state" : "translated",
             "value" : "Birama %lld, ketukan %lld"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takt %lld, slag %lld"
+          }
         }
       }
     },
@@ -1303,6 +1363,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/16"
@@ -1426,6 +1492,12 @@
             "state" : "translated",
             "value" : "Not seperenam belas"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sekstendedelsnote"
+          }
         }
       }
     },
@@ -1544,6 +1616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Not setengah"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halvnote"
           }
         }
       }
@@ -1664,6 +1742,12 @@
             "state" : "translated",
             "value" : "Untuk lompatan lebih lebar dari kuart, ucapkan “높은 솔” (sol tinggi) atau “낮은 시” (si rendah)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ved sprang større enn en kvart sier du «높은 솔» (høy sol) eller «낮은 시» (lav si)"
+          }
         }
       }
     },
@@ -1779,6 +1863,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/4"
@@ -1902,6 +1992,12 @@
             "state" : "translated",
             "value" : "Not seperempat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Firedelsnote"
+          }
         }
       }
     },
@@ -2017,6 +2113,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/8"
@@ -2140,6 +2242,12 @@
             "state" : "translated",
             "value" : "Not seperdelapan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åttedelsnote"
+          }
         }
       }
     },
@@ -2258,6 +2366,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salin aturan untuk AI"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopier regel til KI"
           }
         }
       }
@@ -2378,6 +2492,12 @@
             "state" : "translated",
             "value" : "Langsung mulai dengan meminta Siri atau menjalankan pintasan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kom i gang med en gang ved å spørre Siri eller kjøre en snarvei."
+          }
         }
       }
     },
@@ -2496,6 +2616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri dan Pintasan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri og Snarveier"
           }
         }
       }
@@ -2616,6 +2742,12 @@
             "state" : "translated",
             "value" : "VoiceOver yang lebih baik"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bedre VoiceOver"
+          }
         }
       }
     },
@@ -2734,6 +2866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@ ketukan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@ slag"
           }
         }
       }
@@ -2854,6 +2992,12 @@
             "state" : "translated",
             "value" : "Kunci C"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C-nøkkel"
+          }
         }
       }
     },
@@ -2972,6 +3116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hubungi pengembang"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontakt utvikleren"
           }
         }
       }
@@ -3092,6 +3242,12 @@
             "state" : "translated",
             "value" : "Dikte Solfeggio"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfège-diktat"
+          }
         }
       }
     },
@@ -3210,6 +3366,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nama nada tidak terdengar jelas. Coba ucapkan “도 레 미” dengan jelas, sesuai irama metronom."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fikk ikke tak i noen notenavn. Prøv å si «도 레 미» tydelig i takt med metronomen."
           }
         }
       }
@@ -3330,6 +3492,12 @@
             "state" : "translated",
             "value" : "Aturan disalin"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regel kopiert"
+          }
         }
       }
     },
@@ -3448,6 +3616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saat teks diperbesar, layar ditata ulang agar tidak terpotong."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Når du gjør teksten større, ordnes skjermene om i stedet for å bli kuttet."
           }
         }
       }
@@ -3568,6 +3742,12 @@
             "state" : "translated",
             "value" : "Pengenalan suara bahasa Korea di perangkat belum siap.\nAktifkan bahasa Korea di Pengaturan ▸ Umum ▸ Papan Ketik ▸ Dikte agar file yang diperlukan diunduh."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koreansk talegjenkjenning på enheten er ikke klar.\nSlå på koreansk under Innstillinger ▸ Generelt ▸ Tastatur ▸ Diktering, så lastes de nødvendige filene ned."
+          }
         }
       }
     },
@@ -3686,6 +3866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kunci F"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F-nøkkel"
           }
         }
       }
@@ -3806,6 +3992,12 @@
             "state" : "translated",
             "value" : "Tidak dapat memulai perekaman: %@"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke starte opptaket: %@"
+          }
         }
       }
     },
@@ -3924,6 +4116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kunci G"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "G-nøkkel"
           }
         }
       }
@@ -4044,6 +4242,12 @@
             "state" : "translated",
             "value" : "Do mayor"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C-dur"
+          }
         }
       }
     },
@@ -4162,6 +4366,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Do mayor (tanpa tanda kromatik)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C-dur (ingen fortegn)"
           }
         }
       }
@@ -4282,6 +4492,12 @@
             "state" : "translated",
             "value" : "Mode gelap"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mørk modus"
+          }
         }
       }
     },
@@ -4400,6 +4616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tutup"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lukk"
           }
         }
       }
@@ -4520,6 +4742,12 @@
             "state" : "translated",
             "value" : "Semuanya tetap terbaca, bahkan dengan Tingkatkan Kontras atau saat warna sulit dibedakan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alt er fortsatt lesbart, også med Øk kontrast eller hvis farger er vanskelige å skille."
+          }
         }
       }
     },
@@ -4638,6 +4866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pakai aplikasi dalam lebih banyak bahasa."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk appen på flere språk."
           }
         }
       }
@@ -4758,6 +4992,12 @@
             "state" : "translated",
             "value" : "Lebih banyak bahasa"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flere språk"
+          }
         }
       }
     },
@@ -4876,6 +5116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · ucapkan “쉼” untuk tanda diam"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · si «쉼» for en pause"
           }
         }
       }
@@ -4996,6 +5242,12 @@
             "state" : "translated",
             "value" : "Cubit dan geser hingga dua birama memenuhi kotak"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zoom og dra med fingrene til to takter fyller rammen"
+          }
         }
       }
     },
@@ -5114,6 +5366,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yang terdengar"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det jeg hørte"
           }
         }
       }
@@ -5234,6 +5492,12 @@
             "state" : "translated",
             "value" : "Penyelarasan ritme"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rytmetilpasning"
+          }
         }
       }
     },
@@ -5352,6 +5616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bebas"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fritt"
           }
         }
       }
@@ -5472,6 +5742,12 @@
             "state" : "translated",
             "value" : "Izin mikrofon diperlukan. Izinkan di Pengaturan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tillatelse til mikrofon kreves. Gi tillatelse i Innstillinger."
+          }
         }
       }
     },
@@ -5590,6 +5866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Input mikrofon tidak ditemukan."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fant ingen mikrofoninngang."
           }
         }
       }
@@ -5710,6 +5992,12 @@
             "state" : "translated",
             "value" : "Simpan partitur ke file dan buka lagi nanti."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagre notene i en fil, og åpne dem igjen senere."
+          }
         }
       }
     },
@@ -5828,6 +6116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mulai bicara"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begynn å snakke"
           }
         }
       }
@@ -5948,6 +6242,12 @@
             "state" : "translated",
             "value" : "Hanya urutan ucapanmu yang dipakai. Semua not masuk sebagai not seperempat; perbaiki panjangnya nanti."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bare rekkefølgen du sier tonene i, brukes. Alle noter blir firedelsnoter; rett lengdene etterpå."
+          }
         }
       }
     },
@@ -6066,6 +6366,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Menyelaraskan setiap saat ucapanmu ke posisi not %@ terdekat."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilpasser hvert uttalte tidspunkt til nærmeste %@-noteplassering."
           }
         }
       }
@@ -6186,6 +6492,12 @@
             "state" : "translated",
             "value" : "Berhenti"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stopp"
+          }
         }
       }
     },
@@ -6304,6 +6616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metronom (klik ketukan)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronom (slagklikk)"
           }
         }
       }
@@ -6424,6 +6742,12 @@
             "state" : "translated",
             "value" : "Matikan metronom"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå av metronomen"
+          }
         }
       }
     },
@@ -6542,6 +6866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Setelah empat ketukan metronom, sebutkan nama nada sesuai irama."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etter fire slag fra metronomen sier du notenavnene i takt."
           }
         }
       }
@@ -6662,6 +6992,12 @@
             "state" : "translated",
             "value" : "Nyalakan metronom"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå på metronomen"
+          }
         }
       }
     },
@@ -6780,6 +7116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Semua not tetap berada di oktaf awal."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle noter blir i startoktaven."
           }
         }
       }
@@ -6900,6 +7242,12 @@
             "state" : "translated",
             "value" : "Birama"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taktart"
+          }
         }
       }
     },
@@ -7018,6 +7366,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Birama"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taktart"
           }
         }
       }
@@ -7138,6 +7492,12 @@
             "state" : "translated",
             "value" : "Laporan bug dan usulan fitur sangat kami nantikan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feilrapporter og forslag til funksjoner er velkomne."
+          }
         }
       }
     },
@@ -7256,6 +7616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Warna dan kontras yang lebih nyaman"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bedre farger og kontrast"
           }
         }
       }
@@ -7376,6 +7742,12 @@
             "state" : "translated",
             "value" : "Tidak ada not yang ditemukan di teks yang ditempel.\nPastikan teks mengikuti aturan (mis. 4옥도8분음)."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fant ingen noter i den limte teksten.\nSjekk at den følger regelen (f.eks. 4옥도8분음)."
+          }
         }
       }
     },
@@ -7494,6 +7866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jika terlalu cepat, turunkan tempo (sekarang %lld BPM)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvis det går for fort, setter du ned tempoet (nå %lld BPM)"
           }
         }
       }
@@ -7614,6 +7992,12 @@
             "state" : "translated",
             "value" : "Pakai"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk"
+          }
         }
       }
     },
@@ -7732,6 +8116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pilih dari pustaka foto"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velg fra bildebiblioteket"
           }
         }
       }
@@ -7852,6 +8242,12 @@
             "state" : "translated",
             "value" : "Partitur baru"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nye noter"
+          }
         }
       }
     },
@@ -7971,6 +8367,12 @@
             "state" : "translated",
             "value" : "Pengaturan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Innstillinger"
+          }
         }
       }
     },
@@ -8086,6 +8488,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triol: %@"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Triol: %@"
@@ -8209,6 +8617,12 @@
             "state" : "translated",
             "value" : "Mode triol: tiga not berbagi satu ketukan (atau dua)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triolmodus: tre noter deler ett slag (eller to)"
+          }
         }
       }
     },
@@ -8327,6 +8741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Triol bertitik: %@"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Punktert triol: %@"
           }
         }
       }
@@ -8447,6 +8867,12 @@
             "state" : "translated",
             "value" : "Mode tanda diam: ketuk panjang yang diinginkan untuk menyisipkan tanda diam"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pausemodus: trykk på en lengde for å sette inn en pause"
+          }
         }
       }
     },
@@ -8565,6 +8991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oktaf awal  %lld"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Startoktav  %lld"
           }
         }
       }
@@ -8685,6 +9117,12 @@
             "state" : "translated",
             "value" : "Tips berguna"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyttige tips"
+          }
         }
       }
     },
@@ -8803,6 +9241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lanjutkan partitur dari terakhir kamu tinggalkan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsett på notene der du slapp"
           }
         }
       }
@@ -8923,6 +9367,12 @@
             "state" : "translated",
             "value" : "Periksa di bawah, lalu ketuk “Tambahkan ke partitur”"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sjekk nedenfor, og trykk på «Legg til i notene»"
+          }
         }
       }
     },
@@ -9041,6 +9491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempel partitur"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lim inn noter"
           }
         }
       }
@@ -9161,6 +9617,12 @@
             "state" : "translated",
             "value" : "Foto partitur"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bilde av noter"
+          }
         }
       }
     },
@@ -9279,6 +9741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Berikan foto partitur ke AI, minta AI menuliskannya sesuai aturan di bawah, lalu tempel teks yang diterima untuk mengisi paranada."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gi et bilde av notene til en KI, be den skrive dem etter regelen nedenfor, og lim inn teksten du får tilbake for å fylle notesystemet."
           }
         }
       }
@@ -9399,6 +9867,12 @@
             "state" : "translated",
             "value" : "Simpan dan ekspor partitur"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagre og eksporter noter"
+          }
         }
       }
     },
@@ -9517,6 +9991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Judul partitur"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notenes tittel"
           }
         }
       }
@@ -9637,6 +10117,12 @@
             "state" : "translated",
             "value" : "Ubah menjadi partitur"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konverter til noter"
+          }
         }
       }
     },
@@ -9755,6 +10241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Partitur tidak dapat dibaca. Hasil terbaik didapat dari cetakan yang jelas, satu baris, dan foto dari depan."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke lese notene. Det fungerer best med tydelig trykte noter, én linje og et bilde tatt rett forfra."
           }
         }
       }
@@ -9875,6 +10367,12 @@
             "state" : "translated",
             "value" : "Tambahkan ke partitur"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legg til i notene"
+          }
         }
       }
     },
@@ -9993,6 +10491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Not yang akan ditambahkan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noter som legges til"
           }
         }
       }
@@ -10113,6 +10617,12 @@
             "state" : "translated",
             "value" : "Petunjuk halus tentang fitur berguna, tepat saat kamu membutuhkannya."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diskrete hint om nyttige funksjoner, akkurat når du trenger dem."
+          }
         }
       }
     },
@@ -10231,6 +10741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Memilih oktaf terdekat dengan not sebelumnya, sehingga “시 도” naik setengah nada."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velger oktaven som ligger nærmest forrige note, så «시 도» går en halvtone opp."
           }
         }
       }
@@ -10351,6 +10867,12 @@
             "state" : "translated",
             "value" : "Mulai berlatih langsung dari Layar Utama tanpa membuka aplikasi."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begynn å øve rett fra Hjem-skjermen uten å åpne appen."
+          }
         }
       }
     },
@@ -10469,6 +10991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pakai seluruh aplikasi dalam bahasa Inggris."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk hele appen på engelsk."
           }
         }
       }
@@ -10589,6 +11117,12 @@
             "state" : "translated",
             "value" : "Partiturmu tetap seperti saat kamu tinggalkan, meski aplikasi ditutup."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notene dine blir som du lot dem være, selv om appen lukkes."
+          }
         }
       }
     },
@@ -10707,6 +11241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Partitur dan tombol tetap tajam dan jelas di mode gelap."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noter og knapper er skarpe og tydelige i mørk modus."
           }
         }
       }
@@ -10827,6 +11367,12 @@
             "state" : "translated",
             "value" : "Saat pertama membuka aplikasi setelah pembaruan, lihat apa yang baru."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Første gang du åpner appen etter en oppdatering, ser du hva som er nytt."
+          }
         }
       }
     },
@@ -10945,6 +11491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yang baru"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nytt"
           }
         }
       }
@@ -11065,6 +11617,12 @@
             "state" : "translated",
             "value" : "Tempel di sini"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lim inn her"
+          }
         }
       }
     },
@@ -11183,6 +11741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pengingat latihan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Øvingspåminnelser"
           }
         }
       }
@@ -11303,6 +11867,12 @@
             "state" : "translated",
             "value" : "Dukungan penuh bahasa Inggris"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full støtte for engelsk"
+          }
         }
       }
     },
@@ -11421,6 +11991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "mis. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "f.eks. 4옥도4분음 4옥레4분음 4옥미8분음 …"
           }
         }
       }
@@ -11541,6 +12117,12 @@
             "state" : "translated",
             "value" : "Tampilkan di kanan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis til høyre"
+          }
         }
       }
     },
@@ -11659,6 +12241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tahan paranada untuk memilih tinggi nada, lalu lepas untuk menambahkan not"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hold inne på notesystemet, velg tonehøyde og slipp for å legge til noten"
           }
         }
       }
@@ -11779,6 +12367,12 @@
             "state" : "translated",
             "value" : "Oktaf otomatis"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisk oktav"
+          }
         }
       }
     },
@@ -11897,6 +12491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Not penuh"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helnote"
           }
         }
       }
@@ -12017,6 +12617,12 @@
             "state" : "translated",
             "value" : "Selesai"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ferdig"
+          }
         }
       }
     },
@@ -12135,6 +12741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tampilkan di kiri"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis til venstre"
           }
         }
       }
@@ -12255,6 +12867,12 @@
             "state" : "translated",
             "value" : "Kurangi gerakan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reduser bevegelse"
+          }
         }
       }
     },
@@ -12373,6 +12991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dengan Kurangi Gerakan menyala, efek layar menjadi lebih tenang."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Når Reduser bevegelse er slått på, blir skjermeffektene roligere."
           }
         }
       }
@@ -12493,6 +13117,12 @@
             "state" : "translated",
             "value" : "Izin pengenalan suara diperlukan. Izinkan di Pengaturan."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tillatelse til talegjenkjenning kreves. Gi tillatelse i Innstillinger."
+          }
         }
       }
     },
@@ -12611,6 +13241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pengenalan suara gagal. Coba lagi sebentar lagi."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Talegjenkjenningen mislyktes. Prøv igjen om litt."
           }
         }
       }
@@ -12731,6 +13367,12 @@
             "state" : "translated",
             "value" : "Kunci"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nøkkel"
+          }
         }
       }
     },
@@ -12849,6 +13491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kunci"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nøkkel"
           }
         }
       }
@@ -12969,6 +13617,12 @@
             "state" : "translated",
             "value" : "Pengenalan suara bahasa Korea tidak tersedia di perangkat ini."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koreansk talegjenkjenning er ikke tilgjengelig på denne enheten."
+          }
         }
       }
     },
@@ -13087,6 +13741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pas-kan dua birama di kotak ini lalu potret"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få to takter inn i rammen, og ta bildet"
           }
         }
       }
@@ -13207,6 +13867,12 @@
             "state" : "translated",
             "value" : "Hubungi lewat email"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontakt på e-post"
+          }
         }
       }
     },
@@ -13325,6 +13991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dengan earphone, suara metronom tidak masuk ke mikrofon"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med øreplugger kommer ikke metronomen inn i mikrofonen"
           }
         }
       }
@@ -13445,6 +14117,12 @@
             "state" : "translated",
             "value" : "DM Instagram (@lee25_ios)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram-DM (@lee25_ios)"
+          }
         }
       }
     },
@@ -13563,6 +14241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dapatkan pengingat untuk berlatih menyanyi dari partitur pada waktu yang kamu pilih."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få en påminnelse om å øve på å synge fra noter til et tidspunkt du velger."
           }
         }
       }
@@ -13683,6 +14367,12 @@
             "state" : "translated",
             "value" : "Transkripsi otomatis (eksperimen)"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisk avskrift (eksperimentell)"
+          }
         }
       }
     },
@@ -13801,6 +14491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Agar hasilnya lebih baik"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For best resultat"
           }
         }
       }
@@ -13921,6 +14617,12 @@
             "state" : "translated",
             "value" : "Bantuan pemutaran"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avspillingshjelp"
+          }
         }
       }
     },
@@ -14039,6 +14741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hapus semua"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fjern alt"
           }
         }
       }
@@ -14159,6 +14867,12 @@
             "state" : "translated",
             "value" : "%@ bertitik"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Punktert %@"
+          }
         }
       }
     },
@@ -14277,6 +14991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Judul"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tittel"
           }
         }
       }
@@ -14397,6 +15117,12 @@
             "state" : "translated",
             "value" : "Tanda mula"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortegn"
+          }
         }
       }
     },
@@ -14515,6 +15241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tanda mula"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortegn"
           }
         }
       }
@@ -14635,6 +15367,12 @@
             "state" : "translated",
             "value" : "Bersiap"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gjør deg klar"
+          }
         }
       }
     },
@@ -14753,6 +15491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dukungan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Støtte"
           }
         }
       }
@@ -14873,6 +15617,12 @@
             "state" : "translated",
             "value" : "Hapus foto referensi"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slett referansebilde"
+          }
         }
       }
     },
@@ -14991,6 +15741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Transkripsi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv av"
           }
         }
       }
@@ -15111,6 +15867,12 @@
             "state" : "translated",
             "value" : "Tur singkat untuk pengguna baru"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En rask omvisning for nye brukere"
+          }
         }
       }
     },
@@ -15229,6 +15991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pengantar singkat tentang yang bisa kamu lakukan saat pertama membuka aplikasi."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En kort introduksjon til hva du kan gjøre første gang du åpner appen."
           }
         }
       }
@@ -15349,6 +16117,12 @@
             "state" : "translated",
             "value" : "Batal"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avbryt"
+          }
         }
       }
     },
@@ -15467,6 +16241,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ambil foto (pas 2 birama)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ta bilde (tilpass til 2 takter)"
           }
         }
       }
@@ -15587,6 +16367,12 @@
             "state" : "translated",
             "value" : "Kamera tidak tersedia.\nPilih foto dari pustaka foto."
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kameraet er ikke tilgjengelig.\nVelg et bilde fra bildebiblioteket i stedet."
+          }
         }
       }
     },
@@ -15705,6 +16491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hitungan awal (satu birama sebelum mulai)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opptakt (én takt før start)"
           }
         }
       }
@@ -15825,6 +16617,12 @@
             "state" : "translated",
             "value" : "Tata letak untuk teks lebih besar"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppsett for større tekst"
+          }
         }
       }
     },
@@ -15944,6 +16742,12 @@
             "state" : "translated",
             "value" : "Tempel dari papan klip"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lim inn fra utklippstavlen"
+          }
         }
       }
     },
@@ -16059,6 +16863,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo"
@@ -16182,6 +16992,12 @@
             "state" : "translated",
             "value" : "Tata letak iPhone lipat"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oppsett for sammenleggbar iPhone"
+          }
         }
       }
     },
@@ -16300,6 +17116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gunakan layar lebar iPhone lipat sebagai dua panel berdampingan."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bruk den brede skjermen på en sammenleggbar iPhone som to ruter side om side."
           }
         }
       }
@@ -16420,6 +17242,12 @@
             "state" : "translated",
             "value" : "Ucapkan satu nada setiap kali, dengan jelas dan tepat di ketukan"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si én note om gangen, tydelig og rett på slaget"
+          }
         }
       }
     },
@@ -16538,6 +17366,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salin partitur saat ini sebagai teks (sebagai contoh untuk AI)"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopier gjeldende noter som tekst (som eksempel til KI)"
           }
         }
       }
@@ -16658,6 +17492,12 @@
             "state" : "translated",
             "value" : "Widget Layar Utama"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjem-skjerm-widgeter"
+          }
         }
       }
     },
@@ -16776,6 +17616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver membacakan setiap tombol dan not dengan urutan yang benar."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver leser opp hver knapp og note i riktig rekkefølge."
           }
         }
       }
@@ -16896,6 +17742,12 @@
             "state" : "translated",
             "value" : "Akord"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akkord"
+          }
         }
       }
     },
@@ -17015,6 +17867,12 @@
             "state" : "translated",
             "value" : "Mode akord: not ditumpuk di atas not yang dipilih"
           }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akkordmodus: notene stables oppå den valgte noten"
+          }
         }
       }
     },
@@ -17130,6 +17988,12 @@
           }
         },
         "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "nb" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"

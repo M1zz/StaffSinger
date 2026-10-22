@@ -1044,3 +1044,58 @@ Foto referensi
 Potret partitur yang sedang kamu baca dan biarkan di layar untuk dibandingkan saat menyalin.
 
 Simpan di dekatmu untuk paduan suara, les alat musik, atau persiapan ujian masuk jurusan musik – kapan pun kamu perlu membaca not dengan cepat.
+
+## no
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger: Prima vista
+
+### 부제
+
+Hør notene du skriver
+
+### 키워드
+
+solfège,musikkteori,notesystem,partitur,kor,piano,akkord,metronom,diktat,undervisning,sang,gehør
+
+### 프로모션 텍스트
+
+Ukjente noter med vanskelig rytme og akkorder? Legg noter på notesystemet og hør dem med en gang, med metronom og opptakt.
+
+### 설명
+
+Ikke tell nye noter bare i hodet. Hør dem.
+StaffSinger skriver de to forvirrende taktene inn på notesystemet og spiller dem av med nøyaktig rytme og tonehøyde.
+
+Trykk på notesystemet, eller bruk tangentene
+Hold inne på notesystemet for å velge tonehøyde, eller trykk på pianoet over to oktaver for å legge til en note. Velg fra helnote til sekstendedelsnote, punkterte noter, trioler og pauser, og fjern noten du nettopp la til, med ett trykk.
+
+Spill av med metronom
+Etter opptakten spilles notene i takt med metronomklikket, og noten som klinger, utheves med farge. Tempo og taktart endrer du i Innstillinger.
+
+Akkorder og flere stemmer
+Stable noter på samme slag for å lage en akkord, og del musikken i flere stemmer. Fortegn samt G-, C- og F-nøkkel støttes.
+
+Solfège-diktat
+Si notenavnene i takt med metronomen, så havner de som noter på notesystemet. Snakker du rett på slaget, fanges rytmen også opp. Diktatet gjenkjenner koreanske solfège-staveler, og talegjenkjenningen skjer helt på enheten din.
+
+Lim inn noter som tekst
+Lim inn tekst skrevet i et fast format, så fylles notesystemet. Kopier regelen, gi den til en KI sammen med et bilde av notene, og lim inn det du får tilbake.
+
+Referansebilde
+Ta bilde av notene du leser, og la det stå på skjermen så du kan sammenligne mens du skriver av.
+
+Praktisk å ha ved hånden til kor, instrumentundervisning eller opptaksprøver til musikkutdanning – når som helst du raskt må lese noter.
