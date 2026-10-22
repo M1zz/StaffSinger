@@ -439,3 +439,58 @@ Foto de referencia
 Haz una foto de la partitura que estás leyendo y déjala en pantalla para compararla mientras la copias.
 
 Tenla a mano para el coro, las clases de instrumento o la preparación de pruebas de acceso a música: siempre que necesites leer música rápido.
+
+## de-DE
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger: Prima vista
+
+### 부제
+
+Noten setzen, sofort hören
+
+### 키워드
+
+Solfège,Gehörbildung,Musiktheorie,Notensystem,Partitur,Chor,Klavier,Akkord,Diktat,Unterricht,Gesang
+
+### 프로모션 텍스트
+
+Neue Noten mit kniffligem Rhythmus und Akkorden? Setze Noten ins Notensystem und hör sie mit Metronom und Vorzähler sofort an.
+
+### 설명
+
+Zähl neue Noten nicht nur im Kopf ab. Hör sie dir an.
+StaffSinger überträgt zwei knifflige Takte ins Notensystem und spielt sie mit genau dem richtigen Rhythmus und der richtigen Tonhöhe ab.
+
+Notensystem antippen oder Tasten nutzen
+Halte das Notensystem gedrückt, um eine Tonhöhe zu wählen, oder tippe auf die Klaviertastatur über zwei Oktaven, um eine Note einzufügen. Es gibt Noten von der ganzen bis zur Sechzehntelnote, punktierte Noten, Triolen und Pausen; die zuletzt eingefügte Note löschst du mit einem Tipp.
+
+Mit Metronom abspielen
+Nach dem Vorzähler läuft die Partitur im Metronomklick, und die gerade klingende Note wird farbig hervorgehoben. Tempo und Taktart änderst du in den Einstellungen.
+
+Akkorde und mehrere Stimmen
+Lege Noten auf denselben Schlag, und es wird ein Akkord; die Musik lässt sich auch auf mehrere Stimmen verteilen. Vorzeichen sowie Violin-, Alt- und Bassschlüssel werden unterstützt.
+
+Solmisations-Diktat
+Sprich die Notennamen im Takt des Metronoms, und sie landen als Noten im Notensystem. Wer genau auf den Schlag spricht, erfasst auch den Rhythmus. Erkannt werden koreanische Solmisationssilben; die Spracherkennung läuft vollständig auf deinem Gerät.
+
+Partitur als Text einfügen
+Füge einen Text in festem Format ein, und das Notensystem füllt sich. Kopiere die Regel, gib sie mit einem Foto deiner Noten an eine KI und füge die Antwort ein.
+
+Referenzfoto
+Fotografiere die Noten, nach denen du spielst, und lass sie beim Abschreiben zum Vergleichen auf dem Bildschirm.
+
+Immer dabei für Chor, Instrumentalunterricht oder die Vorbereitung auf die Musikhochschule – überall, wo du schnell Noten lesen musst.
