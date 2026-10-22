@@ -849,7 +849,7 @@ Hør de toner, du skriver
 
 ### 키워드
 
-solfège,musikteori,nodelinjer,noder,kor,klaver,akkord,metronom,diktat,undervisning,sang
+solfège,musikteori,nodelinjer,noder,kor,klaver,akkord,metronom,diktat,undervisning,sang,musikskole
 
 ### 프로모션 텍스트
 
