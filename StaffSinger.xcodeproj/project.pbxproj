@@ -265,6 +265,7 @@
 				cs,
 				da,
 				el,
+				fi,
 			);
 			mainGroup = BAFB7F529F8842D6B5AA9FE0;
 			packageReferences = (

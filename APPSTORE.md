@@ -934,3 +934,58 @@ StaffSinger: Πρώτη ανάγνωση
 Φωτογραφίστε την παρτιτούρα που διαβάζετε και αφήστε την στην οθόνη για να τη συγκρίνετε καθώς την αντιγράφετε.
 
 Κρατήστε την δίπλα σας για τη χορωδία, τα μαθήματα οργάνου ή την προετοιμασία για εισαγωγικές εξετάσεις μουσικής, όποτε χρειάζεται να διαβάσετε γρήγορα μουσική.
+
+## fi
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger: Prima vista
+
+### 부제
+
+Kuule kirjoittamasi nuotit
+
+### 키워드
+
+solfa,musiikinteoria,nuottiviivasto,partituuri,kuoro,piano,sointu,metronomi,sanelu,opetus,laulu
+
+### 프로모션 텍스트
+
+Outo nuotti, hankala rytmi ja sointuja? Aseta nuotit viivastolle ja kuuntele ne heti metronomin ja sisäänlaskun kanssa.
+
+### 설명
+
+Älä laske uutta nuottia vain päässäsi. Kuuntele se.
+StaffSinger kopioi hämmentävät kaksi tahtia nuottiviivastolle ja soittaa ne tarkalla rytmillä ja sävelkorkeudella.
+
+Napauta viivastoa tai käytä koskettimia
+Pidä nuottiviivastoa painettuna valitaksesi sävelkorkeuden tai napauta kahden oktaavin pianon koskettimia lisätäksesi nuotin. Valittavana ovat kokonuotista kuudestoistaosaan, pisteelliset nuotit, triolit ja tauot, ja juuri lisätyn nuotin poistat yhdellä napautuksella.
+
+Soita metronomin mukana
+Sisäänlaskun jälkeen nuotit soivat metronomin naksahdusten tahtiin, ja soiva nuotti korostetaan värillä. Tempon ja tahtilajin voit vaihtaa Asetuksissa.
+
+Soinnut ja useita ääniä
+Pinoa nuotteja samalle iskulle, niin saat soinnun, ja jaa musiikki eri äänien kesken. Etumerkit sekä G-, C- ja F-avain on tuettu.
+
+Solfa-saneluharjoitus
+Sano nuottien nimet metronomin tahtiin, niin ne päätyvät nuoteiksi viivastolle. Kun puhut tasan iskulle, myös rytmi tallentuu. Sanelu tunnistaa korealaiset solfa-tavut, ja puheentunnistus tapahtuu kokonaan laitteellasi.
+
+Liitä nuotit tekstinä
+Liitä kiinteässä muodossa kirjoitettu teksti, niin viivasto täyttyy. Kopioi sääntö, anna se tekoälylle nuottikuvan kanssa ja liitä saamasi teksti.
+
+Vertailukuva
+Ota kuva nuotista, jota luet, ja pidä se näytöllä vertailua varten kopioidessasi.
+
+Hyvä apu kuorossa, soitontunneilla ja musiikkioppilaitoksen pääsykokeisiin valmistautuessa – aina kun nuotteja pitää lukea nopeasti.

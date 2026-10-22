@@ -105,6 +105,12 @@
             "state" : "translated",
             "value" : "\nΟι νότες μετά το δεύτερο μέτρο μπορεί να μην εμφανίζονται στην οθόνη."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nToisen tahdin jälkeiset nuotit eivät välttämättä näy näytöllä."
+          }
         }
       }
     },
@@ -211,6 +217,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "«%@» — δεν βρέθηκαν ονόματα νοτών εδώ.\nΠείτε 도 레 미 파 솔 라 시."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "”%@” – nuottien nimiä ei löytynyt.\nSano 도 레 미 파 솔 라 시."
           }
         }
       }
@@ -319,6 +331,12 @@
             "state" : "translated",
             "value" : "%@ · Ακούω"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Kuuntelen"
+          }
         }
       }
     },
@@ -425,6 +443,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ μείζονα (♭%lld)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@-duuri (♭%lld)"
           }
         }
       }
@@ -533,6 +557,12 @@
             "state" : "translated",
             "value" : "%@ μείζονα (♯%lld)"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@-duuri (♯%lld)"
+          }
         }
       }
     },
@@ -639,6 +669,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Νότες που υπαγορεύτηκαν: %lld"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saneltuja nuotteja: %lld"
           }
         }
       }
@@ -747,6 +783,12 @@
             "state" : "translated",
             "value" : "Νότες που υπαγορεύτηκαν: %lld.\nΑν το ύψος ή η διάρκεια δεν είναι σωστά, σύρετε τη νότα για να τη διορθώσετε."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saneltuja nuotteja: %lld.\nJos korkeus tai pituus on väärä, korjaa vetämällä nuottia."
+          }
         }
       }
     },
@@ -853,6 +895,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Νότες που εισήχθησαν: %lld."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuotuja nuotteja: %lld."
           }
         }
       }
@@ -961,6 +1009,12 @@
             "state" : "translated",
             "value" : "Νότες που αναγνωρίστηκαν: %lld (πειραματικό).\nΕλέγξτε μόνοι σας το ύψος και τη διάρκεια και διορθώστε."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tunnistettuja nuotteja: %lld (kokeellinen).\nTarkista korkeudet ja pituudet ja korjaa ne käsin."
+          }
         }
       }
     },
@@ -1068,6 +1122,12 @@
             "state" : "translated",
             "value" : "Μέτρο %lld, χτύπημα %lld"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tahti %lld, isku %lld"
+          }
         }
       }
     },
@@ -1171,6 +1231,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/16"
@@ -1282,6 +1348,12 @@
             "state" : "translated",
             "value" : "Δέκατο έκτο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kuudestoistaosanuotti"
+          }
         }
       }
     },
@@ -1388,6 +1460,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Μισή νότα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puolinuotti"
           }
         }
       }
@@ -1496,6 +1574,12 @@
             "state" : "translated",
             "value" : "Για πηδήματα μεγαλύτερα από τετάρτη, πείτε «높은 솔» (ψηλό σολ) ή «낮은 시» (χαμηλό σι)"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun hyppy on kvarttia suurempi, sano ”높은 솔” (korkea sol) tai ”낮은 시” (matala si)"
+          }
         }
       }
     },
@@ -1599,6 +1683,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/4"
@@ -1710,6 +1800,12 @@
             "state" : "translated",
             "value" : "Τέταρτο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neljäsosanuotti"
+          }
         }
       }
     },
@@ -1813,6 +1909,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/8"
@@ -1924,6 +2026,12 @@
             "state" : "translated",
             "value" : "Όγδοο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kahdeksasosanuotti"
+          }
         }
       }
     },
@@ -2030,6 +2138,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αντιγραφή κανόνα για το AI"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopioi sääntö tekoälylle"
           }
         }
       }
@@ -2138,6 +2252,12 @@
             "state" : "translated",
             "value" : "Ξεκινήστε αμέσως ζητώντας το από το Siri ή εκτελώντας μια συντόμευση."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aloita heti pyytämällä Siriä tai suorittamalla oikotie."
+          }
         }
       }
     },
@@ -2244,6 +2364,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri και Συντομεύσεις"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri ja Oikotiet"
           }
         }
       }
@@ -2352,6 +2478,12 @@
             "state" : "translated",
             "value" : "Καλύτερο VoiceOver"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parempi VoiceOver"
+          }
         }
       }
     },
@@ -2458,6 +2590,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@ χτύποι"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@ iskua"
           }
         }
       }
@@ -2566,6 +2704,12 @@
             "state" : "translated",
             "value" : "Κλειδί του ντο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C-avain"
+          }
         }
       }
     },
@@ -2672,6 +2816,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επικοινωνία με τον προγραμματιστή"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ota yhteyttä kehittäjään"
           }
         }
       }
@@ -2780,6 +2930,12 @@
             "state" : "translated",
             "value" : "Υπαγόρευση σολφέζ"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfa-saneluharjoitus"
+          }
         }
       }
     },
@@ -2886,6 +3042,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Δεν διακρίθηκε κανένα όνομα νότας. Δοκιμάστε να πείτε καθαρά «도 레 미» στο ρυθμό του μετρονόμου."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuottien nimiä ei erotettu. Yritä sanoa ”도 레 미” selvästi metronomin tahtiin."
           }
         }
       }
@@ -2994,6 +3156,12 @@
             "state" : "translated",
             "value" : "Ο κανόνας αντιγράφηκε"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sääntö kopioitu"
+          }
         }
       }
     },
@@ -3100,6 +3268,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Όταν μεγαλώνετε το κείμενο, οι οθόνες αναδιατάσσονται αντί να κόβονται."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun suurennat tekstiä, näytöt järjestyvät uudelleen eivätkä leikkaudu."
           }
         }
       }
@@ -3208,6 +3382,12 @@
             "state" : "translated",
             "value" : "Η αναγνώριση ομιλίας στα κορεατικά στη συσκευή δεν είναι έτοιμη.\nΕνεργοποιήστε τα κορεατικά στις Ρυθμίσεις ▸ Γενικά ▸ Πληκτρολόγιο ▸ Υπαγόρευση για να γίνει λήψη των απαραίτητων αρχείων."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laitteella tapahtuva korean puheentunnistus ei ole valmis.\nOta korea käyttöön kohdassa Asetukset ▸ Yleiset ▸ Näppäimistö ▸ Sanelu, niin tarvittavat tiedostot ladataan."
+          }
         }
       }
     },
@@ -3314,6 +3494,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κλειδί του φα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F-avain"
           }
         }
       }
@@ -3422,6 +3608,12 @@
             "state" : "translated",
             "value" : "Δεν ήταν δυνατή η έναρξη της εγγραφής: %@"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Äänitystä ei voitu aloittaa: %@"
+          }
         }
       }
     },
@@ -3528,6 +3720,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κλειδί του σολ"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "G-avain"
           }
         }
       }
@@ -3636,6 +3834,12 @@
             "state" : "translated",
             "value" : "Ντο μείζονα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C-duuri"
+          }
         }
       }
     },
@@ -3742,6 +3946,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ντο μείζονα (χωρίς αλλοιώσεις)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C-duuri (ei etumerkkejä)"
           }
         }
       }
@@ -3850,6 +4060,12 @@
             "state" : "translated",
             "value" : "Σκούρα λειτουργία"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tumma tila"
+          }
         }
       }
     },
@@ -3956,6 +4172,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κλείσιμο"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sulje"
           }
         }
       }
@@ -4064,6 +4286,12 @@
             "state" : "translated",
             "value" : "Όλα παραμένουν ευανάγνωστα, ακόμη και με αυξημένη αντίθεση ή όταν τα χρώματα ξεχωρίζουν δύσκολα."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaikki pysyy luettavana, vaikka kontrastia lisättäisiin tai värejä olisi vaikea erottaa."
+          }
         }
       }
     },
@@ -4170,6 +4398,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Χρησιμοποιήστε την εφαρμογή σε περισσότερες γλώσσες."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käytä sovellusta useammilla kielillä."
           }
         }
       }
@@ -4278,6 +4512,12 @@
             "state" : "translated",
             "value" : "Περισσότερες γλώσσες"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää kieliä"
+          }
         }
       }
     },
@@ -4384,6 +4624,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · για παύση πείτε «쉼»"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · tauko: sano ”쉼”"
           }
         }
       }
@@ -4492,6 +4738,12 @@
             "state" : "translated",
             "value" : "Μεγεθύνετε και μετακινήστε με τα δάχτυλα μέχρι δύο μέτρα να γεμίσουν το πλαίσιο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zoomaa ja siirrä sormilla, kunnes kaksi tahtia täyttää ruudun"
+          }
         }
       }
     },
@@ -4598,6 +4850,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Τι άκουσα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mitä kuulin"
           }
         }
       }
@@ -4706,6 +4964,12 @@
             "state" : "translated",
             "value" : "Ευθυγράμμιση ρυθμού"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rytmin kohdistus"
+          }
         }
       }
     },
@@ -4812,6 +5076,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ελεύθερο"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vapaa"
           }
         }
       }
@@ -4920,6 +5190,12 @@
             "state" : "translated",
             "value" : "Απαιτείται άδεια μικροφώνου. Επιτρέψτε την στις Ρυθμίσεις."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mikrofonin lupa tarvitaan. Salli se Asetuksissa."
+          }
         }
       }
     },
@@ -5026,6 +5302,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Δεν βρέθηκε είσοδος μικροφώνου."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mikrofonin tuloa ei löytynyt."
           }
         }
       }
@@ -5134,6 +5416,12 @@
             "state" : "translated",
             "value" : "Αποθηκεύστε τις παρτιτούρες σας σε αρχείο και ανοίξτε τις ξανά αργότερα."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tallenna nuotit tiedostoon ja avaa ne myöhemmin uudelleen."
+          }
         }
       }
     },
@@ -5240,6 +5528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Έναρξη ομιλίας"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aloita puhuminen"
           }
         }
       }
@@ -5348,6 +5642,12 @@
             "state" : "translated",
             "value" : "Χρησιμοποιείται μόνο η σειρά που μιλάτε. Όλες οι νότες μπαίνουν ως τέταρτα· διορθώστε τις διάρκειες μετά."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vain sanomisjärjestys otetaan huomioon. Kaikki nuotit tulevat neljäsosina; korjaa pituudet jälkeenpäin."
+          }
         }
       }
     },
@@ -5454,6 +5754,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ευθυγραμμίζει κάθε στιγμή ομιλίας στην πλησιέστερη θέση νότας %@."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kohdistaa jokaisen sanotun hetken lähimpään %@-nuotin paikkaan."
           }
         }
       }
@@ -5562,6 +5868,12 @@
             "state" : "translated",
             "value" : "Διακοπή"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pysäytä"
+          }
         }
       }
     },
@@ -5668,6 +5980,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Μετρονόμος (κλικ χτύπου)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronomi (iskun naksaus)"
           }
         }
       }
@@ -5776,6 +6094,12 @@
             "state" : "translated",
             "value" : "Απενεργοποίηση μετρονόμου"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poista metronomi käytöstä"
+          }
         }
       }
     },
@@ -5882,6 +6206,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Μετά από τέσσερα χτυπήματα του μετρονόμου, πείτε τα ονόματα των νοτών στο ρυθμό."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun metronomi on lyönyt neljä iskua, sano nuottien nimet tahtiin."
           }
         }
       }
@@ -5990,6 +6320,12 @@
             "state" : "translated",
             "value" : "Ενεργοποίηση μετρονόμου"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ota metronomi käyttöön"
+          }
         }
       }
     },
@@ -6096,6 +6432,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Όλες οι νότες μένουν στην αρχική οκτάβα."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaikki nuotit pysyvät alkuoktaavissa."
           }
         }
       }
@@ -6204,6 +6546,12 @@
             "state" : "translated",
             "value" : "Χρονική ένδειξη"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tahtilaji"
+          }
         }
       }
     },
@@ -6310,6 +6658,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Χρονική ένδειξη"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tahtilaji"
           }
         }
       }
@@ -6418,6 +6772,12 @@
             "state" : "translated",
             "value" : "Αναφορές σφαλμάτων και προτάσεις λειτουργιών είναι ευπρόσδεκτες."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Virheraportit ja ominaisuusehdotukset ovat tervetulleita."
+          }
         }
       }
     },
@@ -6524,6 +6884,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Πιο άνετα χρώματα και αντίθεση"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mukavammat värit ja kontrasti"
           }
         }
       }
@@ -6632,6 +6998,12 @@
             "state" : "translated",
             "value" : "Δεν βρέθηκαν νότες στο επικολλημένο κείμενο.\nΕλέγξτε αν ακολουθεί τον κανόνα (π.χ. 4옥도8분음)."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liitetystä tekstistä ei löytynyt nuotteja.\nTarkista, että se noudattaa sääntöä (esim. 4옥도8분음)."
+          }
         }
       }
     },
@@ -6738,6 +7110,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αν είναι πολύ γρήγορο, χαμηλώστε το τέμπο (τώρα %lld BPM)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jos menee liian nopeasti, hidasta tempoa (nyt %lld BPM)"
           }
         }
       }
@@ -6846,6 +7224,12 @@
             "state" : "translated",
             "value" : "Χρήση"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käytä"
+          }
         }
       }
     },
@@ -6952,6 +7336,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επιλογή από τη βιβλιοθήκη φωτογραφιών"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valitse kuvakirjastosta"
           }
         }
       }
@@ -7060,6 +7450,12 @@
             "state" : "translated",
             "value" : "Νέα παρτιτούρα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uudet nuotit"
+          }
         }
       }
     },
@@ -7166,6 +7562,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ρυθμίσεις"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asetukset"
           }
         }
       }
@@ -7274,6 +7676,12 @@
             "state" : "translated",
             "value" : "Τρίηχο: %@"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trioli: %@"
+          }
         }
       }
     },
@@ -7380,6 +7788,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Λειτουργία τρίηχου: τρεις νότες μοιράζονται ένα χτύπημα (ή δύο)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triolitila: kolme nuottia jakaa yhden iskun (tai kaksi)"
           }
         }
       }
@@ -7488,6 +7902,12 @@
             "state" : "translated",
             "value" : "Τρίηχο με τελεία: %@"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pisteellinen trioli: %@"
+          }
         }
       }
     },
@@ -7594,6 +8014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Λειτουργία παύσης: πατήστε μια διάρκεια για να εισαγάγετε παύση"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taukotila: napauta pituutta lisätäksesi tauon"
           }
         }
       }
@@ -7702,6 +8128,12 @@
             "state" : "translated",
             "value" : "Αρχική οκτάβα  %lld"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alkuoktaavi  %lld"
+          }
         }
       }
     },
@@ -7808,6 +8240,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Χρήσιμες συμβουλές"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hyödyllisiä vinkkejä"
           }
         }
       }
@@ -7916,6 +8354,12 @@
             "state" : "translated",
             "value" : "Συνεχίστε την παρτιτούρα από εκεί που μείνατε"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jatka nuotteja siitä, mihin jäit"
+          }
         }
       }
     },
@@ -8022,6 +8466,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ελέγξτε παρακάτω και πατήστε «Προσθήκη στην παρτιτούρα»"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tarkista alta ja napauta ”Lisää nuotteihin”"
           }
         }
       }
@@ -8130,6 +8580,12 @@
             "state" : "translated",
             "value" : "Επικόλληση παρτιτούρας"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liitä nuotit"
+          }
         }
       }
     },
@@ -8236,6 +8692,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Φωτογραφία παρτιτούρας"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuottikuva"
           }
         }
       }
@@ -8344,6 +8806,12 @@
             "state" : "translated",
             "value" : "Δώστε μια φωτογραφία της παρτιτούρας σε ένα AI, ζητήστε του να τη γράψει με τον παρακάτω κανόνα και επικολλήστε το κείμενο που θα πάρετε για να γεμίσει το πεντάγραμμο."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anna nuottikuva tekoälylle, pyydä sitä kirjoittamaan se alla olevan säännön mukaan ja liitä saamasi teksti, niin nuottiviivasto täyttyy."
+          }
         }
       }
     },
@@ -8450,6 +8918,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αποθήκευση και εξαγωγή παρτιτούρων"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuottien tallennus ja vienti"
           }
         }
       }
@@ -8558,6 +9032,12 @@
             "state" : "translated",
             "value" : "Τίτλος παρτιτούρας"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuottien nimi"
+          }
         }
       }
     },
@@ -8664,6 +9144,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Μετατροπή σε παρτιτούρα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muunna nuoteiksi"
           }
         }
       }
@@ -8772,6 +9258,12 @@
             "state" : "translated",
             "value" : "Δεν ήταν δυνατή η ανάγνωση της παρτιτούρας. Καλύτερα αποτελέσματα με καθαρή εκτύπωση, μία γραμμή και φωτογραφία από μπροστά."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuotteja ei voitu lukea. Parhaiten toimivat selkeä painettu nuotti, yksi rivi ja suoraan edestä otettu kuva."
+          }
         }
       }
     },
@@ -8878,6 +9370,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Προσθήκη στην παρτιτούρα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisää nuotteihin"
           }
         }
       }
@@ -8986,6 +9484,12 @@
             "state" : "translated",
             "value" : "Νότες προς προσθήκη"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisättävät nuotit"
+          }
         }
       }
     },
@@ -9092,6 +9596,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Διακριτικές υποδείξεις για χρήσιμες λειτουργίες, ακριβώς όταν τις χρειάζεστε."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hienovaraisia vihjeitä hyödyllisistä toiminnoista juuri silloin, kun tarvitset niitä."
           }
         }
       }
@@ -9200,6 +9710,12 @@
             "state" : "translated",
             "value" : "Επιλέγει την οκτάβα που είναι πιο κοντά στην προηγούμενη νότα, οπότε το «시 도» ανεβαίνει κατά ένα ημιτόνιο."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valitsee edellistä nuottia lähimmän oktaavin, joten ”시 도” nousee puolisävelaskeleen."
+          }
         }
       }
     },
@@ -9306,6 +9822,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ξεκινήστε την εξάσκηση απευθείας από την Αρχική οθόνη, χωρίς να ανοίξετε την εφαρμογή."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aloita harjoittelu suoraan koti-valikosta avaamatta sovellusta."
           }
         }
       }
@@ -9414,6 +9936,12 @@
             "state" : "translated",
             "value" : "Χρησιμοποιήστε ολόκληρη την εφαρμογή στα αγγλικά."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käytä koko sovellusta englanniksi."
+          }
         }
       }
     },
@@ -9520,6 +10048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Η παρτιτούρα σας μένει όπως την αφήσατε, ακόμη κι αν κλείσει η εφαρμογή."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuottisi säilyvät sellaisina kuin jätit ne, vaikka sovellus suljettaisiin."
           }
         }
       }
@@ -9628,6 +10162,12 @@
             "state" : "translated",
             "value" : "Οι παρτιτούρες και τα κουμπιά παραμένουν καθαρά και στη σκούρα λειτουργία."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuotit ja painikkeet pysyvät terävinä tummassa tilassa."
+          }
         }
       }
     },
@@ -9734,6 +10274,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Την πρώτη φορά που θα ανοίξετε την εφαρμογή μετά από μια ενημέρωση, δείτε τι νέο υπάρχει."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun avaat sovelluksen päivityksen jälkeen ensimmäistä kertaa, näet mitä uutta on."
           }
         }
       }
@@ -9842,6 +10388,12 @@
             "state" : "translated",
             "value" : "Τι νέο υπάρχει"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uutta"
+          }
         }
       }
     },
@@ -9948,6 +10500,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επικόλληση εδώ"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liitä tähän"
           }
         }
       }
@@ -10056,6 +10614,12 @@
             "state" : "translated",
             "value" : "Υπενθυμίσεις εξάσκησης"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Harjoitusmuistutukset"
+          }
         }
       }
     },
@@ -10162,6 +10726,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Πλήρης υποστήριξη αγγλικών"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Täysi englannin tuki"
           }
         }
       }
@@ -10270,6 +10840,12 @@
             "state" : "translated",
             "value" : "π.χ. 4옥도4분음 4옥레4분음 4옥미8분음 …"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "esim. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
         }
       }
     },
@@ -10376,6 +10952,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Εμφάνιση δεξιά"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näytä oikealla"
           }
         }
       }
@@ -10484,6 +11066,12 @@
             "state" : "translated",
             "value" : "Πατήστε παρατεταμένα στο πεντάγραμμο, επιλέξτε ύψος και αφήστε για να προστεθεί η νότα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pidä nuottiviivastoa painettuna, valitse korkeus ja nosta sormi lisätäksesi nuotin"
+          }
         }
       }
     },
@@ -10590,6 +11178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αυτόματη οκτάβα"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oktaavi automaattisesti"
           }
         }
       }
@@ -10698,6 +11292,12 @@
             "state" : "translated",
             "value" : "Ολόκληρη νότα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kokonuotti"
+          }
         }
       }
     },
@@ -10804,6 +11404,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Τέλος"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valmis"
           }
         }
       }
@@ -10912,6 +11518,12 @@
             "state" : "translated",
             "value" : "Εμφάνιση αριστερά"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Näytä vasemmalla"
+          }
         }
       }
     },
@@ -11018,6 +11630,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Μείωση κίνησης"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vähennä liikettä"
           }
         }
       }
@@ -11126,6 +11744,12 @@
             "state" : "translated",
             "value" : "Με ενεργή τη Μείωση κίνησης, τα εφέ της οθόνης γίνονται πιο ήρεμα."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun Vähennä liikettä on päällä, näytön tehosteet rauhoittuvat."
+          }
         }
       }
     },
@@ -11232,6 +11856,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Απαιτείται άδεια αναγνώρισης ομιλίας. Επιτρέψτε την στις Ρυθμίσεις."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puheentunnistuksen lupa tarvitaan. Salli se Asetuksissa."
           }
         }
       }
@@ -11340,6 +11970,12 @@
             "state" : "translated",
             "value" : "Η αναγνώριση ομιλίας απέτυχε. Δοκιμάστε ξανά σε λίγο."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Puheentunnistus epäonnistui. Yritä hetken kuluttua uudelleen."
+          }
         }
       }
     },
@@ -11446,6 +12082,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Κλειδί"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avain"
           }
         }
       }
@@ -11554,6 +12196,12 @@
             "state" : "translated",
             "value" : "Κλειδί"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avain"
+          }
         }
       }
     },
@@ -11660,6 +12308,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Η αναγνώριση ομιλίας στα κορεατικά δεν είναι διαθέσιμη σε αυτή τη συσκευή."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Korean puheentunnistus ei ole käytettävissä tällä laitteella."
           }
         }
       }
@@ -11768,6 +12422,12 @@
             "state" : "translated",
             "value" : "Χωρέστε δύο μέτρα στο πλαίσιο και τραβήξτε"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sovita kaksi tahtia ruutuun ja ota kuva"
+          }
         }
       }
     },
@@ -11874,6 +12534,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Επικοινωνία μέσω email"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ota yhteyttä sähköpostilla"
           }
         }
       }
@@ -11982,6 +12648,12 @@
             "state" : "translated",
             "value" : "Με ακουστικά, ο μετρονόμος δεν περνά στο μικρόφωνο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kuulokkeilla metronomi ei kuulu mikrofoniin"
+          }
         }
       }
     },
@@ -12088,6 +12760,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Μήνυμα στο Instagram (@lee25_ios)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram-viesti (@lee25_ios)"
           }
         }
       }
@@ -12196,6 +12874,12 @@
             "state" : "translated",
             "value" : "Λάβετε υπενθύμιση για εξάσκηση στην ανάγνωση με τη φωνή την ώρα που θα επιλέξετε."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat muistutuksen harjoitella laulua nuoteista valitsemanasi aikana."
+          }
         }
       }
     },
@@ -12302,6 +12986,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αυτόματη μεταγραφή (πειραματικό)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automaattinen litterointi (kokeellinen)"
           }
         }
       }
@@ -12410,6 +13100,12 @@
             "state" : "translated",
             "value" : "Για καλύτερα αποτελέσματα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parempia tuloksia varten"
+          }
         }
       }
     },
@@ -12516,6 +13212,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Βοηθήματα αναπαραγωγής"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toiston apuvälineet"
           }
         }
       }
@@ -12624,6 +13326,12 @@
             "state" : "translated",
             "value" : "Εκκαθάριση όλων"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tyhjennä kaikki"
+          }
         }
       }
     },
@@ -12730,6 +13438,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ με τελεία"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pisteellinen %@"
           }
         }
       }
@@ -12838,6 +13552,12 @@
             "state" : "translated",
             "value" : "Τίτλος"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nimi"
+          }
         }
       }
     },
@@ -12944,6 +13664,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Οπλισμός"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sävellaji"
           }
         }
       }
@@ -13052,6 +13778,12 @@
             "state" : "translated",
             "value" : "Οπλισμός"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Etumerkit"
+          }
         }
       }
     },
@@ -13158,6 +13890,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ετοιμαστείτε"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Valmistaudu"
           }
         }
       }
@@ -13266,6 +14004,12 @@
             "state" : "translated",
             "value" : "Υποστήριξη"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuki"
+          }
         }
       }
     },
@@ -13372,6 +14116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Διαγραφή φωτογραφίας αναφοράς"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poista vertailukuva"
           }
         }
       }
@@ -13480,6 +14230,12 @@
             "state" : "translated",
             "value" : "Μεταγραφή"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Litteroi"
+          }
         }
       }
     },
@@ -13586,6 +14342,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Μια σύντομη ξενάγηση για νέους χρήστες"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pikaesittely uusille käyttäjille"
           }
         }
       }
@@ -13694,6 +14456,12 @@
             "state" : "translated",
             "value" : "Μια σύντομη εισαγωγή σε ό,τι μπορείτε να κάνετε, την πρώτη φορά που ανοίγετε την εφαρμογή."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lyhyt esittely siitä, mitä voit tehdä, kun avaat sovelluksen ensimmäistä kertaa."
+          }
         }
       }
     },
@@ -13800,6 +14568,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ακύρωση"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peruuta"
           }
         }
       }
@@ -13908,6 +14682,12 @@
             "state" : "translated",
             "value" : "Λήψη φωτογραφίας (προσαρμογή σε 2 μέτρα)"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ota kuva (sovita 2 tahtiin)"
+          }
         }
       }
     },
@@ -14014,6 +14794,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Η κάμερα δεν είναι διαθέσιμη.\nΕπιλέξτε μια φωτογραφία από τη βιβλιοθήκη."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamera ei ole käytettävissä.\nValitse kuva kirjastosta."
           }
         }
       }
@@ -14122,6 +14908,12 @@
             "state" : "translated",
             "value" : "Προειδοποιητικό μέτρο (ένα μέτρο πριν την έναρξη)"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sisäänlasku (yksi tahti ennen alkua)"
+          }
         }
       }
     },
@@ -14228,6 +15020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Διατάξεις για μεγαλύτερο κείμενο"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Asettelut suurelle tekstille"
           }
         }
       }
@@ -14336,6 +15134,12 @@
             "state" : "translated",
             "value" : "Επικόλληση από το πρόχειρο"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liitä leikepöydältä"
+          }
         }
       }
     },
@@ -14442,6 +15246,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Τέμπο"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo"
           }
         }
       }
@@ -14550,6 +15360,12 @@
             "state" : "translated",
             "value" : "Διάταξη για αναδιπλούμενο iPhone"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taitettavan iPhonen asettelu"
+          }
         }
       }
     },
@@ -14656,6 +15472,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Χρησιμοποιήστε τη μεγάλη οθόνη ενός αναδιπλούμενου iPhone ως δύο πάνελ δίπλα-δίπλα."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käytä taitettavan iPhonen leveää näyttöä kahtena vierekkäisenä paneelina."
           }
         }
       }
@@ -14764,6 +15586,12 @@
             "state" : "translated",
             "value" : "Πείτε μία νότα τη φορά, καθαρά και ακριβώς στο χτύπημα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sano yksi nuotti kerrallaan, selvästi ja tasan iskulla"
+          }
         }
       }
     },
@@ -14870,6 +15698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Αντιγραφή της τρέχουσας παρτιτούρας ως κείμενο (ως παράδειγμα για το AI)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopioi nykyiset nuotit tekstinä (esimerkiksi tekoälylle)"
           }
         }
       }
@@ -14978,6 +15812,12 @@
             "state" : "translated",
             "value" : "Widget Αρχικής οθόνης"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koti-valikon widgetit"
+          }
         }
       }
     },
@@ -15084,6 +15924,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Το VoiceOver διαβάζει κάθε κουμπί και κάθε νότα, με τη σωστή σειρά."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver lukee jokaisen painikkeen ja nuotin oikeassa järjestyksessä."
           }
         }
       }
@@ -15192,6 +16038,12 @@
             "state" : "translated",
             "value" : "Συγχορδία"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sointu"
+          }
         }
       }
     },
@@ -15299,6 +16151,12 @@
             "state" : "translated",
             "value" : "Λειτουργία συγχορδίας: οι νότες στοιβάζονται πάνω στην επιλεγμένη νότα"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sointutila: nuotit pinotaan valitun nuotin päälle"
+          }
         }
       }
     },
@@ -15402,6 +16260,12 @@
           }
         },
         "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "fi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"

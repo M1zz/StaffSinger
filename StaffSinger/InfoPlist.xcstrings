@@ -105,6 +105,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -211,6 +217,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Το StaffSinger χρησιμοποιεί την κάμερα για να τραβήξει φωτογραφία μιας παρτιτούρας και να την φορτώσει ως εικόνα αναφοράς."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger käyttää kameraa nuotin kuvaamiseen ja sen lataamiseen vertailukuvaksi."
           }
         }
       }
@@ -319,6 +331,12 @@
             "state" : "translated",
             "value" : "Το StaffSinger χρησιμοποιεί το μικρόφωνο για να μετατρέπει τα ονόματα νοτών που λέτε σε νότες στο πεντάγραμμο. Ο ήχος επεξεργάζεται μόνο σε αυτή τη συσκευή και δεν αποθηκεύεται ποτέ."
           }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger käyttää mikrofonia muuttaakseen sanomasi nuottien nimet nuoteiksi nuottiviivastolle. Ääni käsitellään vain tällä laitteella, eikä sitä koskaan tallenneta."
+          }
         }
       }
     },
@@ -425,6 +443,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Το StaffSinger χρησιμοποιεί την αναγνώριση ομιλίας για να μετατρέπει τα ονόματα νοτών που λέτε σε νότες. Η αναγνώριση γίνεται μόνο σε αυτή τη συσκευή."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger käyttää puheentunnistusta muuttaakseen sanomasi nuottien nimet nuoteiksi. Tunnistus tapahtuu vain tällä laitteella."
           }
         }
       }

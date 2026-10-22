@@ -22,7 +22,7 @@ ICON = ROOT / "StaffSinger" / "Assets.xcassets" / "AppIcon.appiconset" / "AppIco
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # 앱 언어 코드 → App Store Connect 로케일 (make_marketing_screenshots.py 와 같다)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "es": "es-MX", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el"}   # 스토어에는 한국어 한 가지
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "es": "es-MX", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi"}   # 스토어에는 한국어 한 가지
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -48,6 +48,7 @@ SEARCH = {
     "cs": ("Noty", "Slyšte noty,<br>které napíšete", "Zadávejte na klávesách,<br>přehrajte ve správném rytmu"),
     "da": ("Noder", "Hør de toner,<br>du skriver", "Indtast på tangenterne,<br>afspil i den rigtige rytme"),
     "el": ("Παρτιτούρα", "Ακούστε τις νότες<br>που γράφετε", "Εισαγωγή με πλήκτρα,<br>αναπαραγωγή στο σωστό ρυθμό"),
+    "fi": ("Nuotit", "Kuule kirjoittamasi<br>nuotit", "Syötä koskettimilla,<br>soita oikealla rytmillä"),
 }
 
 # 헤더는 한 가지 약속: 처음 보는 악보(초견)도 소리로 확인한다.
@@ -67,6 +68,7 @@ HEADER = {
     "cs": ("StaffSinger", "Nová partitura<br>na poslech"),
     "da": ("StaffSinger", "Nye noder<br>med ørerne"),
     "el": ("StaffSinger", "Νέα παρτιτούρα<br>με το αυτί"),
+    "fi": ("StaffSinger", "Uusi nuotti<br>korvakuulolta"),
 }
 
 # ⚠️ 바탕 · 글자색은 앱 아이콘(파란 바탕 위 흰 오선과 음표)과 AccentColor(#3373D9) 에서 왔다.
