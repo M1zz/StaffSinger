@@ -10134,7 +10134,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kontynuuj partyturę tam, gdzie skończyłeś"
+            "value" : "Kontynuuj partyturę od ostatniego miejsca"
           }
         }
       }
@@ -12189,7 +12189,7 @@
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Twoja partytura zostaje taka, jak ją zostawiłeś, nawet gdy aplikacja się zamknie."
+            "value" : "Partytura zostaje dokładnie taka sama, nawet gdy aplikacja się zamknie."
           }
         }
       }
