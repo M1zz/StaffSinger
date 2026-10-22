@@ -93,6 +93,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -187,6 +193,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger používá fotoaparát k vyfocení partitury a jejímu načtení jako referenčního obrázku."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger bruger kameraet til at tage et billede af noder og indlæse det som referencebillede."
           }
         }
       }
@@ -283,6 +295,12 @@
             "state" : "translated",
             "value" : "StaffSinger používá mikrofon k převodu názvů not, které řeknete, na noty v notové osnově. Zvuk se zpracovává pouze v tomto zařízení a nikdy se neukládá."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger bruger mikrofonen til at omsætte de nodenavne, du siger, til noder på nodelinjerne. Lyden behandles kun på denne enhed og gemmes aldrig."
+          }
         }
       }
     },
@@ -377,6 +395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger používá rozpoznávání řeči k převodu názvů not, které řeknete, na noty. Rozpoznávání probíhá pouze v tomto zařízení."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger bruger talegenkendelse til at omsætte de nodenavne, du siger, til noder. Genkendelsen foregår kun på denne enhed."
           }
         }
       }

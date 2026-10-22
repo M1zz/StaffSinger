@@ -93,6 +93,12 @@
             "state" : "translated",
             "value" : "\nNoty za druhým taktem nemusí být na obrazovce vidět."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nNoder efter anden takt vises muligvis ikke på skærmen."
+          }
         }
       }
     },
@@ -187,6 +193,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "„%@“ – nebyly nalezeny žádné názvy not.\nŘekněte 도 레 미 파 솔 라 시."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” – der blev ikke fundet nogen nodenavne.\nSig 도 레 미 파 솔 라 시."
           }
         }
       }
@@ -283,6 +295,12 @@
             "state" : "translated",
             "value" : "%@ · Poslouchám"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Lytter"
+          }
         }
       }
     },
@@ -377,6 +395,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ dur (♭%lld)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@-dur (♭%lld)"
           }
         }
       }
@@ -473,6 +497,12 @@
             "state" : "translated",
             "value" : "%@ dur (♯%lld)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@-dur (♯%lld)"
+          }
         }
       }
     },
@@ -567,6 +597,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nadiktované noty: %lld"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dikterede noder: %lld"
           }
         }
       }
@@ -663,6 +699,12 @@
             "state" : "translated",
             "value" : "Nadiktované noty: %lld.\nPokud výška nebo délka nesedí, přetažením noty ji opravte."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dikterede noder: %lld.\nHvis en tonehøjde eller længde er forkert, kan du trække noden for at rette den."
+          }
         }
       }
     },
@@ -757,6 +799,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Importované noty: %lld."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importerede noder: %lld."
           }
         }
       }
@@ -853,6 +901,12 @@
             "state" : "translated",
             "value" : "Rozpoznané noty: %lld (experimentální).\nZkontrolujte výšky i délky a opravte je ručně."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genkendte noder: %lld (eksperiment).\nTjek tonehøjde og længde, og ret dem selv."
+          }
         }
       }
     },
@@ -948,6 +1002,12 @@
             "state" : "translated",
             "value" : "Takt %lld, doba %lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takt %lld, slag %lld"
+          }
         }
       }
     },
@@ -1039,6 +1099,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/16"
@@ -1138,6 +1204,12 @@
             "state" : "translated",
             "value" : "Šestnáctinová nota"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sekstendedelsnode"
+          }
         }
       }
     },
@@ -1232,6 +1304,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Půlová nota"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halvnode"
           }
         }
       }
@@ -1328,6 +1406,12 @@
             "state" : "translated",
             "value" : "U skoků větších než kvarta říkejte „높은 솔“ (vysoké sol) nebo „낮은 시“ (nízké si)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ved spring større end en kvart skal du sige “높은 솔” (høj sol) eller “낮은 시” (lav si)"
+          }
         }
       }
     },
@@ -1419,6 +1503,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/4"
@@ -1518,6 +1608,12 @@
             "state" : "translated",
             "value" : "Čtvrťová nota"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kvartnode"
+          }
         }
       }
     },
@@ -1609,6 +1705,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/8"
@@ -1708,6 +1810,12 @@
             "state" : "translated",
             "value" : "Osminová nota"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ottendedelsnode"
+          }
         }
       }
     },
@@ -1802,6 +1910,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zkopírovat pravidlo pro AI"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopiér regel til AI"
           }
         }
       }
@@ -1898,6 +2012,12 @@
             "state" : "translated",
             "value" : "Začněte hned – řekněte to Siri nebo spusťte zkratku."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kom i gang med det samme ved at spørge Siri eller køre en genvej."
+          }
         }
       }
     },
@@ -1992,6 +2112,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri a Zkratky"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri og Genveje"
           }
         }
       }
@@ -2088,6 +2214,12 @@
             "state" : "translated",
             "value" : "Lepší VoiceOver"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bedre VoiceOver"
+          }
         }
       }
     },
@@ -2182,6 +2314,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@ dob"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@ slag"
           }
         }
       }
@@ -2278,6 +2416,12 @@
             "state" : "translated",
             "value" : "Altový klíč"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C-nøgle"
+          }
         }
       }
     },
@@ -2372,6 +2516,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontaktovat vývojáře"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontakt udvikleren"
           }
         }
       }
@@ -2468,6 +2618,12 @@
             "state" : "translated",
             "value" : "Solfeggio diktát"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfège-diktat"
+          }
         }
       }
     },
@@ -2562,6 +2718,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nerozuměl jsem žádnému názvu noty. Zkuste zřetelně říkat „도 레 미“ v rytmu metronomu."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeg kunne ikke høre nogen nodenavne. Prøv at sige “도 레 미” tydeligt i takt med metronomen."
           }
         }
       }
@@ -2658,6 +2820,12 @@
             "state" : "translated",
             "value" : "Pravidlo zkopírováno"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regel kopieret"
+          }
         }
       }
     },
@@ -2752,6 +2920,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Při zvětšení písma se obrazovky přeskládají, místo aby se ořízly."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Når du gør teksten større, ordnes skærmene om, så intet bliver skåret af."
           }
         }
       }
@@ -2848,6 +3022,12 @@
             "state" : "translated",
             "value" : "Rozpoznávání korejské řeči v zařízení není připraveno.\nZapněte korejštinu v Nastavení ▸ Obecné ▸ Klávesnice ▸ Diktování a stáhnou se potřebné soubory."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koreansk talegenkendelse på enheden er ikke klar.\nSlå koreansk til under Indstillinger ▸ Generelt ▸ Tastatur ▸ Diktering, så hentes de nødvendige filer."
+          }
         }
       }
     },
@@ -2942,6 +3122,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Basový klíč"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F-nøgle"
           }
         }
       }
@@ -3038,6 +3224,12 @@
             "state" : "translated",
             "value" : "Nahrávání se nepodařilo spustit: %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Optagelsen kunne ikke startes: %@"
+          }
         }
       }
     },
@@ -3132,6 +3324,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Houslový klíč"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "G-nøgle"
           }
         }
       }
@@ -3228,6 +3426,12 @@
             "state" : "translated",
             "value" : "C dur"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C-dur"
+          }
         }
       }
     },
@@ -3322,6 +3526,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "C dur (bez posuvek)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C-dur (ingen fortegn)"
           }
         }
       }
@@ -3418,6 +3628,12 @@
             "state" : "translated",
             "value" : "Tmavý režim"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mørk tilstand"
+          }
         }
       }
     },
@@ -3512,6 +3728,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zavřít"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luk"
           }
         }
       }
@@ -3608,6 +3830,12 @@
             "state" : "translated",
             "value" : "Vše zůstane čitelné i se zvýšeným kontrastem nebo při obtížném rozlišování barev."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alt kan stadig læses, også med Øget kontrast eller hvis farver er svære at kende forskel på."
+          }
         }
       }
     },
@@ -3702,6 +3930,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Používejte aplikaci ve více jazycích."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brug appen på flere sprog."
           }
         }
       }
@@ -3798,6 +4032,12 @@
             "state" : "translated",
             "value" : "Více jazyků"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flere sprog"
+          }
         }
       }
     },
@@ -3892,6 +4132,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · pro pomlku řekněte „쉼“"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · sig “쉼” for en pause"
           }
         }
       }
@@ -3988,6 +4234,12 @@
             "state" : "translated",
             "value" : "Prsty přibližte a posuňte, dokud dva takty nevyplní rámeček"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zoom og træk med fingrene, til to takter fylder rammen"
+          }
         }
       }
     },
@@ -4082,6 +4334,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Co jsem slyšel"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det jeg hørte"
           }
         }
       }
@@ -4178,6 +4436,12 @@
             "state" : "translated",
             "value" : "Rytmická kvantizace"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rytmetilpasning"
+          }
         }
       }
     },
@@ -4272,6 +4536,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Volně"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frit"
           }
         }
       }
@@ -4368,6 +4638,12 @@
             "state" : "translated",
             "value" : "Je potřeba oprávnění k mikrofonu. Povolte je v Nastavení."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der kræves tilladelse til mikrofonen. Tillad det i Indstillinger."
+          }
         }
       }
     },
@@ -4462,6 +4738,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vstup mikrofonu nebyl nalezen."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der blev ikke fundet nogen mikrofonindgang."
           }
         }
       }
@@ -4558,6 +4840,12 @@
             "state" : "translated",
             "value" : "Ukládejte partitury do souboru a později je znovu otevřete."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gem dine noder i en fil, og åbn dem igen senere."
+          }
         }
       }
     },
@@ -4652,6 +4940,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Začít mluvit"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begynd at tale"
           }
         }
       }
@@ -4748,6 +5042,12 @@
             "state" : "translated",
             "value" : "Použije se jen pořadí, v jakém mluvíte. Všechny noty se vloží jako čtvrťové; délky opravíte později."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kun rækkefølgen af det, du siger, bruges. Alle noder bliver til kvartnoder; ret længderne bagefter."
+          }
         }
       }
     },
@@ -4842,6 +5142,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Každý vyslovený okamžik zarovná na nejbližší pozici noty %@."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilpasser hvert udtalt tidspunkt til den nærmeste %@-nodeposition."
           }
         }
       }
@@ -4938,6 +5244,12 @@
             "state" : "translated",
             "value" : "Zastavit"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop"
+          }
         }
       }
     },
@@ -5032,6 +5344,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metronom (klik na dobu)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronom (slagklik)"
           }
         }
       }
@@ -5128,6 +5446,12 @@
             "state" : "translated",
             "value" : "Vypnout metronom"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå metronomen fra"
+          }
         }
       }
     },
@@ -5222,6 +5546,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Po čtyřech úderech metronomu říkejte názvy not v rytmu."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tæl fire slag med metronomen, og sig derefter nodenavnene i takt."
           }
         }
       }
@@ -5318,6 +5648,12 @@
             "state" : "translated",
             "value" : "Zapnout metronom"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå metronomen til"
+          }
         }
       }
     },
@@ -5412,6 +5748,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Všechny noty zůstanou v počáteční oktávě."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle noder bliver i startoktaven."
           }
         }
       }
@@ -5508,6 +5850,12 @@
             "state" : "translated",
             "value" : "Taktový předznam"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taktart"
+          }
         }
       }
     },
@@ -5602,6 +5950,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Taktový předznam"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taktart"
           }
         }
       }
@@ -5698,6 +6052,12 @@
             "state" : "translated",
             "value" : "Hlášení chyb a nápady na funkce jsou vítány."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fejlrapporter og forslag til funktioner er velkomne."
+          }
         }
       }
     },
@@ -5792,6 +6152,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pohodlnější barvy a kontrast"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bedre farver og kontrast"
           }
         }
       }
@@ -5888,6 +6254,12 @@
             "state" : "translated",
             "value" : "Ve vloženém textu nebyly nalezeny žádné noty.\nZkontrolujte, zda odpovídá pravidlu (např. 4옥도8분음)."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der blev ikke fundet noder i den indsatte tekst.\nTjek, at den følger reglen (fx 4옥도8분음)."
+          }
         }
       }
     },
@@ -5982,6 +6354,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je-li to příliš rychlé, snižte tempo (nyní %lld BPM)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvis det går for hurtigt, så sæt tempoet ned (nu %lld BPM)"
           }
         }
       }
@@ -6078,6 +6456,12 @@
             "state" : "translated",
             "value" : "Použít"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brug"
+          }
         }
       }
     },
@@ -6172,6 +6556,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vybrat z knihovny fotek"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælg fra fotobiblioteket"
           }
         }
       }
@@ -6268,6 +6658,12 @@
             "state" : "translated",
             "value" : "Nová partitura"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nye noder"
+          }
         }
       }
     },
@@ -6362,6 +6758,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nastavení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indstillinger"
           }
         }
       }
@@ -6458,6 +6860,12 @@
             "state" : "translated",
             "value" : "Triola: %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triol: %@"
+          }
         }
       }
     },
@@ -6552,6 +6960,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Režim triol: tři noty sdílejí jednu dobu (nebo dvě)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triol-tilstand: tre noder deler ét slag (eller to)"
           }
         }
       }
@@ -6648,6 +7062,12 @@
             "state" : "translated",
             "value" : "Tečkovaná triola: %@"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Punkteret triol: %@"
+          }
         }
       }
     },
@@ -6742,6 +7162,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Režim pomlk: klepnutím na délku vložíte pomlku"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pausetilstand: tryk på en længde for at indsætte en pause"
           }
         }
       }
@@ -6838,6 +7264,12 @@
             "state" : "translated",
             "value" : "Počáteční oktáva  %lld"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Startoktav  %lld"
+          }
         }
       }
     },
@@ -6932,6 +7364,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Užitečné tipy"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyttige tips"
           }
         }
       }
@@ -7028,6 +7466,12 @@
             "state" : "translated",
             "value" : "Pokračujte v partituře tam, kde jste skončili"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsæt dine noder, hvor du slap"
+          }
         }
       }
     },
@@ -7122,6 +7566,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zkontrolujte níže a klepněte na „Přidat do partitury“"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tjek nedenfor, og tryk på “Føj til noderne”"
           }
         }
       }
@@ -7218,6 +7668,12 @@
             "state" : "translated",
             "value" : "Vložit partituru"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sæt noder ind"
+          }
         }
       }
     },
@@ -7312,6 +7768,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Foto partitury"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto af noder"
           }
         }
       }
@@ -7408,6 +7870,12 @@
             "state" : "translated",
             "value" : "Dejte fotku partitury umělé inteligenci, ať ji zapíše podle pravidla níže, a vložený text pak vyplní pětilinku."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giv et foto af noderne til en AI, bed den skrive dem efter reglen nedenfor, og sæt den tekst, du får, ind for at udfylde nodelinjerne."
+          }
         }
       }
     },
@@ -7502,6 +7970,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ukládání a export partitur"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gem og eksportér noder"
           }
         }
       }
@@ -7598,6 +8072,12 @@
             "state" : "translated",
             "value" : "Název partitury"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nodernes titel"
+          }
         }
       }
     },
@@ -7692,6 +8172,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Převést na partituru"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konverter til noder"
           }
         }
       }
@@ -7788,6 +8274,12 @@
             "state" : "translated",
             "value" : "Partituru se nepodařilo přečíst. Nejlépe fungují čistý tisk, jedna řádka a fotka přímo zepředu."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noderne kunne ikke læses. Det virker bedst med tydeligt trykte noder, én linje og et billede taget forfra."
+          }
         }
       }
     },
@@ -7882,6 +8374,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Přidat do partitury"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Føj til noderne"
           }
         }
       }
@@ -7978,6 +8476,12 @@
             "state" : "translated",
             "value" : "Noty k přidání"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noder der tilføjes"
+          }
         }
       }
     },
@@ -8072,6 +8576,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nenápadné rady k užitečným funkcím právě ve chvíli, kdy je potřebujete."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diskrete hints om nyttige funktioner, lige når du har brug for dem."
           }
         }
       }
@@ -8168,6 +8678,12 @@
             "state" : "translated",
             "value" : "Vybere oktávu nejblíže předchozí notě, takže „시 도“ stoupne o půltón."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vælger den oktav, der ligger tættest på forrige node, så “시 도” stiger en halvtone."
+          }
         }
       }
     },
@@ -8262,6 +8778,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Začněte cvičit přímo z plochy, aniž byste otevírali aplikaci."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begynd at øve direkte fra hjemmeskærmen uden at åbne appen."
           }
         }
       }
@@ -8358,6 +8880,12 @@
             "state" : "translated",
             "value" : "Používejte celou aplikaci v angličtině."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brug hele appen på engelsk."
+          }
         }
       }
     },
@@ -8452,6 +8980,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Partitura zůstane, jak jste ji nechali, i když se aplikace zavře."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dine noder står, som du lod dem, selv om appen lukkes."
           }
         }
       }
@@ -8548,6 +9082,12 @@
             "state" : "translated",
             "value" : "Partitury a tlačítka zůstanou ostré i v tmavém režimu."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noder og knapper er skarpe og tydelige i mørk tilstand."
+          }
         }
       }
     },
@@ -8642,6 +9182,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Při prvním otevření po aktualizaci uvidíte, co je nového."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Første gang du åbner appen efter en opdatering, kan du se, hvad der er nyt."
           }
         }
       }
@@ -8738,6 +9284,12 @@
             "state" : "translated",
             "value" : "Co je nového"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyheder"
+          }
         }
       }
     },
@@ -8832,6 +9384,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vložte sem"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sæt ind her"
           }
         }
       }
@@ -8928,6 +9486,12 @@
             "state" : "translated",
             "value" : "Připomínky cvičení"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Påmindelser om øvning"
+          }
         }
       }
     },
@@ -9022,6 +9586,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Plná podpora angličtiny"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuld understøttelse af engelsk"
           }
         }
       }
@@ -9118,6 +9688,12 @@
             "state" : "translated",
             "value" : "např. 4옥도4분음 4옥레4분음 4옥미8분음 …"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "fx 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
         }
       }
     },
@@ -9212,6 +9788,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zobrazit vpravo"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis til højre"
           }
         }
       }
@@ -9308,6 +9890,12 @@
             "state" : "translated",
             "value" : "Podržte pětilinku, vyberte výšku a po uvolnění se nota přidá"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hold fingeren på nodelinjerne, vælg tonehøjde, og slip for at tilføje noden"
+          }
         }
       }
     },
@@ -9402,6 +9990,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oktáva automaticky"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisk oktav"
           }
         }
       }
@@ -9498,6 +10092,12 @@
             "state" : "translated",
             "value" : "Celá nota"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helnode"
+          }
         }
       }
     },
@@ -9592,6 +10192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hotovo"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Færdig"
           }
         }
       }
@@ -9688,6 +10294,12 @@
             "state" : "translated",
             "value" : "Zobrazit vlevo"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vis til venstre"
+          }
         }
       }
     },
@@ -9782,6 +10394,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Omezit pohyb"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reducer bevægelse"
           }
         }
       }
@@ -9878,6 +10496,12 @@
             "state" : "translated",
             "value" : "Se zapnutou volbou Omezit pohyb jsou efekty na obrazovce klidnější."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Når Reducer bevægelse er slået til, bliver skærmeffekterne mere rolige."
+          }
         }
       }
     },
@@ -9972,6 +10596,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Je potřeba oprávnění k rozpoznávání řeči. Povolte je v Nastavení."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der kræves tilladelse til talegenkendelse. Tillad det i Indstillinger."
           }
         }
       }
@@ -10068,6 +10698,12 @@
             "state" : "translated",
             "value" : "Rozpoznání řeči selhalo. Zkuste to za chvíli znovu."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Talegenkendelsen mislykkedes. Prøv igen om lidt."
+          }
         }
       }
     },
@@ -10162,6 +10798,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klíč"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nøgle"
           }
         }
       }
@@ -10258,6 +10900,12 @@
             "state" : "translated",
             "value" : "Klíč"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nøgle"
+          }
         }
       }
     },
@@ -10352,6 +11000,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rozpoznávání korejské řeči není na tomto zařízení dostupné."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koreansk talegenkendelse er ikke tilgængelig på denne enhed."
           }
         }
       }
@@ -10448,6 +11102,12 @@
             "state" : "translated",
             "value" : "Umístěte dva takty do rámečku a vyfoťte"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få to takter ind i rammen, og tag billedet"
+          }
         }
       }
     },
@@ -10542,6 +11202,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Napsat e-mail"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontakt via mail"
           }
         }
       }
@@ -10638,6 +11304,12 @@
             "state" : "translated",
             "value" : "Se sluchátky se metronom nedostane do mikrofonu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med øretelefoner kommer metronomen ikke ind i mikrofonen"
+          }
         }
       }
     },
@@ -10732,6 +11404,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram DM (@lee25_ios)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram-DM (@lee25_ios)"
           }
         }
       }
@@ -10828,6 +11506,12 @@
             "state" : "translated",
             "value" : "Dostanete připomínku, abyste v zvolený čas cvičili zpěv z listu."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få en påmindelse om at øve a vista-sang på et tidspunkt, du selv vælger."
+          }
         }
       }
     },
@@ -10922,6 +11606,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Automatický přepis (experimentální)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisk nedskrivning (eksperiment)"
           }
         }
       }
@@ -11018,6 +11708,12 @@
             "state" : "translated",
             "value" : "Pro lepší výsledky"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sådan får du det bedste resultat"
+          }
         }
       }
     },
@@ -11112,6 +11808,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pomůcky přehrávání"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afspilningshjælp"
           }
         }
       }
@@ -11208,6 +11910,12 @@
             "state" : "translated",
             "value" : "Smazat vše"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ryd alt"
+          }
         }
       }
     },
@@ -11302,6 +12010,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tečkovaná %@"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Punkteret %@"
           }
         }
       }
@@ -11398,6 +12112,12 @@
             "state" : "translated",
             "value" : "Název"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titel"
+          }
         }
       }
     },
@@ -11492,6 +12212,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Předznamenání"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortegn"
           }
         }
       }
@@ -11588,6 +12314,12 @@
             "state" : "translated",
             "value" : "Předznamenání"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortegn"
+          }
         }
       }
     },
@@ -11682,6 +12414,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Připravte se"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gør klar"
           }
         }
       }
@@ -11778,6 +12516,12 @@
             "state" : "translated",
             "value" : "Podpora"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Support"
+          }
         }
       }
     },
@@ -11872,6 +12616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Smazat referenční foto"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slet referencebillede"
           }
         }
       }
@@ -11968,6 +12718,12 @@
             "state" : "translated",
             "value" : "Přepsat"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nedskriv"
+          }
         }
       }
     },
@@ -12062,6 +12818,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Krátký průvodce pro nové uživatele"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En hurtig introduktion til nye brugere"
           }
         }
       }
@@ -12158,6 +12920,12 @@
             "state" : "translated",
             "value" : "Krátké představení toho, co umíte, při prvním otevření aplikace."
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En kort introduktion til, hvad du kan, første gang du åbner appen."
+          }
         }
       }
     },
@@ -12252,6 +13020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zrušit"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuller"
           }
         }
       }
@@ -12348,6 +13122,12 @@
             "state" : "translated",
             "value" : "Vyfotit (srovnat na 2 takty)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tag billede (tilpas til 2 takter)"
+          }
         }
       }
     },
@@ -12442,6 +13222,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fotoaparát není k dispozici.\nVyberte místo toho fotku z knihovny."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kameraet er ikke tilgængeligt.\nVælg i stedet et billede fra fotobiblioteket."
           }
         }
       }
@@ -12538,6 +13324,12 @@
             "state" : "translated",
             "value" : "Předtakt (jeden takt před začátkem)"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Optakt (en takt før start)"
+          }
         }
       }
     },
@@ -12632,6 +13424,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rozvržení pro větší písmo"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout til større tekst"
           }
         }
       }
@@ -12728,6 +13526,12 @@
             "state" : "translated",
             "value" : "Vložit ze schránky"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sæt ind fra udklipsholder"
+          }
         }
       }
     },
@@ -12819,6 +13623,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo"
@@ -12918,6 +13728,12 @@
             "state" : "translated",
             "value" : "Rozvržení pro skládací iPhone"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout til foldbar iPhone"
+          }
         }
       }
     },
@@ -13012,6 +13828,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Širokou obrazovku skládacího iPhonu využijete jako dva panely vedle sebe."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Brug den brede skærm på en foldbar iPhone som to ruder side om side."
           }
         }
       }
@@ -13108,6 +13930,12 @@
             "state" : "translated",
             "value" : "Říkejte jednu notu po druhé, zřetelně a přesně na dobu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sig én node ad gangen, tydeligt og lige på slaget"
+          }
         }
       }
     },
@@ -13202,6 +14030,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zkopírovat aktuální partituru jako text (jako příklad pro AI)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopiér de nuværende noder som tekst (som eksempel til AI)"
           }
         }
       }
@@ -13298,6 +14132,12 @@
             "state" : "translated",
             "value" : "Widgety na ploše"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hjemmeskærmswidgets"
+          }
         }
       }
     },
@@ -13392,6 +14232,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver čte každé tlačítko i notu ve správném pořadí."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver læser hver knap og node op i den rigtige rækkefølge."
           }
         }
       }
@@ -13488,6 +14334,12 @@
             "state" : "translated",
             "value" : "Akord"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akkord"
+          }
         }
       }
     },
@@ -13583,6 +14435,12 @@
             "state" : "translated",
             "value" : "Režim akordu: noty se skládají na vybranou notu"
           }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akkordtilstand: noder lægges oven på den valgte node"
+          }
         }
       }
     },
@@ -13674,6 +14532,12 @@
           }
         },
         "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "da" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"

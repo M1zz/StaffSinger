@@ -824,3 +824,58 @@ Referenční foto
 Vyfoťte partituru, kterou čtete, a nechte ji na obrazovce, abyste ji mohli při přepisu porovnávat.
 
 Mějte ho po ruce pro sbor, hodiny hry na nástroj nebo přípravu na přijímačky na konzervatoř – kdykoli potřebujete rychle číst noty.
+
+## da
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger: Prima vista
+
+### 부제
+
+Hør de toner, du skriver
+
+### 키워드
+
+solfège,musikteori,nodelinjer,noder,kor,klaver,akkord,metronom,diktat,undervisning,sang
+
+### 프로모션 텍스트
+
+Ukendte noder med svær rytme og akkorder? Sæt noder på nodelinjerne, og hør dem med metronom og optakt med det samme.
+
+### 설명
+
+Tæl ikke nye noder igennem i hovedet alene. Hør dem.
+StaffSinger skriver de to takter, der forvirrer dig, ind på nodelinjerne og spiller dem med den præcise rytme og tonehøjde.
+
+Tryk på nodelinjerne, eller brug tangenterne
+Hold fingeren på nodelinjerne for at vælge tonehøjde, eller tryk på klaveret over to oktaver for at tilføje en node. Vælg fra helnoder til sekstendedelsnoder, punkterede noder, trioler og pauser, og fjern den node, du lige har sat, med ét tryk.
+
+Afspil med metronom
+Efter optakten spilles noderne i metronomens takt, og den node, der klinger, fremhæves med farve. Tempo og taktart ændrer du i Indstillinger.
+
+Akkorder og flere stemmer
+Læg noder oven på hinanden på samme slag, så får du en akkord, og del musikken op i stemmer. Fortegn samt G-, C- og F-nøgle understøttes.
+
+Solfège-diktat
+Sig nodenavnene i takt med metronomen, så havner de som noder på nodelinjerne. Taler du lige på slaget, bliver rytmen også fanget. Diktatet genkender koreanske solfège-stavelser, og talegenkendelsen foregår helt på din enhed.
+
+Sæt noder ind som tekst
+Sæt tekst ind, som er skrevet i et fast format, og nodelinjerne udfyldes. Kopiér reglen, giv den til en AI sammen med et foto af noderne, og sæt det, du får tilbage, ind.
+
+Referencebillede
+Tag et billede af de noder, du læser, og lad det stå på skærmen, så du kan sammenligne, mens du skriver af.
+
+Praktisk at have ved hånden til kor, instrumentundervisning eller optagelsesprøver til musikuddannelser – når som helst du hurtigt skal læse noder.
