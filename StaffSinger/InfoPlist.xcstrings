@@ -99,6 +99,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -199,6 +205,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger bruger kameraet til at tage et billede af noder og indlæse det som referencebillede."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το StaffSinger χρησιμοποιεί την κάμερα για να τραβήξει φωτογραφία μιας παρτιτούρας και να την φορτώσει ως εικόνα αναφοράς."
           }
         }
       }
@@ -301,6 +313,12 @@
             "state" : "translated",
             "value" : "StaffSinger bruger mikrofonen til at omsætte de nodenavne, du siger, til noder på nodelinjerne. Lyden behandles kun på denne enhed og gemmes aldrig."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το StaffSinger χρησιμοποιεί το μικρόφωνο για να μετατρέπει τα ονόματα νοτών που λέτε σε νότες στο πεντάγραμμο. Ο ήχος επεξεργάζεται μόνο σε αυτή τη συσκευή και δεν αποθηκεύεται ποτέ."
+          }
         }
       }
     },
@@ -401,6 +419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger bruger talegenkendelse til at omsætte de nodenavne, du siger, til noder. Genkendelsen foregår kun på denne enhed."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το StaffSinger χρησιμοποιεί την αναγνώριση ομιλίας για να μετατρέπει τα ονόματα νοτών που λέτε σε νότες. Η αναγνώριση γίνεται μόνο σε αυτή τη συσκευή."
           }
         }
       }

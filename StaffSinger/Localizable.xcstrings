@@ -99,6 +99,12 @@
             "state" : "translated",
             "value" : "\nNoder efter anden takt vises muligvis ikke på skærmen."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nΟι νότες μετά το δεύτερο μέτρο μπορεί να μην εμφανίζονται στην οθόνη."
+          }
         }
       }
     },
@@ -199,6 +205,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "“%@” – der blev ikke fundet nogen nodenavne.\nSig 도 레 미 파 솔 라 시."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "«%@» — δεν βρέθηκαν ονόματα νοτών εδώ.\nΠείτε 도 레 미 파 솔 라 시."
           }
         }
       }
@@ -301,6 +313,12 @@
             "state" : "translated",
             "value" : "%@ · Lytter"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Ακούω"
+          }
         }
       }
     },
@@ -401,6 +419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@-dur (♭%lld)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ μείζονα (♭%lld)"
           }
         }
       }
@@ -503,6 +527,12 @@
             "state" : "translated",
             "value" : "%@-dur (♯%lld)"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ μείζονα (♯%lld)"
+          }
         }
       }
     },
@@ -603,6 +633,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dikterede noder: %lld"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Νότες που υπαγορεύτηκαν: %lld"
           }
         }
       }
@@ -705,6 +741,12 @@
             "state" : "translated",
             "value" : "Dikterede noder: %lld.\nHvis en tonehøjde eller længde er forkert, kan du trække noden for at rette den."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Νότες που υπαγορεύτηκαν: %lld.\nΑν το ύψος ή η διάρκεια δεν είναι σωστά, σύρετε τη νότα για να τη διορθώσετε."
+          }
         }
       }
     },
@@ -805,6 +847,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Importerede noder: %lld."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Νότες που εισήχθησαν: %lld."
           }
         }
       }
@@ -907,6 +955,12 @@
             "state" : "translated",
             "value" : "Genkendte noder: %lld (eksperiment).\nTjek tonehøjde og længde, og ret dem selv."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Νότες που αναγνωρίστηκαν: %lld (πειραματικό).\nΕλέγξτε μόνοι σας το ύψος και τη διάρκεια και διορθώστε."
+          }
         }
       }
     },
@@ -1008,6 +1062,12 @@
             "state" : "translated",
             "value" : "Takt %lld, slag %lld"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μέτρο %lld, χτύπημα %lld"
+          }
         }
       }
     },
@@ -1105,6 +1165,12 @@
           }
         },
         "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        },
+        "el" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/16"
@@ -1210,6 +1276,12 @@
             "state" : "translated",
             "value" : "Sekstendedelsnode"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δέκατο έκτο"
+          }
         }
       }
     },
@@ -1310,6 +1382,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Halvnode"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μισή νότα"
           }
         }
       }
@@ -1412,6 +1490,12 @@
             "state" : "translated",
             "value" : "Ved spring større end en kvart skal du sige “높은 솔” (høj sol) eller “낮은 시” (lav si)"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Για πηδήματα μεγαλύτερα από τετάρτη, πείτε «높은 솔» (ψηλό σολ) ή «낮은 시» (χαμηλό σι)"
+          }
         }
       }
     },
@@ -1509,6 +1593,12 @@
           }
         },
         "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        },
+        "el" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/4"
@@ -1614,6 +1704,12 @@
             "state" : "translated",
             "value" : "Kvartnode"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τέταρτο"
+          }
         }
       }
     },
@@ -1711,6 +1807,12 @@
           }
         },
         "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        },
+        "el" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/8"
@@ -1816,6 +1918,12 @@
             "state" : "translated",
             "value" : "Ottendedelsnode"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όγδοο"
+          }
         }
       }
     },
@@ -1916,6 +2024,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kopiér regel til AI"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αντιγραφή κανόνα για το AI"
           }
         }
       }
@@ -2018,6 +2132,12 @@
             "state" : "translated",
             "value" : "Kom i gang med det samme ved at spørge Siri eller køre en genvej."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξεκινήστε αμέσως ζητώντας το από το Siri ή εκτελώντας μια συντόμευση."
+          }
         }
       }
     },
@@ -2118,6 +2238,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri og Genveje"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri και Συντομεύσεις"
           }
         }
       }
@@ -2220,6 +2346,12 @@
             "state" : "translated",
             "value" : "Bedre VoiceOver"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Καλύτερο VoiceOver"
+          }
         }
       }
     },
@@ -2320,6 +2452,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@ slag"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@ χτύποι"
           }
         }
       }
@@ -2422,6 +2560,12 @@
             "state" : "translated",
             "value" : "C-nøgle"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κλειδί του ντο"
+          }
         }
       }
     },
@@ -2522,6 +2666,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontakt udvikleren"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επικοινωνία με τον προγραμματιστή"
           }
         }
       }
@@ -2624,6 +2774,12 @@
             "state" : "translated",
             "value" : "Solfège-diktat"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Υπαγόρευση σολφέζ"
+          }
         }
       }
     },
@@ -2724,6 +2880,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jeg kunne ikke høre nogen nodenavne. Prøv at sige “도 레 미” tydeligt i takt med metronomen."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν διακρίθηκε κανένα όνομα νότας. Δοκιμάστε να πείτε καθαρά «도 레 미» στο ρυθμό του μετρονόμου."
           }
         }
       }
@@ -2826,6 +2988,12 @@
             "state" : "translated",
             "value" : "Regel kopieret"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ο κανόνας αντιγράφηκε"
+          }
         }
       }
     },
@@ -2926,6 +3094,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Når du gør teksten større, ordnes skærmene om, så intet bliver skåret af."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όταν μεγαλώνετε το κείμενο, οι οθόνες αναδιατάσσονται αντί να κόβονται."
           }
         }
       }
@@ -3028,6 +3202,12 @@
             "state" : "translated",
             "value" : "Koreansk talegenkendelse på enheden er ikke klar.\nSlå koreansk til under Indstillinger ▸ Generelt ▸ Tastatur ▸ Diktering, så hentes de nødvendige filer."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η αναγνώριση ομιλίας στα κορεατικά στη συσκευή δεν είναι έτοιμη.\nΕνεργοποιήστε τα κορεατικά στις Ρυθμίσεις ▸ Γενικά ▸ Πληκτρολόγιο ▸ Υπαγόρευση για να γίνει λήψη των απαραίτητων αρχείων."
+          }
         }
       }
     },
@@ -3128,6 +3308,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "F-nøgle"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κλειδί του φα"
           }
         }
       }
@@ -3230,6 +3416,12 @@
             "state" : "translated",
             "value" : "Optagelsen kunne ikke startes: %@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν ήταν δυνατή η έναρξη της εγγραφής: %@"
+          }
         }
       }
     },
@@ -3330,6 +3522,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "G-nøgle"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κλειδί του σολ"
           }
         }
       }
@@ -3432,6 +3630,12 @@
             "state" : "translated",
             "value" : "C-dur"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ντο μείζονα"
+          }
         }
       }
     },
@@ -3532,6 +3736,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "C-dur (ingen fortegn)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ντο μείζονα (χωρίς αλλοιώσεις)"
           }
         }
       }
@@ -3634,6 +3844,12 @@
             "state" : "translated",
             "value" : "Mørk tilstand"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Σκούρα λειτουργία"
+          }
         }
       }
     },
@@ -3734,6 +3950,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Luk"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κλείσιμο"
           }
         }
       }
@@ -3836,6 +4058,12 @@
             "state" : "translated",
             "value" : "Alt kan stadig læses, også med Øget kontrast eller hvis farver er svære at kende forskel på."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όλα παραμένουν ευανάγνωστα, ακόμη και με αυξημένη αντίθεση ή όταν τα χρώματα ξεχωρίζουν δύσκολα."
+          }
         }
       }
     },
@@ -3936,6 +4164,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brug appen på flere sprog."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρησιμοποιήστε την εφαρμογή σε περισσότερες γλώσσες."
           }
         }
       }
@@ -4038,6 +4272,12 @@
             "state" : "translated",
             "value" : "Flere sprog"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Περισσότερες γλώσσες"
+          }
         }
       }
     },
@@ -4138,6 +4378,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · sig “쉼” for en pause"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · για παύση πείτε «쉼»"
           }
         }
       }
@@ -4240,6 +4486,12 @@
             "state" : "translated",
             "value" : "Zoom og træk med fingrene, til to takter fylder rammen"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μεγεθύνετε και μετακινήστε με τα δάχτυλα μέχρι δύο μέτρα να γεμίσουν το πλαίσιο"
+          }
         }
       }
     },
@@ -4340,6 +4592,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det jeg hørte"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι άκουσα"
           }
         }
       }
@@ -4442,6 +4700,12 @@
             "state" : "translated",
             "value" : "Rytmetilpasning"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ευθυγράμμιση ρυθμού"
+          }
         }
       }
     },
@@ -4542,6 +4806,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Frit"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ελεύθερο"
           }
         }
       }
@@ -4644,6 +4914,12 @@
             "state" : "translated",
             "value" : "Der kræves tilladelse til mikrofonen. Tillad det i Indstillinger."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απαιτείται άδεια μικροφώνου. Επιτρέψτε την στις Ρυθμίσεις."
+          }
         }
       }
     },
@@ -4744,6 +5020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Der blev ikke fundet nogen mikrofonindgang."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν βρέθηκε είσοδος μικροφώνου."
           }
         }
       }
@@ -4846,6 +5128,12 @@
             "state" : "translated",
             "value" : "Gem dine noder i en fil, og åbn dem igen senere."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποθηκεύστε τις παρτιτούρες σας σε αρχείο και ανοίξτε τις ξανά αργότερα."
+          }
         }
       }
     },
@@ -4946,6 +5234,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Begynd at tale"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Έναρξη ομιλίας"
           }
         }
       }
@@ -5048,6 +5342,12 @@
             "state" : "translated",
             "value" : "Kun rækkefølgen af det, du siger, bruges. Alle noder bliver til kvartnoder; ret længderne bagefter."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρησιμοποιείται μόνο η σειρά που μιλάτε. Όλες οι νότες μπαίνουν ως τέταρτα· διορθώστε τις διάρκειες μετά."
+          }
         }
       }
     },
@@ -5148,6 +5448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tilpasser hvert udtalt tidspunkt til den nærmeste %@-nodeposition."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ευθυγραμμίζει κάθε στιγμή ομιλίας στην πλησιέστερη θέση νότας %@."
           }
         }
       }
@@ -5250,6 +5556,12 @@
             "state" : "translated",
             "value" : "Stop"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διακοπή"
+          }
         }
       }
     },
@@ -5350,6 +5662,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metronom (slagklik)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μετρονόμος (κλικ χτύπου)"
           }
         }
       }
@@ -5452,6 +5770,12 @@
             "state" : "translated",
             "value" : "Slå metronomen fra"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απενεργοποίηση μετρονόμου"
+          }
         }
       }
     },
@@ -5552,6 +5876,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tæl fire slag med metronomen, og sig derefter nodenavnene i takt."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μετά από τέσσερα χτυπήματα του μετρονόμου, πείτε τα ονόματα των νοτών στο ρυθμό."
           }
         }
       }
@@ -5654,6 +5984,12 @@
             "state" : "translated",
             "value" : "Slå metronomen til"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ενεργοποίηση μετρονόμου"
+          }
         }
       }
     },
@@ -5754,6 +6090,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alle noder bliver i startoktaven."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όλες οι νότες μένουν στην αρχική οκτάβα."
           }
         }
       }
@@ -5856,6 +6198,12 @@
             "state" : "translated",
             "value" : "Taktart"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρονική ένδειξη"
+          }
         }
       }
     },
@@ -5956,6 +6304,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Taktart"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρονική ένδειξη"
           }
         }
       }
@@ -6058,6 +6412,12 @@
             "state" : "translated",
             "value" : "Fejlrapporter og forslag til funktioner er velkomne."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αναφορές σφαλμάτων και προτάσεις λειτουργιών είναι ευπρόσδεκτες."
+          }
         }
       }
     },
@@ -6158,6 +6518,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bedre farver og kontrast"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πιο άνετα χρώματα και αντίθεση"
           }
         }
       }
@@ -6260,6 +6626,12 @@
             "state" : "translated",
             "value" : "Der blev ikke fundet noder i den indsatte tekst.\nTjek, at den følger reglen (fx 4옥도8분음)."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν βρέθηκαν νότες στο επικολλημένο κείμενο.\nΕλέγξτε αν ακολουθεί τον κανόνα (π.χ. 4옥도8분음)."
+          }
         }
       }
     },
@@ -6360,6 +6732,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hvis det går for hurtigt, så sæt tempoet ned (nu %lld BPM)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αν είναι πολύ γρήγορο, χαμηλώστε το τέμπο (τώρα %lld BPM)"
           }
         }
       }
@@ -6462,6 +6840,12 @@
             "state" : "translated",
             "value" : "Brug"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρήση"
+          }
         }
       }
     },
@@ -6562,6 +6946,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vælg fra fotobiblioteket"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επιλογή από τη βιβλιοθήκη φωτογραφιών"
           }
         }
       }
@@ -6664,6 +7054,12 @@
             "state" : "translated",
             "value" : "Nye noder"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Νέα παρτιτούρα"
+          }
         }
       }
     },
@@ -6764,6 +7160,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Indstillinger"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ρυθμίσεις"
           }
         }
       }
@@ -6866,6 +7268,12 @@
             "state" : "translated",
             "value" : "Triol: %@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τρίηχο: %@"
+          }
         }
       }
     },
@@ -6966,6 +7374,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Triol-tilstand: tre noder deler ét slag (eller to)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Λειτουργία τρίηχου: τρεις νότες μοιράζονται ένα χτύπημα (ή δύο)"
           }
         }
       }
@@ -7068,6 +7482,12 @@
             "state" : "translated",
             "value" : "Punkteret triol: %@"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τρίηχο με τελεία: %@"
+          }
         }
       }
     },
@@ -7168,6 +7588,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pausetilstand: tryk på en længde for at indsætte en pause"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Λειτουργία παύσης: πατήστε μια διάρκεια για να εισαγάγετε παύση"
           }
         }
       }
@@ -7270,6 +7696,12 @@
             "state" : "translated",
             "value" : "Startoktav  %lld"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αρχική οκτάβα  %lld"
+          }
         }
       }
     },
@@ -7370,6 +7802,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nyttige tips"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρήσιμες συμβουλές"
           }
         }
       }
@@ -7472,6 +7910,12 @@
             "state" : "translated",
             "value" : "Fortsæt dine noder, hvor du slap"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συνεχίστε την παρτιτούρα από εκεί που μείνατε"
+          }
         }
       }
     },
@@ -7572,6 +8016,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tjek nedenfor, og tryk på “Føj til noderne”"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ελέγξτε παρακάτω και πατήστε «Προσθήκη στην παρτιτούρα»"
           }
         }
       }
@@ -7674,6 +8124,12 @@
             "state" : "translated",
             "value" : "Sæt noder ind"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επικόλληση παρτιτούρας"
+          }
         }
       }
     },
@@ -7774,6 +8230,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Foto af noder"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φωτογραφία παρτιτούρας"
           }
         }
       }
@@ -7876,6 +8338,12 @@
             "state" : "translated",
             "value" : "Giv et foto af noderne til en AI, bed den skrive dem efter reglen nedenfor, og sæt den tekst, du får, ind for at udfylde nodelinjerne."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δώστε μια φωτογραφία της παρτιτούρας σε ένα AI, ζητήστε του να τη γράψει με τον παρακάτω κανόνα και επικολλήστε το κείμενο που θα πάρετε για να γεμίσει το πεντάγραμμο."
+          }
         }
       }
     },
@@ -7976,6 +8444,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gem og eksportér noder"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αποθήκευση και εξαγωγή παρτιτούρων"
           }
         }
       }
@@ -8078,6 +8552,12 @@
             "state" : "translated",
             "value" : "Nodernes titel"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τίτλος παρτιτούρας"
+          }
         }
       }
     },
@@ -8178,6 +8658,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Konverter til noder"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μετατροπή σε παρτιτούρα"
           }
         }
       }
@@ -8280,6 +8766,12 @@
             "state" : "translated",
             "value" : "Noderne kunne ikke læses. Det virker bedst med tydeligt trykte noder, én linje og et billede taget forfra."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν ήταν δυνατή η ανάγνωση της παρτιτούρας. Καλύτερα αποτελέσματα με καθαρή εκτύπωση, μία γραμμή και φωτογραφία από μπροστά."
+          }
         }
       }
     },
@@ -8380,6 +8872,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Føj til noderne"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προσθήκη στην παρτιτούρα"
           }
         }
       }
@@ -8482,6 +8980,12 @@
             "state" : "translated",
             "value" : "Noder der tilføjes"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Νότες προς προσθήκη"
+          }
         }
       }
     },
@@ -8582,6 +9086,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Diskrete hints om nyttige funktioner, lige når du har brug for dem."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διακριτικές υποδείξεις για χρήσιμες λειτουργίες, ακριβώς όταν τις χρειάζεστε."
           }
         }
       }
@@ -8684,6 +9194,12 @@
             "state" : "translated",
             "value" : "Vælger den oktav, der ligger tættest på forrige node, så “시 도” stiger en halvtone."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επιλέγει την οκτάβα που είναι πιο κοντά στην προηγούμενη νότα, οπότε το «시 도» ανεβαίνει κατά ένα ημιτόνιο."
+          }
         }
       }
     },
@@ -8784,6 +9300,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Begynd at øve direkte fra hjemmeskærmen uden at åbne appen."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ξεκινήστε την εξάσκηση απευθείας από την Αρχική οθόνη, χωρίς να ανοίξετε την εφαρμογή."
           }
         }
       }
@@ -8886,6 +9408,12 @@
             "state" : "translated",
             "value" : "Brug hele appen på engelsk."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρησιμοποιήστε ολόκληρη την εφαρμογή στα αγγλικά."
+          }
         }
       }
     },
@@ -8986,6 +9514,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dine noder står, som du lod dem, selv om appen lukkes."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η παρτιτούρα σας μένει όπως την αφήσατε, ακόμη κι αν κλείσει η εφαρμογή."
           }
         }
       }
@@ -9088,6 +9622,12 @@
             "state" : "translated",
             "value" : "Noder og knapper er skarpe og tydelige i mørk tilstand."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οι παρτιτούρες και τα κουμπιά παραμένουν καθαρά και στη σκούρα λειτουργία."
+          }
         }
       }
     },
@@ -9188,6 +9728,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Første gang du åbner appen efter en opdatering, kan du se, hvad der er nyt."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Την πρώτη φορά που θα ανοίξετε την εφαρμογή μετά από μια ενημέρωση, δείτε τι νέο υπάρχει."
           }
         }
       }
@@ -9290,6 +9836,12 @@
             "state" : "translated",
             "value" : "Nyheder"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι νέο υπάρχει"
+          }
         }
       }
     },
@@ -9390,6 +9942,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sæt ind her"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επικόλληση εδώ"
           }
         }
       }
@@ -9492,6 +10050,12 @@
             "state" : "translated",
             "value" : "Påmindelser om øvning"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Υπενθυμίσεις εξάσκησης"
+          }
         }
       }
     },
@@ -9592,6 +10156,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fuld understøttelse af engelsk"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πλήρης υποστήριξη αγγλικών"
           }
         }
       }
@@ -9694,6 +10264,12 @@
             "state" : "translated",
             "value" : "fx 4옥도4분음 4옥레4분음 4옥미8분음 …"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "π.χ. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
         }
       }
     },
@@ -9794,6 +10370,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vis til højre"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εμφάνιση δεξιά"
           }
         }
       }
@@ -9896,6 +10478,12 @@
             "state" : "translated",
             "value" : "Hold fingeren på nodelinjerne, vælg tonehøjde, og slip for at tilføje noden"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε παρατεταμένα στο πεντάγραμμο, επιλέξτε ύψος και αφήστε για να προστεθεί η νότα"
+          }
         }
       }
     },
@@ -9996,6 +10584,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Automatisk oktav"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτόματη οκτάβα"
           }
         }
       }
@@ -10098,6 +10692,12 @@
             "state" : "translated",
             "value" : "Helnode"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ολόκληρη νότα"
+          }
         }
       }
     },
@@ -10198,6 +10798,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Færdig"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τέλος"
           }
         }
       }
@@ -10300,6 +10906,12 @@
             "state" : "translated",
             "value" : "Vis til venstre"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εμφάνιση αριστερά"
+          }
         }
       }
     },
@@ -10400,6 +11012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reducer bevægelse"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μείωση κίνησης"
           }
         }
       }
@@ -10502,6 +11120,12 @@
             "state" : "translated",
             "value" : "Når Reducer bevægelse er slået til, bliver skærmeffekterne mere rolige."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Με ενεργή τη Μείωση κίνησης, τα εφέ της οθόνης γίνονται πιο ήρεμα."
+          }
         }
       }
     },
@@ -10602,6 +11226,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Der kræves tilladelse til talegenkendelse. Tillad det i Indstillinger."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Απαιτείται άδεια αναγνώρισης ομιλίας. Επιτρέψτε την στις Ρυθμίσεις."
           }
         }
       }
@@ -10704,6 +11334,12 @@
             "state" : "translated",
             "value" : "Talegenkendelsen mislykkedes. Prøv igen om lidt."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η αναγνώριση ομιλίας απέτυχε. Δοκιμάστε ξανά σε λίγο."
+          }
         }
       }
     },
@@ -10804,6 +11440,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nøgle"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κλειδί"
           }
         }
       }
@@ -10906,6 +11548,12 @@
             "state" : "translated",
             "value" : "Nøgle"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κλειδί"
+          }
         }
       }
     },
@@ -11006,6 +11654,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Koreansk talegenkendelse er ikke tilgængelig på denne enhed."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η αναγνώριση ομιλίας στα κορεατικά δεν είναι διαθέσιμη σε αυτή τη συσκευή."
           }
         }
       }
@@ -11108,6 +11762,12 @@
             "state" : "translated",
             "value" : "Få to takter ind i rammen, og tag billedet"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χωρέστε δύο μέτρα στο πλαίσιο και τραβήξτε"
+          }
         }
       }
     },
@@ -11208,6 +11868,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontakt via mail"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επικοινωνία μέσω email"
           }
         }
       }
@@ -11310,6 +11976,12 @@
             "state" : "translated",
             "value" : "Med øretelefoner kommer metronomen ikke ind i mikrofonen"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Με ακουστικά, ο μετρονόμος δεν περνά στο μικρόφωνο"
+          }
         }
       }
     },
@@ -11410,6 +12082,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram-DM (@lee25_ios)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μήνυμα στο Instagram (@lee25_ios)"
           }
         }
       }
@@ -11512,6 +12190,12 @@
             "state" : "translated",
             "value" : "Få en påmindelse om at øve a vista-sang på et tidspunkt, du selv vælger."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Λάβετε υπενθύμιση για εξάσκηση στην ανάγνωση με τη φωνή την ώρα που θα επιλέξετε."
+          }
         }
       }
     },
@@ -11612,6 +12296,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Automatisk nedskrivning (eksperiment)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτόματη μεταγραφή (πειραματικό)"
           }
         }
       }
@@ -11714,6 +12404,12 @@
             "state" : "translated",
             "value" : "Sådan får du det bedste resultat"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Για καλύτερα αποτελέσματα"
+          }
         }
       }
     },
@@ -11814,6 +12510,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Afspilningshjælp"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Βοηθήματα αναπαραγωγής"
           }
         }
       }
@@ -11916,6 +12618,12 @@
             "state" : "translated",
             "value" : "Ryd alt"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Εκκαθάριση όλων"
+          }
         }
       }
     },
@@ -12016,6 +12724,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Punkteret %@"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ με τελεία"
           }
         }
       }
@@ -12118,6 +12832,12 @@
             "state" : "translated",
             "value" : "Titel"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τίτλος"
+          }
         }
       }
     },
@@ -12218,6 +12938,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fortegn"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οπλισμός"
           }
         }
       }
@@ -12320,6 +13046,12 @@
             "state" : "translated",
             "value" : "Fortegn"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οπλισμός"
+          }
         }
       }
     },
@@ -12420,6 +13152,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gør klar"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ετοιμαστείτε"
           }
         }
       }
@@ -12522,6 +13260,12 @@
             "state" : "translated",
             "value" : "Support"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Υποστήριξη"
+          }
         }
       }
     },
@@ -12622,6 +13366,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Slet referencebillede"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαγραφή φωτογραφίας αναφοράς"
           }
         }
       }
@@ -12724,6 +13474,12 @@
             "state" : "translated",
             "value" : "Nedskriv"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μεταγραφή"
+          }
         }
       }
     },
@@ -12824,6 +13580,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "En hurtig introduktion til nye brugere"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μια σύντομη ξενάγηση για νέους χρήστες"
           }
         }
       }
@@ -12926,6 +13688,12 @@
             "state" : "translated",
             "value" : "En kort introduktion til, hvad du kan, første gang du åbner appen."
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μια σύντομη εισαγωγή σε ό,τι μπορείτε να κάνετε, την πρώτη φορά που ανοίγετε την εφαρμογή."
+          }
         }
       }
     },
@@ -13026,6 +13794,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annuller"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ακύρωση"
           }
         }
       }
@@ -13128,6 +13902,12 @@
             "state" : "translated",
             "value" : "Tag billede (tilpas til 2 takter)"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Λήψη φωτογραφίας (προσαρμογή σε 2 μέτρα)"
+          }
         }
       }
     },
@@ -13228,6 +14008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kameraet er ikke tilgængeligt.\nVælg i stedet et billede fra fotobiblioteket."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Η κάμερα δεν είναι διαθέσιμη.\nΕπιλέξτε μια φωτογραφία από τη βιβλιοθήκη."
           }
         }
       }
@@ -13330,6 +14116,12 @@
             "state" : "translated",
             "value" : "Optakt (en takt før start)"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προειδοποιητικό μέτρο (ένα μέτρο πριν την έναρξη)"
+          }
         }
       }
     },
@@ -13430,6 +14222,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Layout til større tekst"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διατάξεις για μεγαλύτερο κείμενο"
           }
         }
       }
@@ -13532,6 +14330,12 @@
             "state" : "translated",
             "value" : "Sæt ind fra udklipsholder"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Επικόλληση από το πρόχειρο"
+          }
         }
       }
     },
@@ -13632,6 +14436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τέμπο"
           }
         }
       }
@@ -13734,6 +14544,12 @@
             "state" : "translated",
             "value" : "Layout til foldbar iPhone"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διάταξη για αναδιπλούμενο iPhone"
+          }
         }
       }
     },
@@ -13834,6 +14650,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Brug den brede skærm på en foldbar iPhone som to ruder side om side."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Χρησιμοποιήστε τη μεγάλη οθόνη ενός αναδιπλούμενου iPhone ως δύο πάνελ δίπλα-δίπλα."
           }
         }
       }
@@ -13936,6 +14758,12 @@
             "state" : "translated",
             "value" : "Sig én node ad gangen, tydeligt og lige på slaget"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πείτε μία νότα τη φορά, καθαρά και ακριβώς στο χτύπημα"
+          }
         }
       }
     },
@@ -14036,6 +14864,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kopiér de nuværende noder som tekst (som eksempel til AI)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αντιγραφή της τρέχουσας παρτιτούρας ως κείμενο (ως παράδειγμα για το AI)"
           }
         }
       }
@@ -14138,6 +14972,12 @@
             "state" : "translated",
             "value" : "Hjemmeskærmswidgets"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget Αρχικής οθόνης"
+          }
         }
       }
     },
@@ -14238,6 +15078,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver læser hver knap og node op i den rigtige rækkefølge."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το VoiceOver διαβάζει κάθε κουμπί και κάθε νότα, με τη σωστή σειρά."
           }
         }
       }
@@ -14340,6 +15186,12 @@
             "state" : "translated",
             "value" : "Akkord"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συγχορδία"
+          }
         }
       }
     },
@@ -14441,6 +15293,12 @@
             "state" : "translated",
             "value" : "Akkordtilstand: noder lægges oven på den valgte node"
           }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Λειτουργία συγχορδίας: οι νότες στοιβάζονται πάνω στην επιλεγμένη νότα"
+          }
         }
       }
     },
@@ -14538,6 +15396,12 @@
           }
         },
         "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "el" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
