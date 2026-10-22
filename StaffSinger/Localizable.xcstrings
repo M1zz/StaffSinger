@@ -45,6 +45,12 @@
             "state" : "translated",
             "value" : "\nНоты за пределами второго такта могут не отображаться на экране."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nLas notas más allá del segundo compás pueden no verse en pantalla."
+          }
         }
       }
     },
@@ -91,6 +97,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "«%@» — названий нот здесь не найдено.\nГоворите 도 레 미 파 솔 라 시."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "«%@»: no se encontraron nombres de notas.\nDi 도 레 미 파 솔 라 시."
           }
         }
       }
@@ -139,6 +151,12 @@
             "state" : "translated",
             "value" : "%@ · Слушаю"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Escuchando"
+          }
         }
       }
     },
@@ -185,6 +203,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ мажор (♭%lld)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ mayor (♭%lld)"
           }
         }
       }
@@ -233,6 +257,12 @@
             "state" : "translated",
             "value" : "%@ мажор (♯%lld)"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ mayor (♯%lld)"
+          }
         }
       }
     },
@@ -279,6 +309,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Записано нот: %lld"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notas dictadas: %lld"
           }
         }
       }
@@ -327,6 +363,12 @@
             "state" : "translated",
             "value" : "Записано нот: %lld.\nЕсли высота или длительность неверны, перетащите ноту, чтобы исправить."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notas dictadas: %lld.\nSi alguna altura o duración no es correcta, arrastra la nota para corregirla."
+          }
         }
       }
     },
@@ -373,6 +415,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Загружено нот: %lld."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notas importadas: %lld."
           }
         }
       }
@@ -421,6 +469,12 @@
             "state" : "translated",
             "value" : "Распознано нот: %lld (эксперимент).\nПроверьте высоту и длительность и поправьте вручную."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notas reconocidas: %lld (experimental).\nRevisa las alturas y duraciones y corrígelas a mano."
+          }
         }
       }
     },
@@ -468,6 +522,12 @@
             "state" : "translated",
             "value" : "Такт %lld, доля %lld"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compás %lld, pulso %lld"
+          }
         }
       }
     },
@@ -511,6 +571,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/16"
@@ -562,6 +628,12 @@
             "state" : "translated",
             "value" : "Шестнадцатая нота"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semicorchea"
+          }
         }
       }
     },
@@ -608,6 +680,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Половинная нота"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blanca"
           }
         }
       }
@@ -656,6 +734,12 @@
             "state" : "translated",
             "value" : "При скачках шире кварты говорите «높은 솔» (высокая соль) или «낮은 시» (низкая си)"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En saltos mayores que una cuarta, di «높은 솔» (sol agudo) o «낮은 시» (si grave)"
+          }
         }
       }
     },
@@ -699,6 +783,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/4"
@@ -750,6 +840,12 @@
             "state" : "translated",
             "value" : "Четвертная нота"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negra"
+          }
         }
       }
     },
@@ -793,6 +889,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/8"
@@ -844,6 +946,12 @@
             "state" : "translated",
             "value" : "Восьмая нота"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corchea"
+          }
         }
       }
     },
@@ -890,6 +998,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скопировать правило для ИИ"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiar regla para la IA"
           }
         }
       }
@@ -938,6 +1052,12 @@
             "state" : "translated",
             "value" : "Начинайте сразу — голосом через Siri или командой."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empieza al instante pidiéndoselo a Siri o con un atajo."
+          }
         }
       }
     },
@@ -984,6 +1104,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri и Команды"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri y Atajos"
           }
         }
       }
@@ -1032,6 +1158,12 @@
             "state" : "translated",
             "value" : "Улучшенная поддержка VoiceOver"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mejor compatibilidad con VoiceOver"
+          }
         }
       }
     },
@@ -1078,6 +1210,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@ долей"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@ pulsos"
           }
         }
       }
@@ -1126,6 +1264,12 @@
             "state" : "translated",
             "value" : "Альтовый ключ"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clave de do"
+          }
         }
       }
     },
@@ -1172,6 +1316,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Связаться с разработчиком"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contactar con el desarrollador"
           }
         }
       }
@@ -1220,6 +1370,12 @@
             "state" : "translated",
             "value" : "Сольфеджио под диктовку"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dictado de solfeo"
+          }
         }
       }
     },
@@ -1266,6 +1422,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Названия нот не распознаны. Произносите чётко «도 레 미» в такт метроному."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se entendió ningún nombre de nota. Prueba a decir «도 레 미» con claridad, al compás del metrónomo."
           }
         }
       }
@@ -1314,6 +1476,12 @@
             "state" : "translated",
             "value" : "Правило скопировано"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regla copiada"
+          }
         }
       }
     },
@@ -1360,6 +1528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "При увеличении шрифта экраны перестраиваются, ничего не обрезается."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Al agrandar el texto, las pantallas se reorganizan en lugar de cortarse."
           }
         }
       }
@@ -1408,6 +1582,12 @@
             "state" : "translated",
             "value" : "Распознавание корейской речи на устройстве не готово.\nВключите корейский в «Настройки ▸ Основные ▸ Клавиатура ▸ Диктовка» — нужные файлы загрузятся."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El reconocimiento de voz en coreano en el dispositivo no está listo.\nActiva el coreano en Ajustes ▸ General ▸ Teclado ▸ Dictado para que se descarguen los archivos necesarios."
+          }
         }
       }
     },
@@ -1454,6 +1634,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Басовый ключ"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clave de fa"
           }
         }
       }
@@ -1502,6 +1688,12 @@
             "state" : "translated",
             "value" : "Не удалось начать запись: %@"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo iniciar la grabación: %@"
+          }
         }
       }
     },
@@ -1548,6 +1740,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скрипичный ключ"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clave de sol"
           }
         }
       }
@@ -1596,6 +1794,12 @@
             "state" : "translated",
             "value" : "До мажор"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do mayor"
+          }
         }
       }
     },
@@ -1642,6 +1846,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "До мажор (без знаков)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do mayor (sin alteraciones)"
           }
         }
       }
@@ -1690,6 +1900,12 @@
             "state" : "translated",
             "value" : "Тёмная тема"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo oscuro"
+          }
         }
       }
     },
@@ -1736,6 +1952,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Закрыть"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cerrar"
           }
         }
       }
@@ -1784,6 +2006,12 @@
             "state" : "translated",
             "value" : "Всё остаётся читаемым при повышенной контрастности и при трудностях с различением цветов."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todo se lee bien, incluso con Aumentar contraste o si cuesta distinguir los colores."
+          }
         }
       }
     },
@@ -1830,6 +2058,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Использование приложения на других языках."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa la app en más idiomas."
           }
         }
       }
@@ -1878,6 +2112,12 @@
             "state" : "translated",
             "value" : "Больше языков"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Más idiomas"
+          }
         }
       }
     },
@@ -1924,6 +2164,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · пауза — «쉼»"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · di «쉼» para un silencio"
           }
         }
       }
@@ -1972,6 +2218,12 @@
             "state" : "translated",
             "value" : "Двигайте и масштабируйте пальцами, пока два такта не заполнят рамку"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pellizca y arrastra hasta que dos compases llenen el recuadro"
+          }
         }
       }
     },
@@ -2018,6 +2270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Что я услышал"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lo que oí"
           }
         }
       }
@@ -2066,6 +2324,12 @@
             "state" : "translated",
             "value" : "Привязка ритма"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajuste rítmico"
+          }
         }
       }
     },
@@ -2112,6 +2376,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Свободно"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libre"
           }
         }
       }
@@ -2160,6 +2430,12 @@
             "state" : "translated",
             "value" : "Требуется доступ к микрофону. Разрешите его в настройках."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se necesita permiso del micrófono. Permítelo en Ajustes."
+          }
         }
       }
     },
@@ -2206,6 +2482,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вход микрофона не найден."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se encontró entrada de micrófono."
           }
         }
       }
@@ -2254,6 +2536,12 @@
             "state" : "translated",
             "value" : "Сохраняйте ноты в файл и открывайте их позже."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guarda tus partituras en un archivo y ábrelas más tarde."
+          }
         }
       }
     },
@@ -2300,6 +2588,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Начать"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empezar a hablar"
           }
         }
       }
@@ -2348,6 +2642,12 @@
             "state" : "translated",
             "value" : "Учитывается только порядок слов. Все ноты ставятся четвертными — длительность поправите позже."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo se usa el orden en que hablaste. Todas las notas entran como negras; corrige las duraciones después."
+          }
         }
       }
     },
@@ -2394,6 +2694,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Каждый звук привязывается к ближайшей позиции ноты %@."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajusta cada momento hablado a la posición de nota %@ más cercana."
           }
         }
       }
@@ -2442,6 +2748,12 @@
             "state" : "translated",
             "value" : "Стоп"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Detener"
+          }
         }
       }
     },
@@ -2488,6 +2800,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Метроном (щелчок на долю)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metrónomo (clic de pulso)"
           }
         }
       }
@@ -2536,6 +2854,12 @@
             "state" : "translated",
             "value" : "Выключить метроном"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desactivar metrónomo"
+          }
         }
       }
     },
@@ -2582,6 +2906,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Отсчитайте четыре доли метронома и называйте ноты в такт."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tras cuatro pulsos del metrónomo, di los nombres de las notas al compás."
           }
         }
       }
@@ -2630,6 +2960,12 @@
             "state" : "translated",
             "value" : "Включить метроном"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activar metrónomo"
+          }
         }
       }
     },
@@ -2676,6 +3012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Все ноты остаются в начальной октаве."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todas las notas se quedan en la octava inicial."
           }
         }
       }
@@ -2724,6 +3066,12 @@
             "state" : "translated",
             "value" : "Размер"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compás"
+          }
         }
       }
     },
@@ -2770,6 +3118,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Размер"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compás"
           }
         }
       }
@@ -2818,6 +3172,12 @@
             "state" : "translated",
             "value" : "Сообщения об ошибках и идеи новых функций приветствуются."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se agradecen los reportes de errores y las ideas de funciones."
+          }
         }
       }
     },
@@ -2864,6 +3224,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Удобные цвета и контраст"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colores y contraste más cómodos"
           }
         }
       }
@@ -2912,6 +3278,12 @@
             "state" : "translated",
             "value" : "В вставленном тексте не найдено нот.\nПроверьте, соответствует ли он правилу (например, 4옥도8분음)."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se encontraron notas en el texto pegado.\nComprueba que siga la regla (p. ej., 4옥도8분음)."
+          }
         }
       }
     },
@@ -2958,6 +3330,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Если слишком быстро, снизьте темп (сейчас %lld уд/мин)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si va muy rápido, baja el tempo (ahora %lld BPM)"
           }
         }
       }
@@ -3006,6 +3384,12 @@
             "state" : "translated",
             "value" : "Использовать"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usar"
+          }
         }
       }
     },
@@ -3052,6 +3436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выбрать из медиатеки"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elegir de la fototeca"
           }
         }
       }
@@ -3100,6 +3490,12 @@
             "state" : "translated",
             "value" : "Новые ноты"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partitura nueva"
+          }
         }
       }
     },
@@ -3146,6 +3542,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Настройки"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes"
           }
         }
       }
@@ -3194,6 +3596,12 @@
             "state" : "translated",
             "value" : "Триоль: %@"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tresillo de %@"
+          }
         }
       }
     },
@@ -3240,6 +3648,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Режим триолей: три ноты занимают одну долю (или две)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo tresillo: tres notas comparten un pulso (o dos)"
           }
         }
       }
@@ -3288,6 +3702,12 @@
             "state" : "translated",
             "value" : "Триоль с точкой: %@"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tresillo con puntillo: %@"
+          }
         }
       }
     },
@@ -3334,6 +3754,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Режим пауз: нажмите нужную длительность, чтобы вставить паузу"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo silencio: toca una duración para insertar un silencio"
           }
         }
       }
@@ -3382,6 +3808,12 @@
             "state" : "translated",
             "value" : "Начальная октава  %lld"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Octava inicial  %lld"
+          }
         }
       }
     },
@@ -3428,6 +3860,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Полезные подсказки"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consejos útiles"
           }
         }
       }
@@ -3476,6 +3914,12 @@
             "state" : "translated",
             "value" : "Продолжайте с того места, где остановились"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retoma tu partitura donde la dejaste"
+          }
         }
       }
     },
@@ -3522,6 +3966,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Проверьте ниже и нажмите «Добавить в ноты»"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revísalas abajo y toca «Añadir a la partitura»"
           }
         }
       }
@@ -3570,6 +4020,12 @@
             "state" : "translated",
             "value" : "Вставка нот"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pegar partitura"
+          }
         }
       }
     },
@@ -3616,6 +4072,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Фото нот"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto de la partitura"
           }
         }
       }
@@ -3664,6 +4126,12 @@
             "state" : "translated",
             "value" : "Отдайте фото нот ИИ, попросите записать их по правилу ниже, а полученный текст вставьте сюда — он заполнит нотный стан."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dale a una IA la foto de la partitura, pídele que la escriba con la regla de abajo y pega el texto que te devuelva para llenar el pentagrama."
+          }
         }
       }
     },
@@ -3710,6 +4178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сохранение и экспорт нот"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardar y exportar partituras"
           }
         }
       }
@@ -3758,6 +4232,12 @@
             "state" : "translated",
             "value" : "Название нот"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Título de la partitura"
+          }
         }
       }
     },
@@ -3804,6 +4284,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Преобразовать в ноты"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Convertir en partitura"
           }
         }
       }
@@ -3852,6 +4338,12 @@
             "state" : "translated",
             "value" : "Не удалось распознать ноты. Лучше всего работают чёткая печать, одна строка и снимок прямо перед нотами."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo leer la partitura. Funciona mejor con música impresa nítida, una sola línea y una foto de frente."
+          }
         }
       }
     },
@@ -3898,6 +4390,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Добавить в ноты"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Añadir a la partitura"
           }
         }
       }
@@ -3946,6 +4444,12 @@
             "state" : "translated",
             "value" : "Ноты для добавления"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notas por añadir"
+          }
         }
       }
     },
@@ -3992,6 +4496,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ненавязчивые подсказки о полезных функциях — в нужный момент."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sugerencias discretas sobre funciones útiles, justo cuando las necesitas."
           }
         }
       }
@@ -4040,6 +4550,12 @@
             "state" : "translated",
             "value" : "Выбирается октава, ближайшая к предыдущей ноте, поэтому «시 도» поднимается на полутон."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elige la octava más cercana a la nota anterior, así que «시 도» sube un semitono."
+          }
         }
       }
     },
@@ -4086,6 +4602,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Начинайте занятие прямо с экрана «Домой», не открывая приложение."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empieza a practicar desde la pantalla de inicio, sin abrir la app."
           }
         }
       }
@@ -4134,6 +4656,12 @@
             "state" : "translated",
             "value" : "Всё приложение — и на английском."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa toda la app en inglés."
+          }
         }
       }
     },
@@ -4180,6 +4708,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ваши ноты остаются как были, даже если приложение закрылось."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu partitura se queda como la dejaste, aunque la app se cierre."
           }
         }
       }
@@ -4228,6 +4762,12 @@
             "state" : "translated",
             "value" : "Ноты и кнопки остаются чёткими и в тёмной теме."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las partituras y los botones se ven nítidos en modo oscuro."
+          }
         }
       }
     },
@@ -4274,6 +4814,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "При первом запуске после обновления вы увидите, что нового."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La primera vez que abras la app tras una actualización, verás las novedades."
           }
         }
       }
@@ -4322,6 +4868,12 @@
             "state" : "translated",
             "value" : "Что нового"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novedades"
+          }
         }
       }
     },
@@ -4368,6 +4920,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вставьте сюда"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pega aquí"
           }
         }
       }
@@ -4416,6 +4974,12 @@
             "state" : "translated",
             "value" : "Напоминания о занятиях"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recordatorios de práctica"
+          }
         }
       }
     },
@@ -4462,6 +5026,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Поддержка английского"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Compatibilidad total con inglés"
           }
         }
       }
@@ -4510,6 +5080,12 @@
             "state" : "translated",
             "value" : "Например: 4옥도4분음 4옥레4분음 4옥미8분음 …"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "p. ej. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
         }
       }
     },
@@ -4556,6 +5132,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Показывать справа"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar a la derecha"
           }
         }
       }
@@ -4604,6 +5186,12 @@
             "state" : "translated",
             "value" : "Нажмите и удерживайте нотный стан, выберите высоту и отпустите — нота добавится"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantén pulsado el pentagrama para elegir la altura y suelta para añadir la nota"
+          }
         }
       }
     },
@@ -4650,6 +5238,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Октава автоматически"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Octava automática"
           }
         }
       }
@@ -4698,6 +5292,12 @@
             "state" : "translated",
             "value" : "Целая нота"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redonda"
+          }
         }
       }
     },
@@ -4744,6 +5344,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listo"
           }
         }
       }
@@ -4792,6 +5398,12 @@
             "state" : "translated",
             "value" : "Показывать слева"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar a la izquierda"
+          }
         }
       }
     },
@@ -4838,6 +5450,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Уменьшение движения"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reducir movimiento"
           }
         }
       }
@@ -4886,6 +5504,12 @@
             "state" : "translated",
             "value" : "Если включить «Уменьшение движения», эффекты на экране станут спокойнее."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con Reducir movimiento activado, los efectos de pantalla se calman."
+          }
         }
       }
     },
@@ -4932,6 +5556,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Требуется доступ к распознаванию речи. Разрешите его в настройках."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se necesita permiso de reconocimiento de voz. Permítelo en Ajustes."
           }
         }
       }
@@ -4980,6 +5610,12 @@
             "state" : "translated",
             "value" : "Не удалось распознать речь. Повторите попытку чуть позже."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Falló el reconocimiento de voz. Inténtalo de nuevo en un momento."
+          }
         }
       }
     },
@@ -5026,6 +5662,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ключ"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clave"
           }
         }
       }
@@ -5074,6 +5716,12 @@
             "state" : "translated",
             "value" : "Ключ"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clave"
+          }
         }
       }
     },
@@ -5120,6 +5768,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "На этом устройстве недоступно распознавание корейской речи."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El reconocimiento de voz en coreano no está disponible en este dispositivo."
           }
         }
       }
@@ -5168,6 +5822,12 @@
             "state" : "translated",
             "value" : "Уместите два такта в рамку и снимайте"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encuadra dos compases en este recuadro y dispara"
+          }
         }
       }
     },
@@ -5214,6 +5874,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Написать на почту"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contactar por correo"
           }
         }
       }
@@ -5262,6 +5928,12 @@
             "state" : "translated",
             "value" : "В наушниках метроном не попадает в микрофон"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con auriculares, el metrónomo no se cuela en el micrófono"
+          }
         }
       }
     },
@@ -5308,6 +5980,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram DM (@lee25_ios)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "MD de Instagram (@lee25_ios)"
           }
         }
       }
@@ -5356,6 +6034,12 @@
             "state" : "translated",
             "value" : "Напоминание о пении с листа в выбранное вами время."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recibe un recordatorio para practicar la lectura cantada a la hora que elijas."
+          }
         }
       }
     },
@@ -5402,6 +6086,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Автораспознавание (эксперимент)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transcripción automática (experimental)"
           }
         }
       }
@@ -5450,6 +6140,12 @@
             "state" : "translated",
             "value" : "Чтобы распознавание работало лучше"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para mejores resultados"
+          }
         }
       }
     },
@@ -5496,6 +6192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Помощь при воспроизведении"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayuda de reproducción"
           }
         }
       }
@@ -5544,6 +6246,12 @@
             "state" : "translated",
             "value" : "Очистить всё"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Borrar todo"
+          }
         }
       }
     },
@@ -5590,6 +6298,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "С точкой: %@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ con puntillo"
           }
         }
       }
@@ -5638,6 +6352,12 @@
             "state" : "translated",
             "value" : "Название"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Título"
+          }
         }
       }
     },
@@ -5684,6 +6404,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Тональность"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Armadura"
           }
         }
       }
@@ -5732,6 +6458,12 @@
             "state" : "translated",
             "value" : "Тональность"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Armadura"
+          }
         }
       }
     },
@@ -5778,6 +6510,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Приготовьтесь"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prepárate"
           }
         }
       }
@@ -5826,6 +6564,12 @@
             "state" : "translated",
             "value" : "Поддержка"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soporte"
+          }
         }
       }
     },
@@ -5872,6 +6616,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Удалить опорное фото"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eliminar foto de referencia"
           }
         }
       }
@@ -5920,6 +6670,12 @@
             "state" : "translated",
             "value" : "Распознать"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transcribir"
+          }
         }
       }
     },
@@ -5966,6 +6722,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Краткое знакомство для новичков"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un recorrido rápido para nuevos usuarios"
           }
         }
       }
@@ -6014,6 +6776,12 @@
             "state" : "translated",
             "value" : "Короткий рассказ о возможностях при первом запуске."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una breve introducción a lo que puedes hacer, la primera vez que abres la app."
+          }
         }
       }
     },
@@ -6060,6 +6828,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Отмена"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancelar"
           }
         }
       }
@@ -6108,6 +6882,12 @@
             "state" : "translated",
             "value" : "Снять фото (по рамке в 2 такта)"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tomar foto (ajustar a 2 compases)"
+          }
         }
       }
     },
@@ -6154,6 +6934,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Камера недоступна.\nВыберите фото из медиатеки."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La cámara no está disponible.\nElige una foto de tu fototeca."
           }
         }
       }
@@ -6202,6 +6988,12 @@
             "state" : "translated",
             "value" : "Вступительный отсчёт (один такт перед стартом)"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuenta previa (un compás antes de empezar)"
+          }
         }
       }
     },
@@ -6248,6 +7040,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Экраны для крупного шрифта"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diseños para texto más grande"
           }
         }
       }
@@ -6296,6 +7094,12 @@
             "state" : "translated",
             "value" : "Вставить из буфера"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pegar del portapapeles"
+          }
         }
       }
     },
@@ -6342,6 +7146,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Темп"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo"
           }
         }
       }
@@ -6390,6 +7200,12 @@
             "state" : "translated",
             "value" : "Экран для складного iPhone"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diseño para iPhone plegable"
+          }
         }
       }
     },
@@ -6436,6 +7252,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Широкий экран складного iPhone делится на две панели рядом."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa la pantalla ancha de un iPhone plegable como dos paneles lado a lado."
           }
         }
       }
@@ -6484,6 +7306,12 @@
             "state" : "translated",
             "value" : "Называйте по одной ноте, чётко и точно в долю"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di una nota cada vez, con claridad y justo en el pulso"
+          }
         }
       }
     },
@@ -6530,6 +7358,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скопировать текущие ноты текстом (как пример для ИИ)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiar la partitura actual como texto (como ejemplo para la IA)"
           }
         }
       }
@@ -6578,6 +7412,12 @@
             "state" : "translated",
             "value" : "Виджеты на экране «Домой»"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widgets de la pantalla de inicio"
+          }
         }
       }
     },
@@ -6624,6 +7464,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver читает каждую кнопку и ноту в правильном порядке."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver lee cada botón y cada nota, en el orden correcto."
           }
         }
       }
@@ -6672,6 +7518,12 @@
             "state" : "translated",
             "value" : "Аккорд"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acorde"
+          }
         }
       }
     },
@@ -6719,6 +7571,12 @@
             "state" : "translated",
             "value" : "Режим аккордов: ноты накладываются на выбранную"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo acorde: las notas se apilan sobre la nota seleccionada"
+          }
         }
       }
     },
@@ -6762,6 +7620,12 @@
           }
         },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "es" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"

@@ -384,3 +384,58 @@ StaffSinger переносит трудные два такта на нотны�
 Сфотографируйте ноты, по которым играете, и держите снимок на экране, пока переписываете их.
 
 Пригодится в хоре, на уроках музыки и при подготовке к поступлению в музыкальное училище — везде, где нужно быстро читать ноты.
+
+## es-MX
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger: A primera vista
+
+### 부제
+
+Escucha lo que escribes
+
+### 키워드
+
+solfeo,teoría musical,pentagrama,partitura,coro,piano,acorde,metrónomo,dictado,clases,canto,notas
+
+### 프로모션 텍스트
+
+¿Una partitura nueva con ritmos y acordes difíciles? Toca notas en el pentagrama y escúchalas con metrónomo y cuenta previa.
+
+### 설명
+
+No cuentes una partitura nueva solo en la cabeza. Escúchala.
+StaffSinger copia en un pentagrama los dos compases que te confunden y los reproduce con el ritmo y la altura exactos.
+
+Toca el pentagrama o usa el teclado
+Mantén pulsado el pentagrama para elegir la altura, o toca el teclado de piano de dos octavas para añadir una nota. Elige entre redondas y semicorcheas, notas con puntillo, tresillos y silencios, y borra la última nota con un solo toque.
+
+Reproduce con metrónomo
+Tras la cuenta previa, la partitura suena al clic del metrónomo y la nota que suena se resalta en color. El tempo y el compás se cambian en Ajustes.
+
+Acordes y varias voces
+Apila notas en el mismo pulso para formar un acorde y separa la música en voces. Admite armaduras y las claves de sol, de do y de fa.
+
+Dictado de solfeo
+Di los nombres de las notas al ritmo del metrónomo y pasan al pentagrama como notas. Si hablas justo en el pulso, también se registra el ritmo. El dictado reconoce las sílabas del solfeo en coreano, y el reconocimiento de voz se hace por completo en tu dispositivo.
+
+Pega una partitura como texto
+Pega un texto escrito con un formato fijo y el pentagrama se llena. Copia la regla, pásasela a una IA junto con la foto de tu partitura y pega lo que te devuelva.
+
+Foto de referencia
+Haz una foto de la partitura que estás leyendo y déjala en pantalla para compararla mientras la copias.
+
+Tenla a mano para el coro, las clases de instrumento o la preparación de pruebas de acceso a música: siempre que necesites leer música rápido.

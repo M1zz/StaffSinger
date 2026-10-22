@@ -45,6 +45,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -91,6 +97,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger использует камеру, чтобы сфотографировать ноты и загрузить снимок как опорное изображение."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger usa la cámara para tomar una foto de una partitura y cargarla como imagen de referencia."
           }
         }
       }
@@ -139,6 +151,12 @@
             "state" : "translated",
             "value" : "StaffSinger использует микрофон, чтобы превращать названные вами ноты в ноты на нотном стане. Звук обрабатывается только на устройстве и не сохраняется."
           }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger usa el micrófono para convertir en notas del pentagrama los nombres de notas que dices. El audio se procesa solo en este dispositivo y nunca se guarda."
+          }
         }
       }
     },
@@ -185,6 +203,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger использует распознавание речи, чтобы превращать названные вами ноты в нотные знаки. Распознавание выполняется только на устройстве."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger usa el reconocimiento de voz para convertir en notas los nombres de notas que dices. El reconocimiento se hace solo en este dispositivo."
           }
         }
       }
