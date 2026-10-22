@@ -81,6 +81,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -163,6 +169,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger ใช้กล้องเพื่อถ่ายภาพโน้ตและโหลดเป็นภาพอ้างอิง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger dùng máy ảnh để chụp ảnh bản nhạc và tải làm ảnh tham chiếu."
           }
         }
       }
@@ -247,6 +259,12 @@
             "state" : "translated",
             "value" : "StaffSinger ใช้ไมโครโฟนเพื่อเปลี่ยนชื่อตัวโน้ตที่คุณพูดให้เป็นตัวโน้ตบนบรรทัดห้าเส้น เสียงจะประมวลผลบนอุปกรณ์นี้เท่านั้นและจะไม่ถูกบันทึก"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger dùng micrô để chuyển tên nốt bạn nói thành nốt trên khuông nhạc. Âm thanh chỉ được xử lý trên thiết bị này và không bao giờ được lưu."
+          }
         }
       }
     },
@@ -329,6 +347,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger ใช้การรู้จำเสียงเพื่อเปลี่ยนชื่อตัวโน้ตที่คุณพูดให้เป็นตัวโน้ต การรู้จำเสียงทำงานบนอุปกรณ์นี้เท่านั้น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger dùng tính năng nhận dạng giọng nói để chuyển tên nốt bạn nói thành nốt nhạc. Việc nhận dạng chỉ diễn ra trên thiết bị này."
           }
         }
       }

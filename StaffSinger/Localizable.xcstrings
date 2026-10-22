@@ -81,6 +81,12 @@
             "state" : "translated",
             "value" : "\nโน้ตที่เกินห้องที่สองอาจไม่แสดงบนหน้าจอ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nCác nốt sau ô nhịp thứ hai có thể không hiện trên màn hình."
+          }
         }
       }
     },
@@ -163,6 +169,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "“%@” — ไม่พบชื่อตัวโน้ตในนี้\nโปรดพูดว่า 도 레 미 파 솔 라 시"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” — không tìm thấy tên nốt trong đó.\nHãy nói 도 레 미 파 솔 라 시."
           }
         }
       }
@@ -247,6 +259,12 @@
             "state" : "translated",
             "value" : "%@ · กำลังฟัง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Đang nghe"
+          }
         }
       }
     },
@@ -329,6 +347,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ เมเจอร์ (♭%lld)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ trưởng (♭%lld)"
           }
         }
       }
@@ -413,6 +437,12 @@
             "state" : "translated",
             "value" : "%@ เมเจอร์ (♯%lld)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ trưởng (♯%lld)"
+          }
         }
       }
     },
@@ -495,6 +525,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "โน้ตที่จดได้: %lld"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Số nốt đã chép: %lld"
           }
         }
       }
@@ -579,6 +615,12 @@
             "state" : "translated",
             "value" : "โน้ตที่จดได้: %lld\nถ้าเสียงสูงต่ำหรือความยาวไม่ตรง ให้ลากโน้ตเพื่อแก้ไข"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Số nốt đã chép: %lld.\nNếu cao độ hoặc độ dài chưa đúng, hãy kéo nốt để sửa."
+          }
         }
       }
     },
@@ -661,6 +703,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "นำเข้าโน้ตแล้ว: %lld"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Số nốt đã nhập: %lld."
           }
         }
       }
@@ -745,6 +793,12 @@
             "state" : "translated",
             "value" : "จดจำโน้ตได้: %lld ตัว (ทดลอง)\nโปรดตรวจเสียงสูงต่ำและความยาวด้วยตัวเอง แล้วแก้ไข"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Số nốt nhận dạng được: %lld (thử nghiệm).\nHãy tự kiểm tra cao độ và độ dài rồi sửa lại."
+          }
         }
       }
     },
@@ -828,6 +882,12 @@
             "state" : "translated",
             "value" : "ห้อง %lld จังหวะ %lld"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ô nhịp %lld, phách %lld"
+          }
         }
       }
     },
@@ -907,6 +967,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/16"
@@ -994,6 +1060,12 @@
             "state" : "translated",
             "value" : "โน้ตเขบ็ตสองชั้น"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nốt kép"
+          }
         }
       }
     },
@@ -1076,6 +1148,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "โน้ตตัวขาว"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nốt trắng"
           }
         }
       }
@@ -1160,6 +1238,12 @@
             "state" : "translated",
             "value" : "ถ้าโน้ตกระโดดเกินคู่สี่ ให้พูดว่า “높은 솔” (ซอลสูง) หรือ “낮은 시” (ทีต่ำ)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khi nhảy quãng rộng hơn quãng bốn, hãy nói “높은 솔” (sol cao) hoặc “낮은 시” (si thấp)"
+          }
         }
       }
     },
@@ -1239,6 +1323,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/4"
@@ -1326,6 +1416,12 @@
             "state" : "translated",
             "value" : "โน้ตตัวดำ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nốt đen"
+          }
         }
       }
     },
@@ -1405,6 +1501,12 @@
           }
         },
         "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/8"
@@ -1492,6 +1594,12 @@
             "state" : "translated",
             "value" : "โน้ตเขบ็ตหนึ่งชั้น"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nốt đơn"
+          }
         }
       }
     },
@@ -1574,6 +1682,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "คัดลอกกฎให้ AI"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sao chép quy tắc cho AI"
           }
         }
       }
@@ -1658,6 +1772,12 @@
             "state" : "translated",
             "value" : "เริ่มได้ทันทีด้วยการบอก Siri หรือสั่งผ่านคำสั่งลัด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bắt đầu ngay bằng cách nói với Siri hoặc chạy phím tắt."
+          }
         }
       }
     },
@@ -1740,6 +1860,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri และคำสั่งลัด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri và Phím tắt"
           }
         }
       }
@@ -1824,6 +1950,12 @@
             "state" : "translated",
             "value" : "VoiceOver ที่ใช้ง่ายขึ้น"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver dễ dùng hơn"
+          }
         }
       }
     },
@@ -1906,6 +2038,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@ จังหวะ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@ phách"
           }
         }
       }
@@ -1990,6 +2128,12 @@
             "state" : "translated",
             "value" : "กุญแจซี"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khóa Đô"
+          }
         }
       }
     },
@@ -2072,6 +2216,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ติดต่อผู้พัฒนา"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liên hệ nhà phát triển"
           }
         }
       }
@@ -2156,6 +2306,12 @@
             "state" : "translated",
             "value" : "เขียนโน้ตตามเสียงโซลเฟจ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chép nhạc theo xướng âm"
+          }
         }
       }
     },
@@ -2238,6 +2394,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ฟังชื่อตัวโน้ตไม่ออก ลองพูดว่า “도 레 미” ให้ชัดเจนตามจังหวะเมโทรนอม"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không nghe ra tên nốt nào. Hãy thử nói rõ “도 레 미” đúng nhịp với máy đếm nhịp."
           }
         }
       }
@@ -2322,6 +2484,12 @@
             "state" : "translated",
             "value" : "คัดลอกกฎแล้ว"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã sao chép quy tắc"
+          }
         }
       }
     },
@@ -2404,6 +2572,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เมื่อขยายขนาดตัวอักษร หน้าจอจะจัดเรียงใหม่แทนที่จะถูกตัด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khi phóng to chữ, màn hình tự sắp xếp lại thay vì bị cắt mất."
           }
         }
       }
@@ -2488,6 +2662,12 @@
             "state" : "translated",
             "value" : "การรู้จำเสียงภาษาเกาหลีบนอุปกรณ์ยังไม่พร้อม\nเปิดภาษาเกาหลีที่การตั้งค่า ▸ ทั่วไป ▸ คีย์บอร์ด ▸ การป้อนด้วยเสียง เพื่อดาวน์โหลดไฟล์ที่จำเป็น"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhận dạng giọng nói tiếng Hàn trên thiết bị chưa sẵn sàng.\nBật tiếng Hàn tại Cài đặt ▸ Cài đặt chung ▸ Bàn phím ▸ Đọc chính tả để tải các tệp cần thiết."
+          }
         }
       }
     },
@@ -2570,6 +2750,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "กุญแจเอฟ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khóa Fa"
           }
         }
       }
@@ -2654,6 +2840,12 @@
             "state" : "translated",
             "value" : "เริ่มบันทึกเสียงไม่ได้: %@"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không thể bắt đầu ghi âm: %@"
+          }
         }
       }
     },
@@ -2736,6 +2928,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "กุญแจซอล"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khóa Sol"
           }
         }
       }
@@ -2820,6 +3018,12 @@
             "state" : "translated",
             "value" : "ซีเมเจอร์"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đô trưởng"
+          }
         }
       }
     },
@@ -2902,6 +3106,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ซีเมเจอร์ (ไม่มีเครื่องหมายแปลงเสียง)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đô trưởng (không có dấu hóa)"
           }
         }
       }
@@ -2986,6 +3196,12 @@
             "state" : "translated",
             "value" : "โหมดมืด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chế độ tối"
+          }
         }
       }
     },
@@ -3068,6 +3284,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ปิด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đóng"
           }
         }
       }
@@ -3152,6 +3374,12 @@
             "state" : "translated",
             "value" : "ทุกอย่างยังอ่านได้ แม้เปิดเพิ่มคอนทราสต์หรือแยกสีได้ยาก"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mọi thứ vẫn dễ đọc, kể cả khi bật Tăng độ tương phản hoặc khó phân biệt màu."
+          }
         }
       }
     },
@@ -3234,6 +3462,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ใช้แอปได้หลายภาษามากขึ้น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dùng ứng dụng bằng nhiều ngôn ngữ hơn."
           }
         }
       }
@@ -3318,6 +3552,12 @@
             "state" : "translated",
             "value" : "ภาษาเพิ่มเติม"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm ngôn ngữ"
+          }
         }
       }
     },
@@ -3400,6 +3640,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · ถ้าเป็นตัวหยุดให้พูดว่า “쉼”"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · nói “쉼” cho dấu lặng"
           }
         }
       }
@@ -3484,6 +3730,12 @@
             "state" : "translated",
             "value" : "ใช้นิ้วย่อ/ขยายและลากจนสองห้องเต็มกรอบ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dùng ngón tay phóng to và kéo cho đến khi hai ô nhịp vừa khung"
+          }
         }
       }
     },
@@ -3566,6 +3818,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "สิ่งที่ได้ยิน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Những gì đã nghe"
           }
         }
       }
@@ -3650,6 +3908,12 @@
             "state" : "translated",
             "value" : "ปรับจังหวะให้ตรง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Căn nhịp"
+          }
         }
       }
     },
@@ -3732,6 +3996,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "อิสระ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tự do"
           }
         }
       }
@@ -3816,6 +4086,12 @@
             "state" : "translated",
             "value" : "ต้องได้รับอนุญาตให้ใช้ไมโครโฟน โปรดอนุญาตในการตั้งค่า"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cần quyền dùng micrô. Hãy cho phép trong Cài đặt."
+          }
         }
       }
     },
@@ -3898,6 +4174,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ไม่พบอินพุตไมโครโฟน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không tìm thấy đầu vào micrô."
           }
         }
       }
@@ -3982,6 +4264,12 @@
             "state" : "translated",
             "value" : "บันทึกโน้ตเป็นไฟล์แล้วเปิดกลับมาใช้ภายหลังได้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lưu bản nhạc thành tệp và mở lại sau."
+          }
         }
       }
     },
@@ -4064,6 +4352,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เริ่มพูด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bắt đầu nói"
           }
         }
       }
@@ -4148,6 +4442,12 @@
             "state" : "translated",
             "value" : "ใช้เฉพาะลำดับที่พูดเท่านั้น โน้ตทุกตัวจะเป็นโน้ตตัวดำ แล้วค่อยแก้ความยาวทีหลัง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chỉ dùng thứ tự bạn nói. Mọi nốt đều thành nốt đen; hãy sửa độ dài sau."
+          }
         }
       }
     },
@@ -4230,6 +4530,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ปรับจังหวะที่พูดให้ตรงกับตำแหน่งโน้ต %@ ที่ใกล้ที่สุด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Căn mỗi thời điểm bạn nói vào vị trí nốt %@ gần nhất."
           }
         }
       }
@@ -4314,6 +4620,12 @@
             "state" : "translated",
             "value" : "หยุด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dừng"
+          }
         }
       }
     },
@@ -4396,6 +4708,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เมโทรนอม (เสียงคลิกตามจังหวะ)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Máy đếm nhịp (tiếng tích-tắc theo phách)"
           }
         }
       }
@@ -4480,6 +4798,12 @@
             "state" : "translated",
             "value" : "ปิดเมโทรนอม"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tắt máy đếm nhịp"
+          }
         }
       }
     },
@@ -4562,6 +4886,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "นับเมโทรนอมสี่จังหวะ แล้วพูดชื่อตัวโน้ตตามจังหวะ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sau bốn phách của máy đếm nhịp, hãy đọc tên nốt đúng nhịp."
           }
         }
       }
@@ -4646,6 +4976,12 @@
             "state" : "translated",
             "value" : "เปิดเมโทรนอม"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bật máy đếm nhịp"
+          }
         }
       }
     },
@@ -4728,6 +5064,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "โน้ตทุกตัวอยู่ในอ็อกเทฟเริ่มต้น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mọi nốt đều nằm trong quãng tám bắt đầu."
           }
         }
       }
@@ -4812,6 +5154,12 @@
             "state" : "translated",
             "value" : "อัตราจังหวะ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Số chỉ nhịp"
+          }
         }
       }
     },
@@ -4894,6 +5242,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "อัตราจังหวะ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Số chỉ nhịp"
           }
         }
       }
@@ -4978,6 +5332,12 @@
             "state" : "translated",
             "value" : "ยินดีรับรายงานข้อบกพร่องและข้อเสนอแนะฟีเจอร์"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chúng tôi luôn chào đón báo lỗi và đề xuất tính năng."
+          }
         }
       }
     },
@@ -5060,6 +5420,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "สีและคอนทราสต์ที่ดูสบายตา"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Màu sắc và độ tương phản dễ nhìn hơn"
           }
         }
       }
@@ -5144,6 +5510,12 @@
             "state" : "translated",
             "value" : "ไม่พบโน้ตในข้อความที่วาง\nโปรดตรวจว่าเป็นไปตามกฎหรือไม่ (เช่น 4옥도8분음)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không tìm thấy nốt nào trong văn bản đã dán.\nHãy kiểm tra xem có đúng quy tắc không (ví dụ: 4옥도8분음)."
+          }
         }
       }
     },
@@ -5226,6 +5598,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ถ้าเร็วเกินไป ให้ลดความเร็ว (ตอนนี้ %lld BPM)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nếu quá nhanh, hãy giảm tốc độ (hiện tại %lld BPM)"
           }
         }
       }
@@ -5310,6 +5688,12 @@
             "state" : "translated",
             "value" : "ใช้รูปนี้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dùng ảnh"
+          }
         }
       }
     },
@@ -5392,6 +5776,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เลือกจากคลังรูปภาพ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn từ thư viện ảnh"
           }
         }
       }
@@ -5476,6 +5866,12 @@
             "state" : "translated",
             "value" : "โน้ตใหม่"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bản nhạc mới"
+          }
         }
       }
     },
@@ -5558,6 +5954,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "การตั้งค่า"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt"
           }
         }
       }
@@ -5642,6 +6044,12 @@
             "state" : "translated",
             "value" : "ทริปเล็ต: %@"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nốt ba: %@"
+          }
         }
       }
     },
@@ -5724,6 +6132,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "โหมดทริปเล็ต: โน้ต 3 ตัวอยู่ในหนึ่งจังหวะ (หรือสองจังหวะ)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chế độ nốt ba: ba nốt chung một phách (hoặc hai phách)"
           }
         }
       }
@@ -5808,6 +6222,12 @@
             "state" : "translated",
             "value" : "ทริปเล็ตประจุด: %@"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nốt ba chấm dôi: %@"
+          }
         }
       }
     },
@@ -5890,6 +6310,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "โหมดตัวหยุด: แตะความยาวที่ต้องการเพื่อใส่ตัวหยุด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chế độ dấu lặng: chạm vào độ dài muốn chọn để chèn dấu lặng"
           }
         }
       }
@@ -5974,6 +6400,12 @@
             "state" : "translated",
             "value" : "อ็อกเทฟเริ่มต้น  %lld"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quãng tám bắt đầu  %lld"
+          }
         }
       }
     },
@@ -6056,6 +6488,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เคล็ดลับการใช้งาน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mẹo hữu ích"
           }
         }
       }
@@ -6140,6 +6578,12 @@
             "state" : "translated",
             "value" : "เขียนโน้ตต่อจากที่ค้างไว้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiếp tục bản nhạc đang viết dở"
+          }
         }
       }
     },
@@ -6222,6 +6666,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ตรวจสอบด้านล่าง แล้วแตะ “เพิ่มลงในโน้ต”"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiểm tra bên dưới rồi chạm “Thêm vào bản nhạc”"
           }
         }
       }
@@ -6306,6 +6756,12 @@
             "state" : "translated",
             "value" : "วางโน้ต"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dán bản nhạc"
+          }
         }
       }
     },
@@ -6388,6 +6844,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ภาพโน้ต"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ảnh bản nhạc"
           }
         }
       }
@@ -6472,6 +6934,12 @@
             "state" : "translated",
             "value" : "ส่งภาพโน้ตให้ AI แล้วให้เขียนตามกฎด้านล่าง จากนั้นวางข้อความที่ได้ โน้ตก็จะเข้าไปในบรรทัดห้าเส้น"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đưa ảnh bản nhạc cho AI, nhờ nó viết ra theo quy tắc bên dưới, rồi dán văn bản nhận được để điền vào khuông nhạc."
+          }
         }
       }
     },
@@ -6554,6 +7022,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "บันทึกและส่งออกโน้ต"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lưu và xuất bản nhạc"
           }
         }
       }
@@ -6638,6 +7112,12 @@
             "state" : "translated",
             "value" : "ชื่อโน้ต"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tên bản nhạc"
+          }
         }
       }
     },
@@ -6720,6 +7200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แปลงเป็นโน้ต"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chuyển thành bản nhạc"
           }
         }
       }
@@ -6804,6 +7290,12 @@
             "state" : "translated",
             "value" : "อ่านโน้ตไม่สำเร็จ โน้ตพิมพ์ที่คมชัด บรรทัดเดียว และถ่ายตรงด้านหน้าจะได้ผลดีที่สุด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không đọc được bản nhạc. Nhạc in rõ nét, một dòng và ảnh chụp thẳng sẽ cho kết quả tốt nhất."
+          }
         }
       }
     },
@@ -6886,6 +7378,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เพิ่มลงในโน้ต"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thêm vào bản nhạc"
           }
         }
       }
@@ -6970,6 +7468,12 @@
             "state" : "translated",
             "value" : "โน้ตที่จะเพิ่ม"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Các nốt sẽ thêm"
+          }
         }
       }
     },
@@ -7052,6 +7556,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แนะนำฟีเจอร์ที่มีประโยชน์เบา ๆ ในจังหวะที่เหมาะสม"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gợi ý nhẹ nhàng về các tính năng hữu ích, đúng lúc bạn cần."
           }
         }
       }
@@ -7136,6 +7646,12 @@
             "state" : "translated",
             "value" : "เลือกอ็อกเทฟที่ใกล้กับตัวโน้ตก่อนหน้ามากที่สุด “시 도” จึงขึ้นไปครึ่งเสียง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn quãng tám gần nốt trước nhất, nên “시 도” sẽ lên nửa cung."
+          }
         }
       }
     },
@@ -7218,6 +7734,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เริ่มฝึกจากหน้าจอโฮมได้เลย โดยไม่ต้องเปิดแอป"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bắt đầu luyện tập ngay từ Màn hình chính, không cần mở ứng dụng."
           }
         }
       }
@@ -7302,6 +7824,12 @@
             "state" : "translated",
             "value" : "ใช้แอปทั้งหมดเป็นภาษาอังกฤษได้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dùng toàn bộ ứng dụng bằng tiếng Anh."
+          }
         }
       }
     },
@@ -7384,6 +7912,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "โน้ตของคุณจะอยู่ตามเดิม แม้แอปจะปิดไป"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bản nhạc vẫn y nguyên như bạn để lại, kể cả khi ứng dụng đóng lại."
           }
         }
       }
@@ -7468,6 +8002,12 @@
             "state" : "translated",
             "value" : "โน้ตและปุ่มยังคมชัดแม้ในโหมดมืด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bản nhạc và các nút vẫn rõ nét trong chế độ tối."
+          }
         }
       }
     },
@@ -7550,6 +8090,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เมื่อเปิดแอปครั้งแรกหลังอัปเดต จะเห็นว่ามีอะไรใหม่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lần đầu mở ứng dụng sau khi cập nhật, bạn sẽ thấy có gì mới."
           }
         }
       }
@@ -7634,6 +8180,12 @@
             "state" : "translated",
             "value" : "มีอะไรใหม่"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Có gì mới"
+          }
         }
       }
     },
@@ -7716,6 +8268,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "วางที่นี่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dán vào đây"
           }
         }
       }
@@ -7800,6 +8358,12 @@
             "state" : "translated",
             "value" : "การแจ้งเตือนฝึกซ้อม"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhắc nhở luyện tập"
+          }
         }
       }
     },
@@ -7882,6 +8446,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "รองรับภาษาอังกฤษเต็มรูปแบบ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hỗ trợ tiếng Anh đầy đủ"
           }
         }
       }
@@ -7966,6 +8536,12 @@
             "state" : "translated",
             "value" : "เช่น 4옥도4분음 4옥레4분음 4옥미8분음 …"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ví dụ: 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
         }
       }
     },
@@ -8048,6 +8624,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "แสดงทางขวา"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiện bên phải"
           }
         }
       }
@@ -8132,6 +8714,12 @@
             "state" : "translated",
             "value" : "กดบรรทัดห้าเส้นค้างไว้เพื่อเลือกเสียง แล้วปล่อยเพื่อเพิ่มโน้ต"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhấn giữ khuông nhạc để chọn cao độ rồi thả ra để thêm nốt"
+          }
         }
       }
     },
@@ -8214,6 +8802,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "จับคู่อ็อกเทฟอัตโนมัติ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tự chọn quãng tám"
           }
         }
       }
@@ -8298,6 +8892,12 @@
             "state" : "translated",
             "value" : "โน้ตตัวกลม"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nốt tròn"
+          }
         }
       }
     },
@@ -8380,6 +8980,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เสร็จสิ้น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xong"
           }
         }
       }
@@ -8464,6 +9070,12 @@
             "state" : "translated",
             "value" : "แสดงทางซ้าย"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hiện bên trái"
+          }
         }
       }
     },
@@ -8546,6 +9158,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ลดการเคลื่อนไหว"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giảm chuyển động"
           }
         }
       }
@@ -8630,6 +9248,12 @@
             "state" : "translated",
             "value" : "เมื่อเปิด “ลดการเคลื่อนไหว” เอฟเฟกต์บนหน้าจอจะนุ่มนวลขึ้น"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khi bật Giảm chuyển động, hiệu ứng trên màn hình sẽ dịu hơn."
+          }
         }
       }
     },
@@ -8712,6 +9336,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ต้องได้รับอนุญาตให้ใช้การรู้จำเสียง โปรดอนุญาตในการตั้งค่า"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cần quyền nhận dạng giọng nói. Hãy cho phép trong Cài đặt."
           }
         }
       }
@@ -8796,6 +9426,12 @@
             "state" : "translated",
             "value" : "การรู้จำเสียงล้มเหลว โปรดลองอีกครั้งในอีกสักครู่"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhận dạng giọng nói thất bại. Vui lòng thử lại sau giây lát."
+          }
         }
       }
     },
@@ -8878,6 +9514,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "กุญแจประจำหลัก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khóa nhạc"
           }
         }
       }
@@ -8962,6 +9604,12 @@
             "state" : "translated",
             "value" : "กุญแจประจำหลัก"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khóa nhạc"
+          }
         }
       }
     },
@@ -9044,6 +9692,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "อุปกรณ์เครื่องนี้ใช้การรู้จำเสียงภาษาเกาหลีไม่ได้"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thiết bị này không dùng được tính năng nhận dạng giọng nói tiếng Hàn."
           }
         }
       }
@@ -9128,6 +9782,12 @@
             "state" : "translated",
             "value" : "จัดให้สองห้องพอดีกรอบนี้ แล้วถ่ายภาพ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đặt vừa hai ô nhịp vào khung này rồi chụp"
+          }
         }
       }
     },
@@ -9210,6 +9870,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ติดต่อทางอีเมล"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liên hệ qua email"
           }
         }
       }
@@ -9294,6 +9960,12 @@
             "state" : "translated",
             "value" : "ใช้หูฟัง เสียงเมโทรนอมจะไม่เข้าไมโครโฟน"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dùng tai nghe để tiếng máy đếm nhịp không lọt vào micrô"
+          }
         }
       }
     },
@@ -9376,6 +10048,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "DM ทาง Instagram (@lee25_ios)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhắn tin Instagram (@lee25_ios)"
           }
         }
       }
@@ -9460,6 +10138,12 @@
             "state" : "translated",
             "value" : "แจ้งเตือนให้ฝึกร้องตามโน้ตในเวลาที่คุณเลือก"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhận lời nhắc luyện đọc nhạc xướng âm vào giờ bạn chọn."
+          }
         }
       }
     },
@@ -9542,6 +10226,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ถอดโน้ตอัตโนมัติ (ทดลอง)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tự động chép nhạc (thử nghiệm)"
           }
         }
       }
@@ -9626,6 +10316,12 @@
             "state" : "translated",
             "value" : "เคล็ดลับให้ได้ผลดี"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Để nhận dạng tốt hơn"
+          }
         }
       }
     },
@@ -9708,6 +10404,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ตัวช่วยการเล่น"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hỗ trợ phát nhạc"
           }
         }
       }
@@ -9792,6 +10494,12 @@
             "state" : "translated",
             "value" : "ล้างทั้งหมด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa tất cả"
+          }
         }
       }
     },
@@ -9874,6 +10582,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ ประจุด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ chấm dôi"
           }
         }
       }
@@ -9958,6 +10672,12 @@
             "state" : "translated",
             "value" : "ชื่อ"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiêu đề"
+          }
         }
       }
     },
@@ -10040,6 +10760,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "กุญแจเสียง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hóa biểu"
           }
         }
       }
@@ -10124,6 +10850,12 @@
             "state" : "translated",
             "value" : "กุญแจเสียง"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hóa biểu"
+          }
         }
       }
     },
@@ -10206,6 +10938,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เตรียมตัว"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chuẩn bị"
           }
         }
       }
@@ -10290,6 +11028,12 @@
             "state" : "translated",
             "value" : "ซัพพอร์ต"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hỗ trợ"
+          }
         }
       }
     },
@@ -10372,6 +11116,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ลบภาพอ้างอิง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xóa ảnh tham chiếu"
           }
         }
       }
@@ -10456,6 +11206,12 @@
             "state" : "translated",
             "value" : "ถอดโน้ต"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chép nhạc"
+          }
         }
       }
     },
@@ -10538,6 +11294,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ทัวร์สั้น ๆ สำหรับผู้ใช้ใหม่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hướng dẫn nhanh cho người mới"
           }
         }
       }
@@ -10622,6 +11384,12 @@
             "state" : "translated",
             "value" : "แนะนำสั้น ๆ ว่าทำอะไรได้บ้างเมื่อเปิดแอปครั้งแรก"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giới thiệu ngắn gọn những gì bạn có thể làm khi mở ứng dụng lần đầu."
+          }
         }
       }
     },
@@ -10704,6 +11472,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ยกเลิก"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hủy"
           }
         }
       }
@@ -10788,6 +11562,12 @@
             "state" : "translated",
             "value" : "ถ่ายภาพ (จัดให้พอดี 2 ห้อง)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chụp ảnh (vừa 2 ô nhịp)"
+          }
         }
       }
     },
@@ -10870,6 +11650,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ใช้กล้องไม่ได้\nโปรดเลือกรูปจากคลังรูปภาพแทน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không dùng được máy ảnh.\nHãy chọn ảnh từ thư viện ảnh."
           }
         }
       }
@@ -10954,6 +11740,12 @@
             "state" : "translated",
             "value" : "นับนำ (หนึ่งห้องก่อนเริ่ม)"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đếm nhịp mở đầu (một ô nhịp trước khi bắt đầu)"
+          }
         }
       }
     },
@@ -11036,6 +11828,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "เลย์เอาต์สำหรับตัวอักษรขนาดใหญ่"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bố cục cho chữ cỡ lớn"
           }
         }
       }
@@ -11120,6 +11918,12 @@
             "state" : "translated",
             "value" : "วางจากคลิปบอร์ด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dán từ bảng nhớ tạm"
+          }
         }
       }
     },
@@ -11202,6 +12006,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ความเร็ว"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tốc độ"
           }
         }
       }
@@ -11286,6 +12096,12 @@
             "state" : "translated",
             "value" : "เลย์เอาต์สำหรับ iPhone แบบพับได้"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bố cục cho iPhone gập"
+          }
         }
       }
     },
@@ -11368,6 +12184,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ใช้หน้าจอกว้างของ iPhone แบบพับได้เป็นสองส่วนข้างกัน"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dùng màn hình rộng của iPhone gập thành hai ngăn cạnh nhau."
           }
         }
       }
@@ -11452,6 +12274,12 @@
             "state" : "translated",
             "value" : "พูดทีละตัว ชัดเจน และตรงจังหวะพอดี"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nói từng nốt một, rõ ràng và đúng phách"
+          }
         }
       }
     },
@@ -11534,6 +12362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "คัดลอกโน้ตปัจจุบันเป็นข้อความ (เป็นตัวอย่างให้ AI)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sao chép bản nhạc hiện tại thành văn bản (làm ví dụ cho AI)"
           }
         }
       }
@@ -11618,6 +12452,12 @@
             "state" : "translated",
             "value" : "วิดเจ็ตหน้าจอโฮม"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiện ích Màn hình chính"
+          }
         }
       }
     },
@@ -11700,6 +12540,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver อ่านทุกปุ่มและทุกตัวโน้ตตามลำดับที่ถูกต้อง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver đọc từng nút và từng nốt theo đúng thứ tự."
           }
         }
       }
@@ -11784,6 +12630,12 @@
             "state" : "translated",
             "value" : "คอร์ด"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hợp âm"
+          }
         }
       }
     },
@@ -11867,6 +12719,12 @@
             "state" : "translated",
             "value" : "โหมดคอร์ด: โน้ตจะซ้อนทับบนตัวโน้ตที่เลือก"
           }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chế độ hợp âm: các nốt xếp chồng lên nốt đã chọn"
+          }
         }
       }
     },
@@ -11949,6 +12807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ตกลง"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
           }
         }
       }

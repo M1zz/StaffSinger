@@ -714,3 +714,58 @@ StaffSinger คัดลอกสองห้องที่ทำให้ส�
 ถ่ายภาพโน้ตที่กำลังอ่านไว้ แล้วเปิดค้างบนหน้าจอเพื่อเทียบระหว่างคัดลอก
 
 เหมาะสำหรับวงประสานเสียง คลาสเรียนเครื่องดนตรี และการเตรียมสอบเข้าสายดนตรี เมื่อต้องอ่านโน้ตให้เร็ว
+
+## vi
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger: Đọc nhạc lần đầu
+
+### 부제
+
+Nghe ngay nốt nhạc bạn viết
+
+### 키워드
+
+xướng âm,nhạc lý,khuông nhạc,bản nhạc,hợp xướng,piano,hợp âm,chép nhạc,học nhạc,luyện tai,ca hát
+
+### 프로모션 텍스트
+
+Bản nhạc lạ với tiết tấu và hợp âm phức tạp? Chạm đặt nốt lên khuông nhạc rồi phát, nghe ngay cùng máy đếm nhịp và tiếng đếm mở đầu.
+
+### 설명
+
+Đừng chỉ đếm bản nhạc mới trong đầu. Hãy nghe nó.
+StaffSinger chép hai ô nhịp khiến bạn bối rối lên khuông nhạc rồi phát lại đúng tiết tấu và cao độ.
+
+Chạm khuông nhạc hoặc dùng phím đàn
+Nhấn giữ khuông nhạc để chọn cao độ, hoặc chạm vào bàn phím piano hai quãng tám để thêm nốt. Chọn từ nốt tròn đến nốt kép, nốt chấm dôi, nốt ba và dấu lặng; nốt vừa thêm có thể xóa chỉ bằng một lần chạm.
+
+Phát cùng máy đếm nhịp
+Sau tiếng đếm mở đầu, bản nhạc phát theo tiếng tích của máy đếm nhịp và nốt đang vang được tô màu nổi bật. Tốc độ và số chỉ nhịp được đổi trong Cài đặt.
+
+Hợp âm và nhiều bè
+Xếp chồng các nốt trên cùng một phách để tạo hợp âm, và tách nhạc thành nhiều bè. Hỗ trợ hóa biểu cùng khóa Sol, khóa Đô và khóa Fa.
+
+Chép nhạc theo xướng âm
+Đọc tên nốt đúng nhịp máy đếm nhịp, nốt sẽ được đưa vào khuông nhạc. Nói đúng phách thì tiết tấu cũng được ghi lại. Tính năng này nhận dạng các âm tiết xướng âm tiếng Hàn, và việc nhận dạng giọng nói diễn ra hoàn toàn trên thiết bị của bạn.
+
+Dán bản nhạc dưới dạng văn bản
+Dán văn bản viết theo định dạng cố định là khuông nhạc được điền sẵn. Sao chép quy tắc, đưa cho AI cùng ảnh bản nhạc, rồi dán kết quả nhận được.
+
+Ảnh tham chiếu
+Chụp bản nhạc bạn đang đọc và để trên màn hình để đối chiếu khi chép.
+
+Luôn sẵn bên bạn khi hát hợp xướng, học nhạc cụ hay ôn thi nhạc viện, mỗi khi cần đọc nhạc thật nhanh.
