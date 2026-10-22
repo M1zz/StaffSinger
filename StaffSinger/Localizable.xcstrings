@@ -39,6 +39,12 @@
             "state" : "translated",
             "value" : "\n2小節を超える音符は画面に表示されないことがあります。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nНоты за пределами второго такта могут не отображаться на экране."
+          }
         }
       }
     },
@@ -79,6 +85,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "「%@」——ここから階名が見つかりませんでした。\n도 레 미 파 솔 라 시 で話してください。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "«%@» — названий нот здесь не найдено.\nГоворите 도 레 미 파 솔 라 시."
           }
         }
       }
@@ -121,6 +133,12 @@
             "state" : "translated",
             "value" : "%@ · 聞き取り中"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Слушаю"
+          }
         }
       }
     },
@@ -161,6 +179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@長調（♭%lld）"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ мажор (♭%lld)"
           }
         }
       }
@@ -203,6 +227,12 @@
             "state" : "translated",
             "value" : "%@長調（♯%lld）"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ мажор (♯%lld)"
+          }
         }
       }
     },
@@ -243,6 +273,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "書き取った音符：%lld"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Записано нот: %lld"
           }
         }
       }
@@ -285,6 +321,12 @@
             "state" : "translated",
             "value" : "書き取った音符：%lld。\n音の高さや長さが違うときは、音符をドラッグして直してください。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Записано нот: %lld.\nЕсли высота или длительность неверны, перетащите ноту, чтобы исправить."
+          }
         }
       }
     },
@@ -325,6 +367,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "読み込んだ音符：%lld。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загружено нот: %lld."
           }
         }
       }
@@ -367,6 +415,12 @@
             "state" : "translated",
             "value" : "認識した音符：%lld（試験機能）。\n音の高さと長さは自分で確認して直してください。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Распознано нот: %lld (эксперимент).\nПроверьте высоту и длительность и поправьте вручную."
+          }
         }
       }
     },
@@ -408,6 +462,12 @@
             "state" : "translated",
             "value" : "%lld小節め %lld拍め"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Такт %lld, доля %lld"
+          }
         }
       }
     },
@@ -445,6 +505,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/16"
@@ -490,6 +556,12 @@
             "state" : "translated",
             "value" : "16分音符"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Шестнадцатая нота"
+          }
         }
       }
     },
@@ -530,6 +602,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "2分音符"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Половинная нота"
           }
         }
       }
@@ -572,6 +650,12 @@
             "state" : "translated",
             "value" : "4度より大きく跳ぶときは「높은 솔」（高いソ）や「낮은 시」（低いシ）のように言ってください"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "При скачках шире кварты говорите «높은 솔» (высокая соль) или «낮은 시» (низкая си)"
+          }
         }
       }
     },
@@ -609,6 +693,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/4"
@@ -654,6 +744,12 @@
             "state" : "translated",
             "value" : "4分音符"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Четвертная нота"
+          }
         }
       }
     },
@@ -691,6 +787,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/8"
@@ -736,6 +838,12 @@
             "state" : "translated",
             "value" : "8分音符"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Восьмая нота"
+          }
         }
       }
     },
@@ -776,6 +884,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "AIに渡すルールをコピー"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скопировать правило для ИИ"
           }
         }
       }
@@ -818,6 +932,12 @@
             "state" : "translated",
             "value" : "Siriに話しかけるか、ショートカットで、すぐに始められます。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начинайте сразу — голосом через Siri или командой."
+          }
         }
       }
     },
@@ -858,6 +978,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siriとショートカット"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri и Команды"
           }
         }
       }
@@ -900,6 +1026,12 @@
             "state" : "translated",
             "value" : "VoiceOverをもっと使いやすく"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Улучшенная поддержка VoiceOver"
+          }
         }
       }
     },
@@ -940,6 +1072,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@拍"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@ долей"
           }
         }
       }
@@ -982,6 +1120,12 @@
             "state" : "translated",
             "value" : "ハ音記号"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Альтовый ключ"
+          }
         }
       }
     },
@@ -1022,6 +1166,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "開発者に問い合わせる"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Связаться с разработчиком"
           }
         }
       }
@@ -1064,6 +1214,12 @@
             "state" : "translated",
             "value" : "階名ディクテーション"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сольфеджио под диктовку"
+          }
         }
       }
     },
@@ -1104,6 +1260,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "階名を聞き取れませんでした。メトロノームに合わせて「도 레 미」のようにはっきり言ってみてください。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Названия нот не распознаны. Произносите чётко «도 레 미» в такт метроному."
           }
         }
       }
@@ -1146,6 +1308,12 @@
             "state" : "translated",
             "value" : "ルールをコピーしました"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Правило скопировано"
+          }
         }
       }
     },
@@ -1186,6 +1354,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "文字を大きくしても切れず、見やすく配置し直されます。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "При увеличении шрифта экраны перестраиваются, ничего не обрезается."
           }
         }
       }
@@ -1228,6 +1402,12 @@
             "state" : "translated",
             "value" : "端末内で処理する韓国語の音声認識の準備ができていません。\n「設定 ▸ 一般 ▸ キーボード ▸ 音声入力」で韓国語をオンにすると、必要なファイルがダウンロードされます。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Распознавание корейской речи на устройстве не готово.\nВключите корейский в «Настройки ▸ Основные ▸ Клавиатура ▸ Диктовка» — нужные файлы загрузятся."
+          }
         }
       }
     },
@@ -1268,6 +1448,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ヘ音記号"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Басовый ключ"
           }
         }
       }
@@ -1310,6 +1496,12 @@
             "state" : "translated",
             "value" : "録音を開始できません：%@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось начать запись: %@"
+          }
         }
       }
     },
@@ -1350,6 +1542,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ト音記号"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скрипичный ключ"
           }
         }
       }
@@ -1392,6 +1590,12 @@
             "state" : "translated",
             "value" : "ハ長調"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "До мажор"
+          }
         }
       }
     },
@@ -1432,6 +1636,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ハ長調（調号なし）"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "До мажор (без знаков)"
           }
         }
       }
@@ -1474,6 +1684,12 @@
             "state" : "translated",
             "value" : "ダークモード"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тёмная тема"
+          }
         }
       }
     },
@@ -1514,6 +1730,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "閉じる"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Закрыть"
           }
         }
       }
@@ -1556,6 +1778,12 @@
             "state" : "translated",
             "value" : "コントラストを上げたり、色の区別が難しくても、内容を読み取れます。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Всё остаётся читаемым при повышенной контрастности и при трудностях с различением цветов."
+          }
         }
       }
     },
@@ -1596,6 +1824,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "もっと多くの言語でアプリを使えるようにします。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Использование приложения на других языках."
           }
         }
       }
@@ -1638,6 +1872,12 @@
             "state" : "translated",
             "value" : "さらに多くの言語"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Больше языков"
+          }
         }
       }
     },
@@ -1678,6 +1918,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · 休符は「쉼」と言います"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · пауза — «쉼»"
           }
         }
       }
@@ -1720,6 +1966,12 @@
             "state" : "translated",
             "value" : "2小節が枠いっぱいになるよう、指で拡大・移動してください"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Двигайте и масштабируйте пальцами, пока два такта не заполнят рамку"
+          }
         }
       }
     },
@@ -1760,6 +2012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "聞き取った言葉"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что я услышал"
           }
         }
       }
@@ -1802,6 +2060,12 @@
             "state" : "translated",
             "value" : "リズムスナップ"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Привязка ритма"
+          }
         }
       }
     },
@@ -1842,6 +2106,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "フリー"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Свободно"
           }
         }
       }
@@ -1884,6 +2154,12 @@
             "state" : "translated",
             "value" : "マイクの許可が必要です。設定で許可してください。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Требуется доступ к микрофону. Разрешите его в настройках."
+          }
         }
       }
     },
@@ -1924,6 +2200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "マイク入力が見つかりませんでした。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вход микрофона не найден."
           }
         }
       }
@@ -1966,6 +2248,12 @@
             "state" : "translated",
             "value" : "作った譜面をファイルに保存して、あとで開き直せます。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохраняйте ноты в файл и открывайте их позже."
+          }
         }
       }
     },
@@ -2006,6 +2294,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "話し始める"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начать"
           }
         }
       }
@@ -2048,6 +2342,12 @@
             "state" : "translated",
             "value" : "話した順番だけを使います。長さはすべて4分音符で入るので、あとで直してください。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Учитывается только порядок слов. Все ноты ставятся четвертными — длительность поправите позже."
+          }
         }
       }
     },
@@ -2088,6 +2388,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "話したタイミングを、いちばん近い%@音符の位置に合わせます。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Каждый звук привязывается к ближайшей позиции ноты %@."
           }
         }
       }
@@ -2130,6 +2436,12 @@
             "state" : "translated",
             "value" : "停止"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стоп"
+          }
         }
       }
     },
@@ -2170,6 +2482,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "メトロノーム（拍のクリック）"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Метроном (щелчок на долю)"
           }
         }
       }
@@ -2212,6 +2530,12 @@
             "state" : "translated",
             "value" : "メトロノームをオフにする"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выключить метроном"
+          }
         }
       }
     },
@@ -2252,6 +2576,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "メトロノームの4拍を数えたら、拍に合わせて階名を言ってください。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отсчитайте четыре доли метронома и называйте ноты в такт."
           }
         }
       }
@@ -2294,6 +2624,12 @@
             "state" : "translated",
             "value" : "メトロノームをオンにする"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включить метроном"
+          }
         }
       }
     },
@@ -2334,6 +2670,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "すべての音が開始オクターブに入ります。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все ноты остаются в начальной октаве."
           }
         }
       }
@@ -2376,6 +2718,12 @@
             "state" : "translated",
             "value" : "拍子"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Размер"
+          }
         }
       }
     },
@@ -2416,6 +2764,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "拍子記号"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Размер"
           }
         }
       }
@@ -2458,6 +2812,12 @@
             "state" : "translated",
             "value" : "不具合の報告や機能のご提案をお待ちしています。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сообщения об ошибках и идеи новых функций приветствуются."
+          }
         }
       }
     },
@@ -2498,6 +2858,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "見やすい色とコントラスト"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удобные цвета и контраст"
           }
         }
       }
@@ -2540,6 +2906,12 @@
             "state" : "translated",
             "value" : "貼り付けたテキストから音符が見つかりませんでした。\nルール（例：4옥도8분음）に合っているか確認してください。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В вставленном тексте не найдено нот.\nПроверьте, соответствует ли он правилу (например, 4옥도8분음)."
+          }
         }
       }
     },
@@ -2580,6 +2952,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "速すぎるときはテンポを下げてください（現在 %lld BPM）"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Если слишком быстро, снизьте темп (сейчас %lld уд/мин)"
           }
         }
       }
@@ -2622,6 +3000,12 @@
             "state" : "translated",
             "value" : "使用"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Использовать"
+          }
         }
       }
     },
@@ -2662,6 +3046,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "写真ライブラリから選択"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбрать из медиатеки"
           }
         }
       }
@@ -2704,6 +3094,12 @@
             "state" : "translated",
             "value" : "新しい譜面"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Новые ноты"
+          }
         }
       }
     },
@@ -2744,6 +3140,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "設定"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
           }
         }
       }
@@ -2786,6 +3188,12 @@
             "state" : "translated",
             "value" : "3連%@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Триоль: %@"
+          }
         }
       }
     },
@@ -2826,6 +3234,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "3連符モード：3つの音が1拍（または2拍）にまとまります"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Режим триолей: три ноты занимают одну долю (или две)"
           }
         }
       }
@@ -2868,6 +3282,12 @@
             "state" : "translated",
             "value" : "付点3連%@"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Триоль с точкой: %@"
+          }
         }
       }
     },
@@ -2908,6 +3328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "休符モード：入れたい長さをタップすると休符が入ります"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Режим пауз: нажмите нужную длительность, чтобы вставить паузу"
           }
         }
       }
@@ -2950,6 +3376,12 @@
             "state" : "translated",
             "value" : "開始オクターブ  %lld"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начальная октава  %lld"
+          }
         }
       }
     },
@@ -2990,6 +3422,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "使い方のヒント"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Полезные подсказки"
           }
         }
       }
@@ -3032,6 +3470,12 @@
             "state" : "translated",
             "value" : "書きかけの譜面を続きから"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продолжайте с того места, где остановились"
+          }
         }
       }
     },
@@ -3072,6 +3516,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "下で確認して「譜面に入れる」をタップしてください"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверьте ниже и нажмите «Добавить в ноты»"
           }
         }
       }
@@ -3114,6 +3564,12 @@
             "state" : "translated",
             "value" : "譜面を貼り付け"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вставка нот"
+          }
         }
       }
     },
@@ -3154,6 +3610,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "譜面の写真"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Фото нот"
           }
         }
       }
@@ -3196,6 +3658,12 @@
             "state" : "translated",
             "value" : "譜面の写真をAIに渡して、下のルールどおりに書いてもらい、返ってきたテキストを貼り付けると五線に入ります。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отдайте фото нот ИИ, попросите записать их по правилу ниже, а полученный текст вставьте сюда — он заполнит нотный стан."
+          }
         }
       }
     },
@@ -3236,6 +3704,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "譜面の保存と書き出し"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сохранение и экспорт нот"
           }
         }
       }
@@ -3278,6 +3752,12 @@
             "state" : "translated",
             "value" : "譜面のタイトル"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Название нот"
+          }
         }
       }
     },
@@ -3318,6 +3798,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "譜面に変換"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Преобразовать в ноты"
           }
         }
       }
@@ -3360,6 +3846,12 @@
             "state" : "translated",
             "value" : "譜面を認識できませんでした。きれいな印刷、1段、正面から撮った写真ほどうまくいきます。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось распознать ноты. Лучше всего работают чёткая печать, одна строка и снимок прямо перед нотами."
+          }
         }
       }
     },
@@ -3400,6 +3892,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "譜面に入れる"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добавить в ноты"
           }
         }
       }
@@ -3442,6 +3940,12 @@
             "state" : "translated",
             "value" : "譜面に入る音符"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ноты для добавления"
+          }
         }
       }
     },
@@ -3482,6 +3986,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "便利な機能を、ちょうどよいタイミングでそっとお知らせします。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ненавязчивые подсказки о полезных функциях — в нужный момент."
           }
         }
       }
@@ -3524,6 +4034,12 @@
             "state" : "translated",
             "value" : "直前の音に近いオクターブを選びます。「시 도」は半音上がります。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выбирается октава, ближайшая к предыдущей ноте, поэтому «시 도» поднимается на полутон."
+          }
         }
       }
     },
@@ -3564,6 +4080,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "アプリを開かなくても、ホーム画面からすぐに練習を始められます。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начинайте занятие прямо с экрана «Домой», не открывая приложение."
           }
         }
       }
@@ -3606,6 +4128,12 @@
             "state" : "translated",
             "value" : "アプリを英語でも使えます。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Всё приложение — и на английском."
+          }
         }
       }
     },
@@ -3646,6 +4174,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "アプリを閉じて開き直しても、書いていた譜面はそのまま残ります。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваши ноты остаются как были, даже если приложение закрылось."
           }
         }
       }
@@ -3688,6 +4222,12 @@
             "state" : "translated",
             "value" : "暗い画面でも、譜面とボタンがくっきり見えます。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ноты и кнопки остаются чёткими и в тёмной теме."
+          }
         }
       }
     },
@@ -3728,6 +4268,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "アップデート後の初回起動で、新しくなった点をお知らせします。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "При первом запуске после обновления вы увидите, что нового."
           }
         }
       }
@@ -3770,6 +4316,12 @@
             "state" : "translated",
             "value" : "アップデート情報"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что нового"
+          }
         }
       }
     },
@@ -3810,6 +4362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "ここに貼り付け"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вставьте сюда"
           }
         }
       }
@@ -3852,6 +4410,12 @@
             "state" : "translated",
             "value" : "練習の通知"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напоминания о занятиях"
+          }
         }
       }
     },
@@ -3892,6 +4456,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "英語に対応"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддержка английского"
           }
         }
       }
@@ -3934,6 +4504,12 @@
             "state" : "translated",
             "value" : "例：4옥도4분음 4옥레4분음 4옥미8분음 …"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Например: 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
         }
       }
     },
@@ -3974,6 +4550,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "右側に表示"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показывать справа"
           }
         }
       }
@@ -4016,6 +4598,12 @@
             "state" : "translated",
             "value" : "五線を長押しして音を選び、指を離すと追加されます"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите и удерживайте нотный стан, выберите высоту и отпустите — нота добавится"
+          }
         }
       }
     },
@@ -4056,6 +4644,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "オクターブ自動調整"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Октава автоматически"
           }
         }
       }
@@ -4098,6 +4692,12 @@
             "state" : "translated",
             "value" : "全音符"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Целая нота"
+          }
         }
       }
     },
@@ -4138,6 +4738,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "完了"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готово"
           }
         }
       }
@@ -4180,6 +4786,12 @@
             "state" : "translated",
             "value" : "左側に表示"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показывать слева"
+          }
         }
       }
     },
@@ -4220,6 +4832,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "視差効果を減らす"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уменьшение движения"
           }
         }
       }
@@ -4262,6 +4880,12 @@
             "state" : "translated",
             "value" : "「視差効果を減らす」をオンにすると、画面の動きが穏やかになります。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Если включить «Уменьшение движения», эффекты на экране станут спокойнее."
+          }
         }
       }
     },
@@ -4302,6 +4926,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "音声認識の許可が必要です。設定で許可してください。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Требуется доступ к распознаванию речи. Разрешите его в настройках."
           }
         }
       }
@@ -4344,6 +4974,12 @@
             "state" : "translated",
             "value" : "音声認識に失敗しました。しばらくしてからもう一度お試しください。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось распознать речь. Повторите попытку чуть позже."
+          }
         }
       }
     },
@@ -4384,6 +5020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "音部記号"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ключ"
           }
         }
       }
@@ -4426,6 +5068,12 @@
             "state" : "translated",
             "value" : "音部記号"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ключ"
+          }
         }
       }
     },
@@ -4466,6 +5114,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "この端末では韓国語の音声認識を使えません。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На этом устройстве недоступно распознавание корейской речи."
           }
         }
       }
@@ -4508,6 +5162,12 @@
             "state" : "translated",
             "value" : "この枠に2小節を合わせて撮影してください"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уместите два такта в рамку и снимайте"
+          }
         }
       }
     },
@@ -4548,6 +5208,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "メールで問い合わせる"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Написать на почту"
           }
         }
       }
@@ -4590,6 +5256,12 @@
             "state" : "translated",
             "value" : "イヤホンを使うと、メトロノームの音がマイクに入りません"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В наушниках метроном не попадает в микрофон"
+          }
         }
       }
     },
@@ -4627,6 +5299,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram DM (@lee25_ios)"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram DM (@lee25_ios)"
@@ -4672,6 +5350,12 @@
             "state" : "translated",
             "value" : "忘れないように、決めた時間に視唱の練習をお知らせします。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Напоминание о пении с листа в выбранное вами время."
+          }
         }
       }
     },
@@ -4712,6 +5396,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "自動採譜（試験機能）"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Автораспознавание (эксперимент)"
           }
         }
       }
@@ -4754,6 +5444,12 @@
             "state" : "translated",
             "value" : "うまく認識させるには"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чтобы распознавание работало лучше"
+          }
         }
       }
     },
@@ -4794,6 +5490,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "再生サポート"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Помощь при воспроизведении"
           }
         }
       }
@@ -4836,6 +5538,12 @@
             "state" : "translated",
             "value" : "すべて消去"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Очистить всё"
+          }
         }
       }
     },
@@ -4876,6 +5584,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "付点%@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "С точкой: %@"
           }
         }
       }
@@ -4918,6 +5632,12 @@
             "state" : "translated",
             "value" : "タイトル"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Название"
+          }
         }
       }
     },
@@ -4958,6 +5678,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "調号"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тональность"
           }
         }
       }
@@ -5000,6 +5726,12 @@
             "state" : "translated",
             "value" : "調号"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тональность"
+          }
         }
       }
     },
@@ -5040,6 +5772,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "準備"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Приготовьтесь"
           }
         }
       }
@@ -5082,6 +5820,12 @@
             "state" : "translated",
             "value" : "サポート"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поддержка"
+          }
         }
       }
     },
@@ -5122,6 +5866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "参考写真を削除"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Удалить опорное фото"
           }
         }
       }
@@ -5164,6 +5914,12 @@
             "state" : "translated",
             "value" : "採譜"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Распознать"
+          }
         }
       }
     },
@@ -5204,6 +5960,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "はじめての方へのご案内"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Краткое знакомство для новичков"
           }
         }
       }
@@ -5246,6 +6008,12 @@
             "state" : "translated",
             "value" : "初めて開いたときに、できることを手短に紹介します。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Короткий рассказ о возможностях при первом запуске."
+          }
         }
       }
     },
@@ -5286,6 +6054,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "キャンセル"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отмена"
           }
         }
       }
@@ -5328,6 +6102,12 @@
             "state" : "translated",
             "value" : "カメラで撮影（2小節に合わせる）"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Снять фото (по рамке в 2 такта)"
+          }
         }
       }
     },
@@ -5368,6 +6148,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "カメラを使用できません。\n写真ライブラリから選んでください。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Камера недоступна.\nВыберите фото из медиатеки."
           }
         }
       }
@@ -5410,6 +6196,12 @@
             "state" : "translated",
             "value" : "カウントイン（開始前に1小節）"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вступительный отсчёт (один такт перед стартом)"
+          }
         }
       }
     },
@@ -5450,6 +6242,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "大きな文字に合わせた画面"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экраны для крупного шрифта"
           }
         }
       }
@@ -5492,6 +6290,12 @@
             "state" : "translated",
             "value" : "クリップボードから貼り付け"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вставить из буфера"
+          }
         }
       }
     },
@@ -5532,6 +6336,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "テンポ"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Темп"
           }
         }
       }
@@ -5574,6 +6384,12 @@
             "state" : "translated",
             "value" : "折りたたみiPhone対応の画面"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экран для складного iPhone"
+          }
         }
       }
     },
@@ -5614,6 +6430,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "折りたたみiPhoneの広い画面を、左右2つに分けて使えます。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Широкий экран складного iPhone делится на две панели рядом."
           }
         }
       }
@@ -5656,6 +6478,12 @@
             "state" : "translated",
             "value" : "1音ずつはっきりと、拍にぴったり合わせて話してください"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Называйте по одной ноте, чётко и точно в долю"
+          }
         }
       }
     },
@@ -5696,6 +6524,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "現在の譜面をテキストでコピー（AIへの例示用）"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скопировать текущие ноты текстом (как пример для ИИ)"
           }
         }
       }
@@ -5738,6 +6572,12 @@
             "state" : "translated",
             "value" : "ホーム画面ウィジェット"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виджеты на экране «Домой»"
+          }
         }
       }
     },
@@ -5778,6 +6618,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "画面読み上げが、ボタンと内容をもれなく適切な順番で読み上げます。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver читает каждую кнопку и ноту в правильном порядке."
           }
         }
       }
@@ -5820,6 +6666,12 @@
             "state" : "translated",
             "value" : "和音"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Аккорд"
+          }
         }
       }
     },
@@ -5861,6 +6713,12 @@
             "state" : "translated",
             "value" : "和音モード：選んだ音の上に音が重なります"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Режим аккордов: ноты накладываются на выбранную"
+          }
         }
       }
     },
@@ -5898,6 +6756,12 @@
           }
         },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"

@@ -39,6 +39,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -79,6 +85,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSingerは、譜面を撮影して参考画像として読み込むためにカメラを使用します。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger использует камеру, чтобы сфотографировать ноты и загрузить снимок как опорное изображение."
           }
         }
       }
@@ -121,6 +133,12 @@
             "state" : "translated",
             "value" : "StaffSingerは、話した階名を五線上の音符にするためにマイクを使用します。音声は端末内でのみ処理され、保存されません。"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger использует микрофон, чтобы превращать названные вами ноты в ноты на нотном стане. Звук обрабатывается только на устройстве и не сохраняется."
+          }
         }
       }
     },
@@ -161,6 +179,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSingerは、話した階名を音符に変換するために音声認識を使用します。認識は端末内でのみ行われます。"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger использует распознавание речи, чтобы превращать названные вами ноты в нотные знаки. Распознавание выполняется только на устройстве."
           }
         }
       }
