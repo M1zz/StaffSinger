@@ -549,3 +549,58 @@ Photo de référence
 Photographiez la partition que vous lisez et gardez-la à l’écran pour comparer pendant que vous la recopiez.
 
 À garder près de vous pour la chorale, les cours d’instrument ou la préparation aux concours de conservatoire : dès que vous devez lire la musique vite.
+
+## it
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger: Prima vista
+
+### 부제
+
+Ascolta ciò che scrivi
+
+### 키워드
+
+solfeggio,teoria musicale,pentagramma,spartito,coro,pianoforte,accordo,dettato,lezioni,canto,note
+
+### 프로모션 텍스트
+
+Uno spartito mai visto, con ritmi e accordi difficili? Metti le note sul pentagramma e ascoltale con metronomo e conteggio iniziale.
+
+### 설명
+
+Non contare un nuovo spartito solo a mente. Ascoltalo.
+StaffSinger copia sul pentagramma le due battute che ti confondono e le suona con il ritmo e l’altezza esatti.
+
+Tocca il pentagramma o usa la tastiera
+Tieni premuto sul pentagramma per scegliere l’altezza, oppure tocca la tastiera del pianoforte di due ottave per aggiungere una nota. Scegli dalla semibreve alla semicroma, con note puntate, terzine e pause, e cancella l’ultima nota inserita con un tocco.
+
+Riproduci con il metronomo
+Dopo il conteggio iniziale, lo spartito suona a tempo con il clic del metronomo e la nota che suona è evidenziata a colori. Tempo e indicazione di tempo si cambiano nelle Impostazioni.
+
+Accordi e più voci
+Sovrapponi note sullo stesso battito per formare un accordo e dividi la musica in più voci. Sono supportate le armature di chiave e le chiavi di violino, di do e di basso.
+
+Dettato di solfeggio
+Di’ i nomi delle note a tempo con il metronomo e finiscono sul pentagramma come note. Se parli proprio sul battito, viene catturato anche il ritmo. Il dettato riconosce le sillabe del solfeggio coreano e il riconoscimento vocale avviene interamente sul tuo dispositivo.
+
+Incolla uno spartito come testo
+Incolla un testo scritto in un formato fisso e il pentagramma si riempie. Copia la regola, passala a un’IA insieme alla foto dello spartito e incolla ciò che ti restituisce.
+
+Foto di riferimento
+Fotografa lo spartito che stai leggendo e tienilo sullo schermo per confrontarlo mentre lo ricopi.
+
+Tienilo a portata di mano per il coro, le lezioni di strumento o la preparazione agli esami di conservatorio: ogni volta che devi leggere la musica in fretta.

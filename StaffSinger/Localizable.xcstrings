@@ -63,6 +63,12 @@
             "state" : "translated",
             "value" : "\nLes notes au-delà de la deuxième mesure peuvent ne pas s’afficher à l’écran."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nLe note oltre la seconda battuta potrebbero non essere visibili sullo schermo."
+          }
         }
       }
     },
@@ -127,6 +133,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "« %@ » : aucun nom de note trouvé.\nDites 도 레 미 파 솔 라 시."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "«%@»: nessun nome di nota trovato.\nDi’ 도 레 미 파 솔 라 시."
           }
         }
       }
@@ -193,6 +205,12 @@
             "state" : "translated",
             "value" : "%@ · À l’écoute"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · In ascolto"
+          }
         }
       }
     },
@@ -257,6 +275,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ majeur (♭%lld)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ maggiore (♭%lld)"
           }
         }
       }
@@ -323,6 +347,12 @@
             "state" : "translated",
             "value" : "%@ majeur (♯%lld)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ maggiore (♯%lld)"
+          }
         }
       }
     },
@@ -387,6 +417,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notes dictées : %lld"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Note dettate: %lld"
           }
         }
       }
@@ -453,6 +489,12 @@
             "state" : "translated",
             "value" : "Notes dictées : %lld.\nSi une hauteur ou une durée est fausse, faites glisser la note pour la corriger."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Note dettate: %lld.\nSe un’altezza o una durata non è giusta, trascina la nota per correggerla."
+          }
         }
       }
     },
@@ -517,6 +559,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notes importées : %lld."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Note importate: %lld."
           }
         }
       }
@@ -583,6 +631,12 @@
             "state" : "translated",
             "value" : "Notes reconnues : %lld (expérimental).\nVérifiez les hauteurs et les durées, puis corrigez-les à la main."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Note riconosciute: %lld (sperimentale).\nControlla altezze e durate e correggile a mano."
+          }
         }
       }
     },
@@ -648,6 +702,12 @@
             "state" : "translated",
             "value" : "Mesure %lld, temps %lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Battuta %lld, battito %lld"
+          }
         }
       }
     },
@@ -709,6 +769,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/16"
@@ -778,6 +844,12 @@
             "state" : "translated",
             "value" : "Double croche"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semicroma"
+          }
         }
       }
     },
@@ -842,6 +914,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Blanche"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minima"
           }
         }
       }
@@ -908,6 +986,12 @@
             "state" : "translated",
             "value" : "Pour un saut supérieur à une quarte, dites « 높은 솔 » (sol aigu) ou « 낮은 시 » (si grave)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per salti più ampi di una quarta, di’ «높은 솔» (sol acuto) o «낮은 시» (si grave)"
+          }
         }
       }
     },
@@ -969,6 +1053,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/4"
@@ -1038,6 +1128,12 @@
             "state" : "translated",
             "value" : "Noire"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semiminima"
+          }
         }
       }
     },
@@ -1099,6 +1195,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/8"
@@ -1168,6 +1270,12 @@
             "state" : "translated",
             "value" : "Croche"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Croma"
+          }
         }
       }
     },
@@ -1232,6 +1340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copier la règle pour l’IA"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copia la regola per l’IA"
           }
         }
       }
@@ -1298,6 +1412,12 @@
             "state" : "translated",
             "value" : "Lancez-vous aussitôt en le demandant à Siri ou avec un raccourci."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parti subito chiedendolo a Siri o con un comando rapido."
+          }
         }
       }
     },
@@ -1362,6 +1482,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri et Raccourcis"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri e Comandi rapidi"
           }
         }
       }
@@ -1428,6 +1554,12 @@
             "state" : "translated",
             "value" : "VoiceOver amélioré"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver ancora migliore"
+          }
         }
       }
     },
@@ -1492,6 +1624,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@ temps"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@ battiti"
           }
         }
       }
@@ -1558,6 +1696,12 @@
             "state" : "translated",
             "value" : "Clé d’ut"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiave di do"
+          }
         }
       }
     },
@@ -1622,6 +1766,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Contacter le développeur"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contatta lo sviluppatore"
           }
         }
       }
@@ -1688,6 +1838,12 @@
             "state" : "translated",
             "value" : "Dictée de solfège"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dettato di solfeggio"
+          }
         }
       }
     },
@@ -1752,6 +1908,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucun nom de note n’a été compris. Essayez de dire « 도 레 미 » clairement, en rythme avec le métronome."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non sono riuscito a capire nessun nome di nota. Prova a dire «도 레 미» con chiarezza, a tempo con il metronomo."
           }
         }
       }
@@ -1818,6 +1980,12 @@
             "state" : "translated",
             "value" : "Règle copiée"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regola copiata"
+          }
         }
       }
     },
@@ -1882,6 +2050,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Quand vous agrandissez le texte, les écrans se réorganisent au lieu d’être coupés."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se ingrandisci il testo, le schermate si riorganizzano invece di essere tagliate."
           }
         }
       }
@@ -1948,6 +2122,12 @@
             "state" : "translated",
             "value" : "La reconnaissance vocale en coréen sur l’appareil n’est pas prête.\nActivez le coréen dans Réglages ▸ Général ▸ Clavier ▸ Dictée pour télécharger les fichiers nécessaires."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il riconoscimento vocale in coreano sul dispositivo non è pronto.\nAttiva il coreano in Impostazioni ▸ Generali ▸ Tastiera ▸ Dettatura per scaricare i file necessari."
+          }
         }
       }
     },
@@ -2012,6 +2192,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Clé de fa"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiave di basso"
           }
         }
       }
@@ -2078,6 +2264,12 @@
             "state" : "translated",
             "value" : "Impossible de lancer l’enregistrement : %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile avviare la registrazione: %@"
+          }
         }
       }
     },
@@ -2142,6 +2334,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Clé de sol"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiave di violino"
           }
         }
       }
@@ -2208,6 +2406,12 @@
             "state" : "translated",
             "value" : "Do majeur"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do maggiore"
+          }
         }
       }
     },
@@ -2272,6 +2476,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Do majeur (sans altération)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do maggiore (senza alterazioni)"
           }
         }
       }
@@ -2338,6 +2548,12 @@
             "state" : "translated",
             "value" : "Mode sombre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modalità scura"
+          }
         }
       }
     },
@@ -2402,6 +2618,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fermer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiudi"
           }
         }
       }
@@ -2468,6 +2690,12 @@
             "state" : "translated",
             "value" : "Tout reste lisible, même avec Augmenter le contraste ou si les couleurs sont difficiles à distinguer."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutto resta leggibile, anche con Aumenta contrasto o se è difficile distinguere i colori."
+          }
         }
       }
     },
@@ -2532,6 +2760,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Utilisez l’app dans d’autres langues."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa l’app in più lingue."
           }
         }
       }
@@ -2598,6 +2832,12 @@
             "state" : "translated",
             "value" : "Plus de langues"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Più lingue"
+          }
         }
       }
     },
@@ -2662,6 +2902,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · dites « 쉼 » pour un silence"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · per una pausa di’ «쉼»"
           }
         }
       }
@@ -2728,6 +2974,12 @@
             "state" : "translated",
             "value" : "Pincez et déplacez jusqu’à ce que deux mesures remplissent le cadre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pizzica e trascina finché due battute riempiono il riquadro"
+          }
         }
       }
     },
@@ -2792,6 +3044,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ce que j’ai entendu"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa ho sentito"
           }
         }
       }
@@ -2858,6 +3116,12 @@
             "state" : "translated",
             "value" : "Calage rythmique"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quantizzazione ritmica"
+          }
         }
       }
     },
@@ -2922,6 +3186,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Libre"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libero"
           }
         }
       }
@@ -2988,6 +3258,12 @@
             "state" : "translated",
             "value" : "L’autorisation d’utiliser le micro est requise. Autorisez-la dans Réglages."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serve l’autorizzazione al microfono. Consentila in Impostazioni."
+          }
         }
       }
     },
@@ -3052,6 +3328,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aucune entrée micro n’a été trouvée."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessun ingresso microfono trovato."
           }
         }
       }
@@ -3118,6 +3400,12 @@
             "state" : "translated",
             "value" : "Enregistrez vos partitions dans un fichier et rouvrez-les plus tard."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva i tuoi spartiti in un file e riaprili più tardi."
+          }
         }
       }
     },
@@ -3182,6 +3470,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Commencer à parler"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia a parlare"
           }
         }
       }
@@ -3248,6 +3542,12 @@
             "state" : "translated",
             "value" : "Seul l’ordre dans lequel vous parlez est utilisé. Toutes les notes sont des noires ; corrigez les durées ensuite."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conta solo l’ordine in cui parli. Tutte le note entrano come semiminime; correggi le durate dopo."
+          }
         }
       }
     },
@@ -3312,6 +3612,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cale chaque instant parlé sur la position de %@ la plus proche."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allinea ogni momento parlato alla posizione di nota %@ più vicina."
           }
         }
       }
@@ -3378,6 +3684,12 @@
             "state" : "translated",
             "value" : "Arrêter"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ferma"
+          }
         }
       }
     },
@@ -3442,6 +3754,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Métronome (clic de temps)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronomo (clic del battito)"
           }
         }
       }
@@ -3508,6 +3826,12 @@
             "state" : "translated",
             "value" : "Désactiver le métronome"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Disattiva metronomo"
+          }
         }
       }
     },
@@ -3572,6 +3896,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Après quatre temps de métronome, dites les noms des notes en rythme."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dopo quattro battiti di metronomo, di’ i nomi delle note a tempo."
           }
         }
       }
@@ -3638,6 +3968,12 @@
             "state" : "translated",
             "value" : "Activer le métronome"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva metronomo"
+          }
         }
       }
     },
@@ -3702,6 +4038,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toutes les notes restent dans l’octave de départ."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutte le note restano nell’ottava iniziale."
           }
         }
       }
@@ -3768,6 +4110,12 @@
             "state" : "translated",
             "value" : "Signature rythmique"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo in chiave"
+          }
         }
       }
     },
@@ -3832,6 +4180,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Signature rythmique"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo in chiave"
           }
         }
       }
@@ -3898,6 +4252,12 @@
             "state" : "translated",
             "value" : "Les signalements de bugs et les idées de fonctions sont les bienvenus."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segnalazioni di bug e idee per nuove funzioni sono benvenute."
+          }
         }
       }
     },
@@ -3962,6 +4322,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couleurs et contraste plus confortables"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Colori e contrasto più comodi"
           }
         }
       }
@@ -4028,6 +4394,12 @@
             "state" : "translated",
             "value" : "Aucune note trouvée dans le texte collé.\nVérifiez qu’il suit la règle (p. ex. 4옥도8분음)."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nessuna nota trovata nel testo incollato.\nControlla che segua la regola (es. 4옥도8분음)."
+          }
         }
       }
     },
@@ -4092,6 +4464,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Si c’est trop rapide, baissez le tempo (actuellement %lld BPM)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se è troppo veloce, abbassa il tempo (ora %lld BPM)"
           }
         }
       }
@@ -4158,6 +4536,12 @@
             "state" : "translated",
             "value" : "Utiliser"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa"
+          }
         }
       }
     },
@@ -4222,6 +4606,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Choisir dans la photothèque"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli dalla libreria foto"
           }
         }
       }
@@ -4288,6 +4678,12 @@
             "state" : "translated",
             "value" : "Nouvelle partition"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuovo spartito"
+          }
         }
       }
     },
@@ -4352,6 +4748,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Réglages"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni"
           }
         }
       }
@@ -4418,6 +4820,12 @@
             "state" : "translated",
             "value" : "Triolet : %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terzina: %@"
+          }
         }
       }
     },
@@ -4482,6 +4890,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mode triolet : trois notes se partagent un temps (ou deux)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modalità terzina: tre note condividono un battito (o due)"
           }
         }
       }
@@ -4548,6 +4962,12 @@
             "state" : "translated",
             "value" : "Triolet pointé : %@"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Terzina puntata: %@"
+          }
         }
       }
     },
@@ -4612,6 +5032,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mode silence : touchez une durée pour insérer un silence"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modalità pausa: tocca una durata per inserire una pausa"
           }
         }
       }
@@ -4678,6 +5104,12 @@
             "state" : "translated",
             "value" : "Octave de départ  %lld"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ottava iniziale  %lld"
+          }
         }
       }
     },
@@ -4742,6 +5174,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Astuces utiles"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consigli utili"
           }
         }
       }
@@ -4808,6 +5246,12 @@
             "state" : "translated",
             "value" : "Reprenez votre partition là où vous l’aviez laissée"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riprendi lo spartito da dove l’avevi lasciato"
+          }
         }
       }
     },
@@ -4872,6 +5316,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vérifiez ci-dessous, puis touchez « Ajouter à la partition »"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlla qui sotto, poi tocca «Aggiungi allo spartito»"
           }
         }
       }
@@ -4938,6 +5388,12 @@
             "state" : "translated",
             "value" : "Coller une partition"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Incolla spartito"
+          }
         }
       }
     },
@@ -5002,6 +5458,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Photo de partition"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto dello spartito"
           }
         }
       }
@@ -5068,6 +5530,12 @@
             "state" : "translated",
             "value" : "Donnez la photo de la partition à une IA, demandez-lui de l’écrire selon la règle ci-dessous, puis collez le texte reçu pour remplir la portée."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dai la foto dello spartito a un’IA, chiedile di scriverlo con la regola qui sotto, poi incolla il testo ricevuto per riempire il pentagramma."
+          }
         }
       }
     },
@@ -5132,6 +5600,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Enregistrer et exporter des partitions"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva ed esporta spartiti"
           }
         }
       }
@@ -5198,6 +5672,12 @@
             "state" : "translated",
             "value" : "Titre de la partition"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titolo dello spartito"
+          }
         }
       }
     },
@@ -5262,6 +5742,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Convertir en partition"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Converti in spartito"
           }
         }
       }
@@ -5328,6 +5814,12 @@
             "state" : "translated",
             "value" : "Impossible de lire la partition. Les meilleurs résultats : musique imprimée nette, une seule ligne, photo prise de face."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile leggere lo spartito. Funziona meglio con musica stampata nitida, un solo rigo e una foto frontale."
+          }
         }
       }
     },
@@ -5392,6 +5884,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ajouter à la partition"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aggiungi allo spartito"
           }
         }
       }
@@ -5458,6 +5956,12 @@
             "state" : "translated",
             "value" : "Notes à ajouter"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Note da aggiungere"
+          }
         }
       }
     },
@@ -5522,6 +6026,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Des conseils discrets sur les fonctions utiles, au bon moment."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suggerimenti discreti sulle funzioni utili, proprio quando servono."
           }
         }
       }
@@ -5588,6 +6098,12 @@
             "state" : "translated",
             "value" : "Choisit l’octave la plus proche de la note précédente : « 시 도 » monte donc d’un demi-ton."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sceglie l’ottava più vicina alla nota precedente, quindi «시 도» sale di un semitono."
+          }
         }
       }
     },
@@ -5652,6 +6168,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Commencez à vous entraîner depuis l’écran d’accueil, sans ouvrir l’app."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inizia a esercitarti dalla schermata Home, senza aprire l’app."
           }
         }
       }
@@ -5718,6 +6240,12 @@
             "state" : "translated",
             "value" : "Utilisez toute l’app en anglais."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa tutta l’app in inglese."
+          }
         }
       }
     },
@@ -5782,6 +6310,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Votre partition reste telle que vous l’avez laissée, même si l’app se ferme."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il tuo spartito resta com’era, anche se l’app si chiude."
           }
         }
       }
@@ -5848,6 +6382,12 @@
             "state" : "translated",
             "value" : "Les partitions et les boutons restent nets en mode sombre."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spartiti e pulsanti restano nitidi in modalità scura."
+          }
         }
       }
     },
@@ -5912,6 +6452,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "À la première ouverture après une mise à jour, découvrez les nouveautés."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La prima volta che apri l’app dopo un aggiornamento, scopri le novità."
           }
         }
       }
@@ -5978,6 +6524,12 @@
             "state" : "translated",
             "value" : "Nouveautés"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Novità"
+          }
         }
       }
     },
@@ -6042,6 +6594,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Coller ici"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Incolla qui"
           }
         }
       }
@@ -6108,6 +6666,12 @@
             "state" : "translated",
             "value" : "Rappels d’entraînement"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Promemoria di esercizio"
+          }
         }
       }
     },
@@ -6172,6 +6736,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prise en charge complète de l’anglais"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supporto completo per l’inglese"
           }
         }
       }
@@ -6238,6 +6808,12 @@
             "state" : "translated",
             "value" : "p. ex. 4옥도4분음 4옥레4분음 4옥미8분음 …"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "es. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
         }
       }
     },
@@ -6302,6 +6878,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Afficher à droite"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra a destra"
           }
         }
       }
@@ -6368,6 +6950,12 @@
             "state" : "translated",
             "value" : "Appuyez longuement sur la portée, choisissez la hauteur, puis relâchez pour ajouter la note"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tieni premuto sul pentagramma, scegli l’altezza e rilascia per aggiungere la nota"
+          }
         }
       }
     },
@@ -6432,6 +7020,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Octave automatique"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ottava automatica"
           }
         }
       }
@@ -6498,6 +7092,12 @@
             "state" : "translated",
             "value" : "Ronde"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semibreve"
+          }
         }
       }
     },
@@ -6562,6 +7162,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fine"
           }
         }
       }
@@ -6628,6 +7234,12 @@
             "state" : "translated",
             "value" : "Afficher à gauche"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostra a sinistra"
+          }
         }
       }
     },
@@ -6692,6 +7304,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Réduire les animations"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riduci movimento"
           }
         }
       }
@@ -6758,6 +7376,12 @@
             "state" : "translated",
             "value" : "Avec Réduire les animations activé, les effets à l’écran se font plus calmes."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con Riduci movimento attivo, gli effetti sullo schermo si fanno più calmi."
+          }
         }
       }
     },
@@ -6822,6 +7446,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "L’autorisation de reconnaissance vocale est requise. Autorisez-la dans Réglages."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serve l’autorizzazione al riconoscimento vocale. Consentila in Impostazioni."
           }
         }
       }
@@ -6888,6 +7518,12 @@
             "state" : "translated",
             "value" : "La reconnaissance vocale a échoué. Réessayez dans un instant."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riconoscimento vocale non riuscito. Riprova tra un attimo."
+          }
         }
       }
     },
@@ -6952,6 +7588,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Clé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiave"
           }
         }
       }
@@ -7018,6 +7660,12 @@
             "state" : "translated",
             "value" : "Clé"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiave"
+          }
         }
       }
     },
@@ -7082,6 +7730,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La reconnaissance vocale en coréen n’est pas disponible sur cet appareil."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il riconoscimento vocale in coreano non è disponibile su questo dispositivo."
           }
         }
       }
@@ -7148,6 +7802,12 @@
             "state" : "translated",
             "value" : "Cadrez deux mesures dans ce cadre et prenez la photo"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inquadra due battute in questo riquadro e scatta"
+          }
         }
       }
     },
@@ -7212,6 +7872,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Contacter par e-mail"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contatta via email"
           }
         }
       }
@@ -7278,6 +7944,12 @@
             "state" : "translated",
             "value" : "Avec des écouteurs, le métronome ne passe pas dans le micro"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con gli auricolari il metronomo non entra nel microfono"
+          }
         }
       }
     },
@@ -7342,6 +8014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "MP Instagram (@lee25_ios)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DM Instagram (@lee25_ios)"
           }
         }
       }
@@ -7408,6 +8086,12 @@
             "state" : "translated",
             "value" : "Recevez un rappel pour travailler le déchiffrage chanté à l’heure de votre choix."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ricevi un promemoria per esercitarti nella lettura cantata all’ora che scegli."
+          }
         }
       }
     },
@@ -7472,6 +8156,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Transcription auto (expérimental)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trascrizione automatica (sperimentale)"
           }
         }
       }
@@ -7538,6 +8228,12 @@
             "state" : "translated",
             "value" : "Pour de meilleurs résultats"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per risultati migliori"
+          }
         }
       }
     },
@@ -7602,6 +8298,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aides à la lecture"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aiuti alla riproduzione"
           }
         }
       }
@@ -7668,6 +8370,12 @@
             "state" : "translated",
             "value" : "Tout effacer"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancella tutto"
+          }
         }
       }
     },
@@ -7732,6 +8440,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ pointée"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ puntata"
           }
         }
       }
@@ -7798,6 +8512,12 @@
             "state" : "translated",
             "value" : "Titre"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titolo"
+          }
         }
       }
     },
@@ -7862,6 +8582,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Armure"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tonalità"
           }
         }
       }
@@ -7928,6 +8654,12 @@
             "state" : "translated",
             "value" : "Armure"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Armatura di chiave"
+          }
         }
       }
     },
@@ -7992,6 +8724,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prêt ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Preparati"
           }
         }
       }
@@ -8058,6 +8796,12 @@
             "state" : "translated",
             "value" : "Assistance"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assistenza"
+          }
         }
       }
     },
@@ -8122,6 +8866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Supprimer la photo de référence"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimina foto di riferimento"
           }
         }
       }
@@ -8188,6 +8938,12 @@
             "state" : "translated",
             "value" : "Transcrire"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trascrivi"
+          }
         }
       }
     },
@@ -8252,6 +9008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Une visite rapide pour les nouveaux utilisateurs"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una breve guida per i nuovi utenti"
           }
         }
       }
@@ -8318,6 +9080,12 @@
             "state" : "translated",
             "value" : "Une courte présentation de ce que vous pouvez faire, à la première ouverture de l’app."
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una breve introduzione a ciò che puoi fare, la prima volta che apri l’app."
+          }
         }
       }
     },
@@ -8382,6 +9150,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annuler"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annulla"
           }
         }
       }
@@ -8448,6 +9222,12 @@
             "state" : "translated",
             "value" : "Prendre une photo (cadrer 2 mesures)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scatta una foto (adatta a 2 battute)"
+          }
         }
       }
     },
@@ -8512,6 +9292,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "L’appareil photo n’est pas disponible.\nChoisissez plutôt une photo dans votre photothèque."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La fotocamera non è disponibile.\nScegli invece una foto dalla libreria."
           }
         }
       }
@@ -8578,6 +9364,12 @@
             "state" : "translated",
             "value" : "Décompte (une mesure avant le départ)"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conteggio iniziale (una battuta prima dell’avvio)"
+          }
         }
       }
     },
@@ -8642,6 +9434,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mises en page pour texte agrandi"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout per testo più grande"
           }
         }
       }
@@ -8708,6 +9506,12 @@
             "state" : "translated",
             "value" : "Coller depuis le presse-papiers"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Incolla dagli appunti"
+          }
         }
       }
     },
@@ -8769,6 +9573,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo"
@@ -8838,6 +9648,12 @@
             "state" : "translated",
             "value" : "Disposition pour iPhone pliable"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout per iPhone pieghevole"
+          }
         }
       }
     },
@@ -8902,6 +9718,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Utilisez le grand écran d’un iPhone pliable en deux volets côte à côte."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usa lo schermo largo di un iPhone pieghevole come due pannelli affiancati."
           }
         }
       }
@@ -8968,6 +9790,12 @@
             "state" : "translated",
             "value" : "Dites une note à la fois, clairement et pile sur le temps"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di’ una nota alla volta, con chiarezza e proprio sul battito"
+          }
         }
       }
     },
@@ -9032,6 +9860,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Copier la partition actuelle en texte (comme exemple pour l’IA)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copia lo spartito attuale come testo (come esempio per l’IA)"
           }
         }
       }
@@ -9098,6 +9932,12 @@
             "state" : "translated",
             "value" : "Widgets de l’écran d’accueil"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget per la schermata Home"
+          }
         }
       }
     },
@@ -9162,6 +10002,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver lit chaque bouton et chaque note, dans le bon ordre."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver legge ogni pulsante e ogni nota, nell’ordine giusto."
           }
         }
       }
@@ -9228,6 +10074,12 @@
             "state" : "translated",
             "value" : "Accord"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accordo"
+          }
         }
       }
     },
@@ -9293,6 +10145,12 @@
             "state" : "translated",
             "value" : "Mode accord : les notes s’empilent sur la note sélectionnée"
           }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modalità accordo: le note si impilano sulla nota selezionata"
+          }
         }
       }
     },
@@ -9354,6 +10212,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "it" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"
