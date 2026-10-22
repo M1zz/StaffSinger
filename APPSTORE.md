@@ -604,3 +604,58 @@ Foto di riferimento
 Fotografa lo spartito che stai leggendo e tienilo sullo schermo per confrontarlo mentre lo ricopi.
 
 Tienilo a portata di mano per il coro, le lezioni di strumento o la preparazione agli esami di conservatorio: ogni volta che devi leggere la musica in fretta.
+
+## pt-BR
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger: Leitura Musical
+
+### 부제
+
+Ouça as notas que você escreve
+
+### 키워드
+
+solfejo,teoria musical,pauta,partitura,coral,piano,acorde,metrônomo,ditado,aula,canto,percepção
+
+### 프로모션 텍스트
+
+Uma partitura nova, com ritmos e acordes difíceis? Coloque as notas na pauta e ouça com metrônomo e contagem.
+
+### 설명
+
+Não conte uma partitura nova só de cabeça. Ouça.
+O StaffSinger copia para a pauta os dois compassos que confundem você e toca com o ritmo e a altura exatos.
+
+Toque na pauta ou use o teclado
+Mantenha o dedo na pauta para escolher a altura, ou toque no teclado de piano de duas oitavas para adicionar uma nota. Escolha da semibreve à semicolcheia, com notas pontuadas, tercinas e pausas, e apague a última nota adicionada com um toque.
+
+Toque junto com o metrônomo
+Depois da contagem, a partitura toca no clique do metrônomo e a nota que está soando fica destacada em cor. Andamento e fórmula de compasso mudam em Ajustes.
+
+Acordes e várias vozes
+Empilhe notas no mesmo tempo para formar um acorde e divida a música em vozes. Há suporte a armaduras de clave e às claves de sol, de dó e de fá.
+
+Ditado de solfejo
+Diga os nomes das notas no ritmo do metrônomo e elas entram na pauta como notas. Falando bem no tempo, o ritmo também é registrado. O ditado reconhece as sílabas do solfejo coreano, e o reconhecimento de voz acontece inteiramente no seu dispositivo.
+
+Cole uma partitura como texto
+Cole um texto escrito em um formato fixo e a pauta se preenche. Copie a regra, entregue a uma IA junto com a foto da partitura e cole o que ela devolver.
+
+Foto de referência
+Fotografe a partitura que está lendo e deixe na tela para comparar enquanto copia.
+
+Tenha por perto para o coral, as aulas de instrumento ou a preparação para provas de música: sempre que precisar ler música rápido.
