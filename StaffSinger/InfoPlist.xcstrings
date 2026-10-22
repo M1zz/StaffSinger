@@ -57,6 +57,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -115,6 +121,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger verwendet die Kamera, um ein Foto von Noten aufzunehmen und als Referenzbild zu laden."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger utilise l’appareil photo pour photographier une partition et la charger comme image de référence."
           }
         }
       }
@@ -175,6 +187,12 @@
             "state" : "translated",
             "value" : "StaffSinger verwendet das Mikrofon, um die von dir gesprochenen Notennamen in Noten auf dem Notensystem umzuwandeln. Das Audio wird nur auf diesem Gerät verarbeitet und nie gespeichert."
           }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger utilise le micro pour transformer les noms de notes que vous prononcez en notes sur la portée. L’audio est traité uniquement sur cet appareil et n’est jamais enregistré."
+          }
         }
       }
     },
@@ -233,6 +251,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger verwendet die Spracherkennung, um die von dir gesprochenen Notennamen in Noten umzuwandeln. Die Erkennung läuft nur auf diesem Gerät."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger utilise la reconnaissance vocale pour transformer les noms de notes que vous prononcez en notes. La reconnaissance s’effectue uniquement sur cet appareil."
           }
         }
       }

@@ -494,3 +494,58 @@ Referenzfoto
 Fotografiere die Noten, nach denen du spielst, und lass sie beim Abschreiben zum Vergleichen auf dem Bildschirm.
 
 Immer dabei für Chor, Instrumentalunterricht oder die Vorbereitung auf die Musikhochschule – überall, wo du schnell Noten lesen musst.
+
+## fr-FR
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger : Lecture à vue
+
+### 부제
+
+Écoutez ce que vous écrivez
+
+### 키워드
+
+solfège,formation musicale,théorie,portée,partition,chorale,piano,accord,dictée,cours,chant,notes
+
+### 프로모션 텍스트
+
+Une partition inconnue, avec des rythmes et des accords complexes ? Posez des notes sur la portée et écoutez-les avec métronome et décompte.
+
+### 설명
+
+Ne comptez pas une nouvelle partition seulement dans votre tête. Écoutez-la.
+StaffSinger recopie sur une portée les deux mesures qui vous posent problème et les joue avec le rythme et la hauteur exacts.
+
+Touchez la portée ou utilisez le clavier
+Appuyez longuement sur la portée pour choisir une hauteur, ou touchez le clavier de piano sur deux octaves pour ajouter une note. Choisissez de la ronde à la double croche, avec notes pointées, triolets et silences, et effacez la dernière note ajoutée d’un seul geste.
+
+Lecture avec métronome
+Après le décompte, la partition se joue au clic du métronome et la note qui sonne est mise en couleur. Le tempo et la signature rythmique se règlent dans les Réglages.
+
+Accords et plusieurs voix
+Empilez des notes sur le même temps pour former un accord, et répartissez la musique en voix distinctes. Les armures et les clés de sol, d’ut et de fa sont prises en charge.
+
+Dictée de solfège
+Dites les noms des notes en rythme avec le métronome : elles se placent sur la portée. En parlant pile sur le temps, le rythme est aussi saisi. La dictée reconnaît les syllabes du solfège coréen, et la reconnaissance vocale se fait entièrement sur votre appareil.
+
+Coller une partition en texte
+Collez un texte écrit selon un format fixe et la portée se remplit. Copiez la règle, donnez-la à une IA avec la photo de votre partition, puis collez ce qu’elle renvoie.
+
+Photo de référence
+Photographiez la partition que vous lisez et gardez-la à l’écran pour comparer pendant que vous la recopiez.
+
+À garder près de vous pour la chorale, les cours d’instrument ou la préparation aux concours de conservatoire : dès que vous devez lire la musique vite.

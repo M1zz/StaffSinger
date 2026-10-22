@@ -22,7 +22,7 @@ ICON = ROOT / "StaffSinger" / "Assets.xcassets" / "AppIcon.appiconset" / "AppIco
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # 앱 언어 코드 → App Store Connect 로케일 (make_marketing_screenshots.py 와 같다)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "es": "es-MX", "de": "de-DE"}   # 스토어에는 한국어 한 가지
+STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "es": "es-MX", "de": "de-DE", "fr": "fr-FR"}   # 스토어에는 한국어 한 가지
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -40,6 +40,7 @@ SEARCH = {
     "ru": ("Ноты", "Слышно сразу,<br>что вы записали", "Ставьте ноты на клавишах,<br>слушайте в нужном ритме"),
     "es": ("Partitura", "Escucha las notas<br>que escribes", "Entra con el teclado,<br>escucha con su ritmo"),
     "de": ("Noten", "Gesetzte Noten<br>sofort hören", "Mit Tasten eingeben,<br>im richtigen Rhythmus abspielen"),
+    "fr": ("Partition", "Écoutez les notes<br>que vous écrivez", "Saisissez au clavier,<br>jouez au bon rythme"),
 }
 
 # 헤더는 한 가지 약속: 처음 보는 악보(초견)도 소리로 확인한다.
@@ -51,6 +52,7 @@ HEADER = {
     "ru": ("StaffSinger", "Новые ноты —<br>проверьте на слух"),
     "es": ("StaffSinger", "Comprueba una partitura<br>nueva de oído"),
     "de": ("StaffSinger", "Neue Noten<br>mit dem Gehör prüfen"),
+    "fr": ("StaffSinger", "Une nouvelle partition<br>à l’oreille"),
 }
 
 # ⚠️ 바탕 · 글자색은 앱 아이콘(파란 바탕 위 흰 오선과 음표)과 AccentColor(#3373D9) 에서 왔다.
