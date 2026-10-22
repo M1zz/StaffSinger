@@ -87,6 +87,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -175,6 +181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger dùng máy ảnh để chụp ảnh bản nhạc và tải làm ảnh tham chiếu."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger používá fotoaparát k vyfocení partitury a jejímu načtení jako referenčního obrázku."
           }
         }
       }
@@ -265,6 +277,12 @@
             "state" : "translated",
             "value" : "StaffSinger dùng micrô để chuyển tên nốt bạn nói thành nốt trên khuông nhạc. Âm thanh chỉ được xử lý trên thiết bị này và không bao giờ được lưu."
           }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger používá mikrofon k převodu názvů not, které řeknete, na noty v notové osnově. Zvuk se zpracovává pouze v tomto zařízení a nikdy se neukládá."
+          }
         }
       }
     },
@@ -353,6 +371,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger dùng tính năng nhận dạng giọng nói để chuyển tên nốt bạn nói thành nốt nhạc. Việc nhận dạng chỉ diễn ra trên thiết bị này."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger používá rozpoznávání řeči k převodu názvů not, které řeknete, na noty. Rozpoznávání probíhá pouze v tomto zařízení."
           }
         }
       }

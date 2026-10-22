@@ -769,3 +769,58 @@ Dán văn bản viết theo định dạng cố định là khuông nhạc đư�
 Chụp bản nhạc bạn đang đọc và để trên màn hình để đối chiếu khi chép.
 
 Luôn sẵn bên bạn khi hát hợp xướng, học nhạc cụ hay ôn thi nhạc viện, mỗi khi cần đọc nhạc thật nhanh.
+
+## cs
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger: Čtení z listu
+
+### 부제
+
+Slyšte noty, které napíšete
+
+### 키워드
+
+solfeggio,hudební nauka,pětilinka,partitura,sbor,klavír,akord,metronom,diktát,hodiny hudby,zpěv
+
+### 프로모션 텍스트
+
+Neznámá partitura se složitým rytmem a akordy? Klepejte noty do pětilinky a poslouchejte je s metronomem a předtaktem.
+
+### 설명
+
+Novou partituru nepočítejte jen v hlavě. Poslechněte si ji.
+StaffSinger přepíše dva zapeklité takty do pětilinky a přehraje je se správným rytmem i výškou tónů.
+
+Klepejte na pětilinku nebo hrajte na klávesy
+Podržením pětilinky vyberete výšku, nebo klepnutím na dvouoktávovou klaviaturu přidáte notu. Na výběr jsou noty od celé po šestnáctinovou, tečkované noty, triola a pomlky; právě přidanou notu smažete jediným klepnutím.
+
+Přehrávání s metronomem
+Po předtaktu se partitura přehrává podle kliknutí metronomu a znějící nota je zvýrazněná barvou. Tempo a taktové označení změníte v Nastavení.
+
+Akordy a více hlasů
+Noty na stejné době vytvoří akord a hudbu můžete rozdělit do hlasů. Podporované jsou předznamenání a houslový, altový i basový klíč.
+
+Solfeggio diktát
+Říkejte názvy not v rytmu metronomu a objeví se v pětilince jako noty. Mluvíte-li přesně na dobu, zachytí se i rytmus. Diktát rozpoznává korejské solfeggio slabiky a rozpoznávání řeči probíhá celé ve vašem zařízení.
+
+Vložení partitury jako textu
+Vložte text zapsaný v pevném formátu a pětilinka se vyplní. Zkopírujte pravidlo, předejte je AI spolu s fotkou partitury a vložte, co vám vrátí.
+
+Referenční foto
+Vyfoťte partituru, kterou čtete, a nechte ji na obrazovce, abyste ji mohli při přepisu porovnávat.
+
+Mějte ho po ruce pro sbor, hodiny hry na nástroj nebo přípravu na přijímačky na konzervatoř – kdykoli potřebujete rychle číst noty.
