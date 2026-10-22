@@ -111,6 +111,12 @@
             "state" : "translated",
             "value" : "\nToisen tahdin jälkeiset nuotit eivät välttämättä näy näytöllä."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nNot setelah birama kedua mungkin tidak terlihat di layar."
+          }
         }
       }
     },
@@ -223,6 +229,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "”%@” – nuottien nimiä ei löytynyt.\nSano 도 레 미 파 솔 라 시."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” — tidak ada nama nada yang ditemukan.\nUcapkan 도 레 미 파 솔 라 시."
           }
         }
       }
@@ -337,6 +349,12 @@
             "state" : "translated",
             "value" : "%@ · Kuuntelen"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Mendengarkan"
+          }
         }
       }
     },
@@ -449,6 +467,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@-duuri (♭%lld)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ mayor (♭%lld)"
           }
         }
       }
@@ -563,6 +587,12 @@
             "state" : "translated",
             "value" : "%@-duuri (♯%lld)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ mayor (♯%lld)"
+          }
         }
       }
     },
@@ -675,6 +705,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Saneltuja nuotteja: %lld"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not yang didikte: %lld"
           }
         }
       }
@@ -789,6 +825,12 @@
             "state" : "translated",
             "value" : "Saneltuja nuotteja: %lld.\nJos korkeus tai pituus on väärä, korjaa vetämällä nuottia."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not yang didikte: %lld.\nJika tinggi atau panjang nada keliru, seret not untuk memperbaikinya."
+          }
         }
       }
     },
@@ -901,6 +943,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tuotuja nuotteja: %lld."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not yang diimpor: %lld."
           }
         }
       }
@@ -1015,6 +1063,12 @@
             "state" : "translated",
             "value" : "Tunnistettuja nuotteja: %lld (kokeellinen).\nTarkista korkeudet ja pituudet ja korjaa ne käsin."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not yang dikenali: %lld (eksperimen).\nPeriksa tinggi dan panjang nada, lalu perbaiki sendiri."
+          }
         }
       }
     },
@@ -1128,6 +1182,12 @@
             "state" : "translated",
             "value" : "Tahti %lld, isku %lld"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Birama %lld, ketukan %lld"
+          }
         }
       }
     },
@@ -1237,6 +1297,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/16"
@@ -1354,6 +1420,12 @@
             "state" : "translated",
             "value" : "Kuudestoistaosanuotti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not seperenam belas"
+          }
         }
       }
     },
@@ -1466,6 +1538,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Puolinuotti"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not setengah"
           }
         }
       }
@@ -1580,6 +1658,12 @@
             "state" : "translated",
             "value" : "Kun hyppy on kvarttia suurempi, sano ”높은 솔” (korkea sol) tai ”낮은 시” (matala si)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Untuk lompatan lebih lebar dari kuart, ucapkan “높은 솔” (sol tinggi) atau “낮은 시” (si rendah)"
+          }
         }
       }
     },
@@ -1689,6 +1773,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/4"
@@ -1806,6 +1896,12 @@
             "state" : "translated",
             "value" : "Neljäsosanuotti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not seperempat"
+          }
         }
       }
     },
@@ -1915,6 +2011,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/8"
@@ -2032,6 +2134,12 @@
             "state" : "translated",
             "value" : "Kahdeksasosanuotti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not seperdelapan"
+          }
         }
       }
     },
@@ -2144,6 +2252,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kopioi sääntö tekoälylle"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salin aturan untuk AI"
           }
         }
       }
@@ -2258,6 +2372,12 @@
             "state" : "translated",
             "value" : "Aloita heti pyytämällä Siriä tai suorittamalla oikotie."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langsung mulai dengan meminta Siri atau menjalankan pintasan."
+          }
         }
       }
     },
@@ -2370,6 +2490,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri ja Oikotiet"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri dan Pintasan"
           }
         }
       }
@@ -2484,6 +2610,12 @@
             "state" : "translated",
             "value" : "Parempi VoiceOver"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver yang lebih baik"
+          }
         }
       }
     },
@@ -2596,6 +2728,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@ iskua"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@ ketukan"
           }
         }
       }
@@ -2710,6 +2848,12 @@
             "state" : "translated",
             "value" : "C-avain"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunci C"
+          }
         }
       }
     },
@@ -2822,6 +2966,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ota yhteyttä kehittäjään"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hubungi pengembang"
           }
         }
       }
@@ -2936,6 +3086,12 @@
             "state" : "translated",
             "value" : "Solfa-saneluharjoitus"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dikte Solfeggio"
+          }
         }
       }
     },
@@ -3048,6 +3204,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nuottien nimiä ei erotettu. Yritä sanoa ”도 레 미” selvästi metronomin tahtiin."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nama nada tidak terdengar jelas. Coba ucapkan “도 레 미” dengan jelas, sesuai irama metronom."
           }
         }
       }
@@ -3162,6 +3324,12 @@
             "state" : "translated",
             "value" : "Sääntö kopioitu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aturan disalin"
+          }
         }
       }
     },
@@ -3274,6 +3442,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kun suurennat tekstiä, näytöt järjestyvät uudelleen eivätkä leikkaudu."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat teks diperbesar, layar ditata ulang agar tidak terpotong."
           }
         }
       }
@@ -3388,6 +3562,12 @@
             "state" : "translated",
             "value" : "Laitteella tapahtuva korean puheentunnistus ei ole valmis.\nOta korea käyttöön kohdassa Asetukset ▸ Yleiset ▸ Näppäimistö ▸ Sanelu, niin tarvittavat tiedostot ladataan."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengenalan suara bahasa Korea di perangkat belum siap.\nAktifkan bahasa Korea di Pengaturan ▸ Umum ▸ Papan Ketik ▸ Dikte agar file yang diperlukan diunduh."
+          }
         }
       }
     },
@@ -3500,6 +3680,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "F-avain"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunci F"
           }
         }
       }
@@ -3614,6 +3800,12 @@
             "state" : "translated",
             "value" : "Äänitystä ei voitu aloittaa: %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak dapat memulai perekaman: %@"
+          }
         }
       }
     },
@@ -3726,6 +3918,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "G-avain"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunci G"
           }
         }
       }
@@ -3840,6 +4038,12 @@
             "state" : "translated",
             "value" : "C-duuri"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do mayor"
+          }
         }
       }
     },
@@ -3952,6 +4156,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "C-duuri (ei etumerkkejä)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Do mayor (tanpa tanda kromatik)"
           }
         }
       }
@@ -4066,6 +4276,12 @@
             "state" : "translated",
             "value" : "Tumma tila"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode gelap"
+          }
         }
       }
     },
@@ -4178,6 +4394,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sulje"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutup"
           }
         }
       }
@@ -4292,6 +4514,12 @@
             "state" : "translated",
             "value" : "Kaikki pysyy luettavana, vaikka kontrastia lisättäisiin tai värejä olisi vaikea erottaa."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semuanya tetap terbaca, bahkan dengan Tingkatkan Kontras atau saat warna sulit dibedakan."
+          }
         }
       }
     },
@@ -4404,6 +4632,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Käytä sovellusta useammilla kielillä."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pakai aplikasi dalam lebih banyak bahasa."
           }
         }
       }
@@ -4518,6 +4752,12 @@
             "state" : "translated",
             "value" : "Lisää kieliä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lebih banyak bahasa"
+          }
         }
       }
     },
@@ -4630,6 +4870,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · tauko: sano ”쉼”"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · ucapkan “쉼” untuk tanda diam"
           }
         }
       }
@@ -4744,6 +4990,12 @@
             "state" : "translated",
             "value" : "Zoomaa ja siirrä sormilla, kunnes kaksi tahtia täyttää ruudun"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cubit dan geser hingga dua birama memenuhi kotak"
+          }
         }
       }
     },
@@ -4856,6 +5108,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mitä kuulin"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yang terdengar"
           }
         }
       }
@@ -4970,6 +5228,12 @@
             "state" : "translated",
             "value" : "Rytmin kohdistus"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Penyelarasan ritme"
+          }
         }
       }
     },
@@ -5082,6 +5346,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vapaa"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bebas"
           }
         }
       }
@@ -5196,6 +5466,12 @@
             "state" : "translated",
             "value" : "Mikrofonin lupa tarvitaan. Salli se Asetuksissa."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Izin mikrofon diperlukan. Izinkan di Pengaturan."
+          }
         }
       }
     },
@@ -5308,6 +5584,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mikrofonin tuloa ei löytynyt."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Input mikrofon tidak ditemukan."
           }
         }
       }
@@ -5422,6 +5704,12 @@
             "state" : "translated",
             "value" : "Tallenna nuotit tiedostoon ja avaa ne myöhemmin uudelleen."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan partitur ke file dan buka lagi nanti."
+          }
         }
       }
     },
@@ -5534,6 +5822,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aloita puhuminen"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai bicara"
           }
         }
       }
@@ -5648,6 +5942,12 @@
             "state" : "translated",
             "value" : "Vain sanomisjärjestys otetaan huomioon. Kaikki nuotit tulevat neljäsosina; korjaa pituudet jälkeenpäin."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hanya urutan ucapanmu yang dipakai. Semua not masuk sebagai not seperempat; perbaiki panjangnya nanti."
+          }
         }
       }
     },
@@ -5760,6 +6060,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kohdistaa jokaisen sanotun hetken lähimpään %@-nuotin paikkaan."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menyelaraskan setiap saat ucapanmu ke posisi not %@ terdekat."
           }
         }
       }
@@ -5874,6 +6180,12 @@
             "state" : "translated",
             "value" : "Pysäytä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berhenti"
+          }
         }
       }
     },
@@ -5986,6 +6298,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metronomi (iskun naksaus)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronom (klik ketukan)"
           }
         }
       }
@@ -6100,6 +6418,12 @@
             "state" : "translated",
             "value" : "Poista metronomi käytöstä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Matikan metronom"
+          }
         }
       }
     },
@@ -6212,6 +6536,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kun metronomi on lyönyt neljä iskua, sano nuottien nimet tahtiin."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setelah empat ketukan metronom, sebutkan nama nada sesuai irama."
           }
         }
       }
@@ -6326,6 +6656,12 @@
             "state" : "translated",
             "value" : "Ota metronomi käyttöön"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyalakan metronom"
+          }
         }
       }
     },
@@ -6438,6 +6774,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kaikki nuotit pysyvät alkuoktaavissa."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua not tetap berada di oktaf awal."
           }
         }
       }
@@ -6552,6 +6894,12 @@
             "state" : "translated",
             "value" : "Tahtilaji"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Birama"
+          }
         }
       }
     },
@@ -6664,6 +7012,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tahtilaji"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Birama"
           }
         }
       }
@@ -6778,6 +7132,12 @@
             "state" : "translated",
             "value" : "Virheraportit ja ominaisuusehdotukset ovat tervetulleita."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laporan bug dan usulan fitur sangat kami nantikan."
+          }
         }
       }
     },
@@ -6890,6 +7250,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mukavammat värit ja kontrasti"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Warna dan kontras yang lebih nyaman"
           }
         }
       }
@@ -7004,6 +7370,12 @@
             "state" : "translated",
             "value" : "Liitetystä tekstistä ei löytynyt nuotteja.\nTarkista, että se noudattaa sääntöä (esim. 4옥도8분음)."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tidak ada not yang ditemukan di teks yang ditempel.\nPastikan teks mengikuti aturan (mis. 4옥도8분음)."
+          }
         }
       }
     },
@@ -7116,6 +7488,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Jos menee liian nopeasti, hidasta tempoa (nyt %lld BPM)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jika terlalu cepat, turunkan tempo (sekarang %lld BPM)"
           }
         }
       }
@@ -7230,6 +7608,12 @@
             "state" : "translated",
             "value" : "Käytä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pakai"
+          }
         }
       }
     },
@@ -7342,6 +7726,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valitse kuvakirjastosta"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilih dari pustaka foto"
           }
         }
       }
@@ -7456,6 +7846,12 @@
             "state" : "translated",
             "value" : "Uudet nuotit"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partitur baru"
+          }
         }
       }
     },
@@ -7568,6 +7964,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Asetukset"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengaturan"
           }
         }
       }
@@ -7682,6 +8084,12 @@
             "state" : "translated",
             "value" : "Trioli: %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triol: %@"
+          }
         }
       }
     },
@@ -7794,6 +8202,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Triolitila: kolme nuottia jakaa yhden iskun (tai kaksi)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode triol: tiga not berbagi satu ketukan (atau dua)"
           }
         }
       }
@@ -7908,6 +8322,12 @@
             "state" : "translated",
             "value" : "Pisteellinen trioli: %@"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triol bertitik: %@"
+          }
         }
       }
     },
@@ -8020,6 +8440,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Taukotila: napauta pituutta lisätäksesi tauon"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode tanda diam: ketuk panjang yang diinginkan untuk menyisipkan tanda diam"
           }
         }
       }
@@ -8134,6 +8560,12 @@
             "state" : "translated",
             "value" : "Alkuoktaavi  %lld"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oktaf awal  %lld"
+          }
         }
       }
     },
@@ -8246,6 +8678,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hyödyllisiä vinkkejä"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips berguna"
           }
         }
       }
@@ -8360,6 +8798,12 @@
             "state" : "translated",
             "value" : "Jatka nuotteja siitä, mihin jäit"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lanjutkan partitur dari terakhir kamu tinggalkan"
+          }
         }
       }
     },
@@ -8472,6 +8916,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tarkista alta ja napauta ”Lisää nuotteihin”"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Periksa di bawah, lalu ketuk “Tambahkan ke partitur”"
           }
         }
       }
@@ -8586,6 +9036,12 @@
             "state" : "translated",
             "value" : "Liitä nuotit"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempel partitur"
+          }
         }
       }
     },
@@ -8698,6 +9154,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nuottikuva"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto partitur"
           }
         }
       }
@@ -8812,6 +9274,12 @@
             "state" : "translated",
             "value" : "Anna nuottikuva tekoälylle, pyydä sitä kirjoittamaan se alla olevan säännön mukaan ja liitä saamasi teksti, niin nuottiviivasto täyttyy."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Berikan foto partitur ke AI, minta AI menuliskannya sesuai aturan di bawah, lalu tempel teks yang diterima untuk mengisi paranada."
+          }
         }
       }
     },
@@ -8924,6 +9392,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nuottien tallennus ja vienti"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simpan dan ekspor partitur"
           }
         }
       }
@@ -9038,6 +9512,12 @@
             "state" : "translated",
             "value" : "Nuottien nimi"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Judul partitur"
+          }
         }
       }
     },
@@ -9150,6 +9630,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Muunna nuoteiksi"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ubah menjadi partitur"
           }
         }
       }
@@ -9264,6 +9750,12 @@
             "state" : "translated",
             "value" : "Nuotteja ei voitu lukea. Parhaiten toimivat selkeä painettu nuotti, yksi rivi ja suoraan edestä otettu kuva."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partitur tidak dapat dibaca. Hasil terbaik didapat dari cetakan yang jelas, satu baris, dan foto dari depan."
+          }
         }
       }
     },
@@ -9376,6 +9868,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lisää nuotteihin"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tambahkan ke partitur"
           }
         }
       }
@@ -9490,6 +9988,12 @@
             "state" : "translated",
             "value" : "Lisättävät nuotit"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not yang akan ditambahkan"
+          }
         }
       }
     },
@@ -9602,6 +10106,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hienovaraisia vihjeitä hyödyllisistä toiminnoista juuri silloin, kun tarvitset niitä."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Petunjuk halus tentang fitur berguna, tepat saat kamu membutuhkannya."
           }
         }
       }
@@ -9716,6 +10226,12 @@
             "state" : "translated",
             "value" : "Valitsee edellistä nuottia lähimmän oktaavin, joten ”시 도” nousee puolisävelaskeleen."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memilih oktaf terdekat dengan not sebelumnya, sehingga “시 도” naik setengah nada."
+          }
         }
       }
     },
@@ -9828,6 +10344,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aloita harjoittelu suoraan koti-valikosta avaamatta sovellusta."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mulai berlatih langsung dari Layar Utama tanpa membuka aplikasi."
           }
         }
       }
@@ -9942,6 +10464,12 @@
             "state" : "translated",
             "value" : "Käytä koko sovellusta englanniksi."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pakai seluruh aplikasi dalam bahasa Inggris."
+          }
         }
       }
     },
@@ -10054,6 +10582,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nuottisi säilyvät sellaisina kuin jätit ne, vaikka sovellus suljettaisiin."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partiturmu tetap seperti saat kamu tinggalkan, meski aplikasi ditutup."
           }
         }
       }
@@ -10168,6 +10702,12 @@
             "state" : "translated",
             "value" : "Nuotit ja painikkeet pysyvät terävinä tummassa tilassa."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partitur dan tombol tetap tajam dan jelas di mode gelap."
+          }
         }
       }
     },
@@ -10280,6 +10820,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kun avaat sovelluksen päivityksen jälkeen ensimmäistä kertaa, näet mitä uutta on."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saat pertama membuka aplikasi setelah pembaruan, lihat apa yang baru."
           }
         }
       }
@@ -10394,6 +10940,12 @@
             "state" : "translated",
             "value" : "Uutta"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yang baru"
+          }
         }
       }
     },
@@ -10506,6 +11058,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Liitä tähän"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempel di sini"
           }
         }
       }
@@ -10620,6 +11178,12 @@
             "state" : "translated",
             "value" : "Harjoitusmuistutukset"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengingat latihan"
+          }
         }
       }
     },
@@ -10732,6 +11296,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Täysi englannin tuki"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dukungan penuh bahasa Inggris"
           }
         }
       }
@@ -10846,6 +11416,12 @@
             "state" : "translated",
             "value" : "esim. 4옥도4분음 4옥레4분음 4옥미8분음 …"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "mis. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
         }
       }
     },
@@ -10958,6 +11534,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Näytä oikealla"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan di kanan"
           }
         }
       }
@@ -11072,6 +11654,12 @@
             "state" : "translated",
             "value" : "Pidä nuottiviivastoa painettuna, valitse korkeus ja nosta sormi lisätäksesi nuotin"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tahan paranada untuk memilih tinggi nada, lalu lepas untuk menambahkan not"
+          }
         }
       }
     },
@@ -11184,6 +11772,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oktaavi automaattisesti"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oktaf otomatis"
           }
         }
       }
@@ -11298,6 +11892,12 @@
             "state" : "translated",
             "value" : "Kokonuotti"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not penuh"
+          }
         }
       }
     },
@@ -11410,6 +12010,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valmis"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selesai"
           }
         }
       }
@@ -11524,6 +12130,12 @@
             "state" : "translated",
             "value" : "Näytä vasemmalla"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tampilkan di kiri"
+          }
         }
       }
     },
@@ -11636,6 +12248,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vähennä liikettä"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kurangi gerakan"
           }
         }
       }
@@ -11750,6 +12368,12 @@
             "state" : "translated",
             "value" : "Kun Vähennä liikettä on päällä, näytön tehosteet rauhoittuvat."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dengan Kurangi Gerakan menyala, efek layar menjadi lebih tenang."
+          }
         }
       }
     },
@@ -11862,6 +12486,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Puheentunnistuksen lupa tarvitaan. Salli se Asetuksissa."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Izin pengenalan suara diperlukan. Izinkan di Pengaturan."
           }
         }
       }
@@ -11976,6 +12606,12 @@
             "state" : "translated",
             "value" : "Puheentunnistus epäonnistui. Yritä hetken kuluttua uudelleen."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengenalan suara gagal. Coba lagi sebentar lagi."
+          }
         }
       }
     },
@@ -12088,6 +12724,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avain"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunci"
           }
         }
       }
@@ -12202,6 +12844,12 @@
             "state" : "translated",
             "value" : "Avain"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunci"
+          }
         }
       }
     },
@@ -12314,6 +12962,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Korean puheentunnistus ei ole käytettävissä tällä laitteella."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengenalan suara bahasa Korea tidak tersedia di perangkat ini."
           }
         }
       }
@@ -12428,6 +13082,12 @@
             "state" : "translated",
             "value" : "Sovita kaksi tahtia ruutuun ja ota kuva"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pas-kan dua birama di kotak ini lalu potret"
+          }
         }
       }
     },
@@ -12540,6 +13200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ota yhteyttä sähköpostilla"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hubungi lewat email"
           }
         }
       }
@@ -12654,6 +13320,12 @@
             "state" : "translated",
             "value" : "Kuulokkeilla metronomi ei kuulu mikrofoniin"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dengan earphone, suara metronom tidak masuk ke mikrofon"
+          }
         }
       }
     },
@@ -12766,6 +13438,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram-viesti (@lee25_ios)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DM Instagram (@lee25_ios)"
           }
         }
       }
@@ -12880,6 +13558,12 @@
             "state" : "translated",
             "value" : "Saat muistutuksen harjoitella laulua nuoteista valitsemanasi aikana."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dapatkan pengingat untuk berlatih menyanyi dari partitur pada waktu yang kamu pilih."
+          }
         }
       }
     },
@@ -12992,6 +13676,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Automaattinen litterointi (kokeellinen)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkripsi otomatis (eksperimen)"
           }
         }
       }
@@ -13106,6 +13796,12 @@
             "state" : "translated",
             "value" : "Parempia tuloksia varten"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Agar hasilnya lebih baik"
+          }
         }
       }
     },
@@ -13218,6 +13914,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Toiston apuvälineet"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bantuan pemutaran"
           }
         }
       }
@@ -13332,6 +14034,12 @@
             "state" : "translated",
             "value" : "Tyhjennä kaikki"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus semua"
+          }
         }
       }
     },
@@ -13444,6 +14152,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pisteellinen %@"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ bertitik"
           }
         }
       }
@@ -13558,6 +14272,12 @@
             "state" : "translated",
             "value" : "Nimi"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Judul"
+          }
         }
       }
     },
@@ -13670,6 +14390,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sävellaji"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanda mula"
           }
         }
       }
@@ -13784,6 +14510,12 @@
             "state" : "translated",
             "value" : "Etumerkit"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanda mula"
+          }
         }
       }
     },
@@ -13896,6 +14628,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Valmistaudu"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bersiap"
           }
         }
       }
@@ -14010,6 +14748,12 @@
             "state" : "translated",
             "value" : "Tuki"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dukungan"
+          }
         }
       }
     },
@@ -14122,6 +14866,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Poista vertailukuva"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hapus foto referensi"
           }
         }
       }
@@ -14236,6 +14986,12 @@
             "state" : "translated",
             "value" : "Litteroi"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transkripsi"
+          }
         }
       }
     },
@@ -14348,6 +15104,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pikaesittely uusille käyttäjille"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tur singkat untuk pengguna baru"
           }
         }
       }
@@ -14462,6 +15224,12 @@
             "state" : "translated",
             "value" : "Lyhyt esittely siitä, mitä voit tehdä, kun avaat sovelluksen ensimmäistä kertaa."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengantar singkat tentang yang bisa kamu lakukan saat pertama membuka aplikasi."
+          }
         }
       }
     },
@@ -14574,6 +15342,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Peruuta"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batal"
           }
         }
       }
@@ -14688,6 +15462,12 @@
             "state" : "translated",
             "value" : "Ota kuva (sovita 2 tahtiin)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ambil foto (pas 2 birama)"
+          }
         }
       }
     },
@@ -14800,6 +15580,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kamera ei ole käytettävissä.\nValitse kuva kirjastosta."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kamera tidak tersedia.\nPilih foto dari pustaka foto."
           }
         }
       }
@@ -14914,6 +15700,12 @@
             "state" : "translated",
             "value" : "Sisäänlasku (yksi tahti ennen alkua)"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hitungan awal (satu birama sebelum mulai)"
+          }
         }
       }
     },
@@ -15026,6 +15818,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Asettelut suurelle tekstille"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tata letak untuk teks lebih besar"
           }
         }
       }
@@ -15140,6 +15938,12 @@
             "state" : "translated",
             "value" : "Liitä leikepöydältä"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempel dari papan klip"
+          }
         }
       }
     },
@@ -15249,6 +16053,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo"
@@ -15366,6 +16176,12 @@
             "state" : "translated",
             "value" : "Taitettavan iPhonen asettelu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tata letak iPhone lipat"
+          }
         }
       }
     },
@@ -15478,6 +16294,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Käytä taitettavan iPhonen leveää näyttöä kahtena vierekkäisenä paneelina."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gunakan layar lebar iPhone lipat sebagai dua panel berdampingan."
           }
         }
       }
@@ -15592,6 +16414,12 @@
             "state" : "translated",
             "value" : "Sano yksi nuotti kerrallaan, selvästi ja tasan iskulla"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ucapkan satu nada setiap kali, dengan jelas dan tepat di ketukan"
+          }
         }
       }
     },
@@ -15704,6 +16532,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kopioi nykyiset nuotit tekstinä (esimerkiksi tekoälylle)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salin partitur saat ini sebagai teks (sebagai contoh untuk AI)"
           }
         }
       }
@@ -15818,6 +16652,12 @@
             "state" : "translated",
             "value" : "Koti-valikon widgetit"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widget Layar Utama"
+          }
         }
       }
     },
@@ -15930,6 +16770,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver lukee jokaisen painikkeen ja nuotin oikeassa järjestyksessä."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver membacakan setiap tombol dan not dengan urutan yang benar."
           }
         }
       }
@@ -16044,6 +16890,12 @@
             "state" : "translated",
             "value" : "Sointu"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akord"
+          }
         }
       }
     },
@@ -16157,6 +17009,12 @@
             "state" : "translated",
             "value" : "Sointutila: nuotit pinotaan valitun nuotin päälle"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode akord: not ditumpuk di atas not yang dipilih"
+          }
         }
       }
     },
@@ -16266,6 +17124,12 @@
           }
         },
         "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"

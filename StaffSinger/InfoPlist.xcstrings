@@ -111,6 +111,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -223,6 +229,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger käyttää kameraa nuotin kuvaamiseen ja sen lataamiseen vertailukuvaksi."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger menggunakan kamera untuk memotret partitur dan memuatnya sebagai gambar referensi."
           }
         }
       }
@@ -337,6 +349,12 @@
             "state" : "translated",
             "value" : "StaffSinger käyttää mikrofonia muuttaakseen sanomasi nuottien nimet nuoteiksi nuottiviivastolle. Ääni käsitellään vain tällä laitteella, eikä sitä koskaan tallenneta."
           }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger menggunakan mikrofon untuk mengubah nama nada yang kamu ucapkan menjadi not di paranada. Audio hanya diproses di perangkat ini dan tidak pernah disimpan."
+          }
         }
       }
     },
@@ -449,6 +467,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger käyttää puheentunnistusta muuttaakseen sanomasi nuottien nimet nuoteiksi. Tunnistus tapahtuu vain tällä laitteella."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger menggunakan pengenalan suara untuk mengubah nama nada yang kamu ucapkan menjadi not. Pengenalan hanya berlangsung di perangkat ini."
           }
         }
       }

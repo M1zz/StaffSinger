@@ -989,3 +989,58 @@ Vertailukuva
 Ota kuva nuotista, jota luet, ja pidä se näytöllä vertailua varten kopioidessasi.
 
 Hyvä apu kuorossa, soitontunneilla ja musiikkioppilaitoksen pääsykokeisiin valmistautuessa – aina kun nuotteja pitää lukea nopeasti.
+
+## id
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger: Baca Not Cepat
+
+### 부제
+
+Dengar not yang kamu tulis
+
+### 키워드
+
+solfeggio,teori musik,paranada,partitur,paduan suara,piano,akord,dikte,les musik,vokal,latihan
+
+### 프로모션 텍스트
+
+Partitur baru dengan ritme dan akord rumit? Letakkan not di paranada lalu dengarkan langsung bersama metronom dan hitungan awal.
+
+### 설명
+
+Jangan hanya menghitung partitur baru di kepala. Dengarkan.
+StaffSinger menyalin dua birama yang membingungkan ke paranada dan memutarnya dengan ritme serta tinggi nada yang tepat.
+
+Ketuk paranada atau pakai tuts
+Tahan paranada untuk memilih tinggi nada, atau ketuk keyboard piano dua oktaf untuk menambahkan not. Pilih dari not penuh sampai seperenam belas, not bertitik, triol, dan tanda diam, lalu hapus not yang baru ditambahkan dengan sekali ketuk.
+
+Putar bersama metronom
+Setelah hitungan awal, partitur diputar mengikuti klik metronom dan not yang sedang berbunyi disorot dengan warna. Tempo dan birama diubah di Pengaturan.
+
+Akord dan banyak suara
+Tumpuk not pada ketukan yang sama untuk membuat akord, dan bagi musik ke beberapa suara. Tanda mula serta kunci G, C, dan F didukung.
+
+Dikte solfeggio
+Sebutkan nama nada sesuai irama metronom, lalu nada masuk ke paranada sebagai not. Jika kamu berbicara tepat di ketukan, ritmenya ikut tercatat. Dikte ini mengenali suku kata solfeggio bahasa Korea, dan pengenalan suara berlangsung sepenuhnya di perangkatmu.
+
+Tempel partitur sebagai teks
+Tempel teks yang ditulis dengan format tetap, dan paranada terisi. Salin aturannya, berikan ke AI bersama foto partitur, lalu tempel hasil yang kamu terima.
+
+Foto referensi
+Potret partitur yang sedang kamu baca dan biarkan di layar untuk dibandingkan saat menyalin.
+
+Simpan di dekatmu untuk paduan suara, les alat musik, atau persiapan ujian masuk jurusan musik – kapan pun kamu perlu membaca not dengan cepat.
