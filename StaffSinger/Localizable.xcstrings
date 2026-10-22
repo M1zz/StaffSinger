@@ -123,6 +123,12 @@
             "state" : "translated",
             "value" : "\nNoter etter andre takt vises kanskje ikke på skjermen."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nNoten na de tweede maat zijn mogelijk niet zichtbaar op het scherm."
+          }
         }
       }
     },
@@ -247,6 +253,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "«%@» – fant ingen notenavn.\nSi 도 레 미 파 솔 라 시."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "„%@” – hierin zijn geen nootnamen gevonden.\nZeg 도 레 미 파 솔 라 시."
           }
         }
       }
@@ -373,6 +385,12 @@
             "state" : "translated",
             "value" : "%@ · Lytter"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Luistert"
+          }
         }
       }
     },
@@ -497,6 +515,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@-dur (♭%lld)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@-groot (♭%lld)"
           }
         }
       }
@@ -623,6 +647,12 @@
             "state" : "translated",
             "value" : "%@-dur (♯%lld)"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@-groot (♯%lld)"
+          }
         }
       }
     },
@@ -747,6 +777,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dikterte noter: %lld"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gedicteerde noten: %lld"
           }
         }
       }
@@ -873,6 +909,12 @@
             "state" : "translated",
             "value" : "Dikterte noter: %lld.\nHvis en tonehøyde eller lengde er feil, drar du noten for å rette den."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gedicteerde noten: %lld.\nKlopt een toonhoogte of lengte niet, sleep dan de noot om hem aan te passen."
+          }
         }
       }
     },
@@ -997,6 +1039,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Importerte noter: %lld."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geïmporteerde noten: %lld."
           }
         }
       }
@@ -1123,6 +1171,12 @@
             "state" : "translated",
             "value" : "Gjenkjente noter: %lld (eksperimentell).\nSjekk tonehøyde og lengde, og rett dem selv."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Herkende noten: %lld (experimenteel).\nControleer toonhoogtes en lengtes en pas ze zelf aan."
+          }
         }
       }
     },
@@ -1248,6 +1302,12 @@
             "state" : "translated",
             "value" : "Takt %lld, slag %lld"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maat %lld, tel %lld"
+          }
         }
       }
     },
@@ -1369,6 +1429,12 @@
           }
         },
         "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        },
+        "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/16"
@@ -1498,6 +1564,12 @@
             "state" : "translated",
             "value" : "Sekstendedelsnote"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zestiende noot"
+          }
         }
       }
     },
@@ -1622,6 +1694,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Halvnote"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halve noot"
           }
         }
       }
@@ -1748,6 +1826,12 @@
             "state" : "translated",
             "value" : "Ved sprang større enn en kvart sier du «높은 솔» (høy sol) eller «낮은 시» (lav si)"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeg bij sprongen groter dan een kwart „높은 솔” (hoge sol) of „낮은 시” (lage si)"
+          }
         }
       }
     },
@@ -1869,6 +1953,12 @@
           }
         },
         "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        },
+        "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/4"
@@ -1998,6 +2088,12 @@
             "state" : "translated",
             "value" : "Firedelsnote"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kwartnoot"
+          }
         }
       }
     },
@@ -2119,6 +2215,12 @@
           }
         },
         "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        },
+        "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/8"
@@ -2248,6 +2350,12 @@
             "state" : "translated",
             "value" : "Åttedelsnote"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Achtste noot"
+          }
         }
       }
     },
@@ -2372,6 +2480,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kopier regel til KI"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopieer regel voor AI"
           }
         }
       }
@@ -2498,6 +2612,12 @@
             "state" : "translated",
             "value" : "Kom i gang med en gang ved å spørre Siri eller kjøre en snarvei."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin meteen door Siri te vragen of een opdracht uit te voeren."
+          }
         }
       }
     },
@@ -2622,6 +2742,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri og Snarveier"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri en Opdrachten"
           }
         }
       }
@@ -2748,6 +2874,12 @@
             "state" : "translated",
             "value" : "Bedre VoiceOver"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Betere VoiceOver"
+          }
         }
       }
     },
@@ -2872,6 +3004,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@ slag"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@ tellen"
           }
         }
       }
@@ -2998,6 +3136,12 @@
             "state" : "translated",
             "value" : "C-nøkkel"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Altsleutel"
+          }
         }
       }
     },
@@ -3122,6 +3266,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontakt utvikleren"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neem contact op met de ontwikkelaar"
           }
         }
       }
@@ -3248,6 +3398,12 @@
             "state" : "translated",
             "value" : "Solfège-diktat"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfège-dictaat"
+          }
         }
       }
     },
@@ -3372,6 +3528,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fikk ikke tak i noen notenavn. Prøv å si «도 레 미» tydelig i takt med metronomen."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er waren geen nootnamen te verstaan. Zeg duidelijk „도 레 미” op de maat van de metronoom."
           }
         }
       }
@@ -3498,6 +3660,12 @@
             "state" : "translated",
             "value" : "Regel kopiert"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regel gekopieerd"
+          }
         }
       }
     },
@@ -3622,6 +3790,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Når du gjør teksten større, ordnes skjermene om i stedet for å bli kuttet."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Als je de tekst vergroot, schikken de schermen zich opnieuw in plaats van af te kappen."
           }
         }
       }
@@ -3748,6 +3922,12 @@
             "state" : "translated",
             "value" : "Koreansk talegjenkjenning på enheten er ikke klar.\nSlå på koreansk under Innstillinger ▸ Generelt ▸ Tastatur ▸ Diktering, så lastes de nødvendige filene ned."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koreaanse spraakherkenning op het apparaat is niet gereed.\nZet Koreaans aan via Instellingen ▸ Algemeen ▸ Toetsenbord ▸ Dicteren, dan worden de benodigde bestanden gedownload."
+          }
         }
       }
     },
@@ -3872,6 +4052,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "F-nøkkel"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bassleutel"
           }
         }
       }
@@ -3998,6 +4184,12 @@
             "state" : "translated",
             "value" : "Kunne ikke starte opptaket: %@"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opname kon niet worden gestart: %@"
+          }
         }
       }
     },
@@ -4122,6 +4314,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "G-nøkkel"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vioolsleutel"
           }
         }
       }
@@ -4248,6 +4446,12 @@
             "state" : "translated",
             "value" : "C-dur"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C-groot"
+          }
         }
       }
     },
@@ -4372,6 +4576,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "C-dur (ingen fortegn)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C-groot (geen voortekening)"
           }
         }
       }
@@ -4498,6 +4708,12 @@
             "state" : "translated",
             "value" : "Mørk modus"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donkere modus"
+          }
         }
       }
     },
@@ -4622,6 +4838,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lukk"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sluit"
           }
         }
       }
@@ -4748,6 +4970,12 @@
             "state" : "translated",
             "value" : "Alt er fortsatt lesbart, også med Øk kontrast eller hvis farger er vanskelige å skille."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alles blijft leesbaar, ook met Hoger contrast of als kleuren lastig te onderscheiden zijn."
+          }
         }
       }
     },
@@ -4872,6 +5100,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bruk appen på flere språk."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gebruik de app in meer talen."
           }
         }
       }
@@ -4998,6 +5232,12 @@
             "state" : "translated",
             "value" : "Flere språk"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Meer talen"
+          }
         }
       }
     },
@@ -5122,6 +5362,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · si «쉼» for en pause"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · zeg „쉼” voor een rust"
           }
         }
       }
@@ -5248,6 +5494,12 @@
             "state" : "translated",
             "value" : "Zoom og dra med fingrene til to takter fyller rammen"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zoom en sleep met je vingers tot twee maten het kader vullen"
+          }
         }
       }
     },
@@ -5372,6 +5624,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det jeg hørte"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wat ik hoorde"
           }
         }
       }
@@ -5498,6 +5756,12 @@
             "state" : "translated",
             "value" : "Rytmetilpasning"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ritme uitlijnen"
+          }
         }
       }
     },
@@ -5622,6 +5886,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fritt"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vrij"
           }
         }
       }
@@ -5748,6 +6018,12 @@
             "state" : "translated",
             "value" : "Tillatelse til mikrofon kreves. Gi tillatelse i Innstillinger."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toestemming voor de microfoon is nodig. Sta dit toe in Instellingen."
+          }
         }
       }
     },
@@ -5872,6 +6148,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fant ingen mikrofoninngang."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er is geen microfooningang gevonden."
           }
         }
       }
@@ -5998,6 +6280,12 @@
             "state" : "translated",
             "value" : "Lagre notene i en fil, og åpne dem igjen senere."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bewaar je partituren in een bestand en open ze later weer."
+          }
         }
       }
     },
@@ -6122,6 +6410,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Begynn å snakke"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin met spreken"
           }
         }
       }
@@ -6248,6 +6542,12 @@
             "state" : "translated",
             "value" : "Bare rekkefølgen du sier tonene i, brukes. Alle noter blir firedelsnoter; rett lengdene etterpå."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alleen de volgorde van wat je zegt wordt gebruikt. Alle noten komen erin als kwartnoten; pas de lengtes daarna aan."
+          }
         }
       }
     },
@@ -6372,6 +6672,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tilpasser hvert uttalte tidspunkt til nærmeste %@-noteplassering."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lijnt elk uitgesproken moment uit op de dichtstbijzijnde %@-nootpositie."
           }
         }
       }
@@ -6498,6 +6804,12 @@
             "state" : "translated",
             "value" : "Stopp"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop"
+          }
         }
       }
     },
@@ -6622,6 +6934,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metronom (slagklikk)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronoom (tikgeluid)"
           }
         }
       }
@@ -6748,6 +7066,12 @@
             "state" : "translated",
             "value" : "Slå av metronomen"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronoom uitzetten"
+          }
         }
       }
     },
@@ -6872,6 +7196,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Etter fire slag fra metronomen sier du notenavnene i takt."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tel vier tikken van de metronoom af en zeg dan de nootnamen op de maat."
           }
         }
       }
@@ -6998,6 +7328,12 @@
             "state" : "translated",
             "value" : "Slå på metronomen"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronoom aanzetten"
+          }
         }
       }
     },
@@ -7122,6 +7458,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alle noter blir i startoktaven."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle noten blijven in het beginoctaaf."
           }
         }
       }
@@ -7248,6 +7590,12 @@
             "state" : "translated",
             "value" : "Taktart"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maatsoort"
+          }
         }
       }
     },
@@ -7372,6 +7720,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Taktart"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maatsoort"
           }
         }
       }
@@ -7498,6 +7852,12 @@
             "state" : "translated",
             "value" : "Feilrapporter og forslag til funksjoner er velkomne."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bugmeldingen en ideeën voor functies zijn welkom."
+          }
         }
       }
     },
@@ -7622,6 +7982,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bedre farger og kontrast"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prettigere kleuren en contrast"
           }
         }
       }
@@ -7748,6 +8114,12 @@
             "state" : "translated",
             "value" : "Fant ingen noter i den limte teksten.\nSjekk at den følger regelen (f.eks. 4옥도8분음)."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geen noten gevonden in de geplakte tekst.\nControleer of de tekst de regel volgt (bijv. 4옥도8분음)."
+          }
         }
       }
     },
@@ -7872,6 +8244,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hvis det går for fort, setter du ned tempoet (nå %lld BPM)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Als het te snel gaat, zet het tempo lager (nu %lld BPM)"
           }
         }
       }
@@ -7998,6 +8376,12 @@
             "state" : "translated",
             "value" : "Bruk"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gebruik"
+          }
         }
       }
     },
@@ -8122,6 +8506,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Velg fra bildebiblioteket"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kies uit fotobibliotheek"
           }
         }
       }
@@ -8248,6 +8638,12 @@
             "state" : "translated",
             "value" : "Nye noter"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nieuwe partituur"
+          }
         }
       }
     },
@@ -8372,6 +8768,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Innstillinger"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instellingen"
           }
         }
       }
@@ -8498,6 +8900,12 @@
             "state" : "translated",
             "value" : "Triol: %@"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triool: %@"
+          }
         }
       }
     },
@@ -8622,6 +9030,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Triolmodus: tre noter deler ett slag (eller to)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triolenmodus: drie noten delen één tel (of twee)"
           }
         }
       }
@@ -8748,6 +9162,12 @@
             "state" : "translated",
             "value" : "Punktert triol: %@"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gepuncteerde triool: %@"
+          }
         }
       }
     },
@@ -8872,6 +9292,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pausemodus: trykk på en lengde for å sette inn en pause"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rustmodus: tik op een lengte om een rust in te voegen"
           }
         }
       }
@@ -8998,6 +9424,12 @@
             "state" : "translated",
             "value" : "Startoktav  %lld"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beginoctaaf  %lld"
+          }
         }
       }
     },
@@ -9122,6 +9554,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nyttige tips"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Handige tips"
           }
         }
       }
@@ -9248,6 +9686,12 @@
             "state" : "translated",
             "value" : "Fortsett på notene der du slapp"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ga verder waar je gebleven was"
+          }
         }
       }
     },
@@ -9372,6 +9816,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sjekk nedenfor, og trykk på «Legg til i notene»"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controleer hieronder en tik op ‘Toevoegen aan partituur’"
           }
         }
       }
@@ -9498,6 +9948,12 @@
             "state" : "translated",
             "value" : "Lim inn noter"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partituur plakken"
+          }
         }
       }
     },
@@ -9622,6 +10078,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bilde av noter"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto van partituur"
           }
         }
       }
@@ -9748,6 +10210,12 @@
             "state" : "translated",
             "value" : "Gi et bilde av notene til en KI, be den skrive dem etter regelen nedenfor, og lim inn teksten du får tilbake for å fylle notesystemet."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geef een foto van de partituur aan een AI, laat die het opschrijven volgens de regel hieronder en plak de tekst die je terugkrijgt om de notenbalk te vullen."
+          }
         }
       }
     },
@@ -9872,6 +10340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lagre og eksporter noter"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partituren bewaren en exporteren"
           }
         }
       }
@@ -9998,6 +10472,12 @@
             "state" : "translated",
             "value" : "Notenes tittel"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titel van partituur"
+          }
         }
       }
     },
@@ -10122,6 +10602,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Konverter til noter"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omzetten naar partituur"
           }
         }
       }
@@ -10248,6 +10734,12 @@
             "state" : "translated",
             "value" : "Kunne ikke lese notene. Det fungerer best med tydelig trykte noter, én linje og et bilde tatt rett forfra."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De partituur kon niet worden gelezen. Het werkt het best met duidelijk gedrukte muziek, één regel en een foto recht van voren."
+          }
         }
       }
     },
@@ -10372,6 +10864,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Legg til i notene"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toevoegen aan partituur"
           }
         }
       }
@@ -10498,6 +10996,12 @@
             "state" : "translated",
             "value" : "Noter som legges til"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toe te voegen noten"
+          }
         }
       }
     },
@@ -10622,6 +11126,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Diskrete hint om nyttige funksjoner, akkurat når du trenger dem."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subtiele hints over handige functies, precies wanneer je ze nodig hebt."
           }
         }
       }
@@ -10748,6 +11258,12 @@
             "state" : "translated",
             "value" : "Velger oktaven som ligger nærmest forrige note, så «시 도» går en halvtone opp."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kiest het octaaf dat het dichtst bij de vorige noot ligt, dus „시 도” gaat een halve toon omhoog."
+          }
         }
       }
     },
@@ -10872,6 +11388,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Begynn å øve rett fra Hjem-skjermen uten å åpne appen."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Begin met oefenen vanaf het beginscherm, zonder de app te openen."
           }
         }
       }
@@ -10998,6 +11520,12 @@
             "state" : "translated",
             "value" : "Bruk hele appen på engelsk."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gebruik de hele app in het Engels."
+          }
         }
       }
     },
@@ -11122,6 +11650,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notene dine blir som du lot dem være, selv om appen lukkes."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Je partituur blijft zoals je hem achterliet, ook als de app sluit."
           }
         }
       }
@@ -11248,6 +11782,12 @@
             "state" : "translated",
             "value" : "Noter og knapper er skarpe og tydelige i mørk modus."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partituren en knoppen blijven scherp en duidelijk in de donkere modus."
+          }
         }
       }
     },
@@ -11372,6 +11912,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Første gang du åpner appen etter en oppdatering, ser du hva som er nytt."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Als je de app na een update voor het eerst opent, zie je wat er nieuw is."
           }
         }
       }
@@ -11498,6 +12044,12 @@
             "state" : "translated",
             "value" : "Nytt"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wat is er nieuw"
+          }
         }
       }
     },
@@ -11622,6 +12174,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lim inn her"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plak hier"
           }
         }
       }
@@ -11748,6 +12306,12 @@
             "state" : "translated",
             "value" : "Øvingspåminnelser"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oefenherinneringen"
+          }
         }
       }
     },
@@ -11872,6 +12436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Full støtte for engelsk"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volledige ondersteuning voor Engels"
           }
         }
       }
@@ -11998,6 +12568,12 @@
             "state" : "translated",
             "value" : "f.eks. 4옥도4분음 4옥레4분음 4옥미8분음 …"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "bijv. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
         }
       }
     },
@@ -12122,6 +12698,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vis til høyre"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rechts tonen"
           }
         }
       }
@@ -12248,6 +12830,12 @@
             "state" : "translated",
             "value" : "Hold inne på notesystemet, velg tonehøyde og slipp for å legge til noten"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Houd de notenbalk ingedrukt, kies een toonhoogte en laat los om de noot toe te voegen"
+          }
         }
       }
     },
@@ -12372,6 +12960,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Automatisk oktav"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Octaaf automatisch aanpassen"
           }
         }
       }
@@ -12498,6 +13092,12 @@
             "state" : "translated",
             "value" : "Helnote"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hele noot"
+          }
         }
       }
     },
@@ -12622,6 +13222,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ferdig"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klaar"
           }
         }
       }
@@ -12748,6 +13354,12 @@
             "state" : "translated",
             "value" : "Vis til venstre"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Links tonen"
+          }
         }
       }
     },
@@ -12872,6 +13484,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reduser bevegelse"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beweging verminderen"
           }
         }
       }
@@ -12998,6 +13616,12 @@
             "state" : "translated",
             "value" : "Når Reduser bevegelse er slått på, blir skjermeffektene roligere."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Met Beweging verminderen aan worden schermeffecten rustiger."
+          }
         }
       }
     },
@@ -13122,6 +13746,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tillatelse til talegjenkjenning kreves. Gi tillatelse i Innstillinger."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toestemming voor spraakherkenning is nodig. Sta dit toe in Instellingen."
           }
         }
       }
@@ -13248,6 +13878,12 @@
             "state" : "translated",
             "value" : "Talegjenkjenningen mislyktes. Prøv igjen om litt."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spraakherkenning is mislukt. Probeer het zo meteen opnieuw."
+          }
         }
       }
     },
@@ -13372,6 +14008,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nøkkel"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sleutel"
           }
         }
       }
@@ -13498,6 +14140,12 @@
             "state" : "translated",
             "value" : "Nøkkel"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sleutel"
+          }
         }
       }
     },
@@ -13622,6 +14270,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Koreansk talegjenkjenning er ikke tilgjengelig på denne enheten."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koreaanse spraakherkenning is niet beschikbaar op dit apparaat."
           }
         }
       }
@@ -13748,6 +14402,12 @@
             "state" : "translated",
             "value" : "Få to takter inn i rammen, og ta bildet"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zet twee maten in dit kader en maak de foto"
+          }
         }
       }
     },
@@ -13872,6 +14532,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontakt på e-post"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mail ons"
           }
         }
       }
@@ -13998,6 +14664,12 @@
             "state" : "translated",
             "value" : "Med øreplugger kommer ikke metronomen inn i mikrofonen"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Met oortjes komt de metronoom niet in de microfoon"
+          }
         }
       }
     },
@@ -14122,6 +14794,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instagram-DM (@lee25_ios)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram-dm (@lee25_ios)"
           }
         }
       }
@@ -14248,6 +14926,12 @@
             "state" : "translated",
             "value" : "Få en påminnelse om å øve på å synge fra noter til et tidspunkt du velger."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Krijg een herinnering om zingen van blad te oefenen op een tijdstip dat je zelf kiest."
+          }
         }
       }
     },
@@ -14372,6 +15056,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Automatisk avskrift (eksperimentell)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisch transcriberen (experimenteel)"
           }
         }
       }
@@ -14498,6 +15188,12 @@
             "state" : "translated",
             "value" : "For best resultat"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voor een beter resultaat"
+          }
         }
       }
     },
@@ -14622,6 +15318,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avspillingshjelp"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afspeelhulp"
           }
         }
       }
@@ -14748,6 +15450,12 @@
             "state" : "translated",
             "value" : "Fjern alt"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alles wissen"
+          }
         }
       }
     },
@@ -14872,6 +15580,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Punktert %@"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gepuncteerde %@"
           }
         }
       }
@@ -14998,6 +15712,12 @@
             "state" : "translated",
             "value" : "Tittel"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titel"
+          }
         }
       }
     },
@@ -15122,6 +15842,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fortegn"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voortekening"
           }
         }
       }
@@ -15248,6 +15974,12 @@
             "state" : "translated",
             "value" : "Fortegn"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voortekening"
+          }
         }
       }
     },
@@ -15372,6 +16104,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gjør deg klar"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maak je klaar"
           }
         }
       }
@@ -15498,6 +16236,12 @@
             "state" : "translated",
             "value" : "Støtte"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Support"
+          }
         }
       }
     },
@@ -15622,6 +16366,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Slett referansebilde"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verwijder referentiefoto"
           }
         }
       }
@@ -15748,6 +16498,12 @@
             "state" : "translated",
             "value" : "Skriv av"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transcribeer"
+          }
         }
       }
     },
@@ -15872,6 +16628,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "En rask omvisning for nye brukere"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Een korte rondleiding voor nieuwe gebruikers"
           }
         }
       }
@@ -15998,6 +16760,12 @@
             "state" : "translated",
             "value" : "En kort introduksjon til hva du kan gjøre første gang du åpner appen."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Een korte introductie van wat je kunt doen, de eerste keer dat je de app opent."
+          }
         }
       }
     },
@@ -16122,6 +16890,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Avbryt"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annuleer"
           }
         }
       }
@@ -16248,6 +17022,12 @@
             "state" : "translated",
             "value" : "Ta bilde (tilpass til 2 takter)"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto maken (op 2 maten afstemmen)"
+          }
         }
       }
     },
@@ -16372,6 +17152,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kameraet er ikke tilgjengelig.\nVelg et bilde fra bildebiblioteket i stedet."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De camera is niet beschikbaar.\nKies in plaats daarvan een foto uit je fotobibliotheek."
           }
         }
       }
@@ -16498,6 +17284,12 @@
             "state" : "translated",
             "value" : "Opptakt (én takt før start)"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voortel (één maat voor de start)"
+          }
         }
       }
     },
@@ -16622,6 +17414,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oppsett for større tekst"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indelingen voor grotere tekst"
           }
         }
       }
@@ -16748,6 +17546,12 @@
             "state" : "translated",
             "value" : "Lim inn fra utklippstavlen"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plakken vanaf klembord"
+          }
         }
       }
     },
@@ -16869,6 +17673,12 @@
           }
         },
         "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo"
+          }
+        },
+        "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo"
@@ -16998,6 +17808,12 @@
             "state" : "translated",
             "value" : "Oppsett for sammenleggbar iPhone"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Indeling voor opvouwbare iPhone"
+          }
         }
       }
     },
@@ -17122,6 +17938,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bruk den brede skjermen på en sammenleggbar iPhone som to ruter side om side."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gebruik het brede scherm van een opvouwbare iPhone als twee panelen naast elkaar."
           }
         }
       }
@@ -17248,6 +18070,12 @@
             "state" : "translated",
             "value" : "Si én note om gangen, tydelig og rett på slaget"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeg één noot tegelijk, duidelijk en precies op de tel"
+          }
         }
       }
     },
@@ -17372,6 +18200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kopier gjeldende noter som tekst (som eksempel til KI)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopieer de huidige partituur als tekst (als voorbeeld voor de AI)"
           }
         }
       }
@@ -17498,6 +18332,12 @@
             "state" : "translated",
             "value" : "Hjem-skjerm-widgeter"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Widgets voor het beginscherm"
+          }
         }
       }
     },
@@ -17622,6 +18462,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver leser opp hver knapp og note i riktig rekkefølge."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver leest elke knop en noot voor, in de juiste volgorde."
           }
         }
       }
@@ -17748,6 +18594,12 @@
             "state" : "translated",
             "value" : "Akkord"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akkoord"
+          }
         }
       }
     },
@@ -17873,6 +18725,12 @@
             "state" : "translated",
             "value" : "Akkordmodus: notene stables oppå den valgte noten"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akkoordmodus: noten worden op de geselecteerde noot gestapeld"
+          }
         }
       }
     },
@@ -17994,6 +18852,12 @@
           }
         },
         "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "nl" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"

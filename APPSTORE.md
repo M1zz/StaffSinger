@@ -1099,3 +1099,58 @@ Referansebilde
 Ta bilde av notene du leser, og la det stå på skjermen så du kan sammenligne mens du skriver av.
 
 Praktisk å ha ved hånden til kor, instrumentundervisning eller opptaksprøver til musikkutdanning – når som helst du raskt må lese noter.
+
+## nl-NL
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger: Prima vista
+
+### 부제
+
+Hoor de noten die je schrijft
+
+### 키워드
+
+solfège,muziektheorie,notenbalk,partituur,koor,piano,akkoord,metronoom,dictaat,les,zang,gehoor
+
+### 프로모션 텍스트
+
+Een onbekende partituur met lastig ritme en akkoorden? Zet noten op de notenbalk en hoor ze meteen, met metronoom en voortel.
+
+### 설명
+
+Tel een nieuwe partituur niet alleen in je hoofd. Luister ernaar.
+StaffSinger kopieert de twee lastige maten naar een notenbalk en speelt ze af met het precieze ritme en de juiste toonhoogte.
+
+Tik op de notenbalk of gebruik de toetsen
+Houd de notenbalk ingedrukt om een toonhoogte te kiezen, of tik op het pianotoetsenbord over twee octaven om een noot toe te voegen. Kies van hele noten tot zestiende noten, gepuncteerde noten, triolen en rusten, en verwijder de net toegevoegde noot met één tik.
+
+Afspelen met metronoom
+Na de voortel wordt de partituur afgespeeld op de tik van de metronoom, en de klinkende noot wordt gekleurd gemarkeerd. Tempo en maatsoort wijzig je in Instellingen.
+
+Akkoorden en meerdere stemmen
+Stapel noten op dezelfde tel voor een akkoord en verdeel de muziek over stemmen. Voortekeningen en de viool-, alt- en bassleutel worden ondersteund.
+
+Solfège-dictaat
+Zeg de nootnamen op de maat van de metronoom en ze komen als noten op de notenbalk. Spreek je precies op de tel, dan wordt ook het ritme vastgelegd. Het dictaat herkent Koreaanse solfègelettergrepen, en de spraakherkenning gebeurt volledig op je apparaat.
+
+Partituur als tekst plakken
+Plak tekst die in een vast formaat is geschreven en de notenbalk vult zich. Kopieer de regel, geef hem aan een AI samen met een foto van je partituur en plak wat je terugkrijgt.
+
+Referentiefoto
+Maak een foto van de partituur die je leest en laat die op het scherm staan om te vergelijken terwijl je overschrijft.
+
+Handig bij de hand voor koor, instrumentles of de voorbereiding op een toelatingsexamen voor het conservatorium – wanneer je maar snel noten moet lezen.

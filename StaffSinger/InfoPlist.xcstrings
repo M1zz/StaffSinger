@@ -123,6 +123,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -247,6 +253,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger bruker kameraet til å ta bilde av noter og laste det inn som referansebilde."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger gebruikt de camera om een foto van een partituur te maken en als referentiebeeld te laden."
           }
         }
       }
@@ -373,6 +385,12 @@
             "state" : "translated",
             "value" : "StaffSinger bruker mikrofonen til å gjøre notenavnene du sier om til noter på notesystemet. Lyden behandles bare på denne enheten og lagres aldri."
           }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger gebruikt de microfoon om de nootnamen die je zegt om te zetten in noten op de notenbalk. Audio wordt alleen op dit apparaat verwerkt en nooit opgeslagen."
+          }
         }
       }
     },
@@ -497,6 +515,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger bruker talegjenkjenning til å gjøre notenavnene du sier om til noter. Gjenkjenningen skjer bare på denne enheten."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger gebruikt spraakherkenning om de nootnamen die je zegt om te zetten in noten. De herkenning gebeurt alleen op dit apparaat."
           }
         }
       }
