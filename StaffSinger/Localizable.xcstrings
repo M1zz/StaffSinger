@@ -135,6 +135,12 @@
             "state" : "translated",
             "value" : "\nNuty po drugim takcie mogą nie być widoczne na ekranie."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "\nNoter efter andra takten syns kanske inte på skärmen."
+          }
         }
       }
     },
@@ -271,6 +277,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "„%@” – nie znaleziono tu nazw nut.\nPowiedz 도 레 미 파 솔 라 시."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "”%@” – inga notnamn hittades.\nSäg 도 레 미 파 솔 라 시."
           }
         }
       }
@@ -409,6 +421,12 @@
             "state" : "translated",
             "value" : "%@ · Słucham"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · Lyssnar"
+          }
         }
       }
     },
@@ -542,6 +560,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@-dur (♭%lld)"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@-dur (♭%lld)"
@@ -683,6 +707,12 @@
             "state" : "translated",
             "value" : "%@-dur (♯%lld)"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@-dur (♯%lld)"
+          }
         }
       }
     },
@@ -819,6 +849,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Podyktowane nuty: %lld"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dikterade noter: %lld"
           }
         }
       }
@@ -957,6 +993,12 @@
             "state" : "translated",
             "value" : "Podyktowane nuty: %lld.\nJeśli wysokość lub długość jest błędna, przeciągnij nutę, aby ją poprawić."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dikterade noter: %lld.\nOm en tonhöjd eller längd är fel kan du dra noten för att rätta den."
+          }
         }
       }
     },
@@ -1093,6 +1135,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zaimportowane nuty: %lld."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importerade noter: %lld."
           }
         }
       }
@@ -1231,6 +1279,12 @@
             "state" : "translated",
             "value" : "Rozpoznane nuty: %lld (eksperyment).\nSprawdź wysokości i długości i popraw je ręcznie."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Igenkända noter: %lld (experimentell).\nKontrollera tonhöjd och längd och rätta dem själv."
+          }
         }
       }
     },
@@ -1368,6 +1422,12 @@
             "state" : "translated",
             "value" : "Takt %lld, miara %lld"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takt %lld, slag %lld"
+          }
         }
       }
     },
@@ -1501,6 +1561,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/16"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/16"
@@ -1642,6 +1708,12 @@
             "state" : "translated",
             "value" : "Szesnastka"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sextondelsnot"
+          }
         }
       }
     },
@@ -1778,6 +1850,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Półnuta"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halvnot"
           }
         }
       }
@@ -1916,6 +1994,12 @@
             "state" : "translated",
             "value" : "Przy skokach większych niż kwarta mów „높은 솔” (wysokie sol) lub „낮은 시” (niskie si)"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vid språng större än en kvart säger du ”높은 솔” (hög sol) eller ”낮은 시” (låg si)"
+          }
         }
       }
     },
@@ -2049,6 +2133,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/4"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/4"
@@ -2190,6 +2280,12 @@
             "state" : "translated",
             "value" : "Ćwierćnuta"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fjärdedelsnot"
+          }
         }
       }
     },
@@ -2323,6 +2419,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1/8"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1/8"
@@ -2464,6 +2566,12 @@
             "state" : "translated",
             "value" : "Ósemka"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åttondelsnot"
+          }
         }
       }
     },
@@ -2600,6 +2708,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kopiuj regułę dla AI"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopiera regel till AI"
           }
         }
       }
@@ -2738,6 +2852,12 @@
             "state" : "translated",
             "value" : "Zacznij od razu, prosząc Siri lub uruchamiając skrót."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kom igång direkt genom att fråga Siri eller köra en genväg."
+          }
         }
       }
     },
@@ -2874,6 +2994,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri i Skróty"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri och Genvägar"
           }
         }
       }
@@ -3012,6 +3138,12 @@
             "state" : "translated",
             "value" : "Lepszy VoiceOver"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bättre VoiceOver"
+          }
         }
       }
     },
@@ -3148,6 +3280,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@ miar"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ %@/%@ slag"
           }
         }
       }
@@ -3286,6 +3424,12 @@
             "state" : "translated",
             "value" : "Klucz altowy"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C-klav"
+          }
         }
       }
     },
@@ -3422,6 +3566,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Skontaktuj się z twórcą"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontakta utvecklaren"
           }
         }
       }
@@ -3560,6 +3710,12 @@
             "state" : "translated",
             "value" : "Dyktando solfeżowe"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfège-diktamen"
+          }
         }
       }
     },
@@ -3696,6 +3852,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nie rozpoznano żadnej nazwy nuty. Spróbuj wyraźnie powiedzieć „도 레 미” w rytm metronomu."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inga notnamn kunde uppfattas. Försök säga ”도 레 미” tydligt i takt med metronomen."
           }
         }
       }
@@ -3834,6 +3996,12 @@
             "state" : "translated",
             "value" : "Reguła skopiowana"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regeln kopierad"
+          }
         }
       }
     },
@@ -3970,6 +4138,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gdy powiększysz tekst, ekrany układają się na nowo, zamiast być przycinane."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "När du förstorar texten ordnas skärmarna om i stället för att klippas av."
           }
         }
       }
@@ -4108,6 +4282,12 @@
             "state" : "translated",
             "value" : "Rozpoznawanie mowy po koreańsku na urządzeniu nie jest gotowe.\nWłącz koreański w Ustawienia ▸ Ogólne ▸ Klawiatura ▸ Dyktowanie, a potrzebne pliki zostaną pobrane."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koreansk taligenkänning på enheten är inte redo.\nSlå på koreanska under Inställningar ▸ Allmänt ▸ Tangentbord ▸ Diktering så hämtas de filer som behövs."
+          }
         }
       }
     },
@@ -4244,6 +4424,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klucz basowy"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "F-klav"
           }
         }
       }
@@ -4382,6 +4568,12 @@
             "state" : "translated",
             "value" : "Nie udało się rozpocząć nagrywania: %@"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det gick inte att starta inspelningen: %@"
+          }
         }
       }
     },
@@ -4519,6 +4711,12 @@
             "state" : "translated",
             "value" : "Klucz wiolinowy"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "G-klav"
+          }
         }
       }
     },
@@ -4652,6 +4850,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C-dur"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "C-dur"
@@ -4793,6 +4997,12 @@
             "state" : "translated",
             "value" : "C-dur (bez znaków)"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C-dur (inga förtecken)"
+          }
         }
       }
     },
@@ -4929,6 +5139,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tryb ciemny"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mörkt läge"
           }
         }
       }
@@ -5067,6 +5283,12 @@
             "state" : "translated",
             "value" : "Zamknij"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stäng"
+          }
         }
       }
     },
@@ -5203,6 +5425,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wszystko pozostaje czytelne, także przy zwiększonym kontraście lub gdy trudno odróżnić kolory."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allt förblir läsbart, även med Öka kontrast eller om färger är svåra att skilja åt."
           }
         }
       }
@@ -5341,6 +5569,12 @@
             "state" : "translated",
             "value" : "Korzystaj z aplikacji w większej liczbie języków."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Använd appen på fler språk."
+          }
         }
       }
     },
@@ -5477,6 +5711,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Więcej języków"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fler språk"
           }
         }
       }
@@ -5615,6 +5855,12 @@
             "state" : "translated",
             "value" : "도 레 미 파 솔 라 시 · pauza: powiedz „쉼”"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "도 레 미 파 솔 라 시 · säg ”쉼” för en paus"
+          }
         }
       }
     },
@@ -5751,6 +5997,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Powiększ i przesuń palcami, aż dwa takty wypełnią ramkę"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zooma och dra med fingrarna tills två takter fyller rutan"
           }
         }
       }
@@ -5889,6 +6141,12 @@
             "state" : "translated",
             "value" : "Co usłyszałem"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vad jag hörde"
+          }
         }
       }
     },
@@ -6025,6 +6283,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dopasowanie rytmu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rytmjustering"
           }
         }
       }
@@ -6163,6 +6427,12 @@
             "state" : "translated",
             "value" : "Swobodnie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fritt"
+          }
         }
       }
     },
@@ -6299,6 +6569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Potrzebna jest zgoda na użycie mikrofonu. Zezwól w Ustawieniach."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Behörighet för mikrofonen krävs. Tillåt den i Inställningar."
           }
         }
       }
@@ -6437,6 +6713,12 @@
             "state" : "translated",
             "value" : "Nie znaleziono wejścia mikrofonu."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingen mikrofoningång hittades."
+          }
         }
       }
     },
@@ -6573,6 +6855,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zapisuj partytury do pliku i otwieraj je później."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spara dina noter i en fil och öppna dem igen senare."
           }
         }
       }
@@ -6711,6 +6999,12 @@
             "state" : "translated",
             "value" : "Zacznij mówić"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Börja prata"
+          }
         }
       }
     },
@@ -6847,6 +7141,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Liczy się tylko kolejność, w jakiej mówisz. Wszystkie nuty wchodzą jako ćwierćnuty; długości popraw później."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bara ordningen du säger tonerna i används. Alla noter blir fjärdedelsnoter; rätta längderna efteråt."
           }
         }
       }
@@ -6985,6 +7285,12 @@
             "state" : "translated",
             "value" : "Dopasowuje każdy wypowiedziany moment do najbliższej pozycji nuty %@."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Justerar varje uttalat ögonblick till närmaste %@-notposition."
+          }
         }
       }
     },
@@ -7121,6 +7427,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zatrzymaj"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stoppa"
           }
         }
       }
@@ -7259,6 +7571,12 @@
             "state" : "translated",
             "value" : "Metronom (kliknięcie na miarę)"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metronom (slagklick)"
+          }
         }
       }
     },
@@ -7395,6 +7713,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wyłącz metronom"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stäng av metronomen"
           }
         }
       }
@@ -7533,6 +7857,12 @@
             "state" : "translated",
             "value" : "Po czterech uderzeniach metronomu mów nazwy nut równo z rytmem."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Efter fyra slag från metronomen säger du notnamnen i takt."
+          }
         }
       }
     },
@@ -7669,6 +7999,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Włącz metronom"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slå på metronomen"
           }
         }
       }
@@ -7807,6 +8143,12 @@
             "state" : "translated",
             "value" : "Wszystkie nuty zostają w oktawie początkowej."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alla noter stannar i startoktaven."
+          }
         }
       }
     },
@@ -7943,6 +8285,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metrum"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taktart"
           }
         }
       }
@@ -8081,6 +8429,12 @@
             "state" : "translated",
             "value" : "Metrum"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taktart"
+          }
         }
       }
     },
@@ -8217,6 +8571,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zgłoszenia błędów i pomysły na funkcje są mile widziane."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Felrapporter och förslag på funktioner är välkomna."
           }
         }
       }
@@ -8355,6 +8715,12 @@
             "state" : "translated",
             "value" : "Wygodniejsze kolory i kontrast"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Behagligare färger och kontrast"
+          }
         }
       }
     },
@@ -8491,6 +8857,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "W wklejonym tekście nie znaleziono nut.\nSprawdź, czy jest zgodny z regułą (np. 4옥도8분음)."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inga noter hittades i den inklistrade texten.\nKontrollera att den följer regeln (t.ex. 4옥도8분음)."
           }
         }
       }
@@ -8629,6 +9001,12 @@
             "state" : "translated",
             "value" : "Jeśli jest za szybko, zwolnij tempo (teraz %lld BPM)"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om det går för fort, sänk tempot (nu %lld BPM)"
+          }
         }
       }
     },
@@ -8765,6 +9143,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Użyj"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Använd"
           }
         }
       }
@@ -8903,6 +9287,12 @@
             "state" : "translated",
             "value" : "Wybierz z biblioteki zdjęć"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välj från bildbiblioteket"
+          }
         }
       }
     },
@@ -9039,6 +9429,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nowa partytura"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nya noter"
           }
         }
       }
@@ -9177,6 +9573,12 @@
             "state" : "translated",
             "value" : "Ustawienia"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inställningar"
+          }
         }
       }
     },
@@ -9313,6 +9715,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Triola: %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triol: %@"
           }
         }
       }
@@ -9451,6 +9859,12 @@
             "state" : "translated",
             "value" : "Tryb triol: trzy nuty dzielą jedną miarę (lub dwie)"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Triolläge: tre noter delar ett slag (eller två)"
+          }
         }
       }
     },
@@ -9587,6 +10001,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Triola z kropką: %@"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Punkterad triol: %@"
           }
         }
       }
@@ -9725,6 +10145,12 @@
             "state" : "translated",
             "value" : "Tryb pauz: dotknij długości, aby wstawić pauzę"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pausläge: tryck på en längd för att lägga in en paus"
+          }
         }
       }
     },
@@ -9861,6 +10287,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Oktawa początkowa  %lld"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Startoktav  %lld"
           }
         }
       }
@@ -9999,6 +10431,12 @@
             "state" : "translated",
             "value" : "Przydatne wskazówki"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Användbara tips"
+          }
         }
       }
     },
@@ -10135,6 +10573,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontynuuj partyturę od ostatniego miejsca"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fortsätt med noterna där du slutade"
           }
         }
       }
@@ -10273,6 +10717,12 @@
             "state" : "translated",
             "value" : "Sprawdź poniżej i dotknij „Dodaj do partytury”"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontrollera nedan och tryck på ”Lägg till i noterna”"
+          }
         }
       }
     },
@@ -10409,6 +10859,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wklej partyturę"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klistra in noter"
           }
         }
       }
@@ -10547,6 +11003,12 @@
             "state" : "translated",
             "value" : "Zdjęcie partytury"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foto av noter"
+          }
         }
       }
     },
@@ -10683,6 +11145,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daj zdjęcie nut sztucznej inteligencji, poproś o zapisanie ich według reguły poniżej, a otrzymany tekst wklej, aby wypełnić pięciolinię."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ge ett foto av noterna till en AI, be den skriva ut dem enligt regeln nedan och klistra in texten du får tillbaka för att fylla notsystemet."
           }
         }
       }
@@ -10821,6 +11289,12 @@
             "state" : "translated",
             "value" : "Zapis i eksport partytur"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spara och exportera noter"
+          }
         }
       }
     },
@@ -10957,6 +11431,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tytuł partytury"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notens titel"
           }
         }
       }
@@ -11095,6 +11575,12 @@
             "state" : "translated",
             "value" : "Zamień na partyturę"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Konvertera till noter"
+          }
         }
       }
     },
@@ -11231,6 +11717,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nie udało się odczytać partytury. Najlepiej działają czysty druk, jedna linijka i zdjęcie zrobione na wprost."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noterna kunde inte läsas. Det fungerar bäst med tydligt tryckta noter, en rad och ett foto taget rakt framifrån."
           }
         }
       }
@@ -11369,6 +11861,12 @@
             "state" : "translated",
             "value" : "Dodaj do partytury"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lägg till i noterna"
+          }
         }
       }
     },
@@ -11505,6 +12003,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nuty do dodania"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noter att lägga till"
           }
         }
       }
@@ -11643,6 +12147,12 @@
             "state" : "translated",
             "value" : "Dyskretne podpowiedzi o przydatnych funkcjach, dokładnie wtedy, gdy ich potrzebujesz."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diskreta tips om användbara funktioner, precis när du behöver dem."
+          }
         }
       }
     },
@@ -11779,6 +12289,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wybiera oktawę najbliższą poprzedniej nucie, więc „시 도” idzie o półton w górę."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Väljer oktaven närmast föregående not, så ”시 도” går en halvton upp."
           }
         }
       }
@@ -11917,6 +12433,12 @@
             "state" : "translated",
             "value" : "Zacznij ćwiczyć prosto z ekranu początkowego, bez otwierania aplikacji."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Börja öva direkt från hemskärmen utan att öppna appen."
+          }
         }
       }
     },
@@ -12053,6 +12575,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Korzystaj z całej aplikacji po angielsku."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Använd hela appen på engelska."
           }
         }
       }
@@ -12191,6 +12719,12 @@
             "state" : "translated",
             "value" : "Partytura zostaje dokładnie taka sama, nawet gdy aplikacja się zamknie."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dina noter ligger kvar som du lämnade dem, även om appen stängs."
+          }
         }
       }
     },
@@ -12327,6 +12861,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Partytury i przyciski pozostają wyraźne w trybie ciemnym."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noter och knappar förblir skarpa och tydliga i mörkt läge."
           }
         }
       }
@@ -12465,6 +13005,12 @@
             "state" : "translated",
             "value" : "Gdy po aktualizacji otworzysz aplikację po raz pierwszy, zobaczysz, co nowego."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Första gången du öppnar appen efter en uppdatering ser du vad som är nytt."
+          }
         }
       }
     },
@@ -12601,6 +13147,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Co nowego"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyheter"
           }
         }
       }
@@ -12739,6 +13291,12 @@
             "state" : "translated",
             "value" : "Wklej tutaj"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klistra in här"
+          }
         }
       }
     },
@@ -12875,6 +13433,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Przypomnienia o ćwiczeniach"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Övningspåminnelser"
           }
         }
       }
@@ -13013,6 +13577,12 @@
             "state" : "translated",
             "value" : "Pełna obsługa angielskiego"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fullt stöd för engelska"
+          }
         }
       }
     },
@@ -13149,6 +13719,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "np. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "t.ex. 4옥도4분음 4옥레4분음 4옥미8분음 …"
           }
         }
       }
@@ -13287,6 +13863,12 @@
             "state" : "translated",
             "value" : "Pokaż po prawej"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visa till höger"
+          }
         }
       }
     },
@@ -13423,6 +14005,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Przytrzymaj pięciolinię, wybierz wysokość i puść, aby dodać nutę"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Håll ned på notsystemet, välj tonhöjd och släpp för att lägga till noten"
           }
         }
       }
@@ -13561,6 +14149,12 @@
             "state" : "translated",
             "value" : "Oktawa automatycznie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisk oktav"
+          }
         }
       }
     },
@@ -13697,6 +14291,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cała nuta"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Helnot"
           }
         }
       }
@@ -13835,6 +14435,12 @@
             "state" : "translated",
             "value" : "Gotowe"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klar"
+          }
         }
       }
     },
@@ -13971,6 +14577,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pokaż po lewej"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Visa till vänster"
           }
         }
       }
@@ -14109,6 +14721,12 @@
             "state" : "translated",
             "value" : "Redukcja ruchu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reducera rörelse"
+          }
         }
       }
     },
@@ -14245,6 +14863,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Przy włączonej opcji Redukcja ruchu efekty na ekranie są spokojniejsze."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med Reducera rörelse på blir skärmeffekterna lugnare."
           }
         }
       }
@@ -14383,6 +15007,12 @@
             "state" : "translated",
             "value" : "Potrzebna jest zgoda na rozpoznawanie mowy. Zezwól w Ustawieniach."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Behörighet för taligenkänning krävs. Tillåt den i Inställningar."
+          }
         }
       }
     },
@@ -14519,6 +15149,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Rozpoznawanie mowy nie powiodło się. Spróbuj ponownie za chwilę."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taligenkänningen misslyckades. Försök igen om en stund."
           }
         }
       }
@@ -14657,6 +15293,12 @@
             "state" : "translated",
             "value" : "Klucz"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klav"
+          }
         }
       }
     },
@@ -14793,6 +15435,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Klucz"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klav"
           }
         }
       }
@@ -14931,6 +15579,12 @@
             "state" : "translated",
             "value" : "Rozpoznawanie mowy po koreańsku jest niedostępne na tym urządzeniu."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Koreansk taligenkänning är inte tillgänglig på den här enheten."
+          }
         }
       }
     },
@@ -15067,6 +15721,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ułóż dwa takty w ramce i zrób zdjęcie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få in två takter i rutan och ta bilden"
           }
         }
       }
@@ -15205,6 +15865,12 @@
             "state" : "translated",
             "value" : "Napisz e-mail"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kontakta via e-post"
+          }
         }
       }
     },
@@ -15341,6 +16007,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "W słuchawkach metronom nie przenika do mikrofonu"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Med hörlurar kommer inte metronomen in i mikrofonen"
           }
         }
       }
@@ -15479,6 +16151,12 @@
             "state" : "translated",
             "value" : "Wiadomość na Instagramie (@lee25_ios)"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instagram-DM (@lee25_ios)"
+          }
         }
       }
     },
@@ -15615,6 +16293,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Otrzymuj przypomnienie o ćwiczeniu śpiewu a vista o wybranej porze."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Få en påminnelse om att öva på att sjunga från noter vid en tid du själv väljer."
           }
         }
       }
@@ -15753,6 +16437,12 @@
             "state" : "translated",
             "value" : "Automatyczny przepis (eksperyment)"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Automatisk avskrift (experimentell)"
+          }
         }
       }
     },
@@ -15889,6 +16579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aby było lepiej"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "För bästa resultat"
           }
         }
       }
@@ -16027,6 +16723,12 @@
             "state" : "translated",
             "value" : "Pomoce odtwarzania"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uppspelningshjälp"
+          }
         }
       }
     },
@@ -16163,6 +16865,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wyczyść wszystko"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rensa allt"
           }
         }
       }
@@ -16301,6 +17009,12 @@
             "state" : "translated",
             "value" : "%@ z kropką"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Punkterad %@"
+          }
         }
       }
     },
@@ -16437,6 +17151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tytuł"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Titel"
           }
         }
       }
@@ -16575,6 +17295,12 @@
             "state" : "translated",
             "value" : "Tonacja"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Förtecken"
+          }
         }
       }
     },
@@ -16711,6 +17437,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Znaki przykluczowe"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Förtecken"
           }
         }
       }
@@ -16849,6 +17581,12 @@
             "state" : "translated",
             "value" : "Przygotuj się"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gör dig redo"
+          }
         }
       }
     },
@@ -16985,6 +17723,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pomoc"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Support"
           }
         }
       }
@@ -17123,6 +17867,12 @@
             "state" : "translated",
             "value" : "Usuń zdjęcie referencyjne"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ta bort referensfoto"
+          }
         }
       }
     },
@@ -17259,6 +18009,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Przepisz"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv av"
           }
         }
       }
@@ -17397,6 +18153,12 @@
             "state" : "translated",
             "value" : "Krótkie wprowadzenie dla nowych użytkowników"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En snabb rundtur för nya användare"
+          }
         }
       }
     },
@@ -17533,6 +18295,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Krótkie wprowadzenie do tego, co możesz zrobić, przy pierwszym otwarciu aplikacji."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En kort introduktion till vad du kan göra första gången du öppnar appen."
           }
         }
       }
@@ -17671,6 +18439,12 @@
             "state" : "translated",
             "value" : "Anuluj"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avbryt"
+          }
         }
       }
     },
@@ -17807,6 +18581,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zrób zdjęcie (dopasuj do 2 taktów)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ta foto (anpassa till 2 takter)"
           }
         }
       }
@@ -17945,6 +18725,12 @@
             "state" : "translated",
             "value" : "Aparat jest niedostępny.\nWybierz zdjęcie z biblioteki."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kameran är inte tillgänglig.\nVälj ett foto från bildbiblioteket i stället."
+          }
         }
       }
     },
@@ -18081,6 +18867,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Odliczanie (jeden takt przed startem)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Förtakt (en takt före start)"
           }
         }
       }
@@ -18219,6 +19011,12 @@
             "state" : "translated",
             "value" : "Układy dla większego tekstu"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layouter för större text"
+          }
         }
       }
     },
@@ -18356,6 +19154,12 @@
             "state" : "translated",
             "value" : "Wklej ze schowka"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klistra in från urklipp"
+          }
         }
       }
     },
@@ -18489,6 +19293,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tempo"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo"
@@ -18630,6 +19440,12 @@
             "state" : "translated",
             "value" : "Układ dla składanego iPhone’a"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Layout för vikbar iPhone"
+          }
         }
       }
     },
@@ -18766,6 +19582,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Wykorzystaj szeroki ekran składanego iPhone’a jako dwa panele obok siebie."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Använd den breda skärmen på en vikbar iPhone som två paneler bredvid varandra."
           }
         }
       }
@@ -18904,6 +19726,12 @@
             "state" : "translated",
             "value" : "Mów po jednej nucie, wyraźnie i dokładnie na uderzenie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Säg en not i taget, tydligt och precis på slaget"
+          }
         }
       }
     },
@@ -19040,6 +19868,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kopiuj bieżącą partyturę jako tekst (jako przykład dla AI)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopiera nuvarande noter som text (som exempel till AI)"
           }
         }
       }
@@ -19178,6 +20012,12 @@
             "state" : "translated",
             "value" : "Widżety ekranu początkowego"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hemskärmswidgetar"
+          }
         }
       }
     },
@@ -19314,6 +20154,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VoiceOver odczytuje każdy przycisk i nutę we właściwej kolejności."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VoiceOver läser upp varje knapp och not i rätt ordning."
           }
         }
       }
@@ -19452,6 +20298,12 @@
             "state" : "translated",
             "value" : "Akord"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ackord"
+          }
         }
       }
     },
@@ -19589,6 +20441,12 @@
             "state" : "translated",
             "value" : "Tryb akordu: nuty układają się na wybranej nucie"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ackordläge: noterna staplas på den valda noten"
+          }
         }
       }
     },
@@ -19722,6 +20580,12 @@
           }
         },
         "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
+        "sv" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "OK"

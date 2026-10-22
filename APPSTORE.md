@@ -1209,3 +1209,58 @@ Zdjęcie referencyjne
 Zrób zdjęcie czytanej partytury i zostaw je na ekranie, aby porównywać podczas przepisywania.
 
 Miej go pod ręką na próbie chóru, lekcjach gry na instrumencie czy podczas przygotowań do egzaminów do szkoły muzycznej – kiedy tylko musisz szybko czytać nuty.
+
+## sv
+
+### 지원 URL
+
+https://m1zz.github.io/StaffSinger/support.html
+
+### 개인정보처리방침 URL
+
+https://m1zz.github.io/StaffSinger/privacy.html
+
+### 마케팅 URL
+
+https://m1zz.github.io/StaffSinger/
+
+### 이름
+
+StaffSinger: Prima vista
+
+### 부제
+
+Hör noterna du skriver
+
+### 키워드
+
+solfège,musikteori,notsystem,partitur,kör,piano,ackord,metronom,diktamen,lektioner,sång,gehör
+
+### 프로모션 텍스트
+
+Okända noter med svår rytm och ackord? Lägg noter på notsystemet och hör dem direkt, med metronom och förtakt.
+
+### 설명
+
+Räkna inte nya noter bara i huvudet. Lyssna på dem.
+StaffSinger skriver av de två förvirrande takterna på notsystemet och spelar upp dem med exakt rytm och tonhöjd.
+
+Tryck på notsystemet eller använd tangenterna
+Håll ned på notsystemet för att välja tonhöjd, eller tryck på pianot över två oktaver för att lägga till en not. Välj från helnot till sextondelsnot, punkterade noter, trioler och pauser, och ta bort noten du nyss la till med ett tryck.
+
+Spela upp med metronom
+Efter förtakten spelas noterna i takt med metronomens klick, och noten som låter markeras med färg. Tempo och taktart ändrar du i Inställningar.
+
+Ackord och flera stämmor
+Stapla noter på samma slag för att göra ett ackord, och dela upp musiken i stämmor. Förtecken samt G-, C- och F-klav stöds.
+
+Solfège-diktamen
+Säg notnamnen i takt med metronomen så hamnar de som noter på notsystemet. Pratar du precis på slaget fångas rytmen också. Diktamen känner igen koreanska solfège-stavelser, och taligenkänningen sker helt på din enhet.
+
+Klistra in noter som text
+Klistra in text skriven i ett fast format så fylls notsystemet. Kopiera regeln, ge den till en AI tillsammans med ett foto av noterna och klistra in det du får tillbaka.
+
+Referensfoto
+Ta ett foto av noterna du läser och låt det ligga kvar på skärmen så att du kan jämföra medan du skriver av.
+
+Bra att ha nära till hands för kören, instrumentlektionerna eller antagningsproven till musikutbildning – när du snabbt behöver läsa noter.
