@@ -149,7 +149,29 @@ struct ContentView: View {
         )
         .animation(panelSpring, value: showSettings)
         .animation(panelSpring, value: showKeyboard)
+        #if DEBUG
+        .onAppear(perform: applyScreenshotScene)
+        #endif
     }
+
+    #if DEBUG
+    /// App Store screenshots: `-screenshotScene piano|staff|playback|dictation|paste`
+    /// opens the app on that screen with a short sample melody already written.
+    /// Debug builds only — never compiled into what ships.
+    private func applyScreenshotScene() {
+        guard let scene = UserDefaults.standard.string(forKey: "screenshotScene") else { return }
+        vm.importNotes(ScoreTextFormat.parse(
+            "G4:4 E4:8 E4:8 F4:4 D4:8 D4:8 C4:8 D4:8 E4:8 F4:8 G4:4 G4:4"))
+        switch scene {
+        case "piano": showKeyboard = true
+        case "playback":
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { vm.play() }
+        case "dictation": showDictation = true
+        case "paste": showPaste = true
+        default: break
+        }
+    }
+    #endif
 
     // MARK: - Piano keyboard area
 

@@ -19,14 +19,51 @@
 //      • 셋잇단   : 앞에 "셋잇단"  (셋잇단8분음)
 //      • 쉼표     : 계이름 대신 "쉼"  (4분쉼, 8분쉼)
 //
+//  Outside Korean the app uses a language-neutral letter notation instead,
+//  which every AI and every reader can write without knowing Korean:
+//    [음이름][임시표][옥타브]:[길이][. 점][t 셋잇단]   e.g. `C4:4`, `F#4:8.`, `Bb3:8t`
+//    쉼표는 `R:4`. 옥타브나 `:길이` 를 빼면 직전 값을 그대로 쓴다.
+//  `parse` reads both notations in any language, so a pasted text never
+//  depends on which language the phone is set to.
+//
 
 import Foundation
 
 enum ScoreTextFormat {
 
+    /// Korean users get the Korean notation (`4옥도8분음`); everyone else gets
+    /// the letter notation (`C4:8`), so no one is asked to type a script they
+    /// can't read.
+    static var usesKoreanNotation: Bool {
+        Bundle.main.preferredLocalizations.first?.hasPrefix("ko") ?? false
+    }
+
     /// The instruction block a user copies and hands to an AI ("read this score
-    /// and write it in this format"). Kept in sync with `parse` below.
-    static let ruleText = """
+    /// and write it in this format"), in the notation this language uses.
+    static var ruleText: String {
+        usesKoreanNotation ? koreanRuleText : letterRuleText
+    }
+
+    /// The letter-notation rule, translated per language. Kept in sync with
+    /// `parseLetterToken` below.
+    static var letterRuleText: String {
+        String(localized: "score.rule.letters", defaultValue: """
+        아래 규칙으로 악보를 텍스트로 적어줘. 음표 하나를 한 덩어리로 쓰고, 음표끼리는 공백으로 구분해. 설명 없이 음표 텍스트만 한 줄로 줘.
+
+        음표 = [음이름][임시표][옥타브]:[길이][점·셋잇단]
+        · 음이름: C D E F G A B
+        · 임시표: 올림 #, 내림 b (없으면 생략)
+        · 옥타브: 숫자 (가온다=C4). 생략하면 직전 옥타브 유지
+        · 길이: 1 온음표, 2 2분음표, 4 4분음표, 8 8분음표, 16 16분음표. ":길이"를 생략하면 직전 길이 유지
+        · 점음표는 길이 뒤에 "." (C4:4.), 셋잇단음표는 "t" (C4:8t)
+        · 쉼표는 음이름 대신 R (R:4, R:8)
+
+        예시) C4:4 D4:4 E4:8 F4:8 G4:2
+        """)
+    }
+
+    /// The Korean notation's rule (shown only in Korean).
+    static let koreanRuleText = """
     아래 규칙으로 악보를 텍스트로 적어줘. 음표 하나를 한 덩어리로 쓰고, 음표끼리는 \
     공백으로 구분해. 설명 없이 음표 텍스트만 한 줄로 줘.
 
@@ -84,6 +121,10 @@ enum ScoreTextFormat {
                                    startBeat: Double,
                                    lastOctave: inout Int,
                                    lastDuration: inout NoteDuration) -> ScoreNote? {
+        if let note = parseLetterToken(token, startBeat: startBeat,
+                                       lastOctave: &lastOctave, lastDuration: &lastDuration) {
+            return note
+        }
         let dotted = token.contains("점")
         let triplet = token.contains("셋잇단")
         let isRest = token.contains("쉼")
@@ -112,6 +153,45 @@ enum ScoreTextFormat {
         let p = Pitch(midi: midi, prefersFlat: alteration < 0)
         return ScoreNote(pitch: p, duration: duration,
                          beatOffset: startBeat, dotted: dotted, triplet: triplet)
+    }
+
+    /// The letter notation: `C4:4`, `F#4:8.`, `Bb3:8t`, `R:4`, or just `E` /
+    /// `D5` to keep the previous length. Returns nil for anything else so the
+    /// Korean reading gets its turn.
+    private static let letterPattern = try! NSRegularExpression(
+        pattern: "^(?:([A-Ga-g])([#\u{266F}b\u{266D}]?)(\\d)?|([Rr]))(?::(16|8|4|2|1))?([.t]*)$")
+
+    private static func parseLetterToken(_ token: String,
+                                         startBeat: Double,
+                                         lastOctave: inout Int,
+                                         lastDuration: inout NoteDuration) -> ScoreNote? {
+        let ns = token as NSString
+        guard let m = letterPattern.firstMatch(in: token, range: NSRange(location: 0, length: ns.length))
+        else { return nil }
+        func group(_ i: Int) -> String? {
+            let r = m.range(at: i)
+            return r.location == NSNotFound ? nil : ns.substring(with: r)
+        }
+        if let denom = group(5).flatMap(Int.init), let dur = duration(forDenominator: denom) {
+            lastDuration = dur
+        }
+        let marks = group(6) ?? ""
+        let dotted = marks.contains(".")
+        let triplet = marks.contains("t")
+
+        if group(4) != nil {
+            return ScoreNote(pitch: .middleC, duration: lastDuration,
+                             beatOffset: startBeat, isRest: true,
+                             dotted: dotted, triplet: triplet)
+        }
+        guard let letter = group(1)?.uppercased().first, let semitone = letters[letter] else { return nil }
+        if let oct = group(3).flatMap(Int.init) { lastOctave = oct }
+        let acc = group(2) ?? ""
+        let alteration = (acc == "#" || acc == "\u{266F}") ? 1 : (acc.isEmpty ? 0 : -1)
+        let midi = (lastOctave + 1) * 12 + semitone + alteration
+        return ScoreNote(pitch: Pitch(midi: midi, prefersFlat: alteration < 0),
+                         duration: lastDuration, beatOffset: startBeat,
+                         dotted: dotted, triplet: triplet)
     }
 
     /// Find the first pitch in a token: its semitone offset plus any accidental
@@ -174,10 +254,32 @@ enum ScoreTextFormat {
     /// format — useful as a concrete example to paste to an AI, or to copy a
     /// score out as text.
     static func serialize(_ score: Score) -> String {
+        serialize(score, korean: usesKoreanNotation)
+    }
+
+    /// `korean: false` writes the letter notation (`C4:8`) used outside Korean.
+    static func serialize(_ score: Score, korean: Bool) -> String {
         score.notes
             .sorted { $0.beatOffset < $1.beatOffset }
-            .map(token(for:))
+            .map { korean ? token(for: $0) : letterToken(for: $0) }
             .joined(separator: " ")
+    }
+
+    private static func letterToken(for note: ScoreNote) -> String {
+        let length = ":\(denominator(note.duration))"
+            + (note.dotted ? "." : "") + (note.triplet ? "t" : "")
+        if note.isRest { return "R" + length }
+        return note.pitch.name + "\(note.pitch.octave)" + length
+    }
+
+    private static func denominator(_ d: NoteDuration) -> Int {
+        switch d {
+        case .whole: return 1
+        case .half: return 2
+        case .quarter: return 4
+        case .eighth: return 8
+        case .sixteenth: return 16
+        }
     }
 
     private static func token(for note: ScoreNote) -> String {

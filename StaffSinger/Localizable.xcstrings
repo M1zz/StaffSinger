@@ -162,139 +162,139 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"%@\" — no note names found in that.\nPlease say 도 레 미 파 솔 라 시."
+            "value" : "\"%@\" — no note names found in that.\nPlease say do re mi fa sol la ti."
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "\"%@\" — no note names found in that.\nPlease say 도 레 미 파 솔 라 시."
+            "value" : "\"%@\" — no note names found in that.\nPlease say do re mi fa sol la ti."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "“%@”——其中没有找到唱名。\n请按 도 레 미 파 솔 라 시 来说。"
+            "value" : "“%@”——其中没有找到唱名。\n请用英语说 do re mi fa sol la ti。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "「%@」——其中找不到唱名。\n請依 도 레 미 파 솔 라 시 來說。"
+            "value" : "「%@」——其中沒有找到唱名。\n請用英語說 do re mi fa sol la ti。"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "「%@」——ここから階名が見つかりませんでした。\n도 레 미 파 솔 라 시 で話してください。"
+            "value" : "「%@」——ここから階名が見つかりませんでした。\n英語で do re mi fa sol la ti と言ってください。"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "«%@» — названий нот здесь не найдено.\nГоворите 도 레 미 파 솔 라 시."
+            "value" : "«%@» — здесь не найдено названий нот.\nПроизносите по-английски: do re mi fa sol la ti."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "«%@»: no se encontraron nombres de notas.\nDi 도 레 미 파 솔 라 시."
+            "value" : "«%@»: no se encontraron nombres de notas.\nDi en inglés do re mi fa sol la ti."
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "„%@“ – darin wurden keine Notennamen gefunden.\nBitte sprich 도 레 미 파 솔 라 시."
+            "value" : "„%@“ – darin wurden keine Notennamen gefunden.\nSprich auf Englisch do re mi fa sol la ti."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "« %@ » : aucun nom de note trouvé.\nDites 도 레 미 파 솔 라 시."
+            "value" : "« %@ » : aucun nom de note trouvé.\nDites en anglais do re mi fa sol la ti."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "«%@»: nessun nome di nota trovato.\nDi’ 도 레 미 파 솔 라 시."
+            "value" : "«%@»: non sono stati trovati nomi di note.\nPronuncia in inglese do re mi fa sol la ti."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "“%@” — nenhum nome de nota encontrado aí.\nDiga 도 레 미 파 솔 라 시."
+            "value" : "\"%@\": nenhum nome de nota encontrado.\nDiga em inglês do re mi fa sol la ti."
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "“%@” — ไม่พบชื่อตัวโน้ตในนี้\nโปรดพูดว่า 도 레 미 파 솔 라 시"
+            "value" : "“%@” — ไม่พบชื่อตัวโน้ตในนี้\nโปรดพูดเป็นภาษาอังกฤษว่า do re mi fa sol la ti"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "“%@” — không tìm thấy tên nốt trong đó.\nHãy nói 도 레 미 파 솔 라 시."
+            "value" : "\"%@\" — không tìm thấy tên nốt nào.\nHãy đọc bằng tiếng Anh: do re mi fa sol la ti."
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "„%@“ – nebyly nalezeny žádné názvy not.\nŘekněte 도 레 미 파 솔 라 시."
+            "value" : "„%@“ – nebyly nalezeny žádné názvy not.\nŘíkejte anglicky do re mi fa sol la ti."
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "“%@” – der blev ikke fundet nogen nodenavne.\nSig 도 레 미 파 솔 라 시."
+            "value" : "“%@” – der blev ikke fundet nogen nodenavne.\nSig do re mi fa sol la ti på engelsk."
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "«%@» — δεν βρέθηκαν ονόματα νοτών εδώ.\nΠείτε 도 레 미 파 솔 라 시."
+            "value" : "«%@» — δεν βρέθηκαν ονόματα νοτών.\nΠείτε στα αγγλικά do re mi fa sol la ti."
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "”%@” – nuottien nimiä ei löytynyt.\nSano 도 레 미 파 솔 라 시."
+            "value" : "”%@” – nuottien nimiä ei löytynyt.\nSano englanniksi do re mi fa sol la ti."
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "“%@” — tidak ada nama nada yang ditemukan.\nUcapkan 도 레 미 파 솔 라 시."
+            "value" : "\"%@\" — tidak ditemukan nama nada.\nUcapkan dalam bahasa Inggris: do re mi fa sol la ti."
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "«%@» – fant ingen notenavn.\nSi 도 레 미 파 솔 라 시."
+            "value" : "«%@» – fant ingen notenavn her.\nSi do re mi fa sol la ti på engelsk."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "„%@” – hierin zijn geen nootnamen gevonden.\nZeg 도 레 미 파 솔 라 시."
+            "value" : "‘%@’ – hierin zijn geen nootnamen gevonden.\nZeg in het Engels do re mi fa sol la ti."
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "„%@” – nie znaleziono tu nazw nut.\nPowiedz 도 레 미 파 솔 라 시."
+            "value" : "„%@” – nie znaleziono tu nazw nut.\nMów po angielsku: do re mi fa sol la ti."
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "”%@” – inga notnamn hittades.\nSäg 도 레 미 파 솔 라 시."
+            "value" : "”%@” – inga notnamn hittades.\nSäg do re mi fa sol la ti på engelska."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "“%@” — burada nota adı bulunamadı.\nLütfen 도 레 미 파 솔 라 시 de."
+            "value" : "\"%@\" — burada nota adı bulunamadı.\nİngilizce olarak do re mi fa sol la ti de."
           }
         }
       }
@@ -1950,139 +1950,139 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "For leaps wider than a fourth, say \"높은 솔\" (high sol) or \"낮은 시\" (low si)"
+            "value" : "For leaps wider than a fourth, say \"high sol\" or \"low ti\""
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "For leaps wider than a fourth, say \"높은 솔\" (high sol) or \"낮은 시\" (low si)"
+            "value" : "For leaps wider than a fourth, say \"high sol\" or \"low ti\""
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "音程跳进超过四度时，请说“높은 솔”（高 sol）或“낮은 시”（低 si）"
+            "value" : "跳进超过四度时，请说“high sol”或“low ti”"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "音程跳進超過四度時，請說「높은 솔」（高 sol）或「낮은 시」（低 si）"
+            "value" : "跳進超過四度時，請說「high sol」或「low ti」"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "4度より大きく跳ぶときは「높은 솔」（高いソ）や「낮은 시」（低いシ）のように言ってください"
+            "value" : "4度より大きく跳ぶときは「high sol」「low ti」のように言ってください"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "При скачках шире кварты говорите «높은 솔» (высокая соль) или «낮은 시» (низкая си)"
+            "value" : "Для скачков шире кварты говорите «high sol» или «low ti»"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "En saltos mayores que una cuarta, di «높은 솔» (sol agudo) o «낮은 시» (si grave)"
+            "value" : "Para saltos mayores que una cuarta, di «high sol» o «low ti»"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bei Sprüngen über eine Quarte sag „높은 솔“ (hohes Sol) oder „낮은 시“ (tiefes Si)"
+            "value" : "Bei Sprüngen über eine Quarte sag „high sol“ oder „low ti“"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pour un saut supérieur à une quarte, dites « 높은 솔 » (sol aigu) ou « 낮은 시 » (si grave)"
+            "value" : "Pour un saut de plus d’une quarte, dites « high sol » ou « low ti »"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Per salti più ampi di una quarta, di’ «높은 솔» (sol acuto) o «낮은 시» (si grave)"
+            "value" : "Per salti più ampi di una quarta, di’ «high sol» o «low ti»"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Em saltos maiores que uma quarta, diga “높은 솔” (sol agudo) ou “낮은 시” (si grave)"
+            "value" : "Para saltos maiores que uma quarta, diga \"high sol\" ou \"low ti\""
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ถ้าโน้ตกระโดดเกินคู่สี่ ให้พูดว่า “높은 솔” (ซอลสูง) หรือ “낮은 시” (ทีต่ำ)"
+            "value" : "ถ้าโน้ตกระโดดเกินคู่สี่ ให้พูดว่า “high sol” หรือ “low ti”"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Khi nhảy quãng rộng hơn quãng bốn, hãy nói “높은 솔” (sol cao) hoặc “낮은 시” (si thấp)"
+            "value" : "Khi nhảy quãng rộng hơn quãng bốn, hãy nói \"high sol\" hoặc \"low ti\""
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "U skoků větších než kvarta říkejte „높은 솔“ (vysoké sol) nebo „낮은 시“ (nízké si)"
+            "value" : "U skoků větších než kvarta říkejte „high sol“ nebo „low ti“"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ved spring større end en kvart skal du sige “높은 솔” (høj sol) eller “낮은 시” (lav si)"
+            "value" : "Ved spring større end en kvart skal du sige “high sol” eller “low ti”"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Για πηδήματα μεγαλύτερα από τετάρτη, πείτε «높은 솔» (ψηλό σολ) ή «낮은 시» (χαμηλό σι)"
+            "value" : "Για πηδήματα μεγαλύτερα από τέταρτη, πείτε «high sol» ή «low ti»"
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kun hyppy on kvarttia suurempi, sano ”높은 솔” (korkea sol) tai ”낮은 시” (matala si)"
+            "value" : "Kun hyppy on kvarttia suurempi, sano ”high sol” tai ”low ti”"
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Untuk lompatan lebih lebar dari kuart, ucapkan “높은 솔” (sol tinggi) atau “낮은 시” (si rendah)"
+            "value" : "Untuk lompatan lebih dari kwart, ucapkan \"high sol\" atau \"low ti\""
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ved sprang større enn en kvart sier du «높은 솔» (høy sol) eller «낮은 시» (lav si)"
+            "value" : "Ved sprang større enn en kvart sier du «high sol» eller «low ti»"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Zeg bij sprongen groter dan een kwart „높은 솔” (hoge sol) of „낮은 시” (lage si)"
+            "value" : "Zeg bij sprongen groter dan een kwart ‘high sol’ of ‘low ti’"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Przy skokach większych niż kwarta mów „높은 솔” (wysokie sol) lub „낮은 시” (niskie si)"
+            "value" : "Przy skokach większych niż kwarta mów „high sol” albo „low ti”"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vid språng större än en kvart säger du ”높은 솔” (hög sol) eller ”낮은 시” (låg si)"
+            "value" : "Vid språng större än en kvart säger du ”high sol” eller ”low ti”"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Dörtlüden geniş sıçramalarda “높은 솔” (tiz sol) veya “낮은 시” (pes si) de"
+            "value" : "Dörtlüden geniş atlamalarda \"high sol\" ya da \"low ti\" de"
           }
         }
       }
@@ -3887,139 +3887,139 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couldn't make out any note names. Try saying \"도 레 미\" clearly, in time with the metronome."
+            "value" : "Couldn't make out any note names. Try saying \"do re mi\" clearly, in time with the metronome."
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Couldn't make out any note names. Try saying \"도 레 미\" clearly, in time with the metronome."
+            "value" : "Couldn't make out any note names. Try saying \"do re mi\" clearly, in time with the metronome."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "没有听清唱名。请跟着节拍器，清楚地说“도 레 미”试试。"
+            "value" : "没有听清唱名。请跟着节拍器，清楚地说出“do re mi”。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "沒有聽清楚唱名。請跟著節拍器，清楚地說「도 레 미」試試。"
+            "value" : "沒有聽清楚唱名。請跟著節拍器，清楚地唸出「do re mi」。"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "階名を聞き取れませんでした。メトロノームに合わせて「도 레 미」のようにはっきり言ってみてください。"
+            "value" : "階名を聞き取れませんでした。メトロノームに合わせて「do re mi」のようにはっきり言ってみてください。"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Названия нот не распознаны. Произносите чётко «도 레 미» в такт метроному."
+            "value" : "Не удалось разобрать названия нот. Попробуйте чётко произносить «do re mi» в такт метроному."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No se entendió ningún nombre de nota. Prueba a decir «도 레 미» con claridad, al compás del metrónomo."
+            "value" : "No se entendieron los nombres de las notas. Prueba a decir «do re mi» con claridad, al ritmo del metrónomo."
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Es waren keine Notennamen herauszuhören. Sprich deutlich „도 레 미“ im Takt des Metronoms."
+            "value" : "Es waren keine Notennamen herauszuhören. Sprich deutlich „do re mi“ im Takt des Metronoms."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aucun nom de note n’a été compris. Essayez de dire « 도 레 미 » clairement, en rythme avec le métronome."
+            "value" : "Aucun nom de note n’a été compris. Essayez de dire « do re mi » distinctement, au rythme du métronome."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Non sono riuscito a capire nessun nome di nota. Prova a dire «도 레 미» con chiarezza, a tempo con il metronomo."
+            "value" : "Non sono stati riconosciuti nomi di note. Prova a dire «do re mi» in modo chiaro, a tempo con il metronomo."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Não deu para entender nenhum nome de nota. Tente dizer “도 레 미” com clareza, no ritmo do metrônomo."
+            "value" : "Não deu para entender os nomes das notas. Tente dizer \"do re mi\" com clareza, no ritmo do metrônomo."
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ฟังชื่อตัวโน้ตไม่ออก ลองพูดว่า “도 레 미” ให้ชัดเจนตามจังหวะเมโทรนอม"
+            "value" : "ฟังชื่อตัวโน้ตไม่ออก ลองพูดว่า “do re mi” ให้ชัดเจนตามจังหวะเมโทรนอม"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Không nghe ra tên nốt nào. Hãy thử nói rõ “도 레 미” đúng nhịp với máy đếm nhịp."
+            "value" : "Không nghe ra tên nốt. Hãy thử đọc rõ \"do re mi\" theo nhịp máy đếm nhịp."
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nerozuměl jsem žádnému názvu noty. Zkuste zřetelně říkat „도 레 미“ v rytmu metronomu."
+            "value" : "Nepodařilo se rozpoznat názvy not. Zkuste zřetelně říkat „do re mi“ v rytmu metronomu."
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Jeg kunne ikke høre nogen nodenavne. Prøv at sige “도 레 미” tydeligt i takt med metronomen."
+            "value" : "Der kunne ikke høres nogen nodenavne. Prøv at sige “do re mi” tydeligt i takt med metronomen."
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Δεν διακρίθηκε κανένα όνομα νότας. Δοκιμάστε να πείτε καθαρά «도 레 미» στο ρυθμό του μετρονόμου."
+            "value" : "Δεν αναγνωρίστηκαν ονόματα νοτών. Δοκιμάστε να πείτε καθαρά «do re mi» στον ρυθμό του μετρονόμου."
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nuottien nimiä ei erotettu. Yritä sanoa ”도 레 미” selvästi metronomin tahtiin."
+            "value" : "Nuottien nimiä ei saatu selville. Sano ”do re mi” selkeästi metronomin tahdissa."
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nama nada tidak terdengar jelas. Coba ucapkan “도 레 미” dengan jelas, sesuai irama metronom."
+            "value" : "Nama nada tidak terdengar jelas. Coba ucapkan \"do re mi\" dengan jelas sesuai irama metronom."
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fikk ikke tak i noen notenavn. Prøv å si «도 레 미» tydelig i takt med metronomen."
+            "value" : "Fikk ikke tak i noen notenavn. Prøv å si «do re mi» tydelig i takt med metronomen."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Er waren geen nootnamen te verstaan. Zeg duidelijk „도 레 미” op de maat van de metronoom."
+            "value" : "Er zijn geen nootnamen verstaan. Zeg ‘do re mi’ duidelijk op de maat van de metronoom."
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nie rozpoznano żadnej nazwy nuty. Spróbuj wyraźnie powiedzieć „도 레 미” w rytm metronomu."
+            "value" : "Nie udało się rozpoznać nazw nut. Spróbuj wyraźnie mówić „do re mi” w rytm metronomu."
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Inga notnamn kunde uppfattas. Försök säga ”도 레 미” tydligt i takt med metronomen."
+            "value" : "Inga notnamn gick att uppfatta. Försök säga ”do re mi” tydligt i takt med metronomen."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Hiçbir nota adı anlaşılamadı. Metronoma uyarak “도 레 미” diye net söylemeyi dene."
+            "value" : "Nota adları anlaşılamadı. Metronoma uyarak \"do re mi\" diye net bir şekilde söylemeyi dene."
           }
         }
       }
@@ -4334,139 +4334,139 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "On-device Korean speech recognition isn't ready.\nTurn on Korean under Settings ▸ General ▸ Keyboard ▸ Dictation to download what's needed."
+            "value" : "On-device English speech recognition isn't ready.\nTurn on English under Settings ▸ General ▸ Keyboard ▸ Dictation to download what's needed."
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "On-device Korean speech recognition isn't ready.\nTurn on Korean under Settings ▸ General ▸ Keyboard ▸ Dictation to download what's needed."
+            "value" : "On-device English speech recognition isn't ready.\nTurn on English under Settings ▸ General ▸ Keyboard ▸ Dictation to download what's needed."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "设备端韩语语音识别尚未就绪。\n请在“设置 ▸ 通用 ▸ 键盘 ▸ 听写”中打开韩语，系统会下载所需文件。"
+            "value" : "设备端英语语音识别尚未就绪。\n请在“设置 ▸ 通用 ▸ 键盘 ▸ 听写”中打开英语，系统会下载所需文件。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "裝置上的韓語語音辨識尚未準備好。\n請在「設定 ▸ 一般 ▸ 鍵盤 ▸ 聽寫」中開啟韓語，系統就會下載所需檔案。"
+            "value" : "裝置上的英語語音辨識尚未準備好。\n請在「設定 ▸ 一般 ▸ 鍵盤 ▸ 聽寫」中開啟英語，系統就會下載所需檔案。"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "端末内で処理する韓国語の音声認識の準備ができていません。\n「設定 ▸ 一般 ▸ キーボード ▸ 音声入力」で韓国語をオンにすると、必要なファイルがダウンロードされます。"
+            "value" : "端末内で処理する英語の音声認識の準備ができていません。\n「設定 ▸ 一般 ▸ キーボード ▸ 音声入力」で英語をオンにすると、必要なファイルがダウンロードされます。"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Распознавание корейской речи на устройстве не готово.\nВключите корейский в «Настройки ▸ Основные ▸ Клавиатура ▸ Диктовка» — нужные файлы загрузятся."
+            "value" : "Распознавание английской речи на устройстве не готово.\nВключите английский в «Настройки ▸ Основные ▸ Клавиатура ▸ Диктовка» — нужные файлы загрузятся."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "El reconocimiento de voz en coreano en el dispositivo no está listo.\nActiva el coreano en Ajustes ▸ General ▸ Teclado ▸ Dictado para que se descarguen los archivos necesarios."
+            "value" : "El reconocimiento de voz en inglés en el dispositivo no está listo.\nActiva el inglés en Ajustes ▸ General ▸ Teclado ▸ Dictado para que se descarguen los archivos necesarios."
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Die Spracherkennung für Koreanisch auf dem Gerät ist nicht bereit.\nSchalte Koreanisch unter Einstellungen ▸ Allgemein ▸ Tastatur ▸ Diktierfunktion ein, dann werden die nötigen Dateien geladen."
+            "value" : "Die Spracherkennung für Englisch auf dem Gerät ist nicht bereit.\nSchalte Englisch unter Einstellungen ▸ Allgemein ▸ Tastatur ▸ Diktierfunktion ein, dann werden die nötigen Dateien geladen."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La reconnaissance vocale en coréen sur l’appareil n’est pas prête.\nActivez le coréen dans Réglages ▸ Général ▸ Clavier ▸ Dictée pour télécharger les fichiers nécessaires."
+            "value" : "La reconnaissance vocale en anglais sur l’appareil n’est pas prête.\nActivez l’anglais dans Réglages ▸ Général ▸ Clavier ▸ Dictée pour télécharger les fichiers nécessaires."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Il riconoscimento vocale in coreano sul dispositivo non è pronto.\nAttiva il coreano in Impostazioni ▸ Generali ▸ Tastiera ▸ Dettatura per scaricare i file necessari."
+            "value" : "Il riconoscimento vocale in inglese sul dispositivo non è pronto.\nAttiva l’inglese in Impostazioni ▸ Generali ▸ Tastiera ▸ Dettatura per scaricare i file necessari."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "O reconhecimento de voz em coreano no dispositivo não está pronto.\nAtive o coreano em Ajustes ▸ Geral ▸ Teclado ▸ Ditado para baixar os arquivos necessários."
+            "value" : "O reconhecimento de voz em inglês no dispositivo não está pronto.\nAtive o inglês em Ajustes ▸ Geral ▸ Teclado ▸ Ditado para baixar os arquivos necessários."
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "การรู้จำเสียงภาษาเกาหลีบนอุปกรณ์ยังไม่พร้อม\nเปิดภาษาเกาหลีที่การตั้งค่า ▸ ทั่วไป ▸ คีย์บอร์ด ▸ การป้อนด้วยเสียง เพื่อดาวน์โหลดไฟล์ที่จำเป็น"
+            "value" : "การรู้จำเสียงภาษาอังกฤษบนอุปกรณ์ยังไม่พร้อม\nเปิดภาษาอังกฤษที่การตั้งค่า ▸ ทั่วไป ▸ คีย์บอร์ด ▸ การป้อนด้วยเสียง เพื่อดาวน์โหลดไฟล์ที่จำเป็น"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nhận dạng giọng nói tiếng Hàn trên thiết bị chưa sẵn sàng.\nBật tiếng Hàn tại Cài đặt ▸ Cài đặt chung ▸ Bàn phím ▸ Đọc chính tả để tải các tệp cần thiết."
+            "value" : "Nhận dạng giọng nói tiếng Anh trên thiết bị chưa sẵn sàng.\nBật tiếng Anh tại Cài đặt ▸ Cài đặt chung ▸ Bàn phím ▸ Đọc chính tả để tải các tệp cần thiết."
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rozpoznávání korejské řeči v zařízení není připraveno.\nZapněte korejštinu v Nastavení ▸ Obecné ▸ Klávesnice ▸ Diktování a stáhnou se potřebné soubory."
+            "value" : "Rozpoznávání anglické řeči v zařízení není připraveno.\nZapněte angličtinu v Nastavení ▸ Obecné ▸ Klávesnice ▸ Diktování a stáhnou se potřebné soubory."
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Koreansk talegenkendelse på enheden er ikke klar.\nSlå koreansk til under Indstillinger ▸ Generelt ▸ Tastatur ▸ Diktering, så hentes de nødvendige filer."
+            "value" : "Engelsk talegenkendelse på enheden er ikke klar.\nSlå engelsk til under Indstillinger ▸ Generelt ▸ Tastatur ▸ Diktering, så hentes de nødvendige filer."
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Η αναγνώριση ομιλίας στα κορεατικά στη συσκευή δεν είναι έτοιμη.\nΕνεργοποιήστε τα κορεατικά στις Ρυθμίσεις ▸ Γενικά ▸ Πληκτρολόγιο ▸ Υπαγόρευση για να γίνει λήψη των απαραίτητων αρχείων."
+            "value" : "Η αναγνώριση ομιλίας στα αγγλικά στη συσκευή δεν είναι έτοιμη.\nΕνεργοποιήστε τα αγγλικά στις Ρυθμίσεις ▸ Γενικά ▸ Πληκτρολόγιο ▸ Υπαγόρευση για να γίνει λήψη των απαραίτητων αρχείων."
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Laitteella tapahtuva korean puheentunnistus ei ole valmis.\nOta korea käyttöön kohdassa Asetukset ▸ Yleiset ▸ Näppäimistö ▸ Sanelu, niin tarvittavat tiedostot ladataan."
+            "value" : "Laitteella tapahtuva englannin puheentunnistus ei ole valmis.\nOta englanti käyttöön kohdassa Asetukset ▸ Yleiset ▸ Näppäimistö ▸ Sanelu, niin tarvittavat tiedostot ladataan."
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pengenalan suara bahasa Korea di perangkat belum siap.\nAktifkan bahasa Korea di Pengaturan ▸ Umum ▸ Papan Ketik ▸ Dikte agar file yang diperlukan diunduh."
+            "value" : "Pengenalan suara bahasa Inggris di perangkat belum siap.\nAktifkan bahasa Inggris di Pengaturan ▸ Umum ▸ Papan Ketik ▸ Dikte agar file yang diperlukan diunduh."
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Koreansk talegjenkjenning på enheten er ikke klar.\nSlå på koreansk under Innstillinger ▸ Generelt ▸ Tastatur ▸ Diktering, så lastes de nødvendige filene ned."
+            "value" : "Engelsk talegjenkjenning på enheten er ikke klar.\nSlå på engelsk under Innstillinger ▸ Generelt ▸ Tastatur ▸ Diktering, så lastes de nødvendige filene ned."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Koreaanse spraakherkenning op het apparaat is niet gereed.\nZet Koreaans aan via Instellingen ▸ Algemeen ▸ Toetsenbord ▸ Dicteren, dan worden de benodigde bestanden gedownload."
+            "value" : "Engelse spraakherkenning op het apparaat is niet gereed.\nZet Engels aan via Instellingen ▸ Algemeen ▸ Toetsenbord ▸ Dicteren, dan worden de benodigde bestanden gedownload."
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rozpoznawanie mowy po koreańsku na urządzeniu nie jest gotowe.\nWłącz koreański w Ustawienia ▸ Ogólne ▸ Klawiatura ▸ Dyktowanie, a potrzebne pliki zostaną pobrane."
+            "value" : "Rozpoznawanie mowy po angielsku na urządzeniu nie jest gotowe.\nWłącz angielski w Ustawienia ▸ Ogólne ▸ Klawiatura ▸ Dyktowanie, a potrzebne pliki zostaną pobrane."
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Koreansk taligenkänning på enheten är inte redo.\nSlå på koreanska under Inställningar ▸ Allmänt ▸ Tangentbord ▸ Diktering så hämtas de filer som behövs."
+            "value" : "Engelsk taligenkänning på enheten är inte redo.\nSlå på engelska under Inställningar ▸ Allmänt ▸ Tangentbord ▸ Diktering så hämtas de filer som behövs."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cihaz içi Korece konuşma tanıma hazır değil.\nGerekli dosyaların inmesi için Ayarlar ▸ Genel ▸ Klavye ▸ Dikte bölümünden Korece’yi aç."
+            "value" : "Cihaz içi İngilizce konuşma tanıma hazır değil.\nGerekli dosyaların inmesi için Ayarlar ▸ Genel ▸ Klavye ▸ Dikte bölümünden İngilizce’yi aç."
           }
         }
       }
@@ -5973,139 +5973,139 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · say \"쉼\" for a rest"
+            "value" : "do re mi fa sol la ti · say \"rest\" for a rest"
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · say \"쉼\" for a rest"
+            "value" : "do re mi fa sol la ti · say \"rest\" for a rest"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · 休止请说“쉼”"
+            "value" : "用英语说 do re mi fa sol la ti · 休止处说“rest”"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · 休止請說「쉼」"
+            "value" : "用英語說 do re mi fa sol la ti · 休止處說「rest」"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · 休符は「쉼」と言います"
+            "value" : "英語で do re mi fa sol la ti · 休符は「rest」"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · пауза — «쉼»"
+            "value" : "По-английски: do re mi fa sol la ti · пауза — «rest»"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · di «쉼» para un silencio"
+            "value" : "En inglés: do re mi fa sol la ti · para un silencio, di «rest»"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · für eine Pause sag „쉼“"
+            "value" : "Auf Englisch: do re mi fa sol la ti · für eine Pause „rest“"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · dites « 쉼 » pour un silence"
+            "value" : "En anglais : do re mi fa sol la ti · pour un silence, « rest »"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · per una pausa di’ «쉼»"
+            "value" : "In inglese: do re mi fa sol la ti · per una pausa, «rest»"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · diga “쉼” para uma pausa"
+            "value" : "Em inglês: do re mi fa sol la ti · para uma pausa, diga \"rest\""
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · ถ้าเป็นตัวหยุดให้พูดว่า “쉼”"
+            "value" : "พูดเป็นภาษาอังกฤษ do re mi fa sol la ti · ตัวหยุดให้พูดว่า “rest”"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · nói “쉼” cho dấu lặng"
+            "value" : "Đọc bằng tiếng Anh: do re mi fa sol la ti · chỗ nghỉ nói \"rest\""
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · pro pomlku řekněte „쉼“"
+            "value" : "Anglicky: do re mi fa sol la ti · pomlka je „rest“"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · sig “쉼” for en pause"
+            "value" : "På engelsk: do re mi fa sol la ti · sig “rest” for en pause"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · για παύση πείτε «쉼»"
+            "value" : "Στα αγγλικά: do re mi fa sol la ti · για παύση πείτε «rest»"
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · tauko: sano ”쉼”"
+            "value" : "Englanniksi: do re mi fa sol la ti · tauko on ”rest”"
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · ucapkan “쉼” untuk tanda diam"
+            "value" : "Dalam bahasa Inggris: do re mi fa sol la ti · untuk tanda diam, ucapkan \"rest\""
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · si «쉼» for en pause"
+            "value" : "På engelsk: do re mi fa sol la ti · si «rest» for en pause"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · zeg „쉼” voor een rust"
+            "value" : "In het Engels: do re mi fa sol la ti · zeg ‘rest’ voor een rust"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · pauza: powiedz „쉼”"
+            "value" : "Po angielsku: do re mi fa sol la ti · pauza to „rest”"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · säg ”쉼” för en paus"
+            "value" : "På engelska: do re mi fa sol la ti · säg ”rest” för en paus"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · es için “쉼” de"
+            "value" : "İngilizce: do re mi fa sol la ti · es için \"rest\" de"
           }
         }
       }
@@ -9102,139 +9102,139 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No notes found in the pasted text.\nCheck that it follows the rule (e.g. 4옥도8분음)."
+            "value" : "No notes found in the pasted text.\nCheck that it follows the rule (e.g. C4:8)."
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No notes found in the pasted text.\nCheck that it follows the rule (e.g. 4옥도8분음)."
+            "value" : "No notes found in the pasted text.\nCheck that it follows the rule (e.g. C4:8)."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在粘贴的文字中没有找到音符。\n请确认是否符合规则（例：4옥도8분음）。"
+            "value" : "粘贴的文字中没有找到音符。\n请检查是否符合规则（例：C4:8）。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在貼上的文字中找不到音符。\n請確認是否符合規則（例：4옥도8분음）。"
+            "value" : "貼上的文字中沒有找到音符。\n請檢查是否符合規則（例：C4:8）。"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "貼り付けたテキストから音符が見つかりませんでした。\nルール（例：4옥도8분음）に合っているか確認してください。"
+            "value" : "貼り付けたテキストから音符が見つかりませんでした。\nルール（例：C4:8）に合っているか確認してください。"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "В вставленном тексте не найдено нот.\nПроверьте, соответствует ли он правилу (например, 4옥도8분음)."
+            "value" : "Во вставленном тексте не найдено нот.\nПроверьте, что он соответствует правилу (например, C4:8)."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "No se encontraron notas en el texto pegado.\nComprueba que siga la regla (p. ej., 4옥도8분음)."
+            "value" : "No se encontraron notas en el texto pegado.\nComprueba que siga la regla (p. ej., C4:8)."
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Im eingefügten Text wurden keine Noten gefunden.\nPrüfe, ob er der Regel entspricht (z. B. 4옥도8분음)."
+            "value" : "Im eingefügten Text wurden keine Noten gefunden.\nPrüfe, ob er der Regel entspricht (z. B. C4:8)."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Aucune note trouvée dans le texte collé.\nVérifiez qu’il suit la règle (p. ex. 4옥도8분음)."
+            "value" : "Aucune note trouvée dans le texte collé.\nVérifiez qu’il suit la règle (ex. : C4:8)."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nessuna nota trovata nel testo incollato.\nControlla che segua la regola (es. 4옥도8분음)."
+            "value" : "Nessuna nota trovata nel testo incollato.\nVerifica che segua la regola (es. C4:8)."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Nenhuma nota encontrada no texto colado.\nVerifique se ele segue a regra (ex.: 4옥도8분음)."
+            "value" : "Nenhuma nota encontrada no texto colado.\nVerifique se ele segue a regra (ex.: C4:8)."
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ไม่พบโน้ตในข้อความที่วาง\nโปรดตรวจว่าเป็นไปตามกฎหรือไม่ (เช่น 4옥도8분음)"
+            "value" : "ไม่พบโน้ตในข้อความที่วาง\nโปรดตรวจว่าเป็นไปตามกฎหรือไม่ (เช่น C4:8)"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Không tìm thấy nốt nào trong văn bản đã dán.\nHãy kiểm tra xem có đúng quy tắc không (ví dụ: 4옥도8분음)."
+            "value" : "Không tìm thấy nốt nào trong văn bản đã dán.\nHãy kiểm tra xem có đúng quy tắc không (vd: C4:8)."
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ve vloženém textu nebyly nalezeny žádné noty.\nZkontrolujte, zda odpovídá pravidlu (např. 4옥도8분음)."
+            "value" : "Ve vloženém textu nebyly nalezeny žádné noty.\nZkontrolujte, zda odpovídá pravidlu (např. C4:8)."
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Der blev ikke fundet noder i den indsatte tekst.\nTjek, at den følger reglen (fx 4옥도8분음)."
+            "value" : "Der blev ikke fundet nogen noder i den indsatte tekst.\nTjek, at den følger reglen (f.eks. C4:8)."
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Δεν βρέθηκαν νότες στο επικολλημένο κείμενο.\nΕλέγξτε αν ακολουθεί τον κανόνα (π.χ. 4옥도8분음)."
+            "value" : "Δεν βρέθηκαν νότες στο κείμενο που επικολλήσατε.\nΕλέγξτε ότι ακολουθεί τον κανόνα (π.χ. C4:8)."
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Liitetystä tekstistä ei löytynyt nuotteja.\nTarkista, että se noudattaa sääntöä (esim. 4옥도8분음)."
+            "value" : "Liitetystä tekstistä ei löytynyt nuotteja.\nTarkista, että se noudattaa sääntöä (esim. C4:8)."
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tidak ada not yang ditemukan di teks yang ditempel.\nPastikan teks mengikuti aturan (mis. 4옥도8분음)."
+            "value" : "Tidak ada not yang ditemukan di teks yang ditempel.\nPastikan teksnya mengikuti aturan (mis. C4:8)."
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Fant ingen noter i den limte teksten.\nSjekk at den følger regelen (f.eks. 4옥도8분음)."
+            "value" : "Fant ingen noter i teksten du limte inn.\nSjekk at den følger regelen (f.eks. C4:8)."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Geen noten gevonden in de geplakte tekst.\nControleer of de tekst de regel volgt (bijv. 4옥도8분음)."
+            "value" : "Er zijn geen noten gevonden in de geplakte tekst.\nControleer of die de regel volgt (bijv. C4:8)."
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "W wklejonym tekście nie znaleziono nut.\nSprawdź, czy jest zgodny z regułą (np. 4옥도8분음)."
+            "value" : "We wklejonym tekście nie znaleziono nut.\nSprawdź, czy jest zgodny z regułą (np. C4:8)."
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Inga noter hittades i den inklistrade texten.\nKontrollera att den följer regeln (t.ex. 4옥도8분음)."
+            "value" : "Inga noter hittades i den inklistrade texten.\nKontrollera att den följer regeln (t.ex. C4:8)."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Yapıştırılan metinde nota bulunamadı.\nKurala uyup uymadığını kontrol et (örn. 4옥도8분음)."
+            "value" : "Yapıştırılan metinde nota bulunamadı.\nKurala uyup uymadığını kontrol et (ör. C4:8)."
           }
         }
       }
@@ -12678,139 +12678,139 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Picks the octave closest to the previous note, so \"시 도\" rises by a semitone."
+            "value" : "Picks the octave closest to the previous note, so \"ti do\" rises by a semitone."
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Picks the octave closest to the previous note, so \"시 도\" rises by a semitone."
+            "value" : "Picks the octave closest to the previous note, so \"ti do\" rises by a semitone."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "选择与前一个音最接近的八度，因此“시 도”会升高半音。"
+            "value" : "选择离前一个音最近的八度，所以“ti do”会上行半音。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "選擇與前一個音最接近的八度，因此「시 도」會升高半音。"
+            "value" : "選擇最接近前一個音的八度，所以「ti do」會上行半音。"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "直前の音に近いオクターブを選びます。「시 도」は半音上がります。"
+            "value" : "直前の音に近いオクターブを選びます。「ti do」は半音上がります。"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Выбирается октава, ближайшая к предыдущей ноте, поэтому «시 도» поднимается на полутон."
+            "value" : "Выбирает октаву, ближайшую к предыдущей ноте, поэтому «ti do» идёт на полутон вверх."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Elige la octava más cercana a la nota anterior, así que «시 도» sube un semitono."
+            "value" : "Elige la octava más cercana a la nota anterior, así «ti do» sube un semitono."
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wählt die Oktave, die der vorigen Note am nächsten liegt, sodass „시 도“ einen Halbton aufwärts geht."
+            "value" : "Wählt die Oktave, die der vorigen Note am nächsten liegt, sodass „ti do“ einen Halbton aufwärts geht."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Choisit l’octave la plus proche de la note précédente : « 시 도 » monte donc d’un demi-ton."
+            "value" : "Choisit l’octave la plus proche de la note précédente : « ti do » monte donc d’un demi-ton."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sceglie l’ottava più vicina alla nota precedente, quindi «시 도» sale di un semitono."
+            "value" : "Sceglie l’ottava più vicina alla nota precedente, quindi «ti do» sale di un semitono."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Escolhe a oitava mais próxima da nota anterior, então “시 도” sobe um semitom."
+            "value" : "Escolhe a oitava mais próxima da nota anterior, então \"ti do\" sobe um semitom."
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "เลือกอ็อกเทฟที่ใกล้กับตัวโน้ตก่อนหน้ามากที่สุด “시 도” จึงขึ้นไปครึ่งเสียง"
+            "value" : "เลือกอ็อกเทฟที่ใกล้กับตัวโน้ตก่อนหน้ามากที่สุด “ti do” จึงขึ้นไปครึ่งเสียง"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Chọn quãng tám gần nốt trước nhất, nên “시 도” sẽ lên nửa cung."
+            "value" : "Chọn quãng tám gần nốt trước nhất, nên \"ti do\" đi lên nửa cung."
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vybere oktávu nejblíže předchozí notě, takže „시 도“ stoupne o půltón."
+            "value" : "Vybere oktávu nejbližší předchozí notě, takže „ti do“ stoupne o půltón."
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vælger den oktav, der ligger tættest på forrige node, så “시 도” stiger en halvtone."
+            "value" : "Vælger den oktav, der ligger nærmest den forrige node, så “ti do” går en halvtone op."
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Επιλέγει την οκτάβα που είναι πιο κοντά στην προηγούμενη νότα, οπότε το «시 도» ανεβαίνει κατά ένα ημιτόνιο."
+            "value" : "Επιλέγει την οκτάβα που είναι πιο κοντά στην προηγούμενη νότα, έτσι το «ti do» ανεβαίνει ένα ημιτόνιο."
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Valitsee edellistä nuottia lähimmän oktaavin, joten ”시 도” nousee puolisävelaskeleen."
+            "value" : "Valitsee edellistä nuottia lähimmän oktaavin, joten ”ti do” nousee puolisävelaskeleen."
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Memilih oktaf terdekat dengan not sebelumnya, sehingga “시 도” naik setengah nada."
+            "value" : "Memilih oktaf yang paling dekat dengan not sebelumnya, jadi \"ti do\" naik setengah nada."
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Velger oktaven som ligger nærmest forrige note, så «시 도» går en halvtone opp."
+            "value" : "Velger oktaven nærmest forrige note, så «ti do» går en halvtone opp."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Kiest het octaaf dat het dichtst bij de vorige noot ligt, dus „시 도” gaat een halve toon omhoog."
+            "value" : "Kiest het octaaf dat het dichtst bij de vorige noot ligt, zodat ‘ti do’ een halve toon stijgt."
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Wybiera oktawę najbliższą poprzedniej nucie, więc „시 도” idzie o półton w górę."
+            "value" : "Wybiera oktawę najbliższą poprzedniej nucie, więc „ti do” idzie o półton w górę."
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Väljer oktaven närmast föregående not, så ”시 도” går en halvton upp."
+            "value" : "Väljer den oktav som ligger närmast föregående not, så ”ti do” går upp ett halvt tonsteg."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Önceki notaya en yakın oktavı seçer, bu yüzden “시 도” yarım ton yükselir."
+            "value" : "Önceki notaya en yakın oktavı seçer; böylece \"ti do\" yarım ses yükselir."
           }
         }
       }
@@ -14168,139 +14168,139 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "e.g. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "e.g. C4:4 D4:4 E4:8 …"
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "e.g. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "e.g. C4:4 D4:4 E4:8 …"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "例：4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "例：C4:4 D4:4 E4:8 …"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "例：4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "例：C4:4 D4:4 E4:8 …"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "例：4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "例：C4:4 D4:4 E4:8 …"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Например: 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "Например: C4:4 D4:4 E4:8 …"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "p. ej. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "p. ej., C4:4 D4:4 E4:8 …"
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "z. B. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "z. B. C4:4 D4:4 E4:8 …"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "p. ex. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "ex. : C4:4 D4:4 E4:8 …"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "es. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "es. C4:4 D4:4 E4:8 …"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "ex.: 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "ex.: C4:4 D4:4 E4:8 …"
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "เช่น 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "เช่น C4:4 D4:4 E4:8 …"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ví dụ: 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "vd: C4:4 D4:4 E4:8 …"
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "např. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "např. C4:4 D4:4 E4:8 …"
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "fx 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "f.eks. C4:4 D4:4 E4:8 …"
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "π.χ. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "π.χ. C4:4 D4:4 E4:8 …"
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "esim. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "esim. C4:4 D4:4 E4:8 …"
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "mis. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "mis. C4:4 D4:4 E4:8 …"
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "f.eks. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "f.eks. C4:4 D4:4 E4:8 …"
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "bijv. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "bijv. C4:4 D4:4 E4:8 …"
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "np. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "np. C4:4 D4:4 E4:8 …"
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "t.ex. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "t.ex. C4:4 D4:4 E4:8 …"
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "örn. 4옥도4분음 4옥레4분음 4옥미8분음 …"
+            "value" : "ör. C4:4 D4:4 E4:8 …"
           }
         }
       }
@@ -16105,139 +16105,139 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Korean speech recognition isn't available on this device."
+            "value" : "English speech recognition isn't available on this device."
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Korean speech recognition isn't available on this device."
+            "value" : "English speech recognition isn't available on this device."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "此设备无法使用韩语语音识别。"
+            "value" : "此设备无法使用英语语音识别。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "此裝置無法使用韓語語音辨識。"
+            "value" : "此裝置無法使用英語語音辨識。"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "この端末では韓国語の音声認識を使えません。"
+            "value" : "この端末では英語の音声認識を使えません。"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "На этом устройстве недоступно распознавание корейской речи."
+            "value" : "На этом устройстве недоступно распознавание английской речи."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "El reconocimiento de voz en coreano no está disponible en este dispositivo."
+            "value" : "El reconocimiento de voz en inglés no está disponible en este dispositivo."
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Koreanische Spracherkennung ist auf diesem Gerät nicht verfügbar."
+            "value" : "Englische Spracherkennung ist auf diesem Gerät nicht verfügbar."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La reconnaissance vocale en coréen n’est pas disponible sur cet appareil."
+            "value" : "La reconnaissance vocale en anglais n’est pas disponible sur cet appareil."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Il riconoscimento vocale in coreano non è disponibile su questo dispositivo."
+            "value" : "Il riconoscimento vocale in inglese non è disponibile su questo dispositivo."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "O reconhecimento de voz em coreano não está disponível neste dispositivo."
+            "value" : "O reconhecimento de voz em inglês não está disponível neste dispositivo."
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "อุปกรณ์เครื่องนี้ใช้การรู้จำเสียงภาษาเกาหลีไม่ได้"
+            "value" : "อุปกรณ์เครื่องนี้ใช้การรู้จำเสียงภาษาอังกฤษไม่ได้"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Thiết bị này không dùng được tính năng nhận dạng giọng nói tiếng Hàn."
+            "value" : "Thiết bị này không dùng được tính năng nhận dạng giọng nói tiếng Anh."
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rozpoznávání korejské řeči není na tomto zařízení dostupné."
+            "value" : "Rozpoznávání anglické řeči není na tomto zařízení dostupné."
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Koreansk talegenkendelse er ikke tilgængelig på denne enhed."
+            "value" : "Engelsk talegenkendelse er ikke tilgængelig på denne enhed."
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Η αναγνώριση ομιλίας στα κορεατικά δεν είναι διαθέσιμη σε αυτή τη συσκευή."
+            "value" : "Η αναγνώριση ομιλίας στα αγγλικά δεν είναι διαθέσιμη σε αυτή τη συσκευή."
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Korean puheentunnistus ei ole käytettävissä tällä laitteella."
+            "value" : "Englannin puheentunnistus ei ole käytettävissä tällä laitteella."
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Pengenalan suara bahasa Korea tidak tersedia di perangkat ini."
+            "value" : "Pengenalan suara bahasa Inggris tidak tersedia di perangkat ini."
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Koreansk talegjenkjenning er ikke tilgjengelig på denne enheten."
+            "value" : "Engelsk talegjenkjenning er ikke tilgjengelig på denne enheten."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Koreaanse spraakherkenning is niet beschikbaar op dit apparaat."
+            "value" : "Engelse spraakherkenning is niet beschikbaar op dit apparaat."
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Rozpoznawanie mowy po koreańsku jest niedostępne na tym urządzeniu."
+            "value" : "Rozpoznawanie mowy po angielsku jest niedostępne na tym urządzeniu."
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Koreansk taligenkänning är inte tillgänglig på den här enheten."
+            "value" : "Engelsk taligenkänning är inte tillgänglig på den här enheten."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Bu cihazda Korece konuşma tanıma kullanılamıyor."
+            "value" : "Bu cihazda İngilizce konuşma tanıma kullanılamıyor."
           }
         }
       }
@@ -21456,6 +21456,304 @@
           }
         }
       }
+    },
+    "쉼" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rest"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rest"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休止"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休止"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休符"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пауза"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silencio"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Silence"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pausa"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pausa"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตัวหยุด"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dấu lặng"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pomlka"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Παύση"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tauko"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diam"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rust"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pauza"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paus"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "쉼"
+          }
+        }
+      },
+      "comment" : "A rest in the dictated-notes strip"
+    },
+    "score.rule.letters" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write this score out as text using the rules below. Write each note as one token and separate notes with spaces. Reply with the note text only, on one line, with no explanation.\n\nNote = [letter][accidental][octave]:[length][dot/triplet]\n· Letter: C D E F G A B\n· Accidental: # for sharp, b for flat (leave out if none)\n· Octave: a number (middle C = C4). Leave it out to keep the previous octave\n· Length: 1 whole, 2 half, 4 quarter, 8 eighth, 16 sixteenth. Leave out \":length\" to keep the previous length\n· Dotted note: \".\" after the length (C4:4.), triplet: \"t\" (C4:8t)\n· Rest: R instead of the letter (R:4, R:8)\n\nExample: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write this score out as text using the rules below. Write each note as one token and separate notes with spaces. Reply with the note text only, on one line, with no explanation.\n\nNote = [letter][accidental][octave]:[length][dot/triplet]\n· Letter: C D E F G A B\n· Accidental: # for sharp, b for flat (leave out if none)\n· Octave: a number (middle C = C4). Leave it out to keep the previous octave\n· Length: 1 semibreve, 2 minim, 4 crotchet, 8 quaver, 16 semiquaver. Leave out \":length\" to keep the previous length\n· Dotted note: \".\" after the length (C4:4.), triplet: \"t\" (C4:8t)\n· Rest: R instead of the letter (R:4, R:8)\n\nExample: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请按下面的规则把乐谱写成文字。每个音符写成一个整体，音符之间用空格分隔。不要解释，只用一行给出音符文字。\n\n音符 = [音名][变音记号][八度]:[时值][附点/三连音]\n· 音名：C D E F G A B\n· 变音记号：升号 #，降号 b（没有就省略）\n· 八度：数字（中央C = C4）。省略则沿用前一个八度\n· 时值：1 全音符，2 二分音符，4 四分音符，8 八分音符，16 十六分音符。省略“:时值”则沿用前一个时值\n· 附点音符在时值后加“.”（C4:4.），三连音加“t”（C4:8t）\n· 休止符用 R 代替音名（R:4、R:8）\n\n示例：C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請依照下面的規則把樂譜寫成文字。每個音符寫成一個整體，音符之間用空格分隔。不要解釋，只用一行給出音符文字。\n\n音符 = [音名][變音記號][八度]:[時值][附點/三連音]\n· 音名：C D E F G A B\n· 變音記號：升記號 #，降記號 b（沒有就省略）\n· 八度：數字（中央C = C4）。省略則沿用前一個八度\n· 時值：1 全音符，2 二分音符，4 四分音符，8 八分音符，16 十六分音符。省略「:時值」則沿用前一個時值\n· 附點音符在時值後加「.」（C4:4.），三連音加「t」（C4:8t）\n· 休止符用 R 取代音名（R:4、R:8）\n\n範例：C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "次のルールで楽譜をテキストに書き起こしてください。音符は1つずつひとまとまりで書き、音符どうしはスペースで区切ります。説明は付けず、音符のテキストだけを1行で返してください。\n\n音符 = [音名][臨時記号][オクターブ]:[長さ][付点・3連符]\n・音名：C D E F G A B\n・臨時記号：シャープ #、フラット b（なければ省略）\n・オクターブ：数字（中央のド = C4）。省略すると直前のオクターブのまま\n・長さ：1 全音符、2 2分音符、4 4分音符、8 8分音符、16 16分音符。「:長さ」を省略すると直前の長さのまま\n・付点音符は長さの後に「.」（C4:4.）、3連符は「t」（C4:8t）\n・休符は音名の代わりに R（R:4、R:8）\n\n例：C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запиши эти ноты текстом по правилам ниже. Каждую ноту пиши одним словом, ноты разделяй пробелами. Ответь только строкой нот, без пояснений.\n\nНота = [буква][знак альтерации][октава]:[длительность][точка/триоль]\n· Буква: C D E F G A B\n· Знак: # — диез, b — бемоль (если нет, не пиши)\n· Октава: число (до первой октавы = C4). Если не указана, остаётся прежняя\n· Длительность: 1 целая, 2 половинная, 4 четверть, 8 восьмая, 16 шестнадцатая. Без «:длительности» остаётся прежняя\n· Нота с точкой: «.» после длительности (C4:4.), триоль: «t» (C4:8t)\n· Пауза: R вместо буквы (R:4, R:8)\n\nПример: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escribe esta partitura como texto siguiendo las reglas de abajo. Escribe cada nota como un solo bloque y separa las notas con espacios. Responde solo con el texto de las notas, en una línea y sin explicaciones.\n\nNota = [letra][alteración][octava]:[duración][puntillo/tresillo]\n· Letra: C D E F G A B\n· Alteración: # sostenido, b bemol (omítela si no hay)\n· Octava: un número (do central = C4). Si la omites, se mantiene la anterior\n· Duración: 1 redonda, 2 blanca, 4 negra, 8 corchea, 16 semicorchea. Si omites \":duración\", se mantiene la anterior\n· Nota con puntillo: \".\" tras la duración (C4:4.), tresillo: \"t\" (C4:8t)\n· Silencio: R en lugar de la letra (R:4, R:8)\n\nEjemplo: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schreib diese Noten nach den folgenden Regeln als Text auf. Schreib jede Note als ein Wort und trenne die Noten mit Leerzeichen. Antworte nur mit dem Notentext in einer Zeile, ohne Erklärung.\n\nNote = [Buchstabe][Vorzeichen][Oktave]:[Länge][Punkt/Triole]\n· Buchstabe: C D E F G A B (B steht hier für H)\n· Vorzeichen: # für Kreuz, b für B (sonst weglassen)\n· Oktave: eine Zahl (eingestrichenes C = C4). Weglassen behält die vorige Oktave\n· Länge: 1 Ganze, 2 Halbe, 4 Viertel, 8 Achtel, 16 Sechzehntel. Ohne „:Länge“ bleibt die vorige Länge\n· Punktierte Note: „.“ nach der Länge (C4:4.), Triole: „t“ (C4:8t)\n· Pause: R statt des Buchstabens (R:4, R:8)\n\nBeispiel: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écris cette partition en texte selon les règles ci-dessous. Écris chaque note d’un seul bloc et sépare les notes par des espaces. Réponds uniquement avec le texte des notes, sur une ligne, sans explication.\n\nNote = [lettre][altération][octave]:[durée][point/triolet]\n· Lettre : C D E F G A B (do ré mi fa sol la si)\n· Altération : # pour dièse, b pour bémol (à omettre s’il n’y en a pas)\n· Octave : un nombre (do central = C4). Sans nombre, l’octave précédente est conservée\n· Durée : 1 ronde, 2 blanche, 4 noire, 8 croche, 16 double croche. Sans « :durée », la durée précédente est conservée\n· Note pointée : « . » après la durée (C4:4.), triolet : « t » (C4:8t)\n· Silence : R à la place de la lettre (R:4, R:8)\n\nExemple : C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trascrivi questo spartito come testo seguendo le regole qui sotto. Scrivi ogni nota come un unico blocco e separa le note con spazi. Rispondi solo con il testo delle note, su una riga, senza spiegazioni.\n\nNota = [lettera][alterazione][ottava]:[durata][punto/terzina]\n· Lettera: C D E F G A B (do re mi fa sol la si)\n· Alterazione: # diesis, b bemolle (ometti se assente)\n· Ottava: un numero (do centrale = C4). Se omessa, resta quella precedente\n· Durata: 1 semibreve, 2 minima, 4 semiminima, 8 croma, 16 semicroma. Se ometti \":durata\", resta quella precedente\n· Nota puntata: \".\" dopo la durata (C4:4.), terzina: \"t\" (C4:8t)\n· Pausa: R al posto della lettera (R:4, R:8)\n\nEsempio: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escreva esta partitura como texto seguindo as regras abaixo. Escreva cada nota como um bloco único e separe as notas com espaços. Responda só com o texto das notas, em uma linha, sem explicações.\n\nNota = [letra][acidente][oitava]:[duração][ponto/quiáltera]\n· Letra: C D E F G A B (dó ré mi fá sol lá si)\n· Acidente: # sustenido, b bemol (omita se não houver)\n· Oitava: um número (dó central = C4). Se omitir, vale a oitava anterior\n· Duração: 1 semibreve, 2 mínima, 4 semínima, 8 colcheia, 16 semicolcheia. Se omitir \":duração\", vale a anterior\n· Nota pontuada: \".\" depois da duração (C4:4.), tercina: \"t\" (C4:8t)\n· Pausa: R no lugar da letra (R:4, R:8)\n\nExemplo: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ช่วยเขียนโน้ตเพลงนี้เป็นข้อความตามกฎด้านล่าง เขียนโน้ตแต่ละตัวติดกันเป็นก้อนเดียว และเว้นวรรคคั่นระหว่างโน้ต ตอบเฉพาะข้อความโน้ตในบรรทัดเดียว ไม่ต้องอธิบาย\n\nโน้ต = [ชื่อตัวโน้ต][เครื่องหมายแปลงเสียง][อ็อกเทฟ]:[ความยาว][จุด/โน้ตสามพยางค์]\n· ชื่อตัวโน้ต: C D E F G A B\n· เครื่องหมายแปลงเสียง: ชาร์ป #, แฟล็ต b (ถ้าไม่มีให้เว้นไว้)\n· อ็อกเทฟ: ตัวเลข (โดกลาง = C4) ถ้าไม่ใส่จะใช้อ็อกเทฟเดิม\n· ความยาว: 1 โน้ตตัวกลม, 2 ตัวขาว, 4 ตัวดำ, 8 เขบ็ตหนึ่งชั้น, 16 เขบ็ตสองชั้น ถ้าไม่ใส่ \":ความยาว\" จะใช้ความยาวเดิม\n· โน้ตประจุด: ใส่ \".\" หลังความยาว (C4:4.) โน้ตสามพยางค์: ใส่ \"t\" (C4:8t)\n· ตัวหยุด: ใช้ R แทนชื่อตัวโน้ต (R:4, R:8)\n\nตัวอย่าง: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hãy viết bản nhạc này thành văn bản theo quy tắc dưới đây. Mỗi nốt viết liền thành một cụm, các nốt cách nhau bằng dấu cách. Chỉ trả lời bằng chuỗi nốt trên một dòng, không giải thích.\n\nNốt = [tên nốt][dấu hóa][quãng tám]:[trường độ][chấm/liên ba]\n· Tên nốt: C D E F G A B\n· Dấu hóa: thăng #, giáng b (không có thì bỏ qua)\n· Quãng tám: một con số (Đô giữa = C4). Bỏ trống thì giữ quãng tám trước đó\n· Trường độ: 1 nốt tròn, 2 nốt trắng, 4 nốt đen, 8 nốt móc đơn, 16 nốt móc kép. Bỏ \":trường độ\" thì giữ trường độ trước đó\n· Nốt chấm dôi: thêm \".\" sau trường độ (C4:4.), liên ba: thêm \"t\" (C4:8t)\n· Dấu lặng: dùng R thay cho tên nốt (R:4, R:8)\n\nVí dụ: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přepiš tyto noty do textu podle pravidel níže. Každou notu napiš jako jeden celek a noty odděl mezerami. Odpověz jen textem not na jednom řádku, bez vysvětlování.\n\nNota = [písmeno][posuvka][oktáva]:[délka][tečka/triola]\n· Písmeno: C D E F G A B (B zde znamená H)\n· Posuvka: # křížek, b béčko (jinak vynech)\n· Oktáva: číslo (jednočárkované c = C4). Když chybí, platí předchozí oktáva\n· Délka: 1 celá, 2 půlová, 4 čtvrťová, 8 osminová, 16 šestnáctinová. Bez „:délky“ platí předchozí délka\n· Nota s tečkou: „.“ za délkou (C4:4.), triola: „t“ (C4:8t)\n· Pomlka: R místo písmene (R:4, R:8)\n\nPříklad: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv disse noder som tekst efter reglerne nedenfor. Skriv hver node som ét ord, og adskil noderne med mellemrum. Svar kun med nodeteksten på én linje uden forklaring.\n\nNode = [bogstav][fortegn][oktav]:[længde][punktering/triol]\n· Bogstav: C D E F G A B (B betyder her H)\n· Fortegn: # for kryds, b for b (udelades, hvis der ikke er noget)\n· Oktav: et tal (det midterste C = C4). Udelades den, gælder den forrige oktav\n· Længde: 1 helnode, 2 halvnode, 4 fjerdedelsnode, 8 ottendedelsnode, 16 sekstendedelsnode. Udelades \":længde\", gælder den forrige længde\n· Punkteret node: \".\" efter længden (C4:4.), triol: \"t\" (C4:8t)\n· Pause: R i stedet for bogstavet (R:4, R:8)\n\nEksempel: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Γράψε αυτή την παρτιτούρα ως κείμενο με τους παρακάτω κανόνες. Γράψε κάθε νότα ως ένα ενιαίο κομμάτι και χώρισε τις νότες με κενά. Απάντησε μόνο με το κείμενο των νοτών, σε μία γραμμή, χωρίς εξηγήσεις.\n\nΝότα = [γράμμα][αλλοίωση][οκτάβα]:[διάρκεια][παρεστιγμένη/τρίηχο]\n· Γράμμα: C D E F G A B (ντο ρε μι φα σολ λα σι)\n· Αλλοίωση: # για δίεση, b για ύφεση (παραλείπεται αν δεν υπάρχει)\n· Οκτάβα: ένας αριθμός (μεσαίο ντο = C4). Αν λείπει, μένει η προηγούμενη\n· Διάρκεια: 1 ολόκληρο, 2 μισό, 4 τέταρτο, 8 όγδοο, 16 δέκατο έκτο. Αν λείπει το \":διάρκεια\", μένει η προηγούμενη\n· Παρεστιγμένη νότα: \".\" μετά τη διάρκεια (C4:4.), τρίηχο: \"t\" (C4:8t)\n· Παύση: R αντί για γράμμα (R:4, R:8)\n\nΠαράδειγμα: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kirjoita nämä nuotit tekstiksi alla olevien sääntöjen mukaan. Kirjoita jokainen nuotti yhtenä sanana ja erota nuotit välilyönneillä. Vastaa pelkällä nuottitekstillä yhdellä rivillä ilman selityksiä.\n\nNuotti = [kirjain][etumerkki][oktaavi]:[kesto][piste/trioli]\n· Kirjain: C D E F G A B (B tarkoittaa tässä H:ta)\n· Etumerkki: # ylennys, b alennus (jätä pois, jos ei ole)\n· Oktaavi: numero (keski-C = C4). Jos se puuttuu, edellinen oktaavi säilyy\n· Kesto: 1 kokonuotti, 2 puolinuotti, 4 neljäsosanuotti, 8 kahdeksasosanuotti, 16 kuudestoistaosanuotti. Jos \":kesto\" puuttuu, edellinen kesto säilyy\n· Pisteellinen nuotti: \".\" keston perään (C4:4.), trioli: \"t\" (C4:8t)\n· Tauko: R kirjaimen tilalle (R:4, R:8)\n\nEsimerkki: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuliskan partitur ini sebagai teks dengan aturan di bawah. Tulis setiap not sebagai satu kesatuan dan pisahkan not dengan spasi. Balas hanya dengan teks not dalam satu baris, tanpa penjelasan.\n\nNot = [huruf][aksidental][oktaf]:[panjang][titik/triol]\n· Huruf: C D E F G A B\n· Aksidental: # untuk kres, b untuk mol (kosongkan jika tidak ada)\n· Oktaf: angka (C tengah = C4). Jika dikosongkan, oktaf sebelumnya dipakai\n· Panjang: 1 not penuh, 2 setengah, 4 seperempat, 8 seperdelapan, 16 seperenam belas. Jika \":panjang\" dikosongkan, panjang sebelumnya dipakai\n· Not bertitik: \".\" setelah panjang (C4:4.), triol: \"t\" (C4:8t)\n· Tanda diam: R sebagai ganti huruf (R:4, R:8)\n\nContoh: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv disse notene som tekst etter reglene nedenfor. Skriv hver note som ett ord, og skill notene med mellomrom. Svar bare med noteteksten på én linje, uten forklaring.\n\nNote = [bokstav][fortegn][oktav]:[lengde][punktering/triol]\n· Bokstav: C D E F G A B (B betyr her H)\n· Fortegn: # for kryss, b for b (utelates hvis det ikke finnes)\n· Oktav: et tall (enstrøken C = C4). Utelates den, gjelder forrige oktav\n· Lengde: 1 helnote, 2 halvnote, 4 firedelsnote, 8 åttendedelsnote, 16 sekstendedelsnote. Utelates \":lengde\", gjelder forrige lengde\n· Punktert note: \".\" etter lengden (C4:4.), triol: \"t\" (C4:8t)\n· Pause: R i stedet for bokstaven (R:4, R:8)\n\nEksempel: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schrijf deze partituur uit als tekst volgens de regels hieronder. Schrijf elke noot als één geheel en scheid de noten met spaties. Antwoord alleen met de notentekst op één regel, zonder uitleg.\n\nNoot = [letter][voorteken][octaaf]:[lengte][punt/triool]\n· Letter: C D E F G A B\n· Voorteken: # voor een kruis, b voor een mol (weglaten als er geen is)\n· Octaaf: een getal (centrale C = C4). Weglaten houdt het vorige octaaf aan\n· Lengte: 1 hele noot, 2 halve, 4 kwartnoot, 8 achtste, 16 zestiende. Zonder \":lengte\" blijft de vorige lengte\n· Gepunteerde noot: \".\" na de lengte (C4:4.), triool: \"t\" (C4:8t)\n· Rust: R in plaats van de letter (R:4, R:8)\n\nVoorbeeld: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zapisz te nuty jako tekst według poniższych zasad. Każdą nutę zapisz jako jeden ciąg znaków, a nuty oddziel spacjami. Odpowiedz tylko tekstem nut w jednej linii, bez wyjaśnień.\n\nNuta = [litera][znak chromatyczny][oktawa]:[długość][kropka/triola]\n· Litera: C D E F G A B (B oznacza tu H)\n· Znak: # krzyżyk, b bemol (pomiń, jeśli go nie ma)\n· Oktawa: liczba (c razkreślne = C4). Pominięta oznacza poprzednią oktawę\n· Długość: 1 cała nuta, 2 półnuta, 4 ćwierćnuta, 8 ósemka, 16 szesnastka. Bez „:długości” zostaje poprzednia\n· Nuta z kropką: „.” po długości (C4:4.), triola: „t” (C4:8t)\n· Pauza: R zamiast litery (R:4, R:8)\n\nPrzykład: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skriv de här noterna som text enligt reglerna nedan. Skriv varje not som ett ord och skilj noterna åt med mellanslag. Svara bara med nottexten på en rad, utan förklaring.\n\nNot = [bokstav][förtecken][oktav]:[längd][punkt/triol]\n· Bokstav: C D E F G A B (B betyder här H)\n· Förtecken: # för kors, b för b (utelämnas om inget finns)\n· Oktav: en siffra (ettstrukna C = C4). Utelämnas den gäller föregående oktav\n· Längd: 1 helnot, 2 halvnot, 4 fjärdedelsnot, 8 åttondelsnot, 16 sextondelsnot. Utelämnas \":längd\" gäller föregående längd\n· Punkterad not: \".\" efter längden (C4:4.), triol: \"t\" (C4:8t)\n· Paus: R i stället för bokstaven (R:4, R:8)\n\nExempel: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu notayı aşağıdaki kurallara göre metin olarak yaz. Her notayı tek parça yaz ve notaları boşlukla ayır. Açıklama yapmadan yalnızca nota metnini tek satırda ver.\n\nNota = [harf][değiştirici][oktav]:[süre][nokta/üçleme]\n· Harf: C D E F G A B (do re mi fa sol la si)\n· Değiştirici: diyez için #, bemol için b (yoksa yazma)\n· Oktav: bir sayı (orta do = C4). Yazılmazsa önceki oktav geçerli olur\n· Süre: 1 birlik, 2 ikilik, 4 dörtlük, 8 sekizlik, 16 on altılık. \":süre\" yazılmazsa önceki süre geçerli olur\n· Noktalı nota: süreden sonra \".\" (C4:4.), üçleme: \"t\" (C4:8t)\n· Es: harf yerine R (R:4, R:8)\n\nÖrnek: C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아래 규칙으로 악보를 텍스트로 적어줘. 음표 하나를 한 덩어리로 쓰고, 음표끼리는 공백으로 구분해. 설명 없이 음표 텍스트만 한 줄로 줘.\n\n음표 = [음이름][임시표][옥타브]:[길이][점·셋잇단]\n· 음이름: C D E F G A B\n· 임시표: 올림 #, 내림 b (없으면 생략)\n· 옥타브: 숫자 (가온다=C4). 생략하면 직전 옥타브 유지\n· 길이: 1 온음표, 2 2분음표, 4 4분음표, 8 8분음표, 16 16분음표. \":길이\"를 생략하면 직전 길이 유지\n· 점음표는 길이 뒤에 \".\" (C4:4.), 셋잇단음표는 \"t\" (C4:8t)\n· 쉼표는 음이름 대신 R (R:4, R:8)\n\n예시) C4:4 D4:4 E4:8 F4:8 G4:2"
+          }
+        }
+      },
+      "comment" : "Letter-notation rule handed to an AI (every language but Korean shows this)"
     }
   },
   "version" : "1.0"

@@ -1,5 +1,175 @@
 # 릴리즈 노트
 
+## 1.0.4
+
+### 앱스토어 (한국어)
+
+이제 영어와 일본어 등 24개 언어로 쓸 수 있어요
+텍스트 악보를 C4:4처럼 음이름으로도 적을 수 있어요
+받아쓰기 화면이 더 깔끔하게 정리됐어요
+설정에서 앞으로 만들 기능을 볼 수 있어요
+
+### App Store (English)
+
+StaffSinger now speaks 24 languages
+Dictation now hears do re mi in English
+Paste scores written like C4:4 D4:8
+See upcoming features in Settings
+
+### App Store (en-GB)
+
+StaffSinger now speaks 24 languages
+Dictation now hears do re mi in English
+Paste scores written like C4:4 D4:8
+See upcoming features in Settings
+
+### 앱스토어 (중국어 간체)
+
+StaffSinger 现已支持 24 种语言
+听写可识别英语的 do re mi
+可粘贴 C4:4 这样写的文字乐谱
+在设置中查看即将推出的功能
+
+### 앱스토어 (중국어 번체)
+
+StaffSinger 現已支援 24 種語言
+聽寫可辨識英語的 do re mi
+可貼上 C4:4 這樣寫的文字樂譜
+在設定中查看即將推出的功能
+
+### 앱스토어 (일본어)
+
+24の言語で使えるようになりました
+英語の do re mi で音声入力できます
+C4:4 のように書いた楽譜を貼り付けられます
+今後追加する機能を設定で確認できます
+
+### 앱스토어 (러시아어)
+
+StaffSinger теперь на 24 языках
+Диктовка понимает do re mi по-английски
+Вставляйте ноты в виде C4:4 D4:8
+Будущие функции — в настройках
+
+### 앱스토어 (스페인어)
+
+StaffSinger ya está en 24 idiomas
+El dictado entiende do re mi en inglés
+Pega partituras escritas como C4:4 D4:8
+Mira las próximas funciones en Ajustes
+
+### 앱스토어 (독일어)
+
+StaffSinger gibt es jetzt in 24 Sprachen
+Diktat versteht do re mi auf Englisch
+Füge Noten im Format C4:4 D4:8 ein
+Geplante Funktionen in den Einstellungen
+
+### 앱스토어 (프랑스어)
+
+StaffSinger est disponible en 24 langues
+La dictée comprend do re mi en anglais
+Collez des notes écrites en C4:4 D4:8
+Fonctions à venir dans les Réglages
+
+### 앱스토어 (이탈리아어)
+
+StaffSinger ora parla 24 lingue
+Il dettato capisce do re mi in inglese
+Incolla spartiti scritti come C4:4 D4:8
+Le prossime funzioni in Impostazioni
+
+### 앱스토어 (포르투갈어 브라질)
+
+O StaffSinger agora fala 24 idiomas
+O ditado entende do re mi em inglês
+Cole partituras escritas como C4:4 D4:8
+Veja os próximos recursos nos Ajustes
+
+### 앱스토어 (태국어)
+
+ใช้งานได้แล้วใน 24 ภาษา
+ป้อนด้วยเสียงด้วย do re mi ภาษาอังกฤษ
+วางโน้ตที่เขียนแบบ C4:4 D4:8 ได้
+ดูฟีเจอร์ที่กำลังจะมาได้ในการตั้งค่า
+
+### 앱스토어 (베트남어)
+
+StaffSinger nay đã có 24 ngôn ngữ
+Đọc chính tả nhận do re mi tiếng Anh
+Dán bản nhạc viết kiểu C4:4 D4:8
+Xem tính năng sắp ra mắt trong Cài đặt
+
+### 앱스토어 (체코어)
+
+StaffSinger je nyní ve 24 jazycích
+Diktát rozumí anglickému do re mi
+Vkládejte noty zapsané jako C4:4 D4:8
+Chystané funkce najdete v Nastavení
+
+### 앱스토어 (덴마크어)
+
+StaffSinger findes nu på 24 sprog
+Diktat forstår do re mi på engelsk
+Indsæt noder skrevet som C4:4 D4:8
+Se kommende funktioner i Indstillinger
+
+### 앱스토어 (그리스어)
+
+Το StaffSinger μιλά πλέον 24 γλώσσες
+Υπαγόρευση με do re mi στα αγγλικά
+Επικολλήστε νότες γραμμένες ως C4:4
+Οι επόμενες λειτουργίες στις Ρυθμίσεις
+
+### 앱스토어 (핀란드어)
+
+StaffSinger toimii nyt 24 kielellä
+Sanelu ymmärtää englannin do re mi
+Liitä nuotit muodossa C4:4 D4:8
+Tulevat ominaisuudet näet asetuksista
+
+### 앱스토어 (인도네시아어)
+
+StaffSinger kini hadir dalam 24 bahasa
+Dikte mengenali do re mi bahasa Inggris
+Tempel partitur berformat C4:4 D4:8
+Lihat fitur mendatang di Pengaturan
+
+### 앱스토어 (Norsk bokmål)
+
+StaffSinger finnes nå på 24 språk
+Diktering forstår do re mi på engelsk
+Lim inn noter skrevet som C4:4 D4:8
+Se kommende funksjoner i Innstillinger
+
+### 앱스토어 (네덜란드어)
+
+StaffSinger is nu er in 24 talen
+Dicteren herkent do re mi in het Engels
+Plak noten geschreven als C4:4 D4:8
+Bekijk komende functies in Instellingen
+
+### 앱스토어 (폴란드어)
+
+StaffSinger mówi teraz w 24 językach
+Dyktando rozumie angielskie do re mi
+Wklejaj nuty zapisane jako C4:4 D4:8
+Nadchodzące funkcje w Ustawieniach
+
+### 앱스토어 (스웨덴어)
+
+StaffSinger finns nu på 24 språk
+Diktamen förstår do re mi på engelska
+Klistra in noter skrivna som C4:4 D4:8
+Se kommande funktioner i Inställningar
+
+### 앱스토어 (튀르키예어)
+
+StaffSinger artık 24 dilde
+Dikte İngilizce do re mi'yi anlıyor
+C4:4 D4:8 gibi yazılan notaları yapıştır
+Yakında gelecek özellikler Ayarlar'da
+
 ## 1.0.3
 
 ### 앱스토어 (한국어)

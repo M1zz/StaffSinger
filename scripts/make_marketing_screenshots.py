@@ -17,7 +17,9 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 W, H = 2688, 1242   # 아이폰 제출 규격을 가로로 — 앱이 가로 화면으로만 돈다
 
 # 앱 언어 → App Store 로케일
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "zh-Hans": "zh-Hans", "zh-Hant": "zh-Hant", "ja": "ja", "ru": "ru", "es": "es-MX", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "no", "nl": "nl-NL", "pl": "pl", "sv": "sv", "tr": "tr"}
+# 폴더 이름은 앱 언어 코드 그대로다(en · en-GB · es · nb …). DeployBar 가 스토어 로케일로 맞춘다.
+LANGS = ["ko", "en", "en-GB", "zh-Hans", "zh-Hant", "ja", "ru", "es", "de", "fr", "it", "pt-BR", "th", "vi", "cs", "da", "el", "fi", "id", "nb", "nl", "pl", "sv", "tr"]
+STORE = {l: l for l in LANGS}
 
 # 파일 · 배치 · 언어별 (헤드라인, 보조 문장)
 SHOTS = [
@@ -35,7 +37,12 @@ THEME = dict(bg="linear-gradient(150deg,#5AA6F7 0%,#3B82E6 45%,#2459C4 100%)", i
 BASE_CSS = """
 * { margin:0; padding:0; box-sizing:border-box; }
 html,body { width:%(W)dpx; height:%(H)dpx; overflow:hidden; }
-body { background:%(bg)s; font-family:-apple-system, "Apple SD Gothic Neo", "Hiragino Sans", sans-serif; position:relative; }
+body { background:%(bg)s; font-family:-apple-system, "SF Pro Display", "Helvetica Neue", "Hiragino Sans", "PingFang SC", "Apple SD Gothic Neo", sans-serif; position:relative; }
+/* 한국어 글꼴이 앞에 있으면 그리스어·체코어 글자가 다른 글꼴과 섞여 깨진다 — 언어마다 글꼴을 고른다. */
+:lang(ko) body, body:lang(ko) { font-family:-apple-system, "Apple SD Gothic Neo", sans-serif; }
+body:lang(ja) { font-family:"Hiragino Sans", -apple-system, sans-serif; }
+body:lang(zh-Hans) { font-family:-apple-system, "PingFang SC", sans-serif; }
+body:lang(zh-Hant) { font-family:-apple-system, "PingFang TC", sans-serif; }
 .headline { font-size:96px; font-weight:800; color:%(ink)s; letter-spacing:-2px; line-height:1.22; text-wrap:balance; }
 .sub { font-size:50px; font-weight:500; color:%(sub)s; letter-spacing:-1px; line-height:1.35; text-wrap:balance; }
 :lang(ko) .headline, :lang(ko) .sub { word-break:keep-all; }
@@ -54,15 +61,17 @@ LAYOUTS = {
 """,
     # 왼쪽 글, 오른쪽 기기 (오른쪽 블리드)
     "left-text": """
-.headline { position:absolute; left:130px; top:360px; width:800px; font-size:96px; }
-.sub { position:absolute; left:134px; top:640px; width:760px; font-size:46px; }
+.text { position:absolute; left:130px; top:0; height:%(H)dpx; width:800px; display:flex; flex-direction:column; justify-content:center; }
+.headline { font-size:88px; }
+.sub { margin-top:36px; width:760px; font-size:46px; }
 .wrap { position:absolute; left:980px; top:190px; }
 .phone { width:1880px; }
 """,
     # 왼쪽 기기 (왼쪽 블리드), 오른쪽 글
     "right-text": """
-.headline { position:absolute; right:110px; top:360px; width:780px; font-size:96px; }
-.sub { position:absolute; right:114px; top:640px; width:760px; font-size:46px; }
+.text { position:absolute; right:110px; top:0; height:%(H)dpx; width:780px; display:flex; flex-direction:column; justify-content:center; }
+.headline { font-size:88px; }
+.sub { margin-top:36px; width:760px; font-size:46px; }
 .wrap { position:absolute; right:920px; top:230px; }
 .phone { width:1740px; }
 """,
@@ -75,6 +84,7 @@ body { background:%(dark_bg)s; }
 """,
 }
 
+SIDE = '<div class="text"><div class="headline">{h}</div><div class="sub">{s}</div></div><div class="wrap"><div class="phone"><img src="{img}"></div></div>'
 TEXT_FIRST = '<div class="headline">{h}</div><div class="sub">{s}</div><div class="wrap"><div class="phone"><img src="{img}"></div></div>'
 PHONE_FIRST = '<div class="wrap"><div class="phone"><img src="{img}"></div></div><div class="headline">{h}</div><div class="sub">{s}</div>'
 HTML = '<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><style>{css}</style></head><body>{body}</body></html>'
@@ -95,7 +105,7 @@ def main(langs):
             h, s = texts[lang]
             src = raw_for(lang, fname)
             assert src.exists(), f"원본 없음: {src}"
-            tpl = PHONE_FIRST if layout == "text-bottom" else TEXT_FIRST
+            tpl = SIDE if layout in ("left-text", "right-text") else (PHONE_FIRST if layout == "text-bottom" else TEXT_FIRST)
             css = BASE_CSS % vals + LAYOUTS[layout] % vals if "%(" in LAYOUTS[layout] else BASE_CSS % vals + LAYOUTS[layout]
             html = tmp / f"{lang}-{fname}.html"
             html.write_text(HTML.format(lang=lang, css=css, body=tpl.format(h=h, s=s, img=src.as_uri())), encoding="utf-8")
@@ -125,6 +135,7 @@ def main(langs):
             else:
                 raise SystemExit(f"Chrome 이 그리지 못했다: {out}")
             print("rendered", out.relative_to(ROOT))
+            time.sleep(2)   # 공용 Mac 부하를 낮춘다
 
 
 if __name__ == "__main__":

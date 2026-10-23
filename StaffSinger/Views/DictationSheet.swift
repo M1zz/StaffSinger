@@ -23,7 +23,12 @@ struct DictationSheet: View {
             HStack(alignment: .top, spacing: 20) {
                 takeColumn
                 Divider()
-                settingsColumn.frame(width: 300)
+                // Longer languages (German, Greek…) run past the screen height;
+                // scrolling keeps the column below the toolbar instead of
+                // pushing the whole sheet up under it.
+                ScrollView { settingsColumn }
+                    .scrollBounceBehavior(.basedOnSize)
+                    .frame(width: 300)
             }
             .padding(20)
             .navigationTitle("계이름 받아쓰기")
@@ -122,9 +127,12 @@ struct DictationSheet: View {
             Image(systemName: "music.mic")
                 .font(.system(size: 40)).foregroundColor(.accentColor)
             Text(title).font(.subheadline).multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
             Text(detail).font(.caption).foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
         }
-        .frame(height: 110)
+        .frame(minHeight: 110)
     }
 
     private var recordButton: some View {
@@ -166,7 +174,7 @@ struct DictationSheet: View {
                 HStack(spacing: 6) {
                     ForEach(dictation.notes) { note in
                         VStack(spacing: 1) {
-                            Text(note.isRest ? "쉼" : note.pitch.label)
+                            Text(note.isRest ? String(localized: "쉼", comment: "A rest in the dictated-notes strip") : note.pitch.label)
                                 .font(.subheadline.weight(.semibold))
                             Text(note.durationLabel)
                                 .font(.system(size: 9)).foregroundColor(.secondary)

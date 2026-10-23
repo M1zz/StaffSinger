@@ -86,7 +86,12 @@ final class SolfegeDictation: ObservableObject {
 
     private let audio: AudioEngine
     private let engine = AVAudioEngine()
-    private let recognizer = SFSpeechRecognizer(locale: Locale(identifier: "ko-KR"))
+    /// Korean listens for 도레미; every other language listens in English for
+    /// "do re mi", which on-device recognition supports on far more devices
+    /// than most languages' own models.
+    private static let listensInKorean = ScoreTextFormat.usesKoreanNotation
+    private let recognizer = SFSpeechRecognizer(
+        locale: Locale(identifier: SolfegeDictation.listensInKorean ? "ko-KR" : "en-US"))
     private var request: SFSpeechAudioBufferRecognitionRequest?
     private var task: SFSpeechRecognitionTask?
     private var runTask: Task<Void, Never>?
@@ -250,7 +255,7 @@ final class SolfegeDictation: ObservableObject {
         request.shouldReportPartialResults = true
         request.requiresOnDeviceRecognition = true   // keeps the app offline
         request.taskHint = .dictation
-        request.contextualStrings = SpokenSolfege.contextualStrings
+        request.contextualStrings = SpokenSolfege.contextualStrings(korean: Self.listensInKorean)
         if #available(iOS 16.0, *) { request.addsPunctuation = false }
         self.request = request
 

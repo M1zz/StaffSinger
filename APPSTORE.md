@@ -59,15 +59,15 @@ https://m1zz.github.io/StaffSinger/
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/en/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/en/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/en/
 
 ### 이름
 
@@ -100,7 +100,7 @@ Chords and multiple voices
 Stack notes on the same beat to make a chord, and split the music into separate voices. Key signatures and treble, alto and bass clefs are supported.
 
 Solfege dictation
-Say the note names in time with the metronome and they go onto the staff as notes. Speak on the beat and the rhythm is captured too. Dictation recognizes Korean solfege syllables, and speech recognition runs entirely on your device.
+Say the note names in time with the metronome and they go onto the staff as notes. Speak on the beat and the rhythm is captured too. Say do re mi fa sol la ti in English; speech recognition runs entirely on your device.
 
 Paste a score as text
 Paste text written in a fixed format and the staff fills in. Copy the rule, give it to an AI along with a photo of your score, then paste what it returns.
@@ -114,15 +114,15 @@ Keep it beside you for choir, church music, instrument lessons and music school 
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/en/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/en/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/en/
 
 ### 이름
 
@@ -155,7 +155,7 @@ Chords and multiple voices
 Stack notes on the same beat to make a chord, and split the music into separate voices. Key signatures and treble, alto and bass clefs are supported.
 
 Solfege dictation
-Say the note names in time with the metronome and they go onto the staff as notes. Speak on the beat and the rhythm is captured too. Dictation recognises Korean solfege syllables, and speech recognition runs entirely on your device.
+Say the note names in time with the metronome and they go onto the staff as notes. Speak on the beat and the rhythm is captured too. Say do re mi fa sol la ti in English; speech recognition runs entirely on your device.
 
 Paste a score as text
 Paste text written in a fixed format and the staff fills in. Copy the rule, give it to an AI along with a photo of your score, then paste what it returns.
@@ -169,15 +169,15 @@ Keep it beside you for choir, church music, instrument lessons and music school 
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/zh-Hans/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/zh-Hans/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/zh-Hans/
 
 ### 이름
 
@@ -210,7 +210,7 @@ StaffSinger 能把让你犯难的两个小节抄到五线谱上，并按原本�
 在同一拍上叠加音符就成了和弦，也可以把音乐分成多个声部。支持调号，以及高音、中音、低音谱号。
 
 唱名听写
-跟着节拍器的节拍说出唱名，音符就会写进五线谱；踩准拍子说，节奏也会一并记录。听写识别的是韩语唱名，语音识别完全在设备上进行。
+跟着节拍器的节拍说出唱名，音符就会写进五线谱；踩准拍子说，节奏也会一并记录。用英语说出 do re mi fa sol la ti 即可，语音识别完全在设备上进行。
 
 用文字粘贴乐谱
 粘贴按固定规则写成的文字，五线谱就会自动填好。复制规则，连同乐谱照片一起交给AI，再把得到的文字粘贴进来即可。
@@ -224,15 +224,15 @@ StaffSinger 能把让你犯难的两个小节抄到五线谱上，并按原本�
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/zh-Hant/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/zh-Hant/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/zh-Hant/
 
 ### 이름
 
@@ -265,7 +265,7 @@ StaffSinger 能把讓你困擾的兩個小節抄到五線譜上，並依原本�
 在同一拍疊上音符就成了和弦，也可以把音樂分成多個聲部。支援調號，以及高音、中音、低音譜號。
 
 唱名聽寫
-跟著節拍器的拍子說出唱名，音符就會寫進五線譜；踩準拍子說，節奏也會一併記錄。聽寫辨識的是韓語唱名，語音辨識完全在裝置上進行。
+跟著節拍器的拍子說出唱名，音符就會寫進五線譜；踩準拍子說，節奏也會一併記錄。用英語唸出 do re mi fa sol la ti 即可，語音辨識完全在裝置上進行。
 
 用文字貼上樂譜
 貼上依固定規則寫成的文字，五線譜就會自動填好。複製規則，連同樂譜照片一起交給 AI，再把得到的文字貼上即可。
@@ -279,15 +279,15 @@ StaffSinger 能把讓你困擾的兩個小節抄到五線譜上，並依原本�
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/ja/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/ja/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/ja/
 
 ### 이름
 
@@ -320,7 +320,7 @@ StaffSingerは、わかりにくい2小節を五線に書き写し、リズム�
 同じ拍に音を重ねると和音になり、声部を分けて書くこともできます。調号と、ト音記号・ハ音記号・ヘ音記号にも対応しています。
 
 階名ディクテーション
-メトロノームの拍に合わせて階名を声に出すと、音符として入ります。拍に合わせて話せばリズムも一緒に取り込めます。聞き取りの対象は韓国語の階名で、音声認識は端末内だけで処理されます。
+メトロノームの拍に合わせて階名を声に出すと、音符として入ります。拍に合わせて話せばリズムも一緒に取り込めます。英語で do re mi fa sol la ti と言えばよく、音声認識は端末内だけで処理されます。
 
 テキストで楽譜を貼り付け
 決まった書式で書いたテキストを貼り付けると、五線が埋まります。書式のルールをコピーして、楽譜の写真と一緒にAIに渡し、返ってきた文章をそのまま貼り付けるだけです。
@@ -334,15 +334,15 @@ StaffSingerは、わかりにくい2小節を五線に書き写し、リズム�
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/ru/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/ru/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/ru/
 
 ### 이름
 
@@ -375,7 +375,7 @@ StaffSinger переносит трудные два такта на нотны�
 Если поставить ноты на одну долю, получится аккорд; музыку можно разделить на голоса. Поддерживаются ключевые знаки, а также скрипичный, альтовый и басовый ключи.
 
 Сольфеджио под диктовку
-Называйте ноты в такт метроному — они появятся на стане. Если говорить точно в долю, запишется и ритм. Распознаются корейские названия нот, а сама речь обрабатывается только на вашем устройстве.
+Называйте ноты в такт метроному — они появятся на стане. Если говорить точно в долю, запишется и ритм. Произносите по-английски do re mi fa sol la ti — речь обрабатывается только на вашем устройстве.
 
 Вставка нот из текста
 Вставьте текст, записанный по заданному правилу, и стан заполнится. Скопируйте правило, передайте его ИИ вместе с фото нот и вставьте полученный текст.
@@ -389,15 +389,15 @@ StaffSinger переносит трудные два такта на нотны�
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/es/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/es/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/es/
 
 ### 이름
 
@@ -430,7 +430,7 @@ Acordes y varias voces
 Apila notas en el mismo pulso para formar un acorde y separa la música en voces. Admite armaduras y las claves de sol, de do y de fa.
 
 Dictado de solfeo
-Di los nombres de las notas al ritmo del metrónomo y pasan al pentagrama como notas. Si hablas justo en el pulso, también se registra el ritmo. El dictado reconoce las sílabas del solfeo en coreano, y el reconocimiento de voz se hace por completo en tu dispositivo.
+Di los nombres de las notas al ritmo del metrónomo y pasan al pentagrama como notas. Si hablas justo en el pulso, también se registra el ritmo. Basta con decir do re mi fa sol la ti en inglés, y el reconocimiento de voz se hace por completo en tu dispositivo.
 
 Pega una partitura como texto
 Pega un texto escrito con un formato fijo y el pentagrama se llena. Copia la regla, pásasela a una IA junto con la foto de tu partitura y pega lo que te devuelva.
@@ -444,15 +444,15 @@ Tenla a mano para el coro, las clases de instrumento o la preparación de prueba
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/de/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/de/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/de/
 
 ### 이름
 
@@ -485,7 +485,7 @@ Akkorde und mehrere Stimmen
 Lege Noten auf denselben Schlag, und es wird ein Akkord; die Musik lässt sich auch auf mehrere Stimmen verteilen. Vorzeichen sowie Violin-, Alt- und Bassschlüssel werden unterstützt.
 
 Solmisations-Diktat
-Sprich die Notennamen im Takt des Metronoms, und sie landen als Noten im Notensystem. Wer genau auf den Schlag spricht, erfasst auch den Rhythmus. Erkannt werden koreanische Solmisationssilben; die Spracherkennung läuft vollständig auf deinem Gerät.
+Sprich die Notennamen im Takt des Metronoms, und sie landen als Noten im Notensystem. Wer genau auf den Schlag spricht, erfasst auch den Rhythmus. Sprich dazu do re mi fa sol la ti auf Englisch; die Spracherkennung läuft vollständig auf deinem Gerät.
 
 Partitur als Text einfügen
 Füge einen Text in festem Format ein, und das Notensystem füllt sich. Kopiere die Regel, gib sie mit einem Foto deiner Noten an eine KI und füge die Antwort ein.
@@ -499,15 +499,15 @@ Immer dabei für Chor, Instrumentalunterricht oder die Vorbereitung auf die Musi
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/fr/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/fr/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/fr/
 
 ### 이름
 
@@ -540,7 +540,7 @@ Accords et plusieurs voix
 Empilez des notes sur le même temps pour former un accord, et répartissez la musique en voix distinctes. Les armures et les clés de sol, d’ut et de fa sont prises en charge.
 
 Dictée de solfège
-Dites les noms des notes en rythme avec le métronome : elles se placent sur la portée. En parlant pile sur le temps, le rythme est aussi saisi. La dictée reconnaît les syllabes du solfège coréen, et la reconnaissance vocale se fait entièrement sur votre appareil.
+Dites les noms des notes en rythme avec le métronome : elles se placent sur la portée. En parlant pile sur le temps, le rythme est aussi saisi. Il suffit de dire do re mi fa sol la ti en anglais, et la reconnaissance vocale se fait entièrement sur votre appareil.
 
 Coller une partition en texte
 Collez un texte écrit selon un format fixe et la portée se remplit. Copiez la règle, donnez-la à une IA avec la photo de votre partition, puis collez ce qu’elle renvoie.
@@ -554,15 +554,15 @@ Photographiez la partition que vous lisez et gardez-la à l’écran pour compar
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/it/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/it/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/it/
 
 ### 이름
 
@@ -595,7 +595,7 @@ Accordi e più voci
 Sovrapponi note sullo stesso battito per formare un accordo e dividi la musica in più voci. Sono supportate le armature di chiave e le chiavi di violino, di do e di basso.
 
 Dettato di solfeggio
-Di’ i nomi delle note a tempo con il metronomo e finiscono sul pentagramma come note. Se parli proprio sul battito, viene catturato anche il ritmo. Il dettato riconosce le sillabe del solfeggio coreano e il riconoscimento vocale avviene interamente sul tuo dispositivo.
+Di’ i nomi delle note a tempo con il metronomo e finiscono sul pentagramma come note. Se parli proprio sul battito, viene catturato anche il ritmo. Basta dire do re mi fa sol la ti in inglese e il riconoscimento vocale avviene interamente sul tuo dispositivo.
 
 Incolla uno spartito come testo
 Incolla un testo scritto in un formato fisso e il pentagramma si riempie. Copia la regola, passala a un’IA insieme alla foto dello spartito e incolla ciò che ti restituisce.
@@ -609,15 +609,15 @@ Tienilo a portata di mano per il coro, le lezioni di strumento o la preparazione
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/pt-BR/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/pt-BR/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/pt-BR/
 
 ### 이름
 
@@ -650,7 +650,7 @@ Acordes e várias vozes
 Empilhe notas no mesmo tempo para formar um acorde e divida a música em vozes. Há suporte a armaduras de clave e às claves de sol, de dó e de fá.
 
 Ditado de solfejo
-Diga os nomes das notas no ritmo do metrônomo e elas entram na pauta como notas. Falando bem no tempo, o ritmo também é registrado. O ditado reconhece as sílabas do solfejo coreano, e o reconhecimento de voz acontece inteiramente no seu dispositivo.
+Diga os nomes das notas no ritmo do metrônomo e elas entram na pauta como notas. Falando bem no tempo, o ritmo também é registrado. Basta dizer do re mi fa sol la ti em inglês, e o reconhecimento de voz acontece inteiramente no seu dispositivo.
 
 Cole uma partitura como texto
 Cole um texto escrito em um formato fixo e a pauta se preenche. Copie a regra, entregue a uma IA junto com a foto da partitura e cole o que ela devolver.
@@ -664,15 +664,15 @@ Tenha por perto para o coral, as aulas de instrumento ou a preparação para pro
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/th/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/th/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/th/
 
 ### 이름
 
@@ -705,7 +705,7 @@ StaffSinger คัดลอกสองห้องที่ทำให้ส�
 วางโน้ตซ้อนกันบนจังหวะเดียวกันเป็นคอร์ด และแยกดนตรีเป็นหลายแนวเสียงได้ รองรับกุญแจเสียง รวมถึงกุญแจซอล กุญแจซี และกุญแจเอฟ
 
 เขียนโน้ตตามเสียงโซลเฟจ
-พูดชื่อตัวโน้ตตามจังหวะเมโทรนอมแล้วโน้ตจะเข้าไปในบรรทัดห้าเส้น ถ้าพูดตรงจังหวะ ก็จะจับจังหวะไปด้วย การจดตามเสียงรู้จำพยางค์โซลเฟจภาษาเกาหลี และการรู้จำเสียงทำงานบนอุปกรณ์ของคุณทั้งหมด
+พูดชื่อตัวโน้ตตามจังหวะเมโทรนอมแล้วโน้ตจะเข้าไปในบรรทัดห้าเส้น ถ้าพูดตรงจังหวะ ก็จะจับจังหวะไปด้วย พูด do re mi fa sol la ti เป็นภาษาอังกฤษ และการรู้จำเสียงทำงานบนอุปกรณ์ของคุณทั้งหมด
 
 วางโน้ตเป็นข้อความ
 วางข้อความที่เขียนตามรูปแบบที่กำหนด บรรทัดห้าเส้นก็จะเต็ม คัดลอกกฎ ส่งให้ AI พร้อมภาพโน้ต แล้วนำข้อความที่ได้มาวาง
@@ -719,15 +719,15 @@ StaffSinger คัดลอกสองห้องที่ทำให้ส�
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/vi/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/vi/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/vi/
 
 ### 이름
 
@@ -760,7 +760,7 @@ Hợp âm và nhiều bè
 Xếp chồng các nốt trên cùng một phách để tạo hợp âm, và tách nhạc thành nhiều bè. Hỗ trợ hóa biểu cùng khóa Sol, khóa Đô và khóa Fa.
 
 Chép nhạc theo xướng âm
-Đọc tên nốt đúng nhịp máy đếm nhịp, nốt sẽ được đưa vào khuông nhạc. Nói đúng phách thì tiết tấu cũng được ghi lại. Tính năng này nhận dạng các âm tiết xướng âm tiếng Hàn, và việc nhận dạng giọng nói diễn ra hoàn toàn trên thiết bị của bạn.
+Đọc tên nốt đúng nhịp máy đếm nhịp, nốt sẽ được đưa vào khuông nhạc. Nói đúng phách thì tiết tấu cũng được ghi lại. Chỉ cần đọc do re mi fa sol la ti bằng tiếng Anh, và việc nhận dạng giọng nói diễn ra hoàn toàn trên thiết bị của bạn.
 
 Dán bản nhạc dưới dạng văn bản
 Dán văn bản viết theo định dạng cố định là khuông nhạc được điền sẵn. Sao chép quy tắc, đưa cho AI cùng ảnh bản nhạc, rồi dán kết quả nhận được.
@@ -774,15 +774,15 @@ Luôn sẵn bên bạn khi hát hợp xướng, học nhạc cụ hay ôn thi nh
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/cs/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/cs/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/cs/
 
 ### 이름
 
@@ -815,7 +815,7 @@ Akordy a více hlasů
 Noty na stejné době vytvoří akord a hudbu můžete rozdělit do hlasů. Podporované jsou předznamenání a houslový, altový i basový klíč.
 
 Solfeggio diktát
-Říkejte názvy not v rytmu metronomu a objeví se v pětilince jako noty. Mluvíte-li přesně na dobu, zachytí se i rytmus. Diktát rozpoznává korejské solfeggio slabiky a rozpoznávání řeči probíhá celé ve vašem zařízení.
+Říkejte názvy not v rytmu metronomu a objeví se v pětilince jako noty. Mluvíte-li přesně na dobu, zachytí se i rytmus. Stačí anglicky říkat do re mi fa sol la ti a rozpoznávání řeči probíhá celé ve vašem zařízení.
 
 Vložení partitury jako textu
 Vložte text zapsaný v pevném formátu a pětilinka se vyplní. Zkopírujte pravidlo, předejte je AI spolu s fotkou partitury a vložte, co vám vrátí.
@@ -829,15 +829,15 @@ Mějte ho po ruce pro sbor, hodiny hry na nástroj nebo přípravu na přijíma�
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/da/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/da/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/da/
 
 ### 이름
 
@@ -870,7 +870,7 @@ Akkorder og flere stemmer
 Læg noder oven på hinanden på samme slag, så får du en akkord, og del musikken op i stemmer. Fortegn samt G-, C- og F-nøgle understøttes.
 
 Solfège-diktat
-Sig nodenavnene i takt med metronomen, så havner de som noder på nodelinjerne. Taler du lige på slaget, bliver rytmen også fanget. Diktatet genkender koreanske solfège-stavelser, og talegenkendelsen foregår helt på din enhed.
+Sig nodenavnene i takt med metronomen, så havner de som noder på nodelinjerne. Taler du lige på slaget, bliver rytmen også fanget. Sig blot do re mi fa sol la ti på engelsk, og talegenkendelsen foregår helt på din enhed.
 
 Sæt noder ind som tekst
 Sæt tekst ind, som er skrevet i et fast format, og nodelinjerne udfyldes. Kopiér reglen, giv den til en AI sammen med et foto af noderne, og sæt det, du får tilbage, ind.
@@ -884,15 +884,15 @@ Praktisk at have ved hånden til kor, instrumentundervisning eller optagelsespr�
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/el/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/el/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/el/
 
 ### 이름
 
@@ -925,7 +925,7 @@ StaffSinger: Πρώτη ανάγνωση
 Στοιβάξτε νότες στο ίδιο χτύπημα για να φτιάξετε συγχορδία και χωρίστε τη μουσική σε φωνές. Υποστηρίζονται οπλισμοί και τα κλειδιά του σολ, του ντο και του φα.
 
 Υπαγόρευση σολφέζ
-Πείτε τα ονόματα των νοτών στο ρυθμό του μετρονόμου και μπαίνουν ως νότες στο πεντάγραμμο. Αν μιλάτε ακριβώς στο χτύπημα, καταγράφεται και ο ρυθμός. Η υπαγόρευση αναγνωρίζει κορεατικές συλλαβές σολφέζ και η αναγνώριση ομιλίας γίνεται εξ ολοκλήρου στη συσκευή σας.
+Πείτε τα ονόματα των νοτών στο ρυθμό του μετρονόμου και μπαίνουν ως νότες στο πεντάγραμμο. Αν μιλάτε ακριβώς στο χτύπημα, καταγράφεται και ο ρυθμός. Αρκεί να πείτε do re mi fa sol la ti στα αγγλικά, και η αναγνώριση ομιλίας γίνεται εξ ολοκλήρου στη συσκευή σας.
 
 Επικόλληση παρτιτούρας ως κείμενο
 Επικολλήστε κείμενο γραμμένο σε σταθερή μορφή και το πεντάγραμμο γεμίζει. Αντιγράψτε τον κανόνα, δώστε τον σε ένα AI μαζί με φωτογραφία της παρτιτούρας και επικολλήστε ό,τι σας επιστρέψει.
@@ -939,15 +939,15 @@ StaffSinger: Πρώτη ανάγνωση
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/fi/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/fi/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/fi/
 
 ### 이름
 
@@ -980,7 +980,7 @@ Soinnut ja useita ääniä
 Pinoa nuotteja samalle iskulle, niin saat soinnun, ja jaa musiikki eri äänien kesken. Etumerkit sekä G-, C- ja F-avain on tuettu.
 
 Solfa-saneluharjoitus
-Sano nuottien nimet metronomin tahtiin, niin ne päätyvät nuoteiksi viivastolle. Kun puhut tasan iskulle, myös rytmi tallentuu. Sanelu tunnistaa korealaiset solfa-tavut, ja puheentunnistus tapahtuu kokonaan laitteellasi.
+Sano nuottien nimet metronomin tahtiin, niin ne päätyvät nuoteiksi viivastolle. Kun puhut tasan iskulle, myös rytmi tallentuu. Sano vain do re mi fa sol la ti englanniksi, ja puheentunnistus tapahtuu kokonaan laitteellasi.
 
 Liitä nuotit tekstinä
 Liitä kiinteässä muodossa kirjoitettu teksti, niin viivasto täyttyy. Kopioi sääntö, anna se tekoälylle nuottikuvan kanssa ja liitä saamasi teksti.
@@ -994,15 +994,15 @@ Hyvä apu kuorossa, soitontunneilla ja musiikkioppilaitoksen pääsykokeisiin va
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/id/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/id/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/id/
 
 ### 이름
 
@@ -1035,7 +1035,7 @@ Akord dan banyak suara
 Tumpuk not pada ketukan yang sama untuk membuat akord, dan bagi musik ke beberapa suara. Tanda mula serta kunci G, C, dan F didukung.
 
 Dikte solfeggio
-Sebutkan nama nada sesuai irama metronom, lalu nada masuk ke paranada sebagai not. Jika kamu berbicara tepat di ketukan, ritmenya ikut tercatat. Dikte ini mengenali suku kata solfeggio bahasa Korea, dan pengenalan suara berlangsung sepenuhnya di perangkatmu.
+Sebutkan nama nada sesuai irama metronom, lalu nada masuk ke paranada sebagai not. Jika kamu berbicara tepat di ketukan, ritmenya ikut tercatat. Cukup ucapkan do re mi fa sol la ti dalam bahasa Inggris, dan pengenalan suara berlangsung sepenuhnya di perangkatmu.
 
 Tempel partitur sebagai teks
 Tempel teks yang ditulis dengan format tetap, dan paranada terisi. Salin aturannya, berikan ke AI bersama foto partitur, lalu tempel hasil yang kamu terima.
@@ -1045,19 +1045,19 @@ Potret partitur yang sedang kamu baca dan biarkan di layar untuk dibandingkan sa
 
 Simpan di dekatmu untuk paduan suara, les alat musik, atau persiapan ujian masuk jurusan musik – kapan pun kamu perlu membaca not dengan cepat.
 
-## no
+## nb
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/nb/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/nb/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/nb/
 
 ### 이름
 
@@ -1090,7 +1090,7 @@ Akkorder og flere stemmer
 Stable noter på samme slag for å lage en akkord, og del musikken i flere stemmer. Fortegn samt G-, C- og F-nøkkel støttes.
 
 Solfège-diktat
-Si notenavnene i takt med metronomen, så havner de som noter på notesystemet. Snakker du rett på slaget, fanges rytmen også opp. Diktatet gjenkjenner koreanske solfège-staveler, og talegjenkjenningen skjer helt på enheten din.
+Si notenavnene i takt med metronomen, så havner de som noter på notesystemet. Snakker du rett på slaget, fanges rytmen også opp. Si bare do re mi fa sol la ti på engelsk, og talegjenkjenningen skjer helt på enheten din.
 
 Lim inn noter som tekst
 Lim inn tekst skrevet i et fast format, så fylles notesystemet. Kopier regelen, gi den til en KI sammen med et bilde av notene, og lim inn det du får tilbake.
@@ -1104,15 +1104,15 @@ Praktisk å ha ved hånden til kor, instrumentundervisning eller opptaksprøver 
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/nl/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/nl/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/nl/
 
 ### 이름
 
@@ -1145,7 +1145,7 @@ Akkoorden en meerdere stemmen
 Stapel noten op dezelfde tel voor een akkoord en verdeel de muziek over stemmen. Voortekeningen en de viool-, alt- en bassleutel worden ondersteund.
 
 Solfège-dictaat
-Zeg de nootnamen op de maat van de metronoom en ze komen als noten op de notenbalk. Spreek je precies op de tel, dan wordt ook het ritme vastgelegd. Het dictaat herkent Koreaanse solfègelettergrepen, en de spraakherkenning gebeurt volledig op je apparaat.
+Zeg de nootnamen op de maat van de metronoom en ze komen als noten op de notenbalk. Spreek je precies op de tel, dan wordt ook het ritme vastgelegd. Zeg gewoon do re mi fa sol la ti in het Engels, en de spraakherkenning gebeurt volledig op je apparaat.
 
 Partituur als tekst plakken
 Plak tekst die in een vast formaat is geschreven en de notenbalk vult zich. Kopieer de regel, geef hem aan een AI samen met een foto van je partituur en plak wat je terugkrijgt.
@@ -1159,15 +1159,15 @@ Handig bij de hand voor koor, instrumentles of de voorbereiding op een toelating
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/pl/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/pl/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/pl/
 
 ### 이름
 
@@ -1200,7 +1200,7 @@ Akordy i wiele głosów
 Nałóż nuty na tę samą miarę, aby powstał akord, i podziel muzykę na głosy. Obsługiwane są znaki przykluczowe oraz klucze wiolinowy, altowy i basowy.
 
 Dyktando solfeżowe
-Mów nazwy nut w rytm metronomu, a trafią na pięciolinię jako nuty. Gdy mówisz równo na uderzenie, rejestrowany jest też rytm. Dyktando rozpoznaje koreańskie sylaby solfeżowe, a rozpoznawanie mowy odbywa się w całości na Twoim urządzeniu.
+Mów nazwy nut w rytm metronomu, a trafią na pięciolinię jako nuty. Gdy mówisz równo na uderzenie, rejestrowany jest też rytm. Wystarczy mówić po angielsku do re mi fa sol la ti, a rozpoznawanie mowy odbywa się w całości na Twoim urządzeniu.
 
 Wklejanie partytury jako tekstu
 Wklej tekst zapisany w ustalonym formacie, a pięciolinia się wypełni. Skopiuj regułę, daj ją sztucznej inteligencji razem ze zdjęciem partytury i wklej to, co zwróci.
@@ -1214,15 +1214,15 @@ Miej go pod ręką na próbie chóru, lekcjach gry na instrumencie czy podczas p
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/sv/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/sv/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/sv/
 
 ### 이름
 
@@ -1255,7 +1255,7 @@ Ackord och flera stämmor
 Stapla noter på samma slag för att göra ett ackord, och dela upp musiken i stämmor. Förtecken samt G-, C- och F-klav stöds.
 
 Solfège-diktamen
-Säg notnamnen i takt med metronomen så hamnar de som noter på notsystemet. Pratar du precis på slaget fångas rytmen också. Diktamen känner igen koreanska solfège-stavelser, och taligenkänningen sker helt på din enhet.
+Säg notnamnen i takt med metronomen så hamnar de som noter på notsystemet. Pratar du precis på slaget fångas rytmen också. Säg bara do re mi fa sol la ti på engelska, och taligenkänningen sker helt på din enhet.
 
 Klistra in noter som text
 Klistra in text skriven i ett fast format så fylls notsystemet. Kopiera regeln, ge den till en AI tillsammans med ett foto av noterna och klistra in det du får tillbaka.
@@ -1269,15 +1269,15 @@ Bra att ha nära till hands för kören, instrumentlektionerna eller antagningsp
 
 ### 지원 URL
 
-https://m1zz.github.io/StaffSinger/support.html
+https://m1zz.github.io/StaffSinger/tr/support.html
 
 ### 개인정보처리방침 URL
 
-https://m1zz.github.io/StaffSinger/privacy.html
+https://m1zz.github.io/StaffSinger/tr/privacy.html
 
 ### 마케팅 URL
 
-https://m1zz.github.io/StaffSinger/
+https://m1zz.github.io/StaffSinger/tr/
 
 ### 이름
 
@@ -1310,7 +1310,7 @@ Akorlar ve birden çok ses
 Notaları aynı vuruşa üst üste koyarak akor oluştur, müziği sesler halinde ayır. Donanım ile Sol, Do ve Fa anahtarları desteklenir.
 
 Solfej dikte
-Nota adlarını metronoma uyarak söyle, porteye nota olarak girsin. Tam vuruşta konuşursan ritim de yakalanır. Dikte, Kore solfej hecelerini tanır; konuşma tanıma tamamen cihazında çalışır.
+Nota adlarını metronoma uyarak söyle, porteye nota olarak girsin. Tam vuruşta konuşursan ritim de yakalanır. İngilizce do re mi fa sol la ti demen yeterli; konuşma tanıma tamamen cihazında çalışır.
 
 Notayı metin olarak yapıştır
 Belirli bir biçimde yazılmış metni yapıştır, porte dolsun. Kuralı kopyala, nota fotoğrafınla birlikte bir yapay zekâya ver ve dönen metni yapıştır.

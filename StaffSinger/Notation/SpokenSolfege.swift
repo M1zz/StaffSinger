@@ -90,22 +90,47 @@ enum SpokenSolfege {
     /// into notes, and a missed syllable is far cheaper to fix than a phantom
     /// one. For the same reason "씨" is read as 시, never as English "C".
     private static let homophones: [(spellings: [String], semitone: Int)] = [
-        (["도", "또", "도오", "돌", "do", "doh", "c"], 0),
-        (["레", "래", "네", "래이", "re", "ray", "d", "디"], 2),
-        (["미", "밈", "미이", "mi", "me", "e"], 4),
-        (["파", "화", "바", "빠", "팔", "fa", "f", "에프"], 5),
-        (["솔", "쏠", "소", "골", "so", "sol", "soh", "g"], 7),
-        (["라", "랄", "la", "lah", "a", "에이"], 9),
-        (["시", "씨", "히", "치", "실", "ti", "si", "b", "비"], 11)
+        (["도", "또", "도오", "돌", "do", "doh", "doe", "dough", "c"], 0),
+        (["레", "래", "네", "래이", "re", "ray", "rey", "rae", "d", "디"], 2),
+        (["미", "밈", "미이", "mi", "me", "mee", "e"], 4),
+        (["파", "화", "바", "빠", "팔", "fa", "fah", "far", "f", "에프"], 5),
+        (["솔", "쏠", "소", "골", "so", "sol", "soh", "sew", "sole", "soul", "g"], 7),
+        (["라", "랄", "la", "lah", "law", "a", "에이"], 9),
+        (["시", "씨", "히", "치", "실", "ti", "tea", "tee", "si", "see", "sea", "b", "비"], 11)
     ]
 
     /// Words that mean "silence for this beat".
-    private static let restWords = ["쉼", "쉬", "쉬어", "쉬고", "숨", "쉼표", "rest"]
+    private static let restWords = ["쉼", "쉬", "쉬어", "쉬고", "숨", "쉼표", "rest", "wrest", "pause"]
+
+    /// Modifier words that arrive as their own word. Korean usually glues them
+    /// to the syllable ("높은솔"), English never does ("high sol", "fa sharp"),
+    /// so `notes(from:)` carries them over to the neighbouring note:
+    /// an octave nudge applies to the NEXT note, an accidental to the PREVIOUS.
+    private static let nudgeWords: [String: Int] = [
+        "높은": 1, "윗": 1, "high": 1, "hi": 1, "up": 1,
+        "낮은": -1, "아랫": -1, "low": -1, "down": -1
+    ]
+    private static let accidentalWords: [String: Int] = [
+        "샵": 1, "올림": 1, "sharp": 1, "#": 1,
+        "플랫": -1, "내림": -1, "flat": -1, "♭": -1
+    ]
 
     /// The vocabulary handed to the recognizer as `contextualStrings` so it
-    /// biases toward note names instead of ordinary Korean words.
-    static var contextualStrings: [String] {
-        syllables.map(\.text) + ["높은", "낮은", "쉼", "샵", "플랫", "올림", "내림"]
+    /// biases toward note names instead of ordinary words.
+    static var contextualStrings: [String] { contextualStrings(korean: true) }
+
+    static func contextualStrings(korean: Bool) -> [String] {
+        korean
+            ? syllables.map(\.text) + ["높은", "낮은", "쉼", "샵", "플랫", "올림", "내림"]
+            : ["do", "re", "mi", "fa", "sol", "la", "ti", "rest", "high", "low", "sharp", "flat"]
+    }
+
+    /// A word that is only a modifier ("high", "flat", "높은"), or nil.
+    static func modifier(for rawWord: String) -> (nudge: Int, alteration: Int)? {
+        let word = normalize(rawWord)
+        if let n = nudgeWords[word] { return (n, 0) }
+        if let a = accidentalWords[word] { return (0, a) }
+        return nil
     }
 
     // MARK: Word → token
@@ -125,6 +150,8 @@ enum SpokenSolfege {
 
         var alteration = 0
         if word.contains("샵") || word.contains("올림") || word.contains("#") { alteration = 1 }
+        if word.hasSuffix("sharp") && word != "sharp" { alteration = 1 }
+        if word.hasSuffix("flat") && word != "flat" { alteration = -1 }
         if word.contains("플랫") || word.contains("내림") || word.contains("♭") { alteration = -1 }
 
         let octave = explicitOctave(in: word)
@@ -137,7 +164,7 @@ enum SpokenSolfege {
     /// just the note name to match. "높은도샵" → "도", "4옥솔" → "솔".
     private static func core(of word: String) -> String {
         var core = word
-        for affix in ["높은", "낮은", "윗", "아랫", "샵", "플랫", "올림", "내림", "#", "♭"] {
+        for affix in ["높은", "낮은", "윗", "아랫", "샵", "플랫", "올림", "내림", "#", "♭", "sharp", "flat"] {
             core = core.replacingOccurrences(of: affix, with: "")
         }
         // Drop an explicit octave prefix along with its digits.
@@ -232,11 +259,27 @@ enum SpokenSolfege {
         // 1. Expand words into tokens, keeping each one's time.
         var placed: [(token: Token, beat: Double)] = []
         let secondsPerBeat = 60.0 / max(20.0, tempo)
+        var pendingNudge = 0
         for event in events {
             let parts = split(event.word)
             let span = parts.count > 1 ? event.duration / Double(parts.count) : 0
             for (i, part) in parts.enumerated() {
-                guard let token = token(for: part) else { continue }
+                // A stand-alone modifier: "high" lifts the next note, "sharp"
+                // raises the one just said.
+                if let mod = modifier(for: part) {
+                    pendingNudge += mod.nudge
+                    if mod.alteration != 0, let last = placed.indices.last,
+                       case let .pitch(semi, 0, oct, nudge) = placed[last].token {
+                        placed[last].token = .pitch(semitone: semi, alteration: mod.alteration,
+                                                    octave: oct, nudge: nudge)
+                    }
+                    continue
+                }
+                guard var token = token(for: part) else { continue }
+                if pendingNudge != 0, case let .pitch(semi, alt, oct, nudge) = token {
+                    token = .pitch(semitone: semi, alteration: alt, octave: oct, nudge: nudge + pendingNudge)
+                    pendingNudge = 0
+                }
                 let time = event.time + span * Double(i)
                 placed.append((token, time / secondsPerBeat))
             }

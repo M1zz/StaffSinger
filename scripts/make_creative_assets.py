@@ -13,7 +13,7 @@
 
 ⚠️ 가격 · 할인 · 주소(URL) · 수상 · 다른 플랫폼 이름은 넣지 않는다(Apple 가이드).
 """
-import shutil, subprocess, sys, pathlib, tempfile
+import shutil, subprocess, sys, pathlib, tempfile, time
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 RAW = ROOT / "docs" / "screenshots" / "raw" / "creative"
@@ -22,7 +22,9 @@ ICON = ROOT / "StaffSinger" / "Assets.xcassets" / "AppIcon.appiconset" / "AppIco
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # 앱 언어 코드 → App Store Connect 로케일 (make_marketing_screenshots.py 와 같다)
-STORE = {"ko": "ko", "en": "en-US", "en-GB": "en-GB", "ja": "ja", "ru": "ru", "es": "es-MX", "de": "de-DE", "fr": "fr-FR", "it": "it", "pt-BR": "pt-BR", "th": "th", "vi": "vi", "cs": "cs", "da": "da", "el": "el", "fi": "fi", "id": "id", "nb": "no", "nl": "nl-NL", "pl": "pl", "sv": "sv", "tr": "tr"}   # 스토어에는 한국어 한 가지
+# 폴더 이름은 앱 언어 코드 그대로다(en · en-GB · es · nb …). DeployBar 가 스토어 로케일로 맞춘다.
+LANGS = ["ko", "en", "en-GB", "zh-Hans", "zh-Hant", "ja", "ru", "es", "de", "fr", "it", "pt-BR", "th", "vi", "cs", "da", "el", "fi", "id", "nb", "nl", "pl", "sv", "tr"]
+STORE = {l: l for l in LANGS}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -38,7 +40,7 @@ SEARCH = {
     "en-GB": ("Sheet music", "Hear the notes<br>you put down", "Enter them on the keys,<br>play back at the right rhythm"),
     "ja": ("五線譜の楽譜", "書いた音符を、<br>すぐ聴ける", "鍵盤で入力して、<br>リズムそのままに再生"),
     "ru": ("Ноты", "Слышно сразу,<br>что вы записали", "Ставьте ноты на клавишах,<br>слушайте в нужном ритме"),
-    "es": ("Partitura", "Escucha las notas<br>que escribes", "Entra con el teclado,<br>escucha con su ritmo"),
+    "es": ("Partitura", "Oye las notas<br>que escribes", "Toca el teclado<br>y escucha con su ritmo"),
     "de": ("Noten", "Gesetzte Noten<br>sofort hören", "Mit Tasten eingeben,<br>im richtigen Rhythmus abspielen"),
     "fr": ("Partition", "Écoutez les notes<br>que vous écrivez", "Saisissez au clavier,<br>jouez au bon rythme"),
     "it": ("Spartito", "Ascolta le note<br>che scrivi", "Inserisci con la tastiera,<br>ascolta con il ritmo giusto"),
@@ -47,14 +49,16 @@ SEARCH = {
     "vi": ("Bản nhạc", "Nghe ngay<br>nốt nhạc bạn đặt", "Nhập bằng phím đàn,<br>phát đúng tiết tấu"),
     "cs": ("Noty", "Slyšte noty,<br>které napíšete", "Zadávejte na klávesách,<br>přehrajte ve správném rytmu"),
     "da": ("Noder", "Hør de toner,<br>du skriver", "Indtast på tangenterne,<br>afspil i den rigtige rytme"),
-    "el": ("Παρτιτούρα", "Ακούστε τις νότες<br>που γράφετε", "Εισαγωγή με πλήκτρα,<br>αναπαραγωγή στο σωστό ρυθμό"),
-    "fi": ("Nuotit", "Kuule kirjoittamasi<br>nuotit", "Syötä koskettimilla,<br>soita oikealla rytmillä"),
+    "el": ("Παρτιτούρα", "Ακούστε ό,τι<br>γράφετε", "Γράψτε με τα πλήκτρα,<br>ακούστε στο σωστό ρυθμό"),
+    "fi": ("Nuotit", "Kuule nuotit<br>heti", "Syötä koskettimilla,<br>soita oikealla rytmillä"),
     "id": ("Partitur", "Dengar not<br>yang kamu tulis", "Masukkan dengan tuts,<br>putar dengan ritme yang tepat"),
     "nb": ("Noter", "Hør notene<br>du skriver", "Skriv inn på tangentene,<br>spill av med riktig rytme"),
     "nl": ("Partituur", "Hoor de noten<br>die je schrijft", "Voer in met de toetsen,<br>speel af in het juiste ritme"),
     "pl": ("Partytura", "Usłysz nuty,<br>które zapisujesz", "Wpisuj na klawiszach,<br>odtwarzaj w dobrym rytmie"),
     "sv": ("Noter", "Hör noterna<br>du skriver", "Skriv in på tangenterna,<br>spela upp med rätt rytm"),
     "tr": ("Nota", "Yazdığın notaları<br>hemen dinle", "Tuşlarla gir,<br>doğru ritimle çal"),
+    "zh-Hans": ("五线谱", "写下的音符，<br>马上就能听", "用琴键输入，<br>按准确节奏播放"),
+    "zh-Hant": ("五線譜", "寫下的音符，<br>馬上就能聽", "用琴鍵輸入，<br>依正確節奏播放"),
 }
 
 # 헤더는 한 가지 약속: 처음 보는 악보(초견)도 소리로 확인한다.
@@ -81,6 +85,8 @@ HEADER = {
     "pl": ("StaffSinger", "Nowa partytura<br>ze słuchu"),
     "sv": ("StaffSinger", "Nya noter<br>med örat"),
     "tr": ("StaffSinger", "Yeni bir notayı<br>kulakla kontrol et"),
+    "zh-Hans": ("StaffSinger", "新的乐谱，<br>用耳朵确认"),
+    "zh-Hant": ("StaffSinger", "新的樂譜，<br>用耳朵確認"),
 }
 
 # ⚠️ 바탕 · 글자색은 앱 아이콘(파란 바탕 위 흰 오선과 음표)과 AccentColor(#3373D9) 에서 왔다.
@@ -168,6 +174,7 @@ def header_html(lang):
     W, H, (l, t, r, b) = SPEC["header"]
     eyebrow, headline = HEADER[lang]
     sw, sh = r - l, b - t
+    # 글 상자는 안전 영역보다 양옆 150px 좁다 — 기울어진 두 기기가 안전 영역 가장자리를 덮어서.
     left_img = (RAW / lang / "02-staff.png").as_uri()
     right_img = (RAW / lang / "01-piano.png").as_uri()
     notes = [(1150, 150, 230, -8, "♪"), (2560, 120, 200, 10, "♫"), (1300, 1270, 180, 6, "♩"), (2450, 1240, 220, -6, "♪")]
@@ -179,7 +186,7 @@ def header_html(lang):
 {notes_html}
 {phone(left_img, -240, 470, 1400, -8)}
 {phone(right_img, 2680, 470, 1400, 8)}
-<div class="text" style="left:{l}px;top:{t}px;width:{sw}px;height:{sh}px;align-items:center;text-align:center">
+<div class="text" style="left:{l + 150}px;top:{t}px;width:{sw - 300}px;height:{sh}px;align-items:center;text-align:center">
   <div class="eyebrow" style="font-size:76px">{eyebrow}</div>
   <div class="headline" data-max="210" data-min="110" style="margin-top:22px">{headline}</div>
 </div>"""
@@ -222,6 +229,7 @@ def render(lang, kind):
     else:
         raise SystemExit(f"Chrome 이 그리지 못했다: {out_png}")
     print(f"rendered {out_png}")
+    time.sleep(2)   # 공용 Mac 부하를 낮춘다
 
 
 if __name__ == "__main__":
