@@ -1,5 +1,199 @@
 # 릴리즈 노트
 
+## 1.0.5
+
+### 앱스토어 (한국어)
+
+고마울 때 개발자에게 작은 팁을 보낼 수 있어요
+설정에서 친구에게 앱을 소개할 수 있어요
+화면 읽기와 음성 명령으로도 편하게 쓸 수 있어요
+큰 글씨와 다크 모드에서도 잘 보여요
+색을 구별하기 어려워도 알아보기 쉬워졌어요
+
+### App Store (English)
+
+Thank the developer with a small tip
+Tell a friend about the app in Settings
+Better with VoiceOver and Voice Control
+Reads well in larger text and Dark Mode
+Easier to use if you're color-blind
+
+### App Store (en-GB)
+
+Thank the developer with a small tip
+Tell a friend about the app in Settings
+Better with VoiceOver and Voice Control
+Reads well in larger text and Dark Mode
+Easier to use if you're colour-blind
+
+### 앱스토어 (중국어 간체)
+
+可以给开发者送上一点小费表达感谢
+可在设置中把 App 推荐给朋友
+更好地支持旁白和语音控制
+大字体和深色模式下也清晰易读
+难以分辨颜色时也更容易看清
+
+### 앱스토어 (중국어 번체)
+
+可以給開發者一點小費表達謝意
+可在設定中把 App 推薦給朋友
+更好地支援旁白和語音控制
+大字體和深色模式下也清楚易讀
+難以分辨顏色時也更容易看清
+
+### 앱스토어 (일본어)
+
+開発者にささやかなチップを送れます
+設定から友だちにアプリを紹介できます
+VoiceOverと音声コントロールで使いやすくなりました
+大きな文字やダークモードでも見やすくなりました
+色の見分けが苦手でもわかりやすくなりました
+
+### 앱스토어 (러시아어)
+
+Можно отправить разработчику чаевые
+Поделитесь приложением из настроек
+Поддержка VoiceOver и голосовых команд
+Чётко с крупным шрифтом и в тёмной теме
+Понятнее, если трудно различать цвета
+
+### 앱스토어 (스페인어)
+
+Deja una propina al desarrollador
+Recomienda la app desde Ajustes
+Mejor con VoiceOver y Control por voz
+Texto grande y modo oscuro más legibles
+Más fácil si confundes los colores
+
+### 앱스토어 (독일어)
+
+Sag Danke mit einem kleinen Trinkgeld
+Empfiehl die App in den Einstellungen
+Besser mit VoiceOver und Sprachbefehlen
+Klar bei großer Schrift und Dunkelmodus
+Einfacher bei Farbsehschwäche
+
+### 앱스토어 (프랑스어)
+
+Offrez un pourboire au développeur
+Recommandez l'app depuis les Réglages
+Mieux avec VoiceOver et Commande vocale
+Lisible en grand texte et mode sombre
+Plus simple pour les daltoniens
+
+### 앱스토어 (이탈리아어)
+
+Offri una mancia allo sviluppatore
+Consiglia l'app dalle Impostazioni
+Meglio con VoiceOver e Controllo vocale
+Chiaro con testo grande e tema scuro
+Più facile se distingui male i colori
+
+### 앱스토어 (포르투갈어 브라질)
+
+Mande uma gorjeta para o desenvolvedor
+Indique o app a amigos nos Ajustes
+Melhor com VoiceOver e Controle por Voz
+Legível com texto grande e modo escuro
+Mais fácil para quem confunde cores
+
+### 앱스토어 (태국어)
+
+ส่งทิปเล็กๆ ให้นักพัฒนาเพื่อขอบคุณได้
+แนะนำแอปให้เพื่อนได้จากการตั้งค่า
+ใช้ VoiceOver และสั่งด้วยเสียงได้ดีขึ้น
+อ่านง่ายทั้งตัวอักษรใหญ่และโหมดมืด
+แยกแยะง่ายขึ้นแม้มองสีได้ไม่ชัด
+
+### 앱스토어 (베트남어)
+
+Gửi nhà phát triển chút tiền tip cảm ơn
+Giới thiệu ứng dụng cho bạn từ Cài đặt
+Dùng tốt hơn với VoiceOver và Khẩu lệnh
+Dễ đọc với chữ lớn và chế độ tối
+Dễ nhận biết hơn nếu khó phân biệt màu
+
+### 앱스토어 (체코어)
+
+Pošlete vývojáři malé spropitné
+Doporučte aplikaci v Nastavení
+Lepší s VoiceOverem a Ovládáním hlasem
+Čitelnější velké písmo i tmavý režim
+Snazší, když špatně rozlišujete barvy
+
+### 앱스토어 (덴마크어)
+
+Giv udvikleren lidt drikkepenge som tak
+Anbefal appen fra Indstillinger
+Bedre med VoiceOver og Stemmestyring
+Tydelig med stor tekst og mørk tilstand
+Lettere, hvis du har svært ved farver
+
+### 앱스토어 (그리스어)
+
+Στείλτε φιλοδώρημα στον δημιουργό
+Συστήστε την εφαρμογή από τις Ρυθμίσεις
+Πιο εύκολο με VoiceOver και φωνή
+Καθαρό σε σκούρο θέμα με μεγάλο κείμενο
+Πιο εύκολο αν μπερδεύετε τα χρώματα
+
+### 앱스토어 (핀란드어)
+
+Lähetä kehittäjälle pieni tippi
+Suosittele appia asetuksista
+Tuki VoiceOverille ja puheohjaukselle
+Selkeä isolla tekstillä ja tummana
+Helpompi, jos värejä on vaikea erottaa
+
+### 앱스토어 (인도네시아어)
+
+Kirim tip kecil untuk pengembang
+Rekomendasikan app dari Pengaturan
+Mendukung VoiceOver dan Kontrol Suara
+Jelas dengan teks besar dan mode gelap
+Lebih mudah jika sulit membedakan warna
+
+### 앱스토어 (Norsk bokmål)
+
+Gi utvikleren litt tips som takk
+Anbefal appen fra Innstillinger
+Bedre med VoiceOver og Talestyring
+Tydelig med stor tekst og mørk modus
+Enklere om du blander farger
+
+### 앱스토어 (네덜란드어)
+
+Geef de ontwikkelaar een kleine fooi
+Raad de app aan via Instellingen
+Beter met VoiceOver en Stembediening
+Helder met grote tekst en donkere modus
+Makkelijker als je kleuren slecht ziet
+
+### 앱스토어 (폴란드어)
+
+Wyślij twórcy mały napiwek
+Poleć aplikację w Ustawieniach
+Lepiej z VoiceOver i Sterowaniem głosem
+Lepiej widać duży tekst i tryb ciemny
+Łatwiej, gdy trudno rozróżnić kolory
+
+### 앱스토어 (스웨덴어)
+
+Ge utvecklaren lite dricks som tack
+Tipsa om appen från Inställningar
+Bättre med VoiceOver och Röststyrning
+Tydlig med stor text och mörkt läge
+Enklare om färger är svåra att skilja
+
+### 앱스토어 (튀르키예어)
+
+Geliştiriciye küçük bir bahşiş gönderin
+Ayarlar'dan uygulamayı önerin
+VoiceOver ve Sesle Denetim ile daha iyi
+Büyük metin ve koyu modda net görünür
+Renkleri ayırt etmek zorsa daha kolay
+
 ## 1.0.4
 
 ### 앱스토어 (한국어)
