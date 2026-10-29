@@ -216,6 +216,7 @@ struct SettingsForm: View {
                         Label(LeeoRoadmapText.entry, systemImage: "calendar")
                     }
                     LeeoShareAppLink<StaffSingerSpec>()
+                    LeeoTipJarLink<StaffSingerSpec>(tipJar: StaffSingerTip.tipJar)
                 }
 
                 DeveloperContactSection()

@@ -33,3 +33,38 @@ enum StaffSingerSpec: LeeoAppSpec {
     /// 익명 사용 통계 → FeedbackHub. 없으면 bootstrap 이 스냅샷·app_open 을 건너뛴다.
     static let analytics: any LeeoAnalytics = LeeoUsageAnalytics(spec: StaffSingerSpec.self)
 }
+
+// MARK: - 팁 (개발자 응원하기)
+
+/// 무료 앱이라 LeeoStore 가 없다. 팁 엔진을 여기 하나 두고, 앱을 열 때 `startStandalone()` 을 부른다.
+@MainActor
+enum StaffSingerTip {
+    static let tipJar = LeeoTipJar(config: LeeoTipJarConfig(productIDs: [
+        "com.devkoan.StaffSinger.tip.small",
+        "com.devkoan.StaffSinger.tip.medium",
+        "com.devkoan.StaffSinger.tip.large",
+    ]))
+}
+
+/// 팁을 부탁할 만한 순간 — 지금까지 **목소리로 받아써 악보에 넣은** 음표 수. 큰 것부터.
+enum StaffSingerTipMoments {
+    static let dictatedNotes = [2000, 500, 100]
+    private static let key = "tip.dictatedNotes"
+
+    /// 받아쓴 음표를 악보에 넣었을 때 센다.
+    static func recordDictated(_ count: Int) {
+        UserDefaults.standard.set(UserDefaults.standard.integer(forKey: key) + count, forKey: key)
+    }
+
+    static func reached(dictatedNotes n: Int) -> [LeeoTipMoment] {
+        dictatedNotes.filter { n >= $0 }.map { threshold in
+            LeeoTipMoment(id: "dictated.\(threshold)",
+                          message: String(localized: "지금까지 목소리로 음표 \(n)개를 받아썼어요",
+                                          comment: "Tip ask card: how many notes the person has dictated by voice so far"))
+        }
+    }
+
+    static var reachedNow: [LeeoTipMoment] {
+        reached(dictatedNotes: UserDefaults.standard.integer(forKey: key))
+    }
+}

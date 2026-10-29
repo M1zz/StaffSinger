@@ -319,6 +319,7 @@ struct ContentView: View {
     private func importDictated(_ notes: [ScoreNote]) {
         guard !notes.isEmpty else { return }
         vm.importNotes(notes)
+        StaffSingerTipMoments.recordDictated(notes.count)
         omrMessage = String(localized: "\(notes.count)개 음표를 받아썼습니다.\n음높이나 길이가 다르면 음표를 끌어서 고쳐 주세요.")
     }
 

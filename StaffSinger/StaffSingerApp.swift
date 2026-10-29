@@ -19,6 +19,7 @@ struct StaffSingerApp: App {
         WindowGroup {
             ContentView()
                 .leeoSatisfactionCheck(StaffSingerSpec.self)
+                .task { await StaffSingerTip.tipJar.startStandalone() }
         }
     }
 }

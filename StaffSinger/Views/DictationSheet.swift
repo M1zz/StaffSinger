@@ -10,6 +10,7 @@
 //
 
 import SwiftUI
+import LeeoKit
 
 struct DictationSheet: View {
     @ObservedObject var dictation: SolfegeDictation
@@ -193,6 +194,11 @@ struct DictationSheet: View {
 
     private var settingsColumn: some View {
         VStack(alignment: .leading, spacing: 18) {
+            // 응원 부탁 — 목소리로 음표를 꽤 받아써 온 사람에게, 드물게. 받아쓰기를 하는 동안에는 서지 않는다.
+            if case .idle = dictation.phase {
+                LeeoTipAskSlot<StaffSingerSpec>(tipJar: StaffSingerTip.tipJar,
+                                                reached: StaffSingerTipMoments.reachedNow)
+            }
             VStack(alignment: .leading, spacing: 6) {
                 Text("리듬 스냅").font(.subheadline.weight(.semibold))
                 Picker("리듬 스냅", selection: $dictation.grid) {
