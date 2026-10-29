@@ -14,6 +14,7 @@ import LeeoKit
 
 struct DictationSheet: View {
     @ObservedObject var dictation: SolfegeDictation
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     /// Tempo / time signature the take is counted and quantized against.
     let score: Score
     let onImport: ([ScoreNote]) -> Void
@@ -86,13 +87,15 @@ struct DictationSheet: View {
                 Text("준비").font(.subheadline).foregroundColor(.secondary)
             }
             .frame(height: 110)
+            .accessibilityElement(children: .combine)
 
         case let .recording(beat):
             VStack(spacing: 8) {
                 Image(systemName: "waveform")
                     .font(.system(size: 48, weight: .semibold))
                     .foregroundColor(.red)
-                    .symbolEffect(.variableColor.iterative, options: .repeating)
+                    .symbolEffect(.variableColor.iterative, options: .repeating, isActive: !reduceMotion)
+                    .accessibilityHidden(true)
                 Text("\(measureLabel(for: beat)) · 듣는 중")
                     .font(.subheadline).foregroundColor(.secondary)
             }
@@ -102,6 +105,7 @@ struct DictationSheet: View {
             VStack(spacing: 6) {
                 Image(systemName: "checkmark.circle.fill")
                     .font(.system(size: 44)).foregroundColor(.green)
+                    .accessibilityHidden(true)
                 Text("\(count)개 음표를 받아썼습니다")
                     .font(.headline)
                 Text("아래에서 확인하고 \"악보에 넣기\"를 누르세요")
@@ -113,6 +117,7 @@ struct DictationSheet: View {
             VStack(spacing: 6) {
                 Image(systemName: "exclamationmark.triangle.fill")
                     .font(.system(size: 34)).foregroundColor(.orange)
+                    .accessibilityHidden(true)
                 Text(message)
                     .font(.footnote)
                     .multilineTextAlignment(.center)
@@ -127,6 +132,7 @@ struct DictationSheet: View {
         VStack(spacing: 6) {
             Image(systemName: "music.mic")
                 .font(.system(size: 40)).foregroundColor(.accentColor)
+                .accessibilityHidden(true)
             Text(title).font(.subheadline).multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
             Text(detail).font(.caption).foregroundColor(.secondary)
@@ -178,8 +184,11 @@ struct DictationSheet: View {
                             Text(note.isRest ? String(localized: "쉼", comment: "A rest in the dictated-notes strip") : note.pitch.label)
                                 .font(.subheadline.weight(.semibold))
                             Text(note.durationLabel)
-                                .font(.system(size: 9)).foregroundColor(.secondary)
+                                .font(.caption2).foregroundColor(.secondary)
                         }
+                        .accessibilityElement(children: .ignore)
+                        .accessibilityLabel((note.isRest ? String(localized: "쉼표") : note.pitch.accessibilityLabel)
+                                            + ", " + note.durationLabel)
                         .padding(.horizontal, 8).padding(.vertical, 5)
                         .background(Color.accentColor.opacity(0.12))
                         .clipShape(RoundedRectangle(cornerRadius: 8))

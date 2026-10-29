@@ -13,7 +13,7 @@ import UIKit
 /// Distinct color per voice / layer (0 = melody). Shared by the staff and the
 /// toolbar's layer picker so a note's color always matches its voice button.
 func noteLayerColor(_ layer: Int) -> Color {
-    let palette: [Color] = [.black, .purple, .teal]
+    let palette: [Color] = [.primary, .purple, .teal]
     return palette[((layer % palette.count) + palette.count) % palette.count]
 }
 
@@ -81,24 +81,31 @@ struct StaffView: View {
             let beams = beamData(layout: layout, m: m)
 
             ZStack(alignment: .topLeading) {
-                staffLines(layout: layout, m: m)
-                barlines(layout: layout, m: m)
-                clef(layout: layout, m: m)
-                keySignatureView(layout: layout, m: m)
+                Group {
+                    staffLines(layout: layout, m: m)
+                    barlines(layout: layout, m: m)
+                    clef(layout: layout, m: m)
+                    keySignatureView(layout: layout, m: m)
+                }
+                .accessibilityHidden(true)
                 tapCatcher(layout: layout)        // empty-staff taps (add) — below notes
+                    .accessibilityHidden(true)    // VoiceOver 는 건반으로 음을 넣는다
                 beamLayer(beams.groups, layout: layout)             // stems + beams
+                    .accessibilityHidden(true)
                 noteLayer(layout: layout, m: m,
                           beamedIDs: beams.beamedIDs)               // notes on top
                 tripletLayer(tripletGroups(layout: layout, m: m,
                                            beamedIDs: beams.beamedIDs))   // "3" markers
+                    .accessibilityHidden(true)
                 ghostLayer(layout: layout, m: m)
+                    .accessibilityHidden(true)
                 measureWarnings(layout: layout, m: m)  // red barline + "초과" badge
                 editorOverlay(geo: geo)           // long-press editor — top-most
             }
             .frame(width: geo.size.width, height: geo.size.height)
             .coordinateSpace(name: staffSpace)
         }
-        .background(Color.white)
+        .background(Color(.systemBackground))
     }
 
     // MARK: - Staff lines
@@ -109,7 +116,7 @@ struct StaffView: View {
                 var path = Path()
                 path.move(to: CGPoint(x: m.leftEdge, y: y))
                 path.addLine(to: CGPoint(x: m.rightEdge, y: y))
-                ctx.stroke(path, with: .color(.black.opacity(0.55)), lineWidth: 1)
+                ctx.stroke(path, with: .color(.primary.opacity(0.55)), lineWidth: 1)
             }
         }
     }
@@ -125,7 +132,7 @@ struct StaffView: View {
                 var path = Path()
                 path.move(to: CGPoint(x: x, y: top))
                 path.addLine(to: CGPoint(x: x, y: bottom))
-                ctx.stroke(path, with: .color(.black.opacity(0.6)), lineWidth: width)
+                ctx.stroke(path, with: .color(.primary.opacity(0.6)), lineWidth: width)
             }
 
             // Opening barline, end of measure 1, and a heavier final barline.
@@ -146,7 +153,7 @@ struct StaffView: View {
                 Text("\(vm.score.beatUnit)")
             }
             .font(.system(size: 27, weight: .bold, design: .serif))
-            .foregroundColor(.black)
+            .foregroundColor(.primary)
             .position(x: m.musicStartX - 18, y: layout.topLineY + 2 * layout.lineSpacing)
         }
     }
@@ -166,19 +173,19 @@ struct StaffView: View {
             // the box to land the curl on the middle line (measured at runtime).
             Text("\u{1D11E}")
                 .font(.system(size: 84))
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
                 .position(x: m.leftEdge + 18, y: midLineY - 6)
         case .bass:
             // 𝄢 — the two dots hug the F3 line (second from the top).
             Text("\u{1D122}")
                 .font(.system(size: 60))
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
                 .position(x: m.leftEdge + 20, y: topY + s + 6)
         case .alto:
             // 𝄡 — the inner cusp points at the middle (C4) line.
             Text("\u{1D121}")
                 .font(.system(size: 62))
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
                 .position(x: m.leftEdge + 20, y: midLineY)
         }
     }
@@ -201,7 +208,7 @@ struct StaffView: View {
                 let yy = layout.y(for: Pitch(midi: refs[i]))
                 Text(glyph)
                     .font(.system(size: 22, weight: .semibold))
-                    .foregroundColor(.black)
+                    .foregroundColor(.primary)
                     .position(x: m.leftEdge + 40 + CGFloat(i) * 12,
                               y: useFlats ? yy - 3 : yy)
             }
@@ -272,6 +279,7 @@ struct StaffView: View {
                         keySignature: vm.score.keySignature
                     )
                     .allowsHitTesting(false)
+                    .accessibilityHidden(true)
 
                     // Compact hit target: tap = select, long-press = open the
                     // length/delete editor, drag = move (pitch by Y, beat by X).
@@ -283,18 +291,51 @@ struct StaffView: View {
                             if !note.isRest { audio.audition(note.pitch) }
                         }
                         .onLongPressGesture(minimumDuration: 0.4) {
-                            editHaptic.impactOccurred()
-                            vm.selectedNoteID = note.id
-                            editingAnchor = CGPoint(x: x, y: y)
-                            withAnimation(.spring(response: 0.3, dampingFraction: 0.75)) {
-                                editingNoteID = note.id
-                            }
+                            openEditor(note.id, at: CGPoint(x: x, y: y))
                         }
                         .gesture(noteDrag(note: note, layout: layout, m: m))
+                        // VoiceOver·음성 명령: 음표 하나가 한 요소. 눌러 선택·듣기,
+                        // 위아래로 쓸어 반음씩 옮기고, 동작으로 길이 편집·삭제.
+                        .accessibilityElement()
+                        .accessibilityLabel(noteAccessibilityLabel(note))
+                        .accessibilityAddTraits(vm.selectedNoteID == note.id ? [.isButton, .isSelected] : .isButton)
+                        .accessibilityAction {
+                            vm.selectedNoteID = note.id
+                            if !note.isRest { audio.audition(note.pitch) }
+                        }
+                        .accessibilityAdjustableAction { direction in
+                            guard !note.isRest else { return }
+                            vm.selectedNoteID = note.id
+                            vm.changePitch(of: note.id, semitones: direction == .increment ? 1 : -1)
+                        }
+                        .accessibilityAction(named: "편집") {
+                            openEditor(note.id, at: CGPoint(x: x, y: y))
+                        }
+                        .accessibilityAction(named: "삭제") {
+                            deleteHaptic.impactOccurred()
+                            vm.deleteNote(note.id)
+                        }
                         .position(x: x, y: y)
                 }
             }
         }
+    }
+
+    private func openEditor(_ id: UUID, at anchor: CGPoint) {
+        editHaptic.impactOccurred()
+        vm.selectedNoteID = id
+        editingAnchor = anchor
+        withAnimation(.spring(response: 0.3, dampingFraction: 0.75)) {
+            editingNoteID = id
+        }
+    }
+
+    /// "C 샵 4, 점4분음표" / "쉼표, 4분음표" (+ 두 번째 성부부터는 "성부 2").
+    private func noteAccessibilityLabel(_ note: ScoreNote) -> String {
+        var parts = [note.isRest ? String(localized: "쉼표") : note.pitch.accessibilityLabel,
+                     note.durationLabel]
+        if note.layer > 0 { parts.append(String(localized: "성부 \(note.layer + 1)")) }
+        return parts.joined(separator: ", ")
     }
 
     /// Drag an existing note: vertical changes pitch, horizontal changes beat
@@ -392,6 +433,10 @@ struct StaffView: View {
                 .ignoresSafeArea()
                 .contentShape(Rectangle())
                 .onTapGesture { dismissEditor() }
+                .accessibilityElement()
+                .accessibilityLabel("닫기")
+                .accessibilityAddTraits(.isButton)
+                .accessibilityAction { dismissEditor() }
 
             NoteEditorPopover(
                 note: note,
@@ -415,6 +460,8 @@ struct StaffView: View {
             )
             .position(editorPosition(in: geo.size))
             .transition(.scale(scale: 0.85).combined(with: .opacity))
+            .accessibilityAddTraits(.isModal)
+            .accessibilityAction(.escape) { dismissEditor() }
         }
     }
 
@@ -567,7 +614,7 @@ struct StaffView: View {
                     p.move(to: CGPoint(x: mid + 8, y: y))
                     p.addLine(to: CGPoint(x: xR, y: y))
                     p.addLine(to: CGPoint(x: xR, y: y + tick))
-                    ctx.stroke(p, with: .color(.black.opacity(0.7)), lineWidth: 1.2)
+                    ctx.stroke(p, with: .color(.primary.opacity(0.7)), lineWidth: 1.2)
                 }
             }
         }
@@ -600,12 +647,12 @@ struct StaffView: View {
                     var p = Path()
                     p.move(to: CGPoint(x: stemX(c), y: attachY))
                     p.addLine(to: CGPoint(x: stemX(c), y: beamY))
-                    ctx.stroke(p, with: .color(.black), lineWidth: 1.6)
+                    ctx.stroke(p, with: .color(.primary), lineWidth: 1.6)
                 }
 
                 // Primary beam spans the whole group.
                 ctx.fill(rect(stemX(cols.first!), stemX(cols.last!), beamY),
-                         with: .color(.black))
+                         with: .color(.primary))
 
                 // Secondary beam for sixteenths: full segments for runs of ≥2,
                 // a short stub for an isolated sixteenth (e.g. dotted-eighth + 16th).
@@ -616,11 +663,11 @@ struct StaffView: View {
                     var j = i
                     while j + 1 < cols.count && cols[j + 1].isSixteenth { j += 1 }
                     if j > i {
-                        ctx.fill(rect(stemX(cols[i]), stemX(cols[j]), secY), with: .color(.black))
+                        ctx.fill(rect(stemX(cols[i]), stemX(cols[j]), secY), with: .color(.primary))
                     } else {
                         let cx = stemX(cols[i])
                         let dir: CGFloat = i > 0 ? -1 : 1   // point toward a neighbor in the group
-                        ctx.fill(rect(cx, cx + dir * 11, secY), with: .color(.black))
+                        ctx.fill(rect(cx, cx + dir * 11, secY), with: .color(.primary))
                     }
                     i = j + 1
                 }
@@ -644,11 +691,14 @@ private struct NoteEditorPopover: View {
             // Accidentals — only meaningful for real notes, not rests.
             if !note.isRest {
                 accidentalButton("\u{266D}", semitones: -1)   // ♭
+                    .accessibilityLabel("반음 내리기")
                 Text(note.pitch.name)
                     .font(.system(size: 15, weight: .bold, design: .rounded))
                     .monospacedDigit()
                     .frame(minWidth: 34)
+                    .accessibilityLabel(note.pitch.accessibilityLabel)
                 accidentalButton("\u{266F}", semitones: +1)   // ♯
+                    .accessibilityLabel("반음 올리기")
 
                 Divider().frame(height: 30)
             }
@@ -667,6 +717,7 @@ private struct NoteEditorPopover: View {
                                         lineWidth: 2))
                         .foregroundColor(.primary)
                 }
+                .accessibilityAddTraits(note.duration == dur ? .isSelected : [])
             }
 
             // Dot toggle (1.5× length, e.g. dotted quarter = 1.5 beats).
@@ -678,6 +729,8 @@ private struct NoteEditorPopover: View {
                     .background(RoundedRectangle(cornerRadius: 10)
                         .fill(note.dotted ? Color.accentColor : Color.accentColor.opacity(0.12)))
             }
+            .accessibilityLabel("점음표")
+            .accessibilityAddTraits(note.dotted ? .isSelected : [])
 
             Divider().frame(height: 30)
 
@@ -688,6 +741,7 @@ private struct NoteEditorPopover: View {
                     .foregroundColor(.red)
                     .background(RoundedRectangle(cornerRadius: 10).fill(Color.red.opacity(0.12)))
             }
+            .accessibilityLabel("삭제")
         }
         .padding(.horizontal, 10)
         .padding(.vertical, 6)
@@ -778,6 +832,8 @@ private struct NoteGlyph: View {
     /// are left off and only deviations (incl. naturals) are drawn.
     var keySignature: Int = 0
 
+    @Environment(\.accessibilityDifferentiateWithoutColor) private var differentiateWithoutColor
+
     /// The accidental glyph to draw, reconciled against the key signature:
     /// nil when the note matches the key, else ♯ / ♭ / ♮ as appropriate.
     private var accidentalGlyph: String? {
@@ -810,7 +866,7 @@ private struct NoteGlyph: View {
                         var path = Path()
                         path.move(to: CGPoint(x: x - radius - 6, y: ly))
                         path.addLine(to: CGPoint(x: x + radius + 6, y: ly))
-                        ctx.stroke(path, with: .color(.black.opacity(0.6)), lineWidth: 1)
+                        ctx.stroke(path, with: .color(.primary.opacity(0.6)), lineWidth: 1)
                     }
                 }
 
@@ -854,6 +910,14 @@ private struct NoteGlyph: View {
                 // Beamed notes get a beam instead of a flag.
                 if !beamed, note.duration == .eighth || note.duration == .sixteenth {
                     flagView(y: y)
+                }
+
+                // 색 없이 구별: 두 번째 성부부터는 음표 옆에 성부 번호를 단다.
+                if differentiateWithoutColor && note.layer > 0 {
+                    Text("\(note.layer + 1)")
+                        .font(.system(size: 10, weight: .bold, design: .rounded))
+                        .foregroundColor(color)
+                        .position(x: x + radius + 7, y: y + 11)
                 }
             }
 

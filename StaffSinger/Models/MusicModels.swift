@@ -80,6 +80,18 @@ struct Pitch: Equatable, Hashable, Codable {
     /// Display label like "C4", "C#5", or "Bb3".
     var label: String { "\(name)\(octave)" }
 
+    /// VoiceOver 가 읽을 이름. "C#4" 의 '#'·'b' 를 말로 풀어 "C 샵 4" 처럼 읽힌다.
+    var accessibilityLabel: String {
+        let letter = ["C", "D", "E", "F", "G", "A", "B"][letterIndex]
+        let spelled: String
+        switch alteration {
+        case 1:  spelled = String(localized: "\(letter) 샵")
+        case -1: spelled = String(localized: "\(letter) 플랫")
+        default: spelled = letter
+        }
+        return "\(spelled) \(octave)"
+    }
+
     /// True if this pitch is a black key (needs an accidental on a C-major staff).
     var isAccidental: Bool {
         [1, 3, 6, 8, 10].contains(pitchClass)

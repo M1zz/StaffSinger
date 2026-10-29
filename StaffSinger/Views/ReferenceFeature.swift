@@ -173,6 +173,7 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         shutter.layer.borderWidth = 4
         shutter.translatesAutoresizingMaskIntoConstraints = false
         shutter.addTarget(self, action: #selector(shoot), for: .touchUpInside)
+        shutter.accessibilityLabel = String(localized: "촬영")
         view.addSubview(shutter)
 
         let cancel = UIButton(type: .system)
@@ -467,6 +468,7 @@ struct ReferenceOverlay: View {
                 .scaledToFit()
                 .frame(maxWidth: .infinity)
                 .opacity(store.opacity)
+                .accessibilityLabel("악보 사진")
                 .overlay {
                     if editing {
                         RoundedRectangle(cornerRadius: 4)
@@ -493,6 +495,7 @@ struct ReferenceOverlay: View {
             Image(systemName: "arrow.up.and.down.and.arrow.left.and.right")
                 .font(.subheadline).foregroundColor(.secondary)
                 .frame(width: 36, height: 30)
+                .accessibilityHidden(true)   // 끌기 손잡이(시각 보조)
                 .contentShape(Rectangle())
                 .gesture(
                     DragGesture()
@@ -503,13 +506,17 @@ struct ReferenceOverlay: View {
                         }
                 )
             Image(systemName: "circle.lefthalf.filled").foregroundColor(.secondary)
+                .accessibilityHidden(true)
             Slider(value: $store.opacity, in: 0.15...1).frame(width: 84)
+                .accessibilityLabel("투명도")
             Spacer(minLength: 4)
             // Free move/resize: hand the whole photo over to touch.
             Button { editing.toggle() } label: {
                 Image(systemName: editing ? "hand.draw.fill" : "hand.draw")
                     .foregroundColor(editing ? .accentColor : .secondary)
             }
+            .accessibilityLabel("자유롭게 옮기기")
+            .accessibilityAddTraits(editing ? .isSelected : [])
             // Experimental: read the photo into notes.
             Button(action: onTranscribe) {
                 Label("채보", systemImage: "wand.and.stars")
@@ -519,9 +526,11 @@ struct ReferenceOverlay: View {
             Button { store.visible = false } label: {
                 Image(systemName: "eye.slash")
             }
+            .accessibilityLabel("숨기기")
             Button { store.clear() } label: {
                 Image(systemName: "trash").foregroundColor(.red)
             }
+            .accessibilityLabel("참고 사진 삭제")
         }
         .font(.body)
         .padding(.horizontal, 12).padding(.vertical, 8)

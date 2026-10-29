@@ -38,6 +38,7 @@ struct PianoKeyboard: View {
         HStack(spacing: 8) {
             octaveButton(systemName: "chevron.left", to: startOctave - 1,
                          enabled: startOctave > minOctave)
+                .accessibilityLabel("낮은 옥타브")
 
             GeometryReader { geo in
                 let whites = whiteMidis
@@ -65,6 +66,7 @@ struct PianoKeyboard: View {
 
             octaveButton(systemName: "chevron.right", to: startOctave + 1,
                          enabled: startOctave + octavesShown - 1 < maxOctave)
+                .accessibilityLabel("높은 옥타브")
         }
         .frame(height: 116)
         .padding(.horizontal, 14)
@@ -80,10 +82,10 @@ struct PianoKeyboard: View {
                 Spacer()
                 Text(p.name)
                     .font(.caption2.weight(.semibold))
-                    .foregroundColor(.secondary)
+                    .foregroundColor(Self.keyLabel)
                 // Octave marker on each C so the range is readable.
                 if midi % 12 == 0 {
-                    Text("\(p.octave)").font(.system(size: 9)).foregroundColor(.secondary)
+                    Text("\(p.octave)").font(.caption2).foregroundColor(Self.keyLabel)
                 }
             }
             .padding(.bottom, 6)
@@ -93,7 +95,11 @@ struct PianoKeyboard: View {
             .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
+        .accessibilityLabel(p.accessibilityLabel)
     }
+
+    /// 흰 건반 위 글씨(건반은 다크 모드에서도 흰색이다).
+    private static let keyLabel = Color(white: 0.35)
 
     private func blackKey(midi: Int) -> some View {
         Button { onPitch(Pitch(midi: midi)) } label: {
@@ -103,6 +109,7 @@ struct PianoKeyboard: View {
                 .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
+        .accessibilityLabel(Pitch(midi: midi).accessibilityLabel)
     }
 
     /// Black-key MIDI numbers paired with the white index they sit just right of.

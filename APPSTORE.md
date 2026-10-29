@@ -1319,3 +1319,16 @@ Referans fotoğraf
 Okuduğun notanın fotoğrafını çek ve kopyalarken karşılaştırman için ekranda açık tut.
 
 Koro, enstrüman dersleri ya da müzik bölümü sınavlarına hazırlık için yanında dursun; notaları hızlı okuman gerektiğinde hep elinin altında olsun.
+
+## 손쉬운 사용
+
+<!-- DeployBar 가 App Store Connect '앱의 손쉬운 사용' 에 올린다. 실제로 확인한 것만 적는다. -->
+
+### iPhone
+voiceOver
+voiceControl
+largerText
+darkInterface
+differentiateWithoutColor
+sufficientContrast
+reducedMotion

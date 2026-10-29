@@ -50,13 +50,14 @@ struct EditorToolbar: View {
                         .foregroundColor(vm.chordMode ? .indigo : .primary)
                         .cornerRadius(10)
                 }
+                .accessibilityAddTraits(vm.chordMode ? .isSelected : [])
 
                 // Pitch nudges (only meaningful with a selection).
                 Group {
-                    nudgeButton("-8va", semis: -12)
-                    nudgeButton("♭", semis: -1)
-                    nudgeButton("♯", semis: +1)
-                    nudgeButton("+8va", semis: +12)
+                    nudgeButton("-8va", semis: -12).accessibilityLabel("한 옥타브 내리기")
+                    nudgeButton("♭", semis: -1).accessibilityLabel("반음 내리기")
+                    nudgeButton("♯", semis: +1).accessibilityLabel("반음 올리기")
+                    nudgeButton("+8va", semis: +12).accessibilityLabel("한 옥타브 올리기")
                 }
                 .disabled(vm.selectedNoteID == nil)
                 .opacity(vm.selectedNoteID == nil ? 0.4 : 1)
@@ -70,6 +71,7 @@ struct EditorToolbar: View {
                         .background(Color.red.opacity(0.12))
                         .foregroundColor(.red).cornerRadius(10)
                 }
+                .accessibilityLabel("삭제")
                 .disabled(vm.selectedNoteID == nil)
                 .opacity(vm.selectedNoteID == nil ? 0.4 : 1)
 
@@ -92,6 +94,7 @@ struct EditorToolbar: View {
 
             // Add a flat / remove a sharp.
             keyStepButton("♭", to: key - 1, enabled: key > -7)
+                .accessibilityLabel("플랫 쪽으로")
 
             // Current key, e.g. "다장조" or "G ♯1" / "B♭ ♭2".
             Text(key == 0 ? String(localized: "다장조")
@@ -103,6 +106,7 @@ struct EditorToolbar: View {
 
             // Add a sharp / remove a flat.
             keyStepButton("♯", to: key + 1, enabled: key < 7)
+                .accessibilityLabel("샵 쪽으로")
 
             // Back to C major in one tap (only when there's something to clear).
             if key != 0 {
@@ -113,6 +117,7 @@ struct EditorToolbar: View {
                         .background(Color(.systemGray6)).cornerRadius(10)
                         .foregroundColor(.primary)
                 }
+                .accessibilityLabel("조표 지우기")
                 .transition(.scale.combined(with: .opacity))
             }
 
@@ -168,6 +173,7 @@ struct EditorToolbar: View {
             .cornerRadius(10)
             .foregroundColor(.primary)
         }
+        .accessibilityAddTraits(!vm.restMode && vm.selectedDuration == dur ? .isSelected : [])
     }
 
     /// Dot toggle — newly placed notes get 1.5× length; also dots the current
@@ -189,6 +195,8 @@ struct EditorToolbar: View {
                 .cornerRadius(10)
                 .foregroundColor(.primary)
         }
+        .accessibilityLabel("점음표")
+        .accessibilityAddTraits(vm.selectedDotted ? .isSelected : [])
     }
 
     /// Triplet toggle (셋잇단음표) — when on, new notes are triplet-valued
@@ -208,6 +216,8 @@ struct EditorToolbar: View {
                 .cornerRadius(10)
                 .foregroundColor(on ? .accentColor : .primary)
         }
+        .accessibilityLabel("셋잇단음표")
+        .accessibilityAddTraits(vm.tripletMode ? .isSelected : [])
     }
 
     /// Rest mode toggle — when on, pressing the staff drops a rest of the
@@ -225,6 +235,8 @@ struct EditorToolbar: View {
                 .cornerRadius(10)
                 .foregroundColor(on ? .accentColor : .primary)
         }
+        .accessibilityLabel("쉼표 모드")
+        .accessibilityAddTraits(vm.restMode ? .isSelected : [])
     }
 
     /// Voice (layer) selector. New notes go into the chosen voice; the dot is
@@ -243,6 +255,8 @@ struct EditorToolbar: View {
             .cornerRadius(10)
             .foregroundColor(.primary)
         }
+        .accessibilityLabel(Text("성부 \(i + 1)"))
+        .accessibilityAddTraits(vm.activeLayer == i ? .isSelected : [])
     }
 
     private func nudgeButton(_ label: String, semis: Int) -> some View {
@@ -311,6 +325,8 @@ struct NoteDurationGlyph: View {
             }
         }
         .frame(width: 26, height: 30)
+        .accessibilityElement()
+        .accessibilityLabel(duration.displayName)
     }
 
     private var isFilled: Bool {
@@ -378,5 +394,7 @@ struct RestGlyph: View {
             }
         }
         .frame(width: 26, height: 30)
+        .accessibilityElement()
+        .accessibilityLabel(Text("쉼표") + Text(verbatim: ", ") + Text(duration.displayName))
     }
 }

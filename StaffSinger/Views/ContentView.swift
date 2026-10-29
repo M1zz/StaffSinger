@@ -40,8 +40,12 @@ struct ContentView: View {
     // Voice dictation ("read the score out loud"). Owns the mic + recognizer.
     @StateObject private var dictation: SolfegeDictation
     @State private var showDictation = false
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
-    private var panelSpring: Animation { .spring(response: 0.35, dampingFraction: 0.85) }
+    /// 동작 줄이기면 패널이 미끄러지지 않고 짧게 바뀐다.
+    private var panelSpring: Animation {
+        reduceMotion ? .easeInOut(duration: 0.15) : .spring(response: 0.35, dampingFraction: 0.85)
+    }
     /// Bottom space the piano + its note-value strip occupy (used to lift the staff).
     private let keyboardAreaHeight: CGFloat = 196
 
@@ -145,7 +149,7 @@ struct ContentView: View {
         // Paper color is applied as a background so it bleeds edge-to-edge
         // WITHOUT pulling the content out of the safe area.
         .background(
-            Color.white.ignoresSafeArea()
+            Color(.systemBackground).ignoresSafeArea()
         )
         .animation(panelSpring, value: showSettings)
         .animation(panelSpring, value: showKeyboard)
@@ -214,12 +218,14 @@ struct ContentView: View {
             } label: {
                 Text("\u{2022}").font(.system(size: 26, weight: .black)).foregroundColor(.primary)
             }
+            .accessibilityLabel("점음표")
             toolChip(selected: vm.tripletMode) {
                 vm.tripletMode.toggle()
             } label: {
                 Text("3").font(.system(size: 19, weight: .heavy, design: .serif)).italic()
                     .foregroundColor(vm.tripletMode ? .accentColor : .primary)
             }
+            .accessibilityLabel("셋잇단음표")
 
             // Everything from here on acts immediately, rather than setting up
             // what the next key press will write.
@@ -250,6 +256,7 @@ struct ContentView: View {
                     .foregroundColor(vm.canDeleteLast ? .red : .secondary)
             }
             .disabled(!vm.canDeleteLast)
+            .accessibilityLabel("마지막 음 지우기")
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 7)
@@ -267,6 +274,7 @@ struct ContentView: View {
                 .cornerRadius(9)
         }
         .buttonStyle(.plain)
+        .accessibilityAddTraits(selected ? .isSelected : [])
     }
 
     // MARK: - Settings palette
@@ -281,6 +289,7 @@ struct ContentView: View {
                 .contentShape(Rectangle())
                 .onTapGesture { showSettings = false }
                 .transition(.opacity)
+                .accessibilityHidden(true)   // 패널의 닫기 단추로 닫는다
 
             SettingsSidePanel(
                 vm: vm, audio: audio,
@@ -288,6 +297,7 @@ struct ContentView: View {
                 onClose: { showSettings = false })
                 .frame(width: 360)
                 .transition(.move(edge: settingsPanelOnLeft ? .leading : .trailing))
+                .accessibilityAddTraits(.isModal)
         }
     }
 
@@ -355,6 +365,7 @@ struct ContentView: View {
                 VStack(alignment: .leading, spacing: 2) {
                     Text(vm.score.title)
                         .font(.headline).lineLimit(1)
+                        .accessibilityAddTraits(.isHeader)
                     Text("\(Int(vm.score.tempo)) BPM · \(vm.score.beatsPerMeasure)/\(vm.score.beatUnit)"
                          + keySuffix)
                         .font(.caption).foregroundColor(.secondary)
@@ -372,18 +383,21 @@ struct ContentView: View {
                 circleButton(systemImage: "camera.viewfinder", tint: .primary) {
                     showSourceDialog = true
                 }
+                .accessibilityLabel("악보 사진")
                 .transition(.scale.combined(with: .opacity))
 
                 // Paste a score written in the text format (AI-transcribed).
                 circleButton(systemImage: "doc.on.clipboard", tint: .primary) {
                     showPaste = true
                 }
+                .accessibilityLabel("악보 붙여넣기")
                 .transition(.scale.combined(with: .opacity))
 
                 // Read the score out loud and let the mic write it down.
                 circleButton(systemImage: "music.mic", tint: .primary) {
                     showDictation = true
                 }
+                .accessibilityLabel("계이름 받아쓰기")
                 .transition(.scale.combined(with: .opacity))
 
                 // Mute/unmute the metronome (and count-in).
@@ -394,6 +408,7 @@ struct ContentView: View {
                     circleButton(systemImage: "slider.horizontal.3", tint: .primary) {
                         showSettings = true
                     }
+                    .accessibilityLabel("설정")
                     .transition(.scale.combined(with: .opacity))
                 }
 
@@ -407,6 +422,7 @@ struct ContentView: View {
                         if showControls { showKeyboard = false }
                     }
                 }
+                .accessibilityLabel(showControls ? Text("음표 도구 닫기") : Text("음표 도구"))
                 .transition(.scale.combined(with: .opacity))
             }
 
@@ -418,6 +434,8 @@ struct ContentView: View {
                     if showKeyboard { showControls = false }
                 }
             }
+            .accessibilityLabel("건반")
+            .accessibilityAddTraits(showKeyboard ? .isSelected : [])
             .transition(.scale.combined(with: .opacity))
 
             Button {
@@ -426,16 +444,20 @@ struct ContentView: View {
                 Image(systemName: audio.isPlaying ? "stop.fill" : "play.fill")
                     .font(.title3)
                     .frame(width: 48, height: 48)
-                    .background(audio.isPlaying ? Color.red : Color.green)
+                    .background(audio.isPlaying ? Color.red : Self.playGreen)
                     .foregroundColor(.white)
                     .clipShape(Circle())
                     .shadow(color: .black.opacity(0.2), radius: 3, y: 1)
             }
+            .accessibilityLabel(audio.isPlaying ? Text("정지") : Text("재생"))
         }
         .padding(.horizontal, 16)
         .padding(.top, 8)
         .animation(.easeInOut(duration: 0.25), value: showControls)
     }
+
+    /// 흰 재생 아이콘이 또렷한 진한 초록(기본 초록은 흰색과 대비가 모자라다).
+    private static let playGreen = Color(red: 0.11, green: 0.55, blue: 0.25)
 
     /// Metronome mute toggle. On = accent metronome; off = greyed with a
     /// diagonal slash so it clearly reads as "no click". The slash sits in a
@@ -546,6 +568,10 @@ struct ContentView: View {
                         }
                     }
             )
+            .accessibilityElement()
+            .accessibilityLabel("음표 도구 닫기")
+            .accessibilityAddTraits(.isButton)
+            .accessibilityAction { withAnimation(panelSpring) { showControls = false } }
     }
 
     // MARK: - Selected-note read-out
@@ -556,6 +582,7 @@ struct ContentView: View {
                 Text(n.pitch.label)
                     .font(.title3.bold().monospaced())
                     .foregroundColor(.accentColor)
+                    .accessibilityLabel(n.pitch.accessibilityLabel)
                 Text(n.durationLabel)
                     .font(.subheadline).foregroundColor(.secondary)
             } else if vm.restMode {
@@ -574,7 +601,8 @@ struct ContentView: View {
         }
         .frame(maxWidth: .infinity, alignment: .center)
         .padding(.horizontal, 16)
-        .frame(height: 38)
+        .frame(minHeight: 38)
+        .fixedSize(horizontal: false, vertical: true)
     }
 }
 
