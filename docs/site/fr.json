@@ -1,0 +1,160 @@
+{
+  "title": "StaffSinger : écoutez les notes que vous écrivez",
+  "description": "Recopiez un passage difficile sur la portée et écoutez-le avec le rythme et la hauteur exacts, au métronome. Tout est gratuit, dictée comprise.",
+  "hero": {
+    "headline": "Arrêtez de compter dans votre tête.\nÉcoutez.",
+    "lead": "Recopiez sur la portée les deux mesures qui vous bloquent et lancez la lecture. Après une mesure de décompte, StaffSinger les joue au clic du métronome, avec le rythme et la hauteur exacts.",
+    "cta": "Télécharger gratuitement sur l’App Store",
+    "note": "Toutes les fonctions sont gratuites. Pour iPhone et iPad."
+  },
+  "demo": {
+    "title": "Posez quelques notes et écoutez",
+    "lead": "Appuyez sur la portée sans relâcher, glissez vers le haut ou le bas pour changer la hauteur, puis relâchez pour poser la note. Lancez la lecture : une mesure de décompte, puis vos notes. Montez le volume, la page joue du son.",
+    "staff": "Portée de deux mesures. Appuyez dessus, ou choisissez une hauteur avec les flèches haut et bas puis ajoutez-la avec Entrée.",
+    "length": "Durée",
+    "half": "Blanche",
+    "quarter": "Noire",
+    "eighth": "Croche",
+    "undo": "Effacer la dernière",
+    "clear": "Tout effacer",
+    "slower": "Plus lent",
+    "faster": "Plus vite",
+    "play": "▶ Lecture",
+    "stop": "■ Arrêt",
+    "hint": "Lancez la lecture pour entendre les deux mesures déjà sur la portée.",
+    "empty": "Appuyez sur la portée pour poser votre première note.",
+    "full": "Les deux mesures sont pleines. Effacez une note pour faire de la place.",
+    "cross": "Cette note dépasserait la barre de mesure. Choisissez une durée plus courte.",
+    "note": "La démo web utilise un son de synthé tout simple. L’app joue un son de piano et gère aussi les accords, les voix, les notes pointées, les triolets, les silences et les armures."
+  },
+  "problem": {
+    "title": "Encore perdu le compte au milieu de la mesure ?",
+    "text": "Une croche pointée, puis une double croche, puis un triolet juste derrière, et le rythme tapé sur le genou s’effondre. Souvent, il n’y a pas de piano à portée de main non plus, comme la veille d’une répétition. Recopiez ces deux mesures dans StaffSinger : il les joue exactement comme elles sont écrites."
+  },
+  "features": [
+    {
+      "title": "Le rythme et la hauteur exacts",
+      "text": "Après une mesure de décompte, la musique se joue au clic du métronome et la note qui sonne s’allume en orange. Réglez le tempo de 40 à 200 BPM et choisissez 4/4, 3/4, 2/4, 6/8, 2/2 ou 3/8.\nEmpilez des notes sur le même temps et elles sonnent ensemble en accord ; vous pouvez écrire jusqu’à trois voix. Clés de sol, d’ut et de fa, armures : tout y est.",
+      "shot": "02-playback"
+    },
+    {
+      "title": "Chantez le nom des notes, elles s’écrivent",
+      "text": "Après quatre clics de métronome, dites `do` `re` `mi` à voix haute, en rythme, et les notes se placent sur la portée. En parlant pile sur le temps, le rythme est aussi saisi, en noires, croches ou doubles croches. Dites `rest` pour un silence.\nLes noms se prononcent en anglais : do re mi fa sol la ti, avec ti à la place de si. La reconnaissance vocale se fait sur votre appareil et rien n’est enregistré.",
+      "shot": "03-dictation"
+    },
+    {
+      "title": "Confiez la photo à une IA, collez le résultat",
+      "text": "Touchez `Copier la règle pour l’IA`, donnez-la à une IA avec une photo de votre partition, puis collez ce qu’elle écrit. La portée se remplit. Le format figure dans le tableau ci-dessous.\nVous pouvez aussi photographier la page imprimée et la garder à l’écran pendant que vous la recopiez à la main.",
+      "shot": "04-paste"
+    }
+  ],
+  "steps": {
+    "title": "Trois étapes pour commencer",
+    "items": [
+      {
+        "title": "Choisissez les mesures difficiles",
+        "text": "L’app s’ouvre sur une portée vide de deux mesures."
+      },
+      {
+        "title": "Écrivez les notes",
+        "text": "Appuyez sur la portée ou jouez sur le clavier de piano."
+      },
+      {
+        "title": "Lancez la lecture",
+        "text": "Un décompte, puis la lecture au métronome."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Format texte à coller",
+    "rows": [
+      ["C4:4", "do à l’octave 4, noire (le do central s’écrit C4)"],
+      ["D:8", "Sans octave, la précédente est conservée"],
+      ["F#4:8 · Bb4:4", "# pour dièse, b pour bémol"],
+      ["E4", "Sans :durée, la durée précédente est conservée"],
+      [":1 · :2 · :4 · :8 · :16", "ronde, blanche, noire, croche, double croche"],
+      ["C4:4.", "note pointée"],
+      ["C4:8t", "triolet"],
+      ["R:4 · R:8", "silences"]
+    ],
+    "note": "Le bouton Copier la règle pour l’IA copie exactement ces consignes. Les lettres C D E F G A B correspondent à do ré mi fa sol la si. Séparez les notes par des espaces."
+  },
+  "pricing": {
+    "title": "Tout est gratuit",
+    "free": {
+      "name": "Gratuit",
+      "items": [
+        "Saisie sur la portée et clavier de piano sur deux octaves",
+        "Lecture avec décompte et métronome",
+        "Accords et trois voix",
+        "Armures et trois clés",
+        "Dictée de solfège",
+        "Collage de texte et photos de référence"
+      ]
+    },
+    "pro": {
+      "name": "Soutenir le développeur",
+      "items": [
+        "Laissez un petit pourboire depuis les Réglages",
+        "Les pourboires ne débloquent rien de plus"
+      ],
+      "note": "Pas d’abonnement. Chaque pourboire est un paiement unique."
+    },
+    "note": "Sans publicité, sans compte."
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "Comment ajouter des notes ?",
+        "a": "Choisissez d’abord une durée dans la barre d’outils, puis appuyez sur la portée à la hauteur voulue. Vous entendez la note tant que vous maintenez le doigt, et elle s’ajoute quand vous relâchez. Touchez le bouton clavier pour saisir les notes sur un piano de deux octaves."
+      },
+      {
+        "q": "Comment faire un accord ?",
+        "a": "Activez le bouton Accord dans la barre d’outils et ajoutez des notes. Elles s’empilent sur la note sélectionnée et sonnent ensemble."
+      },
+      {
+        "q": "Comment corriger une note ?",
+        "a": "Faites glisser une note vers le haut ou le bas pour changer sa hauteur, ou sur le côté pour la déplacer sur un autre temps. Quand une note est sélectionnée, les boutons ♯ et ♭ la déplacent d’un demi-ton et les boutons 8va d’une octave."
+      },
+      {
+        "q": "Où changer le tempo ou la mesure ?",
+        "a": "Dans les Réglages, avec la clé et l’armure. Vous pouvez aussi y activer ou désactiver le métronome et le décompte."
+      },
+      {
+        "q": "Je n’entends rien.",
+        "a": "Vérifiez le mode silencieux et le volume multimédia. S’il ne manque que le métronome, vérifiez dans les Réglages, sous Aides à la lecture, que le métronome est activé."
+      },
+      {
+        "q": "La dictée se trompe souvent de note.",
+        "a": "Utilisez des écouteurs pour que le métronome ne passe pas dans le micro, et dites un nom de note bien net par temps. Si une note est fausse, faites-la glisser pour la corriger."
+      },
+      {
+        "q": "Pourquoi l’app a-t-elle besoin de l’appareil photo ?",
+        "a": "Uniquement pour photographier votre partition et l’afficher à l’écran comme référence. Les photos ne quittent jamais votre appareil, et vous pouvez en choisir une dans votre photothèque sans autoriser l’appareil photo."
+      },
+      {
+        "q": "Sur quels appareils fonctionne-t-elle ?",
+        "a": "iPhone et iPad sous iOS 17 ou version ultérieure. Elle est conçue pour le mode paysage."
+      },
+      {
+        "q": "Ma musique ou ma voix sont-elles envoyées quelque part ?",
+        "a": "Non. Vos partitions, vos photos et votre voix restent sur votre appareil, et tout fonctionne hors ligne. Seules des statistiques d’utilisation anonymes et des rapports de plantage sont envoyés à iCloud, pour aider à corriger l’app."
+      },
+      {
+        "q": "Comment vous contacter ?",
+        "a": "Écrivez à leeo@kakao.com. La réponse arrive généralement sous 2 à 3 jours ouvrés. Les signalements de bugs et les idées de fonctions sont aussi les bienvenus en issue sur GitHub, à l’adresse M1zz/StaffSinger."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Avant votre prochaine répétition,\ncommencez par ces deux mesures",
+    "cta": "Télécharger gratuitement sur l’App Store"
+  },
+  "ui": {
+    "skip": "Aller au contenu",
+    "languages": "Langue",
+    "privacy": "Politique de confidentialité",
+    "contact": "Une question, une remarque ? Écrivez à {email}."
+  }
+}

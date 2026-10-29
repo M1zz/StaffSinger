@@ -1,121 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StaffSinger</title>
-<link rel="canonical" href="https://m1zz.github.io/StaffSinger/cs/">
-<!-- i18n:head -->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
-<!-- /i18n:head -->
-<style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
-    line-height: 1.7; color: #1d2433; background: #f6f9fd;
-  }
-  header {
-    background: linear-gradient(135deg, #5bb8ff 0%, #4facfe 35%, #1d3a8a 100%);
-    color: #fff; text-align: center; padding: 72px 24px 64px;
-  }
-  header h1 { font-size: 2.2rem; letter-spacing: -0.02em; }
-  header p { margin-top: 10px; opacity: 0.92; }
-  main { max-width: 720px; margin: -32px auto 64px; padding: 0 20px; }
-  .card {
-    background: #fff; border-radius: 16px; padding: 28px 28px;
-    box-shadow: 0 8px 24px rgba(29, 58, 138, 0.10); margin-bottom: 20px;
-  }
-  .card h2 { font-size: 1.2rem; margin-bottom: 8px; color: #1d3a8a; }
-  a.btn {
-    display: inline-block; margin-top: 12px; padding: 10px 20px;
-    background: #4facfe; color: #fff; border-radius: 10px;
-    text-decoration: none; font-weight: 600;
-  }
-  a.btn:hover { background: #3d97e8; }
-  footer { text-align: center; color: #8a93a6; font-size: 0.85rem; padding: 24px; }
-  @media (prefers-color-scheme: dark) {
-    body { background: #10141c; color: #e6eaf2; }
-    .card { background: #1a2030; box-shadow: none; }
-    .card h2 { color: #7fc1ff; }
-  }
-  /* i18n:css */
-  footer nav.langs {
-    margin: 14px auto 0; max-width: 720px; display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 4px 14px; font-size: 0.8rem;
-  }
-  footer nav.langs a { color: inherit; text-decoration: none; }
-  footer nav.langs a:hover { text-decoration: underline; }
-  footer nav.langs [aria-current] { color: #4facfe; font-weight: 600; }
-  /* /i18n:css */
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StaffSinger: zapište noty do osnovy a hned je slyšte</title>
+  <meta name="description" content="Přepište záludné takty do notové osnovy a poslechněte si je s přesným rytmem a výškou spolu s metronomem. Všechny funkce jsou zdarma.">
+  <meta name="theme-color" content="#3373D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#10141c" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6779262832">
+  <link rel="canonical" href="https://m1zz.github.io/StaffSinger/cs/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StaffSinger: zapište noty do osnovy a hned je slyšte">
+  <meta property="og:description" content="Přepište záludné takty do notové osnovy a poslechněte si je s přesným rytmem a výškou spolu s metronomem. Všechny funkce jsou zdarma.">
+  <meta property="og:url" content="https://m1zz.github.io/StaffSinger/cs/">
+  <meta property="og:image" content="https://m1zz.github.io/StaffSinger/img/cs/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#3373D9}@media (prefers-color-scheme:dark){:root{--accent:#7FB2FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<header>
-  <h1>🎼 StaffSinger</h1>
-  <p>Aplikace pro iOS, která přehraje výšku i rytmus not, jež umístíte do notové osnovy</p>
-</header>
-<main>
-  <div class="card">
-    <h2>Podpora</h2>
-    <p>Jak aplikaci používat, časté dotazy a kontakt.</p>
-    <a class="btn" href="support.html">Otevřít stránku podpory</a>
-  </div>
-  <div class="card">
-    <h2>Zásady ochrany osobních údajů</h2>
-    <p>Jaké informace StaffSinger zpracovává a jakým způsobem.</p>
-    <a class="btn" href="privacy.html">Zobrazit zásady ochrany osobních údajů</a>
-  </div>
-</main>
-<footer>© 2026 StaffSinger · <a href="https://github.com/M1zz/StaffSinger">GitHub</a>
-<!-- i18n:nav --><nav class="langs" aria-label="Jazyk">
-  <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-  <a href="../en/index.html" hreflang="en" lang="en">English</a>
-  <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-  <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-  <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-  <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-  <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-  <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-  <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-  <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-  <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-  <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-  <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-  <span lang="cs" aria-current="page">Čeština</span>
-  <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-  <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-  <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-  <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-  <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-  <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-  <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-  <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-  <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-</nav><!-- /i18n:nav -->
-</footer>
+  <a class="skip" href="#main">Přeskočit na obsah</a>
+  <header class="bar">
+    <a class="brand" href="../cs/"><img src="../icon.png" alt="" width="32" height="32">StaffSinger</a>
+    <a class="lang-link" href="#languages">Jazyk</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Přestaňte počítat v hlavě.<br>Poslechněte si to.</h1>
+        <p class="lead">Přepište dva takty, na kterých se zadrhnete, a klepněte na přehrávání. Po taktu předtaktí je aplikace zahraje s metronomem, přesně v zapsaném rytmu a výšce.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6779262832">Stáhnout zdarma v App Storu</a><a class="try" href="#try">Zapište pár not a poslechněte si je ↓</a></div>
+        <p class="muted small">Všechny funkce jsou zdarma. Pro iPhone a iPad.</p>
+      </div>
+      <div class="plain"><img src="../img/cs/01-piano.jpg" alt="Přestaňte počítat v hlavě. Poslechněte si to." width="720" height="331" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>Zapište pár not a poslechněte si je</h2>
+      <p class="muted">Podržte prst na osnově a posouvejte nahoru nebo dolů, tím měníte tón. Když prst zvednete, nota se vloží. Stiskněte „Hrát“ a po taktu předtaktí uslyšíte výsledek. Ozve se zvuk, zkontrolujte hlasitost.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Zapište pár not a poslechněte si je&quot;, &quot;lead&quot;: &quot;Podržte prst na osnově a posouvejte nahoru nebo dolů, tím měníte tón. Když prst zvednete, nota se vloží. Stiskněte „Hrát“ a po taktu předtaktí uslyšíte výsledek. Ozve se zvuk, zkontrolujte hlasitost.&quot;, &quot;staff&quot;: &quot;Notová osnova na dva takty. Stiskněte ji, nebo vyberte výšku šipkami nahoru a dolů a notu přidejte klávesou Enter.&quot;, &quot;length&quot;: &quot;Hodnota&quot;, &quot;half&quot;: &quot;Půlová&quot;, &quot;quarter&quot;: &quot;Čtvrťová&quot;, &quot;eighth&quot;: &quot;Osminová&quot;, &quot;undo&quot;: &quot;Smazat poslední&quot;, &quot;clear&quot;: &quot;Smazat vše&quot;, &quot;slower&quot;: &quot;Pomaleji&quot;, &quot;faster&quot;: &quot;Rychleji&quot;, &quot;play&quot;: &quot;▶ Hrát&quot;, &quot;stop&quot;: &quot;■ Stop&quot;, &quot;hint&quot;: &quot;Stiskněte „Hrát“ a poslechněte si dva připravené takty.&quot;, &quot;empty&quot;: &quot;Stiskněte osnovu a vložte první notu.&quot;, &quot;full&quot;: &quot;Oba takty jsou plné. Smažte poslední notu, ať je místo.&quot;, &quot;cross&quot;: &quot;Tahle nota by přesáhla taktovou čáru. Vyberte kratší hodnotu.&quot;, &quot;note&quot;: &quot;Webová ukázka hraje jednoduchým syntetickým zvukem. Aplikace hraje zvukem klavíru a umí akordy, hlasy, tečkované noty, trioly, pomlky i předznamenání.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Zase jste se v půlce taktu ztratili v počítání?</h2>
+      <p>Tečkovaná osminová, za ní šestnáctinová a hned vedle triola. Ťukáte si to do kolena a uprostřed taktu se to rozsype. Večer před zkouškou sboru navíc obvykle nemáte po ruce klavír. Ve StaffSingeru stačí ty dva takty přepsat a uslyšíte přesný rytmus i výšku.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Rytmus a výška přesně podle not</h2>
+        <p>Po taktu předtaktí hudba hraje s klikáním metronomu a právě znějící nota se rozsvítí oranžově. Tempo od 40 do 200 BPM, takt 4/4, 3/4, 2/4, 6/8, 2/2 nebo 3/8.<br>Noty na stejné době zazní společně jako akord a zapsat můžete až tři hlasy. K dispozici je houslový, altový a basový klíč i předznamenání.</p>
+      </div>
+      <div class="plain"><img src="../img/cs/02-playback.jpg" alt="Rytmus a výška přesně podle not" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Řekněte názvy not a vzniknou noty</h2>
+        <p>Po čtyřech kliknutích metronomu říkejte v rytmu <code>do</code> <code>re</code> <code>mi</code> a noty se objeví v osnově. Když trefíte dobu, zapíše se i délka: čtvrťové, osminové nebo šestnáctinové. Pomlku označíte slovem <code>rest</code>.<br>Názvy not vyslovujte anglicky. Řeč se rozpoznává jen v zařízení a neukládá se.</p>
+      </div>
+      <div class="plain"><img src="../img/cs/03-dictation.jpg" alt="Řekněte názvy not a vzniknou noty" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Fotku not dejte AI, výsledek vložte</h2>
+        <p>Klepněte na <code>Zkopírovat pravidlo pro AI</code>, předejte ho AI spolu s fotkou not a vložte text, který vám vrátí. Osnova se vyplní sama. Formát najdete v tabulce níže.<br>Papírové noty si také můžete vyfotit, nechat je na obrazovce a přepisovat podle nich.</p>
+      </div>
+      <div class="plain"><img src="../img/cs/04-paste.jpg" alt="Fotku not dejte AI, výsledek vložte" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Začnete ve třech krocích</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Vyberte záludné takty</h3><p>Aplikace se otevře s prázdnou osnovou na dva takty.</p></li>
+<li class="card"><span class="n">2</span><h3>Zapište noty</h3><p>Stiskněte osnovu, nebo hrajte na klavírní klávesnici.</p></li>
+<li class="card"><span class="n">3</span><h3>Klepněte na přehrávání</h3><p>Předtaktí a pak přehrávání s metronomem.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Formát textu pro vložení</h2>
+      <div class="card table">
+        <dl><div><dt>C4:4</dt><dd>C ve 4. oktávě, čtvrťová (jednočárkované c je C4)</dd></div><div><dt>D:8</dt><dd>Bez oktávy zůstává předchozí</dd></div><div><dt>F#4:8 · Bb4:4</dt><dd># je křížek, b je béčko</dd></div><div><dt>E4</dt><dd>Bez „:hodnoty“ zůstává předchozí</dd></div><div><dt>:1 · :2 · :4 · :8 · :16</dt><dd>celá, půlová, čtvrťová, osminová, šestnáctinová</dd></div><div><dt>C4:4.</dt><dd>tečkovaná nota</dd></div><div><dt>C4:8t</dt><dd>triola</dd></div><div><dt>R:4 · R:8</dt><dd>pomlky</dd></div></dl>
+      </div>
+      <p class="muted">Tlačítko Zkopírovat pravidlo pro AI v aplikaci zkopíruje přesně tyto pokyny. Noty oddělujte mezerami.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Všechny funkce jsou zdarma</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Zdarma</h3>
+          <ul><li>Zápis do osnovy a klávesnice na dvě oktávy</li><li>Přehrávání s předtaktím a metronomem</li><li>Akordy a tři hlasy</li><li>Předznamenání a tři klíče</li><li>Diktování názvů not hlasem</li><li>Vložení textu a referenční fotka</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Podpořte vývojáře</h3>
+          <ul><li>V Nastavení můžete poslat malé spropitné</li><li>Spropitné neodemyká žádné funkce</li></ul>
+          <p class="muted">Není to předplatné. Každé spropitné je jednorázová platba.</p>
+        </div>
+      </div>
+      <p class="muted">Bez reklam a bez registrace.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Časté otázky</h2>
+      <div class="faq"><details><summary>Jak vkládat noty?</summary><p>Nejdřív na panelu nástrojů vyberte hodnotu a pak stiskněte osnovu v požadované výšce. Dokud držíte prst, tón zní, a po zvednutí se nota vloží. Tlačítkem klávesnice otevřete klavír na dvě oktávy.</p></details>
+<details><summary>Jak udělat akord?</summary><p>Zapněte na panelu tlačítko Akord a přidávejte noty. Navrství se nad vybranou notu a zazní společně.</p></details>
+<details><summary>Jak opravit notu?</summary><p>Táhněte notu nahoru nebo dolů pro změnu výšky, do strany pro posun na jinou dobu. U vybrané noty ji tlačítka ♯ ♭ posunou o půltón a tlačítka 8va o oktávu.</p></details>
+<details><summary>Kde změním tempo a takt?</summary><p>V Nastavení, spolu s klíčem a předznamenáním. Tam také zapnete metronom a předtaktí.</p></details>
+<details><summary>Nic neslyším.</summary><p>Zkontrolujte tichý režim a hlasitost médií. Pokud neslyšíte jen metronom, ověřte, že je zapnutý v části Pomůcky přehrávání v Nastavení.</p></details>
+<details><summary>Diktování plete noty.</summary><p>Použijte sluchátka, aby metronom nepronikal do mikrofonu, a říkejte jednu notu zřetelně na každou dobu. Špatnou notu stačí přetáhnout.</p></details>
+<details><summary>Proč aplikace potřebuje fotoaparát?</summary><p>Jen k vyfocení papírových not, které pak máte na obrazovce pro srovnání. Fotky zařízení neopouštějí. Bez přístupu k fotoaparátu můžete vybrat fotku z knihovny.</p></details>
+<details><summary>Na jakých zařízeních funguje?</summary><p>Na iPhonu a iPadu se systémem iOS 17 nebo novějším. Rozhraní je navržené na šířku.</p></details>
+<details><summary>Odesílají se někam moje noty nebo hlas?</summary><p>Ne. Noty, fotky i hlas zůstávají v zařízení a vše funguje bez internetu. Do iCloudu odchází jen anonymní statistiky používání a hlášení o pádech, které pomáhají aplikaci vylepšovat.</p></details>
+<details><summary>Jak vás kontaktovat?</summary><p>Napište na leeo@kakao.com, odpověď obvykle přijde do 2 až 3 pracovních dnů. Chyby a nápady můžete hlásit i jako issue na GitHubu: M1zz/StaffSinger.</p></details></div>
+      <p class="contact">Dotazy nebo připomínky? Napište na <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Před další zkouškou<br>začněte těmi dvěma takty</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6779262832">Stáhnout zdarma v App Storu</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Jazyk"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs" aria-current="page">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Zásady ochrany soukromí</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 StaffSinger</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

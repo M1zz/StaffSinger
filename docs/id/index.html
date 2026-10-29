@@ -1,121 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StaffSinger</title>
-<link rel="canonical" href="https://m1zz.github.io/StaffSinger/id/">
-<!-- i18n:head -->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
-<!-- /i18n:head -->
-<style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
-    line-height: 1.7; color: #1d2433; background: #f6f9fd;
-  }
-  header {
-    background: linear-gradient(135deg, #5bb8ff 0%, #4facfe 35%, #1d3a8a 100%);
-    color: #fff; text-align: center; padding: 72px 24px 64px;
-  }
-  header h1 { font-size: 2.2rem; letter-spacing: -0.02em; }
-  header p { margin-top: 10px; opacity: 0.92; }
-  main { max-width: 720px; margin: -32px auto 64px; padding: 0 20px; }
-  .card {
-    background: #fff; border-radius: 16px; padding: 28px 28px;
-    box-shadow: 0 8px 24px rgba(29, 58, 138, 0.10); margin-bottom: 20px;
-  }
-  .card h2 { font-size: 1.2rem; margin-bottom: 8px; color: #1d3a8a; }
-  a.btn {
-    display: inline-block; margin-top: 12px; padding: 10px 20px;
-    background: #4facfe; color: #fff; border-radius: 10px;
-    text-decoration: none; font-weight: 600;
-  }
-  a.btn:hover { background: #3d97e8; }
-  footer { text-align: center; color: #8a93a6; font-size: 0.85rem; padding: 24px; }
-  @media (prefers-color-scheme: dark) {
-    body { background: #10141c; color: #e6eaf2; }
-    .card { background: #1a2030; box-shadow: none; }
-    .card h2 { color: #7fc1ff; }
-  }
-  /* i18n:css */
-  footer nav.langs {
-    margin: 14px auto 0; max-width: 720px; display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 4px 14px; font-size: 0.8rem;
-  }
-  footer nav.langs a { color: inherit; text-decoration: none; }
-  footer nav.langs a:hover { text-decoration: underline; }
-  footer nav.langs [aria-current] { color: #4facfe; font-weight: 600; }
-  /* /i18n:css */
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StaffSinger: tulis not di paranada, langsung dengar</title>
+  <meta name="description" content="Salin birama yang membingungkan ke paranada, lalu dengarkan ritme dan nadanya persis seperti tertulis bersama metronom. Semua fitur gratis.">
+  <meta name="theme-color" content="#3373D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#10141c" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6779262832">
+  <link rel="canonical" href="https://m1zz.github.io/StaffSinger/id/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StaffSinger: tulis not di paranada, langsung dengar">
+  <meta property="og:description" content="Salin birama yang membingungkan ke paranada, lalu dengarkan ritme dan nadanya persis seperti tertulis bersama metronom. Semua fitur gratis.">
+  <meta property="og:url" content="https://m1zz.github.io/StaffSinger/id/">
+  <meta property="og:image" content="https://m1zz.github.io/StaffSinger/img/id/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#3373D9}@media (prefers-color-scheme:dark){:root{--accent:#7FB2FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<header>
-  <h1>🎼 StaffSinger</h1>
-  <p>Aplikasi iOS yang memutar nada dan ritme dari not yang Anda letakkan di paranada dengan suara sungguhan</p>
-</header>
-<main>
-  <div class="card">
-    <h2>Dukungan</h2>
-    <p>Cara penggunaan, pertanyaan umum, dan cara menghubungi kami.</p>
-    <a class="btn" href="support.html">Buka Halaman Dukungan</a>
-  </div>
-  <div class="card">
-    <h2>Kebijakan Privasi</h2>
-    <p>Informasi apa saja yang ditangani StaffSinger dan bagaimana informasi itu ditangani.</p>
-    <a class="btn" href="privacy.html">Lihat Kebijakan Privasi</a>
-  </div>
-</main>
-<footer>© 2026 StaffSinger · <a href="https://github.com/M1zz/StaffSinger">GitHub</a>
-<!-- i18n:nav --><nav class="langs" aria-label="Bahasa">
-  <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-  <a href="../en/index.html" hreflang="en" lang="en">English</a>
-  <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-  <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-  <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-  <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-  <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-  <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-  <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-  <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-  <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-  <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-  <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-  <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-  <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-  <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-  <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-  <span lang="id" aria-current="page">Bahasa Indonesia</span>
-  <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-  <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-  <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-  <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-  <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-</nav><!-- /i18n:nav -->
-</footer>
+  <a class="skip" href="#main">Lewati ke konten</a>
+  <header class="bar">
+    <a class="brand" href="../id/"><img src="../icon.png" alt="" width="32" height="32">StaffSinger</a>
+    <a class="lang-link" href="#languages">Bahasa</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Berhenti menghitung di kepala.<br>Dengarkan saja.</h1>
+        <p class="lead">Salin dua birama yang bikin bingung ke paranada, lalu ketuk putar. Setelah hitungan masuk satu birama, aplikasi memainkannya mengikuti metronom, dengan ritme dan nada yang tepat.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6779262832">Unduh gratis di App Store</a><a class="try" href="#try">Tulis beberapa not, lalu dengarkan ↓</a></div>
+        <p class="muted small">Semua fitur gratis. Untuk iPhone dan iPad.</p>
+      </div>
+      <div class="plain"><img src="../img/id/01-piano.jpg" alt="Berhenti menghitung di kepala. Dengarkan saja." width="720" height="331" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>Tulis beberapa not, lalu dengarkan</h2>
+      <p class="muted">Tekan dan tahan paranada, geser ke atas atau bawah untuk mengganti nada, lalu lepas untuk menaruh not. Tekan putar untuk mendengarnya setelah hitungan masuk satu birama. Ada suaranya, jadi cek volume dulu.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Tulis beberapa not, lalu dengarkan&quot;, &quot;lead&quot;: &quot;Tekan dan tahan paranada, geser ke atas atau bawah untuk mengganti nada, lalu lepas untuk menaruh not. Tekan putar untuk mendengarnya setelah hitungan masuk satu birama. Ada suaranya, jadi cek volume dulu.&quot;, &quot;staff&quot;: &quot;Paranada dua birama. Tekan, atau pakai tombol panah atas dan bawah untuk memilih nada, lalu Enter untuk menambahkan.&quot;, &quot;length&quot;: &quot;Nilai not&quot;, &quot;half&quot;: &quot;Not 1/2&quot;, &quot;quarter&quot;: &quot;Not 1/4&quot;, &quot;eighth&quot;: &quot;Not 1/8&quot;, &quot;undo&quot;: &quot;Hapus terakhir&quot;, &quot;clear&quot;: &quot;Hapus semua&quot;, &quot;slower&quot;: &quot;Lebih lambat&quot;, &quot;faster&quot;: &quot;Lebih cepat&quot;, &quot;play&quot;: &quot;▶ Putar&quot;, &quot;stop&quot;: &quot;■ Berhenti&quot;, &quot;hint&quot;: &quot;Tekan putar untuk mendengar dua birama yang sudah ada.&quot;, &quot;empty&quot;: &quot;Tekan paranada untuk menambahkan not pertama.&quot;, &quot;full&quot;: &quot;Dua birama sudah penuh. Hapus not terakhir untuk memberi ruang.&quot;, &quot;cross&quot;: &quot;Not ini akan melewati garis birama. Pilih nilai not yang lebih pendek.&quot;, &quot;note&quot;: &quot;Versi web memakai bunyi sintetis sederhana. Aplikasinya memainkan suara piano dan mendukung akord, suara, not bertitik, triol, tanda diam, dan tanda kunci.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Hitungan buyar lagi di tengah birama?</h2>
+      <p>Not 1/8 bertitik, lalu 1/16, disusul triol. Menghitung sambil mengetuk lutut, lama-lama meleset juga. Malam sebelum latihan paduan suara pun sering tidak ada piano di dekat Anda. Dengan StaffSinger, cukup salin dua birama itu ke paranada dan dengarkan ritme serta nadanya dengan tepat.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ritme dan nada persis seperti tertulis</h2>
+        <p>Setelah hitungan masuk satu birama, musik dimainkan mengikuti klik metronom dan not yang sedang berbunyi ditandai oranye. Atur tempo dari 40 sampai 200 BPM dan pilih sukat 4/4, 3/4, 2/4, 6/8, 2/2, atau 3/8.<br>Tumpuk not pada ketukan yang sama untuk akord yang berbunyi bersamaan, dan tulis hingga tiga suara terpisah. Kunci G, kunci C (alto), kunci F, dan tanda kunci juga tersedia.</p>
+      </div>
+      <div class="plain"><img src="../img/id/02-playback.jpg" alt="Ritme dan nada persis seperti tertulis" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ucapkan nama not, jadilah not</h2>
+        <p>Setelah empat ketukan metronom, ucapkan <code>do</code> <code>re</code> <code>mi</code> sesuai ketukan dan not langsung masuk ke paranada. Ucapkan tepat di ketukan, maka panjang not ikut tercatat sebagai 1/4, 1/8, atau 1/16. Untuk tanda diam, ucapkan <code>rest</code>.<br>Ucapkan nama not dengan lafal bahasa Inggris. Suara dikenali hanya di perangkat dan tidak disimpan.</p>
+      </div>
+      <div class="plain"><img src="../img/id/03-dictation.jpg" alt="Ucapkan nama not, jadilah not" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Foto partitur untuk AI, hasilnya tinggal tempel</h2>
+        <p>Ketuk <code>Salin aturan untuk AI</code>, berikan ke AI bersama foto partitur Anda, lalu tempel teks yang dikembalikannya. Paranada langsung terisi. Formatnya ada di tabel di bawah.<br>Anda juga bisa memotret partitur kertas, menampilkannya di layar, lalu menyalinnya sambil melihat.</p>
+      </div>
+      <div class="plain"><img src="../img/id/04-paste.jpg" alt="Foto partitur untuk AI, hasilnya tinggal tempel" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Mulai dalam tiga langkah</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Pilih birama yang sulit</h3><p>Aplikasi terbuka dengan paranada dua birama yang kosong.</p></li>
+<li class="card"><span class="n">2</span><h3>Tulis notnya</h3><p>Tekan paranada atau mainkan tuts piano.</p></li>
+<li class="card"><span class="n">3</span><h3>Ketuk putar</h3><p>Hitungan masuk, lalu diputar bersama metronom.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Format teks untuk ditempel</h2>
+      <div class="card table">
+        <dl><div><dt>C4:4</dt><dd>C di oktaf 4, not 1/4 (C tengah adalah C4)</dd></div><div><dt>D:8</dt><dd>Tanpa oktaf, oktaf sebelumnya dipakai lagi</dd></div><div><dt>F#4:8 · Bb4:4</dt><dd># untuk kres, b untuk mol</dd></div><div><dt>E4</dt><dd>Tanpa :panjang, panjang sebelumnya dipakai lagi</dd></div><div><dt>:1 · :2 · :4 · :8 · :16</dt><dd>not penuh, 1/2, 1/4, 1/8, 1/16</dd></div><div><dt>C4:4.</dt><dd>not bertitik</dd></div><div><dt>C4:8t</dt><dd>triol</dd></div><div><dt>R:4 · R:8</dt><dd>tanda diam</dd></div></dl>
+      </div>
+      <p class="muted">Salin aturan untuk AI di aplikasi menyalin petunjuk format ini apa adanya. Pisahkan not dengan spasi.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Semua fitur gratis</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Gratis</h3>
+          <ul><li>Input paranada dan keyboard piano dua oktaf</li><li>Pemutaran dengan hitungan masuk dan metronom</li><li>Akord dan tiga suara</li><li>Tanda kunci dan tiga jenis kunci</li><li>Dikte nama not dengan suara</li><li>Tempel teks dan foto referensi</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Dukung pengembang</h3>
+          <ul><li>Kirim tip kecil dari Pengaturan</li><li>Tip tidak membuka fitur tambahan</li></ul>
+          <p class="muted">Bukan langganan. Setiap tip adalah pembayaran sekali.</p>
+        </div>
+      </div>
+      <p class="muted">Tanpa iklan, tanpa perlu akun.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Pertanyaan umum</h2>
+      <div class="faq"><details><summary>Bagaimana cara menambahkan not?</summary><p>Pilih nilai not di bilah alat dulu, lalu tekan paranada di nada yang Anda mau. Selama ditahan, nadanya terdengar, dan not masuk saat Anda melepas. Ketuk tombol keyboard untuk memasukkan not lewat keyboard piano dua oktaf.</p></details>
+<details><summary>Bagaimana membuat akord?</summary><p>Nyalakan tombol Akord di bilah alat lalu tambahkan not. Not baru ditumpuk di atas not yang dipilih dan berbunyi bersamaan.</p></details>
+<details><summary>Saya ingin memperbaiki not.</summary><p>Seret not ke atas atau bawah untuk mengubah nada, ke samping untuk memindahkan ketukan. Dengan not terpilih, tombol ♯ ♭ menggeser setengah nada dan tombol 8va menggeser satu oktaf.</p></details>
+<details><summary>Di mana mengubah tempo dan sukat?</summary><p>Di Pengaturan, bersama kunci dan tanda kunci. Metronom dan hitungan masuk juga dinyalakan atau dimatikan di sana.</p></details>
+<details><summary>Tidak ada suara.</summary><p>Periksa mode senyap dan volume media. Kalau hanya metronom yang tidak terdengar, pastikan Metronom menyala di Bantuan pemutaran pada Pengaturan.</p></details>
+<details><summary>Dikte nama not sering meleset.</summary><p>Pakai earphone supaya bunyi metronom tidak masuk ke mikrofon, dan ucapkan satu not dengan jelas di setiap ketukan. Not yang salah tinggal diseret untuk diperbaiki.</p></details>
+<details><summary>Kenapa perlu kamera?</summary><p>Hanya untuk memotret partitur kertas sebagai foto referensi di layar. Foto tidak pernah keluar dari perangkat. Tanpa izin kamera pun Anda bisa memilih foto dari galeri.</p></details>
+<details><summary>Perangkat apa yang didukung?</summary><p>iPhone dan iPad dengan iOS 17 atau lebih baru. Tampilannya dirancang untuk posisi lanskap.</p></details>
+<details><summary>Apakah partitur atau suara saya dikirim ke mana pun?</summary><p>Tidak. Partitur, foto, dan suara tetap di perangkat, dan semuanya bisa dipakai tanpa internet. Hanya statistik penggunaan anonim dan laporan crash yang dikirim ke iCloud untuk memperbaiki aplikasi.</p></details>
+<details><summary>Bagaimana cara menghubungi pengembang?</summary><p>Kirim email ke leeo@kakao.com. Biasanya dibalas dalam 2 sampai 3 hari kerja. Laporan bug dan usulan fitur juga bisa dikirim sebagai issue di GitHub M1zz/StaffSinger.</p></details></div>
+      <p class="contact">Ada pertanyaan atau masukan? Tulis ke <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Sebelum latihan berikutnya,<br>mulai dari dua birama itu</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6779262832">Unduh gratis di App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Bahasa"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id" aria-current="page">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Kebijakan Privasi</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 StaffSinger</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

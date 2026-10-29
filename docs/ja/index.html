@@ -1,121 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StaffSinger</title>
-<link rel="canonical" href="https://m1zz.github.io/StaffSinger/ja/">
-<!-- i18n:head -->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
-<!-- /i18n:head -->
-<style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
-    line-height: 1.7; color: #1d2433; background: #f6f9fd;
-  }
-  header {
-    background: linear-gradient(135deg, #5bb8ff 0%, #4facfe 35%, #1d3a8a 100%);
-    color: #fff; text-align: center; padding: 72px 24px 64px;
-  }
-  header h1 { font-size: 2.2rem; letter-spacing: -0.02em; }
-  header p { margin-top: 10px; opacity: 0.92; }
-  main { max-width: 720px; margin: -32px auto 64px; padding: 0 20px; }
-  .card {
-    background: #fff; border-radius: 16px; padding: 28px 28px;
-    box-shadow: 0 8px 24px rgba(29, 58, 138, 0.10); margin-bottom: 20px;
-  }
-  .card h2 { font-size: 1.2rem; margin-bottom: 8px; color: #1d3a8a; }
-  a.btn {
-    display: inline-block; margin-top: 12px; padding: 10px 20px;
-    background: #4facfe; color: #fff; border-radius: 10px;
-    text-decoration: none; font-weight: 600;
-  }
-  a.btn:hover { background: #3d97e8; }
-  footer { text-align: center; color: #8a93a6; font-size: 0.85rem; padding: 24px; }
-  @media (prefers-color-scheme: dark) {
-    body { background: #10141c; color: #e6eaf2; }
-    .card { background: #1a2030; box-shadow: none; }
-    .card h2 { color: #7fc1ff; }
-  }
-  /* i18n:css */
-  footer nav.langs {
-    margin: 14px auto 0; max-width: 720px; display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 4px 14px; font-size: 0.8rem;
-  }
-  footer nav.langs a { color: inherit; text-decoration: none; }
-  footer nav.langs a:hover { text-decoration: underline; }
-  footer nav.langs [aria-current] { color: #4facfe; font-weight: 600; }
-  /* /i18n:css */
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StaffSinger：五線に書いた音符をすぐ聴ける</title>
+  <meta name="description" content="初見でつまずく小節を五線に書き写すと、メトロノームに合わせてリズムも音程もそのまま再生します。階名の音声入力まで、すべて無料です。">
+  <meta name="theme-color" content="#3373D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#10141c" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6779262832">
+  <link rel="canonical" href="https://m1zz.github.io/StaffSinger/ja/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StaffSinger：五線に書いた音符をすぐ聴ける">
+  <meta property="og:description" content="初見でつまずく小節を五線に書き写すと、メトロノームに合わせてリズムも音程もそのまま再生します。階名の音声入力まで、すべて無料です。">
+  <meta property="og:url" content="https://m1zz.github.io/StaffSinger/ja/">
+  <meta property="og:image" content="https://m1zz.github.io/StaffSinger/img/ja/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#3373D9}@media (prefers-color-scheme:dark){:root{--accent:#7FB2FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<header>
-  <h1>🎼 StaffSinger</h1>
-  <p>五線譜に音符を置くと、リズムと音の高さを実際の音で聴かせてくれる iOS アプリ</p>
-</header>
-<main>
-  <div class="card">
-    <h2>サポート</h2>
-    <p>使い方、よくある質問、お問い合わせ先をご案内します。</p>
-    <a class="btn" href="support.html">サポートページを開く</a>
-  </div>
-  <div class="card">
-    <h2>プライバシーポリシー</h2>
-    <p>StaffSinger が扱う情報と、その取り扱い方法をご案内します。</p>
-    <a class="btn" href="privacy.html">プライバシーポリシーを見る</a>
-  </div>
-</main>
-<footer>© 2026 StaffSinger · <a href="https://github.com/M1zz/StaffSinger">GitHub</a>
-<!-- i18n:nav --><nav class="langs" aria-label="言語">
-  <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-  <a href="../en/index.html" hreflang="en" lang="en">English</a>
-  <span lang="ja" aria-current="page">日本語</span>
-  <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-  <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-  <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-  <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-  <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-  <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-  <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-  <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-  <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-  <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-  <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-  <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-  <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-  <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-  <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-  <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-  <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-  <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-  <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-  <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-</nav><!-- /i18n:nav -->
-</footer>
+  <a class="skip" href="#main">本文へスキップ</a>
+  <header class="bar">
+    <a class="brand" href="../ja/"><img src="../icon.png" alt="" width="32" height="32">StaffSinger</a>
+    <a class="lang-link" href="#languages">言語</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>頭の中で数えるより、<br>耳で確かめよう</h1>
+        <p class="lead">迷う2小節を五線に書き写して再生をタップ。1小節のカウントインのあと、メトロノームに合わせてリズムと音程そのままに鳴らします。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6779262832">App Storeで無料ダウンロード</a><a class="try" href="#try">書いて、聴いてみよう ↓</a></div>
+        <p class="muted small">すべての機能が無料。iPhoneとiPadに対応しています。</p>
+      </div>
+      <div class="plain"><img src="../img/ja/01-piano.jpg" alt="頭の中で数えるより、 耳で確かめよう" width="720" height="331" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>書いて、聴いてみよう</h2>
+      <p class="muted">五線を押したまま上下に動かすと音が変わり、指を離すと音符が入ります。再生を押すと1小節のカウントインのあとに演奏します。音が出るので音量にご注意ください。</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;書いて、聴いてみよう&quot;, &quot;lead&quot;: &quot;五線を押したまま上下に動かすと音が変わり、指を離すと音符が入ります。再生を押すと1小節のカウントインのあとに演奏します。音が出るので音量にご注意ください。&quot;, &quot;staff&quot;: &quot;2小節の五線。押すか上下の矢印キーで音の高さを選び、Enterで入力します。&quot;, &quot;length&quot;: &quot;音価&quot;, &quot;half&quot;: &quot;2分音符&quot;, &quot;quarter&quot;: &quot;4分音符&quot;, &quot;eighth&quot;: &quot;8分音符&quot;, &quot;undo&quot;: &quot;1音消す&quot;, &quot;clear&quot;: &quot;すべて消す&quot;, &quot;slower&quot;: &quot;テンポを下げる&quot;, &quot;faster&quot;: &quot;テンポを上げる&quot;, &quot;play&quot;: &quot;▶ 再生&quot;, &quot;stop&quot;: &quot;■ 停止&quot;, &quot;hint&quot;: &quot;まずは再生を押して、入っている2小節を聴いてみてください。&quot;, &quot;empty&quot;: &quot;五線を押して最初の音を入れてみましょう。&quot;, &quot;full&quot;: &quot;2小節がいっぱいです。「1音消す」で空けてください。&quot;, &quot;cross&quot;: &quot;この音符は小節線をまたぎます。短い音価を選んでください。&quot;, &quot;note&quot;: &quot;Web版はシンプルな音で鳴らします。アプリはピアノの音で演奏し、和音、声部、付点音符、3連符、休符、調号まで扱えます。&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>拍を数えているうちに、わからなくなっていませんか？</h2>
+      <p>付点8分のあとに16分、すぐ隣に3連符。膝を叩いて数えているうちに、いつの間にかずれてしまいます。合唱練習の前の晩など、手元にピアノがないことも多いはず。StaffSingerなら、その2小節を五線に書き写すだけで正確なリズムと音程で聴けます。</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>リズムも音程も、書いたとおりに</h2>
+        <p>1小節のカウントインのあと、メトロノームのクリックに合わせて演奏し、鳴っている音符をオレンジ色で示します。テンポは40〜200 BPM、拍子は4/4、3/4、2/4、6/8、2/2、3/8から選べます。<br>同じ拍に音を重ねれば和音として同時に鳴り、声部は3つまで書き分けられます。ト音記号、ハ音記号（アルト）、ヘ音記号と調号も切り替えられます。</p>
+      </div>
+      <div class="plain"><img src="../img/ja/02-playback.jpg" alt="リズムも音程も、書いたとおりに" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>階名を声に出せば音符になる</h2>
+        <p>メトロノームの4拍のあと、拍に合わせて <code>do</code> <code>re</code> <code>mi</code> と声に出すと五線に入ります。拍どおりに言えば、4分・8分・16分単位で長さまで取れます。休符は <code>rest</code> と言います。<br>階名は英語の発音で言ってください。音声は端末の中だけで認識され、保存されません。</p>
+      </div>
+      <div class="plain"><img src="../img/ja/03-dictation.jpg" alt="階名を声に出せば音符になる" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>譜面の写真はAIに、結果は貼り付けで</h2>
+        <p><code>AIに渡すルールをコピー</code> をタップし、譜面の写真と一緒にAIに渡して、返ってきたテキストを貼り付ければ五線が埋まります。書式は下の表のとおりです。<br>紙の譜面を撮って画面に表示し、見ながら書き写すこともできます。</p>
+      </div>
+      <div class="plain"><img src="../img/ja/04-paste.jpg" alt="譜面の写真はAIに、結果は貼り付けで" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>始めるのは3ステップ</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>迷う小節を選ぶ</h3><p>アプリを開くと空の2小節の五線が出ます。</p></li>
+<li class="card"><span class="n">2</span><h3>音符を書く</h3><p>五線を押すか、ピアノの鍵盤で入力します。</p></li>
+<li class="card"><span class="n">3</span><h3>再生をタップ</h3><p>カウントインのあと、メトロノームに合わせて鳴ります。</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>テキストで貼り付けるときの書式</h2>
+      <div class="card table">
+        <dl><div><dt>C4:4</dt><dd>オクターブ4のド、4分音符（中央のドがC4）</dd></div><div><dt>D:8</dt><dd>オクターブを省くと直前のオクターブのまま</dd></div><div><dt>F#4:8 · Bb4:4</dt><dd>シャープは #、フラットは b</dd></div><div><dt>E4</dt><dd>「:長さ」を省くと直前の長さのまま</dd></div><div><dt>:1 · :2 · :4 · :8 · :16</dt><dd>全音符、2分、4分、8分、16分音符</dd></div><div><dt>C4:4.</dt><dd>付点音符</dd></div><div><dt>C4:8t</dt><dd>3連符</dd></div><div><dt>R:4 · R:8</dt><dd>休符</dd></div></dl>
+      </div>
+      <p class="muted">アプリの「AIに渡すルールをコピー」で、この書式の説明がそのままコピーされます。音符と音符の間はスペースで区切ります。</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>すべての機能が無料です</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>無料</h3>
+          <ul><li>五線入力と2オクターブの鍵盤</li><li>カウントインとメトロノーム付きの再生</li><li>和音と3つの声部</li><li>調号と3種類の音部記号</li><li>階名の音声入力</li><li>テキスト貼り付けと参考写真</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>開発者を応援する</h3>
+          <ul><li>設定から少額のチップを送れます</li><li>チップを送っても機能は増えません</li></ul>
+          <p class="muted">サブスクリプションではなく、送るたびに1回きりの支払いです。</p>
+        </div>
+      </div>
+      <p class="muted">広告もアカウント登録もありません。</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>よくある質問</h2>
+      <div class="faq"><details><summary>音符はどう入力しますか？</summary><p>まずツールバーで音価を選び、五線の好きな高さを押します。押している間その音が鳴り、指を離すと音符が入ります。鍵盤ボタンをタップすれば、2オクターブのピアノ鍵盤からも入力できます。</p></details>
+<details><summary>和音はどう作りますか？</summary><p>ツールバーの「和音」ボタンをオンにしたまま音を入れると、選んだ音の上に重なって同時に鳴ります。</p></details>
+<details><summary>入れた音を直したいです。</summary><p>音符を上下にドラッグすると音の高さが、左右にドラッグすると拍の位置が変わります。音符を選んで ♯ ♭ ボタンで半音ずつ、8vaボタンで1オクターブずつ動かせます。</p></details>
+<details><summary>テンポや拍子はどこで変えますか？</summary><p>設定で、音部記号や調号と一緒に変えられます。メトロノームとカウントインのオン・オフもここです。</p></details>
+<details><summary>音が出ません。</summary><p>消音モードとメディアの音量を確認してください。メトロノームだけ聞こえない場合は、設定の「再生サポート」でメトロノームがオンになっているか確認してください。</p></details>
+<details><summary>階名の音声入力がうまくいきません。</summary><p>イヤホンを使うとメトロノームの音がマイクに入りません。1音ずつはっきり、拍に合わせて言ってみてください。違う音が入ったら、音符をドラッグして直せます。</p></details>
+<details><summary>カメラは何に使いますか？</summary><p>紙の譜面を撮って、画面に参考写真として表示するためだけに使います。写真は端末の外に送られません。カメラを許可しなくても写真ライブラリから読み込めます。</p></details>
+<details><summary>対応している端末は？</summary><p>iOS 17以降のiPhoneとiPadで使えます。横向きの画面に合わせて作られています。</p></details>
+<details><summary>譜面や声がどこかに送られますか？</summary><p>いいえ。譜面、写真、音声は端末の外に出ず、インターネットなしで動作します。アプリの改善のために、匿名の利用統計とクラッシュレポートだけをiCloudに送ります。</p></details>
+<details><summary>問い合わせ先は？</summary><p>leeo@kakao.com までメールでどうぞ。通常2〜3営業日以内にお返事します。不具合の報告や機能の提案は、GitHubの M1zz/StaffSinger のIssueでも受け付けています。</p></details></div>
+      <p class="contact">ご質問やご意見は <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> までお送りください。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>次の練習の前に、<br>迷う2小節から</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6779262832">App Storeで無料ダウンロード</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="言語"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja" aria-current="page">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">プライバシーポリシー</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 StaffSinger</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

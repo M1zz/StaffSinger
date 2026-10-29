@@ -1,0 +1,160 @@
+{
+  "title": "StaffSinger: ouça as notas que você escreve",
+  "description": "Copie um trecho difícil para a pauta e ouça com o ritmo e a altura exatos, no clique do metrônomo. Tudo grátis, ditado incluído.",
+  "hero": {
+    "headline": "Pare de contar de cabeça.\nOuça.",
+    "lead": "Copie para a pauta os dois compassos que travam você e aperte Tocar. Depois de um compasso de contagem, o StaffSinger toca tudo junto com o metrônomo, com o ritmo e a altura exatos.",
+    "cta": "Baixe grátis na App Store",
+    "note": "Todos os recursos são grátis. Para iPhone e iPad."
+  },
+  "demo": {
+    "title": "Escreva algumas notas e ouça",
+    "lead": "Mantenha pressionada a pauta, deslize para cima ou para baixo para mudar a altura e solte para colocar a nota. Aperte Tocar para ouvir um compasso de contagem e depois as notas. Aumente o volume, a página toca som.",
+    "staff": "Pauta de dois compassos. Pressione-a, ou escolha a altura com as setas para cima e para baixo e adicione com Enter.",
+    "length": "Duração",
+    "half": "Mínima",
+    "quarter": "Semínima",
+    "eighth": "Colcheia",
+    "undo": "Apagar a última",
+    "clear": "Limpar tudo",
+    "slower": "Mais lento",
+    "faster": "Mais rápido",
+    "play": "▶ Tocar",
+    "stop": "■ Parar",
+    "hint": "Aperte Tocar para ouvir os dois compassos que já estão na pauta.",
+    "empty": "Pressione a pauta para adicionar a primeira nota.",
+    "full": "Os dois compassos estão cheios. Apague uma nota para abrir espaço.",
+    "cross": "Essa nota passaria da barra de compasso. Escolha uma duração menor.",
+    "note": "A demo na web usa um som de sintetizador simples. O app toca com som de piano e também lida com acordes, vozes, notas pontuadas, tercinas, pausas e armaduras de clave."
+  },
+  "problem": {
+    "title": "Perdeu a conta no meio do compasso de novo?",
+    "text": "Uma colcheia pontuada, depois uma semicolcheia e logo em seguida uma tercina, e bater o ritmo no joelho já não dá conta. Muitas vezes também não tem piano por perto, como na noite antes do ensaio. Copie esses dois compassos no StaffSinger e ele toca exatamente como está escrito."
+  },
+  "features": [
+    {
+      "title": "Ritmo e altura exatos",
+      "text": "Depois de um compasso de contagem, a música toca no clique do metrônomo e a nota que está soando acende em laranja. Ajuste o andamento entre 40 e 200 BPM e escolha 4/4, 3/4, 2/4, 6/8, 2/2 ou 3/8.\nEmpilhe notas no mesmo tempo e elas soam juntas como acorde, e escreva em até três vozes. Claves de sol, de dó e de fá e armaduras de clave estão todas lá.",
+      "shot": "02-playback"
+    },
+    {
+      "title": "Cante os nomes, ganhe as notas",
+      "text": "Depois de quatro cliques do metrônomo, diga `do` `re` `mi` em voz alta, no tempo, e elas vão para a pauta. Falando bem no tempo, o ritmo também é registrado, em semínimas, colcheias ou semicolcheias. Diga `rest` para uma pausa.\nOs nomes são falados em inglês: do re mi fa sol la ti, com ti no lugar de si. O reconhecimento de voz acontece no seu dispositivo e nada é guardado.",
+      "shot": "03-dictation"
+    },
+    {
+      "title": "Entregue a foto a uma IA e cole o resultado",
+      "text": "Toque em `Copiar regra para a IA`, entregue a regra a uma IA junto com uma foto da partitura e cole o que ela escrever. A pauta se preenche. O formato está na tabela abaixo.\nVocê também pode fotografar a página impressa e deixá-la na tela enquanto copia à mão.",
+      "shot": "04-paste"
+    }
+  ],
+  "steps": {
+    "title": "Comece em três passos",
+    "items": [
+      {
+        "title": "Escolha os compassos difíceis",
+        "text": "O app abre com uma pauta vazia de dois compassos."
+      },
+      {
+        "title": "Escreva as notas",
+        "text": "Pressione a pauta ou use as teclas do piano."
+      },
+      {
+        "title": "Aperte Tocar",
+        "text": "Uma contagem e depois a reprodução com metrônomo."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Formato de texto para colar",
+    "rows": [
+      ["C4:4", "dó na oitava 4, semínima (o dó central é C4)"],
+      ["D:8", "Se omitir a oitava, vale a anterior"],
+      ["F#4:8 · Bb4:4", "# para sustenido, b para bemol"],
+      ["E4", "Se omitir :duração, vale a duração anterior"],
+      [":1 · :2 · :4 · :8 · :16", "semibreve, mínima, semínima, colcheia, semicolcheia"],
+      ["C4:4.", "nota pontuada"],
+      ["C4:8t", "tercina"],
+      ["R:4 · R:8", "pausas"]
+    ],
+    "note": "O botão Copiar regra para a IA copia exatamente estas instruções. As letras C D E F G A B correspondem a dó ré mi fá sol lá si. Separe as notas com espaços."
+  },
+  "pricing": {
+    "title": "Tudo é grátis",
+    "free": {
+      "name": "Grátis",
+      "items": [
+        "Escrita na pauta e teclado de piano de duas oitavas",
+        "Reprodução com contagem e metrônomo",
+        "Acordes e três vozes",
+        "Armaduras de clave e três claves",
+        "Ditado de solfejo",
+        "Colar como texto e fotos de referência"
+      ]
+    },
+    "pro": {
+      "name": "Apoie o desenvolvedor",
+      "items": [
+        "Mande uma pequena gorjeta pelos Ajustes",
+        "Gorjetas não desbloqueiam nada a mais"
+      ],
+      "note": "Não é assinatura. Cada gorjeta é um pagamento único."
+    },
+    "note": "Sem anúncios e sem precisar de conta."
+  },
+  "faq": {
+    "title": "Perguntas",
+    "items": [
+      {
+        "q": "Como adiciono notas?",
+        "a": "Primeiro escolha uma duração na barra de ferramentas e depois pressione a pauta na altura que quiser. Enquanto você segura, ouve a nota, e ela é adicionada quando você solta. Toque no botão do teclado para inserir notas em um piano de duas oitavas."
+      },
+      {
+        "q": "Como faço um acorde?",
+        "a": "Ative o botão Acorde na barra de ferramentas e adicione notas. Elas se empilham sobre a nota selecionada e soam juntas."
+      },
+      {
+        "q": "Como corrijo uma nota?",
+        "a": "Arraste a nota para cima ou para baixo para mudar a altura, ou para o lado para levá-la a outro tempo. Com uma nota selecionada, os botões ♯ e ♭ a movem meio tom e os botões 8va, uma oitava."
+      },
+      {
+        "q": "Onde mudo o andamento ou a fórmula de compasso?",
+        "a": "Em Ajustes, junto com a clave e a armadura. Lá também dá para ligar ou desligar o metrônomo e a contagem."
+      },
+      {
+        "q": "Não estou ouvindo nada.",
+        "a": "Confira o modo silencioso e o volume de mídia. Se só o metrônomo não toca, veja em Ajustes, em Apoio à reprodução, se o metrônomo está ligado."
+      },
+      {
+        "q": "O ditado erra as notas.",
+        "a": "Use fones de ouvido para o metrônomo não vazar no microfone e diga um nome de nota bem claro por tempo. Se uma nota sair errada, arraste-a para corrigir."
+      },
+      {
+        "q": "Por que o app precisa da câmera?",
+        "a": "Só para tirar uma foto de referência da partitura e mostrá-la na tela. As fotos nunca saem do seu dispositivo, e você pode escolher uma da fototeca sem liberar a câmera."
+      },
+      {
+        "q": "Em quais aparelhos funciona?",
+        "a": "Em iPhone e iPad com iOS 17 ou posterior. Foi feito para usar na horizontal."
+      },
+      {
+        "q": "Minha música ou minha voz são enviadas para algum lugar?",
+        "a": "Não. Suas partituras, fotos e sua voz ficam no seu dispositivo, e tudo funciona offline. Só estatísticas de uso anônimas e relatórios de falhas vão para o iCloud, para ajudar a corrigir o app."
+      },
+      {
+        "q": "Como entro em contato?",
+        "a": "Mande um e-mail para leeo@kakao.com. A resposta costuma chegar em 2 a 3 dias úteis. Relatos de bugs e ideias de recursos também são bem-vindos como issue no GitHub, em M1zz/StaffSinger."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Antes do próximo ensaio,\ncomece por esses dois compassos",
+    "cta": "Baixe grátis na App Store"
+  },
+  "ui": {
+    "skip": "Pular para o conteúdo",
+    "languages": "Idioma",
+    "privacy": "Política de Privacidade",
+    "contact": "Dúvidas ou sugestões? Escreva para {email}."
+  }
+}

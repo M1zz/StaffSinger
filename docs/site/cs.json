@@ -1,0 +1,184 @@
+{
+  "title": "StaffSinger: zapište noty do osnovy a hned je slyšte",
+  "description": "Přepište záludné takty do notové osnovy a poslechněte si je s přesným rytmem a výškou spolu s metronomem. Všechny funkce jsou zdarma.",
+  "hero": {
+    "headline": "Přestaňte počítat v hlavě.\nPoslechněte si to.",
+    "lead": "Přepište dva takty, na kterých se zadrhnete, a klepněte na přehrávání. Po taktu předtaktí je aplikace zahraje s metronomem, přesně v zapsaném rytmu a výšce.",
+    "cta": "Stáhnout zdarma v App Storu",
+    "note": "Všechny funkce jsou zdarma. Pro iPhone a iPad."
+  },
+  "demo": {
+    "title": "Zapište pár not a poslechněte si je",
+    "lead": "Podržte prst na osnově a posouvejte nahoru nebo dolů, tím měníte tón. Když prst zvednete, nota se vloží. Stiskněte „Hrát“ a po taktu předtaktí uslyšíte výsledek. Ozve se zvuk, zkontrolujte hlasitost.",
+    "staff": "Notová osnova na dva takty. Stiskněte ji, nebo vyberte výšku šipkami nahoru a dolů a notu přidejte klávesou Enter.",
+    "length": "Hodnota",
+    "half": "Půlová",
+    "quarter": "Čtvrťová",
+    "eighth": "Osminová",
+    "undo": "Smazat poslední",
+    "clear": "Smazat vše",
+    "slower": "Pomaleji",
+    "faster": "Rychleji",
+    "play": "▶ Hrát",
+    "stop": "■ Stop",
+    "hint": "Stiskněte „Hrát“ a poslechněte si dva připravené takty.",
+    "empty": "Stiskněte osnovu a vložte první notu.",
+    "full": "Oba takty jsou plné. Smažte poslední notu, ať je místo.",
+    "cross": "Tahle nota by přesáhla taktovou čáru. Vyberte kratší hodnotu.",
+    "note": "Webová ukázka hraje jednoduchým syntetickým zvukem. Aplikace hraje zvukem klavíru a umí akordy, hlasy, tečkované noty, trioly, pomlky i předznamenání."
+  },
+  "problem": {
+    "title": "Zase jste se v půlce taktu ztratili v počítání?",
+    "text": "Tečkovaná osminová, za ní šestnáctinová a hned vedle triola. Ťukáte si to do kolena a uprostřed taktu se to rozsype. Večer před zkouškou sboru navíc obvykle nemáte po ruce klavír. Ve StaffSingeru stačí ty dva takty přepsat a uslyšíte přesný rytmus i výšku."
+  },
+  "features": [
+    {
+      "title": "Rytmus a výška přesně podle not",
+      "text": "Po taktu předtaktí hudba hraje s klikáním metronomu a právě znějící nota se rozsvítí oranžově. Tempo od 40 do 200 BPM, takt 4/4, 3/4, 2/4, 6/8, 2/2 nebo 3/8.\nNoty na stejné době zazní společně jako akord a zapsat můžete až tři hlasy. K dispozici je houslový, altový a basový klíč i předznamenání.",
+      "shot": "02-playback"
+    },
+    {
+      "title": "Řekněte názvy not a vzniknou noty",
+      "text": "Po čtyřech kliknutích metronomu říkejte v rytmu `do` `re` `mi` a noty se objeví v osnově. Když trefíte dobu, zapíše se i délka: čtvrťové, osminové nebo šestnáctinové. Pomlku označíte slovem `rest`.\nNázvy not vyslovujte anglicky. Řeč se rozpoznává jen v zařízení a neukládá se.",
+      "shot": "03-dictation"
+    },
+    {
+      "title": "Fotku not dejte AI, výsledek vložte",
+      "text": "Klepněte na `Zkopírovat pravidlo pro AI`, předejte ho AI spolu s fotkou not a vložte text, který vám vrátí. Osnova se vyplní sama. Formát najdete v tabulce níže.\nPapírové noty si také můžete vyfotit, nechat je na obrazovce a přepisovat podle nich.",
+      "shot": "04-paste"
+    }
+  ],
+  "steps": {
+    "title": "Začnete ve třech krocích",
+    "items": [
+      {
+        "title": "Vyberte záludné takty",
+        "text": "Aplikace se otevře s prázdnou osnovou na dva takty."
+      },
+      {
+        "title": "Zapište noty",
+        "text": "Stiskněte osnovu, nebo hrajte na klavírní klávesnici."
+      },
+      {
+        "title": "Klepněte na přehrávání",
+        "text": "Předtaktí a pak přehrávání s metronomem."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Formát textu pro vložení",
+    "rows": [
+      [
+        "C4:4",
+        "C ve 4. oktávě, čtvrťová (jednočárkované c je C4)"
+      ],
+      [
+        "D:8",
+        "Bez oktávy zůstává předchozí"
+      ],
+      [
+        "F#4:8 · Bb4:4",
+        "# je křížek, b je béčko"
+      ],
+      [
+        "E4",
+        "Bez „:hodnoty“ zůstává předchozí"
+      ],
+      [
+        ":1 · :2 · :4 · :8 · :16",
+        "celá, půlová, čtvrťová, osminová, šestnáctinová"
+      ],
+      [
+        "C4:4.",
+        "tečkovaná nota"
+      ],
+      [
+        "C4:8t",
+        "triola"
+      ],
+      [
+        "R:4 · R:8",
+        "pomlky"
+      ]
+    ],
+    "note": "Tlačítko Zkopírovat pravidlo pro AI v aplikaci zkopíruje přesně tyto pokyny. Noty oddělujte mezerami."
+  },
+  "pricing": {
+    "title": "Všechny funkce jsou zdarma",
+    "free": {
+      "name": "Zdarma",
+      "items": [
+        "Zápis do osnovy a klávesnice na dvě oktávy",
+        "Přehrávání s předtaktím a metronomem",
+        "Akordy a tři hlasy",
+        "Předznamenání a tři klíče",
+        "Diktování názvů not hlasem",
+        "Vložení textu a referenční fotka"
+      ]
+    },
+    "pro": {
+      "name": "Podpořte vývojáře",
+      "items": [
+        "V Nastavení můžete poslat malé spropitné",
+        "Spropitné neodemyká žádné funkce"
+      ],
+      "note": "Není to předplatné. Každé spropitné je jednorázová platba."
+    },
+    "note": "Bez reklam a bez registrace."
+  },
+  "faq": {
+    "title": "Časté otázky",
+    "items": [
+      {
+        "q": "Jak vkládat noty?",
+        "a": "Nejdřív na panelu nástrojů vyberte hodnotu a pak stiskněte osnovu v požadované výšce. Dokud držíte prst, tón zní, a po zvednutí se nota vloží. Tlačítkem klávesnice otevřete klavír na dvě oktávy."
+      },
+      {
+        "q": "Jak udělat akord?",
+        "a": "Zapněte na panelu tlačítko Akord a přidávejte noty. Navrství se nad vybranou notu a zazní společně."
+      },
+      {
+        "q": "Jak opravit notu?",
+        "a": "Táhněte notu nahoru nebo dolů pro změnu výšky, do strany pro posun na jinou dobu. U vybrané noty ji tlačítka ♯ ♭ posunou o půltón a tlačítka 8va o oktávu."
+      },
+      {
+        "q": "Kde změním tempo a takt?",
+        "a": "V Nastavení, spolu s klíčem a předznamenáním. Tam také zapnete metronom a předtaktí."
+      },
+      {
+        "q": "Nic neslyším.",
+        "a": "Zkontrolujte tichý režim a hlasitost médií. Pokud neslyšíte jen metronom, ověřte, že je zapnutý v části Pomůcky přehrávání v Nastavení."
+      },
+      {
+        "q": "Diktování plete noty.",
+        "a": "Použijte sluchátka, aby metronom nepronikal do mikrofonu, a říkejte jednu notu zřetelně na každou dobu. Špatnou notu stačí přetáhnout."
+      },
+      {
+        "q": "Proč aplikace potřebuje fotoaparát?",
+        "a": "Jen k vyfocení papírových not, které pak máte na obrazovce pro srovnání. Fotky zařízení neopouštějí. Bez přístupu k fotoaparátu můžete vybrat fotku z knihovny."
+      },
+      {
+        "q": "Na jakých zařízeních funguje?",
+        "a": "Na iPhonu a iPadu se systémem iOS 17 nebo novějším. Rozhraní je navržené na šířku."
+      },
+      {
+        "q": "Odesílají se někam moje noty nebo hlas?",
+        "a": "Ne. Noty, fotky i hlas zůstávají v zařízení a vše funguje bez internetu. Do iCloudu odchází jen anonymní statistiky používání a hlášení o pádech, které pomáhají aplikaci vylepšovat."
+      },
+      {
+        "q": "Jak vás kontaktovat?",
+        "a": "Napište na leeo@kakao.com, odpověď obvykle přijde do 2 až 3 pracovních dnů. Chyby a nápady můžete hlásit i jako issue na GitHubu: M1zz/StaffSinger."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Před další zkouškou\nzačněte těmi dvěma takty",
+    "cta": "Stáhnout zdarma v App Storu"
+  },
+  "ui": {
+    "skip": "Přeskočit na obsah",
+    "languages": "Jazyk",
+    "privacy": "Zásady ochrany soukromí",
+    "contact": "Dotazy nebo připomínky? Napište na {email}."
+  }
+}

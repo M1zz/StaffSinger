@@ -1,121 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StaffSinger</title>
-<link rel="canonical" href="https://m1zz.github.io/StaffSinger/th/">
-<!-- i18n:head -->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
-<!-- /i18n:head -->
-<style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
-    line-height: 1.7; color: #1d2433; background: #f6f9fd;
-  }
-  header {
-    background: linear-gradient(135deg, #5bb8ff 0%, #4facfe 35%, #1d3a8a 100%);
-    color: #fff; text-align: center; padding: 72px 24px 64px;
-  }
-  header h1 { font-size: 2.2rem; letter-spacing: -0.02em; }
-  header p { margin-top: 10px; opacity: 0.92; }
-  main { max-width: 720px; margin: -32px auto 64px; padding: 0 20px; }
-  .card {
-    background: #fff; border-radius: 16px; padding: 28px 28px;
-    box-shadow: 0 8px 24px rgba(29, 58, 138, 0.10); margin-bottom: 20px;
-  }
-  .card h2 { font-size: 1.2rem; margin-bottom: 8px; color: #1d3a8a; }
-  a.btn {
-    display: inline-block; margin-top: 12px; padding: 10px 20px;
-    background: #4facfe; color: #fff; border-radius: 10px;
-    text-decoration: none; font-weight: 600;
-  }
-  a.btn:hover { background: #3d97e8; }
-  footer { text-align: center; color: #8a93a6; font-size: 0.85rem; padding: 24px; }
-  @media (prefers-color-scheme: dark) {
-    body { background: #10141c; color: #e6eaf2; }
-    .card { background: #1a2030; box-shadow: none; }
-    .card h2 { color: #7fc1ff; }
-  }
-  /* i18n:css */
-  footer nav.langs {
-    margin: 14px auto 0; max-width: 720px; display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 4px 14px; font-size: 0.8rem;
-  }
-  footer nav.langs a { color: inherit; text-decoration: none; }
-  footer nav.langs a:hover { text-decoration: underline; }
-  footer nav.langs [aria-current] { color: #4facfe; font-weight: 600; }
-  /* /i18n:css */
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StaffSinger: เขียนโน้ตบนบรรทัด แล้วฟังได้ทันที</title>
+  <meta name="description" content="คัดห้องเพลงที่อ่านไม่ออกลงบรรทัดห้าเส้น แล้วฟังจังหวะและระดับเสียงตามจริงไปพร้อมเมโทรนอม ทุกฟีเจอร์รวมถึงการพูดชื่อโน้ตใช้ฟรี">
+  <meta name="theme-color" content="#3373D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#10141c" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6779262832">
+  <link rel="canonical" href="https://m1zz.github.io/StaffSinger/th/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StaffSinger: เขียนโน้ตบนบรรทัด แล้วฟังได้ทันที">
+  <meta property="og:description" content="คัดห้องเพลงที่อ่านไม่ออกลงบรรทัดห้าเส้น แล้วฟังจังหวะและระดับเสียงตามจริงไปพร้อมเมโทรนอม ทุกฟีเจอร์รวมถึงการพูดชื่อโน้ตใช้ฟรี">
+  <meta property="og:url" content="https://m1zz.github.io/StaffSinger/th/">
+  <meta property="og:image" content="https://m1zz.github.io/StaffSinger/img/th/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#3373D9}@media (prefers-color-scheme:dark){:root{--accent:#7FB2FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<header>
-  <h1>🎼 StaffSinger</h1>
-  <p>แอป iOS ที่ให้คุณวางตัวโน้ตบนบรรทัดห้าเส้น แล้วเล่นจังหวะและระดับเสียงออกมาเป็นเสียงจริง</p>
-</header>
-<main>
-  <div class="card">
-    <h2>ฝ่ายช่วยเหลือ</h2>
-    <p>วิธีใช้งาน คำถามที่พบบ่อย และช่องทางติดต่อ</p>
-    <a class="btn" href="support.html">เปิดหน้าฝ่ายช่วยเหลือ</a>
-  </div>
-  <div class="card">
-    <h2>นโยบายความเป็นส่วนตัว</h2>
-    <p>ข้อมูลที่ StaffSinger จัดการ และวิธีจัดการข้อมูลเหล่านั้น</p>
-    <a class="btn" href="privacy.html">ดูนโยบายความเป็นส่วนตัว</a>
-  </div>
-</main>
-<footer>© 2026 StaffSinger · <a href="https://github.com/M1zz/StaffSinger">GitHub</a>
-<!-- i18n:nav --><nav class="langs" aria-label="ภาษา">
-  <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-  <a href="../en/index.html" hreflang="en" lang="en">English</a>
-  <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-  <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-  <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-  <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-  <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-  <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-  <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-  <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-  <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-  <span lang="th" aria-current="page">ไทย</span>
-  <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-  <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-  <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-  <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-  <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-  <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-  <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-  <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-  <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-  <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-  <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-</nav><!-- /i18n:nav -->
-</footer>
+  <a class="skip" href="#main">ข้ามไปยังเนื้อหา</a>
+  <header class="bar">
+    <a class="brand" href="../th/"><img src="../icon.png" alt="" width="32" height="32">StaffSinger</a>
+    <a class="lang-link" href="#languages">ภาษา</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>เลิกนับในหัว<br>แล้วฟังให้ชัด</h1>
+        <p class="lead">คัดสองห้องที่ทำให้สะดุดลงบรรทัดห้าเส้นแล้วแตะเล่น หลังนับนำหนึ่งห้อง แอปจะเล่นตามเมโทรนอมด้วยจังหวะและระดับเสียงตามที่เขียนไว้</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6779262832">ดาวน์โหลดฟรีบน App Store</a><a class="try" href="#try">ลองเขียนแล้วฟังดู ↓</a></div>
+        <p class="muted small">ทุกฟีเจอร์ใช้ฟรี รองรับ iPhone และ iPad</p>
+      </div>
+      <div class="plain"><img src="../img/th/01-piano.jpg" alt="เลิกนับในหัว แล้วฟังให้ชัด" width="720" height="331" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>ลองเขียนแล้วฟังดู</h2>
+      <p class="muted">กดค้างบนบรรทัดแล้วเลื่อนขึ้นลงเพื่อเปลี่ยนเสียง ปล่อยนิ้วเพื่อวางโน้ต กดเล่นเพื่อฟังหลังนับนำหนึ่งห้อง มีเสียงออกมา กรุณาตรวจระดับเสียงก่อน</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;ลองเขียนแล้วฟังดู&quot;, &quot;lead&quot;: &quot;กดค้างบนบรรทัดแล้วเลื่อนขึ้นลงเพื่อเปลี่ยนเสียง ปล่อยนิ้วเพื่อวางโน้ต กดเล่นเพื่อฟังหลังนับนำหนึ่งห้อง มีเสียงออกมา กรุณาตรวจระดับเสียงก่อน&quot;, &quot;staff&quot;: &quot;บรรทัดห้าเส้นสองห้อง กดหรือใช้ลูกศรขึ้นลงเพื่อเลือกระดับเสียง แล้วกด Enter เพื่อใส่โน้ต&quot;, &quot;length&quot;: &quot;ความยาวโน้ต&quot;, &quot;half&quot;: &quot;ตัวขาว&quot;, &quot;quarter&quot;: &quot;ตัวดำ&quot;, &quot;eighth&quot;: &quot;เขบ็ตหนึ่งชั้น&quot;, &quot;undo&quot;: &quot;ลบตัวล่าสุด&quot;, &quot;clear&quot;: &quot;ล้างทั้งหมด&quot;, &quot;slower&quot;: &quot;ช้าลง&quot;, &quot;faster&quot;: &quot;เร็วขึ้น&quot;, &quot;play&quot;: &quot;▶ เล่น&quot;, &quot;stop&quot;: &quot;■ หยุด&quot;, &quot;hint&quot;: &quot;กดเล่นเพื่อฟังสองห้องที่ใส่ไว้ให้ก่อน&quot;, &quot;empty&quot;: &quot;กดบนบรรทัดเพื่อใส่โน้ตตัวแรก&quot;, &quot;full&quot;: &quot;สองห้องเต็มแล้ว ลบตัวล่าสุดเพื่อเว้นที่&quot;, &quot;cross&quot;: &quot;โน้ตตัวนี้จะข้ามเส้นกั้นห้อง เลือกความยาวที่สั้นลง&quot;, &quot;note&quot;: &quot;เวอร์ชันเว็บใช้เสียงสังเคราะห์แบบง่าย ส่วนแอปเล่นด้วยเสียงเปียโน และรองรับคอร์ด แนวเสียง โน้ตประจุด โน้ตสามพยางค์ ตัวหยุด และเครื่องหมายประจำกุญแจเสียง&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>นับจังหวะไปมาแล้วหลงอีกแล้วใช่ไหม</h2>
+      <p>เขบ็ตหนึ่งชั้นประจุดตามด้วยเขบ็ตสองชั้น แล้วต่อด้วยโน้ตสามพยางค์ เคาะนับไปเรื่อย ๆ ก็เริ่มคลาด คืนก่อนซ้อมคอรัสก็มักไม่มีเปียโนอยู่ใกล้ตัว StaffSinger ให้คุณคัดสองห้องนั้นลงบรรทัด แล้วฟังจังหวะและระดับเสียงที่ถูกต้องได้ทันที</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>ได้ยินจังหวะและระดับเสียงตามที่เขียน</h2>
+        <p>หลังนับนำหนึ่งห้อง แอปจะเล่นตามเสียงคลิกของเมโทรนอม และไฮไลต์โน้ตที่กำลังดังเป็นสีส้ม ตั้งความเร็วได้ตั้งแต่ 40 ถึง 200 BPM และเลือกอัตราจังหวะ 4/4, 3/4, 2/4, 6/8, 2/2 หรือ 3/8<br>วางโน้ตซ้อนในจังหวะเดียวกันจะกลายเป็นคอร์ดที่ดังพร้อมกัน และเขียนแยกได้สูงสุดสามแนวเสียง เปลี่ยนกุญแจซอล กุญแจอัลโต กุญแจฟา และเครื่องหมายประจำกุญแจเสียงได้</p>
+      </div>
+      <div class="plain"><img src="../img/th/02-playback.jpg" alt="ได้ยินจังหวะและระดับเสียงตามที่เขียน" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>พูดชื่อโน้ต แล้วกลายเป็นโน้ต</h2>
+        <p>หลังเมโทรนอมนับสี่จังหวะ ให้พูด <code>do</code> <code>re</code> <code>mi</code> ตามจังหวะ โน้ตจะลงบรรทัดทันที พูดตรงจังหวะแล้วแอปจะจับความยาวโน้ตเป็นตัวดำ เขบ็ตหนึ่งชั้น หรือเขบ็ตสองชั้นให้ด้วย ตรงที่หยุดให้พูด <code>rest</code><br>พูดชื่อโน้ตด้วยสำเนียงภาษาอังกฤษ เสียงพูดถูกแปลงในเครื่องเท่านั้นและไม่ถูกเก็บไว้</p>
+      </div>
+      <div class="plain"><img src="../img/th/03-dictation.jpg" alt="พูดชื่อโน้ต แล้วกลายเป็นโน้ต" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>ส่งรูปโน้ตให้ AI แล้ววางผลลัพธ์</h2>
+        <p>แตะ <code>คัดลอกกฎให้ AI</code> ส่งให้ AI พร้อมรูปโน้ตเพลง แล้ววางข้อความที่ได้กลับมา บรรทัดห้าเส้นจะเติมให้เอง รูปแบบดูได้จากตารางด้านล่าง<br>ถ่ายรูปโน้ตกระดาษไว้บนจอ แล้วดูไปคัดไปก็ได้</p>
+      </div>
+      <div class="plain"><img src="../img/th/04-paste.jpg" alt="ส่งรูปโน้ตให้ AI แล้ววางผลลัพธ์" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>เริ่มได้ในสามขั้นตอน</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>เลือกห้องที่สะดุด</h3><p>เปิดแอปแล้วจะเห็นบรรทัดว่างสองห้อง</p></li>
+<li class="card"><span class="n">2</span><h3>เขียนโน้ต</h3><p>กดบนบรรทัดหรือเล่นคีย์บอร์ดเปียโน</p></li>
+<li class="card"><span class="n">3</span><h3>แตะเล่น</h3><p>นับนำแล้วเล่นไปพร้อมเมโทรนอม</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>รูปแบบข้อความสำหรับวาง</h2>
+      <div class="card table">
+        <dl><div><dt>C4:4</dt><dd>โน้ต C ในอ็อกเทฟ 4 ตัวดำ (โดกลางคือ C4)</dd></div><div><dt>D:8</dt><dd>ไม่ใส่อ็อกเทฟ จะใช้อ็อกเทฟเดิมต่อ</dd></div><div><dt>F#4:8 · Bb4:4</dt><dd>ชาร์ปใช้ # แฟลตใช้ b</dd></div><div><dt>E4</dt><dd>ไม่ใส่ :ความยาว จะใช้ความยาวเดิมต่อ</dd></div><div><dt>:1 · :2 · :4 · :8 · :16</dt><dd>ตัวกลม ตัวขาว ตัวดำ เขบ็ตหนึ่งชั้น เขบ็ตสองชั้น</dd></div><div><dt>C4:4.</dt><dd>โน้ตประจุด</dd></div><div><dt>C4:8t</dt><dd>โน้ตสามพยางค์</dd></div><div><dt>R:4 · R:8</dt><dd>ตัวหยุด</dd></div></dl>
+      </div>
+      <p class="muted">แตะคัดลอกกฎให้ AI ในแอป จะได้คำอธิบายรูปแบบนี้ไปทั้งชุด เว้นวรรคระหว่างโน้ตแต่ละตัว</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>ทุกฟีเจอร์ใช้ฟรี</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>ฟรี</h3>
+          <ul><li>เขียนบนบรรทัดและคีย์บอร์ดเปียโนสองอ็อกเทฟ</li><li>เล่นพร้อมนับนำและเมโทรนอม</li><li>คอร์ดและสามแนวเสียง</li><li>เครื่องหมายประจำกุญแจเสียงและกุญแจสามแบบ</li><li>พูดชื่อโน้ตเพื่อใส่โน้ต</li><li>วางข้อความและรูปอ้างอิง</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>สนับสนุนผู้พัฒนา</h3>
+          <ul><li>ส่งทิปเล็ก ๆ ได้จากการตั้งค่า</li><li>ส่งทิปแล้วไม่มีฟีเจอร์ใดปลดล็อกเพิ่ม</li></ul>
+          <p class="muted">ไม่ใช่การสมัครสมาชิก จ่ายครั้งเดียวในแต่ละครั้งที่ส่ง</p>
+        </div>
+      </div>
+      <p class="muted">ไม่มีโฆษณา และไม่ต้องสมัครบัญชี</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>คำถามที่พบบ่อย</h2>
+      <div class="faq"><details><summary>ใส่โน้ตอย่างไร</summary><p>เลือกความยาวโน้ตในแถบเครื่องมือก่อน แล้วกดบนบรรทัดตรงระดับเสียงที่ต้องการ ระหว่างกดจะได้ยินเสียงนั้น ปล่อยนิ้วแล้วโน้ตจะถูกใส่ แตะปุ่มคีย์บอร์ดเพื่อใส่ด้วยคีย์บอร์ดเปียโนสองอ็อกเทฟก็ได้</p></details>
+<details><summary>ทำคอร์ดอย่างไร</summary><p>เปิดปุ่มคอร์ดในแถบเครื่องมือแล้วใส่โน้ต โน้ตจะซ้อนบนตัวที่เลือกและดังพร้อมกัน</p></details>
+<details><summary>อยากแก้โน้ตที่ใส่ไปแล้ว</summary><p>ลากโน้ตขึ้นลงเพื่อเปลี่ยนระดับเสียง ลากซ้ายขวาเพื่อย้ายจังหวะ เมื่อเลือกโน้ตแล้ว ใช้ปุ่ม ♯ ♭ เลื่อนทีละครึ่งเสียง และปุ่ม 8va เลื่อนทีละอ็อกเทฟ</p></details>
+<details><summary>เปลี่ยนความเร็วและอัตราจังหวะได้ที่ไหน</summary><p>ในการตั้งค่า รวมถึงกุญแจและเครื่องหมายประจำกุญแจเสียง เปิดปิดเมโทรนอมและการนับนำได้ที่นี่ด้วย</p></details>
+<details><summary>ไม่มีเสียง</summary><p>ตรวจโหมดเงียบและระดับเสียงสื่อ ถ้าไม่ได้ยินเฉพาะเมโทรนอม ให้ดูว่าเปิดเมโทรนอมไว้ในตัวช่วยการเล่นของการตั้งค่าแล้ว</p></details>
+<details><summary>พูดชื่อโน้ตแล้วไม่ค่อยตรง</summary><p>ใช้หูฟังเพื่อไม่ให้เสียงเมโทรนอมเข้าไมค์ พูดทีละตัวให้ชัดและตรงจังหวะ ถ้าได้โน้ตผิด ลากแก้ได้เลย</p></details>
+<details><summary>ทำไมต้องใช้กล้อง</summary><p>ใช้เพื่อถ่ายโน้ตกระดาษมาแสดงบนจอเป็นรูปอ้างอิงเท่านั้น รูปไม่ออกจากเครื่อง ถ้าไม่อนุญาตกล้องก็เลือกรูปจากคลังรูปภาพได้</p></details>
+<details><summary>ใช้กับอุปกรณ์ใดได้บ้าง</summary><p>iPhone และ iPad ที่ใช้ iOS 17 ขึ้นไป หน้าจอออกแบบสำหรับแนวนอน</p></details>
+<details><summary>โน้ตหรือเสียงของฉันถูกส่งไปที่ไหนไหม</summary><p>ไม่ โน้ต รูป และเสียงอยู่ในเครื่องเท่านั้น และใช้งานได้โดยไม่ต้องต่ออินเทอร์เน็ต มีเพียงสถิติการใช้งานแบบไม่ระบุตัวตนและรายงานข้อขัดข้องที่ส่งไปยัง iCloud เพื่อใช้ปรับปรุงแอป</p></details>
+<details><summary>ติดต่อผู้พัฒนาได้อย่างไร</summary><p>ส่งอีเมลมาที่ leeo@kakao.com ปกติจะตอบภายใน 2 ถึง 3 วันทำการ แจ้งปัญหาหรือเสนอฟีเจอร์ผ่าน GitHub ที่ M1zz/StaffSinger ได้เช่นกัน</p></details></div>
+      <p class="contact">มีคำถามหรือข้อเสนอแนะ เขียนมาที่ <a href="mailto:leeo@kakao.com">leeo@kakao.com</a></p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>ก่อนซ้อมครั้งหน้า<br>เริ่มจากสองห้องนั้น</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6779262832">ดาวน์โหลดฟรีบน App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="ภาษา"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th" aria-current="page">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">นโยบายความเป็นส่วนตัว</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 StaffSinger</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

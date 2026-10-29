@@ -1,0 +1,160 @@
+{
+  "title": "StaffSinger: hear the notes you write on the staff",
+  "description": "Copy a tricky passage onto the staff and hear it back with the exact rhythm and pitch, right on the metronome. Every feature, solfège dictation included, is free.",
+  "hero": {
+    "headline": "Stop counting in your head.\nHear it.",
+    "lead": "Copy the two bars that trip you up onto the staff and press play. After a one-bar count-in, StaffSinger plays them in time with the metronome, exact rhythm and pitch.",
+    "cta": "Get it free on the App Store",
+    "note": "Every feature is free. For iPhone and iPad."
+  },
+  "demo": {
+    "title": "Write a few notes and listen",
+    "lead": "Press and hold the staff, slide up or down to change the pitch, and let go to drop the note. Press play for a one-bar count-in and playback. Turn your volume up, it makes sound.",
+    "staff": "Two-bar staff. Press it, or use the up and down arrow keys to pick a pitch and Enter to add it.",
+    "length": "Note value",
+    "half": "Half",
+    "quarter": "Quarter",
+    "eighth": "Eighth",
+    "undo": "Remove last",
+    "clear": "Clear all",
+    "slower": "Slower",
+    "faster": "Faster",
+    "play": "▶ Play",
+    "stop": "■ Stop",
+    "hint": "Press play to hear the two bars already on the staff.",
+    "empty": "Press the staff to add your first note.",
+    "full": "Both bars are full. Remove a note to make room.",
+    "cross": "That note would cross the bar line. Pick a shorter value.",
+    "note": "The web demo uses a simple synth tone. The app plays a piano sound and also handles chords, voices, dotted notes, triplets, rests and key signatures."
+  },
+  "problem": {
+    "title": "Lost count halfway through the bar again?",
+    "text": "A dotted eighth, then a sixteenth, then a triplet right after it, and tapping it out on your knee falls apart. Often there's no piano nearby either, like the night before rehearsal. Copy those two bars into StaffSinger and it plays them back exactly as written."
+  },
+  "features": [
+    {
+      "title": "Hear the exact rhythm and pitch",
+      "text": "After a one-bar count-in, the music plays to the metronome click and the note that's sounding lights up in orange. Set the tempo anywhere from 40 to 200 BPM and pick 4/4, 3/4, 2/4, 6/8, 2/2 or 3/8.\nStack notes on the same beat and they ring together as a chord, and write in up to three voices. Treble, alto and bass clefs and key signatures are all there.",
+      "shot": "02-playback"
+    },
+    {
+      "title": "Sing the note names, get notes",
+      "text": "After four metronome clicks, say `do` `re` `mi` out loud on the beat and they land on the staff. Speak in time and the rhythm is captured too, in quarters, eighths or sixteenths. Say `rest` for a rest.\nSay the names in English. Speech is recognized on your device and never stored.",
+      "shot": "03-dictation"
+    },
+    {
+      "title": "Hand the photo to an AI, paste the result",
+      "text": "Tap `Copy Rule for AI`, give it to an AI along with a photo of your score, and paste back what it writes. The staff fills in. The format is in the table below.\nYou can also snap the printed page and keep it on screen while you copy it out by hand.",
+      "shot": "04-paste"
+    }
+  ],
+  "steps": {
+    "title": "Three steps to start",
+    "items": [
+      {
+        "title": "Pick the tricky bars",
+        "text": "The app opens on an empty two-bar staff."
+      },
+      {
+        "title": "Write the notes",
+        "text": "Press the staff or play the piano keys."
+      },
+      {
+        "title": "Press play",
+        "text": "A count-in, then playback with the metronome."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Text format for pasting",
+    "rows": [
+      ["C4:4", "C in octave 4, quarter note (middle C is C4)"],
+      ["D:8", "Leave out the octave and the previous one carries over"],
+      ["F#4:8 · Bb4:4", "# for sharp, b for flat"],
+      ["E4", "Leave out :length and the previous length carries over"],
+      [":1 · :2 · :4 · :8 · :16", "whole, half, quarter, eighth, sixteenth"],
+      ["C4:4.", "dotted note"],
+      ["C4:8t", "triplet"],
+      ["R:4 · R:8", "rests"]
+    ],
+    "note": "Copy Rule for AI in the app copies these exact instructions. Separate notes with spaces."
+  },
+  "pricing": {
+    "title": "Everything is free",
+    "free": {
+      "name": "Free",
+      "items": [
+        "Staff input and a two-octave piano keyboard",
+        "Playback with count-in and metronome",
+        "Chords and three voices",
+        "Key signatures and three clefs",
+        "Solfège dictation",
+        "Paste as text and reference photos"
+      ]
+    },
+    "pro": {
+      "name": "Support the developer",
+      "items": [
+        "Send a small tip from Settings",
+        "Tips don't unlock anything extra"
+      ],
+      "note": "Not a subscription. Each tip is a one-time payment."
+    },
+    "note": "No ads, and no account needed."
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "q": "How do I add notes?",
+        "a": "Pick a note value in the toolbar first, then press the staff at the pitch you want. You hear the note while you hold, and it's added when you let go. Tap the keyboard button to enter notes on a two-octave piano instead."
+      },
+      {
+        "q": "How do I make a chord?",
+        "a": "Turn on the Chord button in the toolbar and add notes. They stack on the selected note and sound together."
+      },
+      {
+        "q": "How do I fix a note?",
+        "a": "Drag a note up or down to change its pitch, or sideways to move it to another beat. With a note selected, the ♯ and ♭ buttons move it a half step and the 8va buttons move it an octave."
+      },
+      {
+        "q": "Where do I change the tempo or time signature?",
+        "a": "In Settings, along with the clef and key signature. You can also turn the metronome and count-in on or off there."
+      },
+      {
+        "q": "I don't hear anything.",
+        "a": "Check Silent Mode and your media volume. If only the metronome is missing, make sure Metronome is on under Playback Aids in Settings."
+      },
+      {
+        "q": "Dictation keeps getting notes wrong.",
+        "a": "Use earphones so the metronome doesn't bleed into the mic, and say one clear note name per beat. If a note comes out wrong, drag it to fix it."
+      },
+      {
+        "q": "Why does it need the camera?",
+        "a": "Only to take a reference photo of your sheet music to show on screen. Photos never leave your device, and you can pick one from your library without allowing the camera."
+      },
+      {
+        "q": "Which devices does it run on?",
+        "a": "iPhone and iPad with iOS 17 or later. It's designed for landscape."
+      },
+      {
+        "q": "Is my music or voice sent anywhere?",
+        "a": "No. Your scores, photos and voice stay on your device, and everything works offline. Only anonymous usage statistics and crash reports go to iCloud, to help fix the app."
+      },
+      {
+        "q": "How do I get in touch?",
+        "a": "Email leeo@kakao.com. Replies usually come within 2 to 3 business days. Bug reports and feature ideas are also welcome as issues on GitHub at M1zz/StaffSinger."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Before your next rehearsal,\nstart with those two bars",
+    "cta": "Get it free on the App Store"
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "languages": "Language",
+    "privacy": "Privacy Policy",
+    "contact": "Questions or feedback? Write to {email}."
+  }
+}

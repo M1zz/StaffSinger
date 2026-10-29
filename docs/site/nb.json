@@ -1,0 +1,184 @@
+{
+  "title": "StaffSinger: skriv noter i notesystemet og hør dem med en gang",
+  "description": "Skriv inn de vanskelige taktene i notesystemet og hør dem med nøyaktig rytme og tonehøyde til metronom. Alle funksjoner er gratis.",
+  "hero": {
+    "headline": "Slutt å telle i hodet.\nHør det heller.",
+    "lead": "Skriv inn de to taktene du snubler i, og trykk på spill av. Etter én takts inntelling spiller appen dem til metronomen, med nøyaktig den rytmen og tonehøyden som står.",
+    "cta": "Last ned gratis fra App Store",
+    "note": "Alle funksjoner er gratis. For iPhone og iPad."
+  },
+  "demo": {
+    "title": "Skriv noen noter og lytt",
+    "lead": "Hold fingeren på notesystemet og dra opp eller ned for å bytte tone, og slipp for å sette noten. Trykk på Spill, så hører du det etter én takts inntelling. Det kommer lyd, så sjekk volumet.",
+    "staff": "Notesystem på to takter. Trykk, eller velg tonehøyde med pil opp og ned og legg til noten med Enter.",
+    "length": "Noteverdi",
+    "half": "Halvnote",
+    "quarter": "Firedel",
+    "eighth": "Åttendedel",
+    "undo": "Fjern siste",
+    "clear": "Tøm alt",
+    "slower": "Saktere",
+    "faster": "Raskere",
+    "play": "▶ Spill",
+    "stop": "■ Stopp",
+    "hint": "Trykk på Spill for å høre de to taktene som allerede står der.",
+    "empty": "Trykk på notesystemet for å sette den første noten.",
+    "full": "Begge taktene er fulle. Fjern siste note for å få plass.",
+    "cross": "Den noten ville gått over taktstreken. Velg en kortere noteverdi.",
+    "note": "Nettversjonen spiller med en enkel syntlyd. Appen spiller med pianolyd og håndterer akkorder, stemmer, punkterte noter, trioler, pauser og faste fortegn."
+  },
+  "problem": {
+    "title": "Mistet tellingen midt i takten igjen?",
+    "text": "En punktert åttendedel, så en sekstendedel og rett etter en triol. Du banker takten på kneet, og et sted midt i går det i surr. Kvelden før korøvelsen er det sjelden et piano i nærheten heller. I StaffSinger holder det å skrive inn de to taktene, så hører du nøyaktig rytme og tonehøyde."
+  },
+  "features": [
+    {
+      "title": "Rytme og tonehøyde akkurat som det står",
+      "text": "Etter én takts inntelling spiller musikken til metronomens klikk, og noten som klinger, lyser oransje. Tempoet går fra 40 til 200 BPM, og taktarten kan være 4/4, 3/4, 2/4, 6/8, 2/2 eller 3/8.\nNoter på samme slag klinger sammen som en akkord, og du kan skrive opptil tre stemmer. G-nøkkel, altnøkkel, F-nøkkel og faste fortegn er med.",
+      "shot": "02-playback"
+    },
+    {
+      "title": "Si notenavnene, så blir de noter",
+      "text": "Etter fire klikk fra metronomen sier du `do` `re` `mi` i takt, og notene havner i notesystemet. Treffer du slaget, kommer noteverdien med også, som firedeler, åttendedeler eller sekstendedeler. For pause sier du `rest`.\nSi notenavnene på engelsk. Talen gjenkjennes bare på enheten og lagres ikke.",
+      "shot": "03-dictation"
+    },
+    {
+      "title": "Gi notebildet til en KI og lim inn svaret",
+      "text": "Trykk på `Kopier regel til KI`, gi den til en KI sammen med et bilde av notene, og lim inn teksten du får tilbake. Notesystemet fylles ut av seg selv. Formatet står i tabellen nedenfor.\nDu kan også ta bilde av papirnotene, ha det på skjermen og skrive av mens du ser på.",
+      "shot": "04-paste"
+    }
+  ],
+  "steps": {
+    "title": "Kom i gang i tre trinn",
+    "items": [
+      {
+        "title": "Velg de vanskelige taktene",
+        "text": "Appen åpner med et tomt notesystem på to takter."
+      },
+      {
+        "title": "Skriv notene",
+        "text": "Trykk i notesystemet, eller spill på pianotangentene."
+      },
+      {
+        "title": "Trykk på spill av",
+        "text": "Inntelling, så avspilling med metronom."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Tekstformat for innliming",
+    "rows": [
+      [
+        "C4:4",
+        "C i oktav 4, firedel (enstrøken c er C4)"
+      ],
+      [
+        "D:8",
+        "Uten oktav gjelder den forrige"
+      ],
+      [
+        "F#4:8 · Bb4:4",
+        "# for kryss, b for b"
+      ],
+      [
+        "E4",
+        "Uten :noteverdi gjelder den forrige"
+      ],
+      [
+        ":1 · :2 · :4 · :8 · :16",
+        "helnote, halvnote, firedel, åttendedel, sekstendedel"
+      ],
+      [
+        "C4:4.",
+        "punktert note"
+      ],
+      [
+        "C4:8t",
+        "triol"
+      ],
+      [
+        "R:4 · R:8",
+        "pauser"
+      ]
+    ],
+    "note": "Kopier regel til KI i appen kopierer nøyaktig disse instruksjonene. Skill notene med mellomrom."
+  },
+  "pricing": {
+    "title": "Alle funksjoner er gratis",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Innskriving i notesystemet og piano på to oktaver",
+        "Avspilling med inntelling og metronom",
+        "Akkorder og tre stemmer",
+        "Faste fortegn og tre nøkler",
+        "Diktering av notenavn med stemmen",
+        "Lim inn tekst og referansebilde"
+      ]
+    },
+    "pro": {
+      "name": "Støtt utvikleren",
+      "items": [
+        "Send litt tips fra Innstillinger",
+        "Tips låser ikke opp noe ekstra"
+      ],
+      "note": "Ikke et abonnement. Hvert tips er en engangsbetaling."
+    },
+    "note": "Ingen reklame og ingen konto."
+  },
+  "faq": {
+    "title": "Vanlige spørsmål",
+    "items": [
+      {
+        "q": "Hvordan legger jeg inn noter?",
+        "a": "Velg først noteverdi i verktøylinjen, og trykk så i notesystemet på høyden du vil ha. Mens du holder, hører du tonen, og når du slipper, settes noten inn. Med tastaturknappen åpner du et piano på to oktaver."
+      },
+      {
+        "q": "Hvordan lager jeg en akkord?",
+        "a": "Slå på Akkord-knappen i verktøylinjen og legg til noter. De stables oppå den valgte noten og klinger samtidig."
+      },
+      {
+        "q": "Hvordan retter jeg en note?",
+        "a": "Dra noten opp eller ned for å endre tonehøyde, eller sidelengs for å flytte den til et annet slag. Med en note valgt flytter ♯ ♭ den et halvt tonetrinn og 8va en oktav."
+      },
+      {
+        "q": "Hvor endrer jeg tempo og taktart?",
+        "a": "I Innstillinger, sammen med nøkkel og faste fortegn. Der slår du også metronom og inntelling av og på."
+      },
+      {
+        "q": "Det kommer ingen lyd.",
+        "a": "Sjekk lydløs modus og medievolumet. Hvis det bare er metronomen som mangler, se etter at den er slått på under Avspillingshjelp i Innstillinger."
+      },
+      {
+        "q": "Dikteringen blander notene.",
+        "a": "Bruk øreplugger så metronomen ikke lekker inn i mikrofonen, og si én note tydelig per slag. En feil note drar du bare på plass."
+      },
+      {
+        "q": "Hvorfor trenger appen kameraet?",
+        "a": "Bare for å ta bilde av papirnoter du har på skjermen som referanse. Bildene forlater aldri enheten. Uten kameratilgang kan du velge et bilde fra biblioteket."
+      },
+      {
+        "q": "Hvilke enheter virker den på?",
+        "a": "iPhone og iPad med iOS 17 eller nyere. Grensesnittet er laget for liggende format."
+      },
+      {
+        "q": "Blir notene eller stemmen min sendt noe sted?",
+        "a": "Nei. Noter, bilder og stemme blir på enheten, og alt virker uten internett. Bare anonym bruksstatistikk og krasjrapporter sendes til iCloud for å forbedre appen."
+      },
+      {
+        "q": "Hvordan tar jeg kontakt?",
+        "a": "Skriv til leeo@kakao.com, svaret kommer vanligvis innen 2–3 virkedager. Feil og ideer tas også imot som issues på GitHub: M1zz/StaffSinger."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Før neste øvelse,\nbegynn med de to taktene",
+    "cta": "Last ned gratis fra App Store"
+  },
+  "ui": {
+    "skip": "Gå til innhold",
+    "languages": "Språk",
+    "privacy": "Personvernerklæring",
+    "contact": "Spørsmål eller tilbakemeldinger? Skriv til {email}."
+  }
+}

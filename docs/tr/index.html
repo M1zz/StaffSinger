@@ -1,121 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StaffSinger</title>
-<link rel="canonical" href="https://m1zz.github.io/StaffSinger/tr/">
-<!-- i18n:head -->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
-<!-- /i18n:head -->
-<style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
-    line-height: 1.7; color: #1d2433; background: #f6f9fd;
-  }
-  header {
-    background: linear-gradient(135deg, #5bb8ff 0%, #4facfe 35%, #1d3a8a 100%);
-    color: #fff; text-align: center; padding: 72px 24px 64px;
-  }
-  header h1 { font-size: 2.2rem; letter-spacing: -0.02em; }
-  header p { margin-top: 10px; opacity: 0.92; }
-  main { max-width: 720px; margin: -32px auto 64px; padding: 0 20px; }
-  .card {
-    background: #fff; border-radius: 16px; padding: 28px 28px;
-    box-shadow: 0 8px 24px rgba(29, 58, 138, 0.10); margin-bottom: 20px;
-  }
-  .card h2 { font-size: 1.2rem; margin-bottom: 8px; color: #1d3a8a; }
-  a.btn {
-    display: inline-block; margin-top: 12px; padding: 10px 20px;
-    background: #4facfe; color: #fff; border-radius: 10px;
-    text-decoration: none; font-weight: 600;
-  }
-  a.btn:hover { background: #3d97e8; }
-  footer { text-align: center; color: #8a93a6; font-size: 0.85rem; padding: 24px; }
-  @media (prefers-color-scheme: dark) {
-    body { background: #10141c; color: #e6eaf2; }
-    .card { background: #1a2030; box-shadow: none; }
-    .card h2 { color: #7fc1ff; }
-  }
-  /* i18n:css */
-  footer nav.langs {
-    margin: 14px auto 0; max-width: 720px; display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 4px 14px; font-size: 0.8rem;
-  }
-  footer nav.langs a { color: inherit; text-decoration: none; }
-  footer nav.langs a:hover { text-decoration: underline; }
-  footer nav.langs [aria-current] { color: #4facfe; font-weight: 600; }
-  /* /i18n:css */
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StaffSinger: Portreye yazdığınız notaları hemen dinleyin</title>
+  <meta name="description" content="Takıldığınız ölçüleri portreye aktarın, metronomla birlikte tam ritmi ve perdesiyle dinleyin. Sesle nota yazma dahil tüm özellikler ücretsiz.">
+  <meta name="theme-color" content="#3373D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#10141c" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6779262832">
+  <link rel="canonical" href="https://m1zz.github.io/StaffSinger/tr/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StaffSinger: Portreye yazdığınız notaları hemen dinleyin">
+  <meta property="og:description" content="Takıldığınız ölçüleri portreye aktarın, metronomla birlikte tam ritmi ve perdesiyle dinleyin. Sesle nota yazma dahil tüm özellikler ücretsiz.">
+  <meta property="og:url" content="https://m1zz.github.io/StaffSinger/tr/">
+  <meta property="og:image" content="https://m1zz.github.io/StaffSinger/img/tr/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#3373D9}@media (prefers-color-scheme:dark){:root{--accent:#7FB2FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<header>
-  <h1>🎼 StaffSinger</h1>
-  <p>Porteye yerleştirdiğiniz notaların perdesini ve ritmini gerçek sesle çalan bir iOS uygulaması</p>
-</header>
-<main>
-  <div class="card">
-    <h2>Destek</h2>
-    <p>Kullanım bilgileri, sık sorulan sorular ve iletişim bilgileri.</p>
-    <a class="btn" href="support.html">Destek sayfasını aç</a>
-  </div>
-  <div class="card">
-    <h2>Gizlilik Politikası</h2>
-    <p>StaffSinger'ın hangi bilgileri ve nasıl işlediği.</p>
-    <a class="btn" href="privacy.html">Gizlilik Politikasını görüntüle</a>
-  </div>
-</main>
-<footer>© 2026 StaffSinger · <a href="https://github.com/M1zz/StaffSinger">GitHub</a>
-<!-- i18n:nav --><nav class="langs" aria-label="Dil">
-  <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-  <a href="../en/index.html" hreflang="en" lang="en">English</a>
-  <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-  <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-  <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-  <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-  <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-  <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-  <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-  <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-  <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-  <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-  <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-  <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-  <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-  <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-  <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-  <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-  <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-  <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-  <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-  <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-  <span lang="tr" aria-current="page">Türkçe</span>
-</nav><!-- /i18n:nav -->
-</footer>
+  <a class="skip" href="#main">İçeriğe geç</a>
+  <header class="bar">
+    <a class="brand" href="../tr/"><img src="../icon.png" alt="" width="32" height="32">StaffSinger</a>
+    <a class="lang-link" href="#languages">Dil</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Kafanızda saymayı bırakın.<br>Kulağınızla duyun.</h1>
+        <p class="lead">Takıldığınız iki ölçüyü portreye aktarın ve çal düğmesine dokunun. Bir ölçülük girişten sonra uygulama, metronoma uyarak yazıldığı ritim ve perdeyle çalar.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6779262832">App Store’dan ücretsiz indirin</a><a class="try" href="#try">Birkaç nota yazın ve dinleyin ↓</a></div>
+        <p class="muted small">Tüm özellikler ücretsiz. iPhone ve iPad için.</p>
+      </div>
+      <div class="plain"><img src="../img/tr/01-piano.jpg" alt="Kafanızda saymayı bırakın. Kulağınızla duyun." width="720" height="331" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>Birkaç nota yazın ve dinleyin</h2>
+      <p class="muted">Portreye basılı tutup yukarı ya da aşağı kaydırarak sesi değiştirin, bırakınca nota yerleşir. Çal’a basın, bir ölçülük girişten sonra duyarsınız. Ses çıkacak, ses düzeyini kontrol edin.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Birkaç nota yazın ve dinleyin&quot;, &quot;lead&quot;: &quot;Portreye basılı tutup yukarı ya da aşağı kaydırarak sesi değiştirin, bırakınca nota yerleşir. Çal’a basın, bir ölçülük girişten sonra duyarsınız. Ses çıkacak, ses düzeyini kontrol edin.&quot;, &quot;staff&quot;: &quot;İki ölçülük portre. Basın ya da yukarı ve aşağı oklarla perdeyi seçip Enter ile notayı ekleyin.&quot;, &quot;length&quot;: &quot;Süre&quot;, &quot;half&quot;: &quot;İkilik&quot;, &quot;quarter&quot;: &quot;Dörtlük&quot;, &quot;eighth&quot;: &quot;Sekizlik&quot;, &quot;undo&quot;: &quot;Sonuncuyu sil&quot;, &quot;clear&quot;: &quot;Tümünü temizle&quot;, &quot;slower&quot;: &quot;Yavaşlat&quot;, &quot;faster&quot;: &quot;Hızlandır&quot;, &quot;play&quot;: &quot;▶ Çal&quot;, &quot;stop&quot;: &quot;■ Durdur&quot;, &quot;hint&quot;: &quot;Hazır iki ölçüyü dinlemek için Çal’a basın.&quot;, &quot;empty&quot;: &quot;İlk notayı eklemek için portreye basın.&quot;, &quot;full&quot;: &quot;İki ölçü doldu. Yer açmak için son notayı silin.&quot;, &quot;cross&quot;: &quot;Bu nota ölçü çizgisini aşar. Daha kısa bir süre seçin.&quot;, &quot;note&quot;: &quot;Web sürümü basit bir sentez sesiyle çalar. Uygulama piyano sesiyle çalar; akor, ses partisi, noktalı nota, triole, sus ve donanım da destekler.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Ölçünün ortasında yine mi saydığınızı kaybettiniz?</h2>
+      <p>Noktalı sekizlik, ardından onaltılık, hemen yanında da bir triole. Dizinize vurarak sayarken ölçünün ortasında her şey kayıyor. Koro provasından önceki akşam genelde yanınızda bir piyano da olmuyor. StaffSinger’da o iki ölçüyü portreye aktarmanız, doğru ritmi ve perdeyi duymanıza yeter.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ritim ve perde, tam yazıldığı gibi</h2>
+        <p>Bir ölçülük girişten sonra müzik metronom tıklarıyla çalar, o an çalan nota turuncu yanar. Tempo 40 ile 200 BPM arasında; ölçü 4/4, 3/4, 2/4, 6/8, 2/2 ya da 3/8 olabilir.<br>Aynı vuruşa üst üste konan notalar akor olarak birlikte çalar ve üç partiye kadar ayrı yazabilirsiniz. Sol, alto ve fa anahtarları ile donanım da var.</p>
+      </div>
+      <div class="plain"><img src="../img/tr/02-playback.jpg" alt="Ritim ve perde, tam yazıldığı gibi" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Nota adlarını söyleyin, notaya dönüşsün</h2>
+        <p>Metronom dört vuruş saydıktan sonra vuruşa uyarak <code>do</code> <code>re</code> <code>mi</code> deyin, notalar portreye yazılır. Vuruşu tutturursanız süre de dörtlük, sekizlik ya da onaltılık olarak alınır. Sus için <code>rest</code> deyin.<br>Nota adlarını İngilizce söyleyin. Konuşma yalnızca cihazda tanınır ve kaydedilmez.</p>
+      </div>
+      <div class="plain"><img src="../img/tr/03-dictation.jpg" alt="Nota adlarını söyleyin, notaya dönüşsün" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Nota fotoğrafını yapay zekâya verin, sonucu yapıştırın</h2>
+        <p><code>Yapay Zekâ İçin Kuralı Kopyala</code> düğmesine dokunun, kuralı notanın fotoğrafıyla birlikte yapay zekâya verin ve döndüğü metni yapıştırın. Portre kendiliğinden dolar. Biçim aşağıdaki tabloda.<br>Kâğıt notanın fotoğrafını çekip ekranda tutabilir, bakarak da aktarabilirsiniz.</p>
+      </div>
+      <div class="plain"><img src="../img/tr/04-paste.jpg" alt="Nota fotoğrafını yapay zekâya verin, sonucu yapıştırın" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Üç adımda başlayın</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Zor ölçüleri seçin</h3><p>Uygulama iki ölçülük boş bir portreyle açılır.</p></li>
+<li class="card"><span class="n">2</span><h3>Notaları yazın</h3><p>Portreye basın ya da piyano tuşlarını çalın.</p></li>
+<li class="card"><span class="n">3</span><h3>Çal’a dokunun</h3><p>Önce giriş, ardından metronomla çalma.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Yapıştırma için metin biçimi</h2>
+      <div class="card table">
+        <dl><div><dt>C4:4</dt><dd>4. oktavdaki Do, dörtlük (orta Do, C4)</dd></div><div><dt>D:8</dt><dd>Oktav yazılmazsa bir öncekiyle devam eder</dd></div><div><dt>F#4:8 · Bb4:4</dt><dd>Diyez için #, bemol için b</dd></div><div><dt>E4</dt><dd>“:süre” yazılmazsa bir öncekiyle devam eder</dd></div><div><dt>:1 · :2 · :4 · :8 · :16</dt><dd>birlik, ikilik, dörtlük, sekizlik, onaltılık</dd></div><div><dt>C4:4.</dt><dd>noktalı nota</dd></div><div><dt>C4:8t</dt><dd>triole</dd></div><div><dt>R:4 · R:8</dt><dd>suslar</dd></div></dl>
+      </div>
+      <p class="muted">Uygulamadaki Yapay Zekâ İçin Kuralı Kopyala düğmesi bu talimatları aynen kopyalar. Notaları boşlukla ayırın.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Tüm özellikler ücretsiz</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Ücretsiz</h3>
+          <ul><li>Portreye yazma ve iki oktavlık piyano</li><li>Girişli ve metronomlu çalma</li><li>Akorlar ve üç ses partisi</li><li>Donanım ve üç anahtar</li><li>Sesle nota adı yazdırma</li><li>Metin yapıştırma ve referans fotoğrafı</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Geliştiriciyi destekleyin</h3>
+          <ul><li>Ayarlar’dan küçük bir bahşiş gönderebilirsiniz</li><li>Bahşiş hiçbir özelliğin kilidini açmaz</li></ul>
+          <p class="muted">Abonelik değildir. Her bahşiş tek seferlik bir ödemedir.</p>
+        </div>
+      </div>
+      <p class="muted">Reklam yok, hesap açmak gerekmiyor.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Sık sorulan sorular</h2>
+      <div class="faq"><details><summary>Nota nasıl eklenir?</summary><p>Önce araç çubuğundan süreyi seçin, sonra portrede istediğiniz yüksekliğe basın. Basılı tuttuğunuz sürece ses duyulur, bırakınca nota eklenir. Klavye düğmesiyle iki oktavlık piyanodan da girebilirsiniz.</p></details>
+<details><summary>Akor nasıl yapılır?</summary><p>Araç çubuğundaki Akor düğmesini açıp nota ekleyin. Seçili notanın üstüne dizilir ve birlikte çalar.</p></details>
+<details><summary>Bir notayı nasıl düzeltirim?</summary><p>Perdeyi değiştirmek için notayı yukarı ya da aşağı, başka bir vuruşa taşımak için yana sürükleyin. Nota seçiliyken ♯ ♭ düğmeleri yarım ses, 8va düğmeleri bir oktav kaydırır.</p></details>
+<details><summary>Tempo ve ölçü nereden değişir?</summary><p>Ayarlar’dan; anahtar ve donanım da orada. Metronomu ve girişi de oradan açıp kapatırsınız.</p></details>
+<details><summary>Ses gelmiyor.</summary><p>Sessiz modu ve medya ses düzeyini kontrol edin. Yalnızca metronom duyulmuyorsa Ayarlar’daki Çalma Yardımcıları bölümünde metronomun açık olduğundan emin olun.</p></details>
+<details><summary>Sesle yazma notaları karıştırıyor.</summary><p>Metronom mikrofona karışmasın diye kulaklık takın ve her vuruşta bir notayı net söyleyin. Yanlış notayı sürükleyerek düzeltebilirsiniz.</p></details>
+<details><summary>Kamera neden gerekiyor?</summary><p>Yalnızca kâğıt notanın fotoğrafını çekip karşılaştırmak için ekranda göstermek için. Fotoğraflar cihazdan çıkmaz. Kamera izni vermeden fotoğraf arşivinden de seçebilirsiniz.</p></details>
+<details><summary>Hangi cihazlarda çalışır?</summary><p>iOS 17 veya sonrası yüklü iPhone ve iPad’de. Arayüz yatay kullanım için tasarlandı.</p></details>
+<details><summary>Notalarım ya da sesim bir yere gönderiliyor mu?</summary><p>Hayır. Notalar, fotoğraflar ve sesiniz cihazda kalır, her şey internetsiz çalışır. Uygulamayı geliştirmek için yalnızca anonim kullanım istatistikleri ve çökme raporları iCloud’a gider.</p></details>
+<details><summary>Nasıl iletişime geçerim?</summary><p>leeo@kakao.com adresine yazın, genellikle 2–3 iş günü içinde yanıt verilir. Hata bildirimleri ve öneriler GitHub’da M1zz/StaffSinger üzerinden issue olarak da iletilebilir.</p></details></div>
+      <p class="contact">Soru ya da görüşleriniz için <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> adresine yazın.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Bir sonraki provadan önce<br>o iki ölçüyle başlayın</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6779262832">App Store’dan ücretsiz indirin</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Dil"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr" aria-current="page">Türkçe</a></nav>
+    <p><a href="privacy.html">Gizlilik Politikası</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 StaffSinger</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

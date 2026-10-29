@@ -1,121 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StaffSinger</title>
-<link rel="canonical" href="https://m1zz.github.io/StaffSinger/nl/">
-<!-- i18n:head -->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
-<!-- /i18n:head -->
-<style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
-    line-height: 1.7; color: #1d2433; background: #f6f9fd;
-  }
-  header {
-    background: linear-gradient(135deg, #5bb8ff 0%, #4facfe 35%, #1d3a8a 100%);
-    color: #fff; text-align: center; padding: 72px 24px 64px;
-  }
-  header h1 { font-size: 2.2rem; letter-spacing: -0.02em; }
-  header p { margin-top: 10px; opacity: 0.92; }
-  main { max-width: 720px; margin: -32px auto 64px; padding: 0 20px; }
-  .card {
-    background: #fff; border-radius: 16px; padding: 28px 28px;
-    box-shadow: 0 8px 24px rgba(29, 58, 138, 0.10); margin-bottom: 20px;
-  }
-  .card h2 { font-size: 1.2rem; margin-bottom: 8px; color: #1d3a8a; }
-  a.btn {
-    display: inline-block; margin-top: 12px; padding: 10px 20px;
-    background: #4facfe; color: #fff; border-radius: 10px;
-    text-decoration: none; font-weight: 600;
-  }
-  a.btn:hover { background: #3d97e8; }
-  footer { text-align: center; color: #8a93a6; font-size: 0.85rem; padding: 24px; }
-  @media (prefers-color-scheme: dark) {
-    body { background: #10141c; color: #e6eaf2; }
-    .card { background: #1a2030; box-shadow: none; }
-    .card h2 { color: #7fc1ff; }
-  }
-  /* i18n:css */
-  footer nav.langs {
-    margin: 14px auto 0; max-width: 720px; display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 4px 14px; font-size: 0.8rem;
-  }
-  footer nav.langs a { color: inherit; text-decoration: none; }
-  footer nav.langs a:hover { text-decoration: underline; }
-  footer nav.langs [aria-current] { color: #4facfe; font-weight: 600; }
-  /* /i18n:css */
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StaffSinger: hoor de noten die je op de notenbalk zet</title>
+  <meta name="description" content="Zet een lastige passage op de notenbalk en hoor hem met het precieze ritme en de juiste toonhoogte, op de metronoom. Alles gratis, ook het dictaat.">
+  <meta name="theme-color" content="#3373D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#10141c" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6779262832">
+  <link rel="canonical" href="https://m1zz.github.io/StaffSinger/nl/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StaffSinger: hoor de noten die je op de notenbalk zet">
+  <meta property="og:description" content="Zet een lastige passage op de notenbalk en hoor hem met het precieze ritme en de juiste toonhoogte, op de metronoom. Alles gratis, ook het dictaat.">
+  <meta property="og:url" content="https://m1zz.github.io/StaffSinger/nl/">
+  <meta property="og:image" content="https://m1zz.github.io/StaffSinger/img/nl/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#3373D9}@media (prefers-color-scheme:dark){:root{--accent:#7FB2FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<header>
-  <h1>🎼 StaffSinger</h1>
-  <p>Een iOS-app die de toonhoogte en het ritme laat horen van de noten die je op de notenbalk zet</p>
-</header>
-<main>
-  <div class="card">
-    <h2>Ondersteuning</h2>
-    <p>Uitleg over het gebruik, veelgestelde vragen en hoe je contact met ons opneemt.</p>
-    <a class="btn" href="support.html">Naar de ondersteuningspagina</a>
-  </div>
-  <div class="card">
-    <h2>Privacybeleid</h2>
-    <p>Welke gegevens StaffSinger verwerkt en hoe dat gebeurt.</p>
-    <a class="btn" href="privacy.html">Privacybeleid bekijken</a>
-  </div>
-</main>
-<footer>© 2026 StaffSinger · <a href="https://github.com/M1zz/StaffSinger">GitHub</a>
-<!-- i18n:nav --><nav class="langs" aria-label="Taal">
-  <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-  <a href="../en/index.html" hreflang="en" lang="en">English</a>
-  <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-  <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-  <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-  <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-  <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-  <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-  <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-  <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-  <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-  <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-  <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-  <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-  <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-  <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-  <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-  <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-  <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-  <span lang="nl" aria-current="page">Nederlands</span>
-  <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-  <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-  <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-</nav><!-- /i18n:nav -->
-</footer>
+  <a class="skip" href="#main">Naar de inhoud</a>
+  <header class="bar">
+    <a class="brand" href="../nl/"><img src="../icon.png" alt="" width="32" height="32">StaffSinger</a>
+    <a class="lang-link" href="#languages">Taal</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Stop met tellen in je hoofd.<br>Luister gewoon.</h1>
+        <p class="lead">Zet de twee maten waar je over struikelt op de notenbalk en druk op Afspelen. Na één maat voortel speelt StaffSinger ze af op de tik van de metronoom, met het precieze ritme en de juiste toonhoogte.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6779262832">Gratis in de App Store</a><a class="try" href="#try">Zet een paar noten neer en luister ↓</a></div>
+        <p class="muted small">Alle functies zijn gratis. Voor iPhone en iPad.</p>
+      </div>
+      <div class="plain"><img src="../img/nl/01-piano.jpg" alt="Stop met tellen in je hoofd. Luister gewoon." width="720" height="331" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>Zet een paar noten neer en luister</h2>
+      <p class="muted">Houd de notenbalk ingedrukt, schuif omhoog of omlaag om de toonhoogte te veranderen en laat los om de noot te plaatsen. Druk op Afspelen voor één maat voortel en daarna je noten. Zet het geluid aan, de pagina speelt geluid af.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Zet een paar noten neer en luister&quot;, &quot;lead&quot;: &quot;Houd de notenbalk ingedrukt, schuif omhoog of omlaag om de toonhoogte te veranderen en laat los om de noot te plaatsen. Druk op Afspelen voor één maat voortel en daarna je noten. Zet het geluid aan, de pagina speelt geluid af.&quot;, &quot;staff&quot;: &quot;Notenbalk van twee maten. Druk erop, of kies een toonhoogte met de pijltjestoetsen omhoog en omlaag en voeg hem toe met Enter.&quot;, &quot;length&quot;: &quot;Nootwaarde&quot;, &quot;half&quot;: &quot;Halve&quot;, &quot;quarter&quot;: &quot;Kwart&quot;, &quot;eighth&quot;: &quot;Achtste&quot;, &quot;undo&quot;: &quot;Laatste weg&quot;, &quot;clear&quot;: &quot;Alles wissen&quot;, &quot;slower&quot;: &quot;Langzamer&quot;, &quot;faster&quot;: &quot;Sneller&quot;, &quot;play&quot;: &quot;▶ Afspelen&quot;, &quot;stop&quot;: &quot;■ Stop&quot;, &quot;hint&quot;: &quot;Druk op Afspelen om de twee maten te horen die al op de notenbalk staan.&quot;, &quot;empty&quot;: &quot;Druk op de notenbalk om je eerste noot te plaatsen.&quot;, &quot;full&quot;: &quot;Beide maten zijn vol. Haal een noot weg om ruimte te maken.&quot;, &quot;cross&quot;: &quot;Die noot zou over de maatstreep gaan. Kies een kortere nootwaarde.&quot;, &quot;note&quot;: &quot;De webdemo gebruikt een eenvoudige synthesizerklank. De app speelt met een pianoklank en kan ook akkoorden, stemmen, gepunteerde noten, triolen, rusten en voortekeningen aan.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Weer de tel kwijt halverwege de maat?</h2>
+      <p>Een gepunteerde achtste, dan een zestiende en meteen daarna een triool, en meetikken op je knie loopt vast. Vaak staat er ook geen piano in de buurt, zoals de avond voor de repetitie. Zet die twee maten in StaffSinger en de app speelt ze precies zoals ze er staan.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Hoor precies het ritme en de toonhoogte</h2>
+        <p>Na één maat voortel klinkt de muziek op de tik van de metronoom en licht de klinkende noot oranje op. Stel het tempo in tussen 40 en 200 BPM en kies 4/4, 3/4, 2/4, 6/8, 2/2 of 3/8.<br>Stapel noten op dezelfde tel en ze klinken samen als akkoord, en schrijf in maximaal drie stemmen. Viool-, alt- en bassleutel en voortekeningen zijn er allemaal.</p>
+      </div>
+      <div class="plain"><img src="../img/nl/02-playback.jpg" alt="Hoor precies het ritme en de toonhoogte" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Zing de nootnamen, krijg de noten</h2>
+        <p>Na vier tikken van de metronoom zeg je <code>do</code> <code>re</code> <code>mi</code> hardop op de maat, en ze komen op de notenbalk. Spreek je precies op de tel, dan wordt ook het ritme vastgelegd, in kwarten, achtsten of zestienden. Zeg <code>rest</code> voor een rust.<br>Zeg de namen in het Engels: do re mi fa sol la ti, dus ti in plaats van si. De spraakherkenning gebeurt op je apparaat en er wordt niets bewaard.</p>
+      </div>
+      <div class="plain"><img src="../img/nl/03-dictation.jpg" alt="Zing de nootnamen, krijg de noten" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Geef de foto aan een AI, plak het resultaat</h2>
+        <p>Tik op <code>Kopieer regel voor AI</code>, geef die samen met een foto van je partituur aan een AI en plak wat je terugkrijgt. De notenbalk vult zich. Het formaat staat in de tabel hieronder.<br>Je kunt ook de gedrukte bladzijde fotograferen en op het scherm houden terwijl je hem met de hand overschrijft.</p>
+      </div>
+      <div class="plain"><img src="../img/nl/04-paste.jpg" alt="Geef de foto aan een AI, plak het resultaat" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>In drie stappen aan de slag</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Kies de lastige maten</h3><p>De app opent met een lege notenbalk van twee maten.</p></li>
+<li class="card"><span class="n">2</span><h3>Zet de noten neer</h3><p>Druk op de notenbalk of speel op de pianotoetsen.</p></li>
+<li class="card"><span class="n">3</span><h3>Druk op Afspelen</h3><p>Eerst de voortel, dan afspelen met metronoom.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Tekstformaat om te plakken</h2>
+      <div class="card table">
+        <dl><div><dt>C4:4</dt><dd>C in octaaf 4, kwartnoot (de centrale C is C4)</dd></div><div><dt>D:8</dt><dd>Laat je het octaaf weg, dan geldt het vorige</dd></div><div><dt>F#4:8 · Bb4:4</dt><dd># voor een kruis, b voor een mol</dd></div><div><dt>E4</dt><dd>Laat je :lengte weg, dan geldt de vorige lengte</dd></div><div><dt>:1 · :2 · :4 · :8 · :16</dt><dd>hele, halve, kwart, achtste, zestiende</dd></div><div><dt>C4:4.</dt><dd>gepunteerde noot</dd></div><div><dt>C4:8t</dt><dd>triool</dd></div><div><dt>R:4 · R:8</dt><dd>rusten</dd></div></dl>
+      </div>
+      <p class="muted">De knop Kopieer regel voor AI in de app kopieert precies deze instructies. Scheid de noten met spaties.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Alles is gratis</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Gratis</h3>
+          <ul><li>Invoer op de notenbalk en pianotoetsenbord van twee octaven</li><li>Afspelen met voortel en metronoom</li><li>Akkoorden en drie stemmen</li><li>Voortekeningen en drie sleutels</li><li>Solfège-dictaat</li><li>Plakken als tekst en referentiefoto's</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Steun de ontwikkelaar</h3>
+          <ul><li>Geef een kleine fooi via Instellingen</li><li>Een fooi ontgrendelt niets extra's</li></ul>
+          <p class="muted">Geen abonnement. Elke fooi is een eenmalige betaling.</p>
+        </div>
+      </div>
+      <p class="muted">Geen advertenties en geen account nodig.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Vragen</h2>
+      <div class="faq"><details><summary>Hoe voeg ik noten toe?</summary><p>Kies eerst een nootwaarde in de werkbalk en druk dan op de notenbalk op de gewenste toonhoogte. Zolang je vasthoudt hoor je de noot, en bij loslaten wordt hij toegevoegd. Tik op de toetsenbordknop om noten in te voeren op een piano van twee octaven.</p></details>
+<details><summary>Hoe maak ik een akkoord?</summary><p>Zet de knop Akkoord in de werkbalk aan en voeg noten toe. Ze worden op de geselecteerde noot gestapeld en klinken samen.</p></details>
+<details><summary>Hoe verbeter ik een noot?</summary><p>Sleep een noot omhoog of omlaag om de toonhoogte te veranderen, of opzij om hem naar een andere tel te verplaatsen. Met een noot geselecteerd verschuiven de knoppen ♯ en ♭ hem een halve toon en de 8va-knoppen een octaaf.</p></details>
+<details><summary>Waar verander ik het tempo of de maatsoort?</summary><p>In Instellingen, samen met de sleutel en de voortekening. Daar zet je ook de metronoom en de voortel aan of uit.</p></details>
+<details><summary>Ik hoor niets.</summary><p>Controleer de stille modus en het mediavolume. Hoor je alleen de metronoom niet, kijk dan in Instellingen onder Afspeelhulp of de metronoom aanstaat.</p></details>
+<details><summary>Het dictaat haalt noten door elkaar.</summary><p>Gebruik oortjes zodat de metronoom niet in de microfoon lekt, en zeg per tel één duidelijke nootnaam. Komt een noot verkeerd uit, sleep hem dan naar de goede plek.</p></details>
+<details><summary>Waarom heeft de app de camera nodig?</summary><p>Alleen om een referentiefoto van je bladmuziek te maken en op het scherm te tonen. Foto's verlaten je apparaat nooit, en je kunt er ook een uit je fotobibliotheek kiezen zonder de camera toe te staan.</p></details>
+<details><summary>Op welke apparaten werkt de app?</summary><p>Op iPhone en iPad met iOS 17 of nieuwer. De app is gemaakt voor liggend gebruik.</p></details>
+<details><summary>Wordt mijn muziek of stem ergens naartoe gestuurd?</summary><p>Nee. Je partituren, foto's en stem blijven op je apparaat, en alles werkt offline. Alleen anonieme gebruiksstatistieken en crashrapporten gaan naar iCloud, zodat fouten in de app opgelost kunnen worden.</p></details>
+<details><summary>Hoe neem ik contact op?</summary><p>Mail naar leeo@kakao.com. Meestal krijg je binnen 2 tot 3 werkdagen antwoord. Bugmeldingen en ideeën voor functies zijn ook welkom als issue op GitHub, bij M1zz/StaffSinger.</p></details></div>
+      <p class="contact">Vragen of feedback? Schrijf naar <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Begin voor je volgende repetitie<br>met die twee maten</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6779262832">Gratis in de App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Taal"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl" aria-current="page">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Privacybeleid</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 StaffSinger</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

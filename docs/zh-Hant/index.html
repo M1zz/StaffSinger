@@ -1,121 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StaffSinger</title>
-<link rel="canonical" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
-<!-- i18n:head -->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
-<!-- /i18n:head -->
-<style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
-    line-height: 1.7; color: #1d2433; background: #f6f9fd;
-  }
-  header {
-    background: linear-gradient(135deg, #5bb8ff 0%, #4facfe 35%, #1d3a8a 100%);
-    color: #fff; text-align: center; padding: 72px 24px 64px;
-  }
-  header h1 { font-size: 2.2rem; letter-spacing: -0.02em; }
-  header p { margin-top: 10px; opacity: 0.92; }
-  main { max-width: 720px; margin: -32px auto 64px; padding: 0 20px; }
-  .card {
-    background: #fff; border-radius: 16px; padding: 28px 28px;
-    box-shadow: 0 8px 24px rgba(29, 58, 138, 0.10); margin-bottom: 20px;
-  }
-  .card h2 { font-size: 1.2rem; margin-bottom: 8px; color: #1d3a8a; }
-  a.btn {
-    display: inline-block; margin-top: 12px; padding: 10px 20px;
-    background: #4facfe; color: #fff; border-radius: 10px;
-    text-decoration: none; font-weight: 600;
-  }
-  a.btn:hover { background: #3d97e8; }
-  footer { text-align: center; color: #8a93a6; font-size: 0.85rem; padding: 24px; }
-  @media (prefers-color-scheme: dark) {
-    body { background: #10141c; color: #e6eaf2; }
-    .card { background: #1a2030; box-shadow: none; }
-    .card h2 { color: #7fc1ff; }
-  }
-  /* i18n:css */
-  footer nav.langs {
-    margin: 14px auto 0; max-width: 720px; display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 4px 14px; font-size: 0.8rem;
-  }
-  footer nav.langs a { color: inherit; text-decoration: none; }
-  footer nav.langs a:hover { text-decoration: underline; }
-  footer nav.langs [aria-current] { color: #4facfe; font-weight: 600; }
-  /* /i18n:css */
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StaffSinger：寫在五線譜上的音符，馬上就能聽</title>
+  <meta name="description" content="把視奏時卡住的小節抄到五線譜上，就能跟著節拍器照原本的節奏和音高播放。唱名語音輸入等所有功能都免費。">
+  <meta name="theme-color" content="#3373D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#10141c" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6779262832">
+  <link rel="canonical" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StaffSinger：寫在五線譜上的音符，馬上就能聽">
+  <meta property="og:description" content="把視奏時卡住的小節抄到五線譜上，就能跟著節拍器照原本的節奏和音高播放。唱名語音輸入等所有功能都免費。">
+  <meta property="og:url" content="https://m1zz.github.io/StaffSinger/zh-Hant/">
+  <meta property="og:image" content="https://m1zz.github.io/StaffSinger/img/zh-Hant/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#3373D9}@media (prefers-color-scheme:dark){:root{--accent:#7FB2FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<header>
-  <h1>🎼 StaffSinger</h1>
-  <p>在五線譜上放下音符，就能用真實的聲音聽到節奏與音高的 iOS App</p>
-</header>
-<main>
-  <div class="card">
-    <h2>支援</h2>
-    <p>使用方式、常見問題與聯絡方式。</p>
-    <a class="btn" href="support.html">開啟支援頁面</a>
-  </div>
-  <div class="card">
-    <h2>隱私權政策</h2>
-    <p>說明 StaffSinger 會處理哪些資訊，以及如何處理。</p>
-    <a class="btn" href="privacy.html">檢視隱私權政策</a>
-  </div>
-</main>
-<footer>© 2026 StaffSinger · <a href="https://github.com/M1zz/StaffSinger">GitHub</a>
-<!-- i18n:nav --><nav class="langs" aria-label="語言">
-  <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-  <a href="../en/index.html" hreflang="en" lang="en">English</a>
-  <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-  <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-  <span lang="zh-Hant" aria-current="page">繁體中文</span>
-  <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-  <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-  <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-  <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-  <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-  <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-  <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-  <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-  <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-  <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-  <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-  <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-  <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-  <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-  <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-  <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-  <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-  <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-</nav><!-- /i18n:nav -->
-</footer>
+  <a class="skip" href="#main">跳到主要內容</a>
+  <header class="bar">
+    <a class="brand" href="../zh-Hant/"><img src="../icon.png" alt="" width="32" height="32">StaffSinger</a>
+    <a class="lang-link" href="#languages">語言</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>別再在腦中數拍子，<br>用耳朵確認</h1>
+        <p class="lead">把拿不準的兩小節抄到五線譜上，點一下播放。預備拍一小節之後，跟著節拍器照原本的節奏和音高演奏出來。</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6779262832">在 App Store 免費下載</a><a class="try" href="#try">寫幾個音，聽聽看 ↓</a></div>
+        <p class="muted small">所有功能免費，支援 iPhone 和 iPad。</p>
+      </div>
+      <div class="plain"><img src="../img/zh-Hant/01-piano.jpg" alt="別再在腦中數拍子， 用耳朵確認" width="720" height="331" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>寫幾個音，聽聽看</h2>
+      <p class="muted">按住五線譜上下滑動可以換音，放開手指就放下音符。按播放，預備拍一小節後開始演奏。會發出聲音，請留意音量。</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;寫幾個音，聽聽看&quot;, &quot;lead&quot;: &quot;按住五線譜上下滑動可以換音，放開手指就放下音符。按播放，預備拍一小節後開始演奏。會發出聲音，請留意音量。&quot;, &quot;staff&quot;: &quot;兩小節五線譜。按下或用上下方向鍵選擇音高，按 Enter 放入音符。&quot;, &quot;length&quot;: &quot;時值&quot;, &quot;half&quot;: &quot;二分音符&quot;, &quot;quarter&quot;: &quot;四分音符&quot;, &quot;eighth&quot;: &quot;八分音符&quot;, &quot;undo&quot;: &quot;刪掉一個&quot;, &quot;clear&quot;: &quot;全部清除&quot;, &quot;slower&quot;: &quot;放慢&quot;, &quot;faster&quot;: &quot;加快&quot;, &quot;play&quot;: &quot;▶ 播放&quot;, &quot;stop&quot;: &quot;■ 停止&quot;, &quot;hint&quot;: &quot;先按播放，聽聽已經寫好的兩小節。&quot;, &quot;empty&quot;: &quot;按一下五線譜，放入第一個音。&quot;, &quot;full&quot;: &quot;兩小節已經寫滿了。用「刪掉一個」騰出位置吧。&quot;, &quot;cross&quot;: &quot;這個音符會跨過小節線，請換一個較短的時值。&quot;, &quot;note&quot;: &quot;網頁體驗使用簡單的合成音。App 以鋼琴音色演奏，還支援和弦、聲部、附點、三連音、休止符和調號。&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>數著數著拍子又亂了？</h2>
+      <p>附點八分接十六分，旁邊再來一組三連音，用手打著拍子數，不知不覺就對不上了。合唱練習前一晚，身邊往往也沒有鋼琴。用 StaffSinger 把這兩小節照抄到五線譜上，就能聽到準確的節奏和音高。</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>節奏和音高，照寫的播放</h2>
+        <p>預備拍一小節後，跟著節拍器的滴答聲演奏，正在發聲的音符會以橘色標示。速度可在 40 到 200 BPM 之間調整，拍號可選 4/4、3/4、2/4、6/8、2/2、3/8。<br>同一拍上疊放音符就是和弦，會一起發聲；最多可分三個聲部書寫。高音譜號、中音譜號、低音譜號和調號也都能切換。</p>
+      </div>
+      <div class="plain"><img src="../img/zh-Hant/02-playback.jpg" alt="節奏和音高，照寫的播放" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>開口唸唱名，就變成音符</h2>
+        <p>節拍器數完四拍後，跟著拍子說出 <code>do</code> <code>re</code> <code>mi</code>，音符就會寫進五線譜。踩著拍子說，還能依四分、八分、十六分記下時值。休止就說 <code>rest</code>。<br>唱名請用英語發音。語音只在裝置上辨識，不會儲存。</p>
+      </div>
+      <div class="plain"><img src="../img/zh-Hant/03-dictation.jpg" alt="開口唸唱名，就變成音符" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>樂譜照片交給 AI，結果直接貼上</h2>
+        <p>點 <code>複製給 AI 的規則</code>，連同樂譜照片一起交給 AI，再把它回傳的文字貼回來，五線譜就填好了。格式見下表。<br>也可以拍下紙本樂譜放在螢幕上，邊看邊抄。</p>
+      </div>
+      <div class="plain"><img src="../img/zh-Hant/04-paste.jpg" alt="樂譜照片交給 AI，結果直接貼上" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>三個步驟就能開始</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>挑出卡住的小節</h3><p>打開 App 就是空白的兩小節五線譜。</p></li>
+<li class="card"><span class="n">2</span><h3>寫下音符</h3><p>按五線譜或彈鋼琴鍵盤來輸入。</p></li>
+<li class="card"><span class="n">3</span><h3>按播放</h3><p>預備拍之後，跟著節拍器播放。</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>貼上文字時的格式</h2>
+      <div class="card table">
+        <dl><div><dt>C4:4</dt><dd>第 4 八度的 C，四分音符（中央 C 為 C4）</dd></div><div><dt>D:8</dt><dd>省略八度時沿用前一個音的八度</dd></div><div><dt>F#4:8 · Bb4:4</dt><dd>升記號寫 #，降記號寫 b</dd></div><div><dt>E4</dt><dd>省略「:時值」時沿用前一個音的時值</dd></div><div><dt>:1 · :2 · :4 · :8 · :16</dt><dd>全音符、二分、四分、八分、十六分音符</dd></div><div><dt>C4:4.</dt><dd>附點音符</dd></div><div><dt>C4:8t</dt><dd>三連音</dd></div><div><dt>R:4 · R:8</dt><dd>休止符</dd></div></dl>
+      </div>
+      <p class="muted">在 App 裡點「複製給 AI 的規則」，就會原樣複製這套格式說明。音符之間以空格分隔。</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>所有功能都免費</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>免費</h3>
+          <ul><li>五線譜輸入與兩個八度的鋼琴鍵盤</li><li>附預備拍和節拍器的播放</li><li>和弦與三個聲部</li><li>調號與三種譜號</li><li>唱名語音輸入</li><li>文字貼上與參考照片</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>支持開發者</h3>
+          <ul><li>可以在設定中送一點小費</li><li>送小費不會解鎖額外功能</li></ul>
+          <p class="muted">不是訂閱，每次送出都是一次性付款。</p>
+        </div>
+      </div>
+      <p class="muted">沒有廣告，也不需要註冊帳號。</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>常見問題</h2>
+      <div class="faq"><details><summary>要怎麼輸入音符？</summary><p>先在工具列選好時值，再按住五線譜上想要的高度。按住時會聽到這個音，放開手指就放下音符。點鍵盤按鈕，也可以用兩個八度的鋼琴鍵盤輸入。</p></details>
+<details><summary>要怎麼做和弦？</summary><p>打開工具列的「和弦」按鈕再輸入，新音符會疊在選取的音符上，一起發聲。</p></details>
+<details><summary>想修改已經寫好的音。</summary><p>上下拖曳音符改音高，左右拖曳改所在的拍。選取音符後，用 ♯ ♭ 按鈕以半音移動，用 8va 按鈕以八度移動。</p></details>
+<details><summary>在哪裡改速度和拍號？</summary><p>在設定裡，和譜號、調號放在一起。節拍器和預備拍的開關也在這裡。</p></details>
+<details><summary>沒有聲音。</summary><p>請檢查靜音模式和媒體音量。如果只是聽不到節拍器，請到設定的「播放輔助」確認節拍器已開啟。</p></details>
+<details><summary>唱名輸入老是不準。</summary><p>戴上耳機，節拍器的聲音就不會混進麥克風。一個音一個音、踩準拍子清楚地說。寫錯的音拖曳一下就能修正。</p></details>
+<details><summary>為什麼需要相機？</summary><p>只用來拍下紙本樂譜，當作參考照片顯示在螢幕上。照片不會離開你的裝置。不允許使用相機，也可以從照片圖庫匯入。</p></details>
+<details><summary>支援哪些裝置？</summary><p>iOS 17 或以上版本的 iPhone 和 iPad，介面為橫向設計。</p></details>
+<details><summary>我的樂譜或聲音會被上傳嗎？</summary><p>不會。樂譜、照片和語音都留在裝置上，沒有網路也能使用。只有匿名的使用統計和當機報告會傳送到 iCloud，用來改進 App。</p></details>
+<details><summary>要怎麼聯絡開發者？</summary><p>請寄信到 leeo@kakao.com，通常 2 到 3 個工作天內回覆。也歡迎在 GitHub 的 M1zz/StaffSinger 回報問題或提出功能建議。</p></details></div>
+      <p class="contact">有問題或建議，請寫信到 <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>。</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>下次練習之前，<br>先從這兩小節開始</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6779262832">在 App Store 免費下載</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="語言"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant" aria-current="page">繁體中文</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">隱私權政策</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 StaffSinger</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

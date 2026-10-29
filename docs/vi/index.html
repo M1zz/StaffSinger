@@ -1,121 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StaffSinger</title>
-<link rel="canonical" href="https://m1zz.github.io/StaffSinger/vi/">
-<!-- i18n:head -->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
-<!-- /i18n:head -->
-<style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
-    line-height: 1.7; color: #1d2433; background: #f6f9fd;
-  }
-  header {
-    background: linear-gradient(135deg, #5bb8ff 0%, #4facfe 35%, #1d3a8a 100%);
-    color: #fff; text-align: center; padding: 72px 24px 64px;
-  }
-  header h1 { font-size: 2.2rem; letter-spacing: -0.02em; }
-  header p { margin-top: 10px; opacity: 0.92; }
-  main { max-width: 720px; margin: -32px auto 64px; padding: 0 20px; }
-  .card {
-    background: #fff; border-radius: 16px; padding: 28px 28px;
-    box-shadow: 0 8px 24px rgba(29, 58, 138, 0.10); margin-bottom: 20px;
-  }
-  .card h2 { font-size: 1.2rem; margin-bottom: 8px; color: #1d3a8a; }
-  a.btn {
-    display: inline-block; margin-top: 12px; padding: 10px 20px;
-    background: #4facfe; color: #fff; border-radius: 10px;
-    text-decoration: none; font-weight: 600;
-  }
-  a.btn:hover { background: #3d97e8; }
-  footer { text-align: center; color: #8a93a6; font-size: 0.85rem; padding: 24px; }
-  @media (prefers-color-scheme: dark) {
-    body { background: #10141c; color: #e6eaf2; }
-    .card { background: #1a2030; box-shadow: none; }
-    .card h2 { color: #7fc1ff; }
-  }
-  /* i18n:css */
-  footer nav.langs {
-    margin: 14px auto 0; max-width: 720px; display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 4px 14px; font-size: 0.8rem;
-  }
-  footer nav.langs a { color: inherit; text-decoration: none; }
-  footer nav.langs a:hover { text-decoration: underline; }
-  footer nav.langs [aria-current] { color: #4facfe; font-weight: 600; }
-  /* /i18n:css */
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StaffSinger: viết nốt lên khuông nhạc, nghe ngay</title>
+  <meta name="description" content="Chép đoạn nhạc khó đọc lên khuông và nghe lại đúng nhịp, đúng cao độ theo máy đếm nhịp. Mọi tính năng, kể cả đọc tên nốt bằng giọng nói, đều miễn phí.">
+  <meta name="theme-color" content="#3373D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#10141c" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6779262832">
+  <link rel="canonical" href="https://m1zz.github.io/StaffSinger/vi/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StaffSinger: viết nốt lên khuông nhạc, nghe ngay">
+  <meta property="og:description" content="Chép đoạn nhạc khó đọc lên khuông và nghe lại đúng nhịp, đúng cao độ theo máy đếm nhịp. Mọi tính năng, kể cả đọc tên nốt bằng giọng nói, đều miễn phí.">
+  <meta property="og:url" content="https://m1zz.github.io/StaffSinger/vi/">
+  <meta property="og:image" content="https://m1zz.github.io/StaffSinger/img/vi/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#3373D9}@media (prefers-color-scheme:dark){:root{--accent:#7FB2FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<header>
-  <h1>🎼 StaffSinger</h1>
-  <p>Ứng dụng iOS phát lại cao độ và tiết tấu của những nốt nhạc bạn đặt trên khuông nhạc bằng âm thanh thật</p>
-</header>
-<main>
-  <div class="card">
-    <h2>Hỗ trợ</h2>
-    <p>Hướng dẫn sử dụng, câu hỏi thường gặp và cách liên hệ.</p>
-    <a class="btn" href="support.html">Mở trang hỗ trợ</a>
-  </div>
-  <div class="card">
-    <h2>Chính sách quyền riêng tư</h2>
-    <p>StaffSinger xử lý những thông tin nào và xử lý ra sao.</p>
-    <a class="btn" href="privacy.html">Xem chính sách quyền riêng tư</a>
-  </div>
-</main>
-<footer>© 2026 StaffSinger · <a href="https://github.com/M1zz/StaffSinger">GitHub</a>
-<!-- i18n:nav --><nav class="langs" aria-label="Ngôn ngữ">
-  <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-  <a href="../en/index.html" hreflang="en" lang="en">English</a>
-  <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-  <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-  <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-  <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-  <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-  <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-  <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-  <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-  <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-  <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-  <span lang="vi" aria-current="page">Tiếng Việt</span>
-  <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-  <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-  <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-  <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-  <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-  <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-  <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-  <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-  <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-  <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-</nav><!-- /i18n:nav -->
-</footer>
+  <a class="skip" href="#main">Chuyển đến nội dung</a>
+  <header class="bar">
+    <a class="brand" href="../vi/"><img src="../icon.png" alt="" width="32" height="32">StaffSinger</a>
+    <a class="lang-link" href="#languages">Ngôn ngữ</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Đừng đếm trong đầu nữa,<br>hãy nghe thử</h1>
+        <p class="lead">Chép hai ô nhịp khiến bạn lúng túng lên khuông rồi bấm phát. Sau một ô nhịp đếm vào, ứng dụng chơi đúng nhịp, đúng cao độ theo máy đếm nhịp.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6779262832">Tải miễn phí trên App Store</a><a class="try" href="#try">Viết vài nốt và nghe thử ↓</a></div>
+        <p class="muted small">Mọi tính năng đều miễn phí. Dành cho iPhone và iPad.</p>
+      </div>
+      <div class="plain"><img src="../img/vi/01-piano.jpg" alt="Đừng đếm trong đầu nữa, hãy nghe thử" width="720" height="331" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>Viết vài nốt và nghe thử</h2>
+      <p class="muted">Nhấn giữ khuông nhạc, kéo lên xuống để đổi nốt, nhấc tay để đặt nốt. Bấm phát để nghe sau một ô nhịp đếm vào. Có âm thanh, hãy kiểm tra âm lượng.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Viết vài nốt và nghe thử&quot;, &quot;lead&quot;: &quot;Nhấn giữ khuông nhạc, kéo lên xuống để đổi nốt, nhấc tay để đặt nốt. Bấm phát để nghe sau một ô nhịp đếm vào. Có âm thanh, hãy kiểm tra âm lượng.&quot;, &quot;staff&quot;: &quot;Khuông nhạc hai ô nhịp. Nhấn hoặc dùng phím mũi tên lên xuống để chọn cao độ, Enter để thêm nốt.&quot;, &quot;length&quot;: &quot;Trường độ&quot;, &quot;half&quot;: &quot;Nốt trắng&quot;, &quot;quarter&quot;: &quot;Nốt đen&quot;, &quot;eighth&quot;: &quot;Nốt móc đơn&quot;, &quot;undo&quot;: &quot;Xóa nốt cuối&quot;, &quot;clear&quot;: &quot;Xóa hết&quot;, &quot;slower&quot;: &quot;Chậm hơn&quot;, &quot;faster&quot;: &quot;Nhanh hơn&quot;, &quot;play&quot;: &quot;▶ Phát&quot;, &quot;stop&quot;: &quot;■ Dừng&quot;, &quot;hint&quot;: &quot;Bấm phát để nghe hai ô nhịp có sẵn trước.&quot;, &quot;empty&quot;: &quot;Nhấn vào khuông để thêm nốt đầu tiên.&quot;, &quot;full&quot;: &quot;Hai ô nhịp đã đầy. Hãy xóa nốt cuối để có chỗ.&quot;, &quot;cross&quot;: &quot;Nốt này sẽ vượt qua vạch nhịp. Hãy chọn trường độ ngắn hơn.&quot;, &quot;note&quot;: &quot;Bản web dùng âm thanh tổng hợp đơn giản. Ứng dụng chơi bằng tiếng piano và hỗ trợ hợp âm, bè, nốt chấm dôi, chùm ba, dấu lặng và hóa biểu.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Đếm phách mãi rồi lại rối?</h2>
+      <p>Móc đơn chấm dôi, rồi móc kép, ngay sau đó là chùm ba. Gõ tay đếm một lúc là lệch lúc nào không hay. Tối trước buổi tập hợp xướng, bên cạnh thường cũng chẳng có cây đàn nào. Với StaffSinger, chỉ cần chép hai ô nhịp đó lên khuông là nghe được đúng nhịp, đúng cao độ.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Nghe đúng nhịp, đúng cao độ</h2>
+        <p>Sau một ô nhịp đếm vào, bản nhạc chạy theo tiếng gõ của máy đếm nhịp và nốt đang vang được tô màu cam. Chỉnh tốc độ từ 40 đến 200 BPM và chọn nhịp 4/4, 3/4, 2/4, 6/8, 2/2 hoặc 3/8.<br>Đặt chồng nốt trên cùng một phách để tạo hợp âm vang cùng lúc, và viết tách tối đa ba bè. Có cả khóa Sol, khóa Đô (alto), khóa Fa và hóa biểu.</p>
+      </div>
+      <div class="plain"><img src="../img/vi/02-playback.jpg" alt="Nghe đúng nhịp, đúng cao độ" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Đọc tên nốt, thành nốt nhạc</h2>
+        <p>Sau bốn tiếng đếm của máy đếm nhịp, đọc <code>do</code> <code>re</code> <code>mi</code> theo phách là nốt hiện lên khuông. Đọc đúng phách thì trường độ cũng được ghi theo nốt đen, móc đơn hoặc móc kép. Chỗ nghỉ thì nói <code>rest</code>.<br>Hãy đọc tên nốt theo cách phát âm tiếng Anh. Giọng nói chỉ được nhận dạng trên máy và không được lưu lại.</p>
+      </div>
+      <div class="plain"><img src="../img/vi/03-dictation.jpg" alt="Đọc tên nốt, thành nốt nhạc" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Ảnh bản nhạc cho AI, kết quả thì dán vào</h2>
+        <p>Chạm <code>Sao chép quy tắc cho AI</code>, gửi cho AI kèm ảnh bản nhạc, rồi dán đoạn chữ nhận được vào. Khuông nhạc sẽ tự điền. Định dạng xem ở bảng bên dưới.<br>Bạn cũng có thể chụp bản nhạc giấy, để trên màn hình rồi vừa nhìn vừa chép.</p>
+      </div>
+      <div class="plain"><img src="../img/vi/04-paste.jpg" alt="Ảnh bản nhạc cho AI, kết quả thì dán vào" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Bắt đầu chỉ với ba bước</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Chọn ô nhịp khó</h3><p>Mở ứng dụng là có sẵn khuông trống hai ô nhịp.</p></li>
+<li class="card"><span class="n">2</span><h3>Viết nốt</h3><p>Nhấn lên khuông hoặc chơi trên bàn phím piano.</p></li>
+<li class="card"><span class="n">3</span><h3>Bấm phát</h3><p>Đếm vào rồi phát theo máy đếm nhịp.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Định dạng khi dán chữ</h2>
+      <div class="card table">
+        <dl><div><dt>C4:4</dt><dd>Nốt C ở quãng tám 4, nốt đen (Đô giữa là C4)</dd></div><div><dt>D:8</dt><dd>Bỏ quãng tám thì dùng tiếp quãng tám trước đó</dd></div><div><dt>F#4:8 · Bb4:4</dt><dd># là thăng, b là giáng</dd></div><div><dt>E4</dt><dd>Bỏ :trường độ thì dùng tiếp trường độ trước đó</dd></div><div><dt>:1 · :2 · :4 · :8 · :16</dt><dd>nốt tròn, trắng, đen, móc đơn, móc kép</dd></div><div><dt>C4:4.</dt><dd>nốt chấm dôi</dd></div><div><dt>C4:8t</dt><dd>chùm ba</dd></div><div><dt>R:4 · R:8</dt><dd>dấu lặng</dd></div></dl>
+      </div>
+      <p class="muted">Chạm Sao chép quy tắc cho AI trong ứng dụng để sao chép nguyên phần hướng dẫn này. Các nốt cách nhau bằng dấu cách.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Mọi tính năng đều miễn phí</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Miễn phí</h3>
+          <ul><li>Viết trên khuông và bàn phím piano hai quãng tám</li><li>Phát kèm đếm vào và máy đếm nhịp</li><li>Hợp âm và ba bè</li><li>Hóa biểu và ba loại khóa nhạc</li><li>Đọc tên nốt bằng giọng nói</li><li>Dán chữ và ảnh tham khảo</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Ủng hộ nhà phát triển</h3>
+          <ul><li>Gửi một khoản tip nhỏ trong Cài đặt</li><li>Gửi tip không mở thêm tính năng nào</li></ul>
+          <p class="muted">Không phải gói đăng ký. Mỗi lần gửi là một lần thanh toán.</p>
+        </div>
+      </div>
+      <p class="muted">Không quảng cáo, không cần tạo tài khoản.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Câu hỏi thường gặp</h2>
+      <div class="faq"><details><summary>Thêm nốt bằng cách nào?</summary><p>Chọn trường độ trên thanh công cụ trước, rồi nhấn vào khuông ở cao độ bạn muốn. Khi giữ tay bạn sẽ nghe nốt đó, nhấc tay là nốt được thêm. Chạm nút bàn phím để nhập bằng bàn phím piano hai quãng tám.</p></details>
+<details><summary>Tạo hợp âm thế nào?</summary><p>Bật nút Hợp âm trên thanh công cụ rồi thêm nốt. Nốt mới sẽ chồng lên nốt đang chọn và vang cùng lúc.</p></details>
+<details><summary>Muốn sửa nốt đã viết?</summary><p>Kéo nốt lên xuống để đổi cao độ, kéo ngang để dời sang phách khác. Khi đã chọn nốt, nút ♯ ♭ dời nửa cung, nút 8va dời một quãng tám.</p></details>
+<details><summary>Đổi tốc độ và số chỉ nhịp ở đâu?</summary><p>Trong Cài đặt, cùng với khóa nhạc và hóa biểu. Bật tắt máy đếm nhịp và phần đếm vào cũng ở đây.</p></details>
+<details><summary>Không nghe thấy tiếng.</summary><p>Kiểm tra chế độ im lặng và âm lượng phương tiện. Nếu chỉ không nghe máy đếm nhịp, hãy xem mục Hỗ trợ phát nhạc trong Cài đặt đã bật máy đếm nhịp chưa.</p></details>
+<details><summary>Đọc tên nốt hay bị sai.</summary><p>Dùng tai nghe để tiếng máy đếm nhịp không lọt vào micro, và đọc rõ từng nốt, đúng phách. Nốt nào sai thì kéo để sửa.</p></details>
+<details><summary>Vì sao cần camera?</summary><p>Chỉ để chụp bản nhạc giấy làm ảnh tham khảo trên màn hình. Ảnh không rời khỏi máy. Không cho phép camera thì vẫn chọn ảnh từ thư viện được.</p></details>
+<details><summary>Dùng được trên thiết bị nào?</summary><p>iPhone và iPad chạy iOS 17 trở lên. Giao diện thiết kế cho màn hình ngang.</p></details>
+<details><summary>Bản nhạc hay giọng nói của tôi có bị gửi đi đâu không?</summary><p>Không. Bản nhạc, ảnh và giọng nói đều nằm trên máy, và ứng dụng chạy được khi không có mạng. Chỉ có thống kê sử dụng ẩn danh và báo cáo sự cố được gửi lên iCloud để cải thiện ứng dụng.</p></details>
+<details><summary>Liên hệ thế nào?</summary><p>Gửi email tới leeo@kakao.com, thường sẽ có phản hồi trong 2 đến 3 ngày làm việc. Báo lỗi và đề xuất tính năng cũng có thể gửi qua GitHub tại M1zz/StaffSinger.</p></details></div>
+      <p class="contact">Có câu hỏi hay góp ý? Hãy viết tới <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Trước buổi tập tới,<br>bắt đầu từ hai ô nhịp ấy</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6779262832">Tải miễn phí trên App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Ngôn ngữ"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi" aria-current="page">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Chính sách quyền riêng tư</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 StaffSinger</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

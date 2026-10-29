@@ -1,121 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StaffSinger</title>
-<link rel="canonical" href="https://m1zz.github.io/StaffSinger/en/">
-<!-- i18n:head -->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
-<!-- /i18n:head -->
-<style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
-    line-height: 1.7; color: #1d2433; background: #f6f9fd;
-  }
-  header {
-    background: linear-gradient(135deg, #5bb8ff 0%, #4facfe 35%, #1d3a8a 100%);
-    color: #fff; text-align: center; padding: 72px 24px 64px;
-  }
-  header h1 { font-size: 2.2rem; letter-spacing: -0.02em; }
-  header p { margin-top: 10px; opacity: 0.92; }
-  main { max-width: 720px; margin: -32px auto 64px; padding: 0 20px; }
-  .card {
-    background: #fff; border-radius: 16px; padding: 28px 28px;
-    box-shadow: 0 8px 24px rgba(29, 58, 138, 0.10); margin-bottom: 20px;
-  }
-  .card h2 { font-size: 1.2rem; margin-bottom: 8px; color: #1d3a8a; }
-  a.btn {
-    display: inline-block; margin-top: 12px; padding: 10px 20px;
-    background: #4facfe; color: #fff; border-radius: 10px;
-    text-decoration: none; font-weight: 600;
-  }
-  a.btn:hover { background: #3d97e8; }
-  footer { text-align: center; color: #8a93a6; font-size: 0.85rem; padding: 24px; }
-  @media (prefers-color-scheme: dark) {
-    body { background: #10141c; color: #e6eaf2; }
-    .card { background: #1a2030; box-shadow: none; }
-    .card h2 { color: #7fc1ff; }
-  }
-  /* i18n:css */
-  footer nav.langs {
-    margin: 14px auto 0; max-width: 720px; display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 4px 14px; font-size: 0.8rem;
-  }
-  footer nav.langs a { color: inherit; text-decoration: none; }
-  footer nav.langs a:hover { text-decoration: underline; }
-  footer nav.langs [aria-current] { color: #4facfe; font-weight: 600; }
-  /* /i18n:css */
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StaffSinger: hear the notes you write on the staff</title>
+  <meta name="description" content="Copy a tricky passage onto the staff and hear it back with the exact rhythm and pitch, right on the metronome. Every feature, solfège dictation included, is free.">
+  <meta name="theme-color" content="#3373D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#10141c" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6779262832">
+  <link rel="canonical" href="https://m1zz.github.io/StaffSinger/en/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StaffSinger: hear the notes you write on the staff">
+  <meta property="og:description" content="Copy a tricky passage onto the staff and hear it back with the exact rhythm and pitch, right on the metronome. Every feature, solfège dictation included, is free.">
+  <meta property="og:url" content="https://m1zz.github.io/StaffSinger/en/">
+  <meta property="og:image" content="https://m1zz.github.io/StaffSinger/img/en/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#3373D9}@media (prefers-color-scheme:dark){:root{--accent:#7FB2FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<header>
-  <h1>🎼 StaffSinger</h1>
-  <p>An iOS app that plays back the pitch and rhythm of the notes you place on the staff</p>
-</header>
-<main>
-  <div class="card">
-    <h2>Support</h2>
-    <p>How to use the app, frequently asked questions, and how to reach us.</p>
-    <a class="btn" href="support.html">Open Support Page</a>
-  </div>
-  <div class="card">
-    <h2>Privacy Policy</h2>
-    <p>What information StaffSinger handles and how it is handled.</p>
-    <a class="btn" href="privacy.html">View Privacy Policy</a>
-  </div>
-</main>
-<footer>© 2026 StaffSinger · <a href="https://github.com/M1zz/StaffSinger">GitHub</a>
-<!-- i18n:nav --><nav class="langs" aria-label="Language">
-  <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-  <span lang="en" aria-current="page">English</span>
-  <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-  <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-  <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-  <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-  <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-  <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-  <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-  <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-  <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-  <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-  <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-  <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-  <a href="../da/index.html" hreflang="da" lang="da">Dansk</a>
-  <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-  <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-  <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-  <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-  <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-  <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-  <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-  <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-</nav><!-- /i18n:nav -->
-</footer>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="bar">
+    <a class="brand" href="../en/"><img src="../icon.png" alt="" width="32" height="32">StaffSinger</a>
+    <a class="lang-link" href="#languages">Language</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Stop counting in your head.<br>Hear it.</h1>
+        <p class="lead">Copy the two bars that trip you up onto the staff and press play. After a one-bar count-in, StaffSinger plays them in time with the metronome, exact rhythm and pitch.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6779262832">Get it free on the App Store</a><a class="try" href="#try">Write a few notes and listen ↓</a></div>
+        <p class="muted small">Every feature is free. For iPhone and iPad.</p>
+      </div>
+      <div class="plain"><img src="../img/en/01-piano.jpg" alt="Stop counting in your head. Hear it." width="720" height="331" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>Write a few notes and listen</h2>
+      <p class="muted">Press and hold the staff, slide up or down to change the pitch, and let go to drop the note. Press play for a one-bar count-in and playback. Turn your volume up, it makes sound.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Write a few notes and listen&quot;, &quot;lead&quot;: &quot;Press and hold the staff, slide up or down to change the pitch, and let go to drop the note. Press play for a one-bar count-in and playback. Turn your volume up, it makes sound.&quot;, &quot;staff&quot;: &quot;Two-bar staff. Press it, or use the up and down arrow keys to pick a pitch and Enter to add it.&quot;, &quot;length&quot;: &quot;Note value&quot;, &quot;half&quot;: &quot;Half&quot;, &quot;quarter&quot;: &quot;Quarter&quot;, &quot;eighth&quot;: &quot;Eighth&quot;, &quot;undo&quot;: &quot;Remove last&quot;, &quot;clear&quot;: &quot;Clear all&quot;, &quot;slower&quot;: &quot;Slower&quot;, &quot;faster&quot;: &quot;Faster&quot;, &quot;play&quot;: &quot;▶ Play&quot;, &quot;stop&quot;: &quot;■ Stop&quot;, &quot;hint&quot;: &quot;Press play to hear the two bars already on the staff.&quot;, &quot;empty&quot;: &quot;Press the staff to add your first note.&quot;, &quot;full&quot;: &quot;Both bars are full. Remove a note to make room.&quot;, &quot;cross&quot;: &quot;That note would cross the bar line. Pick a shorter value.&quot;, &quot;note&quot;: &quot;The web demo uses a simple synth tone. The app plays a piano sound and also handles chords, voices, dotted notes, triplets, rests and key signatures.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Lost count halfway through the bar again?</h2>
+      <p>A dotted eighth, then a sixteenth, then a triplet right after it, and tapping it out on your knee falls apart. Often there's no piano nearby either, like the night before rehearsal. Copy those two bars into StaffSinger and it plays them back exactly as written.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Hear the exact rhythm and pitch</h2>
+        <p>After a one-bar count-in, the music plays to the metronome click and the note that's sounding lights up in orange. Set the tempo anywhere from 40 to 200 BPM and pick 4/4, 3/4, 2/4, 6/8, 2/2 or 3/8.<br>Stack notes on the same beat and they ring together as a chord, and write in up to three voices. Treble, alto and bass clefs and key signatures are all there.</p>
+      </div>
+      <div class="plain"><img src="../img/en/02-playback.jpg" alt="Hear the exact rhythm and pitch" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Sing the note names, get notes</h2>
+        <p>After four metronome clicks, say <code>do</code> <code>re</code> <code>mi</code> out loud on the beat and they land on the staff. Speak in time and the rhythm is captured too, in quarters, eighths or sixteenths. Say <code>rest</code> for a rest.<br>Say the names in English. Speech is recognized on your device and never stored.</p>
+      </div>
+      <div class="plain"><img src="../img/en/03-dictation.jpg" alt="Sing the note names, get notes" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Hand the photo to an AI, paste the result</h2>
+        <p>Tap <code>Copy Rule for AI</code>, give it to an AI along with a photo of your score, and paste back what it writes. The staff fills in. The format is in the table below.<br>You can also snap the printed page and keep it on screen while you copy it out by hand.</p>
+      </div>
+      <div class="plain"><img src="../img/en/04-paste.jpg" alt="Hand the photo to an AI, paste the result" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Three steps to start</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Pick the tricky bars</h3><p>The app opens on an empty two-bar staff.</p></li>
+<li class="card"><span class="n">2</span><h3>Write the notes</h3><p>Press the staff or play the piano keys.</p></li>
+<li class="card"><span class="n">3</span><h3>Press play</h3><p>A count-in, then playback with the metronome.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Text format for pasting</h2>
+      <div class="card table">
+        <dl><div><dt>C4:4</dt><dd>C in octave 4, quarter note (middle C is C4)</dd></div><div><dt>D:8</dt><dd>Leave out the octave and the previous one carries over</dd></div><div><dt>F#4:8 · Bb4:4</dt><dd># for sharp, b for flat</dd></div><div><dt>E4</dt><dd>Leave out :length and the previous length carries over</dd></div><div><dt>:1 · :2 · :4 · :8 · :16</dt><dd>whole, half, quarter, eighth, sixteenth</dd></div><div><dt>C4:4.</dt><dd>dotted note</dd></div><div><dt>C4:8t</dt><dd>triplet</dd></div><div><dt>R:4 · R:8</dt><dd>rests</dd></div></dl>
+      </div>
+      <p class="muted">Copy Rule for AI in the app copies these exact instructions. Separate notes with spaces.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Everything is free</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Free</h3>
+          <ul><li>Staff input and a two-octave piano keyboard</li><li>Playback with count-in and metronome</li><li>Chords and three voices</li><li>Key signatures and three clefs</li><li>Solfège dictation</li><li>Paste as text and reference photos</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Support the developer</h3>
+          <ul><li>Send a small tip from Settings</li><li>Tips don't unlock anything extra</li></ul>
+          <p class="muted">Not a subscription. Each tip is a one-time payment.</p>
+        </div>
+      </div>
+      <p class="muted">No ads, and no account needed.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Questions</h2>
+      <div class="faq"><details><summary>How do I add notes?</summary><p>Pick a note value in the toolbar first, then press the staff at the pitch you want. You hear the note while you hold, and it's added when you let go. Tap the keyboard button to enter notes on a two-octave piano instead.</p></details>
+<details><summary>How do I make a chord?</summary><p>Turn on the Chord button in the toolbar and add notes. They stack on the selected note and sound together.</p></details>
+<details><summary>How do I fix a note?</summary><p>Drag a note up or down to change its pitch, or sideways to move it to another beat. With a note selected, the ♯ and ♭ buttons move it a half step and the 8va buttons move it an octave.</p></details>
+<details><summary>Where do I change the tempo or time signature?</summary><p>In Settings, along with the clef and key signature. You can also turn the metronome and count-in on or off there.</p></details>
+<details><summary>I don't hear anything.</summary><p>Check Silent Mode and your media volume. If only the metronome is missing, make sure Metronome is on under Playback Aids in Settings.</p></details>
+<details><summary>Dictation keeps getting notes wrong.</summary><p>Use earphones so the metronome doesn't bleed into the mic, and say one clear note name per beat. If a note comes out wrong, drag it to fix it.</p></details>
+<details><summary>Why does it need the camera?</summary><p>Only to take a reference photo of your sheet music to show on screen. Photos never leave your device, and you can pick one from your library without allowing the camera.</p></details>
+<details><summary>Which devices does it run on?</summary><p>iPhone and iPad with iOS 17 or later. It's designed for landscape.</p></details>
+<details><summary>Is my music or voice sent anywhere?</summary><p>No. Your scores, photos and voice stay on your device, and everything works offline. Only anonymous usage statistics and crash reports go to iCloud, to help fix the app.</p></details>
+<details><summary>How do I get in touch?</summary><p>Email leeo@kakao.com. Replies usually come within 2 to 3 business days. Bug reports and feature ideas are also welcome as issues on GitHub at M1zz/StaffSinger.</p></details></div>
+      <p class="contact">Questions or feedback? Write to <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Before your next rehearsal,<br>start with those two bars</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6779262832">Get it free on the App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Language"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en" aria-current="page">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Privacy Policy</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 StaffSinger</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>

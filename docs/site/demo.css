@@ -1,0 +1,45 @@
+/* 초견 웹 체험. 재생 중인 음표는 앱처럼 주황색으로 짚는다. */
+.demo-card { display: grid; gap: var(--s4); }
+.sd-stage { position: relative; background: var(--bg); border-radius: var(--r-inner); padding: var(--s4) var(--s3) var(--s2); }
+.sd-staff { display: block; width: 100%; height: auto; touch-action: none; cursor: pointer; color: var(--text); }
+.sd-staff:focus-visible { outline-offset: 2px; }
+.sd-line { stroke: currentColor; stroke-width: 1.2; opacity: .75; }
+.sd-stem { stroke: currentColor; stroke-width: 1.6; }
+.sd-beam { stroke: currentColor; stroke-width: 6; }
+.sd-flag { fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; }
+.sd-head { fill: currentColor; }
+.sd-hollow { fill: var(--bg); stroke: currentColor; stroke-width: 2.2; }
+.sd-clef { font: 82px/1 "Apple Symbols", "Noto Music", "Segoe UI Symbol", "Bravura", serif; fill: currentColor; }
+.sd-time { font: 700 26px/1 Georgia, "Times New Roman", serif; fill: currentColor; }
+.sd-note { transition: color .15s var(--ease); }
+.sd-note.on { color: #F28C1B; }
+.sd-note.ghost { color: var(--accent); opacity: .55; }
+.sd-readout { min-height: 1.6em; text-align: center; font-weight: 600; font-variant-numeric: tabular-nums; }
+
+.sd-controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s3) var(--s5); }
+.sd-group { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2); }
+.sd-tempo span { min-width: 7.5em; text-align: center; color: var(--muted); font-variant-numeric: tabular-nums; }
+.sd-tempo b { color: var(--text); }
+.chip { font: inherit; font-weight: 600; color: var(--accent); background: var(--bg); border: 0;
+        border-radius: 999px; padding: var(--s2) var(--s4); min-height: 44px; min-width: 44px; cursor: pointer;
+        transition: transform .15s var(--ease), background .15s var(--ease); }
+.chip:hover { background: color-mix(in srgb, var(--accent) 14%, var(--bg)); }
+.chip:active { transform: scale(.95); }
+.chip[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
+.sd-play { font: inherit; font-weight: 700; min-height: 52px; padding: 0 var(--s6); margin-left: auto; border: 0;
+           border-radius: 999px; background: #248A3D; color: #fff; cursor: pointer;
+           transition: transform .15s var(--ease), filter .15s var(--ease); }
+.sd-play:hover { filter: brightness(1.06); }
+.sd-play:active { transform: scale(.97); }
+.sd-play.hint { animation: hint 1.6s var(--ease) infinite; }
+@keyframes hint { 50% { box-shadow: 0 0 0 8px rgb(36 138 61 / .25); } }
+.sd-foot { margin: 0; }
+
+@media (prefers-reduced-motion: reduce) { .sd-play.hint { animation: none; } .sd-note { transition: none; } }
+@media (max-width: 760px) {
+  .sd-play { margin-left: 0; width: 100%; }
+  /* 좁은 화면: 오선을 줄이지 않고 옆으로 밀어 본다. 세로 끌기는 음높이, 가로 밀기는 스크롤. */
+  .sd-stage { overflow-x: auto; }
+  .sd-staff { min-width: 640px; touch-action: pan-x; }
+  .sd-readout { position: sticky; left: 0; }
+}

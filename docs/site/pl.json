@@ -1,0 +1,184 @@
+{
+  "title": "StaffSinger: zapisz nuty na pięciolinii i od razu posłuchaj",
+  "description": "Przepisz trudne takty na pięciolinię i posłuchaj ich z dokładnym rytmem i wysokością, razem z metronomem. Wszystkie funkcje są bezpłatne.",
+  "hero": {
+    "headline": "Przestań liczyć w głowie.\nPosłuchaj.",
+    "lead": "Przepisz dwa takty, na których się potykasz, i stuknij odtwarzanie. Po jednym takcie odliczania aplikacja zagra je z metronomem, dokładnie w zapisanym rytmie i wysokości.",
+    "cta": "Pobierz za darmo z App Store",
+    "note": "Wszystkie funkcje są bezpłatne. Na iPhone’a i iPada."
+  },
+  "demo": {
+    "title": "Zapisz kilka nut i posłuchaj",
+    "lead": "Przytrzymaj pięciolinię i przesuwaj w górę lub w dół, żeby zmienić dźwięk, a potem puść, żeby wstawić nutę. Naciśnij „Graj”, a po takcie odliczania usłyszysz całość. Będzie dźwięk, sprawdź głośność.",
+    "staff": "Pięciolinia na dwa takty. Naciśnij lub wybierz wysokość strzałkami w górę i w dół, a potem Enter, żeby dodać nutę.",
+    "length": "Wartość",
+    "half": "Półnuta",
+    "quarter": "Ćwierćnuta",
+    "eighth": "Ósemka",
+    "undo": "Usuń ostatnią",
+    "clear": "Wyczyść",
+    "slower": "Wolniej",
+    "faster": "Szybciej",
+    "play": "▶ Graj",
+    "stop": "■ Stop",
+    "hint": "Naciśnij „Graj”, żeby posłuchać dwóch gotowych taktów.",
+    "empty": "Naciśnij pięciolinię, żeby dodać pierwszą nutę.",
+    "full": "Oba takty są pełne. Usuń ostatnią nutę, żeby zrobić miejsce.",
+    "cross": "Ta nuta przeszłaby przez kreskę taktową. Wybierz krótszą wartość.",
+    "note": "Wersja w przeglądarce gra prostym syntezatorem. Aplikacja gra brzmieniem fortepianu i obsługuje akordy, głosy, nuty z kropką, triole, pauzy i znaki przykluczowe."
+  },
+  "problem": {
+    "title": "Znowu pogubiłeś się w liczeniu?",
+    "text": "Ósemka z kropką, potem szesnastka, a zaraz obok triola. Wystukujesz to na kolanie i w połowie taktu wszystko się rozjeżdża. Wieczorem przed próbą chóru zwykle nie ma też pod ręką pianina. W StaffSinger wystarczy przepisać te dwa takty, żeby usłyszeć dokładny rytm i wysokość."
+  },
+  "features": [
+    {
+      "title": "Rytm i wysokość dokładnie jak w nutach",
+      "text": "Po takcie odliczania muzyka gra z kliknięciami metronomu, a brzmiąca nuta świeci na pomarańczowo. Tempo od 40 do 200 BPM, metrum 4/4, 3/4, 2/4, 6/8, 2/2 lub 3/8.\nNuty na tej samej mierze brzmią razem jako akord, a zapisać można do trzech głosów. Są klucze wiolinowy, altowy i basowy oraz znaki przykluczowe.",
+      "shot": "02-playback"
+    },
+    {
+      "title": "Powiedz nazwy nut, a staną się nutami",
+      "text": "Po czterech kliknięciach metronomu mów `do` `re` `mi` do taktu, a nuty pojawią się na pięciolinii. Jeśli trafiasz w miarę, zapisze się też wartość: ćwierćnuty, ósemki lub szesnastki. Pauzę oznacz słowem `rest`.\nNazwy nut wymawiaj po angielsku. Mowa jest rozpoznawana tylko na urządzeniu i nie jest zapisywana.",
+      "shot": "03-dictation"
+    },
+    {
+      "title": "Zdjęcie nut dla AI, wynik wklej",
+      "text": "Stuknij `Kopiuj regułę dla AI`, przekaż ją AI razem ze zdjęciem nut i wklej tekst, który dostaniesz. Pięciolinia wypełni się sama. Format znajdziesz w tabeli poniżej.\nMożesz też sfotografować papierowe nuty, trzymać zdjęcie na ekranie i przepisywać, patrząc na nie.",
+      "shot": "04-paste"
+    }
+  ],
+  "steps": {
+    "title": "Trzy kroki na start",
+    "items": [
+      {
+        "title": "Wybierz trudne takty",
+        "text": "Aplikacja otwiera się z pustą pięciolinią na dwa takty."
+      },
+      {
+        "title": "Zapisz nuty",
+        "text": "Naciskaj pięciolinię albo graj na klawiaturze fortepianu."
+      },
+      {
+        "title": "Stuknij odtwarzanie",
+        "text": "Odliczanie, a potem gra z metronomem."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Format tekstu do wklejenia",
+    "rows": [
+      [
+        "C4:4",
+        "C w oktawie 4, ćwierćnuta (środkowe C to C4)"
+      ],
+      [
+        "D:8",
+        "Bez oktawy zostaje poprzednia"
+      ],
+      [
+        "F#4:8 · Bb4:4",
+        "# to krzyżyk, b to bemol"
+      ],
+      [
+        "E4",
+        "Bez „:wartości” zostaje poprzednia"
+      ],
+      [
+        ":1 · :2 · :4 · :8 · :16",
+        "cała nuta, półnuta, ćwierćnuta, ósemka, szesnastka"
+      ],
+      [
+        "C4:4.",
+        "nuta z kropką"
+      ],
+      [
+        "C4:8t",
+        "triola"
+      ],
+      [
+        "R:4 · R:8",
+        "pauzy"
+      ]
+    ],
+    "note": "Przycisk Kopiuj regułę dla AI w aplikacji kopiuje dokładnie te instrukcje. Nuty oddzielaj spacjami."
+  },
+  "pricing": {
+    "title": "Wszystkie funkcje są bezpłatne",
+    "free": {
+      "name": "Bezpłatnie",
+      "items": [
+        "Zapis na pięciolinii i klawiatura na dwie oktawy",
+        "Odtwarzanie z odliczaniem i metronomem",
+        "Akordy i trzy głosy",
+        "Znaki przykluczowe i trzy klucze",
+        "Dyktowanie nazw nut głosem",
+        "Wklejanie tekstu i zdjęcie pomocnicze"
+      ]
+    },
+    "pro": {
+      "name": "Wesprzyj twórcę",
+      "items": [
+        "W Ustawieniach możesz wysłać mały napiwek",
+        "Napiwek nie odblokowuje żadnych funkcji"
+      ],
+      "note": "To nie subskrypcja. Każdy napiwek to jednorazowa płatność."
+    },
+    "note": "Bez reklam i bez zakładania konta."
+  },
+  "faq": {
+    "title": "Pytania",
+    "items": [
+      {
+        "q": "Jak dodawać nuty?",
+        "a": "Najpierw wybierz wartość na pasku narzędzi, potem naciśnij pięciolinię na wybranej wysokości. Dopóki trzymasz palec, słychać dźwięk, a po puszczeniu nuta zostaje dodana. Przycisk klawiatury otwiera fortepian na dwie oktawy."
+      },
+      {
+        "q": "Jak zrobić akord?",
+        "a": "Włącz przycisk Akord na pasku narzędzi i dodawaj nuty. Ułożą się nad zaznaczoną nutą i zabrzmią razem."
+      },
+      {
+        "q": "Jak poprawić nutę?",
+        "a": "Przeciągnij nutę w górę lub w dół, żeby zmienić wysokość, albo w bok, żeby przesunąć ją na inną miarę. Przy zaznaczonej nucie przyciski ♯ ♭ przesuwają ją o półton, a 8va o oktawę."
+      },
+      {
+        "q": "Gdzie zmienić tempo i metrum?",
+        "a": "W Ustawieniach, razem z kluczem i znakami przykluczowymi. Tam też włączysz metronom i odliczanie."
+      },
+      {
+        "q": "Nie słychać dźwięku.",
+        "a": "Sprawdź tryb cichy i głośność multimediów. Jeśli nie słychać tylko metronomu, upewnij się, że jest włączony w sekcji Pomoce odtwarzania w Ustawieniach."
+      },
+      {
+        "q": "Dyktowanie myli nuty.",
+        "a": "Użyj słuchawek, żeby metronom nie trafiał do mikrofonu, i mów po jednej nucie wyraźnie, do taktu. Złą nutę po prostu przeciągnij."
+      },
+      {
+        "q": "Po co aplikacji aparat?",
+        "a": "Tylko do zrobienia zdjęcia papierowych nut, które wyświetlasz na ekranie do porównania. Zdjęcia nie opuszczają urządzenia. Bez dostępu do aparatu możesz wybrać zdjęcie z biblioteki."
+      },
+      {
+        "q": "Na jakich urządzeniach działa?",
+        "a": "Na iPhonie i iPadzie z iOS 17 lub nowszym. Interfejs jest zaprojektowany do pracy w poziomie."
+      },
+      {
+        "q": "Czy moje nuty albo głos są gdzieś wysyłane?",
+        "a": "Nie. Nuty, zdjęcia i głos zostają na urządzeniu, a wszystko działa bez internetu. Do iCloud trafiają tylko anonimowe statystyki użycia i raporty awarii, które pomagają ulepszać aplikację."
+      },
+      {
+        "q": "Jak się skontaktować?",
+        "a": "Napisz na leeo@kakao.com, odpowiedź zwykle przychodzi w ciągu 2–3 dni roboczych. Błędy i pomysły możesz też zgłaszać w issues na GitHubie: M1zz/StaffSinger."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Przed następną próbą\nzacznij od tych dwóch taktów",
+    "cta": "Pobierz za darmo z App Store"
+  },
+  "ui": {
+    "skip": "Przejdź do treści",
+    "languages": "Język",
+    "privacy": "Polityka prywatności",
+    "contact": "Pytania lub uwagi? Napisz na {email}."
+  }
+}

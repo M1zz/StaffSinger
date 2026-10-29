@@ -1,0 +1,160 @@
+{
+  "title": "StaffSinger: Noten ins Notensystem schreiben und hören",
+  "description": "Übertrag knifflige Takte ins Notensystem und hör sie mit exaktem Rhythmus und Tonhöhe im Metronomklick. Alles ist gratis, auch das Diktat.",
+  "hero": {
+    "headline": "Nicht mehr im Kopf zählen.\nEinfach anhören.",
+    "lead": "Übertrag die zwei Takte, an denen du hängen bleibst, ins Notensystem und drück auf Abspielen. Nach einem Takt Vorzähler spielt StaffSinger sie im Metronomklick ab, mit exaktem Rhythmus und exakter Tonhöhe.",
+    "cta": "Gratis im App Store laden",
+    "note": "Alle Funktionen kostenlos. Für iPhone und iPad."
+  },
+  "demo": {
+    "title": "Ein paar Noten setzen und anhören",
+    "lead": "Halte das Notensystem gedrückt, schieb nach oben oder unten, um die Tonhöhe zu ändern, und lass los, um die Note zu setzen. Beim Abspielen kommt erst ein Takt Vorzähler, dann deine Noten. Dreh den Ton auf, die Seite spielt Klänge ab.",
+    "staff": "Notensystem mit zwei Takten. Drück darauf, oder wähl mit den Pfeiltasten nach oben und unten eine Tonhöhe und füg sie mit der Eingabetaste ein.",
+    "length": "Notenwert",
+    "half": "Halbe",
+    "quarter": "Viertel",
+    "eighth": "Achtel",
+    "undo": "Letzte löschen",
+    "clear": "Alles löschen",
+    "slower": "Langsamer",
+    "faster": "Schneller",
+    "play": "▶ Abspielen",
+    "stop": "■ Stopp",
+    "hint": "Drück auf Abspielen, um die zwei Takte zu hören, die schon im Notensystem stehen.",
+    "empty": "Drück auf das Notensystem, um die erste Note zu setzen.",
+    "full": "Beide Takte sind voll. Lösch eine Note, um Platz zu schaffen.",
+    "cross": "Diese Note würde über den Taktstrich gehen. Wähl einen kürzeren Notenwert.",
+    "note": "Die Web-Demo nutzt einen einfachen Synthesizerklang. Die App spielt mit Klavierklang und beherrscht auch Akkorde, Stimmen, punktierte Noten, Triolen, Pausen und Vorzeichen."
+  },
+  "problem": {
+    "title": "Schon wieder mitten im Takt verzählt?",
+    "text": "Eine punktierte Achtel, dann eine Sechzehntel, gleich danach eine Triole, und das Klopfen auf dem Knie gerät aus dem Tritt. Oft ist auch kein Klavier in der Nähe, etwa am Abend vor der Probe. Übertrag diese zwei Takte in StaffSinger, und die App spielt sie genau so ab, wie sie dastehen."
+  },
+  "features": [
+    {
+      "title": "Rhythmus und Tonhöhe exakt hören",
+      "text": "Nach einem Takt Vorzähler erklingt die Musik zum Metronomklick, und die gerade klingende Note leuchtet orange auf. Das Tempo stellst du zwischen 40 und 200 BPM ein, als Taktart stehen 4/4, 3/4, 2/4, 6/8, 2/2 und 3/8 zur Wahl.\nNoten auf demselben Schlag klingen zusammen als Akkord, und du kannst bis zu drei Stimmen schreiben. Violin-, Alt- und Bassschlüssel sowie Vorzeichen sind dabei.",
+      "shot": "02-playback"
+    },
+    {
+      "title": "Notennamen singen, Noten bekommen",
+      "text": "Nach vier Metronomklicks sagst du `do` `re` `mi` laut im Takt, und sie landen im Notensystem. Sprichst du genau auf den Schlag, wird auch der Rhythmus erfasst, in Vierteln, Achteln oder Sechzehnteln. Für eine Pause sagst du `rest`.\nDie Namen sprichst du auf Englisch: do re mi fa sol la ti. Die Spracherkennung läuft auf deinem Gerät, gespeichert wird nichts.",
+      "shot": "03-dictation"
+    },
+    {
+      "title": "Foto an die KI, Ergebnis einfügen",
+      "text": "Tippe auf `Regel für die KI kopieren`, gib die Regel zusammen mit einem Foto deiner Noten an eine KI und füg ihre Antwort ein. Schon ist das Notensystem gefüllt. Das Format steht in der Tabelle unten.\nDu kannst die gedruckte Seite auch fotografieren und beim Abschreiben auf dem Bildschirm behalten.",
+      "shot": "04-paste"
+    }
+  ],
+  "steps": {
+    "title": "In drei Schritten loslegen",
+    "items": [
+      {
+        "title": "Knifflige Takte aussuchen",
+        "text": "Die App startet mit einem leeren Notensystem aus zwei Takten."
+      },
+      {
+        "title": "Noten eingeben",
+        "text": "Aufs Notensystem drücken oder die Klaviertasten spielen."
+      },
+      {
+        "title": "Abspielen",
+        "text": "Erst der Vorzähler, dann die Wiedergabe mit Metronom."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Textformat zum Einfügen",
+    "rows": [
+      ["C4:4", "C in Oktave 4, Viertelnote (eingestrichenes C = C4)"],
+      ["D:8", "Ohne Oktave gilt die vorige weiter"],
+      ["F#4:8 · Bb4:4", "# für Kreuz, b für Be"],
+      ["E4", "Ohne :Länge gilt die vorige Länge weiter"],
+      [":1 · :2 · :4 · :8 · :16", "Ganze, Halbe, Viertel, Achtel, Sechzehntel"],
+      ["C4:4.", "punktierte Note"],
+      ["C4:8t", "Triole"],
+      ["R:4 · R:8", "Pausen"]
+    ],
+    "note": "„Regel für die KI kopieren“ in der App kopiert genau diese Anleitung. Die Buchstaben sind C D E F G A B, wobei B für H steht. Trenn die Noten durch Leerzeichen."
+  },
+  "pricing": {
+    "title": "Alles ist kostenlos",
+    "free": {
+      "name": "Kostenlos",
+      "items": [
+        "Eingabe im Notensystem und Klaviertastatur über zwei Oktaven",
+        "Wiedergabe mit Vorzähler und Metronom",
+        "Akkorde und drei Stimmen",
+        "Vorzeichen und drei Schlüssel",
+        "Solmisations-Diktat",
+        "Text einfügen und Referenzfotos"
+      ]
+    },
+    "pro": {
+      "name": "Den Entwickler unterstützen",
+      "items": [
+        "Ein kleines Trinkgeld in den Einstellungen geben",
+        "Trinkgeld schaltet nichts zusätzlich frei"
+      ],
+      "note": "Kein Abo. Jedes Trinkgeld ist eine einmalige Zahlung."
+    },
+    "note": "Keine Werbung, kein Konto nötig."
+  },
+  "faq": {
+    "title": "Fragen",
+    "items": [
+      {
+        "q": "Wie gebe ich Noten ein?",
+        "a": "Wähl zuerst in der Werkzeugleiste einen Notenwert und drück dann auf der gewünschten Tonhöhe ins Notensystem. Solange du hältst, hörst du die Note, beim Loslassen wird sie eingefügt. Über die Tastatur-Taste gibst du Noten stattdessen auf einem Klavier mit zwei Oktaven ein."
+      },
+      {
+        "q": "Wie erstelle ich einen Akkord?",
+        "a": "Schalte in der Werkzeugleiste die Taste Akkord ein und füg Noten hinzu. Sie werden auf die ausgewählte Note gestapelt und erklingen gleichzeitig."
+      },
+      {
+        "q": "Wie korrigiere ich eine Note?",
+        "a": "Zieh eine Note nach oben oder unten, um die Tonhöhe zu ändern, oder zur Seite, um sie auf einen anderen Schlag zu verschieben. Ist eine Note ausgewählt, verschieben die Tasten ♯ und ♭ sie um einen Halbton und die 8va-Tasten um eine Oktave."
+      },
+      {
+        "q": "Wo ändere ich Tempo oder Taktart?",
+        "a": "In den Einstellungen, zusammen mit Schlüssel und Vorzeichen. Dort schaltest du auch Metronom und Vorzähler ein oder aus."
+      },
+      {
+        "q": "Ich höre nichts.",
+        "a": "Prüf den Stummmodus und die Medienlautstärke. Fehlt nur das Metronom, sieh in den Einstellungen unter Wiedergabehilfen nach, ob das Metronom eingeschaltet ist."
+      },
+      {
+        "q": "Das Diktat erkennt Noten falsch.",
+        "a": "Nimm Kopfhörer, damit das Metronom nicht ins Mikrofon gerät, und sprich pro Schlag einen deutlichen Notennamen. Ist eine Note falsch, zieh sie einfach an die richtige Stelle."
+      },
+      {
+        "q": "Wozu braucht die App die Kamera?",
+        "a": "Nur um ein Referenzfoto deiner Noten zu machen und auf dem Bildschirm anzuzeigen. Fotos verlassen nie dein Gerät, und du kannst auch ohne Kamerazugriff ein Bild aus deiner Mediathek wählen."
+      },
+      {
+        "q": "Auf welchen Geräten läuft die App?",
+        "a": "Auf iPhone und iPad mit iOS 17 oder neuer. Sie ist für das Querformat gemacht."
+      },
+      {
+        "q": "Werden meine Noten oder meine Stimme irgendwohin gesendet?",
+        "a": "Nein. Partituren, Fotos und Stimme bleiben auf deinem Gerät, und alles funktioniert offline. Nur anonyme Nutzungsstatistiken und Absturzberichte gehen an iCloud, damit sich Fehler beheben lassen."
+      },
+      {
+        "q": "Wie erreiche ich dich?",
+        "a": "Per E-Mail an leeo@kakao.com. Eine Antwort kommt meist innerhalb von 2 bis 3 Werktagen. Fehlerberichte und Ideen für neue Funktionen sind auch als Issue auf GitHub unter M1zz/StaffSinger willkommen."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Vor der nächsten Probe:\nfang mit diesen zwei Takten an",
+    "cta": "Gratis im App Store laden"
+  },
+  "ui": {
+    "skip": "Zum Inhalt springen",
+    "languages": "Sprache",
+    "privacy": "Datenschutzerklärung",
+    "contact": "Fragen oder Feedback? Schreib an {email}."
+  }
+}

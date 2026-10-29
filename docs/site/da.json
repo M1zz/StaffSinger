@@ -1,0 +1,184 @@
+{
+  "title": "StaffSinger: skriv noder i nodesystemet og hør dem med det samme",
+  "description": "Skriv de svære takter ind i nodesystemet, og hør dem med præcis rytme og tonehøjde til metronom. Alle funktioner er gratis.",
+  "hero": {
+    "headline": "Stop med at tælle i hovedet.\nLyt i stedet.",
+    "lead": "Skriv de to takter, du snubler over, ind og tryk på afspil. Efter én takts indtælling spiller appen dem til metronomen med præcis den rytme og tonehøjde, der står.",
+    "cta": "Hent gratis i App Store",
+    "note": "Alle funktioner er gratis. Til iPhone og iPad."
+  },
+  "demo": {
+    "title": "Skriv et par noder, og lyt",
+    "lead": "Hold fingeren på nodesystemet og træk op eller ned for at skifte tone, og slip for at sætte noden. Tryk på Spil, så lyder det efter én takts indtælling. Der kommer lyd, så tjek lydstyrken.",
+    "staff": "Nodesystem på to takter. Tryk, eller vælg tonehøjde med pil op og ned, og tilføj noden med Enter.",
+    "length": "Nodeværdi",
+    "half": "Halvnode",
+    "quarter": "Fjerdedel",
+    "eighth": "Ottendedel",
+    "undo": "Fjern sidste",
+    "clear": "Ryd alt",
+    "slower": "Langsommere",
+    "faster": "Hurtigere",
+    "play": "▶ Spil",
+    "stop": "■ Stop",
+    "hint": "Tryk på Spil for at høre de to takter, der allerede står der.",
+    "empty": "Tryk på nodesystemet for at sætte den første node.",
+    "full": "Begge takter er fulde. Fjern den sidste node for at få plads.",
+    "cross": "Den node ville gå over taktstregen. Vælg en kortere nodeværdi.",
+    "note": "Webudgaven spiller med en simpel syntlyd. Appen spiller med klaverlyd og kan akkorder, stemmer, punkterede noder, trioler, pauser og faste fortegn."
+  },
+  "problem": {
+    "title": "Mistet tællingen midt i takten igen?",
+    "text": "En punkteret ottendedel, så en sekstendedel og lige efter en triol. Du banker takten på knæet, og et sted midt i går det galt. Aftenen før korprøven er der sjældent et klaver ved hånden. I StaffSinger skal du bare skrive de to takter ind, så hører du præcis rytme og tonehøjde."
+  },
+  "features": [
+    {
+      "title": "Rytme og tonehøjde præcis som skrevet",
+      "text": "Efter én takts indtælling spiller musikken til metronomens klik, og noden, der klinger, lyser orange. Tempoet går fra 40 til 200 BPM, og taktarten kan være 4/4, 3/4, 2/4, 6/8, 2/2 eller 3/8.\nNoder på samme slag klinger sammen som en akkord, og du kan skrive op til tre stemmer. G-nøgle, altnøgle, F-nøgle og faste fortegn er med.",
+      "shot": "02-playback"
+    },
+    {
+      "title": "Sig nodenavnene, så bliver de til noder",
+      "text": "Efter fire klik fra metronomen siger du `do` `re` `mi` i takt, og noderne lander i nodesystemet. Rammer du slaget, kommer nodeværdien med, som fjerdedele, ottendedele eller sekstendedele. Til en pause siger du `rest`.\nSig nodenavnene på engelsk. Talen genkendes kun på enheden og gemmes ikke.",
+      "shot": "03-dictation"
+    },
+    {
+      "title": "Giv nodebilledet til en AI, og indsæt svaret",
+      "text": "Tryk på `Kopiér regel til AI`, giv den til en AI sammen med et foto af noderne, og indsæt den tekst, du får tilbage. Nodesystemet udfylder sig selv. Formatet står i tabellen nedenfor.\nDu kan også fotografere papirnoderne, have billedet på skærmen og skrive af, mens du kigger.",
+      "shot": "04-paste"
+    }
+  ],
+  "steps": {
+    "title": "Kom i gang i tre trin",
+    "items": [
+      {
+        "title": "Vælg de svære takter",
+        "text": "Appen åbner med et tomt nodesystem på to takter."
+      },
+      {
+        "title": "Skriv noderne",
+        "text": "Tryk i nodesystemet, eller spil på klavertangenterne."
+      },
+      {
+        "title": "Tryk på afspil",
+        "text": "Indtælling og derefter afspilning med metronom."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Tekstformat til indsættelse",
+    "rows": [
+      [
+        "C4:4",
+        "C i oktav 4, fjerdedel (enstreget c er C4)"
+      ],
+      [
+        "D:8",
+        "Uden oktav gælder den forrige"
+      ],
+      [
+        "F#4:8 · Bb4:4",
+        "# for kryds, b for b"
+      ],
+      [
+        "E4",
+        "Uden :nodeværdi gælder den forrige"
+      ],
+      [
+        ":1 · :2 · :4 · :8 · :16",
+        "helnode, halvnode, fjerdedel, ottendedel, sekstendedel"
+      ],
+      [
+        "C4:4.",
+        "punkteret node"
+      ],
+      [
+        "C4:8t",
+        "triol"
+      ],
+      [
+        "R:4 · R:8",
+        "pauser"
+      ]
+    ],
+    "note": "Kopiér regel til AI i appen kopierer præcis disse instruktioner. Adskil noderne med mellemrum."
+  },
+  "pricing": {
+    "title": "Alle funktioner er gratis",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Indtastning i nodesystemet og klaver på to oktaver",
+        "Afspilning med indtælling og metronom",
+        "Akkorder og tre stemmer",
+        "Faste fortegn og tre nøgler",
+        "Diktering af nodenavne med stemmen",
+        "Indsæt tekst og referencefoto"
+      ]
+    },
+    "pro": {
+      "name": "Støt udvikleren",
+      "items": [
+        "Send et lille drikkepengebeløb fra Indstillinger",
+        "Drikkepenge låser ikke op for noget ekstra"
+      ],
+      "note": "Ikke et abonnement. Hver gang er en engangsbetaling."
+    },
+    "note": "Ingen reklamer og ingen konto."
+  },
+  "faq": {
+    "title": "Ofte stillede spørgsmål",
+    "items": [
+      {
+        "q": "Hvordan sætter jeg noder?",
+        "a": "Vælg først nodeværdi i værktøjslinjen, og tryk så i nodesystemet i den højde, du vil have. Mens du holder, lyder tonen, og når du slipper, bliver noden sat. Med tastaturknappen åbner du et klaver på to oktaver."
+      },
+      {
+        "q": "Hvordan laver jeg en akkord?",
+        "a": "Slå knappen Akkord til i værktøjslinjen, og tilføj noder. De stables oven på den valgte node og klinger samtidig."
+      },
+      {
+        "q": "Hvordan retter jeg en node?",
+        "a": "Træk noden op eller ned for at ændre tonehøjden, eller til siden for at flytte den til et andet slag. Med en node valgt flytter ♯ ♭ den en halvtone og 8va en oktav."
+      },
+      {
+        "q": "Hvor ændrer jeg tempo og taktart?",
+        "a": "I Indstillinger, sammen med nøgle og faste fortegn. Der slår du også metronom og indtælling til og fra."
+      },
+      {
+        "q": "Der kommer ingen lyd.",
+        "a": "Tjek lydløs tilstand og medielydstyrken. Hvis det kun er metronomen, der mangler, så se efter, at den er slået til under Afspilningshjælp i Indstillinger."
+      },
+      {
+        "q": "Dikteringen blander noderne sammen.",
+        "a": "Brug høretelefoner, så metronomen ikke kommer med i mikrofonen, og sig én node tydeligt pr. slag. En forkert node trækker du bare på plads."
+      },
+      {
+        "q": "Hvorfor skal appen bruge kameraet?",
+        "a": "Kun til at fotografere papirnoder, som du har på skærmen som reference. Billederne forlader aldrig enheden. Uden adgang til kameraet kan du vælge et billede fra biblioteket."
+      },
+      {
+        "q": "Hvilke enheder virker den på?",
+        "a": "iPhone og iPad med iOS 17 eller nyere. Brugerfladen er lavet til liggende format."
+      },
+      {
+        "q": "Bliver mine noder eller min stemme sendt nogen steder hen?",
+        "a": "Nej. Noder, billeder og stemme bliver på enheden, og alt virker uden internet. Kun anonym brugsstatistik og nedbrudsrapporter sendes til iCloud for at forbedre appen."
+      },
+      {
+        "q": "Hvordan kontakter jeg dig?",
+        "a": "Skriv til leeo@kakao.com, svaret kommer normalt inden for 2–3 hverdage. Fejl og idéer kan også sendes som issues på GitHub: M1zz/StaffSinger."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Før næste prøve,\nstart med de to takter",
+    "cta": "Hent gratis i App Store"
+  },
+  "ui": {
+    "skip": "Spring til indhold",
+    "languages": "Sprog",
+    "privacy": "Privatlivspolitik",
+    "contact": "Spørgsmål eller kommentarer? Skriv til {email}."
+  }
+}

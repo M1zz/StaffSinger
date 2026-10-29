@@ -1,0 +1,184 @@
+{
+  "title": "StaffSinger: tulis not di paranada, langsung dengar",
+  "description": "Salin birama yang membingungkan ke paranada, lalu dengarkan ritme dan nadanya persis seperti tertulis bersama metronom. Semua fitur gratis.",
+  "hero": {
+    "headline": "Berhenti menghitung di kepala.\nDengarkan saja.",
+    "lead": "Salin dua birama yang bikin bingung ke paranada, lalu ketuk putar. Setelah hitungan masuk satu birama, aplikasi memainkannya mengikuti metronom, dengan ritme dan nada yang tepat.",
+    "cta": "Unduh gratis di App Store",
+    "note": "Semua fitur gratis. Untuk iPhone dan iPad."
+  },
+  "demo": {
+    "title": "Tulis beberapa not, lalu dengarkan",
+    "lead": "Tekan dan tahan paranada, geser ke atas atau bawah untuk mengganti nada, lalu lepas untuk menaruh not. Tekan putar untuk mendengarnya setelah hitungan masuk satu birama. Ada suaranya, jadi cek volume dulu.",
+    "staff": "Paranada dua birama. Tekan, atau pakai tombol panah atas dan bawah untuk memilih nada, lalu Enter untuk menambahkan.",
+    "length": "Nilai not",
+    "half": "Not 1/2",
+    "quarter": "Not 1/4",
+    "eighth": "Not 1/8",
+    "undo": "Hapus terakhir",
+    "clear": "Hapus semua",
+    "slower": "Lebih lambat",
+    "faster": "Lebih cepat",
+    "play": "▶ Putar",
+    "stop": "■ Berhenti",
+    "hint": "Tekan putar untuk mendengar dua birama yang sudah ada.",
+    "empty": "Tekan paranada untuk menambahkan not pertama.",
+    "full": "Dua birama sudah penuh. Hapus not terakhir untuk memberi ruang.",
+    "cross": "Not ini akan melewati garis birama. Pilih nilai not yang lebih pendek.",
+    "note": "Versi web memakai bunyi sintetis sederhana. Aplikasinya memainkan suara piano dan mendukung akord, suara, not bertitik, triol, tanda diam, dan tanda kunci."
+  },
+  "problem": {
+    "title": "Hitungan buyar lagi di tengah birama?",
+    "text": "Not 1/8 bertitik, lalu 1/16, disusul triol. Menghitung sambil mengetuk lutut, lama-lama meleset juga. Malam sebelum latihan paduan suara pun sering tidak ada piano di dekat Anda. Dengan StaffSinger, cukup salin dua birama itu ke paranada dan dengarkan ritme serta nadanya dengan tepat."
+  },
+  "features": [
+    {
+      "title": "Ritme dan nada persis seperti tertulis",
+      "text": "Setelah hitungan masuk satu birama, musik dimainkan mengikuti klik metronom dan not yang sedang berbunyi ditandai oranye. Atur tempo dari 40 sampai 200 BPM dan pilih sukat 4/4, 3/4, 2/4, 6/8, 2/2, atau 3/8.\nTumpuk not pada ketukan yang sama untuk akord yang berbunyi bersamaan, dan tulis hingga tiga suara terpisah. Kunci G, kunci C (alto), kunci F, dan tanda kunci juga tersedia.",
+      "shot": "02-playback"
+    },
+    {
+      "title": "Ucapkan nama not, jadilah not",
+      "text": "Setelah empat ketukan metronom, ucapkan `do` `re` `mi` sesuai ketukan dan not langsung masuk ke paranada. Ucapkan tepat di ketukan, maka panjang not ikut tercatat sebagai 1/4, 1/8, atau 1/16. Untuk tanda diam, ucapkan `rest`.\nUcapkan nama not dengan lafal bahasa Inggris. Suara dikenali hanya di perangkat dan tidak disimpan.",
+      "shot": "03-dictation"
+    },
+    {
+      "title": "Foto partitur untuk AI, hasilnya tinggal tempel",
+      "text": "Ketuk `Salin aturan untuk AI`, berikan ke AI bersama foto partitur Anda, lalu tempel teks yang dikembalikannya. Paranada langsung terisi. Formatnya ada di tabel di bawah.\nAnda juga bisa memotret partitur kertas, menampilkannya di layar, lalu menyalinnya sambil melihat.",
+      "shot": "04-paste"
+    }
+  ],
+  "steps": {
+    "title": "Mulai dalam tiga langkah",
+    "items": [
+      {
+        "title": "Pilih birama yang sulit",
+        "text": "Aplikasi terbuka dengan paranada dua birama yang kosong."
+      },
+      {
+        "title": "Tulis notnya",
+        "text": "Tekan paranada atau mainkan tuts piano."
+      },
+      {
+        "title": "Ketuk putar",
+        "text": "Hitungan masuk, lalu diputar bersama metronom."
+      }
+    ]
+  },
+  "reference": {
+    "title": "Format teks untuk ditempel",
+    "rows": [
+      [
+        "C4:4",
+        "C di oktaf 4, not 1/4 (C tengah adalah C4)"
+      ],
+      [
+        "D:8",
+        "Tanpa oktaf, oktaf sebelumnya dipakai lagi"
+      ],
+      [
+        "F#4:8 · Bb4:4",
+        "# untuk kres, b untuk mol"
+      ],
+      [
+        "E4",
+        "Tanpa :panjang, panjang sebelumnya dipakai lagi"
+      ],
+      [
+        ":1 · :2 · :4 · :8 · :16",
+        "not penuh, 1/2, 1/4, 1/8, 1/16"
+      ],
+      [
+        "C4:4.",
+        "not bertitik"
+      ],
+      [
+        "C4:8t",
+        "triol"
+      ],
+      [
+        "R:4 · R:8",
+        "tanda diam"
+      ]
+    ],
+    "note": "Salin aturan untuk AI di aplikasi menyalin petunjuk format ini apa adanya. Pisahkan not dengan spasi."
+  },
+  "pricing": {
+    "title": "Semua fitur gratis",
+    "free": {
+      "name": "Gratis",
+      "items": [
+        "Input paranada dan keyboard piano dua oktaf",
+        "Pemutaran dengan hitungan masuk dan metronom",
+        "Akord dan tiga suara",
+        "Tanda kunci dan tiga jenis kunci",
+        "Dikte nama not dengan suara",
+        "Tempel teks dan foto referensi"
+      ]
+    },
+    "pro": {
+      "name": "Dukung pengembang",
+      "items": [
+        "Kirim tip kecil dari Pengaturan",
+        "Tip tidak membuka fitur tambahan"
+      ],
+      "note": "Bukan langganan. Setiap tip adalah pembayaran sekali."
+    },
+    "note": "Tanpa iklan, tanpa perlu akun."
+  },
+  "faq": {
+    "title": "Pertanyaan umum",
+    "items": [
+      {
+        "q": "Bagaimana cara menambahkan not?",
+        "a": "Pilih nilai not di bilah alat dulu, lalu tekan paranada di nada yang Anda mau. Selama ditahan, nadanya terdengar, dan not masuk saat Anda melepas. Ketuk tombol keyboard untuk memasukkan not lewat keyboard piano dua oktaf."
+      },
+      {
+        "q": "Bagaimana membuat akord?",
+        "a": "Nyalakan tombol Akord di bilah alat lalu tambahkan not. Not baru ditumpuk di atas not yang dipilih dan berbunyi bersamaan."
+      },
+      {
+        "q": "Saya ingin memperbaiki not.",
+        "a": "Seret not ke atas atau bawah untuk mengubah nada, ke samping untuk memindahkan ketukan. Dengan not terpilih, tombol ♯ ♭ menggeser setengah nada dan tombol 8va menggeser satu oktaf."
+      },
+      {
+        "q": "Di mana mengubah tempo dan sukat?",
+        "a": "Di Pengaturan, bersama kunci dan tanda kunci. Metronom dan hitungan masuk juga dinyalakan atau dimatikan di sana."
+      },
+      {
+        "q": "Tidak ada suara.",
+        "a": "Periksa mode senyap dan volume media. Kalau hanya metronom yang tidak terdengar, pastikan Metronom menyala di Bantuan pemutaran pada Pengaturan."
+      },
+      {
+        "q": "Dikte nama not sering meleset.",
+        "a": "Pakai earphone supaya bunyi metronom tidak masuk ke mikrofon, dan ucapkan satu not dengan jelas di setiap ketukan. Not yang salah tinggal diseret untuk diperbaiki."
+      },
+      {
+        "q": "Kenapa perlu kamera?",
+        "a": "Hanya untuk memotret partitur kertas sebagai foto referensi di layar. Foto tidak pernah keluar dari perangkat. Tanpa izin kamera pun Anda bisa memilih foto dari galeri."
+      },
+      {
+        "q": "Perangkat apa yang didukung?",
+        "a": "iPhone dan iPad dengan iOS 17 atau lebih baru. Tampilannya dirancang untuk posisi lanskap."
+      },
+      {
+        "q": "Apakah partitur atau suara saya dikirim ke mana pun?",
+        "a": "Tidak. Partitur, foto, dan suara tetap di perangkat, dan semuanya bisa dipakai tanpa internet. Hanya statistik penggunaan anonim dan laporan crash yang dikirim ke iCloud untuk memperbaiki aplikasi."
+      },
+      {
+        "q": "Bagaimana cara menghubungi pengembang?",
+        "a": "Kirim email ke leeo@kakao.com. Biasanya dibalas dalam 2 sampai 3 hari kerja. Laporan bug dan usulan fitur juga bisa dikirim sebagai issue di GitHub M1zz/StaffSinger."
+      }
+    ]
+  },
+  "closing": {
+    "headline": "Sebelum latihan berikutnya,\nmulai dari dua birama itu",
+    "cta": "Unduh gratis di App Store"
+  },
+  "ui": {
+    "skip": "Lewati ke konten",
+    "languages": "Bahasa",
+    "privacy": "Kebijakan Privasi",
+    "contact": "Ada pertanyaan atau masukan? Tulis ke {email}."
+  }
+}

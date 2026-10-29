@@ -1,121 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StaffSinger</title>
-<link rel="canonical" href="https://m1zz.github.io/StaffSinger/da/">
-<!-- i18n:head -->
-<link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
-<link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
-<link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
-<link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
-<link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
-<link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
-<link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
-<link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
-<link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
-<link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
-<link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
-<link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
-<link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
-<link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
-<link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
-<link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
-<link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
-<link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
-<link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
-<link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
-<link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
-<link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
-<link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
-<link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
-<!-- /i18n:head -->
-<style>
-  :root { color-scheme: light dark; }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
-    line-height: 1.7; color: #1d2433; background: #f6f9fd;
-  }
-  header {
-    background: linear-gradient(135deg, #5bb8ff 0%, #4facfe 35%, #1d3a8a 100%);
-    color: #fff; text-align: center; padding: 72px 24px 64px;
-  }
-  header h1 { font-size: 2.2rem; letter-spacing: -0.02em; }
-  header p { margin-top: 10px; opacity: 0.92; }
-  main { max-width: 720px; margin: -32px auto 64px; padding: 0 20px; }
-  .card {
-    background: #fff; border-radius: 16px; padding: 28px 28px;
-    box-shadow: 0 8px 24px rgba(29, 58, 138, 0.10); margin-bottom: 20px;
-  }
-  .card h2 { font-size: 1.2rem; margin-bottom: 8px; color: #1d3a8a; }
-  a.btn {
-    display: inline-block; margin-top: 12px; padding: 10px 20px;
-    background: #4facfe; color: #fff; border-radius: 10px;
-    text-decoration: none; font-weight: 600;
-  }
-  a.btn:hover { background: #3d97e8; }
-  footer { text-align: center; color: #8a93a6; font-size: 0.85rem; padding: 24px; }
-  @media (prefers-color-scheme: dark) {
-    body { background: #10141c; color: #e6eaf2; }
-    .card { background: #1a2030; box-shadow: none; }
-    .card h2 { color: #7fc1ff; }
-  }
-  /* i18n:css */
-  footer nav.langs {
-    margin: 14px auto 0; max-width: 720px; display: flex; flex-wrap: wrap;
-    justify-content: center; gap: 4px 14px; font-size: 0.8rem;
-  }
-  footer nav.langs a { color: inherit; text-decoration: none; }
-  footer nav.langs a:hover { text-decoration: underline; }
-  footer nav.langs [aria-current] { color: #4facfe; font-weight: 600; }
-  /* /i18n:css */
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StaffSinger: skriv noder i nodesystemet og hør dem med det samme</title>
+  <meta name="description" content="Skriv de svære takter ind i nodesystemet, og hør dem med præcis rytme og tonehøjde til metronom. Alle funktioner er gratis.">
+  <meta name="theme-color" content="#3373D9" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#10141c" media="(prefers-color-scheme: dark)">
+  <meta name="apple-itunes-app" content="app-id=6779262832">
+  <link rel="canonical" href="https://m1zz.github.io/StaffSinger/da/">
+  <link rel="alternate" hreflang="ko" href="https://m1zz.github.io/StaffSinger/">
+  <link rel="alternate" hreflang="en" href="https://m1zz.github.io/StaffSinger/en/">
+  <link rel="alternate" hreflang="ja" href="https://m1zz.github.io/StaffSinger/ja/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://m1zz.github.io/StaffSinger/zh-Hans/">
+  <link rel="alternate" hreflang="zh-Hant" href="https://m1zz.github.io/StaffSinger/zh-Hant/">
+  <link rel="alternate" hreflang="ru" href="https://m1zz.github.io/StaffSinger/ru/">
+  <link rel="alternate" hreflang="es" href="https://m1zz.github.io/StaffSinger/es/">
+  <link rel="alternate" hreflang="de" href="https://m1zz.github.io/StaffSinger/de/">
+  <link rel="alternate" hreflang="fr" href="https://m1zz.github.io/StaffSinger/fr/">
+  <link rel="alternate" hreflang="it" href="https://m1zz.github.io/StaffSinger/it/">
+  <link rel="alternate" hreflang="pt-BR" href="https://m1zz.github.io/StaffSinger/pt-BR/">
+  <link rel="alternate" hreflang="th" href="https://m1zz.github.io/StaffSinger/th/">
+  <link rel="alternate" hreflang="vi" href="https://m1zz.github.io/StaffSinger/vi/">
+  <link rel="alternate" hreflang="cs" href="https://m1zz.github.io/StaffSinger/cs/">
+  <link rel="alternate" hreflang="da" href="https://m1zz.github.io/StaffSinger/da/">
+  <link rel="alternate" hreflang="el" href="https://m1zz.github.io/StaffSinger/el/">
+  <link rel="alternate" hreflang="fi" href="https://m1zz.github.io/StaffSinger/fi/">
+  <link rel="alternate" hreflang="id" href="https://m1zz.github.io/StaffSinger/id/">
+  <link rel="alternate" hreflang="nb" href="https://m1zz.github.io/StaffSinger/nb/">
+  <link rel="alternate" hreflang="nl" href="https://m1zz.github.io/StaffSinger/nl/">
+  <link rel="alternate" hreflang="pl" href="https://m1zz.github.io/StaffSinger/pl/">
+  <link rel="alternate" hreflang="sv" href="https://m1zz.github.io/StaffSinger/sv/">
+  <link rel="alternate" hreflang="tr" href="https://m1zz.github.io/StaffSinger/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://m1zz.github.io/StaffSinger/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="StaffSinger: skriv noder i nodesystemet og hør dem med det samme">
+  <meta property="og:description" content="Skriv de svære takter ind i nodesystemet, og hør dem med præcis rytme og tonehøjde til metronom. Alle funktioner er gratis.">
+  <meta property="og:url" content="https://m1zz.github.io/StaffSinger/da/">
+  <meta property="og:image" content="https://m1zz.github.io/StaffSinger/img/da/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="../demo.css">
+  <style>:root{--accent:#3373D9}@media (prefers-color-scheme:dark){:root{--accent:#7FB2FF}}</style>
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
-<header>
-  <h1>🎼 StaffSinger</h1>
-  <p>En iOS-app, der afspiller tonehøjde og rytme for de noder, du sætter på nodesystemet</p>
-</header>
-<main>
-  <div class="card">
-    <h2>Support</h2>
-    <p>Sådan bruger du appen, ofte stillede spørgsmål, og hvordan du kontakter os.</p>
-    <a class="btn" href="support.html">Åbn supportsiden</a>
-  </div>
-  <div class="card">
-    <h2>Privatlivspolitik</h2>
-    <p>Hvilke oplysninger StaffSinger håndterer, og hvordan de håndteres.</p>
-    <a class="btn" href="privacy.html">Se privatlivspolitikken</a>
-  </div>
-</main>
-<footer>© 2026 StaffSinger · <a href="https://github.com/M1zz/StaffSinger">GitHub</a>
-<!-- i18n:nav --><nav class="langs" aria-label="Sprog">
-  <a href="../index.html" hreflang="ko" lang="ko">한국어</a>
-  <a href="../en/index.html" hreflang="en" lang="en">English</a>
-  <a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a>
-  <a href="../zh-Hans/index.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-  <a href="../zh-Hant/index.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
-  <a href="../ru/index.html" hreflang="ru" lang="ru">Русский</a>
-  <a href="../es/index.html" hreflang="es" lang="es">Español</a>
-  <a href="../de/index.html" hreflang="de" lang="de">Deutsch</a>
-  <a href="../fr/index.html" hreflang="fr" lang="fr">Français</a>
-  <a href="../it/index.html" hreflang="it" lang="it">Italiano</a>
-  <a href="../pt-BR/index.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-  <a href="../th/index.html" hreflang="th" lang="th">ไทย</a>
-  <a href="../vi/index.html" hreflang="vi" lang="vi">Tiếng Việt</a>
-  <a href="../cs/index.html" hreflang="cs" lang="cs">Čeština</a>
-  <span lang="da" aria-current="page">Dansk</span>
-  <a href="../el/index.html" hreflang="el" lang="el">Ελληνικά</a>
-  <a href="../fi/index.html" hreflang="fi" lang="fi">Suomi</a>
-  <a href="../id/index.html" hreflang="id" lang="id">Bahasa Indonesia</a>
-  <a href="../nb/index.html" hreflang="nb" lang="nb">Norsk bokmål</a>
-  <a href="../nl/index.html" hreflang="nl" lang="nl">Nederlands</a>
-  <a href="../pl/index.html" hreflang="pl" lang="pl">Polski</a>
-  <a href="../sv/index.html" hreflang="sv" lang="sv">Svenska</a>
-  <a href="../tr/index.html" hreflang="tr" lang="tr">Türkçe</a>
-</nav><!-- /i18n:nav -->
-</footer>
+  <a class="skip" href="#main">Spring til indhold</a>
+  <header class="bar">
+    <a class="brand" href="../da/"><img src="../icon.png" alt="" width="32" height="32">StaffSinger</a>
+    <a class="lang-link" href="#languages">Sprog</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="copy">
+        <h1>Stop med at tælle i hovedet.<br>Lyt i stedet.</h1>
+        <p class="lead">Skriv de to takter, du snubler over, ind og tryk på afspil. Efter én takts indtælling spiller appen dem til metronomen med præcis den rytme og tonehøjde, der står.</p>
+        <div class="actions"><a class="cta" href="https://apps.apple.com/app/id6779262832">Hent gratis i App Store</a><a class="try" href="#try">Skriv et par noder, og lyt ↓</a></div>
+        <p class="muted small">Alle funktioner er gratis. Til iPhone og iPad.</p>
+      </div>
+      <div class="plain"><img src="../img/da/01-piano.jpg" alt="Stop med at tælle i hovedet. Lyt i stedet." width="720" height="331" decoding="async"></div>
+    </section>
+
+
+    <section class="reveal" id="try">
+      <h2>Skriv et par noder, og lyt</h2>
+      <p class="muted">Hold fingeren på nodesystemet og træk op eller ned for at skifte tone, og slip for at sætte noden. Tryk på Spil, så lyder det efter én takts indtælling. Der kommer lyd, så tjek lydstyrken.</p>
+      <div id="demo" class="card demo-card" data-text="{&quot;title&quot;: &quot;Skriv et par noder, og lyt&quot;, &quot;lead&quot;: &quot;Hold fingeren på nodesystemet og træk op eller ned for at skifte tone, og slip for at sætte noden. Tryk på Spil, så lyder det efter én takts indtælling. Der kommer lyd, så tjek lydstyrken.&quot;, &quot;staff&quot;: &quot;Nodesystem på to takter. Tryk, eller vælg tonehøjde med pil op og ned, og tilføj noden med Enter.&quot;, &quot;length&quot;: &quot;Nodeværdi&quot;, &quot;half&quot;: &quot;Halvnode&quot;, &quot;quarter&quot;: &quot;Fjerdedel&quot;, &quot;eighth&quot;: &quot;Ottendedel&quot;, &quot;undo&quot;: &quot;Fjern sidste&quot;, &quot;clear&quot;: &quot;Ryd alt&quot;, &quot;slower&quot;: &quot;Langsommere&quot;, &quot;faster&quot;: &quot;Hurtigere&quot;, &quot;play&quot;: &quot;▶ Spil&quot;, &quot;stop&quot;: &quot;■ Stop&quot;, &quot;hint&quot;: &quot;Tryk på Spil for at høre de to takter, der allerede står der.&quot;, &quot;empty&quot;: &quot;Tryk på nodesystemet for at sætte den første node.&quot;, &quot;full&quot;: &quot;Begge takter er fulde. Fjern den sidste node for at få plads.&quot;, &quot;cross&quot;: &quot;Den node ville gå over taktstregen. Vælg en kortere nodeværdi.&quot;, &quot;note&quot;: &quot;Webudgaven spiller med en simpel syntlyd. Appen spiller med klaverlyd og kan akkorder, stemmer, punkterede noder, trioler, pauser og faste fortegn.&quot;}"></div>
+    </section>
+
+    <section class="problem reveal">
+      <h2>Mistet tællingen midt i takten igen?</h2>
+      <p>En punkteret ottendedel, så en sekstendedel og lige efter en triol. Du banker takten på knæet, og et sted midt i går det galt. Aftenen før korprøven er der sjældent et klaver ved hånden. I StaffSinger skal du bare skrive de to takter ind, så hører du præcis rytme og tonehøjde.</p>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Rytme og tonehøjde præcis som skrevet</h2>
+        <p>Efter én takts indtælling spiller musikken til metronomens klik, og noden, der klinger, lyser orange. Tempoet går fra 40 til 200 BPM, og taktarten kan være 4/4, 3/4, 2/4, 6/8, 2/2 eller 3/8.<br>Noder på samme slag klinger sammen som en akkord, og du kan skrive op til tre stemmer. G-nøgle, altnøgle, F-nøgle og faste fortegn er med.</p>
+      </div>
+      <div class="plain"><img src="../img/da/02-playback.jpg" alt="Rytme og tonehøjde præcis som skrevet" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Sig nodenavnene, så bliver de til noder</h2>
+        <p>Efter fire klik fra metronomen siger du <code>do</code> <code>re</code> <code>mi</code> i takt, og noderne lander i nodesystemet. Rammer du slaget, kommer nodeværdien med, som fjerdedele, ottendedele eller sekstendedele. Til en pause siger du <code>rest</code>.<br>Sig nodenavnene på engelsk. Talen genkendes kun på enheden og gemmes ikke.</p>
+      </div>
+      <div class="plain"><img src="../img/da/03-dictation.jpg" alt="Sig nodenavnene, så bliver de til noder" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="feature reveal">
+      <div class="copy">
+        <h2>Giv nodebilledet til en AI, og indsæt svaret</h2>
+        <p>Tryk på <code>Kopiér regel til AI</code>, giv den til en AI sammen med et foto af noderne, og indsæt den tekst, du får tilbage. Nodesystemet udfylder sig selv. Formatet står i tabellen nedenfor.<br>Du kan også fotografere papirnoderne, have billedet på skærmen og skrive af, mens du kigger.</p>
+      </div>
+      <div class="plain"><img src="../img/da/04-paste.jpg" alt="Giv nodebilledet til en AI, og indsæt svaret" width="720" height="331" loading="lazy" decoding="async"></div>
+    </section>
+
+    <section class="reveal">
+      <h2>Kom i gang i tre trin</h2>
+      <ol class="steps"><li class="card"><span class="n">1</span><h3>Vælg de svære takter</h3><p>Appen åbner med et tomt nodesystem på to takter.</p></li>
+<li class="card"><span class="n">2</span><h3>Skriv noderne</h3><p>Tryk i nodesystemet, eller spil på klavertangenterne.</p></li>
+<li class="card"><span class="n">3</span><h3>Tryk på afspil</h3><p>Indtælling og derefter afspilning med metronom.</p></li></ol>
+    </section>
+
+    <section class="reveal" id="commands">
+      <h2>Tekstformat til indsættelse</h2>
+      <div class="card table">
+        <dl><div><dt>C4:4</dt><dd>C i oktav 4, fjerdedel (enstreget c er C4)</dd></div><div><dt>D:8</dt><dd>Uden oktav gælder den forrige</dd></div><div><dt>F#4:8 · Bb4:4</dt><dd># for kryds, b for b</dd></div><div><dt>E4</dt><dd>Uden :nodeværdi gælder den forrige</dd></div><div><dt>:1 · :2 · :4 · :8 · :16</dt><dd>helnode, halvnode, fjerdedel, ottendedel, sekstendedel</dd></div><div><dt>C4:4.</dt><dd>punkteret node</dd></div><div><dt>C4:8t</dt><dd>triol</dd></div><div><dt>R:4 · R:8</dt><dd>pauser</dd></div></dl>
+      </div>
+      <p class="muted">Kopiér regel til AI i appen kopierer præcis disse instruktioner. Adskil noderne med mellemrum.</p>
+    </section>
+
+    <section class="reveal" id="pricing">
+      <h2>Alle funktioner er gratis</h2>
+      <div class="plans">
+        <div class="card plan free">
+          <h3>Gratis</h3>
+          <ul><li>Indtastning i nodesystemet og klaver på to oktaver</li><li>Afspilning med indtælling og metronom</li><li>Akkorder og tre stemmer</li><li>Faste fortegn og tre nøgler</li><li>Diktering af nodenavne med stemmen</li><li>Indsæt tekst og referencefoto</li></ul>
+          
+        </div>
+        <div class="card plan pro">
+          <h3>Støt udvikleren</h3>
+          <ul><li>Send et lille drikkepengebeløb fra Indstillinger</li><li>Drikkepenge låser ikke op for noget ekstra</li></ul>
+          <p class="muted">Ikke et abonnement. Hver gang er en engangsbetaling.</p>
+        </div>
+      </div>
+      <p class="muted">Ingen reklamer og ingen konto.</p>
+    </section>
+
+    <section class="reveal" id="faq">
+      <h2>Ofte stillede spørgsmål</h2>
+      <div class="faq"><details><summary>Hvordan sætter jeg noder?</summary><p>Vælg først nodeværdi i værktøjslinjen, og tryk så i nodesystemet i den højde, du vil have. Mens du holder, lyder tonen, og når du slipper, bliver noden sat. Med tastaturknappen åbner du et klaver på to oktaver.</p></details>
+<details><summary>Hvordan laver jeg en akkord?</summary><p>Slå knappen Akkord til i værktøjslinjen, og tilføj noder. De stables oven på den valgte node og klinger samtidig.</p></details>
+<details><summary>Hvordan retter jeg en node?</summary><p>Træk noden op eller ned for at ændre tonehøjden, eller til siden for at flytte den til et andet slag. Med en node valgt flytter ♯ ♭ den en halvtone og 8va en oktav.</p></details>
+<details><summary>Hvor ændrer jeg tempo og taktart?</summary><p>I Indstillinger, sammen med nøgle og faste fortegn. Der slår du også metronom og indtælling til og fra.</p></details>
+<details><summary>Der kommer ingen lyd.</summary><p>Tjek lydløs tilstand og medielydstyrken. Hvis det kun er metronomen, der mangler, så se efter, at den er slået til under Afspilningshjælp i Indstillinger.</p></details>
+<details><summary>Dikteringen blander noderne sammen.</summary><p>Brug høretelefoner, så metronomen ikke kommer med i mikrofonen, og sig én node tydeligt pr. slag. En forkert node trækker du bare på plads.</p></details>
+<details><summary>Hvorfor skal appen bruge kameraet?</summary><p>Kun til at fotografere papirnoder, som du har på skærmen som reference. Billederne forlader aldrig enheden. Uden adgang til kameraet kan du vælge et billede fra biblioteket.</p></details>
+<details><summary>Hvilke enheder virker den på?</summary><p>iPhone og iPad med iOS 17 eller nyere. Brugerfladen er lavet til liggende format.</p></details>
+<details><summary>Bliver mine noder eller min stemme sendt nogen steder hen?</summary><p>Nej. Noder, billeder og stemme bliver på enheden, og alt virker uden internet. Kun anonym brugsstatistik og nedbrudsrapporter sendes til iCloud for at forbedre appen.</p></details>
+<details><summary>Hvordan kontakter jeg dig?</summary><p>Skriv til leeo@kakao.com, svaret kommer normalt inden for 2–3 hverdage. Fejl og idéer kan også sendes som issues på GitHub: M1zz/StaffSinger.</p></details></div>
+      <p class="contact">Spørgsmål eller kommentarer? Skriv til <a href="mailto:leeo@kakao.com">leeo@kakao.com</a>.</p>
+    </section>
+
+    <section class="closing reveal">
+      <h2>Før næste prøve,<br>start med de to takter</h2>
+      <a class="cta" href="https://apps.apple.com/app/id6779262832">Hent gratis i App Store</a>
+    </section>
+  </main>
+
+  <footer>
+    <nav id="languages" class="langs" aria-label="Sprog"><a href="../" hreflang="ko" lang="ko">한국어</a>
+<a href="../en/" hreflang="en" lang="en">English</a>
+<a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+<a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+<a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+<a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+<a href="../es/" hreflang="es" lang="es">Español</a>
+<a href="../de/" hreflang="de" lang="de">Deutsch</a>
+<a href="../fr/" hreflang="fr" lang="fr">Français</a>
+<a href="../it/" hreflang="it" lang="it">Italiano</a>
+<a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+<a href="../th/" hreflang="th" lang="th">ไทย</a>
+<a href="../vi/" hreflang="vi" lang="vi">Tiếng Việt</a>
+<a href="../cs/" hreflang="cs" lang="cs">Čeština</a>
+<a href="../da/" hreflang="da" lang="da" aria-current="page">Dansk</a>
+<a href="../el/" hreflang="el" lang="el">Ελληνικά</a>
+<a href="../fi/" hreflang="fi" lang="fi">Suomi</a>
+<a href="../id/" hreflang="id" lang="id">Bahasa Indonesia</a>
+<a href="../nb/" hreflang="nb" lang="nb">Norsk bokmål</a>
+<a href="../nl/" hreflang="nl" lang="nl">Nederlands</a>
+<a href="../pl/" hreflang="pl" lang="pl">Polski</a>
+<a href="../sv/" hreflang="sv" lang="sv">Svenska</a>
+<a href="../tr/" hreflang="tr" lang="tr">Türkçe</a></nav>
+    <p><a href="privacy.html">Privatlivspolitik</a> · <a href="mailto:leeo@kakao.com">leeo@kakao.com</a> · © 2026 StaffSinger</p>
+  </footer>
+
+  <script>
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target) }
+    }), { rootMargin: "0px 0px -10% 0px" });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+  </script>
+  <script src="../demo.js"></script>
 </body>
 </html>
