@@ -20,6 +20,10 @@ func noteLayerColor(_ layer: Int) -> Color {
 struct StaffView: View {
     @ObservedObject var vm: ScoreViewModel
     @ObservedObject var audio: AudioEngine
+    /// Hold-and-hum input, offered in the note editor.
+    @ObservedObject var hum: PitchListener
+    /// Shade the column the keys will rewrite (only while the piano is up).
+    var showsCursor = false
 
     private let lineSpacing: CGFloat = 18
     private let noteRadius: CGFloat = 7
@@ -39,6 +43,9 @@ struct StaffView: View {
     /// the on-screen point its glyph sits at (so the popover can anchor to it).
     @State private var editingNoteID: UUID? = nil
     @State private var editingAnchor: CGPoint = .zero
+    /// A staff press that began during playback: it stops playback on release
+    /// instead of placing a note.
+    @State private var pressStopsPlayback = false
 
     private let staffSpace = "staff"
 
@@ -255,11 +262,7 @@ struct StaffView: View {
     // MARK: - Notes (only those within the two visible measures)
 
     /// The start beat of the group currently sounding, for the play highlight.
-    private var activeBeat: Double? {
-        guard let idx = audio.currentGroupIndex else { return nil }
-        let groups = vm.score.chordGroups
-        return idx < groups.count ? groups[idx].beat : nil
-    }
+    private var activeBeat: Double? { audio.currentBeat }
 
     private func noteLayer(layout: StaffLayout, m: Metrics,
                            beamedIDs: Set<UUID>) -> some View {
@@ -275,6 +278,8 @@ struct StaffView: View {
                     NoteGlyph(
                         note: note, x: x, layout: layout, radius: noteRadius,
                         isSelected: vm.selectedNoteID == note.id, isActive: isActive,
+                        isCursor: showsCursor && vm.cursorID == note.id,
+                        isUnsure: vm.unsureIDs.contains(note.id),
                         beamed: beamedIDs.contains(note.id),
                         keySignature: vm.score.keySignature
                     )
@@ -283,12 +288,17 @@ struct StaffView: View {
 
                     // Compact hit target: tap = select, long-press = open the
                     // length/delete editor, drag = move (pitch by Y, beat by X).
+                    // During playback a tap stops right on that note.
                     Color.clear
                         .frame(width: 46, height: 46)
                         .contentShape(Rectangle())
                         .onTapGesture {
-                            vm.selectedNoteID = note.id
-                            if !note.isRest { audio.audition(note.pitch) }
+                            if audio.isPlaying {
+                                vm.stopAndPick(note.id)
+                            } else {
+                                vm.pick(note.id)
+                                if !note.isRest { audio.audition(note.pitch) }
+                            }
                         }
                         .onLongPressGesture(minimumDuration: 0.4) {
                             openEditor(note.id, at: CGPoint(x: x, y: y))
@@ -300,12 +310,12 @@ struct StaffView: View {
                         .accessibilityLabel(noteAccessibilityLabel(note))
                         .accessibilityAddTraits(vm.selectedNoteID == note.id ? [.isButton, .isSelected] : .isButton)
                         .accessibilityAction {
-                            vm.selectedNoteID = note.id
+                            vm.pick(note.id)
                             if !note.isRest { audio.audition(note.pitch) }
                         }
                         .accessibilityAdjustableAction { direction in
                             guard !note.isRest else { return }
-                            vm.selectedNoteID = note.id
+                            vm.pick(note.id)
                             vm.changePitch(of: note.id, semitones: direction == .increment ? 1 : -1)
                         }
                         .accessibilityAction(named: "편집") {
@@ -323,7 +333,7 @@ struct StaffView: View {
 
     private func openEditor(_ id: UUID, at anchor: CGPoint) {
         editHaptic.impactOccurred()
-        vm.selectedNoteID = id
+        vm.pick(id)
         editingAnchor = anchor
         withAnimation(.spring(response: 0.3, dampingFraction: 0.75)) {
             editingNoteID = id
@@ -335,6 +345,7 @@ struct StaffView: View {
         var parts = [note.isRest ? String(localized: "쉼표") : note.pitch.accessibilityLabel,
                      note.durationLabel]
         if note.layer > 0 { parts.append(String(localized: "성부 \(note.layer + 1)")) }
+        if vm.unsureIDs.contains(note.id) { parts.append(String(localized: "확인 필요")) }
         return parts.joined(separator: ", ")
     }
 
@@ -343,7 +354,10 @@ struct StaffView: View {
     private func noteDrag(note: ScoreNote, layout: StaffLayout, m: Metrics) -> some Gesture {
         DragGesture(minimumDistance: 8, coordinateSpace: .named(staffSpace))
             .onChanged { value in
-                vm.selectedNoteID = note.id
+                if movingPitch == nil {              // drag just began
+                    vm.checkpoint()
+                    vm.pick(note.id)
+                }
                 let newPitch = vm.keyed(layout.pitch(forY: value.location.y))
 
                 let snap = 0.5
@@ -381,6 +395,8 @@ struct StaffView: View {
             .gesture(
                 DragGesture(minimumDistance: 0)
                     .onChanged { value in
+                        if audio.isPlaying { pressStopsPlayback = true }
+                        guard !pressStopsPlayback else { return }
                         let pitch = vm.keyed(layout.pitch(forY: value.location.y))
                         if previewPitch != pitch {
                             if previewPitch == nil { haptics.prepare() }
@@ -392,10 +408,17 @@ struct StaffView: View {
                         }
                     }
                     .onEnded { value in
+                        // Tapping during playback: stop on the note sounding now.
+                        if pressStopsPlayback {
+                            pressStopsPlayback = false
+                            vm.stopAndPick()
+                            return
+                        }
                         let committed = previewPitch ?? vm.keyed(layout.pitch(forY: value.location.y))
                         audio.endPreview()
                         previewPitch = nil
                         vm.liveReadout = nil
+                        vm.dropCursor()                      // the staff always appends
                         vm.addNote(pitch: committed)         // commit on release
                         commitHaptic.impactOccurred()
                     }
@@ -440,6 +463,12 @@ struct StaffView: View {
 
             NoteEditorPopover(
                 note: note,
+                hum: hum,
+                keySignature: vm.score.keySignature,
+                onSung: { midi in
+                    vm.pick(id)
+                    vm.addSung(midi: midi)
+                },
                 onPick: { dur in
                     editHaptic.impactOccurred()
                     vm.changeDuration(of: id, to: dur)
@@ -468,7 +497,7 @@ struct StaffView: View {
     /// Anchor the card just above the note, flipping below it when there's no
     /// room, and keeping it clear of the screen edges.
     private func editorPosition(in size: CGSize) -> CGPoint {
-        let halfWidth: CGFloat = 248
+        let halfWidth: CGFloat = 272
         let halfHeight: CGFloat = 36
         let gap: CGFloat = 64
         let x = min(max(halfWidth + 8, editingAnchor.x), size.width - halfWidth - 8)
@@ -681,6 +710,9 @@ struct StaffView: View {
 
 private struct NoteEditorPopover: View {
     let note: ScoreNote
+    @ObservedObject var hum: PitchListener
+    let keySignature: Int
+    let onSung: (Int) -> Void
     let onPick: (NoteDuration) -> Void
     let onAccidental: (Int) -> Void   // semitone nudge: -1 = flat, +1 = sharp
     let onToggleDot: () -> Void
@@ -699,6 +731,8 @@ private struct NoteEditorPopover: View {
                     .accessibilityLabel(note.pitch.accessibilityLabel)
                 accidentalButton("\u{266F}", semitones: +1)   // ♯
                     .accessibilityLabel("반음 올리기")
+                HumButton(listener: hum, keySignature: keySignature, onPitch: onSung)
+                    .frame(width: 44, height: 46)
 
                 Divider().frame(height: 30)
             }
@@ -825,6 +859,10 @@ private struct NoteGlyph: View {
     let radius: CGFloat
     let isSelected: Bool
     let isActive: Bool
+    /// The column the next piano key / hummed pitch rewrites.
+    var isCursor: Bool = false
+    /// The photo reader wasn't sure about this note.
+    var isUnsure: Bool = false
     /// True when a beam (drawn separately) already provides this note's stem,
     /// so the glyph must not draw its own stem or flag.
     var beamed: Bool = false
@@ -853,6 +891,14 @@ private struct NoteGlyph: View {
         let midY = layout.topLineY + 2 * layout.lineSpacing
 
         ZStack {
+            // Fixing cursor: a soft band down the staff behind the note.
+            if isCursor {
+                RoundedRectangle(cornerRadius: radius)
+                    .fill(Color.accentColor.opacity(0.14))
+                    .frame(width: radius * 4.4, height: layout.lineSpacing * 7)
+                    .position(x: x, y: midY)
+            }
+
             if note.isRest {
                 // Drawn directly — the Unicode rest glyphs (U+1D13x) aren't in
                 // the system font and would render as empty boxes.
@@ -933,6 +979,14 @@ private struct NoteGlyph: View {
                     .fill(color)
                     .frame(width: 4.4, height: 4.4)
                     .position(x: x + radius + 8, y: dotY)
+            }
+
+            // Unsure: a dashed ring asking to be checked (shape, not just color).
+            if isUnsure && !(isSelected || isActive) {
+                Circle()
+                    .stroke(Color.orange, style: StrokeStyle(lineWidth: 2, dash: [3, 3]))
+                    .frame(width: radius * 3.4, height: radius * 3.4)
+                    .position(x: x, y: note.isRest ? midY : y)
             }
 
             // Selection ring / active highlight.

@@ -305,145 +305,145 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "계이름을 말하면 오선지에 음표로 옮기기 위해 마이크를 사용합니다. 녹음은 기기 안에서만 처리되고 저장되지 않습니다."
+            "value" : "계이름을 말하거나 음을 흥얼거리면 오선지에 음표로 옮기기 위해 마이크를 사용합니다. 녹음은 기기 안에서만 처리되고 저장되지 않습니다."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger uses the microphone to turn the note names you say into notes on the staff. Audio is processed on this device only and is never saved."
+            "value" : "StaffSinger uses the microphone to turn the note names you say, or the notes you hum, into notes on the staff. Audio is processed on this device only and is never saved."
           }
         },
         "en-GB" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger uses the microphone to turn the note names you say into notes on the staff. Audio is processed on this device only and is never saved."
+            "value" : "StaffSinger uses the microphone to turn the note names you say, or the notes you hum, into notes on the staff. Audio is processed on this device only and is never saved."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger 使用麦克风，把你说出的唱名转成五线谱上的音符。录音只在设备上处理，不会保存。"
+            "value" : "StaffSinger 使用麦克风，把你说出的唱名或哼出的音转成五线谱上的音符。录音只在设备上处理，不会保存。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger 使用麥克風，把你說出的唱名轉成五線譜上的音符。錄音只會在裝置上處理，不會儲存。"
+            "value" : "StaffSinger 使用麥克風，把你說出的唱名或哼出的音轉成五線譜上的音符。錄音只會在裝置上處理，不會儲存。"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSingerは、話した階名を五線上の音符にするためにマイクを使用します。音声は端末内でのみ処理され、保存されません。"
+            "value" : "StaffSingerは、話した階名やハミングした音を五線上の音符にするためにマイクを使用します。音声は端末内でのみ処理され、保存されません。"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger использует микрофон, чтобы превращать названные вами ноты в ноты на нотном стане. Звук обрабатывается только на устройстве и не сохраняется."
+            "value" : "StaffSinger использует микрофон, чтобы превращать названные или напетые вами ноты в ноты на нотном стане. Звук обрабатывается только на устройстве и не сохраняется."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger usa el micrófono para convertir en notas del pentagrama los nombres de notas que dices. El audio se procesa solo en este dispositivo y nunca se guarda."
+            "value" : "StaffSinger usa el micrófono para convertir en notas del pentagrama los nombres de notas que dices o las notas que tarareas. El audio se procesa solo en este dispositivo y nunca se guarda."
           }
         },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger verwendet das Mikrofon, um die von dir gesprochenen Notennamen in Noten auf dem Notensystem umzuwandeln. Das Audio wird nur auf diesem Gerät verarbeitet und nie gespeichert."
+            "value" : "StaffSinger verwendet das Mikrofon, um die von dir gesprochenen Notennamen oder gesummten Töne in Noten auf dem Notensystem umzuwandeln. Das Audio wird nur auf diesem Gerät verarbeitet und nie gespeichert."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger utilise le micro pour transformer les noms de notes que vous prononcez en notes sur la portée. L’audio est traité uniquement sur cet appareil et n’est jamais enregistré."
+            "value" : "StaffSinger utilise le micro pour transformer les noms de notes que vous prononcez, ou les notes que vous fredonnez, en notes sur la portée. L’audio est traité uniquement sur cet appareil et n’est jamais enregistré."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger usa il microfono per trasformare i nomi delle note che pronunci in note sul pentagramma. L’audio viene elaborato solo su questo dispositivo e non viene mai salvato."
+            "value" : "StaffSinger usa il microfono per trasformare i nomi delle note che pronunci, o le note che canticchi, in note sul pentagramma. L’audio viene elaborato solo su questo dispositivo e non viene mai salvato."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "O StaffSinger usa o microfone para transformar os nomes de notas que você fala em notas na pauta. O áudio é processado apenas neste dispositivo e nunca é salvo."
+            "value" : "O StaffSinger usa o microfone para transformar os nomes de notas que você fala, ou as notas que cantarola, em notas na pauta. O áudio é processado apenas neste dispositivo e nunca é salvo."
           }
         },
         "th" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger ใช้ไมโครโฟนเพื่อเปลี่ยนชื่อตัวโน้ตที่คุณพูดให้เป็นตัวโน้ตบนบรรทัดห้าเส้น เสียงจะประมวลผลบนอุปกรณ์นี้เท่านั้นและจะไม่ถูกบันทึก"
+            "value" : "StaffSinger ใช้ไมโครโฟนเพื่อเปลี่ยนชื่อตัวโน้ตที่คุณพูดหรือเสียงที่คุณฮัมให้เป็นตัวโน้ตบนบรรทัดห้าเส้น เสียงจะประมวลผลบนอุปกรณ์นี้เท่านั้นและจะไม่ถูกบันทึก"
           }
         },
         "vi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger dùng micrô để chuyển tên nốt bạn nói thành nốt trên khuông nhạc. Âm thanh chỉ được xử lý trên thiết bị này và không bao giờ được lưu."
+            "value" : "StaffSinger dùng micrô để chuyển tên nốt bạn nói hoặc nốt bạn ngân nga thành nốt trên khuông nhạc. Âm thanh chỉ được xử lý trên thiết bị này và không bao giờ được lưu."
           }
         },
         "cs" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger používá mikrofon k převodu názvů not, které řeknete, na noty v notové osnově. Zvuk se zpracovává pouze v tomto zařízení a nikdy se neukládá."
+            "value" : "StaffSinger používá mikrofon k převodu názvů not, které řeknete, nebo tónů, které zabroukáte, na noty v notové osnově. Zvuk se zpracovává pouze v tomto zařízení a nikdy se neukládá."
           }
         },
         "da" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger bruger mikrofonen til at omsætte de nodenavne, du siger, til noder på nodelinjerne. Lyden behandles kun på denne enhed og gemmes aldrig."
+            "value" : "StaffSinger bruger mikrofonen til at omsætte de nodenavne, du siger, eller de toner, du nynner, til noder på nodelinjerne. Lyden behandles kun på denne enhed og gemmes aldrig."
           }
         },
         "el" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Το StaffSinger χρησιμοποιεί το μικρόφωνο για να μετατρέπει τα ονόματα νοτών που λέτε σε νότες στο πεντάγραμμο. Ο ήχος επεξεργάζεται μόνο σε αυτή τη συσκευή και δεν αποθηκεύεται ποτέ."
+            "value" : "Το StaffSinger χρησιμοποιεί το μικρόφωνο για να μετατρέπει τα ονόματα νοτών που λέτε ή τις νότες που σιγοτραγουδάτε σε νότες στο πεντάγραμμο. Ο ήχος επεξεργάζεται μόνο σε αυτή τη συσκευή και δεν αποθηκεύεται ποτέ."
           }
         },
         "fi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger käyttää mikrofonia muuttaakseen sanomasi nuottien nimet nuoteiksi nuottiviivastolle. Ääni käsitellään vain tällä laitteella, eikä sitä koskaan tallenneta."
+            "value" : "StaffSinger käyttää mikrofonia muuttaakseen sanomasi nuottien nimet tai hyräilemäsi sävelet nuoteiksi nuottiviivastolle. Ääni käsitellään vain tällä laitteella, eikä sitä koskaan tallenneta."
           }
         },
         "id" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger menggunakan mikrofon untuk mengubah nama nada yang kamu ucapkan menjadi not di paranada. Audio hanya diproses di perangkat ini dan tidak pernah disimpan."
+            "value" : "StaffSinger menggunakan mikrofon untuk mengubah nama nada yang kamu ucapkan atau nada yang kamu senandungkan menjadi not di paranada. Audio hanya diproses di perangkat ini dan tidak pernah disimpan."
           }
         },
         "nb" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger bruker mikrofonen til å gjøre notenavnene du sier om til noter på notesystemet. Lyden behandles bare på denne enheten og lagres aldri."
+            "value" : "StaffSinger bruker mikrofonen til å gjøre notenavnene du sier, eller tonene du nynner, om til noter på notesystemet. Lyden behandles bare på denne enheten og lagres aldri."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger gebruikt de microfoon om de nootnamen die je zegt om te zetten in noten op de notenbalk. Audio wordt alleen op dit apparaat verwerkt en nooit opgeslagen."
+            "value" : "StaffSinger gebruikt de microfoon om de nootnamen die je zegt of de noten die je neuriet om te zetten in noten op de notenbalk. Audio wordt alleen op dit apparaat verwerkt en nooit opgeslagen."
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger używa mikrofonu, aby zamieniać wypowiadane przez Ciebie nazwy nut na nuty na pięciolinii. Dźwięk jest przetwarzany tylko na tym urządzeniu i nigdy nie jest zapisywany."
+            "value" : "StaffSinger używa mikrofonu, aby zamieniać wypowiadane nazwy nut lub nucone dźwięki na nuty na pięciolinii. Dźwięk jest przetwarzany tylko na tym urządzeniu i nigdy nie jest zapisywany."
           }
         },
         "sv" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger använder mikrofonen för att göra om notnamnen du säger till noter på notsystemet. Ljudet bearbetas bara på den här enheten och sparas aldrig."
+            "value" : "StaffSinger använder mikrofonen för att göra om notnamnen du säger, eller tonerna du nynnar, till noter på notsystemet. Ljudet bearbetas bara på den här enheten och sparas aldrig."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "StaffSinger, söylediğin nota adlarını porte üzerinde notaya çevirmek için mikrofonu kullanır. Ses yalnızca bu cihazda işlenir ve asla kaydedilmez."
+            "value" : "StaffSinger, söylediğin nota adlarını ya da mırıldandığın notaları porte üzerinde notaya çevirmek için mikrofonu kullanır. Ses yalnızca bu cihazda işlenir ve asla kaydedilmez."
           }
         }
       }

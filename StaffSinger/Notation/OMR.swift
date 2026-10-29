@@ -19,12 +19,19 @@ import CoreGraphics
 
 enum OMR {
 
-    /// Best-effort transcription. Returns notes left-to-right with cumulative
-    /// beats, or an empty array if no staff could be found.
-    static func transcribe(_ image: UIImage, maxBeats: Double = 8) -> [ScoreNote] {
-        guard let gray = grayscale(upright(image)) else { return [] }
+    /// What was read: notes left-to-right with cumulative beats, plus the ids
+    /// of those it isn't sure about (head between two staff positions, or
+    /// neither clearly filled nor clearly open) so the user checks just those.
+    struct Reading {
+        var notes: [ScoreNote] = []
+        var unsure: Set<UUID> = []
+    }
+
+    /// Best-effort transcription; empty if no staff could be found.
+    static func transcribe(_ image: UIImage, maxBeats: Double = 8) -> Reading {
+        guard let gray = grayscale(upright(image)) else { return Reading() }
         let ink = binarize(gray)
-        guard let staff = detectStaff(ink, width: gray.w, height: gray.h) else { return [] }
+        guard let staff = detectStaff(ink, width: gray.w, height: gray.h) else { return Reading() }
         let heads = detectNotes(ink, width: gray.w, height: gray.h, staff: staff)
         return assignBeats(heads, staff: staff, maxBeats: maxBeats)
     }
@@ -131,7 +138,7 @@ enum OMR {
 
     // MARK: - Notes
 
-    private struct Head { let centerX: Int; let centerY: Int; let duration: NoteDuration }
+    private struct Head { let centerX: Int; let centerY: Int; let duration: NoteDuration; let unsure: Bool }
 
     /// Find noteheads WITHOUT removing staff lines: a notehead is a vertically
     /// tall band of "wide ink" (≈ a staff space high), whereas staff lines are
@@ -210,7 +217,8 @@ enum OMR {
             for yy in bestTop...bestBot { for xx in x0...x1 {
                 area += 1; if ink[yy * w + xx] { inkCount += 1 }
             } }
-            let filled = area > 0 && Double(inkCount) / Double(area) > 0.6
+            let fill = area > 0 ? Double(inkCount) / Double(area) : 0
+            let filled = fill > 0.6
 
             // Stem: a tall vertical ink run in some column, outside the head band.
             var hasStem = false
@@ -223,24 +231,32 @@ enum OMR {
             }
 
             let duration: NoteDuration = filled ? .quarter : (hasStem ? .half : .whole)
-            heads.append(Head(centerX: (x0 + x1) / 2, centerY: centerY, duration: duration))
+            // Unsure: the fill sits near the filled/open threshold, or the head
+            // lands between two staff positions rather than on one.
+            let steps = Double((staff.lineYs.max() ?? staff.topY) - centerY) / (S / 2)
+            let offGrid = abs(steps - steps.rounded()) > 0.3
+            let unsure = offGrid || (0.45...0.75).contains(fill)
+            heads.append(Head(centerX: (x0 + x1) / 2, centerY: centerY,
+                              duration: duration, unsure: unsure))
         }
         return heads.sorted { $0.centerX < $1.centerX }
     }
 
     // MARK: - Mapping
 
-    private static func assignBeats(_ heads: [Head], staff: Staff, maxBeats: Double) -> [ScoreNote] {
-        var notes: [ScoreNote] = []
+    private static func assignBeats(_ heads: [Head], staff: Staff, maxBeats: Double) -> Reading {
+        var reading = Reading()
         var beat = 0.0
         for head in heads {
             let pitch = pitch(forY: head.centerY, staff: staff)
             let len = head.duration.beats
             if beat + len > maxBeats + 1e-6 { break }   // keep within the score
-            notes.append(ScoreNote(pitch: pitch, duration: head.duration, beatOffset: beat))
+            let note = ScoreNote(pitch: pitch, duration: head.duration, beatOffset: beat)
+            reading.notes.append(note)
+            if head.unsure { reading.unsure.insert(note.id) }
             beat += len
         }
-        return notes
+        return reading
     }
 
     /// Buffer Y → natural treble pitch. The grayscale buffer's rows run bottom

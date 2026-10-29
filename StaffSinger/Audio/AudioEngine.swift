@@ -18,8 +18,10 @@ final class AudioEngine: ObservableObject {
 
     // What the UI observes.
     @Published var isPlaying = false
-    /// Index into `chordGroups` that is currently sounding (for highlight).
-    @Published var currentGroupIndex: Int? = nil
+    /// Start beat of the group currently sounding (for highlight). A beat, not
+    /// an index: playback adds filler rests, so its groups don't line up with
+    /// the score's own.
+    @Published var currentBeat: Double? = nil
 
     // Settings the user can toggle. Persisted so a muted metronome stays muted
     // across launches. `metronomeEnabled` is the master switch for *all* clicks:
@@ -245,7 +247,7 @@ final class AudioEngine: ObservableObject {
 
             // --- Note scheduler: walk chord groups in time order ---
             var elapsedBeats = 0.0
-            for (index, group) in groups.enumerated() {
+            for group in groups {
                 if Task.isCancelled { metronomeTask.cancel(); return }
 
                 // Wait until this group's start beat.
@@ -258,7 +260,7 @@ final class AudioEngine: ObservableObject {
 
                 if Task.isCancelled { metronomeTask.cancel(); return }
 
-                self.currentGroupIndex = index
+                self.currentBeat = group.beat
 
                 // Sound every note in the group (chord = simultaneous notes).
                 let sounding = group.notes.filter { !$0.isRest }
@@ -279,7 +281,7 @@ final class AudioEngine: ObservableObject {
             }
 
             metronomeTask.cancel()
-            self.currentGroupIndex = nil
+            self.currentBeat = nil
             self.isPlaying = false
         }
     }
@@ -292,7 +294,7 @@ final class AudioEngine: ObservableObject {
             melodySampler.stopNote(UInt8(midi), onChannel: 0)
         }
         isPlaying = false
-        currentGroupIndex = nil
+        currentBeat = nil
     }
 
     // MARK: - Metronome click

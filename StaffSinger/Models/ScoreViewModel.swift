@@ -59,7 +59,43 @@ final class ScoreViewModel: ObservableObject {
     /// when no drag is in progress.
     @Published var liveReadout: Pitch? = nil
 
+    /// The note the next piano key (or hummed pitch) rewrites. Set when the
+    /// user picks a note to fix; it moves on to the next note after each
+    /// rewrite, so a whole line can be corrected by simply playing it again.
+    /// Nil means keys append, as usual.
+    @Published private(set) var cursorID: UUID? = nil
+
+    /// Notes the photo reader wasn't sure about. Editing a note — or saying
+    /// it's right — takes it off the list.
+    @Published private(set) var unsureIDs: Set<UUID> = []
+
     private let audio: AudioEngine
+
+    // MARK: - Undo
+
+    /// One restorable state of the notes. Score settings (tempo, key…) have
+    /// their own controls and are left out — undo is for note edits.
+    private struct Snapshot { let notes: [ScoreNote]; let unsure: Set<UUID> }
+    private var history: [Snapshot] = []
+    @Published private(set) var canUndo = false
+
+    /// Remember the notes as they are (or as they were, if given), before an
+    /// edit changes them.
+    func checkpoint(_ notes: [ScoreNote]? = nil) {
+        history.append(Snapshot(notes: notes ?? score.notes, unsure: unsureIDs))
+        if history.count > 100 { history.removeFirst() }
+        canUndo = true
+    }
+
+    func undo() {
+        guard let last = history.popLast() else { return }
+        score.notes = last.notes
+        unsureIDs = last.unsure
+        let ids = Set(score.notes.map(\.id))
+        if let id = selectedNoteID, !ids.contains(id) { selectedNoteID = nil }
+        if let id = cursorID, !ids.contains(id) { cursorID = nil }
+        canUndo = !history.isEmpty
+    }
 
     init(audio: AudioEngine) {
         self.audio = audio
@@ -91,6 +127,7 @@ final class ScoreViewModel: ObservableObject {
     func addNote(pitch: Pitch) {
         // Chord mode: stack onto the selected note's beat — no reflow needed.
         if chordMode, let sel = selectedNote {
+            checkpoint()
             let note = ScoreNote(pitch: pitch, duration: selectedDuration,
                                  beatOffset: sel.beatOffset, dotted: selectedDotted,
                                  layer: activeLayer, triplet: sel.triplet)
@@ -101,8 +138,16 @@ final class ScoreViewModel: ObservableObject {
             return
         }
 
+        // A note picked for fixing gets rewritten instead of appended to.
+        if cursorID != nil {
+            rewriteCursor(with: pitch)
+            return
+        }
+
         // Melody mode: append into the active voice, inside the bar lines.
+        let before = score.notes
         guard let beat = appendStartRespectingBars(length: noteLength, layer: activeLayer) else { return }
+        checkpoint(before)
         let note = ScoreNote(pitch: pitch, duration: selectedDuration,
                              beatOffset: beat, dotted: selectedDotted,
                              layer: activeLayer, triplet: tripletMode)
@@ -120,7 +165,10 @@ final class ScoreViewModel: ObservableObject {
     func addRest(duration: NoteDuration? = nil) -> Bool {
         let dur = duration ?? selectedDuration
         let length = dur.beats * (selectedDotted ? 1.5 : 1.0) * (tripletMode ? 2.0 / 3.0 : 1.0)
+        let before = score.notes
         guard let beat = appendStartRespectingBars(length: length, layer: activeLayer) else { return false }
+        checkpoint(before)
+        cursorID = nil
         let note = ScoreNote(
             pitch: .middleC, duration: dur,
             beatOffset: beat, isRest: true, dotted: selectedDotted,
@@ -160,6 +208,8 @@ final class ScoreViewModel: ObservableObject {
 
     func changePitch(of id: UUID, semitones: Int) {
         guard let i = score.notes.firstIndex(where: { $0.id == id }) else { return }
+        checkpoint()
+        unsureIDs.remove(id)
         let old = score.notes[i].pitch
         var newPitch = Pitch(midi: old.midi + semitones)
         // Spell black keys by the direction of the nudge: a half-step up reads
@@ -175,32 +225,44 @@ final class ScoreViewModel: ObservableObject {
     }
 
     func changeDuration(of id: UUID, to duration: NoteDuration) {
-        guard let i = score.notes.firstIndex(where: { $0.id == id }) else { return }
+        guard let i = score.notes.firstIndex(where: { $0.id == id }),
+              score.notes[i].duration != duration else { return }
+        checkpoint()
+        unsureIDs.remove(id)
         score.notes[i].duration = duration
     }
 
     /// Toggle the dot (1.5× length) on a specific note.
     func toggleDot(of id: UUID) {
         guard let i = score.notes.firstIndex(where: { $0.id == id }) else { return }
+        checkpoint()
         score.notes[i].dotted.toggle()
     }
 
     /// Set the dot on a specific note (used by the toolbar's shared toggle).
     func setDotted(of id: UUID, _ value: Bool) {
-        guard let i = score.notes.firstIndex(where: { $0.id == id }) else { return }
+        guard let i = score.notes.firstIndex(where: { $0.id == id }),
+              score.notes[i].dotted != value else { return }
+        checkpoint()
         score.notes[i].dotted = value
     }
 
     /// Move an existing note to a new pitch and/or start beat (drag editing).
+    /// Called on every step of a drag, so the caller takes one `checkpoint()`
+    /// when the drag begins rather than one per step.
     func moveNote(_ id: UUID, toPitch pitch: Pitch, toBeat beat: Double) {
         guard let i = score.notes.firstIndex(where: { $0.id == id }) else { return }
+        unsureIDs.remove(id)
         score.notes[i].pitch = pitch
         score.notes[i].beatOffset = max(0, beat)
     }
 
     func deleteNote(_ id: UUID) {
+        checkpoint()
         score.notes.removeAll { $0.id == id }
+        unsureIDs.remove(id)
         if selectedNoteID == id { selectedNoteID = nil }
+        if cursorID == id { cursorID = nil }
     }
 
     func deleteSelected() {
@@ -226,14 +288,107 @@ final class ScoreViewModel: ObservableObject {
     @discardableResult
     func deleteLast() -> Bool {
         guard let last = lastEvent(inLayer: activeLayer) else { return false }
-        score.notes.removeAll { $0.id == last.id }
-        if selectedNoteID == last.id { selectedNoteID = nil }
+        deleteNote(last.id)
         return true
     }
 
     func clearAll() {
-        score.notes.removeAll()
+        checkpoint()
+        replaceNotes([])
+    }
+
+    /// Swap in a whole new set of notes (imports, clearing). Selection, the
+    /// fixing cursor and the unsure marks all belong to the old notes.
+    private func replaceNotes(_ notes: [ScoreNote], unsure: Set<UUID> = []) {
+        score.notes = notes
+        unsureIDs = unsure
         selectedNoteID = nil
+        cursorID = nil
+    }
+
+    // MARK: - Fixing notes (cursor, hummed pitch, review)
+
+    /// The user picked a note to look at or fix: select it, and point the
+    /// keys at it.
+    func pick(_ id: UUID) {
+        selectedNoteID = id
+        cursorID = id
+    }
+
+    /// Keys go back to appending.
+    func dropCursor() { cursorID = nil }
+
+    /// Rewrite the cursor note with `pitch` (it becomes a sounding note even
+    /// if it was a rest), then step the cursor to the next note in its voice.
+    private func rewriteCursor(with pitch: Pitch) {
+        guard let id = cursorID,
+              let i = score.notes.firstIndex(where: { $0.id == id }) else { cursorID = nil; return }
+        checkpoint()
+        score.notes[i].pitch = pitch
+        score.notes[i].isRest = false
+        unsureIDs.remove(id)
+        audio.audition(pitch)
+        let next = nextNote(after: score.notes[i])
+        selectedNoteID = next?.id ?? id
+        cursorID = next?.id
+    }
+
+    /// The next sounding note after `note` in the same voice, if any.
+    private func nextNote(after note: ScoreNote) -> ScoreNote? {
+        score.notes
+            .filter { $0.layer == note.layer && !$0.isRest && $0.beatOffset > note.beatOffset + 1e-6 }
+            .min { ($0.beatOffset, -$0.pitch.midi) < ($1.beatOffset, -$1.pitch.midi) }
+    }
+
+    /// A sung pitch, written the way the score would spell it: the voice
+    /// decides the note name, the score decides the octave — the octave
+    /// closest to the note being fixed (or to the end of the line when
+    /// appending), so a low voice can fix a high note.
+    func addSung(midi: Int) {
+        let target = cursorID.flatMap { id in score.notes.first { $0.id == id } }
+            ?? lastEvent(inLayer: activeLayer).flatMap { $0.isRest ? nil : $0 }
+        let around = target?.pitch.midi ?? score.clef.middleLineMidi
+        let pc = ((midi % 12) + 12) % 12
+        var placed = around - (((around - pc) % 12) + 12) % 12   // same name, at or below
+        if around - placed > 6 { placed += 12 }
+        addNote(pitch: Pitch(midi: placed, prefersFlat: score.keySignature < 0))
+    }
+
+    /// Unsure notes in reading order.
+    private var unsureInOrder: [ScoreNote] {
+        score.notes
+            .filter { unsureIDs.contains($0.id) }
+            .sorted { ($0.beatOffset, $0.layer) < ($1.beatOffset, $1.layer) }
+    }
+
+    /// Show the next unsure note: pick it and let it sound.
+    func reviewNext() {
+        guard let note = unsureInOrder.first(where: { $0.id != cursorID }) ?? unsureInOrder.first
+        else { return }
+        pick(note.id)
+        if !note.isRest { audio.audition(note.pitch) }
+    }
+
+    /// "It's right": take the cursor note off the unsure list and move on.
+    func confirmCursor() {
+        guard let id = cursorID else { return }
+        checkpoint()
+        unsureIDs.remove(id)
+        if unsureIDs.isEmpty { cursorID = nil } else { reviewNext() }
+    }
+
+    /// While playing: stop, and pick the note that was sounding (or `id`).
+    func stopAndPick(_ id: UUID? = nil) {
+        let beat = audio.currentBeat
+        audio.stop()
+        if let id { pick(id); return }
+        guard let beat else { return }
+        // The latest note that had started by then; a rest only if nothing sounded.
+        let started = score.notes.filter { $0.beatOffset <= beat + 1e-6 }
+        let latest: (ScoreNote, ScoreNote) -> Bool = {
+            ($0.isRest ? 0 : 1, $0.beatOffset, $0.pitch.midi) < ($1.isRest ? 0 : 1, $1.beatOffset, $1.pitch.midi)
+        }
+        if let note = started.max(by: latest) { pick(note.id) }
     }
 
     // MARK: - Paste from text
@@ -246,17 +401,19 @@ final class ScoreViewModel: ObservableObject {
     func importFromText(_ text: String) -> [ScoreNote] {
         let notes = ScoreTextFormat.parse(text)
         guard !notes.isEmpty else { return [] }
-        score.notes = notes
-        selectedNoteID = nil
+        checkpoint()
+        replaceNotes(notes)
         return notes
     }
 
     /// Replace the score with a ready-made list of notes (voice dictation).
     /// Mirrors `importFromText` so every bulk import lands the same way.
-    func importNotes(_ notes: [ScoreNote]) {
+    /// `unsure` marks the notes the source wasn't confident about (the photo
+    /// reader), so the review can walk the user through just those.
+    func importNotes(_ notes: [ScoreNote], unsure: Set<UUID> = []) {
         guard !notes.isEmpty else { return }
-        score.notes = notes
-        selectedNoteID = nil
+        checkpoint()
+        replaceNotes(notes, unsure: unsure)
     }
 
     /// The current score rendered back into the text format — handy to copy out

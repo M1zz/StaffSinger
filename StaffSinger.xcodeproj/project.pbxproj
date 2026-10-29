@@ -18,6 +18,7 @@
 		9DBE349BC29147B7BFBEB84B /* StaffSingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D8653D47A4E599759148D /* StaffSingerApp.swift */; };
 		A1B2C3D4E5F60001A1B2C3D4 /* UprightPianoKW.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */; };
 		AA11BB22CC33DD44EE55F001 /* PianoKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */; };
+		F1000000000000000000A004 /* HumButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000A003 /* HumButton.swift */; };
 		ACF9F6680A3E6982459C3EE5 /* StaffSingerRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9757B6EED245035218E49DF7 /* StaffSingerRoadmap.swift */; };
 		B1B2C3D4E5F60004B1B2C3D4 /* ReferenceFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */; };
 		B28E59ABD4FD4D81A49E8CD2 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAE88B4D7634EEDAF5B7334 /* AudioEngine.swift */; };
@@ -31,6 +32,7 @@
 		EE0000000000000000000004 /* ScoreTextFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000003 /* ScoreTextFormatTests.swift */; };
 		F10000000000000000000002 /* SpokenSolfege.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000001 /* SpokenSolfege.swift */; };
 		F10000000000000000000004 /* SolfegeDictation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000003 /* SolfegeDictation.swift */; };
+		F1000000000000000000A002 /* PitchListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1000000000000000000A001 /* PitchListener.swift */; };
 		F10000000000000000000006 /* DictationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000000000000000000005 /* DictationSheet.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,7 @@
 		9F76C4695A60486ABD5FADC7 /* StaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffView.swift; sourceTree = "<group>"; };
 		A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UprightPianoKW.sf2; sourceTree = "<group>"; };
 		AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyboard.swift; sourceTree = "<group>"; };
+		F1000000000000000000A003 /* HumButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumButton.swift; sourceTree = "<group>"; };
 		B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceFeature.swift; sourceTree = "<group>"; };
 		C6D1B36449F4414884D04043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC0000000000000000000002 /* StaffSingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaffSingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,6 +73,7 @@
 		EE0000000000000000000003 /* ScoreTextFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreTextFormatTests.swift; sourceTree = "<group>"; };
 		F10000000000000000000001 /* SpokenSolfege.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpokenSolfege.swift; sourceTree = "<group>"; };
 		F10000000000000000000003 /* SolfegeDictation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolfegeDictation.swift; sourceTree = "<group>"; };
+		F1000000000000000000A001 /* PitchListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchListener.swift; sourceTree = "<group>"; };
 		F10000000000000000000005 /* DictationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictationSheet.swift; sourceTree = "<group>"; };
 		F4BD3C11EA23DE68FC7F83E6 /* StaffSingerSpec.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StaffSingerSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +141,7 @@
 			children = (
 				0EAE88B4D7634EEDAF5B7334 /* AudioEngine.swift */,
 				F10000000000000000000003 /* SolfegeDictation.swift */,
+				F1000000000000000000A001 /* PitchListener.swift */,
 				A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */,
 			);
 			path = Audio;
@@ -175,6 +180,7 @@
 				81FAA96257E3497D8DCC2EA2 /* ContentView.swift */,
 				808BF62CF65F4AAB80582C9D /* EditorToolbar.swift */,
 				AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */,
+				F1000000000000000000A003 /* HumButton.swift */,
 				F10000000000000000000005 /* DictationSheet.swift */,
 				252173120F724CAEA34F22A7 /* TransportBar.swift */,
 				B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */,
@@ -317,6 +323,7 @@
 				3CBC744552774528A3094A23 /* ContentView.swift in Sources */,
 				014ED030B67F40BFA77E987C /* EditorToolbar.swift in Sources */,
 				AA11BB22CC33DD44EE55F001 /* PianoKeyboard.swift in Sources */,
+				F1000000000000000000A004 /* HumButton.swift in Sources */,
 				561A9A9C233448E19B4A010A /* TransportBar.swift in Sources */,
 				79CCAF8A605B449B988677C0 /* MusicModels.swift in Sources */,
 				0089AF8962C24533A58CB0B3 /* ScoreViewModel.swift in Sources */,
@@ -328,6 +335,7 @@
 				EE0000000000000000000002 /* ScoreTextFormat.swift in Sources */,
 				F10000000000000000000002 /* SpokenSolfege.swift in Sources */,
 				F10000000000000000000004 /* SolfegeDictation.swift in Sources */,
+				F1000000000000000000A002 /* PitchListener.swift in Sources */,
 				F10000000000000000000006 /* DictationSheet.swift in Sources */,
 				9A61F60816C54D5A1C12D782 /* StaffSingerSpec.swift in Sources */,
 				ACF9F6680A3E6982459C3EE5 /* StaffSingerRoadmap.swift in Sources */,

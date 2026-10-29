@@ -40,6 +40,8 @@ struct ContentView: View {
     // Voice dictation ("read the score out loud"). Owns the mic + recognizer.
     @StateObject private var dictation: SolfegeDictation
     @State private var showDictation = false
+    /// Hold-and-hum note input (piano strip and note editor).
+    @StateObject private var hum: PitchListener
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     /// 동작 줄이기면 패널이 미끄러지지 않고 짧게 바뀐다.
@@ -56,6 +58,7 @@ struct ContentView: View {
         _audio = StateObject(wrappedValue: engine)
         _vm = StateObject(wrappedValue: ScoreViewModel(audio: engine))
         _dictation = StateObject(wrappedValue: SolfegeDictation(audio: engine))
+        _hum = StateObject(wrappedValue: PitchListener(audio: engine))
     }
 
     var body: some View {
@@ -63,7 +66,7 @@ struct ContentView: View {
             // Staff + controls stay inside the safe area so nothing tucks under
             // the Dynamic Island / camera or the home indicator. When the piano
             // is up we reserve the bottom for it so the staff lifts clear.
-            StaffView(vm: vm, audio: audio)
+            StaffView(vm: vm, audio: audio, hum: hum, showsCursor: showKeyboard)
                 .padding(.bottom, showKeyboard ? keyboardAreaHeight : 0)
 
             VStack(spacing: 0) {
@@ -247,6 +250,14 @@ struct ContentView: View {
 
             Divider().frame(height: 26).padding(.horizontal, 4)
 
+            // Hold and hum: lands like a key press (rewrites the picked note,
+            // or appends).
+            HumButton(listener: hum, keySignature: vm.score.keySignature) { midi in
+                vm.restMode = false
+                vm.addSung(midi: midi)
+            }
+            .frame(width: 42, height: 40)
+
             toolChip(selected: false) {
                 guard vm.deleteLast() else { return }
                 UIImpactFeedbackGenerator(style: .light).impactOccurred()
@@ -309,14 +320,14 @@ struct ContentView: View {
         guard let img = reference.image else { return }
         let maxBeats = vm.score.measureCapacity * 2
         Task {
-            let notes = await Task.detached(priority: .userInitiated) {
+            let reading = await Task.detached(priority: .userInitiated) {
                 OMR.transcribe(img, maxBeats: maxBeats)
             }.value
+            let notes = reading.notes
             if notes.isEmpty {
                 omrMessage = String(localized: "악보를 인식하지 못했습니다. 깨끗한 인쇄·한 줄·정면 사진일수록 잘 됩니다.")
             } else {
-                vm.score.notes = notes
-                vm.selectedNoteID = nil
+                vm.importNotes(notes, unsure: reading.unsure)
                 omrMessage = String(localized: "\(notes.count)개 음표를 인식했습니다 (실험적).\n음높이·길이는 직접 확인하고 고쳐 주세요.")
             }
         }
@@ -373,6 +384,8 @@ struct ContentView: View {
                 .transition(.opacity)
             }
 
+            if !vm.unsureIDs.isEmpty { reviewChip }
+
             Spacer(minLength: 0)
 
             // In keyboard mode the staff lifts above the piano; hide the rest of
@@ -426,12 +439,21 @@ struct ContentView: View {
                 .transition(.scale.combined(with: .opacity))
             }
 
+            if vm.canUndo {
+                circleButton(systemImage: "arrow.uturn.backward", tint: .primary) {
+                    vm.undo()
+                }
+                .accessibilityLabel("되돌리기")
+                .transition(.scale.combined(with: .opacity))
+            }
+
             // Show / hide the on-screen piano (opening it closes the note panel).
+            // It opens appending; tap a note to have the keys rewrite it.
             circleButton(systemImage: "pianokeys",
                          tint: showKeyboard ? .accentColor : .primary) {
                 withAnimation(panelSpring) {
                     showKeyboard.toggle()
-                    if showKeyboard { showControls = false }
+                    if showKeyboard { showControls = false; vm.dropCursor() }
                 }
             }
             .accessibilityLabel("건반")
@@ -454,6 +476,31 @@ struct ContentView: View {
         .padding(.horizontal, 16)
         .padding(.top, 8)
         .animation(.easeInOut(duration: 0.25), value: showControls)
+        .animation(.easeInOut(duration: 0.2), value: vm.canUndo)
+        .animation(.easeInOut(duration: 0.2), value: vm.unsureIDs.isEmpty)
+    }
+
+    /// Walks the user through the notes the photo reader wasn't sure about:
+    /// "check N notes" jumps to the next one (and plays it); on an unsure note
+    /// it becomes "looks right", which clears it and moves on. Fixing a note
+    /// any other way clears it too.
+    private var reviewChip: some View {
+        let count = vm.unsureIDs.count
+        let onUnsure = vm.cursorID.map { vm.unsureIDs.contains($0) } ?? false
+        return Button {
+            if onUnsure { vm.confirmCursor() } else { vm.reviewNext() }
+        } label: {
+            Label(onUnsure ? String(localized: "맞아요") : String(localized: "확인할 음 \(count)개"),
+                  systemImage: onUnsure ? "checkmark" : "questionmark.circle")
+                .font(.subheadline.weight(.semibold))
+                .foregroundColor(.orange)
+                .padding(.horizontal, 14)
+                .frame(height: 40)
+                .background(.ultraThinMaterial, in: Capsule())
+                .overlay(Capsule().stroke(Color.orange.opacity(0.6), lineWidth: 1.5))
+        }
+        .accessibilityValue(onUnsure ? String(localized: "확인할 음 \(count)개") : "")
+        .transition(.scale.combined(with: .opacity))
     }
 
     /// 흰 재생 아이콘이 또렷한 진한 초록(기본 초록은 흰색과 대비가 모자라다).

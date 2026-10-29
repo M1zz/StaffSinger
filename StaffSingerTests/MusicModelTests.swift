@@ -443,6 +443,93 @@ final class EditorBehaviorTests: XCTestCase {
         XCTAssertEqual(l1.count, 1)
         XCTAssertEqual(l1.first?.beatOffset, 0.0, "새 성부는 0박부터 독립적으로 쌓인다")
     }
+    // MARK: - Fixing notes
+
+    /// Four quarter notes C D E F, written the way the piano appends them.
+    private func vmWithLine() -> ScoreViewModel {
+        let vm = makeVM()
+        vm.selectedDuration = .quarter
+        for midi in [60, 62, 64, 65] { vm.addNote(pitch: Pitch(midi: midi)) }
+        return vm
+    }
+
+    private func pitches(_ vm: ScoreViewModel) -> [Int] {
+        vm.score.notes.sorted { $0.beatOffset < $1.beatOffset }.map(\.pitch.midi)
+    }
+
+    func testUndoStepsBackOneEditAtATime() {
+        let vm = vmWithLine()
+        let id = vm.score.notes[1].id
+        vm.changePitch(of: id, semitones: 1)
+        vm.deleteNote(vm.score.notes[0].id)
+        vm.undo()
+        XCTAssertEqual(pitches(vm), [60, 63, 64, 65], "삭제만 되돌려야 한다")
+        vm.undo()
+        XCTAssertEqual(pitches(vm), [60, 62, 64, 65], "그다음 음높이 변경을 되돌린다")
+        for _ in 0..<4 { vm.undo() }
+        XCTAssertTrue(vm.score.notes.isEmpty, "처음까지 되돌릴 수 있다")
+        XCTAssertFalse(vm.canUndo)
+    }
+
+    /// Picking a note points the keys at it; each key rewrites and moves on,
+    /// and past the last note the keys append again.
+    func testKeysRewritePickedNoteAndAdvance() {
+        let vm = vmWithLine()
+        vm.pick(vm.score.notes[1].id)
+        vm.addNote(pitch: Pitch(midi: 67))
+        vm.addNote(pitch: Pitch(midi: 69))
+        XCTAssertEqual(pitches(vm), [60, 67, 69, 65], "고른 음부터 차례로 덮어쓴다")
+        XCTAssertEqual(vm.cursorID, vm.score.notes[3].id, "다음 음으로 넘어간다")
+        vm.addNote(pitch: Pitch(midi: 71))
+        XCTAssertNil(vm.cursorID, "마지막 음을 고치면 덮어쓰기가 끝난다")
+        vm.addNote(pitch: Pitch(midi: 72))
+        XCTAssertEqual(pitches(vm), [60, 67, 69, 71, 72], "그 뒤로는 이어 쓴다")
+    }
+
+    /// A low voice can fix a high note: the name comes from the voice, the
+    /// octave from the note being fixed.
+    func testSungPitchTakesOctaveFromScore() {
+        let vm = vmWithLine()
+        vm.pick(vm.score.notes[2].id)          // E4
+        vm.addSung(midi: 43)                   // G2, sung low
+        XCTAssertEqual(pitches(vm)[2], 67, "G4 로 들어가야 한다")
+        vm.pick(vm.score.notes[0].id)          // C4
+        vm.addSung(midi: 83)                   // B5
+        XCTAssertEqual(pitches(vm)[0], 59, "C4 에 가장 가까운 B 는 B3")
+    }
+
+    func testReviewWalksOnlyUnsureNotes() {
+        let vm = makeVM()
+        let notes = (0..<4).map { ScoreNote(pitch: Pitch(midi: 60 + $0), duration: .quarter,
+                                            beatOffset: Double($0)) }
+        vm.importNotes(notes, unsure: [notes[1].id, notes[3].id])
+        vm.reviewNext()
+        XCTAssertEqual(vm.cursorID, notes[1].id)
+        vm.confirmCursor()
+        XCTAssertEqual(vm.cursorID, notes[3].id, "맞다고 하면 다음 의심 음으로")
+        vm.addNote(pitch: Pitch(midi: 70))     // fixing it clears it too
+        XCTAssertTrue(vm.unsureIDs.isEmpty)
+        vm.undo()
+        XCTAssertEqual(vm.unsureIDs, [notes[3].id], "되돌리면 표시도 돌아온다")
+    }
+
+    // MARK: - Pitch detection
+
+    private func sine(_ freq: Double, rate: Double = 48_000, count: Int = 2048) -> [Float] {
+        (0..<count).map { Float(0.4 * sin(2 * .pi * freq * Double($0) / rate)) }
+    }
+
+    func testDetectsSungFrequencies() throws {
+        for freq in [98.0, 220.0, 440.0, 880.0] {
+            let heard = try XCTUnwrap(PitchDetector.frequency(of: sine(freq), sampleRate: 48_000))
+            XCTAssertEqual(heard, freq, accuracy: freq * 0.01, "\(freq) Hz")
+        }
+    }
+
+    func testSilenceHasNoPitch() {
+        XCTAssertNil(PitchDetector.frequency(of: [Float](repeating: 0, count: 2048), sampleRate: 48_000))
+    }
+
 }
 
 // MARK: - OMR (experimental auto-transcribe)
@@ -479,7 +566,7 @@ final class OMRTests: XCTestCase {
     func testTranscribesNotesAndPitches() {
         // Noteheads on the top line (F5=77), middle line (B4=71), bottom line (E4=64).
         let img = staffImage(noteYs: [60, 100, 140])
-        let notes = OMR.transcribe(img, maxBeats: 16)
+        let notes = OMR.transcribe(img, maxBeats: 16).notes
         XCTAssertEqual(notes.count, 3, "세 음표를 인식해야 한다")
         XCTAssertEqual(notes.map { $0.pitch.midi }, [77, 71, 64], "F5, B4, E4 순서")
         XCTAssertTrue(notes.allSatisfy { $0.duration == .quarter }, "채운 머리+기둥 → 4분음표")
@@ -492,6 +579,7 @@ final class OMRTests: XCTestCase {
             UIColor.white.setFill()
             ctx.fill(CGRect(x: 0, y: 0, width: 300, height: 200))
         }
-        XCTAssertTrue(OMR.transcribe(blank).isEmpty)
+        XCTAssertTrue(OMR.transcribe(blank).notes.isEmpty)
     }
+
 }
