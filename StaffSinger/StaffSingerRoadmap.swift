@@ -81,7 +81,7 @@ extension StaffSingerSpec {
         .init(id: "a11y.motion", status: .shipped("1.0.5"),
               title: NSLocalizedString("움직임 줄이기", comment: "Roadmap item: reduce motion"),
               detail: NSLocalizedString("움직임 줄이기를 켜면 화면 효과가 차분해져요.", comment: "Roadmap item detail: reduce motion")),
-        .init(id: "fold", status: .planned,
+        .init(id: "fold", status: .building,
               title: NSLocalizedString("펼치는 아이폰 화면", comment: "Roadmap item: foldable iPhone layout"),
               detail: NSLocalizedString("펼치는 아이폰에서 넓은 화면을 두 쪽으로 나눠 써요.", comment: "Roadmap item detail: foldable iPhone layout")),
     ]}
@@ -103,7 +103,7 @@ struct RoadmapScreen: View {
                 }
                 .toolbar {
                     ToolbarItem(placement: .confirmationAction) {
-                        Button("닫기") { dismiss() }
+                        Button("닫기", systemImage: "xmark") { dismiss() }
                     }
                 }
         }

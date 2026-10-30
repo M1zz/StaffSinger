@@ -10,6 +10,7 @@
 
 import SwiftUI
 import UIKit
+import LeeoKit
 
 struct ContentView: View {
     @StateObject private var audio: AudioEngine
@@ -43,6 +44,12 @@ struct ContentView: View {
     /// Hold-and-hum note input (piano strip and note editor).
     @StateObject private var hum: PitchListener
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.foldLayout) private var fold
+
+    /// 건반이 서 있나. 아이폰 듀오를 펴면 악보는 위(가로면 오른쪽) 판에 따로 서고,
+    /// 아래(왼쪽) 판은 건반이 기본이다. 음표 도구를 열면 그 자리를 음표 도구가 쓴다.
+    /// 접혀 있으면 `showKeyboard` 그대로다.
+    private var pianoUp: Bool { showKeyboard || (fold.isUnfolded && !showControls) }
 
     /// 동작 줄이기면 패널이 미끄러지지 않고 짧게 바뀐다.
     private var panelSpring: Animation {
@@ -62,34 +69,16 @@ struct ContentView: View {
     }
 
     var body: some View {
-        ZStack {
-            // Staff + controls stay inside the safe area so nothing tucks under
-            // the Dynamic Island / camera or the home indicator. When the piano
-            // is up we reserve the bottom for it so the staff lifts clear.
-            StaffView(vm: vm, audio: audio, hum: hum, showsCursor: showKeyboard)
-                .padding(.bottom, showKeyboard ? keyboardAreaHeight : 0)
-
-            VStack(spacing: 0) {
-                topBar
-                Spacer(minLength: 0)
-                if let pitch = vm.liveReadout {
-                    positionReadout(pitch)
-                        .transition(.move(edge: .bottom).combined(with: .opacity))
-                }
-                if showKeyboard {
-                    keyboardArea
-                        .transition(.move(edge: .bottom).combined(with: .opacity))
-                }
-                bottomArea
+        // 아이폰 듀오를 펴면 접힌 선 위(가로면 오른쪽)에 악보, 아래(왼쪽)에 건반 · 음표 도구가 선다.
+        // 접혀 있으면 `FoldSplitView` 는 editor 만 그린다. 지금 화면 그대로.
+        FoldSplitView {
+            editor
+        } result: {
+            ZStack {
+                StaffView(vm: vm, audio: audio, hum: hum, showsCursor: pianoUp)
+                ReferenceOverlay(store: reference, onTranscribe: runTranscription)
             }
-            .animation(.easeOut(duration: 0.15), value: vm.liveReadout)
-
-            // Floating reference photo (drag/opacity/hide), above everything.
-            ReferenceOverlay(store: reference, onTranscribe: runTranscription)
-
-            // Settings palette: slides in from one side, leaving the staff
-            // visible rather than covering it.
-            if showSettings { settingsPanelLayer }
+            .environment(\.foldLayout, .single)
         }
         .alert("자동 채보 (실험)", isPresented: Binding(
             get: { omrMessage != nil }, set: { if !$0 { omrMessage = nil } })) {
@@ -117,6 +106,7 @@ struct ContentView: View {
                 onCancel: { showApertureCamera = false }
             )
             .ignoresSafeArea()
+            .foldConfined()
         }
         .sheet(isPresented: $showLibrary) {
             LibraryPicker { img in queueForCrop(img) }
@@ -148,6 +138,7 @@ struct ContentView: View {
                     reference.set(cropped)
                     cropItem = nil
                 })
+            .foldConfined()
         }
         // Paper color is applied as a background so it bleeds edge-to-edge
         // WITHOUT pulling the content out of the safe area.
@@ -159,6 +150,43 @@ struct ContentView: View {
         #if DEBUG
         .onAppear(perform: applyScreenshotScene)
         #endif
+    }
+
+    /// 악보 · 건반 · 떠 있는 단추. 펼친 화면에서는 악보와 참고 사진이 결과 쪽 판으로 옮겨 간다.
+    private var editor: some View {
+        ZStack {
+            // Staff + controls stay inside the safe area so nothing tucks under
+            // the Dynamic Island / camera or the home indicator. When the piano
+            // is up we reserve the bottom for it so the staff lifts clear.
+            if !fold.isUnfolded {
+                StaffView(vm: vm, audio: audio, hum: hum, showsCursor: pianoUp)
+                    .padding(.bottom, pianoUp ? keyboardAreaHeight : 0)
+            }
+
+            VStack(spacing: 0) {
+                topBar
+                Spacer(minLength: 0)
+                if let pitch = vm.liveReadout {
+                    positionReadout(pitch)
+                        .transition(.move(edge: .bottom).combined(with: .opacity))
+                }
+                if pianoUp {
+                    keyboardArea
+                        .transition(.move(edge: .bottom).combined(with: .opacity))
+                }
+                bottomArea
+            }
+            .animation(.easeOut(duration: 0.15), value: vm.liveReadout)
+
+            // Floating reference photo (drag/opacity/hide), above everything.
+            if !fold.isUnfolded {
+                ReferenceOverlay(store: reference, onTranscribe: runTranscription)
+            }
+
+            // Settings palette: slides in from one side, leaving the staff
+            // visible rather than covering it.
+            if showSettings { settingsPanelLayer }
+        }
     }
 
     #if DEBUG
@@ -186,7 +214,7 @@ struct ContentView: View {
     /// triplet stay settable without opening the full editor panel.
     private var keyboardArea: some View {
         VStack(spacing: 0) {
-            keyboardToolStrip
+            fitsPane { keyboardToolStrip }
             Divider()
             PianoKeyboard(startOctave: $keyboardStartOctave) { p in
                 // Pressing a key clearly means "a note", so a rest armed and
@@ -273,6 +301,20 @@ struct ContentView: View {
         .padding(.vertical, 7)
     }
 
+    /// 펼친 화면의 판 한 장은 접힌 화면보다 좁을 수 있다(가로로 펴면 약 460pt).
+    /// 줄이 판보다 넓으면 접힌 선을 넘지 않고 옆으로 밀어 보게 한다. 접혀 있으면 그대로다.
+    @ViewBuilder
+    private func fitsPane<V: View>(@ViewBuilder _ content: () -> V) -> some View {
+        if fold.isUnfolded {
+            ViewThatFits(in: .horizontal) {
+                content()
+                ScrollView(.horizontal, showsIndicators: false) { content() }
+            }
+        } else {
+            content()
+        }
+    }
+
     /// A small square button used by the keyboard's tool strip.
     private func toolChip<Label: View>(selected: Bool, action: @escaping () -> Void,
                                        @ViewBuilder label: () -> Label) -> some View {
@@ -306,7 +348,7 @@ struct ContentView: View {
                 vm: vm, audio: audio,
                 onLeft: $settingsPanelOnLeft,
                 onClose: { showSettings = false })
-                .frame(width: 360)
+                .frame(maxWidth: 360)   // 펼친 화면의 좁은 판에서는 판 폭까지만
                 .transition(.move(edge: settingsPanelOnLeft ? .leading : .trailing))
                 .accessibilityAddTraits(.isModal)
         }
@@ -391,7 +433,7 @@ struct ContentView: View {
             // In keyboard mode the staff lifts above the piano; hide the rest of
             // the floating chrome so nothing overlaps the score — leave only the
             // piano toggle (to exit) and play.
-            if !showKeyboard {
+            if !pianoUp {
                 // Always available, even on a blank sheet: bring in a reference photo.
                 circleButton(systemImage: "camera.viewfinder", tint: .primary) {
                     showSourceDialog = true
@@ -450,14 +492,21 @@ struct ContentView: View {
             // Show / hide the on-screen piano (opening it closes the note panel).
             // It opens appending; tap a note to have the keys rewrite it.
             circleButton(systemImage: "pianokeys",
-                         tint: showKeyboard ? .accentColor : .primary) {
+                         tint: pianoUp ? .accentColor : .primary) {
                 withAnimation(panelSpring) {
-                    showKeyboard.toggle()
-                    if showKeyboard { showControls = false; vm.dropCursor() }
+                    if pianoUp {
+                        showKeyboard = false
+                        // 펼친 화면의 아래 판은 비워 두지 않는다. 건반을 닫으면 음표 도구가 선다.
+                        if fold.isUnfolded { showControls = true }
+                    } else {
+                        showKeyboard = true
+                        showControls = false
+                        vm.dropCursor()
+                    }
                 }
             }
             .accessibilityLabel("건반")
-            .accessibilityAddTraits(showKeyboard ? .isSelected : [])
+            .accessibilityAddTraits(pianoUp ? .isSelected : [])
             .transition(.scale.combined(with: .opacity))
 
             Button {
@@ -585,7 +634,7 @@ struct ContentView: View {
             grabber
             selectionStrip
             Divider()
-            EditorToolbar(vm: vm, audio: audio)
+            fitsPane { EditorToolbar(vm: vm, audio: audio) }
         }
         .background(
             Rectangle()
@@ -740,10 +789,10 @@ private struct PasteScoreSheet: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("취소") { onCancel() }
+                    Button("취소", systemImage: "xmark") { onCancel() }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("악보로 변환") { onImport(text) }
+                    Button("악보로 변환", systemImage: "checkmark") { onImport(text) }
                         .fontWeight(.semibold)
                         .disabled(text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
                 }
