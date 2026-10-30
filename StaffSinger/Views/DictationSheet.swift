@@ -37,13 +37,13 @@ struct DictationSheet: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("취소") {
+                    Button("취소", systemImage: "xmark") {
                         dictation.cancel()
                         onCancel()
                     }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("악보에 넣기") { onImport(dictation.notes) }
+                    Button("악보에 넣기", systemImage: "square.and.arrow.down") { onImport(dictation.notes) }
                         .fontWeight(.semibold)
                         .disabled(dictation.notes.isEmpty)
                 }
