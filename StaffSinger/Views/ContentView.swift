@@ -41,6 +41,8 @@ struct ContentView: View {
     // Voice dictation ("read the score out loud"). Owns the mic + recognizer.
     @StateObject private var dictation: SolfegeDictation
     @State private var showDictation = false
+    /// Siri 로 고른 동작 (→ StaffSingerIntents.swift)
+    @Bindable private var router = StaffSingerRouter.shared
     /// Hold-and-hum note input (piano strip and note editor).
     @StateObject private var hum: PitchListener
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
@@ -107,6 +109,15 @@ struct ContentView: View {
             )
             .ignoresSafeArea()
             .foldConfined()
+        }
+        .onChange(of: router.request, initial: true) { _, request in
+            guard let request else { return }
+            router.request = nil
+            switch request {
+            case .scan: showApertureCamera = true
+            case .play: vm.play()
+            case .dictation: showDictation = true
+            }
         }
         .sheet(isPresented: $showLibrary) {
             LibraryPicker { img in queueForCrop(img) }
