@@ -11,6 +11,7 @@
 import SwiftUI
 import UIKit
 import LeeoKit
+import AppIntents
 
 struct ContentView: View {
     @StateObject private var audio: AudioEngine
@@ -91,7 +92,11 @@ struct ContentView: View {
         .confirmationDialog("악보 사진", isPresented: $showSourceDialog,
                             titleVisibility: .visible) {
             if UIImagePickerController.isSourceTypeAvailable(.camera) {
-                Button("카메라로 촬영 (2마디 맞춤)") { showApertureCamera = true }
+                Button("카메라로 촬영 (2마디 맞춤)") {
+                    showApertureCamera = true
+                    // Siri 가 '악보 찍기'를 이 사람의 대표 동작으로 알게 한다.
+                    IntentDonationManager.shared.donate(intent: ScanScoreIntent())
+                }
             }
             Button("사진 보관함에서 선택") { showLibrary = true }
             if reference.image != nil {

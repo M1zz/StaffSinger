@@ -29858,6 +29858,304 @@
           }
         }
       }
+    },
+    "앱 이름 없이 Siri에게" : {
+      "comment" : "Roadmap item: Siri without saying the app name",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri bez názvu aplikace"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri uden appens navn"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri ohne App-Namen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri χωρίς το όνομα της εφαρμογής"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri Without the App Name"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri Without the App Name"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri sin decir el nombre de la app"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri ilman sovelluksen nimeä"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri sans nommer l’app"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri tanpa menyebut nama aplikasi"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri senza dire il nome dell’app"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリ名なしでSiriに"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱 이름 없이 Siri에게"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri uten appnavnet"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri zonder de appnaam"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri bez nazwy aplikacji"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri sem dizer o nome do app"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri без названия приложения"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri utan appens namn"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สั่ง Siri โดยไม่ต้องเอ่ยชื่อแอป"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulama adı olmadan Siri"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri không cần nói tên ứng dụng"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "无需说出 App 名称的 Siri"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不必說出 App 名稱的 Siri"
+          }
+        }
+      }
+    },
+    "Siri에게 앱 이름을 말하지 않아도 악보를 찍고, 들려주고, 계이름으로 받아 적어요." : {
+      "comment" : "Roadmap item detail: Siri without saying the app name",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I bez názvu aplikace Siri naskenuje noty, přehraje je a zapíše, co zazpíváte v solmizaci."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selv uden appens navn scanner Siri noderne, spiller dem og skriver de toner ned, du synger i do-re-mi."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auch ohne den App-Namen scannt Siri Noten, spielt sie ab und schreibt auf, was du in Solmisation singst."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ακόμα και χωρίς το όνομα της εφαρμογής, η Siri σαρώνει την παρτιτούρα, την παίζει και γράφει τις νότες που τραγουδάτε σε ντο-ρε-μι."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Even without naming the app, Siri scans a score, plays it, and writes down the notes you sing in solfège."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Even without naming the app, Siri scans a score, plays it, and writes down the notes you sing in solfège."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aunque no digas el nombre de la app, Siri escanea la partitura, la reproduce y anota las notas que cantes en solfeo."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vaikka et sano sovelluksen nimeä, Siri skannaa nuotit, soittaa ne ja kirjoittaa muistiin sävelet, jotka laulat do-re-mi-tavuilla."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Même sans nommer l’app, Siri scanne la partition, la joue et note ce que vous chantez en do-ré-mi."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanpa menyebut nama aplikasi, Siri bisa memindai partitur, memutarnya, dan mencatat nada yang Anda nyanyikan dengan do-re-mi."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anche senza dire il nome dell’app, Siri scansiona lo spartito, lo suona e trascrive le note che canti in do-re-mi."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アプリ名を言わなくても、Siriが楽譜を撮って再生し、ドレミで歌った音を書き取ります。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri에게 앱 이름을 말하지 않아도 악보를 찍고, 들려주고, 계이름으로 받아 적어요."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selv uten appnavnet skanner Siri notene, spiller dem av og skriver ned tonene du synger i do-re-mi."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ook zonder de appnaam scant Siri bladmuziek, speelt die af en schrijft de noten op die je in do-re-mi zingt."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nawet bez nazwy aplikacji Siri zeskanuje nuty, zagra je i zapisze dźwięki, które zaśpiewasz solmizacją."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mesmo sem dizer o nome do app, a Siri escaneia a partitura, toca e anota as notas que você canta em dó-ré-mi."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Даже без названия приложения Siri отсканирует ноты, сыграет их и запишет то, что вы споёте по слогам до-ре-ми."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Även utan appens namn skannar Siri noter, spelar upp dem och skriver ner tonerna du sjunger i do-re-mi."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไม่ต้องเอ่ยชื่อแอป Siri ก็สแกนโน้ต เล่นให้ฟัง และจดโน้ตที่คุณร้องเป็นโด เร มี ได้"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulamanın adını söylemeseniz de Siri notayı tarar, çalar ve do-re-mi ile söylediğiniz notaları yazar."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không cần nói tên ứng dụng, Siri vẫn chụp bản nhạc, phát cho bạn nghe và ghi lại các nốt bạn hát theo đô rê mi."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "即使不说 App 名称，Siri 也能拍下乐谱、播放出来，还能把你唱的唱名记成音符。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "就算不說 App 名稱，Siri 也能拍下樂譜、播放出來，還能把你唱的唱名記成音符。"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
