@@ -1,0 +1,209 @@
+{
+  "identifier": "976C35CD-0965-48DC-9A38-BF0DC60C6641",
+  "nonRenewingSubscriptions": [],
+  "products": [
+    {
+      "displayPrice": "17.99",
+      "familyShareable": true,
+      "internalID": "0EBBABFE-B0CB-4852-8DFF-4D8CB257BD37",
+      "localizations": [
+        {
+          "description": "Dictation, paste and photo reading, forever",
+          "displayName": "StaffSinger Pro (Lifetime)",
+          "locale": "en_US"
+        },
+        {
+          "description": "받아쓰기 · 붙여넣기 · 사진 채보를 평생",
+          "displayName": "초견 Pro (평생)",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.devkoan.StaffSinger.pro.lifetime",
+      "referenceName": "StaffSinger Pro Lifetime",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "11.99",
+      "familyShareable": true,
+      "internalID": "3A1F3654-DB82-41AA-89BD-706EB5804616",
+      "localizations": [
+        {
+          "description": "Switch your subscription to lifetime",
+          "displayName": "StaffSinger Pro (Lifetime, for subscribers)",
+          "locale": "en_US"
+        },
+        {
+          "description": "구독을 평생으로 바꾸기",
+          "displayName": "초견 Pro (평생, 구독자용)",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.devkoan.StaffSinger.pro.graduate",
+      "referenceName": "StaffSinger Pro Lifetime for Subscribers",
+      "type": "NonConsumable"
+    },
+    {
+      "displayPrice": "0.99",
+      "familyShareable": false,
+      "internalID": "E09FD4C4-6F0A-434E-9370-A49D2F4E67BA",
+      "localizations": [
+        {
+          "description": "A one-time tip for the developer. Unlocks nothing.",
+          "displayName": "A coffee",
+          "locale": "en_US"
+        },
+        {
+          "description": "개발자에게 보내는 한 번의 응원. 열리는 기능은 없습니다.",
+          "displayName": "커피 한 잔",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.devkoan.StaffSinger.tip.small",
+      "referenceName": "Tip small (consumable)",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "2.99",
+      "familyShareable": false,
+      "internalID": "5D4A682D-5AEE-4995-8CF9-881BEA5CB047",
+      "localizations": [
+        {
+          "description": "A one-time tip for the developer. Unlocks nothing.",
+          "displayName": "A snack",
+          "locale": "en_US"
+        },
+        {
+          "description": "개발자에게 보내는 한 번의 응원. 열리는 기능은 없습니다.",
+          "displayName": "간식 한 번",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.devkoan.StaffSinger.tip.medium",
+      "referenceName": "Tip medium (consumable)",
+      "type": "Consumable"
+    },
+    {
+      "displayPrice": "9.99",
+      "familyShareable": false,
+      "internalID": "819730A5-452A-4684-8F98-6FB78D40AAE1",
+      "localizations": [
+        {
+          "description": "A one-time tip for the developer. Unlocks nothing.",
+          "displayName": "A hearty meal",
+          "locale": "en_US"
+        },
+        {
+          "description": "개발자에게 보내는 한 번의 응원. 열리는 기능은 없습니다.",
+          "displayName": "든든한 한 끼",
+          "locale": "ko"
+        }
+      ],
+      "productID": "com.devkoan.StaffSinger.tip.large",
+      "referenceName": "Tip large (consumable)",
+      "type": "Consumable"
+    }
+  ],
+  "settings": {
+    "_applicationInternalID": "6779262832",
+    "_developerTeamID": "",
+    "_lastSynchronizedDate": 0
+  },
+  "subscriptionGroups": [
+    {
+      "id": "9F3D30FF-DE1C-4627-96BE-77CAF1BEC713",
+      "localizations": [],
+      "name": "StaffSinger Pro",
+      "subscriptions": [
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "5.99",
+          "familyShareable": true,
+          "groupNumber": 1,
+          "internalID": "F33F5E2B-C5A6-435A-A676-8018068E794F",
+          "introductoryOffer": {
+            "displayPrice": "2.99",
+            "internalID": "37D5C5E2-98B6-4AE2-90CA-500D89C7C7E0",
+            "numberOfPeriods": 1,
+            "paymentMode": "payUpFront",
+            "subscriptionPeriod": "P1Y"
+          },
+          "localizations": [
+            {
+              "description": "Dictation, paste and photo reading",
+              "displayName": "StaffSinger Pro (Yearly)",
+              "locale": "en_US"
+            },
+            {
+              "description": "받아쓰기 · 붙여넣기 · 사진 채보",
+              "displayName": "초견 Pro (연)",
+              "locale": "ko"
+            }
+          ],
+          "productID": "com.devkoan.StaffSinger.pro.yearly",
+          "recurringSubscriptionPeriod": "P1Y",
+          "referenceName": "StaffSinger Pro Yearly",
+          "subscriptionGroupID": "9F3D30FF-DE1C-4627-96BE-77CAF1BEC713",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "1.99",
+          "familyShareable": true,
+          "groupNumber": 1,
+          "internalID": "BD2316D4-E356-42B3-A300-2B8B53E2775D",
+          "localizations": [
+            {
+              "description": "Dictation, paste and photo reading",
+              "displayName": "StaffSinger Pro (Monthly)",
+              "locale": "en_US"
+            },
+            {
+              "description": "받아쓰기 · 붙여넣기 · 사진 채보",
+              "displayName": "초견 Pro (월)",
+              "locale": "ko"
+            }
+          ],
+          "productID": "com.devkoan.StaffSinger.pro.monthly",
+          "recurringSubscriptionPeriod": "P1M",
+          "referenceName": "StaffSinger Pro Monthly",
+          "subscriptionGroupID": "9F3D30FF-DE1C-4627-96BE-77CAF1BEC713",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        },
+        {
+          "adHocOffers": [],
+          "codeOffers": [],
+          "displayPrice": "0.99",
+          "familyShareable": true,
+          "groupNumber": 1,
+          "internalID": "825907BC-0E9A-4BD0-A548-93C53456ECBD",
+          "localizations": [
+            {
+              "description": "Dictation, paste and photo reading",
+              "displayName": "StaffSinger Pro (Weekly)",
+              "locale": "en_US"
+            },
+            {
+              "description": "받아쓰기 · 붙여넣기 · 사진 채보",
+              "displayName": "초견 Pro (주)",
+              "locale": "ko"
+            }
+          ],
+          "productID": "com.devkoan.StaffSinger.pro.weekly",
+          "recurringSubscriptionPeriod": "P1W",
+          "referenceName": "StaffSinger Pro Weekly",
+          "subscriptionGroupID": "9F3D30FF-DE1C-4627-96BE-77CAF1BEC713",
+          "type": "RecurringSubscription",
+          "winbackOffers": []
+        }
+      ]
+    }
+  ],
+  "version": {
+    "major": 3,
+    "minor": 0
+  }
+}

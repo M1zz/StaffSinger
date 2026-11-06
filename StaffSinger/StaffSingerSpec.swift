@@ -24,8 +24,18 @@ enum StaffSingerSpec: LeeoAppSpec {
         supportURL: URL(string: "https://m1zz.github.io/StaffSinger/support.html")!,
         createsAccounts: false)
 
-    /// 결제가 전혀 없는 무료 앱 — 페이월·복원 경로가 따라붙지 않는다.
-    static let monetization = LeeoMonetization.free
+    /// 무료 · Pro 두 칸 (→ Pro/StaffSingerPro.swift).
+    /// 음표를 찍고 듣는 것은 전부 무료, 손을 덜어 주는 세 가지만 Pro 이고 각각 세 번씩 무료로 써 본다.
+    /// Pro 는 주 · 월 · 연 구독과 평생, 구독자에게만 보이는 졸업 평생가.
+    ///
+    /// ⚠️ 팁 상품은 여기 넣지 않는다(아래 `StaffSingerTip`). 넣으면 팁을 낸 사람이 Pro 가 된다.
+    static let monetization = LeeoMonetization.freemiumSubscription(
+        LeeoSubscriptionConfig(
+            productIDs: ProProduct.all,
+            // 자체 약관이 없으므로 애플 표준 사용권 계약(EULA)을 건다. 구독을 파는 앱의 심사 필수 항목이다.
+            termsURL: URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!,
+            gate: LeeoGatePolicy(
+                freeLimits: Dictionary(uniqueKeysWithValues: ProFeature.allCases.map { ($0.rawValue, ProFeature.freeUses) }))))
 
     /// App Store 앱 ID — 리뷰 링크 · 친구에게 소개하기에 쓴다.
     static var appStoreID: String? { "6779262832" }
@@ -36,7 +46,7 @@ enum StaffSingerSpec: LeeoAppSpec {
 
 // MARK: - 팁 (개발자 응원하기)
 
-/// 무료 앱이라 LeeoStore 가 없다. 팁 엔진을 여기 하나 두고, 앱을 열 때 `startStandalone()` 을 부른다.
+/// 팁은 Pro 와 상관없다. 팁 엔진을 여기 하나 두고, 앱을 열 때 `startStandalone()` 을 부른다.
 @MainActor
 enum StaffSingerTip {
     static let tipJar = LeeoTipJar(config: LeeoTipJarConfig(productIDs: [

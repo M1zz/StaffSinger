@@ -203,6 +203,8 @@ struct SettingsForm: View {
                     }
                 }
 
+                ProSettingsSection()
+
                 Section {
                     LeeoSupportSection<StaffSingerSpec>()
                 } header: {

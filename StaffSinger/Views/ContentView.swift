@@ -42,6 +42,12 @@ struct ContentView: View {
     // Voice dictation ("read the score out loud"). Owns the mic + recognizer.
     @StateObject private var dictation: SolfegeDictation
     @State private var showDictation = false
+    /// 무료 체험 세 번을 다 쓴 기능. 서면 그 기능을 앞세운 페이월이 뜬다 (→ Pro/).
+    @State private var paywallFeature: ProFeature?
+    /// 구독 6개월째 · 갱신 7일 전의 '구독 졸업' 제안.
+    @State private var showGraduation = false
+    @State private var pro = ProAccess.shared
+    @Environment(\.scenePhase) private var scenePhase
     /// Siri 로 고른 동작 (→ StaffSingerIntents.swift)
     @Bindable private var router = StaffSingerRouter.shared
     /// Hold-and-hum note input (piano strip and note editor).
@@ -121,7 +127,18 @@ struct ContentView: View {
             switch request {
             case .scan: showApertureCamera = true
             case .play: vm.play()
-            case .dictation: showDictation = true
+            case .dictation: openPro(.dictation) { showDictation = true }
+            }
+        }
+        .sheet(item: $paywallFeature) { ProPaywallView(highlight: $0) }
+        .sheet(isPresented: $showGraduation) { ProGraduationSheet() }
+        // 앱을 열 때와 다시 앞에 올 때 영수증을 읽는다. 구독 졸업을 제안할 때면 한 번 띄운다.
+        .task(id: scenePhase) {
+            guard scenePhase == .active else { return }
+            await pro.refresh()
+            if pro.graduationIsDue, paywallFeature == nil {
+                pro.markGraduationOffered()
+                showGraduation = true
             }
         }
         .sheet(isPresented: $showLibrary) {
@@ -140,6 +157,7 @@ struct ContentView: View {
         .sheet(isPresented: $showPaste) {
             PasteScoreSheet(
                 currentScoreText: vm.exportToText(),
+                canConvert: { pro.allows(.paste) },
                 onImport: { text in
                     showPaste = false
                     importPasted(text)
@@ -206,7 +224,7 @@ struct ContentView: View {
     }
 
     #if DEBUG
-    /// App Store screenshots: `-screenshotScene piano|staff|playback|dictation|paste`
+    /// App Store screenshots: `-screenshotScene piano|staff|playback|dictation|paste|paywall`
     /// opens the app on that screen with a short sample melody already written.
     /// Debug builds only — never compiled into what ships.
     private func applyScreenshotScene() {
@@ -219,6 +237,7 @@ struct ContentView: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) { vm.play() }
         case "dictation": showDictation = true
         case "paste": showPaste = true
+        case "paywall": paywallFeature = .dictation
         default: break
         }
     }
@@ -376,6 +395,7 @@ struct ContentView: View {
     /// single line works best). Replaces the current score on success.
     private func runTranscription() {
         guard let img = reference.image else { return }
+        guard pro.allows(.transcribe) else { paywallFeature = .transcribe; return }
         let maxBeats = vm.score.measureCapacity * 2
         Task {
             let reading = await Task.detached(priority: .userInitiated) {
@@ -386,6 +406,7 @@ struct ContentView: View {
                 omrMessage = String(localized: "악보를 인식하지 못했습니다. 깨끗한 인쇄·한 줄·정면 사진일수록 잘 됩니다.")
             } else {
                 vm.importNotes(notes, unsure: reading.unsure)
+                pro.recordUse(.transcribe)
                 omrMessage = String(localized: "\(notes.count)개 음표를 인식했습니다 (실험적).\n음높이·길이는 직접 확인하고 고쳐 주세요.")
             }
         }
@@ -398,6 +419,7 @@ struct ContentView: View {
     private func importDictated(_ notes: [ScoreNote]) {
         guard !notes.isEmpty else { return }
         vm.importNotes(notes)
+        pro.recordUse(.dictation)
         StaffSingerTipMoments.recordDictated(notes.count)
         omrMessage = String(localized: "\(notes.count)개 음표를 받아썼습니다.\n음높이나 길이가 다르면 음표를 끌어서 고쳐 주세요.")
     }
@@ -408,10 +430,16 @@ struct ContentView: View {
             omrMessage = String(localized: "붙여넣은 텍스트에서 음표를 찾지 못했습니다.\n규칙(예: 4옥도8분음)에 맞는지 확인해 주세요.")
             return
         }
+        pro.recordUse(.paste)
         let twoBars = vm.score.measureCapacity * 2
         let overflows = twoBars > 0 && vm.score.totalBeats > twoBars + 1e-6
         omrMessage = String(localized: "\(notes.count)개 음표를 불러왔습니다.")
             + (overflows ? String(localized: "\n2마디를 넘는 음표는 화면에 보이지 않을 수 있어요.") : "")
+    }
+
+    /// Pro 기능을 연다. 무료 체험 세 번을 다 썼으면 그 기능의 페이월을 띄운다.
+    private func openPro(_ feature: ProFeature, _ open: () -> Void) {
+        if pro.allows(feature) { open() } else { paywallFeature = feature }
     }
 
     /// Defer the crop screen until the picker sheet has dismissed, so the two
@@ -466,7 +494,7 @@ struct ContentView: View {
 
                 // Read the score out loud and let the mic write it down.
                 circleButton(systemImage: "music.mic", tint: .primary) {
-                    showDictation = true
+                    openPro(.dictation) { showDictation = true }
                 }
                 .accessibilityLabel("계이름 받아쓰기")
                 .transition(.scale.combined(with: .opacity))
@@ -726,11 +754,14 @@ struct ContentView: View {
 private struct PasteScoreSheet: View {
     /// The current score rendered as text (a worked example to show/share).
     let currentScoreText: String
+    /// '악보로 변환' 을 지금 써도 되는가. 안 되면 페이월을 띄운다 (규칙 · 지금 악보 복사는 늘 무료).
+    let canConvert: () -> Bool
     let onImport: (String) -> Void
     let onCancel: () -> Void
 
     @State private var text = ""
     @State private var copiedRule = false
+    @State private var showPaywall = false
 
     var body: some View {
         NavigationStack {
@@ -801,6 +832,7 @@ private struct PasteScoreSheet: View {
                 }
                 .padding(20)
             }
+            .sheet(isPresented: $showPaywall) { ProPaywallView(highlight: .paste) }
             .navigationTitle("악보 붙여넣기")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -808,7 +840,9 @@ private struct PasteScoreSheet: View {
                     Button("취소", systemImage: "xmark") { onCancel() }
                 }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("악보로 변환", systemImage: "checkmark") { onImport(text) }
+                    Button("악보로 변환", systemImage: "checkmark") {
+                        if canConvert() { onImport(text) } else { showPaywall = true }
+                    }
                         .fontWeight(.semibold)
                         .disabled(text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty)
                 }
