@@ -1,5 +1,151 @@
 # 릴리즈 노트
 
+## 1.0.6
+
+### 앱스토어 (한국어)
+
+Siri에게 말하면 바로 악보를 찍을 수 있어요
+Siri로 지금 악보를 바로 들려줘요
+Siri로 계이름 받아쓰기를 바로 열어요
+
+### App Store (English)
+
+Ask Siri to scan a score right away
+Ask Siri to play your current score
+Open Solfège Dictation with Siri
+
+### App Store (en-GB)
+
+Ask Siri to scan a score right away
+Ask Siri to play your current score
+Open Solfège Dictation with Siri
+
+### 앱스토어 (중국어 간체)
+
+对 Siri 说一声就能扫描乐谱
+让 Siri 播放当前的乐谱
+用 Siri 直接打开唱名听写
+
+### 앱스토어 (중국어 번체)
+
+對 Siri 說一聲就能掃描樂譜
+讓 Siri 播放目前的樂譜
+用 Siri 直接打開唱名聽寫
+
+### 앱스토어 (일본어)
+
+Siriに話すだけで楽譜を撮れます
+今の楽譜をSiriで再生できます
+Siriで階名ディクテーションをすぐ開けます
+
+### 앱스토어 (러시아어)
+
+Попросите Siri снять ноты
+Siri сыграет текущие ноты
+Сольфеджио под диктовку через Siri
+
+### 앱스토어 (스페인어)
+
+Pide a Siri que escanee una partitura
+Pide a Siri que toque tu partitura
+Abre el dictado de solfeo con Siri
+
+### 앱스토어 (독일어)
+
+Noten per Siri sofort scannen
+Aktuelle Noten per Siri abspielen
+Solmisations-Diktat per Siri öffnen
+
+### 앱스토어 (프랑스어)
+
+Scannez une partition avec Siri
+Faites jouer votre partition par Siri
+Ouvrez la dictée de solfège avec Siri
+
+### 앱스토어 (이탈리아어)
+
+Scansiona uno spartito con Siri
+Fai suonare lo spartito a Siri
+Apri il dettato di solfeggio con Siri
+
+### 앱스토어 (포르투갈어 브라질)
+
+Peça à Siri para escanear a partitura
+Peça à Siri para tocar sua partitura
+Abra o ditado de solfejo com a Siri
+
+### 앱스토어 (태국어)
+
+สั่ง Siri ให้สแกนโน้ตเพลงได้ทันที
+ให้ Siri เล่นโน้ตเพลงที่เปิดอยู่
+เปิดเขียนโน้ตตามเสียงโซลเฟจด้วย Siri
+
+### 앱스토어 (베트남어)
+
+Nhờ Siri quét bản nhạc ngay
+Nhờ Siri phát bản nhạc đang mở
+Mở chép nhạc theo xướng âm bằng Siri
+
+### 앱스토어 (체코어)
+
+Naskenujte noty pomocí Siri
+Siri přehraje aktuální noty
+Solfeggio diktát spustíte přes Siri
+
+### 앱스토어 (덴마크어)
+
+Scan noder med Siri med det samme
+Lad Siri afspille dine noder
+Åbn solfège-diktat med Siri
+
+### 앱스토어 (그리스어)
+
+Σαρώστε παρτιτούρα με τη Siri
+Η Siri παίζει την τρέχουσα παρτιτούρα
+Ανοίξτε την υπαγόρευση σολφέζ με Siri
+
+### 앱스토어 (핀란드어)
+
+Skannaa nuotit heti Sirin avulla
+Siri soittaa nykyiset nuotit
+Avaa solfa-sanelu Sirin avulla
+
+### 앱스토어 (인도네시아어)
+
+Pindai partitur langsung lewat Siri
+Minta Siri memutar partitur saat ini
+Buka dikte solfeggio lewat Siri
+
+### 앱스토어 (Norsk bokmål)
+
+Skann noter med Siri med en gang
+La Siri spille av notene dine
+Åpne solfège-diktat med Siri
+
+### 앱스토어 (네덜란드어)
+
+Scan bladmuziek direct met Siri
+Laat Siri je bladmuziek afspelen
+Open het solfège-dictaat met Siri
+
+### 앱스토어 (폴란드어)
+
+Skanuj nuty od razu przez Siri
+Siri odtworzy bieżące nuty
+Otwieraj dyktando solfeżowe przez Siri
+
+### 앱스토어 (스웨덴어)
+
+Skanna noter direkt med Siri
+Låt Siri spela upp dina noter
+Öppna solfège-diktamen med Siri
+
+### 앱스토어 (튀르키예어)
+
+Siri ile hemen nota tarayın
+Açık notayı Siri’ye çaldırın
+Solfej dikteyi Siri ile açın
+
 ## 1.0.5
 
 ### 앱스토어 (한국어)
