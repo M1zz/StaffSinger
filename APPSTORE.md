@@ -55,6 +55,11 @@ https://m1zz.github.io/StaffSinger/
 
 합창, 성가대, 악기 레슨, 음대 입시 준비처럼 악보를 빨리 읽어야 할 때 곁에 두세요.
 
+구독 안내
+초견 Pro 구독은 자동 갱신 구독입니다. 갱신일 24시간 전까지 해지하지 않으면 Apple 계정으로 자동 결제되며, 설정의 구독 관리에서 언제든 해지할 수 있습니다.
+이용약관(EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+개인정보처리방침: https://m1zz.github.io/StaffSinger/privacy.html
+
 ## en-US
 
 ### 지원 URL
@@ -109,6 +114,11 @@ Reference photo
 Take a photo of the score you are reading and keep it on screen to compare while you copy it out.
 
 Keep it beside you for choir, church music, instrument lessons and music school entrance prep, whenever you need to read music quickly.
+
+Subscriptions
+StaffSinger Pro is an auto-renewing subscription. Payment is charged to your Apple Account, and the subscription renews unless canceled at least 24 hours before the current period ends. Manage or cancel anytime in Settings.
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://m1zz.github.io/StaffSinger/en/privacy.html
 
 ## en-GB
 
@@ -165,6 +175,11 @@ Take a photo of the score you are reading and keep it on screen to compare while
 
 Keep it beside you for choir, church music, instrument lessons and music school entrance prep, whenever you need to read music quickly.
 
+Subscriptions
+StaffSinger Pro is an auto-renewing subscription. Payment is charged to your Apple Account, and the subscription renews unless cancelled at least 24 hours before the current period ends. Manage or cancel any time in Settings.
+Terms of Use (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacy Policy: https://m1zz.github.io/StaffSinger/en/privacy.html
+
 ## zh-Hans
 
 ### 지원 URL
@@ -219,6 +234,11 @@ StaffSinger 能把让你犯难的两个小节抄到五线谱上，并按原本�
 把正在看的乐谱拍下来，留在屏幕上，一边对照一边抄写。
 
 合唱、唱诗班、乐器课、艺考备考……需要快速读谱的时候，都可以放在身边。
+
+订阅说明
+StaffSinger Pro 为自动续期订阅。 费用从你的 Apple 账户扣除，除非在当期结束前至少 24 小时取消，否则将自动续期。可随时在“设置”中管理或取消。
+使用条款（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+隐私政策: https://m1zz.github.io/StaffSinger/zh-Hans/privacy.html
 
 ## zh-Hant
 
@@ -275,6 +295,11 @@ StaffSinger 能把讓你困擾的兩個小節抄到五線譜上，並依原本�
 
 合唱、詩班、樂器課、音樂班升學準備……需要快速讀譜的時候，都可以放在身邊。
 
+訂閱說明
+StaffSinger Pro 為自動續訂訂閱。 費用會從你的 Apple 帳號扣款，除非在當期結束前至少 24 小時取消，否則將自動續訂。可隨時在「設定」中管理或取消。
+使用條款（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+隱私權政策: https://m1zz.github.io/StaffSinger/zh-Hant/privacy.html
+
 ## ja
 
 ### 지원 URL
@@ -329,6 +354,11 @@ StaffSingerは、わかりにくい2小節を五線に書き写し、リズム�
 見ている楽譜を撮影しておくと、画面に表示したまま見比べながら書き写せます。
 
 合唱、聖歌隊、楽器のレッスン、音大受験の準備など、楽譜をすばやく読みたいときにそばに置いてください。
+
+サブスクリプションについて
+StaffSinger Pro は自動更新のサブスクリプションです。 期間終了の24時間前までに解約しない限り、Apple Account に自動で請求され更新されます。設定のサブスクリプション管理からいつでも解約できます。
+利用規約（EULA）: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+プライバシーポリシー: https://m1zz.github.io/StaffSinger/ja/privacy.html
 
 ## ru
 
@@ -385,6 +415,11 @@ StaffSinger переносит трудные два такта на нотны�
 
 Пригодится в хоре, на уроках музыки и при подготовке к поступлению в музыкальное училище — везде, где нужно быстро читать ноты.
 
+Подписки
+StaffSinger Pro — подписка с автопродлением. Оплата списывается с вашего Аккаунта Apple, и подписка продлевается, если не отменить её минимум за 24 часа до конца периода. Управлять подпиской и отменить её можно в Настройках.
+Условия использования (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Политика конфиденциальности: https://m1zz.github.io/StaffSinger/ru/privacy.html
+
 ## es-MX
 
 ### 지원 URL
@@ -439,6 +474,11 @@ Foto de referencia
 Haz una foto de la partitura que estás leyendo y déjala en pantalla para compararla mientras la copias.
 
 Tenla a mano para el coro, las clases de instrumento o la preparación de pruebas de acceso a música: siempre que necesites leer música rápido.
+
+Suscripciones
+La suscripción a StaffSinger Pro es de renovación automática. El cargo se hace a tu cuenta de Apple y la suscripción se renueva a menos que la canceles al menos 24 horas antes de que termine el periodo. Puedes administrarla o cancelarla cuando quieras en Configuración.
+Términos de uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Política de privacidad: https://m1zz.github.io/StaffSinger/es/privacy.html
 
 ## de-DE
 
@@ -495,6 +535,11 @@ Fotografiere die Noten, nach denen du spielst, und lass sie beim Abschreiben zum
 
 Immer dabei für Chor, Instrumentalunterricht oder die Vorbereitung auf die Musikhochschule – überall, wo du schnell Noten lesen musst.
 
+Abonnements
+StaffSinger Pro ist ein sich automatisch verlängerndes Abo. Die Zahlung erfolgt über deinen Apple Account. Das Abo verlängert sich, sofern du nicht mindestens 24 Stunden vor Ablauf des Zeitraums kündigst. Verwalten oder kündigen kannst du jederzeit in den Einstellungen.
+Nutzungsbedingungen (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Datenschutzerklärung: https://m1zz.github.io/StaffSinger/de/privacy.html
+
 ## fr-FR
 
 ### 지원 URL
@@ -549,6 +594,11 @@ Photo de référence
 Photographiez la partition que vous lisez et gardez-la à l’écran pour comparer pendant que vous la recopiez.
 
 À garder près de vous pour la chorale, les cours d’instrument ou la préparation aux concours de conservatoire : dès que vous devez lire la musique vite.
+
+Abonnements
+L’abonnement StaffSinger Pro est à renouvellement automatique. Le paiement est débité sur votre compte Apple, et l’abonnement est reconduit sauf résiliation au moins 24 heures avant la fin de la période en cours. Gérez-le ou résiliez-le à tout moment dans Réglages.
+Conditions d’utilisation (EULA) : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Politique de confidentialité : https://m1zz.github.io/StaffSinger/fr/privacy.html
 
 ## it
 
@@ -605,6 +655,11 @@ Fotografa lo spartito che stai leggendo e tienilo sullo schermo per confrontarlo
 
 Tienilo a portata di mano per il coro, le lezioni di strumento o la preparazione agli esami di conservatorio: ogni volta che devi leggere la musica in fretta.
 
+Abbonamenti
+L’abbonamento StaffSinger Pro si rinnova automaticamente. Il pagamento viene addebitato sul tuo Account Apple e l’abbonamento si rinnova se non lo disdici almeno 24 ore prima della fine del periodo. Puoi gestirlo o disdirlo in qualsiasi momento in Impostazioni.
+Condizioni d’uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Informativa sulla privacy: https://m1zz.github.io/StaffSinger/it/privacy.html
+
 ## pt-BR
 
 ### 지원 URL
@@ -659,6 +714,11 @@ Foto de referência
 Fotografe a partitura que está lendo e deixe na tela para comparar enquanto copia.
 
 Tenha por perto para o coral, as aulas de instrumento ou a preparação para provas de música: sempre que precisar ler música rápido.
+
+Assinaturas
+A assinatura StaffSinger Pro é renovada automaticamente. A cobrança é feita na sua Conta Apple, e a assinatura é renovada a menos que você cancele pelo menos 24 horas antes do fim do período. Gerencie ou cancele quando quiser em Ajustes.
+Termos de Uso (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Política de Privacidade: https://m1zz.github.io/StaffSinger/pt-BR/privacy.html
 
 ## th
 
@@ -715,6 +775,11 @@ StaffSinger คัดลอกสองห้องที่ทำให้ส�
 
 เหมาะสำหรับวงประสานเสียง คลาสเรียนเครื่องดนตรี และการเตรียมสอบเข้าสายดนตรี เมื่อต้องอ่านโน้ตให้เร็ว
 
+การสมัครสมาชิก
+StaffSinger Pro เป็นการสมัครสมาชิกที่ต่ออายุอัตโนมัติ ระบบจะเรียกเก็บเงินจากบัญชี Apple ของคุณและต่ออายุให้ เว้นแต่จะยกเลิกอย่างน้อย 24 ชั่วโมงก่อนสิ้นสุดรอบ จัดการหรือยกเลิกได้ทุกเมื่อในการตั้งค่า
+ข้อกำหนดการใช้งาน (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+นโยบายความเป็นส่วนตัว: https://m1zz.github.io/StaffSinger/th/privacy.html
+
 ## vi
 
 ### 지원 URL
@@ -769,6 +834,11 @@ Dán văn bản viết theo định dạng cố định là khuông nhạc đư�
 Chụp bản nhạc bạn đang đọc và để trên màn hình để đối chiếu khi chép.
 
 Luôn sẵn bên bạn khi hát hợp xướng, học nhạc cụ hay ôn thi nhạc viện, mỗi khi cần đọc nhạc thật nhanh.
+
+Gói đăng ký
+StaffSinger Pro là gói đăng ký tự động gia hạn. Phí được tính vào Tài khoản Apple của bạn và gói sẽ tự gia hạn trừ khi bạn hủy ít nhất 24 giờ trước khi kỳ hạn kết thúc. Bạn có thể quản lý hoặc hủy bất cứ lúc nào trong Cài đặt.
+Điều khoản sử dụng (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Chính sách quyền riêng tư: https://m1zz.github.io/StaffSinger/vi/privacy.html
 
 ## cs
 
@@ -825,6 +895,11 @@ Vyfoťte partituru, kterou čtete, a nechte ji na obrazovce, abyste ji mohli př
 
 Mějte ho po ruce pro sbor, hodiny hry na nástroj nebo přípravu na přijímačky na konzervatoř – kdykoli potřebujete rychle číst noty.
 
+Předplatné
+StaffSinger Pro je automaticky obnovované předplatné. Platba se strhává z vašeho Apple účtu a předplatné se obnoví, pokud ho nezrušíte alespoň 24 hodin před koncem období. Spravovat nebo zrušit ho můžete kdykoli v Nastavení.
+Podmínky použití (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Zásady ochrany osobních údajů: https://m1zz.github.io/StaffSinger/cs/privacy.html
+
 ## da
 
 ### 지원 URL
@@ -879,6 +954,11 @@ Referencebillede
 Tag et billede af de noder, du læser, og lad det stå på skærmen, så du kan sammenligne, mens du skriver af.
 
 Praktisk at have ved hånden til kor, instrumentundervisning eller optagelsesprøver til musikuddannelser – når som helst du hurtigt skal læse noder.
+
+Abonnementer
+StaffSinger Pro er et abonnement, der fornyes automatisk. Betalingen trækkes på din Apple-konto, og abonnementet fornyes, medmindre du opsiger det mindst 24 timer før perioden slutter. Administrer eller opsig når som helst i Indstillinger.
+Brugsvilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privatlivspolitik: https://m1zz.github.io/StaffSinger/da/privacy.html
 
 ## el
 
@@ -935,6 +1015,11 @@ StaffSinger: Πρώτη ανάγνωση
 
 Κρατήστε την δίπλα σας για τη χορωδία, τα μαθήματα οργάνου ή την προετοιμασία για εισαγωγικές εξετάσεις μουσικής, όποτε χρειάζεται να διαβάσετε γρήγορα μουσική.
 
+Συνδρομές
+Το StaffSinger Pro είναι συνδρομή με αυτόματη ανανέωση. Η χρέωση γίνεται στον λογαριασμό Apple σας και η συνδρομή ανανεώνεται, εκτός αν την ακυρώσετε τουλάχιστον 24 ώρες πριν λήξει η περίοδος. Διαχειριστείτε ή ακυρώστε τη συνδρομή οποτεδήποτε από τις Ρυθμίσεις.
+Όροι χρήσης (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Πολιτική απορρήτου: https://m1zz.github.io/StaffSinger/el/privacy.html
+
 ## fi
 
 ### 지원 URL
@@ -989,6 +1074,11 @@ Vertailukuva
 Ota kuva nuotista, jota luet, ja pidä se näytöllä vertailua varten kopioidessasi.
 
 Hyvä apu kuorossa, soitontunneilla ja musiikkioppilaitoksen pääsykokeisiin valmistautuessa – aina kun nuotteja pitää lukea nopeasti.
+
+Tilaukset
+StaffSinger Pro on automaattisesti uusiutuva tilaus. Maksu veloitetaan Apple-tililtäsi, ja tilaus uusiutuu, ellei sitä peruta vähintään 24 tuntia ennen jakson päättymistä. Hallitse tai peru tilaus milloin tahansa Asetuksissa.
+Käyttöehdot (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Tietosuojakäytäntö: https://m1zz.github.io/StaffSinger/fi/privacy.html
 
 ## id
 
@@ -1045,6 +1135,11 @@ Potret partitur yang sedang kamu baca dan biarkan di layar untuk dibandingkan sa
 
 Simpan di dekatmu untuk paduan suara, les alat musik, atau persiapan ujian masuk jurusan musik – kapan pun kamu perlu membaca not dengan cepat.
 
+Langganan
+StaffSinger Pro adalah langganan yang diperpanjang otomatis. Pembayaran ditagihkan ke Akun Apple Anda dan langganan diperpanjang kecuali dibatalkan paling lambat 24 jam sebelum periode berakhir. Kelola atau batalkan kapan saja di Pengaturan.
+Ketentuan Penggunaan (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Kebijakan Privasi: https://m1zz.github.io/StaffSinger/id/privacy.html
+
 ## nb
 
 ### 지원 URL
@@ -1099,6 +1194,11 @@ Referansebilde
 Ta bilde av notene du leser, og la det stå på skjermen så du kan sammenligne mens du skriver av.
 
 Praktisk å ha ved hånden til kor, instrumentundervisning eller opptaksprøver til musikkutdanning – når som helst du raskt må lese noter.
+
+Abonnementer
+StaffSinger Pro er et abonnement som fornyes automatisk. Betalingen belastes Apple-kontoen din, og abonnementet fornyes med mindre du sier det opp minst 24 timer før perioden er over. Administrer eller si opp når som helst i Innstillinger.
+Bruksvilkår (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Personvernerklæring: https://m1zz.github.io/StaffSinger/nb/privacy.html
 
 ## nl-NL
 
@@ -1155,6 +1255,11 @@ Maak een foto van de partituur die je leest en laat die op het scherm staan om t
 
 Handig bij de hand voor koor, instrumentles of de voorbereiding op een toelatingsexamen voor het conservatorium – wanneer je maar snel noten moet lezen.
 
+Abonnementen
+StaffSinger Pro is een automatisch verlengend abonnement. De betaling loopt via je Apple Account en het abonnement wordt verlengd, tenzij je minstens 24 uur voor het einde van de periode opzegt. Beheer of zeg op wanneer je wilt in Instellingen.
+Gebruiksvoorwaarden (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Privacybeleid: https://m1zz.github.io/StaffSinger/nl/privacy.html
+
 ## pl
 
 ### 지원 URL
@@ -1209,6 +1314,11 @@ Zdjęcie referencyjne
 Zrób zdjęcie czytanej partytury i zostaw je na ekranie, aby porównywać podczas przepisywania.
 
 Miej go pod ręką na próbie chóru, lekcjach gry na instrumencie czy podczas przygotowań do egzaminów do szkoły muzycznej – kiedy tylko musisz szybko czytać nuty.
+
+Subskrypcje
+StaffSinger Pro to subskrypcja odnawiana automatycznie. Opłata jest pobierana z Twojego konta Apple, a subskrypcja odnawia się, jeśli nie anulujesz jej co najmniej 24 godziny przed końcem okresu. Zarządzaj subskrypcją lub anuluj ją w dowolnej chwili w Ustawieniach.
+Warunki korzystania (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Polityka prywatności: https://m1zz.github.io/StaffSinger/pl/privacy.html
 
 ## sv
 
@@ -1265,6 +1375,11 @@ Ta ett foto av noterna du läser och låt det ligga kvar på skärmen så att du
 
 Bra att ha nära till hands för kören, instrumentlektionerna eller antagningsproven till musikutbildning – när du snabbt behöver läsa noter.
 
+Prenumerationer
+StaffSinger Pro är en prenumeration som förnyas automatiskt. Betalningen dras från ditt Apple-konto och prenumerationen förnyas om du inte avslutar den minst 24 timmar innan perioden slutar. Hantera eller avsluta när som helst i Inställningar.
+Användarvillkor (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Integritetspolicy: https://m1zz.github.io/StaffSinger/sv/privacy.html
+
 ## tr
 
 ### 지원 URL
@@ -1319,6 +1434,11 @@ Referans fotoğraf
 Okuduğun notanın fotoğrafını çek ve kopyalarken karşılaştırman için ekranda açık tut.
 
 Koro, enstrüman dersleri ya da müzik bölümü sınavlarına hazırlık için yanında dursun; notaları hızlı okuman gerektiğinde hep elinin altında olsun.
+
+Abonelikler
+StaffSinger Pro otomatik yenilenen bir aboneliktir. Ödeme Apple Hesabınızdan alınır ve dönem bitmeden en az 24 saat önce iptal edilmezse abonelik yenilenir. Ayarlar'dan istediğiniz zaman yönetebilir veya iptal edebilirsiniz.
+Kullanım Koşulları (EULA): https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Gizlilik Politikası: https://m1zz.github.io/StaffSinger/tr/privacy.html
 
 ## 손쉬운 사용
 
