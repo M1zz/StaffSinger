@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: ascolta le note che scrivi",
-  "description": "Copia un passaggio difficile sul pentagramma e ascoltalo con ritmo e altezza esatti, a tempo di metronomo. Tutto gratis, dettato compreso.",
+  "description": "Copia un passaggio difficile sul pentagramma e ascoltalo con ritmo e altezza esatti, a tempo di metronomo. Scrivere e ascoltare è gratis.",
   "hero": {
     "headline": "Smetti di contare a mente.\nAscolta.",
     "lead": "Copia sul pentagramma le due battute che ti mettono in difficoltà e premi Riproduci. Dopo una battuta di conteggio iniziale, StaffSinger le suona a tempo con il metronomo, con ritmo e altezza esatti.",
     "cta": "Scaricala gratis dall’App Store",
-    "note": "Tutte le funzioni sono gratuite. Per iPhone e iPad."
+    "note": "Scrivere e ascoltare è gratis. Per iPhone e iPad."
   },
   "demo": {
     "title": "Scrivi qualche nota e ascolta",
@@ -80,7 +80,7 @@
     "note": "Il pulsante Copia la regola per l’IA copia esattamente queste istruzioni. Le lettere C D E F G A B corrispondono a do re mi fa sol la si. Separa le note con spazi."
   },
   "pricing": {
-    "title": "È tutto gratis",
+    "title": "Scrivere e ascoltare è gratis",
     "free": {
       "name": "Gratis",
       "items": [
@@ -88,17 +88,18 @@
         "Riproduzione con conteggio iniziale e metronomo",
         "Accordi e tre voci",
         "Armature di chiave e tre chiavi",
-        "Dettato di solfeggio",
-        "Incolla come testo e foto di riferimento"
+        "Foto di riferimento e copia dello spartito come testo",
+        "Prova dettato, incolla e trascrizione da foto 3 volte ciascuno"
       ]
     },
     "pro": {
-      "name": "Sostieni lo sviluppatore",
+      "name": "StaffSinger Pro",
       "items": [
-        "Lascia una piccola mancia dalle Impostazioni",
-        "Le mance non sbloccano nulla in più"
+        "Dettato di solfeggio (parlando a tempo registra anche il ritmo)",
+        "Incolla uno spartito come testo",
+        "Trascrizione automatica da foto (sperimentale)"
       ],
-      "note": "Non è un abbonamento. Ogni mancia è un pagamento singolo."
+      "note": "Scegli un abbonamento settimanale, mensile o annuale, oppure paga una volta per sempre. Le mance dalle Impostazioni sono a parte e non sbloccano nulla."
     },
     "note": "Niente pubblicità e nessun account."
   },

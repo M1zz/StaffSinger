@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: hear the notes you write on the staff",
-  "description": "Copy a tricky passage onto the staff and hear it back with the exact rhythm and pitch, right on the metronome. Every feature, solfège dictation included, is free.",
+  "description": "Copy a tricky passage onto the staff and hear it back with the exact rhythm and pitch, right on the metronome. Writing and listening are free.",
   "hero": {
     "headline": "Stop counting in your head.\nHear it.",
     "lead": "Copy the two bars that trip you up onto the staff and press play. After a one-bar count-in, StaffSinger plays them in time with the metronome, exact rhythm and pitch.",
     "cta": "Get it free on the App Store",
-    "note": "Every feature is free. For iPhone and iPad."
+    "note": "Writing and listening are free. For iPhone and iPad."
   },
   "demo": {
     "title": "Write a few notes and listen",
@@ -80,7 +80,7 @@
     "note": "Copy Rule for AI in the app copies these exact instructions. Separate notes with spaces."
   },
   "pricing": {
-    "title": "Everything is free",
+    "title": "Writing and listening are free",
     "free": {
       "name": "Free",
       "items": [
@@ -88,17 +88,18 @@
         "Playback with count-in and metronome",
         "Chords and three voices",
         "Key signatures and three clefs",
-        "Solfège dictation",
-        "Paste as text and reference photos"
+        "Reference photos and copying the score as text",
+        "Try dictation, paste and photo transcription 3 times each"
       ]
     },
     "pro": {
-      "name": "Support the developer",
+      "name": "StaffSinger Pro",
       "items": [
-        "Send a small tip from Settings",
-        "Tips don't unlock anything extra"
+        "Solfège dictation (speak on the beat to capture the rhythm too)",
+        "Paste a score as text",
+        "Photo auto-transcription (experimental)"
       ],
-      "note": "Not a subscription. Each tip is a one-time payment."
+      "note": "Choose a weekly, monthly or yearly subscription, or pay once for lifetime. Tips from Settings are separate and unlock nothing."
     },
     "note": "No ads, and no account needed."
   },

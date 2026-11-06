@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: zapište noty do osnovy a hned je slyšte",
-  "description": "Přepište záludné takty do notové osnovy a poslechněte si je s přesným rytmem a výškou spolu s metronomem. Všechny funkce jsou zdarma.",
+  "description": "Přepište záludné takty do notové osnovy a poslechněte si je s přesným rytmem a výškou spolu s metronomem. Zápis a poslech jsou zdarma.",
   "hero": {
     "headline": "Přestaňte počítat v hlavě.\nPoslechněte si to.",
     "lead": "Přepište dva takty, na kterých se zadrhnete, a klepněte na přehrávání. Po taktu předtaktí je aplikace zahraje s metronomem, přesně v zapsaném rytmu a výšce.",
     "cta": "Stáhnout zdarma v App Storu",
-    "note": "Všechny funkce jsou zdarma. Pro iPhone a iPad."
+    "note": "Zápis a poslech jsou zdarma. Pro iPhone a iPad."
   },
   "demo": {
     "title": "Zapište pár not a poslechněte si je",
@@ -104,7 +104,7 @@
     "note": "Tlačítko Zkopírovat pravidlo pro AI v aplikaci zkopíruje přesně tyto pokyny. Noty oddělujte mezerami."
   },
   "pricing": {
-    "title": "Všechny funkce jsou zdarma",
+    "title": "Zápis a poslech jsou zdarma",
     "free": {
       "name": "Zdarma",
       "items": [
@@ -112,17 +112,18 @@
         "Přehrávání s předtaktím a metronomem",
         "Akordy a tři hlasy",
         "Předznamenání a tři klíče",
-        "Diktování názvů not hlasem",
-        "Vložení textu a referenční fotka"
+        "Referenční fotka a kopírování partitury jako textu",
+        "Diktát, vložení textu a přepis z fotky můžete každý 3× vyzkoušet"
       ]
     },
     "pro": {
-      "name": "Podpořte vývojáře",
+      "name": "StaffSinger Pro",
       "items": [
-        "V Nastavení můžete poslat malé spropitné",
-        "Spropitné neodemyká žádné funkce"
+        "Solfeggio diktát (když mluvíte do rytmu, zapíše se i rytmus)",
+        "Vložení partitury jako textu",
+        "Automatický přepis z fotky (experimentální)"
       ],
-      "note": "Není to předplatné. Každé spropitné je jednorázová platba."
+      "note": "Vyberte týdenní, měsíční nebo roční předplatné, nebo jednorázový doživotní nákup. Spropitné z Nastavení je zvlášť a nic neodemyká."
     },
     "note": "Bez reklam a bez registrace."
   },

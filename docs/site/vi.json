@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: viết nốt lên khuông nhạc, nghe ngay",
-  "description": "Chép đoạn nhạc khó đọc lên khuông và nghe lại đúng nhịp, đúng cao độ theo máy đếm nhịp. Mọi tính năng, kể cả đọc tên nốt bằng giọng nói, đều miễn phí.",
+  "description": "Chép đoạn nhạc khó đọc lên khuông và nghe lại đúng nhịp, đúng cao độ theo máy đếm nhịp. Viết nốt và nghe lại đều miễn phí.",
   "hero": {
     "headline": "Đừng đếm trong đầu nữa,\nhãy nghe thử",
     "lead": "Chép hai ô nhịp khiến bạn lúng túng lên khuông rồi bấm phát. Sau một ô nhịp đếm vào, ứng dụng chơi đúng nhịp, đúng cao độ theo máy đếm nhịp.",
     "cta": "Tải miễn phí trên App Store",
-    "note": "Mọi tính năng đều miễn phí. Dành cho iPhone và iPad."
+    "note": "Viết nốt và nghe lại đều miễn phí. Dành cho iPhone và iPad."
   },
   "demo": {
     "title": "Viết vài nốt và nghe thử",
@@ -104,7 +104,7 @@
     "note": "Chạm Sao chép quy tắc cho AI trong ứng dụng để sao chép nguyên phần hướng dẫn này. Các nốt cách nhau bằng dấu cách."
   },
   "pricing": {
-    "title": "Mọi tính năng đều miễn phí",
+    "title": "Viết nốt và nghe lại đều miễn phí",
     "free": {
       "name": "Miễn phí",
       "items": [
@@ -112,17 +112,18 @@
         "Phát kèm đếm vào và máy đếm nhịp",
         "Hợp âm và ba bè",
         "Hóa biểu và ba loại khóa nhạc",
-        "Đọc tên nốt bằng giọng nói",
-        "Dán chữ và ảnh tham khảo"
+        "Ảnh tham khảo và sao chép bản nhạc thành văn bản",
+        "Thử chép theo xướng âm, dán văn bản và chép nhạc từ ảnh mỗi thứ 3 lần"
       ]
     },
     "pro": {
-      "name": "Ủng hộ nhà phát triển",
+      "name": "StaffSinger Pro",
       "items": [
-        "Gửi một khoản tip nhỏ trong Cài đặt",
-        "Gửi tip không mở thêm tính năng nào"
+        "Chép nhạc theo xướng âm (nói đúng phách là ghi được cả nhịp)",
+        "Dán bản nhạc dạng văn bản",
+        "Tự động chép nhạc từ ảnh (thử nghiệm)"
       ],
-      "note": "Không phải gói đăng ký. Mỗi lần gửi là một lần thanh toán."
+      "note": "Chọn gói tuần, tháng, năm hoặc trả một lần dùng trọn đời. Tip gửi trong Cài đặt là riêng và không mở thêm tính năng nào."
     },
     "note": "Không quảng cáo, không cần tạo tài khoản."
   },

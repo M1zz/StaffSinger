@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: skriv noter i notsystemet och hör dem direkt",
-  "description": "För över de knepiga takterna till notsystemet och hör dem med exakt rytm och tonhöjd till metronom. Alla funktioner är gratis, även röstdiktering.",
+  "description": "För över de knepiga takterna till notsystemet och hör dem med exakt rytm och tonhöjd till metronom. Att skriva och lyssna är gratis.",
   "hero": {
     "headline": "Sluta räkna i huvudet.\nLyssna i stället.",
     "lead": "För över de två takter du snubblar på och tryck på spela. Efter en takts inräkning spelar appen dem till metronomen, med exakt den rytm och tonhöjd som står.",
     "cta": "Hämta gratis på App Store",
-    "note": "Alla funktioner är gratis. För iPhone och iPad."
+    "note": "Att skriva och lyssna är gratis. För iPhone och iPad."
   },
   "demo": {
     "title": "Skriv några noter och lyssna",
@@ -104,7 +104,7 @@
     "note": "Kopiera regel till AI i appen kopierar exakt de här instruktionerna. Skilj noterna åt med mellanslag."
   },
   "pricing": {
-    "title": "Alla funktioner är gratis",
+    "title": "Att skriva och lyssna är gratis",
     "free": {
       "name": "Gratis",
       "items": [
@@ -112,17 +112,18 @@
         "Uppspelning med inräkning och metronom",
         "Ackord och tre stämmor",
         "Förtecken och tre klavar",
-        "Diktera notnamn med rösten",
-        "Klistra in text och referensfoto"
+        "Referensfoto och kopiera noterna som text",
+        "Prova diktering, inklistring och avskrift från foto 3 gånger var"
       ]
     },
     "pro": {
-      "name": "Stöd utvecklaren",
+      "name": "StaffSinger Pro",
       "items": [
-        "Skicka en liten dricks från Inställningar",
-        "Dricksen låser inte upp något extra"
+        "Solfège-diktamen (säg noterna i takt så kommer rytmen också med)",
+        "Klistra in noter som text",
+        "Automatisk avskrift från foto (experimentell)"
       ],
-      "note": "Ingen prenumeration. Varje dricks är en engångsbetalning."
+      "note": "Välj vecko-, månads- eller årsabonnemang, eller betala en gång för livstid. Dricks från Inställningar är separat och låser inte upp något."
     },
     "note": "Inga annonser och inget konto behövs."
   },

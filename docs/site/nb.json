@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: skriv noter i notesystemet og hør dem med en gang",
-  "description": "Skriv inn de vanskelige taktene i notesystemet og hør dem med nøyaktig rytme og tonehøyde til metronom. Alle funksjoner er gratis.",
+  "description": "Skriv inn de vanskelige taktene i notesystemet og hør dem med nøyaktig rytme og tonehøyde til metronom. Det er gratis å skrive og lytte.",
   "hero": {
     "headline": "Slutt å telle i hodet.\nHør det heller.",
     "lead": "Skriv inn de to taktene du snubler i, og trykk på spill av. Etter én takts inntelling spiller appen dem til metronomen, med nøyaktig den rytmen og tonehøyden som står.",
     "cta": "Last ned gratis fra App Store",
-    "note": "Alle funksjoner er gratis. For iPhone og iPad."
+    "note": "Det er gratis å skrive og lytte. For iPhone og iPad."
   },
   "demo": {
     "title": "Skriv noen noter og lytt",
@@ -104,7 +104,7 @@
     "note": "Kopier regel til KI i appen kopierer nøyaktig disse instruksjonene. Skill notene med mellomrom."
   },
   "pricing": {
-    "title": "Alle funksjoner er gratis",
+    "title": "Det er gratis å skrive og lytte",
     "free": {
       "name": "Gratis",
       "items": [
@@ -112,17 +112,18 @@
         "Avspilling med inntelling og metronom",
         "Akkorder og tre stemmer",
         "Faste fortegn og tre nøkler",
-        "Diktering av notenavn med stemmen",
-        "Lim inn tekst og referansebilde"
+        "Referansebilde og kopiering av notene som tekst",
+        "Prøv diktat, innliming og avskrift fra bilde 3 ganger hver"
       ]
     },
     "pro": {
-      "name": "Støtt utvikleren",
+      "name": "StaffSinger Pro",
       "items": [
-        "Send litt tips fra Innstillinger",
-        "Tips låser ikke opp noe ekstra"
+        "Solfège-diktat (si notene i takt, så kommer rytmen også med)",
+        "Lim inn noter som tekst",
+        "Automatisk avskrift fra bilde (eksperimentell)"
       ],
-      "note": "Ikke et abonnement. Hvert tips er en engangsbetaling."
+      "note": "Velg uke-, måneds- eller årsabonnement, eller betal én gang for livstid. Tips fra Innstillinger er noe annet og låser ikke opp noe."
     },
     "note": "Ingen reklame og ingen konto."
   },

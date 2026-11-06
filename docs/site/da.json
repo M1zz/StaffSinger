@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: skriv noder i nodesystemet og hør dem med det samme",
-  "description": "Skriv de svære takter ind i nodesystemet, og hør dem med præcis rytme og tonehøjde til metronom. Alle funktioner er gratis.",
+  "description": "Skriv de svære takter ind i nodesystemet, og hør dem med præcis rytme og tonehøjde til metronom. Det er gratis at skrive og lytte.",
   "hero": {
     "headline": "Stop med at tælle i hovedet.\nLyt i stedet.",
     "lead": "Skriv de to takter, du snubler over, ind og tryk på afspil. Efter én takts indtælling spiller appen dem til metronomen med præcis den rytme og tonehøjde, der står.",
     "cta": "Hent gratis i App Store",
-    "note": "Alle funktioner er gratis. Til iPhone og iPad."
+    "note": "Det er gratis at skrive og lytte. Til iPhone og iPad."
   },
   "demo": {
     "title": "Skriv et par noder, og lyt",
@@ -104,7 +104,7 @@
     "note": "Kopiér regel til AI i appen kopierer præcis disse instruktioner. Adskil noderne med mellemrum."
   },
   "pricing": {
-    "title": "Alle funktioner er gratis",
+    "title": "Det er gratis at skrive og lytte",
     "free": {
       "name": "Gratis",
       "items": [
@@ -112,17 +112,18 @@
         "Afspilning med indtælling og metronom",
         "Akkorder og tre stemmer",
         "Faste fortegn og tre nøgler",
-        "Diktering af nodenavne med stemmen",
-        "Indsæt tekst og referencefoto"
+        "Referencefoto og kopiering af noderne som tekst",
+        "Prøv diktat, indsæt tekst og nedskrivning fra foto 3 gange hver"
       ]
     },
     "pro": {
-      "name": "Støt udvikleren",
+      "name": "StaffSinger Pro",
       "items": [
-        "Send et lille drikkepengebeløb fra Indstillinger",
-        "Drikkepenge låser ikke op for noget ekstra"
+        "Solfège-diktat (sig noderne i takt, så kommer rytmen også med)",
+        "Indsæt noder som tekst",
+        "Automatisk nedskrivning fra foto (eksperiment)"
       ],
-      "note": "Ikke et abonnement. Hver gang er en engangsbetaling."
+      "note": "Vælg et uge-, måneds- eller årsabonnement, eller betal én gang for livstid. Drikkepenge fra Indstillinger er noget andet og låser ikke op for noget."
     },
     "note": "Ingen reklamer og ingen konto."
   },

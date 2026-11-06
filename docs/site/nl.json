@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: hoor de noten die je op de notenbalk zet",
-  "description": "Zet een lastige passage op de notenbalk en hoor hem met het precieze ritme en de juiste toonhoogte, op de metronoom. Alles gratis, ook het dictaat.",
+  "description": "Zet een lastige passage op de notenbalk en hoor hem met het precieze ritme en de juiste toonhoogte, op de metronoom. Schrijven en luisteren is gratis.",
   "hero": {
     "headline": "Stop met tellen in je hoofd.\nLuister gewoon.",
     "lead": "Zet de twee maten waar je over struikelt op de notenbalk en druk op Afspelen. Na één maat voortel speelt StaffSinger ze af op de tik van de metronoom, met het precieze ritme en de juiste toonhoogte.",
     "cta": "Gratis in de App Store",
-    "note": "Alle functies zijn gratis. Voor iPhone en iPad."
+    "note": "Schrijven en luisteren is gratis. Voor iPhone en iPad."
   },
   "demo": {
     "title": "Zet een paar noten neer en luister",
@@ -80,7 +80,7 @@
     "note": "De knop Kopieer regel voor AI in de app kopieert precies deze instructies. Scheid de noten met spaties."
   },
   "pricing": {
-    "title": "Alles is gratis",
+    "title": "Schrijven en luisteren is gratis",
     "free": {
       "name": "Gratis",
       "items": [
@@ -88,17 +88,18 @@
         "Afspelen met voortel en metronoom",
         "Akkoorden en drie stemmen",
         "Voortekeningen en drie sleutels",
-        "Solfège-dictaat",
-        "Plakken als tekst en referentiefoto's"
+        "Referentiefoto's en de partituur als tekst kopiëren",
+        "Probeer dictaat, plakken en transcriberen van foto elk 3 keer"
       ]
     },
     "pro": {
-      "name": "Steun de ontwikkelaar",
+      "name": "StaffSinger Pro",
       "items": [
-        "Geef een kleine fooi via Instellingen",
-        "Een fooi ontgrendelt niets extra's"
+        "Solfège-dictaat (spreek op de tel en ook het ritme wordt genoteerd)",
+        "Een partituur plakken als tekst",
+        "Automatisch transcriberen van foto (experimenteel)"
       ],
-      "note": "Geen abonnement. Elke fooi is een eenmalige betaling."
+      "note": "Kies een week-, maand- of jaarabonnement, of betaal eenmalig voor altijd. Fooien via Instellingen staan daar los van en ontgrendelen niets."
     },
     "note": "Geen advertenties en geen account nodig."
   },

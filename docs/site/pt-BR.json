@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: ouça as notas que você escreve",
-  "description": "Copie um trecho difícil para a pauta e ouça com o ritmo e a altura exatos, no clique do metrônomo. Tudo grátis, ditado incluído.",
+  "description": "Copie um trecho difícil para a pauta e ouça com o ritmo e a altura exatos, no clique do metrônomo. Escrever e ouvir é grátis.",
   "hero": {
     "headline": "Pare de contar de cabeça.\nOuça.",
     "lead": "Copie para a pauta os dois compassos que travam você e aperte Tocar. Depois de um compasso de contagem, o StaffSinger toca tudo junto com o metrônomo, com o ritmo e a altura exatos.",
     "cta": "Baixe grátis na App Store",
-    "note": "Todos os recursos são grátis. Para iPhone e iPad."
+    "note": "Escrever e ouvir é grátis. Para iPhone e iPad."
   },
   "demo": {
     "title": "Escreva algumas notas e ouça",
@@ -80,7 +80,7 @@
     "note": "O botão Copiar regra para a IA copia exatamente estas instruções. As letras C D E F G A B correspondem a dó ré mi fá sol lá si. Separe as notas com espaços."
   },
   "pricing": {
-    "title": "Tudo é grátis",
+    "title": "Escrever e ouvir é grátis",
     "free": {
       "name": "Grátis",
       "items": [
@@ -88,17 +88,18 @@
         "Reprodução com contagem e metrônomo",
         "Acordes e três vozes",
         "Armaduras de clave e três claves",
-        "Ditado de solfejo",
-        "Colar como texto e fotos de referência"
+        "Fotos de referência e copiar a partitura como texto",
+        "Experimente ditado, colar e transcrição por foto 3 vezes cada"
       ]
     },
     "pro": {
-      "name": "Apoie o desenvolvedor",
+      "name": "StaffSinger Pro",
       "items": [
-        "Mande uma pequena gorjeta pelos Ajustes",
-        "Gorjetas não desbloqueiam nada a mais"
+        "Ditado de solfejo (falando no tempo, o ritmo também entra)",
+        "Colar uma partitura como texto",
+        "Transcrição automática por foto (experimental)"
       ],
-      "note": "Não é assinatura. Cada gorjeta é um pagamento único."
+      "note": "Escolha assinatura semanal, mensal ou anual, ou pague uma vez pelo vitalício. Gorjetas pelos Ajustes são à parte e não desbloqueiam nada."
     },
     "note": "Sem anúncios e sem precisar de conta."
   },

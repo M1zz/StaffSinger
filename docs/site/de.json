@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: Noten ins Notensystem schreiben und hören",
-  "description": "Übertrag knifflige Takte ins Notensystem und hör sie mit exaktem Rhythmus und Tonhöhe im Metronomklick. Alles ist gratis, auch das Diktat.",
+  "description": "Übertrag knifflige Takte ins Notensystem und hör sie mit exaktem Rhythmus und Tonhöhe im Metronomklick. Schreiben und Anhören sind gratis.",
   "hero": {
     "headline": "Nicht mehr im Kopf zählen.\nEinfach anhören.",
     "lead": "Übertrag die zwei Takte, an denen du hängen bleibst, ins Notensystem und drück auf Abspielen. Nach einem Takt Vorzähler spielt StaffSinger sie im Metronomklick ab, mit exaktem Rhythmus und exakter Tonhöhe.",
     "cta": "Gratis im App Store laden",
-    "note": "Alle Funktionen kostenlos. Für iPhone und iPad."
+    "note": "Schreiben und Anhören sind gratis. Für iPhone und iPad."
   },
   "demo": {
     "title": "Ein paar Noten setzen und anhören",
@@ -80,7 +80,7 @@
     "note": "„Regel für die KI kopieren“ in der App kopiert genau diese Anleitung. Die Buchstaben sind C D E F G A B, wobei B für H steht. Trenn die Noten durch Leerzeichen."
   },
   "pricing": {
-    "title": "Alles ist kostenlos",
+    "title": "Schreiben und Anhören sind gratis",
     "free": {
       "name": "Kostenlos",
       "items": [
@@ -88,17 +88,18 @@
         "Wiedergabe mit Vorzähler und Metronom",
         "Akkorde und drei Stimmen",
         "Vorzeichen und drei Schlüssel",
-        "Solmisations-Diktat",
-        "Text einfügen und Referenzfotos"
+        "Referenzfotos und Partitur als Text kopieren",
+        "Diktat, Einfügen und Notieren per Foto je 3-mal ausprobieren"
       ]
     },
     "pro": {
-      "name": "Den Entwickler unterstützen",
+      "name": "StaffSinger Pro",
       "items": [
-        "Ein kleines Trinkgeld in den Einstellungen geben",
-        "Trinkgeld schaltet nichts zusätzlich frei"
+        "Solmisations-Diktat (im Takt gesprochen, wird auch der Rhythmus notiert)",
+        "Partitur als Text einfügen",
+        "Automatisch notieren per Foto (experimentell)"
       ],
-      "note": "Kein Abo. Jedes Trinkgeld ist eine einmalige Zahlung."
+      "note": "Wähle ein Wochen-, Monats- oder Jahresabo oder zahle einmal für immer. Trinkgeld in den Einstellungen ist davon getrennt und schaltet nichts frei."
     },
     "note": "Keine Werbung, kein Konto nötig."
   },

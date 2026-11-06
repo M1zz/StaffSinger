@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: escucha las notas que escribes",
-  "description": "Copia un pasaje difícil en el pentagrama y escúchalo con el ritmo y la altura exactos, al clic del metrónomo. Todo es gratis, dictado incluido.",
+  "description": "Copia un pasaje difícil en el pentagrama y escúchalo con el ritmo y la altura exactos, al clic del metrónomo. Escribir y escuchar es gratis.",
   "hero": {
     "headline": "Deja de contar en la cabeza.\nEscúchalo.",
     "lead": "Copia en el pentagrama los dos compases que se te atoran y dale a reproducir. Tras un compás de cuenta previa, StaffSinger los toca al clic del metrónomo, con el ritmo y la altura exactos.",
     "cta": "Descárgala gratis en el App Store",
-    "note": "Todas las funciones son gratis. Para iPhone y iPad."
+    "note": "Escribir y escuchar es gratis. Para iPhone y iPad."
   },
   "demo": {
     "title": "Escribe unas notas y escúchalas",
@@ -80,7 +80,7 @@
     "note": "El botón Copiar regla para la IA copia exactamente estas instrucciones. Las letras C D E F G A B equivalen a do re mi fa sol la si. Separa las notas con espacios."
   },
   "pricing": {
-    "title": "Todo es gratis",
+    "title": "Escribir y escuchar es gratis",
     "free": {
       "name": "Gratis",
       "items": [
@@ -88,17 +88,18 @@
         "Reproducción con cuenta previa y metrónomo",
         "Acordes y tres voces",
         "Armaduras y tres claves",
-        "Dictado de solfeo",
-        "Pegar como texto y fotos de referencia"
+        "Fotos de referencia y copiar la partitura como texto",
+        "Prueba el dictado, pegar y la transcripción desde foto 3 veces cada uno"
       ]
     },
     "pro": {
-      "name": "Apoya al desarrollador",
+      "name": "StaffSinger Pro",
       "items": [
-        "Deja una pequeña propina desde Ajustes",
-        "Las propinas no desbloquean nada extra"
+        "Dictado de solfeo (si hablas a tempo, también capta el ritmo)",
+        "Pegar una partitura como texto",
+        "Transcripción automática desde foto (experimental)"
       ],
-      "note": "No es una suscripción. Cada propina es un pago único."
+      "note": "Elige suscripción semanal, mensual o anual, o un pago único de por vida. Las propinas desde Ajustes van aparte y no desbloquean nada."
     },
     "note": "Sin anuncios y sin necesidad de cuenta."
   },

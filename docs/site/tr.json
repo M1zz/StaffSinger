@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: Portreye yazdığınız notaları hemen dinleyin",
-  "description": "Takıldığınız ölçüleri portreye aktarın, metronomla birlikte tam ritmi ve perdesiyle dinleyin. Sesle nota yazma dahil tüm özellikler ücretsiz.",
+  "description": "Takıldığınız ölçüleri portreye aktarın, metronomla birlikte tam ritmi ve perdesiyle dinleyin. Yazmak ve dinlemek ücretsiz.",
   "hero": {
     "headline": "Kafanızda saymayı bırakın.\nKulağınızla duyun.",
     "lead": "Takıldığınız iki ölçüyü portreye aktarın ve çal düğmesine dokunun. Bir ölçülük girişten sonra uygulama, metronoma uyarak yazıldığı ritim ve perdeyle çalar.",
     "cta": "App Store’dan ücretsiz indirin",
-    "note": "Tüm özellikler ücretsiz. iPhone ve iPad için."
+    "note": "Yazmak ve dinlemek ücretsiz. iPhone ve iPad için."
   },
   "demo": {
     "title": "Birkaç nota yazın ve dinleyin",
@@ -104,7 +104,7 @@
     "note": "Uygulamadaki Yapay Zekâ İçin Kuralı Kopyala düğmesi bu talimatları aynen kopyalar. Notaları boşlukla ayırın."
   },
   "pricing": {
-    "title": "Tüm özellikler ücretsiz",
+    "title": "Yazmak ve dinlemek ücretsiz",
     "free": {
       "name": "Ücretsiz",
       "items": [
@@ -112,17 +112,18 @@
         "Girişli ve metronomlu çalma",
         "Akorlar ve üç ses partisi",
         "Donanım ve üç anahtar",
-        "Sesle nota adı yazdırma",
-        "Metin yapıştırma ve referans fotoğrafı"
+        "Referans fotoğrafı ve notayı metin olarak kopyalama",
+        "Dikte, yapıştırma ve fotoğraftan notaya dökmeyi üçer kez deneyin"
       ]
     },
     "pro": {
-      "name": "Geliştiriciyi destekleyin",
+      "name": "StaffSinger Pro",
       "items": [
-        "Ayarlar’dan küçük bir bahşiş gönderebilirsiniz",
-        "Bahşiş hiçbir özelliğin kilidini açmaz"
+        "Solfej dikte (vuruşa uyarak söylerseniz ritim de yazılır)",
+        "Notayı metin olarak yapıştırma",
+        "Fotoğraftan otomatik notaya dökme (deneysel)"
       ],
-      "note": "Abonelik değildir. Her bahşiş tek seferlik bir ödemedir."
+      "note": "Haftalık, aylık ya da yıllık abonelik veya tek seferlik ömür boyu satın alma arasından seçin. Ayarlar’dan gönderilen bahşiş ayrıdır ve hiçbir şeyin kilidini açmaz."
     },
     "note": "Reklam yok, hesap açmak gerekmiyor."
   },

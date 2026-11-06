@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: tulis not di paranada, langsung dengar",
-  "description": "Salin birama yang membingungkan ke paranada, lalu dengarkan ritme dan nadanya persis seperti tertulis bersama metronom. Semua fitur gratis.",
+  "description": "Salin birama yang membingungkan ke paranada, lalu dengarkan ritme dan nadanya persis seperti tertulis bersama metronom. Menulis dan mendengar gratis.",
   "hero": {
     "headline": "Berhenti menghitung di kepala.\nDengarkan saja.",
     "lead": "Salin dua birama yang bikin bingung ke paranada, lalu ketuk putar. Setelah hitungan masuk satu birama, aplikasi memainkannya mengikuti metronom, dengan ritme dan nada yang tepat.",
     "cta": "Unduh gratis di App Store",
-    "note": "Semua fitur gratis. Untuk iPhone dan iPad."
+    "note": "Menulis dan mendengarkan gratis. Untuk iPhone dan iPad."
   },
   "demo": {
     "title": "Tulis beberapa not, lalu dengarkan",
@@ -104,7 +104,7 @@
     "note": "Salin aturan untuk AI di aplikasi menyalin petunjuk format ini apa adanya. Pisahkan not dengan spasi."
   },
   "pricing": {
-    "title": "Semua fitur gratis",
+    "title": "Menulis dan mendengarkan gratis",
     "free": {
       "name": "Gratis",
       "items": [
@@ -112,17 +112,18 @@
         "Pemutaran dengan hitungan masuk dan metronom",
         "Akord dan tiga suara",
         "Tanda kunci dan tiga jenis kunci",
-        "Dikte nama not dengan suara",
-        "Tempel teks dan foto referensi"
+        "Foto referensi dan menyalin partitur sebagai teks",
+        "Coba dikte, tempel teks, dan transkripsi dari foto masing-masing 3 kali"
       ]
     },
     "pro": {
-      "name": "Dukung pengembang",
+      "name": "StaffSinger Pro",
       "items": [
-        "Kirim tip kecil dari Pengaturan",
-        "Tip tidak membuka fitur tambahan"
+        "Dikte solfeggio (ucapkan sesuai ketukan, ritmenya ikut tercatat)",
+        "Tempel partitur sebagai teks",
+        "Transkripsi otomatis dari foto (eksperimen)"
       ],
-      "note": "Bukan langganan. Setiap tip adalah pembayaran sekali."
+      "note": "Pilih langganan mingguan, bulanan, atau tahunan, atau bayar sekali untuk seumur hidup. Tip dari Pengaturan terpisah dan tidak membuka fitur apa pun."
     },
     "note": "Tanpa iklan, tanpa perlu akun."
   },

@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger : écoutez les notes que vous écrivez",
-  "description": "Recopiez un passage difficile sur la portée et écoutez-le avec le rythme et la hauteur exacts, au métronome. Tout est gratuit, dictée comprise.",
+  "description": "Recopiez un passage difficile sur la portée et écoutez-le avec le rythme et la hauteur exacts, au métronome. Écrire et écouter, c’est gratuit.",
   "hero": {
     "headline": "Arrêtez de compter dans votre tête.\nÉcoutez.",
     "lead": "Recopiez sur la portée les deux mesures qui vous bloquent et lancez la lecture. Après une mesure de décompte, StaffSinger les joue au clic du métronome, avec le rythme et la hauteur exacts.",
     "cta": "Télécharger gratuitement sur l’App Store",
-    "note": "Toutes les fonctions sont gratuites. Pour iPhone et iPad."
+    "note": "Écrire et écouter, c’est gratuit. Pour iPhone et iPad."
   },
   "demo": {
     "title": "Posez quelques notes et écoutez",
@@ -80,7 +80,7 @@
     "note": "Le bouton Copier la règle pour l’IA copie exactement ces consignes. Les lettres C D E F G A B correspondent à do ré mi fa sol la si. Séparez les notes par des espaces."
   },
   "pricing": {
-    "title": "Tout est gratuit",
+    "title": "Écrire et écouter, c’est gratuit",
     "free": {
       "name": "Gratuit",
       "items": [
@@ -88,17 +88,18 @@
         "Lecture avec décompte et métronome",
         "Accords et trois voix",
         "Armures et trois clés",
-        "Dictée de solfège",
-        "Collage de texte et photos de référence"
+        "Photos de référence et copie de la partition en texte",
+        "Essayez la dictée, le collage et la transcription photo 3 fois chacun"
       ]
     },
     "pro": {
-      "name": "Soutenir le développeur",
+      "name": "StaffSinger Pro",
       "items": [
-        "Laissez un petit pourboire depuis les Réglages",
-        "Les pourboires ne débloquent rien de plus"
+        "Dictée de solfège (en parlant en rythme, le rythme est noté aussi)",
+        "Coller une partition en texte",
+        "Transcription auto depuis une photo (expérimental)"
       ],
-      "note": "Pas d’abonnement. Chaque pourboire est un paiement unique."
+      "note": "Choisissez un abonnement hebdomadaire, mensuel ou annuel, ou un achat unique à vie. Les pourboires des Réglages sont à part et ne débloquent rien."
     },
     "note": "Sans publicité, sans compte."
   },

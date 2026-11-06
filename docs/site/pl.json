@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: zapisz nuty na pięciolinii i od razu posłuchaj",
-  "description": "Przepisz trudne takty na pięciolinię i posłuchaj ich z dokładnym rytmem i wysokością, razem z metronomem. Wszystkie funkcje są bezpłatne.",
+  "description": "Przepisz trudne takty na pięciolinię i posłuchaj ich z dokładnym rytmem i wysokością, razem z metronomem. Zapis i odsłuch są bezpłatne.",
   "hero": {
     "headline": "Przestań liczyć w głowie.\nPosłuchaj.",
     "lead": "Przepisz dwa takty, na których się potykasz, i stuknij odtwarzanie. Po jednym takcie odliczania aplikacja zagra je z metronomem, dokładnie w zapisanym rytmie i wysokości.",
     "cta": "Pobierz za darmo z App Store",
-    "note": "Wszystkie funkcje są bezpłatne. Na iPhone’a i iPada."
+    "note": "Zapis i odsłuch są bezpłatne. Na iPhone’a i iPada."
   },
   "demo": {
     "title": "Zapisz kilka nut i posłuchaj",
@@ -104,7 +104,7 @@
     "note": "Przycisk Kopiuj regułę dla AI w aplikacji kopiuje dokładnie te instrukcje. Nuty oddzielaj spacjami."
   },
   "pricing": {
-    "title": "Wszystkie funkcje są bezpłatne",
+    "title": "Zapis i odsłuch są bezpłatne",
     "free": {
       "name": "Bezpłatnie",
       "items": [
@@ -112,17 +112,18 @@
         "Odtwarzanie z odliczaniem i metronomem",
         "Akordy i trzy głosy",
         "Znaki przykluczowe i trzy klucze",
-        "Dyktowanie nazw nut głosem",
-        "Wklejanie tekstu i zdjęcie pomocnicze"
+        "Zdjęcie pomocnicze i kopiowanie partytury jako tekstu",
+        "Wypróbuj dyktando, wklejanie i przepis ze zdjęcia po 3 razy"
       ]
     },
     "pro": {
-      "name": "Wesprzyj twórcę",
+      "name": "StaffSinger Pro",
       "items": [
-        "W Ustawieniach możesz wysłać mały napiwek",
-        "Napiwek nie odblokowuje żadnych funkcji"
+        "Dyktando solfeżowe (mówiąc do rytmu, zapiszesz też rytm)",
+        "Wklejanie partytury jako tekstu",
+        "Automatyczny przepis ze zdjęcia (eksperyment)"
       ],
-      "note": "To nie subskrypcja. Każdy napiwek to jednorazowa płatność."
+      "note": "Wybierz subskrypcję tygodniową, miesięczną lub roczną albo jednorazowy zakup dożywotni. Napiwki z Ustawień to osobna sprawa i niczego nie odblokowują."
     },
     "note": "Bez reklam i bez zakładania konta."
   },

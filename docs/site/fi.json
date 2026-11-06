@@ -1,11 +1,11 @@
 {
   "title": "StaffSinger: kirjoita nuotit viivastolle ja kuule ne heti",
-  "description": "Kirjoita hankalat tahdit viivastolle ja kuuntele ne tarkalla rytmillä ja sävelkorkeudella metronomin tahdissa. Kaikki ominaisuudet ovat ilmaisia.",
+  "description": "Kirjoita hankalat tahdit viivastolle ja kuuntele ne tarkalla rytmillä ja sävelkorkeudella metronomin tahdissa. Kirjoitus ja kuuntelu ovat ilmaisia.",
   "hero": {
     "headline": "Älä laske päässäsi.\nKuuntele.",
     "lead": "Kirjoita ne kaksi tahtia, joihin kompastut, ja napauta toistoa. Tahdin mittaisen sisäänlaskun jälkeen sovellus soittaa ne metronomin tahdissa juuri kirjoitetulla rytmillä ja sävelkorkeudella.",
     "cta": "Lataa ilmaiseksi App Storesta",
-    "note": "Kaikki ominaisuudet ovat ilmaisia. iPhonelle ja iPadille."
+    "note": "Kirjoittaminen ja kuuntelu ovat ilmaisia. iPhonelle ja iPadille."
   },
   "demo": {
     "title": "Kirjoita muutama nuotti ja kuuntele",
@@ -104,7 +104,7 @@
     "note": "Sovelluksen Kopioi sääntö tekoälylle -painike kopioi juuri nämä ohjeet. Erota nuotit välilyönneillä."
   },
   "pricing": {
-    "title": "Kaikki ominaisuudet ovat ilmaisia",
+    "title": "Kirjoittaminen ja kuuntelu ovat ilmaisia",
     "free": {
       "name": "Ilmainen",
       "items": [
@@ -112,17 +112,18 @@
         "Toisto sisäänlaskun ja metronomin kanssa",
         "Soinnut ja kolme ääntä",
         "Etumerkinnät ja kolme avainta",
-        "Sävelnimien sanelu äänellä",
-        "Tekstin liittäminen ja vertailukuva"
+        "Vertailukuva ja nuottien kopiointi tekstinä",
+        "Kokeile sanelua, tekstin liittämistä ja kuvasta litterointia kutakin 3 kertaa"
       ]
     },
     "pro": {
-      "name": "Tue kehittäjää",
+      "name": "StaffSinger Pro",
       "items": [
-        "Lähetä pieni tippi asetuksista",
-        "Tippi ei avaa lisäominaisuuksia"
+        "Solfa-sanelu (kun puhut tahdissa, myös rytmi kirjoitetaan)",
+        "Nuottien liittäminen tekstinä",
+        "Automaattinen litterointi kuvasta (kokeellinen)"
       ],
-      "note": "Ei tilaus. Jokainen tippi on kertamaksu."
+      "note": "Valitse viikko-, kuukausi- tai vuositilaus tai maksa kerran elinikäisestä. Asetusten tipit ovat erillisiä eivätkä avaa mitään."
     },
     "note": "Ei mainoksia eikä tiliä."
   },
