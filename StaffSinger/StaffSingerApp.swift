@@ -19,6 +19,8 @@ struct StaffSingerApp: App {
         WindowGroup {
             ContentView()
                 .leeoSatisfactionCheck(StaffSingerSpec.self)
+                // 개발자가 보낸 의견에 답장하면, 앱이 앞으로 올 때 답장을 시트로 보여 준다 (LeeoKit).
+                .leeoFeedbackReplyNotice(StaffSingerSpec.self)
                 .task { await StaffSingerTip.tipJar.startStandalone() }
                 // 창 크기로 접힘을 재서 아래로 흘린다. 시트 · 알림창도 접힌 선을 비킨다 (LeeoKit Fold).
                 .foldAware()
