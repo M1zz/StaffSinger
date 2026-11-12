@@ -184,6 +184,20 @@ struct ContentView: View {
         #if DEBUG
         .onAppear(perform: applyScreenshotScene)
         #endif
+        .background { hardwareShortcuts }
+        .modifier(PencilDoubleTapToggle { vm.restMode.toggle() })
+    }
+
+    /// iPad 키보드: 스페이스로 재생 · 정지, ⌘Z 로 되돌리기. 보이지 않는 단추에 단축키만 건다.
+    private var hardwareShortcuts: some View {
+        Group {
+            Button("재생") { audio.isPlaying ? vm.stop() : vm.play() }
+                .keyboardShortcut(.space, modifiers: [])
+            Button("되돌리기") { if vm.canUndo { vm.undo() } }
+                .keyboardShortcut("z")
+        }
+        .opacity(0)
+        .accessibilityHidden(true)
     }
 
     /// 악보 · 건반 · 떠 있는 단추. 펼친 화면에서는 악보와 참고 사진이 결과 쪽 판으로 옮겨 간다.
@@ -229,6 +243,11 @@ struct ContentView: View {
     /// Debug builds only — never compiled into what ships.
     private func applyScreenshotScene() {
         guard let scene = UserDefaults.standard.string(forKey: "screenshotScene") else { return }
+        // 아이패드는 가로로 찍는다. 두 마디가 가로 폭을 다 쓰는 앱이라 세로면 화면이 빈다.
+        if UIDevice.current.userInterfaceIdiom == .pad,
+           let window = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+            window.requestGeometryUpdate(.iOS(interfaceOrientations: .landscapeRight)) { _ in }
+        }
         vm.importNotes(ScoreTextFormat.parse(
             "G4:4 E4:8 E4:8 F4:4 D4:8 D4:8 C4:8 D4:8 E4:8 F4:8 G4:4 G4:4"))
         switch scene {
@@ -853,4 +872,19 @@ private struct PasteScoreSheet: View {
 
 #Preview {
     ContentView()
+}
+
+/// Apple Pencil 을 두 번 톡 치면 음표 ⇄ 쉼표를 바꾼다. 사용자가 두 번 탭을 '무시'로 두었으면 아무것도 하지 않는다.
+private struct PencilDoubleTapToggle: ViewModifier {
+    let toggle: () -> Void
+
+    func body(content: Content) -> some View {
+        if #available(iOS 17.5, *) {
+            content.onPencilDoubleTap { _ in
+                if UIPencilInteraction.preferredTapAction != .ignore { toggle() }
+            }
+        } else {
+            content
+        }
+    }
 }

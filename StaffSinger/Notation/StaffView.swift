@@ -78,6 +78,23 @@ struct StaffView: View {
     }
 
     var body: some View {
+        // 큰 화면(iPad)에서는 iPhone 가로 화면 크기로 그린 오선을 통째로 키운다.
+        // 음표 · 기호 크기가 오선 간격에 맞춰 있어 한 배율로 같이 커진다. iPhone 은 1배.
+        GeometryReader { outer in
+            let k = Self.zoom(for: outer.size)
+            staff
+                .frame(width: outer.size.width / k, height: outer.size.height / k)
+                .scaleEffect(k, anchor: .topLeading)
+        }
+        .background(Color(.systemBackground))
+    }
+
+    /// iPhone 가로(약 960 x 520pt)보다 넓은 만큼 키운다. 최대 1.6배.
+    static func zoom(for size: CGSize) -> CGFloat {
+        min(max(min(size.width / 960, size.height / 520), 1), 1.6)
+    }
+
+    private var staff: some View {
         GeometryReader { geo in
             // Center the five staff lines vertically in the available height.
             let topLineY = max(lineSpacing * 2,
@@ -112,7 +129,6 @@ struct StaffView: View {
             .frame(width: geo.size.width, height: geo.size.height)
             .coordinateSpace(name: staffSpace)
         }
-        .background(Color(.systemBackground))
     }
 
     // MARK: - Staff lines

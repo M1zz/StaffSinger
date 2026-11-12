@@ -1,5 +1,151 @@
 # 릴리즈 노트
 
+## 1.0.7
+
+### 앱스토어 (한국어)
+
+이제 iPad에서도 쓸 수 있어요
+큰 화면에 맞춰 오선과 음표가 크게 보여요
+Apple Pencil을 두 번 톡 치면 쉼표 입력으로 바뀌어요
+
+### App Store (English)
+
+Now available on iPad
+Staff and notes fill the larger screen
+Double-tap Apple Pencil for Rest Mode
+
+### App Store (en-GB)
+
+Now available on iPad
+Staff and notes fill the larger screen
+Double-tap Apple Pencil for Rest Mode
+
+### 앱스토어 (중국어 간체)
+
+现在也可以在 iPad 上使用
+五线谱和音符随大屏幕放大显示
+轻点两下 Apple Pencil 切换到休止符模式
+
+### 앱스토어 (중국어 번체)
+
+現在也可以在 iPad 上使用
+五線譜和音符隨大螢幕放大顯示
+點兩下 Apple Pencil 切換成休止符模式
+
+### 앱스토어 (일본어)
+
+iPadでも使えるようになりました
+大きな画面に合わせて五線と音符を大きく表示
+Apple Pencilをダブルタップで休符モードに
+
+### 앱스토어 (러시아어)
+
+Теперь и на iPad
+Нотный стан и ноты крупно на iPad
+Режим пауз двойным касанием Apple Pencil
+
+### 앱스토어 (스페인어)
+
+Ya disponible en iPad
+Pentagrama y notas más grandes en iPad
+Doble toque de Apple Pencil: silencios
+
+### 앱스토어 (독일어)
+
+Jetzt auch auf dem iPad
+Notenzeilen und Noten groß auf dem iPad
+Apple Pencil doppeltippen: Pausenmodus
+
+### 앱스토어 (프랑스어)
+
+Désormais disponible sur iPad
+Portée et notes agrandies sur l’iPad
+Double toucher l’Apple Pencil : silences
+
+### 앱스토어 (이탈리아어)
+
+Ora disponibile su iPad
+Pentagramma e note più grandi su iPad
+Doppio tocco su Apple Pencil: pause
+
+### 앱스토어 (포르투갈어 브라질)
+
+Agora também no iPad
+Pauta e notas maiores na tela do iPad
+Toque duas vezes no Apple Pencil: pausas
+
+### 앱스토어 (태국어)
+
+ใช้งานบน iPad ได้แล้ว
+บรรทัดห้าเส้นและตัวโน้ตใหญ่ขึ้นตามจอ
+แตะ Apple Pencil สองครั้งสลับโหมดตัวหยุด
+
+### 앱스토어 (베트남어)
+
+Nay đã dùng được trên iPad
+Khuông nhạc và nốt to hơn trên iPad
+Chạm hai lần Apple Pencil: dấu lặng
+
+### 앱스토어 (체코어)
+
+Nově také na iPadu
+Osnova a noty větší na displeji iPadu
+Dvojí klepnutí Apple Pencil: režim pomlk
+
+### 앱스토어 (덴마크어)
+
+Nu også på iPad
+Større nodelinjer og noder på iPad
+Dobbelttryk Apple Pencil for pauser
+
+### 앱스토어 (그리스어)
+
+Τώρα και στο iPad
+Μεγάλο πεντάγραμμο και νότες στο iPad
+Διπλό άγγιγμα Apple Pencil: παύσεις
+
+### 앱스토어 (핀란드어)
+
+Nyt myös iPadilla
+Viivasto ja nuotit isompina iPadilla
+Kaksoisnapauta Apple Penciliä: taukotila
+
+### 앱스토어 (인도네시아어)
+
+Kini tersedia di iPad
+Paranada dan not lebih besar di iPad
+Ketuk dua kali Apple Pencil: tanda diam
+
+### 앱스토어 (Norsk bokmål)
+
+Nå også på iPad
+Større notelinjer og noter på iPad
+Dobbelttrykk Apple Pencil for pauser
+
+### 앱스토어 (네덜란드어)
+
+Nu ook op iPad
+Notenbalk en noten groter op iPad
+Dubbeltik op Apple Pencil voor rusten
+
+### 앱스토어 (폴란드어)
+
+Teraz także na iPadzie
+Pięciolinia i nuty większe na iPadzie
+Dwukrotne stuknięcie Apple Pencil: pauzy
+
+### 앱스토어 (스웨덴어)
+
+Nu även på iPad
+Större notrader och noter på iPad
+Dubbeltryck Apple Pencil för pauser
+
+### 앱스토어 (튀르키예어)
+
+Artık iPad’de de kullanılabilir
+Porte ve notalar iPad’de daha büyük
+Apple Pencil’a iki kez dokunun: sus
+
 ## 1.0.6
 
 ### 앱스토어 (한국어)
