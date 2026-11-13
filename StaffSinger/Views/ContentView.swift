@@ -238,7 +238,7 @@ struct ContentView: View {
     }
 
     #if DEBUG
-    /// App Store screenshots: `-screenshotScene piano|staff|playback|dictation|paste|paywall`
+    /// App Store screenshots: `-screenshotScene piano|staff|playback|dictation|paste|paywall|settings`
     /// opens the app on that screen with a short sample melody already written.
     /// Debug builds only — never compiled into what ships.
     private func applyScreenshotScene() {
@@ -257,6 +257,7 @@ struct ContentView: View {
         case "dictation": showDictation = true
         case "paste": showPaste = true
         case "paywall": paywallFeature = .dictation
+        case "settings": showSettings = true
         default: break
         }
     }
@@ -518,17 +519,20 @@ struct ContentView: View {
                 .accessibilityLabel("계이름 받아쓰기")
                 .transition(.scale.combined(with: .opacity))
 
-                // Mute/unmute the metronome (and count-in).
-                metronomeButton
-
-                // Settings only matters once the editor panel is open.
+                // Mute/unmute the metronome (and count-in) — an editing tool,
+                // and also in settings, so it waits for the editor panel.
                 if showControls {
-                    circleButton(systemImage: "slider.horizontal.3", tint: .primary) {
-                        showSettings = true
-                    }
-                    .accessibilityLabel("설정")
-                    .transition(.scale.combined(with: .opacity))
+                    metronomeButton
+                        .transition(.scale.combined(with: .opacity))
                 }
+
+                // 설정은 늘 보인다. 초견 Pro(인앱 결제)와 구매 복원이 여기 있어
+                // 처음 켠 사람(앱 심사 포함)이 숨은 단계 없이 찾을 수 있어야 한다.
+                circleButton(systemImage: "slider.horizontal.3", tint: .primary) {
+                    showSettings = true
+                }
+                .accessibilityLabel("설정")
+                .transition(.scale.combined(with: .opacity))
 
                 // Note-tools toggle (opening it closes the piano).
                 circleButton(

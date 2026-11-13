@@ -136,6 +136,9 @@ struct SettingsForm: View {
 
     var body: some View {
             Form {
+                // 맨 위: 초견 Pro(인앱 결제) · 구매 복원. 설정을 열면 바로 보인다.
+                ProSettingsSection()
+
                 Section("템포") {
                     HStack {
                         Text("\(Int(vm.score.tempo)) BPM")
@@ -202,8 +205,6 @@ struct SettingsForm: View {
                         Label("전체 지우기", systemImage: "trash")
                     }
                 }
-
-                ProSettingsSection()
 
                 Section {
                     LeeoSupportSection<StaffSingerSpec>()
