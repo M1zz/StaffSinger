@@ -129,15 +129,27 @@ final class ProAccess {
 
     // MARK: 열려 있는가
 
+    /// **개발 빌드는 개발자의 것이라 전부 열어 둔다.** Xcode 로 설치한 빌드에만 해당하고,
+    /// 스토어 · TestFlight 빌드(Release)에는 이 코드가 들어가지 않는다.
+    /// 페이월 흐름을 볼 때는 실행 인자 `-lockPro` 로 끈다. 시험은 세 번 체험 계약을 확인해야 하므로 예외.
+    private static let unlockedForDeveloper: Bool = {
+        #if DEBUG
+        return NSClassFromString("XCTestCase") == nil
+            && !ProcessInfo.processInfo.arguments.contains("-lockPro")
+        #else
+        return false
+        #endif
+    }()
+
     /// 이 기능을 지금 써도 되는가. 안 되면 페이월을 띄운다.
     func allows(_ feature: ProFeature) -> Bool {
-        guard sellsPro else { return true }
+        guard sellsPro, !Self.unlockedForDeveloper else { return true }
         return store.gate.evaluate(feature.rawValue, current: uses[feature, default: 0]).isAllowed
     }
 
     /// 남은 무료 체험 횟수. Pro 이거나 아직 팔지 않으면 nil (세지 않는다).
     func freeUsesLeft(_ feature: ProFeature) -> Int? {
-        guard sellsPro else { return nil }
+        guard sellsPro, !Self.unlockedForDeveloper else { return nil }
         return store.gate.remaining(feature.rawValue, current: uses[feature, default: 0])
     }
 
