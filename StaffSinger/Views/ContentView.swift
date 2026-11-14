@@ -531,13 +531,6 @@ struct ContentView: View {
                 .accessibilityLabel("악보 사진")
                 .transition(.scale.combined(with: .opacity))
 
-                // Paste a score written in the text format (AI-transcribed).
-                circleButton(systemImage: "doc.on.clipboard", tint: .primary) {
-                    showPaste = true
-                }
-                .accessibilityLabel("악보 붙여넣기")
-                .transition(.scale.combined(with: .opacity))
-
                 // Read the score out loud and let the mic write it down.
                 circleButton(systemImage: "music.mic", tint: .primary) {
                     openPro(.dictation) { showDictation = true }
