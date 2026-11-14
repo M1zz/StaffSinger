@@ -28,6 +28,9 @@ enum OMR {
         /// Where each note's head was found, 0...1 from the image's top-left —
         /// so the camera can light up the notes it has read, in place.
         var marks: [CGPoint] = []
+        /// The five staff lines it read from, top to bottom, 0...1 from the top —
+        /// empty if no staff was found. Shows the user which staff is being read.
+        var staffLines: [Double] = []
     }
 
     /// Reading a live camera like a long exposure: one frame can be wrong, so a
@@ -58,7 +61,9 @@ enum OMR {
         let (ink, threshold) = binarize(gray)
         guard let staff = detectStaff(ink, width: gray.w, height: gray.h) else { return Reading() }
         let heads = detectNotes(gray, ink: ink, threshold: threshold, staff: staff)
-        return assignBeats(heads, staff: staff, maxBeats: maxBeats, width: gray.w, height: gray.h)
+        var reading = assignBeats(heads, staff: staff, maxBeats: maxBeats, width: gray.w, height: gray.h)
+        reading.staffLines = staff.lineYs.map { 1 - Double($0) / Double(gray.h) }.sorted()   // rows run bottom-up
+        return reading
     }
 
     // MARK: - Pixels

@@ -112,8 +112,7 @@ struct ContentView: View {
         }
         .fullScreenCover(isPresented: $showApertureCamera) {
             ApertureCameraView(
-                // 채보를 쓸 수 있으면 셔터 없이, 비추기만 해도 읽는다.
-                liveBeats: pro.allows(.transcribe) ? vm.score.measureCapacity * 2 : nil,
+                liveBeats: vm.score.measureCapacity * 2,
                 onCapture: { img in
                     showApertureCamera = false
                     adoptPhoto(img)             // aperture already framed the 2 measures
@@ -121,6 +120,8 @@ struct ContentView: View {
                 onRead: { img, reading in
                     showApertureCamera = false
                     reference.set(img)
+                    // 읽는 모습은 누구에게나 보여 주고, 악보로 받는 데서 Pro 를 묻는다.
+                    guard pro.allows(.transcribe) else { paywallFeature = .transcribe; return }
                     vm.importNotes(reading.notes, unsure: reading.unsure)
                     pro.recordUse(.transcribe)
                 },
