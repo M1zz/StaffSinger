@@ -112,9 +112,17 @@ struct ContentView: View {
         }
         .fullScreenCover(isPresented: $showApertureCamera) {
             ApertureCameraView(
+                // 채보를 쓸 수 있으면 셔터 없이, 비추기만 해도 읽는다.
+                liveBeats: pro.allows(.transcribe) ? vm.score.measureCapacity * 2 : nil,
                 onCapture: { img in
                     showApertureCamera = false
                     adoptPhoto(img)             // aperture already framed the 2 measures
+                },
+                onRead: { img, reading in
+                    showApertureCamera = false
+                    reference.set(img)
+                    vm.importNotes(reading.notes, unsure: reading.unsure)
+                    pro.recordUse(.transcribe)
                 },
                 onCancel: { showApertureCamera = false }
             )

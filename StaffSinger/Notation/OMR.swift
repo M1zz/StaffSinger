@@ -25,6 +25,31 @@ enum OMR {
     struct Reading {
         var notes: [ScoreNote] = []
         var unsure: Set<UUID> = []
+        /// Where each note's head was found, 0...1 from the image's top-left —
+        /// so the camera can light up the notes it has read, in place.
+        var marks: [CGPoint] = []
+    }
+
+    /// Reading a live camera like a long exposure: one frame can be wrong, so a
+    /// score is trusted only once the same notes keep coming back.
+    struct Exposure {
+        static let needed = 5          // 같은 읽기가 이만큼 겹치면 다 찍힌 것
+        private static let window = 8  // 최근 몇 번을 겹쳐 볼지
+
+        private struct Key: Hashable { let pitch: Pitch; let duration: NoteDuration }
+        private var recent: [[Key]] = []
+        /// 0...1 — how developed the picture is. Drops back when the view changes.
+        private(set) var progress = 0.0
+
+        /// Add one frame's reading; true once it has fully developed.
+        mutating func add(_ reading: Reading) -> Bool {
+            let key = reading.notes.map { Key(pitch: $0.pitch, duration: $0.duration) }
+            recent.append(key)
+            if recent.count > Self.window { recent.removeFirst() }
+            let agreeing = key.isEmpty ? 0 : recent.filter { $0 == key }.count
+            progress = min(1, Double(agreeing) / Double(Self.needed))
+            return progress >= 1
+        }
     }
 
     /// Best-effort transcription; empty if no staff could be found.
@@ -33,7 +58,7 @@ enum OMR {
         let ink = binarize(gray)
         guard let staff = detectStaff(ink, width: gray.w, height: gray.h) else { return Reading() }
         let heads = detectNotes(ink, width: gray.w, height: gray.h, staff: staff)
-        return assignBeats(heads, staff: staff, maxBeats: maxBeats)
+        return assignBeats(heads, staff: staff, maxBeats: maxBeats, width: gray.w, height: gray.h)
     }
 
     // MARK: - Pixels
@@ -244,7 +269,8 @@ enum OMR {
 
     // MARK: - Mapping
 
-    private static func assignBeats(_ heads: [Head], staff: Staff, maxBeats: Double) -> Reading {
+    private static func assignBeats(_ heads: [Head], staff: Staff, maxBeats: Double,
+                                    width w: Int, height h: Int) -> Reading {
         var reading = Reading()
         var beat = 0.0
         for head in heads {
@@ -253,6 +279,8 @@ enum OMR {
             if beat + len > maxBeats + 1e-6 { break }   // keep within the score
             let note = ScoreNote(pitch: pitch, duration: head.duration, beatOffset: beat)
             reading.notes.append(note)
+            reading.marks.append(CGPoint(x: Double(head.centerX) / Double(w),
+                                         y: 1 - Double(head.centerY) / Double(h)))   // rows run bottom-up
             if head.unsure { reading.unsure.insert(note.id) }
             beat += len
         }

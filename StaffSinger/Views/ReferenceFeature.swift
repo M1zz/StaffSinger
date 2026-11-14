@@ -46,13 +46,19 @@ struct PickedImage: Identifiable {
 /// window — no separate crop step. Wide (≈3:1) to match a two-measure strip.
 struct ApertureCameraView: UIViewControllerRepresentable {
     var aspect: CGFloat = 3.0
+    /// 비추기만 해도 읽을 박 수. nil 이면 셔터로만 찍는다.
+    var liveBeats: Double? = nil
     var onCapture: (UIImage) -> Void
+    /// 비추는 동안 악보가 다 읽혔을 때 — 그 장면과 읽은 음표.
+    var onRead: (UIImage, OMR.Reading) -> Void = { _, _ in }
     var onCancel: () -> Void
 
     func makeUIViewController(context: Context) -> ApertureCameraController {
         let vc = ApertureCameraController()
         vc.aspect = aspect
+        vc.liveBeats = liveBeats
         vc.onCapture = onCapture
+        vc.onRead = onRead
         vc.onCancel = onCancel
         return vc
     }
@@ -60,9 +66,12 @@ struct ApertureCameraView: UIViewControllerRepresentable {
     func updateUIViewController(_ vc: ApertureCameraController, context: Context) {}
 }
 
-final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDelegate {
+final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDelegate,
+                                     AVCaptureVideoDataOutputSampleBufferDelegate {
     var aspect: CGFloat = 3.0
+    var liveBeats: Double?
     var onCapture: ((UIImage) -> Void)?
+    var onRead: ((UIImage, OMR.Reading) -> Void)?
     var onCancel: (() -> Void)?
 
     private let session = AVCaptureSession()
@@ -72,6 +81,18 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
     private let frameLine = CAShapeLayer()
     private let staffGuide = CAShapeLayer()   // faint 5-line guide inside the window
     private var apertureRect: CGRect = .zero
+
+    // 비춰 읽기 — 긴 노출처럼, 들고 있는 동안 읽은 음표가 제자리에 떠오른다.
+    private let videoOut = AVCaptureVideoDataOutput()
+    private let readQueue = DispatchQueue(label: "staffsinger.live-read", qos: .userInitiated)
+    private let ciContext = CIContext()
+    private let marks = CAShapeLayer()          // 읽은 음표 자리
+    private let exposureLine = CAShapeLayer()   // 얼마나 찍혔는지 — 틀을 따라 차오른다
+    private var exposure = OMR.Exposure()
+    private var developed = false
+    private var lastRead = Date.distantPast     // readQueue 에서만 쓴다
+    private let geometryLock = NSLock()
+    private var geometry: (aperture: CGRect, bounds: CGSize) = (.zero, .zero)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,6 +129,12 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         session.sessionPreset = .photo
         session.addInput(input)
         session.addOutput(output)
+        if liveBeats != nil, session.canAddOutput(videoOut) {
+            videoOut.alwaysDiscardsLateVideoFrames = true
+            videoOut.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: kCVPixelFormatType_32BGRA]
+            videoOut.setSampleBufferDelegate(self, queue: readQueue)
+            session.addOutput(videoOut)
+        }
         session.commitConfiguration()
 
         let layer = AVCaptureVideoPreviewLayer(session: session)
@@ -151,8 +178,21 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         staffGuide.lineWidth = 1
         view.layer.addSublayer(staffGuide)
 
+        marks.fillColor = UIColor.systemBlue.withAlphaComponent(0.6).cgColor
+        marks.strokeColor = UIColor.white.cgColor
+        marks.lineWidth = 1.5
+        marks.opacity = 0
+        view.layer.addSublayer(marks)
+        exposureLine.fillColor = UIColor.clear.cgColor
+        exposureLine.strokeColor = UIColor.systemBlue.cgColor
+        exposureLine.lineWidth = 4
+        exposureLine.strokeEnd = 0
+        view.layer.addSublayer(exposureLine)
+
         let hint = UILabel()
-        hint.text = String(localized: "이 칸에 두 마디를 맞추고 촬영하세요")
+        hint.text = liveBeats == nil
+            ? String(localized: "이 칸에 두 마디를 맞추고 촬영하세요")
+            : String(localized: "이 칸에 두 마디를 맞추고 잠시 비춰 주세요", comment: "Camera hint when the score is read just by holding the camera over it")
         hint.textColor = .white
         hint.font = .systemFont(ofSize: 15, weight: .semibold)
         hint.textAlignment = .center
@@ -231,6 +271,11 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         path.append(UIBezierPath(roundedRect: apertureRect, cornerRadius: 6))
         dim.path = path.cgPath
         frameLine.path = UIBezierPath(roundedRect: apertureRect, cornerRadius: 6).cgPath
+        exposureLine.path = frameLine.path
+        videoOut.connection(with: .video)?.videoOrientation = currentVideoOrientation()
+        geometryLock.lock()
+        geometry = (apertureRect, view.bounds.size)
+        geometryLock.unlock()
 
         // Faint 5-line staff in the middle of the window so the user lines the
         // real staff up with where the app's staff sits.
@@ -251,7 +296,7 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
     @objc private func cancelTapped() { onCancel?() }
 
     @objc private func shoot() {
-        guard session.isRunning else { return }
+        guard session.isRunning, !developed else { return }
         output.connection(with: .video)?.videoOrientation = currentVideoOrientation()
         output.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
     }
@@ -263,6 +308,63 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
               let image = UIImage(data: data) else { return }
         let result = cropToAperture(image) ?? image
         DispatchQueue.main.async { self.onCapture?(result) }
+    }
+
+    // MARK: Live reading
+
+    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer,
+                       from connection: AVCaptureConnection) {
+        // 1초에 다섯 번쯤만 읽는다 — 그래야 '노출'에 시간이 걸리고 기기도 쉰다.
+        guard let maxBeats = liveBeats, Date().timeIntervalSince(lastRead) > 0.2,
+              let buffer = CMSampleBufferGetImageBuffer(sampleBuffer) else { return }
+        lastRead = Date()
+        geometryLock.lock()
+        let g = geometry
+        geometryLock.unlock()
+        guard let image = crop(buffer, aperture: g.aperture, bounds: g.bounds) else { return }
+        let reading = OMR.transcribe(image, maxBeats: maxBeats)
+        DispatchQueue.main.async { self.expose(reading, from: image) }
+    }
+
+    /// 화면의 틀에 해당하는 부분을 영상 한 장에서 잘라 낸다. 영상은 화면을
+    /// 가득 채우도록(aspect fill) 보이므로 그 배율과 밀림을 되돌린다.
+    private func crop(_ buffer: CVPixelBuffer, aperture: CGRect, bounds: CGSize) -> UIImage? {
+        let W = CGFloat(CVPixelBufferGetWidth(buffer)), H = CGFloat(CVPixelBufferGetHeight(buffer))
+        guard aperture.width > 1, bounds.width > 1, W > 1, H > 1 else { return nil }
+        let scale = max(bounds.width / W, bounds.height / H)
+        let ox = (bounds.width - W * scale) / 2, oy = (bounds.height - H * scale) / 2
+        let r = CGRect(x: (aperture.minX - ox) / scale, y: (aperture.minY - oy) / scale,
+                       width: aperture.width / scale, height: aperture.height / scale)
+        // Core Image 는 왼쪽 아래가 원점이다.
+        let rect = CGRect(x: r.minX, y: H - r.maxY, width: r.width, height: r.height).integral
+        let frame = CIImage(cvPixelBuffer: buffer)
+        guard frame.extent.contains(rect),
+              let cg = ciContext.createCGImage(frame, from: rect) else { return nil }
+        return UIImage(cgImage: cg)
+    }
+
+    /// 한 번 읽은 결과를 겹친다. 읽힌 음표는 제자리에 떠오르고, 같은 악보가
+    /// 거듭 읽힐수록 진해지다가 다 찍히면 저절로 넘어간다.
+    private func expose(_ reading: OMR.Reading, from image: UIImage) {
+        guard !developed else { return }
+        developed = exposure.add(reading)
+
+        let radius = apertureRect.height * 0.06
+        let dots = UIBezierPath()
+        for m in reading.marks {
+            let c = CGPoint(x: apertureRect.minX + m.x * apertureRect.width,
+                            y: apertureRect.minY + m.y * apertureRect.height)
+            dots.append(UIBezierPath(arcCenter: c, radius: radius, startAngle: 0,
+                                     endAngle: .pi * 2, clockwise: true))
+        }
+        marks.path = dots.cgPath
+        marks.opacity = Float(0.3 + 0.7 * exposure.progress)
+        exposureLine.strokeEnd = exposure.progress
+
+        guard developed else { return }
+        UINotificationFeedbackGenerator().notificationOccurred(.success)
+        // 다 찍힌 모습을 잠깐 보여 주고 넘긴다.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) { self.onRead?(image, reading) }
     }
 
     /// Map the on-screen aperture rect into the captured image and crop to it.
