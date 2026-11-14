@@ -81,7 +81,15 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
     private let frameLine = CAShapeLayer()
     private let staffGuide = CAShapeLayer()   // 지금 읽고 있는 오선 — 찾은 자리에 그린다
     private let shutter = UIButton(type: .system)
+    private let hint = UILabel()
+    private let grips = CAShapeLayer()        // 틀의 위아래 손잡이 — 끌어서 높이를 바꾼다
     private var apertureRect: CGRect = .zero
+    /// 틀의 높이. 악보마다 오선 위아래로 차지하는 높이가 달라서 끌어서 맞춘다.
+    /// 0 이면 아직 정하지 않은 것 — 너비의 1/aspect 로 시작한다.
+    private var apertureHeight = CGFloat(UserDefaults.standard.double(forKey: "camera.apertureHeight"))
+    private var heightAtDragStart: CGFloat = 0
+    private var dragsTopEdge = false
+    private var tooWide = 0                   // 두 마디보다 많이 보인 읽기가 연달아 몇 번인지
 
     // 비춰 읽기 — 긴 노출처럼, 들고 있는 동안 읽은 음표가 제자리에 떠오른다.
     private let videoOut = AVCaptureVideoDataOutput()
@@ -190,18 +198,41 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         exposureLine.strokeEnd = 0
         view.layer.addSublayer(exposureLine)
 
-        let hint = UILabel()
-        hint.text = String(localized: "이 칸에 두 마디를 맞추고 잠시 비춰 주세요", comment: "Camera hint when the score is read just by holding the camera over it")
+        grips.fillColor = UIColor.white.cgColor
+        view.layer.addSublayer(grips)
+        view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(resize)))
+
+        hint.text = Self.holdHint
         hint.textColor = .white
         hint.font = .systemFont(ofSize: 15, weight: .semibold)
         hint.textAlignment = .center
         hint.translatesAutoresizingMaskIntoConstraints = false
-        hint.tag = 99
         view.addSubview(hint)
         NSLayoutConstraint.activate([
             hint.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             hint.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 16),
         ])
+    }
+
+    private static let holdHint = String(localized: "이 칸에 두 마디를 맞추고 잠시 비춰 주세요", comment: "Camera hint when the score is read just by holding the camera over it")
+    private static let closerHint = String(localized: "두 마디만 보이게 더 가까이 대 주세요", comment: "Camera hint when more than two measures are inside the frame")
+
+    /// 틀의 위나 아래를 끌어 높이를 바꾼다. 틀은 가운데에 머문다.
+    @objc private func resize(_ pan: UIPanGestureRecognizer) {
+        switch pan.state {
+        case .began:
+            heightAtDragStart = apertureRect.height
+            dragsTopEdge = pan.location(in: view).y < view.bounds.midY
+        case .changed:
+            let dy = pan.translation(in: view).y
+            apertureHeight = heightAtDragStart + 2 * (dragsTopEdge ? -dy : dy)
+            exposure = OMR.Exposure()   // 틀이 바뀌면 처음부터 다시 찍는다
+            view.setNeedsLayout()
+        case .ended, .cancelled:
+            apertureHeight = apertureRect.height
+            UserDefaults.standard.set(Double(apertureHeight), forKey: "camera.apertureHeight")
+        default: break
+        }
     }
 
     private func setupControls() {
@@ -262,8 +293,9 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         // shutter — the shutter must never sit on top of the notes.
         let left = max(view.safeAreaInsets.left, 8) + 16
         let right = (shutter.superview == nil ? view.bounds.maxX : shutter.frame.minX) - 16
-        let w = max(1, min(right - left, 900, (view.bounds.height - 140) * aspect))
-        let h = w / aspect
+        let w = max(1, min(right - left, 900))
+        let tallest = max(60, view.bounds.height - 140)
+        let h = min(max(apertureHeight > 0 ? apertureHeight : w / aspect, 60), tallest)
         apertureRect = CGRect(x: (left + right) / 2 - w / 2,
                               y: view.bounds.midY - h / 2, width: w, height: h)
 
@@ -272,6 +304,12 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         dim.path = path.cgPath
         frameLine.path = UIBezierPath(roundedRect: apertureRect, cornerRadius: 6).cgPath
         exposureLine.path = frameLine.path
+        let grip = UIBezierPath()
+        for y in [apertureRect.minY, apertureRect.maxY] {
+            grip.append(UIBezierPath(roundedRect: CGRect(x: apertureRect.midX - 22, y: y - 3, width: 44, height: 6),
+                                     cornerRadius: 3))
+        }
+        grips.path = grip.cgPath
         orient(videoOut.connection(with: .video))
         geometryLock.lock()
         geometry = (apertureRect, view.bounds.size)
@@ -335,7 +373,15 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
     /// 거듭 읽힐수록 진해지다가 다 찍히면 저절로 넘어간다.
     private func expose(_ reading: OMR.Reading, from image: UIImage) {
         guard !developed else { return }
-        developed = exposure.add(reading)
+        // 두 마디보다 많이 보이면 찍지 않고 알려 준다. 한 번 잘못 읽은 것에
+        // 글이 깜빡이지 않게, 연달아 두 번일 때부터.
+        tooWide = reading.measures > 2 ? tooWide + 1 : 0
+        let far = tooWide >= 2
+        hint.text = far ? Self.closerHint : Self.holdHint
+        hint.textColor = far ? .systemYellow : .white
+        frameLine.strokeColor = (far ? UIColor.systemYellow : .white).cgColor
+        if far { exposure = OMR.Exposure() }
+        developed = reading.measures <= 2 && exposure.add(reading)
 
         // 어느 오선을 읽고 있는지 — 찾은 그 자리에 다섯 줄을 겹쳐 보여 준다.
         let found = UIBezierPath()

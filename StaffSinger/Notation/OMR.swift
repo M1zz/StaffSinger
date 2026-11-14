@@ -32,6 +32,9 @@ enum OMR {
         /// The five staff lines it read from, top to bottom, 0...1 from the top —
         /// empty if no staff was found. Shows the user which staff is being read.
         var staffLines: [Double] = []
+        /// How many measures were in view. More than the score holds means the
+        /// camera is too far away — the caller can say so.
+        var measures = 0
     }
 
     /// Reading a live camera like a long exposure: one frame can be wrong, so a
@@ -551,6 +554,7 @@ enum OMR {
         }
 
         var reading = Reading()
+        reading.measures = measures.count
         var beat = 0.0
         for (index, measure) in measures.enumerated() {
             if byMeasure { beat = Double(index) * measureBeats }

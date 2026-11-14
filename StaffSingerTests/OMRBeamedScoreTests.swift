@@ -85,6 +85,14 @@ final class OMRBeamedScoreTests: XCTestCase {
         XCTAssertEqual(reading.notes.map(\.pitch.midi), [74, 74, 74, 74])
     }
 
+    func testCountsTheMeasuresInView() {
+        // 세 마디가 보인다 — 카메라가 "더 가까이"라고 알릴 수 있게 그 수를 센다.
+        let image = score([150, 450, 750].map { Drawn(x: $0, step: 2) }) { c in
+            for x in [300, 600] { c.fill(CGRect(x: x, y: 150, width: 3, height: 96)) }
+        }
+        XCTAssertEqual(OMR.transcribe(image).measures, 3)
+    }
+
     func testAMisreadLengthDoesNotShiftTheNextMeasure() {
         // 첫 마디는 세 박뿐(쉼표를 못 읽은 셈) · 둘째 마디는 그래도 다섯째 박에서 시작한다.
         let notes = [150, 300, 450].map { Drawn(x: $0, step: 4) } + [750, 950].map { Drawn(x: $0, step: 2) }
