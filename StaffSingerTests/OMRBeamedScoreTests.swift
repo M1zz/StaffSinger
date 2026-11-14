@@ -76,11 +76,42 @@ final class OMRBeamedScoreTests: XCTestCase {
         XCTAssertEqual(reading.notes.map(\.pitch.midi), [74, 71])
     }
 
+    func testBarlinesPutEachMeasureOnItsDownbeat() {
+        // 앞 마디의 끝 조각(4분 하나) | 온전한 한 마디(4분 넷) — 조각은 빼고 첫 박부터 놓는다.
+        let notes = [Drawn(x: 120, step: 3)] + [330, 520, 710, 900].map { Drawn(x: $0, step: 2) }
+        let image = score(notes) { c in c.fill(CGRect(x: 220, y: 150, width: 3, height: 96)) }
+        let reading = OMR.transcribe(image)
+        XCTAssertEqual(reading.notes.map(\.beatOffset), [0, 1, 2, 3])
+        XCTAssertEqual(reading.notes.map(\.pitch.midi), [74, 74, 74, 74])
+    }
+
+    func testAMisreadLengthDoesNotShiftTheNextMeasure() {
+        // 첫 마디는 세 박뿐(쉼표를 못 읽은 셈) · 둘째 마디는 그래도 다섯째 박에서 시작한다.
+        let notes = [150, 300, 450].map { Drawn(x: $0, step: 4) } + [750, 950].map { Drawn(x: $0, step: 2) }
+        let image = score(notes) { c in c.fill(CGRect(x: 600, y: 150, width: 3, height: 96)) }
+        let reading = OMR.transcribe(image)
+        XCTAssertEqual(reading.notes.map(\.beatOffset), [0, 1, 2, 4, 5])
+    }
+
+    func testTieJoinsTwoNotesIntoOne() {
+        // 같은 음 둘이 붙임줄로 이어짐 → 2분음표 하나. 붙임줄 없는 같은 음 둘은 그대로.
+        let notes = [Drawn(x: 200, step: 2), Drawn(x: 330, step: 2), Drawn(x: 600, step: 4), Drawn(x: 730, step: 4)]
+        let image = score(notes) { c in
+            c.setLineWidth(3)
+            c.move(to: CGPoint(x: 220, y: 183))                       // 둘째 줄 아래 칸을 지나는 호
+            c.addQuadCurve(to: CGPoint(x: 310, y: 183), control: CGPoint(x: 265, y: 193))
+            c.strokePath()
+        }
+        let reading = OMR.transcribe(image)
+        XCTAssertEqual(reading.notes.map(\.duration), [.half, .quarter, .quarter])
+        XCTAssertEqual(reading.notes.map(\.beatOffset), [0, 2, 3])
+    }
+
     /// 손에 든 실제 사진으로 확인할 때만 쓴다: `/tmp/omr-photo.jpg` 가 있으면 읽은 결과를 찍는다.
     func testPrintsReadingOfALocalPhoto() throws {
         let path = "/tmp/omr-photo.jpg"
         guard let image = UIImage(contentsOfFile: path) else { throw XCTSkip("no local photo") }
         let reading = OMR.transcribe(image, maxBeats: 64)
-        print("OMRPHOTO", reading.notes.map { "\($0.pitch.midi):\($0.duration.rawValue)" }.joined(separator: " "))
+        print("OMRPHOTO", reading.notes.map { "\($0.beatOffset)=\($0.pitch.midi):\($0.duration.rawValue)\($0.dotted ? "." : "")" }.joined(separator: " "))
     }
 }

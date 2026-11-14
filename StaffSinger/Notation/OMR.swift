@@ -5,13 +5,14 @@
 //  EXPERIMENTAL optical music recognition. A deliberately small, dependency-free
 //  classic-CV pipeline for the score people actually photograph: one printed,
 //  monophonic staff with beamed groups, lyrics underneath and a little blur. It
-//  is NOT a general OMR engine — rests, dots, ties, chords, accidentals and key
+//  is NOT a general OMR engine — rests, dots, chords, accidentals and key
 //  signatures are not understood, and the clef is assumed to be treble. The user
 //  is expected to fix the result by hand afterwards.
 //
 //  Pipeline: upright → grayscale → Otsu binarize → staff-line detection
 //  (horizontal projection) → noteheads (what stays solid when the ink is worn
-//  down) → stem → beams/flags at the stem's far end → Y→pitch + duration.
+//  down) → stem → beams/flags at the stem's far end → Y→pitch + duration →
+//  ties joined → barlines put each measure on its own downbeat.
 //
 
 import UIKit
@@ -39,14 +40,14 @@ enum OMR {
         static let needed = 5          // 같은 읽기가 이만큼 겹치면 다 찍힌 것
         private static let window = 8  // 최근 몇 번을 겹쳐 볼지
 
-        private struct Key: Hashable { let pitch: Pitch; let duration: NoteDuration }
+        private struct Key: Hashable { let pitch: Pitch; let beats: Double; let at: Double }
         private var recent: [[Key]] = []
         /// 0...1 — how developed the picture is. Drops back when the view changes.
         private(set) var progress = 0.0
 
         /// Add one frame's reading; true once it has fully developed.
         mutating func add(_ reading: Reading) -> Bool {
-            let key = reading.notes.map { Key(pitch: $0.pitch, duration: $0.duration) }
+            let key = reading.notes.map { Key(pitch: $0.pitch, beats: $0.beats, at: $0.beatOffset) }
             recent.append(key)
             if recent.count > Self.window { recent.removeFirst() }
             let agreeing = key.isEmpty ? 0 : recent.filter { $0 == key }.count
@@ -56,12 +57,19 @@ enum OMR {
     }
 
     /// Best-effort transcription; empty if no staff could be found.
-    static func transcribe(_ image: UIImage, maxBeats: Double = 8) -> Reading {
+    /// `measureBeats` is how long one measure is; when barlines are found, each
+    /// measure starts on its own downbeat instead of running on from the last.
+    static func transcribe(_ image: UIImage, maxBeats: Double = 8, measureBeats: Double = 4) -> Reading {
         guard let gray = grayscale(upright(image)) else { return Reading() }
         let (ink, threshold) = binarize(gray)
         guard let staff = detectStaff(ink, width: gray.w, height: gray.h) else { return Reading() }
-        let heads = detectNotes(gray, ink: ink, threshold: threshold, staff: staff)
-        var reading = assignBeats(heads, staff: staff, maxBeats: maxBeats, width: gray.w, height: gray.h)
+        let w = gray.w, h = gray.h
+        let stroke = strokeWidth(ink, width: w, height: h, staff: staff)
+        var heads = detectNotes(gray, ink: ink, threshold: threshold, staff: staff, stroke: stroke)
+        let bars = detectBarlines(ink, width: w, height: h, staff: staff, heads: heads)
+        heads = joinTies(heads, barlines: bars, ink: ink, width: w, height: h, staff: staff)
+        var reading = assignBeats(heads, barlines: bars, staff: staff, measureBeats: measureBeats,
+                                  maxBeats: maxBeats, width: w, height: h)
         reading.staffLines = staff.lineYs.map { 1 - Double($0) / Double(gray.h) }.sorted()   // rows run bottom-up
         return reading
     }
@@ -172,7 +180,12 @@ enum OMR {
 
     // MARK: - Notes
 
-    private struct Head { let centerX: Int; let centerY: Int; let duration: NoteDuration; let unsure: Bool }
+    private struct Head {
+        let centerX: Int; let centerY: Int
+        var duration: NoteDuration; let unsure: Bool
+        var dotted = false
+        var beats: Double { duration.beats * (dotted ? 1.5 : 1) }
+    }
 
     /// A solid lump of ink: its centre, how wide it is, and the pixels of its core.
     private struct Blob { let cx: Int; let cy: Int; let x0: Int; let x1: Int; let core: [Int] }
@@ -186,7 +199,8 @@ enum OMR {
     ///     to tell a quarter, an eighth and a sixteenth apart;
     ///  3. open heads (half, whole) are found the same way once their holes are
     ///     filled in.
-    private static func detectNotes(_ gray: Gray, ink: [Bool], threshold: Int, staff: Staff) -> [Head] {
+    private static func detectNotes(_ gray: Gray, ink: [Bool], threshold: Int, staff: Staff,
+                                    stroke: Double) -> [Head] {
         let w = gray.w, h = gray.h, S = staff.spacing
         guard let low = staff.lineYs.min(), let high = staff.lineYs.max() else { return [] }
         // Heads live near the staff; lyrics and neighbouring staves stay out.
@@ -195,20 +209,8 @@ enum OMR {
         guard zh > 2 else { return [] }
         let zone = Array(ink[(z0 * w)..<(z1 * w)])
 
-        // How thick a pen stroke comes out in this picture (a staff line, and so
-        // a stem too). A blurred photo fattens every stroke, so the amount of
-        // wearing-down that removes strokes but keeps heads follows this.
-        var runs: [Int] = []
-        for lineY in staff.lineYs {
-            for x in stride(from: 4, to: w, by: 8) where ink[lineY * w + x] {
-                var a = lineY, b = lineY
-                while a > 0, lineY - a < Int(S), ink[(a - 1) * w + x] { a -= 1 }
-                while b < h - 1, b - lineY < Int(S), ink[(b + 1) * w + x] { b += 1 }
-                runs.append(b - a + 1)
-            }
-        }
-        runs.sort()
-        let stroke = Double(runs.isEmpty ? 1 : runs[runs.count / 2])
+        // A blurred photo fattens every stroke, so the amount of wearing-down
+        // that removes strokes but keeps heads follows the stroke width.
         let thickR = Int32((stroke / 2 + 0.05 * S).rounded()) + 1   // strokes are gone
         let coreR = thickR + Int32(max(1, (0.08 * S).rounded()))    // only a head is left
 
@@ -413,22 +415,157 @@ enum OMR {
         }
     }
 
+    /// How thick a pen stroke comes out in this picture (a staff line, and so a
+    /// stem too): the typical height of the staff lines.
+    private static func strokeWidth(_ ink: [Bool], width w: Int, height h: Int, staff: Staff) -> Double {
+        let cap = Int(staff.spacing)
+        var runs: [Int] = []
+        for lineY in staff.lineYs {
+            for x in stride(from: 4, to: w, by: 8) where ink[lineY * w + x] {
+                var a = lineY, b = lineY
+                while a > 0, lineY - a < cap, ink[(a - 1) * w + x] { a -= 1 }
+                while b < h - 1, b - lineY < cap, ink[(b + 1) * w + x] { b += 1 }
+                runs.append(b - a + 1)
+            }
+        }
+        runs.sort()
+        return Double(runs.isEmpty ? 1 : runs[runs.count / 2])
+    }
+
+    // MARK: - Barlines and ties
+
+    /// Barlines: thin strokes running the full height of the staff with no
+    /// notehead beside them (a stroke beside a head is its stem).
+    private static func detectBarlines(_ ink: [Bool], width w: Int, height h: Int,
+                                       staff: Staff, heads: [Head]) -> [Int] {
+        let S = staff.spacing
+        guard let low = staff.lineYs.min(), let high = staff.lineYs.max() else { return [] }
+        let gap = max(2, Int(0.15 * S))
+        var bars: [Int] = []
+        var x = 0
+        func spansStaff(_ x: Int) -> Bool {
+            var miss = 0
+            for y in low...high {
+                if ink[y * w + x] { miss = 0 } else { miss += 1; if miss > gap { return false } }
+            }
+            return true
+        }
+        while x < w {
+            guard spansStaff(x) else { x += 1; continue }
+            var x2 = x
+            while x2 + 1 < w, spansStaff(x2 + 1) { x2 += 1 }
+            let mid = (x + x2) / 2
+            if Double(x2 - x + 1) <= 0.8 * S,
+               !heads.contains(where: { Double(abs($0.centerX - mid)) < S }) { bars.append(mid) }
+            x = x2 + 1
+        }
+        return bars
+    }
+
+    /// Two neighbouring notes of the same pitch joined by an arc are one longer
+    /// note. They are merged when the sum is a length we can write (plain or
+    /// dotted) and no barline stands between them.
+    private static func joinTies(_ heads: [Head], barlines: [Int], ink: [Bool],
+                                 width w: Int, height h: Int, staff: Staff) -> [Head] {
+        let S = staff.spacing
+        /// An arc between the two heads: in most columns between them there is
+        /// ink just above or just below that is not a staff line.
+        func arc(_ a: Head, _ b: Head) -> Bool {
+            var x0 = a.centerX + Int(0.8 * S), x1 = b.centerX - Int(0.8 * S)
+            if x1 - x0 < 3 { x0 = a.centerX + Int(0.6 * S); x1 = b.centerX - Int(0.6 * S) }
+            guard x1 - x0 >= 3 else { return false }
+            let cy = (a.centerY + b.centerY) / 2
+            for side in [1, -1] {
+                let p = cy + side * Int(0.45 * S), q = cy + side * Int(1.7 * S)
+                let r0 = max(0, min(p, q)), r1 = min(h - 1, max(p, q))
+                guard r0 < r1 else { continue }
+                var hits = 0
+                for x in x0...x1 {
+                    var y = r0, found = false
+                    while y <= r1, !found {
+                        guard ink[y * w + x] else { y += 1; continue }
+                        var y2 = y
+                        while y2 + 1 <= r1, ink[(y2 + 1) * w + x] { y2 += 1 }
+                        let mid = Double(y + y2) / 2
+                        found = Double(y2 - y + 1) < 0.5 * S
+                            && !staff.lineYs.contains { abs(Double($0) - mid) < 0.3 * S }
+                        y = y2 + 1
+                    }
+                    if found { hits += 1 }
+                }
+                if hits * 10 >= (x1 - x0 + 1) * 6 { return true }
+            }
+            return false
+        }
+        func writable(_ beats: Double) -> (NoteDuration, Bool)? {
+            for d in NoteDuration.allCases {
+                if abs(d.beats - beats) < 1e-6 { return (d, false) }
+                if abs(d.beats * 1.5 - beats) < 1e-6 { return (d, true) }
+            }
+            return nil
+        }
+        var out: [Head] = []
+        for head in heads {
+            if var last = out.last,
+               pitch(forY: last.centerY, staff: staff) == pitch(forY: head.centerY, staff: staff),
+               !barlines.contains(where: { $0 > last.centerX && $0 < head.centerX }),
+               let (duration, dotted) = writable(last.beats + head.beats),
+               arc(last, head) {
+                last.duration = duration
+                last.dotted = dotted
+                out[out.count - 1] = last
+            } else {
+                out.append(head)
+            }
+        }
+        return out
+    }
+
     // MARK: - Mapping
 
-    private static func assignBeats(_ heads: [Head], staff: Staff, maxBeats: Double,
+    /// Lay the notes out in time. Without barlines they simply follow one
+    /// another. With barlines each measure starts on its own downbeat, so one
+    /// misread length cannot push everything after it out of place — and a
+    /// scrap of a neighbouring measure caught at the edge of the picture is
+    /// left out rather than counted as the first beat.
+    private static func assignBeats(_ heads: [Head], barlines: [Int], staff: Staff,
+                                    measureBeats: Double, maxBeats: Double,
                                     width w: Int, height h: Int) -> Reading {
+        // Split at the barlines; remember how wide each piece is.
+        let edges = [0] + barlines + [w]
+        var measures: [(heads: [Head], width: Int)] = []
+        for i in 0..<(edges.count - 1) {
+            let inside = heads.filter { $0.centerX >= edges[i] && $0.centerX < edges[i + 1] }
+            if !inside.isEmpty { measures.append((inside, edges[i + 1] - edges[i])) }
+        }
+        let byMeasure = !barlines.isEmpty && measureBeats > 0
+        if byMeasure, measures.count >= 2 {
+            func beats(_ m: (heads: [Head], width: Int)) -> Double { m.heads.reduce(0) { $0 + $1.beats } }
+            let widest = measures.map(\.width).max() ?? 1
+            let anyFull = measures.contains { abs(beats($0) - measureBeats) < 1e-6 }
+            func isScrap(_ m: (heads: [Head], width: Int)) -> Bool {
+                beats(m) < measureBeats - 1e-6 && (anyFull || m.width * 2 < widest)
+            }
+            if let first = measures.first, isScrap(first) { measures.removeFirst() }
+            if measures.count >= 2, let last = measures.last, isScrap(last) { measures.removeLast() }
+        }
+
         var reading = Reading()
         var beat = 0.0
-        for head in heads {
-            let pitch = pitch(forY: head.centerY, staff: staff)
-            let len = head.duration.beats
-            if beat + len > maxBeats + 1e-6 { break }   // keep within the score
-            let note = ScoreNote(pitch: pitch, duration: head.duration, beatOffset: beat)
-            reading.notes.append(note)
-            reading.marks.append(CGPoint(x: Double(head.centerX) / Double(w),
-                                         y: 1 - Double(head.centerY) / Double(h)))   // rows run bottom-up
-            if head.unsure { reading.unsure.insert(note.id) }
-            beat += len
+        for (index, measure) in measures.enumerated() {
+            if byMeasure { beat = Double(index) * measureBeats }
+            let end = byMeasure ? min(beat + measureBeats, maxBeats) : maxBeats
+            for head in measure.heads {
+                if beat + head.beats > end + 1e-6 { break }   // keep within the measure / the score
+                var note = ScoreNote(pitch: pitch(forY: head.centerY, staff: staff),
+                                     duration: head.duration, beatOffset: beat)
+                note.dotted = head.dotted
+                reading.notes.append(note)
+                reading.marks.append(CGPoint(x: Double(head.centerX) / Double(w),
+                                             y: 1 - Double(head.centerY) / Double(h)))   // rows run bottom-up
+                if head.unsure { reading.unsure.insert(note.id) }
+                beat += head.beats
+            }
         }
         return reading
     }

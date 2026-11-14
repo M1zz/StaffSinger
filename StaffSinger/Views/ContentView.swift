@@ -112,7 +112,7 @@ struct ContentView: View {
         }
         .fullScreenCover(isPresented: $showApertureCamera) {
             ApertureCameraView(
-                liveBeats: vm.score.measureCapacity * 2,
+                measureBeats: vm.score.measureCapacity,
                 onCapture: { img in
                     showApertureCamera = false
                     adoptPhoto(img)             // aperture already framed the 2 measures
@@ -437,12 +437,12 @@ struct ContentView: View {
     private func transcribe(announce: Bool) {
         guard let img = reference.image else { return }
         guard pro.allows(.transcribe) else { paywallFeature = .transcribe; return }
-        let maxBeats = vm.score.measureCapacity * 2
+        let measureBeats = vm.score.measureCapacity
         Task {
             // 카메라 · 자르기 화면이 내려가는 동안 뜬 알림창은 사라지므로, 그 시간을 기다린다.
             async let settled: Void? = announce ? nil : try? await Task.sleep(for: .milliseconds(450))
             let reading = await Task.detached(priority: .userInitiated) {
-                OMR.transcribe(img, maxBeats: maxBeats)
+                OMR.transcribe(img, maxBeats: measureBeats * 2, measureBeats: measureBeats)
             }.value
             _ = await settled
             let notes = reading.notes

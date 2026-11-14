@@ -46,8 +46,8 @@ struct PickedImage: Identifiable {
 /// window — no separate crop step. Wide (≈3:1) to match a two-measure strip.
 struct ApertureCameraView: UIViewControllerRepresentable {
     var aspect: CGFloat = 3.0
-    /// 비추는 동안 읽을 박 수 (두 마디).
-    var liveBeats: Double = 8
+    /// 한 마디의 박 수. 두 마디를 읽는다.
+    var measureBeats: Double = 4
     var onCapture: (UIImage) -> Void
     /// 비추는 동안 악보가 다 읽혔을 때 — 그 장면과 읽은 음표.
     var onRead: (UIImage, OMR.Reading) -> Void = { _, _ in }
@@ -56,7 +56,7 @@ struct ApertureCameraView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> ApertureCameraController {
         let vc = ApertureCameraController()
         vc.aspect = aspect
-        vc.liveBeats = liveBeats
+        vc.measureBeats = measureBeats
         vc.onCapture = onCapture
         vc.onRead = onRead
         vc.onCancel = onCancel
@@ -69,7 +69,7 @@ struct ApertureCameraView: UIViewControllerRepresentable {
 final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDelegate,
                                      AVCaptureVideoDataOutputSampleBufferDelegate {
     var aspect: CGFloat = 3.0
-    var liveBeats: Double = 8
+    var measureBeats: Double = 4
     var onCapture: ((UIImage) -> Void)?
     var onRead: ((UIImage, OMR.Reading) -> Void)?
     var onCancel: (() -> Void)?
@@ -310,7 +310,7 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         let g = geometry
         geometryLock.unlock()
         guard let image = crop(buffer, aperture: g.aperture, bounds: g.bounds) else { return }
-        let reading = OMR.transcribe(image, maxBeats: liveBeats)
+        let reading = OMR.transcribe(image, maxBeats: measureBeats * 2, measureBeats: measureBeats)
         DispatchQueue.main.async { self.expose(reading, from: image) }
     }
 
