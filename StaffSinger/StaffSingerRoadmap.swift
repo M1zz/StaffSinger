@@ -27,7 +27,7 @@ extension StaffSingerSpec {
         .init(id: "photo.anyangle", status: .planned,
               title: NSLocalizedString("비스듬히 찍어도 괜찮아요", comment: "Roadmap item: shoot from any angle"),
               detail: NSLocalizedString("틀에 맞추지 않아도 앱이 악보를 찾아 반듯하게 펴서 읽어요.", comment: "Roadmap item detail: shoot from any angle")),
-        .init(id: "photo.accuracy", status: .planned,
+        .init(id: "photo.accuracy", status: .building,
               title: NSLocalizedString("악보를 더 정확하게 읽기", comment: "Roadmap item: sharper score reading"),
               detail: NSLocalizedString("더 많은 종류의 악보를 더 정확하게 알아봐요.", comment: "Roadmap item detail: sharper score reading")),
         .init(id: "sing.check", status: .planned,

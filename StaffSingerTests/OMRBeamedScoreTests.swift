@@ -1,0 +1,86 @@
+//
+//  OMRBeamedScoreTests.swift
+//  StaffSingerTests
+//
+//  악보 읽기의 계약: 꼬리로 묶인 음표도 음높이와 길이를 맞게 읽는다 (→ Notation/OMR.swift).
+//  실제 사진 대신 같은 모양을 그려서 시험한다.
+//
+
+import XCTest
+import UIKit
+@testable import StaffSinger
+
+final class OMRBeamedScoreTests: XCTestCase {
+
+    /// 한 줄 악보를 그린다. `step` 은 맨 윗줄(F5)에서 아래로 내려간 칸 수.
+    private struct Drawn { let x: CGFloat; let step: Int; var open = false; var stem = true }
+
+    private let S: CGFloat = 24, top: CGFloat = 150
+
+    private func y(_ step: Int) -> CGFloat { top + CGFloat(step) * S / 2 }
+
+    private func score(_ notes: [Drawn], beams: [(from: Int, to: Int, count: Int)] = [],
+                       extra: (CGContext) -> Void = { _ in }) -> UIImage {
+        let format = UIGraphicsImageRendererFormat(); format.scale = 1
+        return UIGraphicsImageRenderer(size: CGSize(width: 1200, height: 400), format: format).image { r in
+            let c = r.cgContext
+            UIColor.white.setFill(); c.fill(CGRect(x: 0, y: 0, width: 1200, height: 400))
+            UIColor.black.setFill(); UIColor.black.setStroke()
+            for i in 0..<5 { c.fill(CGRect(x: 0, y: top + CGFloat(i) * S - 1, width: 1200, height: 3)) }
+            let stemEnd = top + 4 * S + 2.6 * S          // 기둥은 모두 아래로, 같은 높이까지
+            for n in notes {
+                let head = CGRect(x: n.x - 0.62 * S, y: y(n.step) - 0.45 * S, width: 1.24 * S, height: 0.9 * S)
+                if n.open { c.setLineWidth(4); c.strokeEllipse(in: head.insetBy(dx: 2, dy: 2)) }
+                else { c.fillEllipse(in: head) }
+                if n.stem { c.fill(CGRect(x: n.x - 0.62 * S, y: y(n.step), width: 3, height: stemEnd - y(n.step))) }
+            }
+            for b in beams {
+                let x0 = notes[b.from].x - 0.62 * S, x1 = notes[b.to].x - 0.62 * S + 3
+                for k in 0..<b.count {
+                    c.fill(CGRect(x: x0, y: stemEnd - 0.5 * S - CGFloat(k) * 0.75 * S, width: x1 - x0, height: 0.5 * S))
+                }
+            }
+            extra(c)
+        }
+    }
+
+    func testReadsBeamedGroupsWithPitchAndLength() {
+        // 16분 넷(솔 도 레 미) · 8분 둘(레 미) · 4분 하나(미)
+        let notes = [Drawn(x: 150, step: 6), Drawn(x: 230, step: 3), Drawn(x: 310, step: 2), Drawn(x: 390, step: 1),
+                     Drawn(x: 560, step: 2), Drawn(x: 680, step: 1), Drawn(x: 850, step: 1)]
+        let reading = OMR.transcribe(score(notes, beams: [(0, 3, 2), (4, 5, 1)]))
+        XCTAssertEqual(reading.notes.map(\.pitch.midi), [67, 72, 74, 76, 74, 76, 76])
+        XCTAssertEqual(reading.notes.map(\.duration),
+                       [.sixteenth, .sixteenth, .sixteenth, .sixteenth, .eighth, .eighth, .quarter])
+        XCTAssertEqual(reading.notes.map(\.beatOffset), [0, 0.25, 0.5, 0.75, 1, 1.5, 2])
+        XCTAssertEqual(reading.marks.count, 7)
+    }
+
+    func testReadsOpenHeads() {
+        let notes = [Drawn(x: 200, step: 4), Drawn(x: 500, step: 3, open: true),
+                     Drawn(x: 800, step: 5, open: true, stem: false)]
+        let reading = OMR.transcribe(score(notes), maxBeats: 16)
+        XCTAssertEqual(reading.notes.map(\.duration), [.quarter, .half, .whole])
+        XCTAssertEqual(reading.notes.map(\.pitch.midi), [71, 72, 69])
+    }
+
+    func testIgnoresLyricsAndBarlines() {
+        let notes = [Drawn(x: 300, step: 2), Drawn(x: 700, step: 4)]
+        let image = score(notes) { c in
+            c.fill(CGRect(x: 500, y: 150, width: 3, height: 96))                    // 세로줄
+            for x in stride(from: 280, through: 720, by: 110) {                      // 굵은 가사
+                c.fill(CGRect(x: CGFloat(x), y: 340, width: 34, height: 34))
+            }
+        }
+        let reading = OMR.transcribe(image)
+        XCTAssertEqual(reading.notes.map(\.pitch.midi), [74, 71])
+    }
+
+    /// 손에 든 실제 사진으로 확인할 때만 쓴다: `/tmp/omr-photo.jpg` 가 있으면 읽은 결과를 찍는다.
+    func testPrintsReadingOfALocalPhoto() throws {
+        let path = "/tmp/omr-photo.jpg"
+        guard let image = UIImage(contentsOfFile: path) else { throw XCTSkip("no local photo") }
+        let reading = OMR.transcribe(image, maxBeats: 64)
+        print("OMRPHOTO", reading.notes.map { "\($0.pitch.midi):\($0.duration.rawValue)" }.joined(separator: " "))
+    }
+}
