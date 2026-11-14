@@ -31,6 +31,7 @@
 		CC0000000000000000000004 /* MusicModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000003 /* MusicModelTests.swift */; };
 		CFE18438ADB94E5D9F9A8007 /* StaffLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E770722A9A6445CB768B0EB /* StaffLayout.swift */; };
 		DD0000000000000000000002 /* OMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0000000000000000000001 /* OMR.swift */; };
+		AC0110000000000000000002 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = AC0110000000000000000001 /* AppIcon.icon */; };
 		EAD0F75BD6DC427F80C0761C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D1B36449F4414884D04043 /* Assets.xcassets */; };
 		EE0000000000000000000002 /* ScoreTextFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000001 /* ScoreTextFormat.swift */; };
 		EE0000000000000000000004 /* ScoreTextFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000003 /* ScoreTextFormatTests.swift */; };
@@ -72,6 +73,7 @@
 		A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UprightPianoKW.sf2; sourceTree = "<group>"; };
 		AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyboard.swift; sourceTree = "<group>"; };
 		B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceFeature.swift; sourceTree = "<group>"; };
+		AC0110000000000000000001 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 		C6D1B36449F4414884D04043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC0000000000000000000002 /* StaffSingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaffSingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0000000000000000000003 /* MusicModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModelTests.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 				76A73244A59A4A8BBBB8BE88 /* Audio */,
 				64367B904C7F41BEB8046DC7 /* Notation */,
 				C6D1B36449F4414884D04043 /* Assets.xcassets */,
+				AC0110000000000000000001 /* AppIcon.icon */,
 				600872A2ACE94B9C86EF3ABA /* Info.plist */,
 				F4BD3C11EA23DE68FC7F83E6 /* StaffSingerSpec.swift */,
 				9757B6EED245035218E49DF7 /* StaffSingerRoadmap.swift */,
@@ -325,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD0F75BD6DC427F80C0761C /* Assets.xcassets in Resources */,
+				AC0110000000000000000002 /* AppIcon.icon in Resources */,
 				A1B2C3D4E5F60001A1B2C3D4 /* UprightPianoKW.sf2 in Resources */,
 				B363328784549AFB1DC1DE1F /* Localizable.xcstrings in Resources */,
 				5A1D0C0DE1F0A1B2C3D4E5F7 /* InfoPlist.xcstrings in Resources */,
