@@ -213,7 +213,8 @@ final class SolfegeDictation: ObservableObject {
     // MARK: - Recording pipeline
 
     private func run(score: Score) async throws {
-        audio.beginRecordingSession()
+        await audio.beginRecordingSession()
+        try Task.checkCancellation()
         try startListening()
 
         let secondsPerBeat = 60.0 / max(20.0, tempo)

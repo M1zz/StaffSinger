@@ -40,7 +40,8 @@ final class PitchListener: ObservableObject {
         wanted = true
         guard await AVAudioApplication.requestRecordPermission(), wanted else { return false }
 
-        audio.beginRecordingSession()
+        await audio.beginRecordingSession()
+        guard wanted else { audio.endRecordingSession(); return false }   // let go while the mic was opening
         let input = engine.inputNode
         let format = input.outputFormat(forBus: 0)
         guard format.sampleRate > 0 else { audio.endRecordingSession(); return false }

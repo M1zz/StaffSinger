@@ -48,22 +48,43 @@ final class AudioEngine: ObservableObject {
         let defaults = UserDefaults.standard
         metronomeEnabled = defaults.object(forKey: Self.metronomeKey) as? Bool ?? true
         countInEnabled = defaults.object(forKey: Self.countInKey) as? Bool ?? true
-        configureSession()
         buildGraph()
+        Task { await setSession(recording: false) }   // starts the engine once the session is ready
     }
 
     // MARK: - Setup
 
-    private func configureSession() {
+    private static let sessionQueue = DispatchQueue(label: "staffsinger.audio-session",
+                                                    qos: .userInitiated)
+
+    /// Put the audio session in playback or recording, then make sure the
+    /// engine runs. Session calls wait on the system's audio server and can
+    /// stall the UI, so they run off the main thread — one at a time, in the
+    /// order asked.
+    private func setSession(recording: Bool) async {
         #if !targetEnvironment(simulator)
-        do {
-            let session = AVAudioSession.sharedInstance()
-            try session.setCategory(.playback, mode: .default, options: [.mixWithOthers])
-            try session.setActive(true)
-        } catch {
-            print("Audio session error: \(error)")
+        await withCheckedContinuation { (done: CheckedContinuation<Void, Never>) in
+            Self.sessionQueue.async {
+                do {
+                    let session = AVAudioSession.sharedInstance()
+                    // `.defaultToSpeaker` matters: without it `.playAndRecord`
+                    // routes the count-in clicks to the earpiece.
+                    try session.setCategory(
+                        recording ? .playAndRecord : .playback, mode: .default,
+                        options: recording ? [.defaultToSpeaker, .allowBluetoothHFP, .mixWithOthers]
+                                           : [.mixWithOthers])
+                    try session.setActive(true)
+                } catch {
+                    print("Audio session error: \(error)")
+                }
+                done.resume()
+            }
         }
         #endif
+        // Swapping the category can knock the playback graph offline.
+        if !engine.isRunning {
+            do { try engine.start() } catch { print("Engine start error: \(error)") }
+        }
     }
 
     // MARK: - Recording session (voice dictation)
@@ -74,30 +95,10 @@ final class AudioEngine: ObservableObject {
     /// (and its permission prompt / orange indicator) out of the way for the
     /// vast majority of the app. Dictation flips it to `.playAndRecord` for the
     /// length of one take and flips it back in `endRecordingSession`.
-    /// `.defaultToSpeaker` matters: without it `.playAndRecord` routes the
-    /// count-in clicks to the earpiece, where the user can't hear them.
-    func beginRecordingSession() {
-        #if !targetEnvironment(simulator)
-        do {
-            let session = AVAudioSession.sharedInstance()
-            try session.setCategory(.playAndRecord, mode: .default,
-                                    options: [.defaultToSpeaker, .allowBluetooth,
-                                              .mixWithOthers])
-            try session.setActive(true)
-        } catch {
-            print("Recording session error: \(error)")
-        }
-        #endif
-        // Swapping the category can knock the playback graph offline; the
-        // count-in needs it running.
-        if !engine.isRunning { try? engine.start() }
-    }
+    func beginRecordingSession() async { await setSession(recording: true) }
 
     /// Hand the mic back and return the session to plain playback.
-    func endRecordingSession() {
-        configureSession()
-        if !engine.isRunning { try? engine.start() }
-    }
+    func endRecordingSession() { Task { await setSession(recording: false) } }
 
     /// One metronome click, exposed so dictation can count a take in with the
     /// exact sound (and therefore the exact tempo) playback uses.
@@ -110,12 +111,6 @@ final class AudioEngine: ObservableObject {
         engine.connect(clickSampler, to: engine.mainMixerNode, format: nil)
 
         loadSounds()
-
-        do {
-            try engine.start()
-        } catch {
-            print("Engine start error: \(error)")
-        }
     }
 
     /// Load instrument sounds. The melody voice uses a bundled acoustic piano
