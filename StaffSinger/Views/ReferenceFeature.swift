@@ -256,7 +256,7 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         preview?.frame = view.bounds
-        preview?.connection?.videoOrientation = currentVideoOrientation()
+        orient(preview?.connection)
 
         // Wide aperture, as large as fits between the screen's left edge and the
         // shutter — the shutter must never sit on top of the notes.
@@ -272,7 +272,7 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         dim.path = path.cgPath
         frameLine.path = UIBezierPath(roundedRect: apertureRect, cornerRadius: 6).cgPath
         exposureLine.path = frameLine.path
-        videoOut.connection(with: .video)?.videoOrientation = currentVideoOrientation()
+        orient(videoOut.connection(with: .video))
         geometryLock.lock()
         geometry = (apertureRect, view.bounds.size)
         geometryLock.unlock()
@@ -285,7 +285,7 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
 
     @objc private func shoot() {
         guard session.isRunning, !developed else { return }
-        output.connection(with: .video)?.videoOrientation = currentVideoOrientation()
+        orient(output.connection(with: .video))
         output.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
     }
 
@@ -386,13 +386,16 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         return r.image { _ in image.draw(in: CGRect(origin: .zero, size: image.size)) }.cgImage
     }
 
-    private func currentVideoOrientation() -> AVCaptureVideoOrientation {
-        switch view.window?.windowScene?.interfaceOrientation {
-        case .landscapeLeft: return .landscapeLeft
-        case .landscapeRight: return .landscapeRight
-        case .portraitUpsideDown: return .portraitUpsideDown
-        default: return .portrait
+    /// Turns the camera's picture to match how the screen is held.
+    private func orient(_ connection: AVCaptureConnection?) {
+        let angle: CGFloat = switch view.window?.windowScene?.interfaceOrientation {
+        case .landscapeRight: 0
+        case .landscapeLeft: 180
+        case .portraitUpsideDown: 270
+        default: 90
         }
+        guard let connection, connection.isVideoRotationAngleSupported(angle) else { return }
+        connection.videoRotationAngle = angle
     }
 }
 
