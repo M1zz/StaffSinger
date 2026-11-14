@@ -114,7 +114,7 @@ struct ContentView: View {
             ApertureCameraView(
                 onCapture: { img in
                     showApertureCamera = false
-                    reference.set(img)          // aperture already framed the 2 measures
+                    adoptPhoto(img)             // aperture already framed the 2 measures
                 },
                 onCancel: { showApertureCamera = false }
             )
@@ -169,8 +169,8 @@ struct ContentView: View {
                 image: item.image,
                 onCancel: { cropItem = nil },
                 onDone: { cropped in
-                    reference.set(cropped)
                     cropItem = nil
+                    adoptPhoto(cropped)
                 })
             .foldConfined()
         }
@@ -413,21 +413,38 @@ struct ContentView: View {
 
     /// Experimental: read the cropped photo into notes (clean printed monophonic
     /// single line works best). Replaces the current score on success.
-    private func runTranscription() {
+    private func runTranscription() { transcribe(announce: true) }
+
+    /// 사진이 들어오면 묻지 않고 바로 읽어, 찍자마자 재생할 수 있게 한다.
+    /// 무료 체험을 다 쓴 사람에게는 페이월을 들이밀지 않고 참고 사진만 띄운다
+    /// (사진의 채보 버튼을 누르면 그때 페이월이 뜬다).
+    private func adoptPhoto(_ img: UIImage) {
+        reference.set(img)
+        if pro.allows(.transcribe) { transcribe(announce: false) }
+    }
+
+    /// `announce` 가 꺼져 있으면 성공을 알림창으로 막지 않는다 — 악보가 바로
+    /// 재생할 수 있는 상태로 뜨고, 확인할 음은 "N개 확인" 칩이 안내한다.
+    private func transcribe(announce: Bool) {
         guard let img = reference.image else { return }
         guard pro.allows(.transcribe) else { paywallFeature = .transcribe; return }
         let maxBeats = vm.score.measureCapacity * 2
         Task {
+            // 카메라 · 자르기 화면이 내려가는 동안 뜬 알림창은 사라지므로, 그 시간을 기다린다.
+            async let settled: Void? = announce ? nil : try? await Task.sleep(for: .milliseconds(450))
             let reading = await Task.detached(priority: .userInitiated) {
                 OMR.transcribe(img, maxBeats: maxBeats)
             }.value
+            _ = await settled
             let notes = reading.notes
             if notes.isEmpty {
                 omrMessage = String(localized: "악보를 인식하지 못했습니다. 깨끗한 인쇄·한 줄·정면 사진일수록 잘 됩니다.")
             } else {
                 vm.importNotes(notes, unsure: reading.unsure)
                 pro.recordUse(.transcribe)
-                omrMessage = String(localized: "\(notes.count)개 음표를 인식했습니다 (실험적).\n음높이·길이는 직접 확인하고 고쳐 주세요.")
+                if announce {
+                    omrMessage = String(localized: "\(notes.count)개 음표를 인식했습니다 (실험적).\n음높이·길이는 직접 확인하고 고쳐 주세요.")
+                }
             }
         }
     }
