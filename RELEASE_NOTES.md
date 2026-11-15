@@ -5,146 +5,194 @@
 ### 앱스토어 (한국어)
 
 이제 iPad에서도 쓸 수 있어요
-큰 화면에 맞춰 오선과 음표가 크게 보여요
+카메라로 악보를 비추면 음표를 읽어요
+악보를 말로 읽으면 음표로 받아써요
 Apple Pencil을 두 번 톡 치면 쉼표 입력으로 바뀌어요
+앱 아이콘이 새로워졌어요
 
 ### App Store (English)
 
 Now available on iPad
-Staff and notes fill the larger screen
+Hold the camera over a score to read it
+Read a score aloud to write its notes
 Double-tap Apple Pencil for Rest Mode
+A fresh new app icon
 
 ### App Store (en-GB)
 
 Now available on iPad
-Staff and notes fill the larger screen
+Hold the camera over a score to read it
+Read a score aloud to write its notes
 Double-tap Apple Pencil for Rest Mode
+A fresh new app icon
 
 ### 앱스토어 (중국어 간체)
 
 现在也可以在 iPad 上使用
-五线谱和音符随大屏幕放大显示
+用相机对准乐谱即可读出音符
+把乐谱读出来就能记成音符
 轻点两下 Apple Pencil 切换到休止符模式
+全新的 App 图标
 
 ### 앱스토어 (중국어 번체)
 
 現在也可以在 iPad 上使用
-五線譜和音符隨大螢幕放大顯示
+用相機對準樂譜即可讀出音符
+把樂譜讀出來就能記成音符
 點兩下 Apple Pencil 切換成休止符模式
+全新的 App 圖像
 
 ### 앱스토어 (일본어)
 
 iPadでも使えるようになりました
-大きな画面に合わせて五線と音符を大きく表示
+カメラを楽譜にかざすと音符を読み取ります
+楽譜を声に出して読むと音符になります
 Apple Pencilをダブルタップで休符モードに
+アプリアイコンが新しくなりました
 
 ### 앱스토어 (러시아어)
 
 Теперь и на iPad
-Нотный стан и ноты крупно на iPad
+Наведите камеру на ноты, и они считаны
+Читайте ноты вслух, и они запишутся
 Режим пауз двойным касанием Apple Pencil
+Новый значок приложения
 
 ### 앱스토어 (스페인어)
 
 Ya disponible en iPad
-Pentagrama y notas más grandes en iPad
+Enfoca la partitura y se leen las notas
+Lee la partitura en voz alta y se anota
 Doble toque de Apple Pencil: silencios
+Nuevo icono de la app
 
 ### 앱스토어 (독일어)
 
 Jetzt auch auf dem iPad
-Notenzeilen und Noten groß auf dem iPad
+Kamera auf die Noten halten und einlesen
+Noten laut vorlesen und notieren lassen
 Apple Pencil doppeltippen: Pausenmodus
+Neues App-Symbol
 
 ### 앱스토어 (프랑스어)
 
 Désormais disponible sur iPad
-Portée et notes agrandies sur l’iPad
+Visez la partition pour lire les notes
+Lisez la partition à voix haute
 Double toucher l’Apple Pencil : silences
+Nouvelle icône de l’app
 
 ### 앱스토어 (이탈리아어)
 
 Ora disponibile su iPad
-Pentagramma e note più grandi su iPad
+Inquadra lo spartito per leggere le note
+Leggi lo spartito ad alta voce
 Doppio tocco su Apple Pencil: pause
+Nuova icona dell’app
 
 ### 앱스토어 (포르투갈어 브라질)
 
 Agora também no iPad
-Pauta e notas maiores na tela do iPad
+Aponte a câmera e as notas são lidas
+Leia a partitura em voz alta
 Toque duas vezes no Apple Pencil: pausas
+Novo ícone do app
 
 ### 앱스토어 (태국어)
 
 ใช้งานบน iPad ได้แล้ว
-บรรทัดห้าเส้นและตัวโน้ตใหญ่ขึ้นตามจอ
+ส่องกล้องที่โน้ตเพลงเพื่ออ่านตัวโน้ต
+อ่านโน้ตออกเสียงเพื่อจดเป็นตัวโน้ต
 แตะ Apple Pencil สองครั้งสลับโหมดตัวหยุด
+ไอคอนแอปใหม่
 
 ### 앱스토어 (베트남어)
 
 Nay đã dùng được trên iPad
-Khuông nhạc và nốt to hơn trên iPad
+Đưa camera lên bản nhạc để đọc nốt
+Đọc to bản nhạc để chép thành nốt
 Chạm hai lần Apple Pencil: dấu lặng
+Biểu tượng ứng dụng mới
 
 ### 앱스토어 (체코어)
 
 Nově také na iPadu
-Osnova a noty větší na displeji iPadu
+Namiřte fotoaparát na noty a načtou se
+Čtěte noty nahlas a zapíší se
 Dvojí klepnutí Apple Pencil: režim pomlk
+Nová ikona aplikace
 
 ### 앱스토어 (덴마크어)
 
 Nu også på iPad
-Større nodelinjer og noder på iPad
+Hold kameraet over noderne for at læse
+Læs noderne højt, så skrives de ned
 Dobbelttryk Apple Pencil for pauser
+Nyt appsymbol
 
 ### 앱스토어 (그리스어)
 
 Τώρα και στο iPad
-Μεγάλο πεντάγραμμο και νότες στο iPad
+Στρέψτε την κάμερα στην παρτιτούρα
+Διαβάστε τις νότες φωναχτά
 Διπλό άγγιγμα Apple Pencil: παύσεις
+Νέο εικονίδιο εφαρμογής
 
 ### 앱스토어 (핀란드어)
 
 Nyt myös iPadilla
-Viivasto ja nuotit isompina iPadilla
+Näytä nuotit kameralle, niin ne luetaan
+Lue nuotit ääneen, niin ne kirjataan
 Kaksoisnapauta Apple Penciliä: taukotila
+Uusi appikuvake
 
 ### 앱스토어 (인도네시아어)
 
 Kini tersedia di iPad
-Paranada dan not lebih besar di iPad
+Arahkan kamera ke partitur untuk membaca
+Bacakan partitur untuk mencatat not
 Ketuk dua kali Apple Pencil: tanda diam
+Ikon app baru
 
 ### 앱스토어 (Norsk bokmål)
 
 Nå også på iPad
-Større notelinjer og noter på iPad
+Hold kameraet over notene for å lese
+Les notene høyt, så skrives de ned
 Dobbelttrykk Apple Pencil for pauser
+Nytt appsymbol
 
 ### 앱스토어 (네덜란드어)
 
 Nu ook op iPad
-Notenbalk en noten groter op iPad
+Houd de camera boven de noten
+Lees de noten hardop om ze te noteren
 Dubbeltik op Apple Pencil voor rusten
+Nieuw appsymbool
 
 ### 앱스토어 (폴란드어)
 
 Teraz także na iPadzie
-Pięciolinia i nuty większe na iPadzie
+Skieruj aparat na nuty, by je odczytać
+Czytaj nuty na głos, a zostaną zapisane
 Dwukrotne stuknięcie Apple Pencil: pauzy
+Nowa ikona aplikacji
 
 ### 앱스토어 (스웨덴어)
 
 Nu även på iPad
-Större notrader och noter på iPad
+Håll kameran över noterna för att läsa
+Läs noterna högt så skrivs de ned
 Dubbeltryck Apple Pencil för pauser
+Ny appsymbol
 
 ### 앱스토어 (튀르키예어)
 
 Artık iPad’de de kullanılabilir
-Porte ve notalar iPad’de daha büyük
+Kamerayı notaya tut, notalar okunsun
+Notayı sesli oku, notalar yazılsın
 Apple Pencil’a iki kez dokunun: sus
+Yeni uygulama simgesi
 
 ## 1.0.6
 

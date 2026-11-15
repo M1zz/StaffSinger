@@ -515,14 +515,6 @@ struct ContentView: View {
                         .transition(.scale.combined(with: .opacity))
                 }
 
-                // 설정은 늘 보인다. 초견 Pro(인앱 결제)와 구매 복원이 여기 있어
-                // 처음 켠 사람(앱 심사 포함)이 숨은 단계 없이 찾을 수 있어야 한다.
-                circleButton(systemImage: "slider.horizontal.3", tint: .primary) {
-                    showSettings = true
-                }
-                .accessibilityLabel("설정")
-                .transition(.scale.combined(with: .opacity))
-
                 // Note-tools toggle (opening it closes the piano).
                 circleButton(
                     systemImage: showControls ? "chevron.down" : "music.note",
@@ -577,6 +569,16 @@ struct ContentView: View {
                     .shadow(color: .black.opacity(0.2), radius: 3, y: 1)
             }
             .accessibilityLabel(audio.isPlaying ? Text("정지") : Text("재생"))
+
+            // 설정은 맨 오른쪽, 늘 같은 자리에 있다. 초견 Pro(인앱 결제)와 구매 복원이 여기 있어
+            // 처음 켠 사람(앱 심사 포함)이 숨은 단계 없이 찾을 수 있어야 한다.
+            if !pianoUp {
+                circleButton(systemImage: "slider.horizontal.3", tint: .primary) {
+                    showSettings = true
+                }
+                .accessibilityLabel("설정")
+                .transition(.scale.combined(with: .opacity))
+            }
         }
         .padding(.horizontal, 16)
         .padding(.top, 8)

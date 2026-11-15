@@ -24,16 +24,16 @@
 		9DBE349BC29147B7BFBEB84B /* StaffSingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502D8653D47A4E599759148D /* StaffSingerApp.swift */; };
 		A1B2C3D4E5F60001A1B2C3D4 /* UprightPianoKW.sf2 in Resources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */; };
 		AA11BB22CC33DD44EE55F001 /* PianoKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */; };
+		AC0110000000000000000002 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = AC0110000000000000000001 /* AppIcon.icon */; };
 		ACF9F6680A3E6982459C3EE5 /* StaffSingerRoadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9757B6EED245035218E49DF7 /* StaffSingerRoadmap.swift */; };
 		B1B2C3D4E5F60004B1B2C3D4 /* ReferenceFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */; };
 		B28E59ABD4FD4D81A49E8CD2 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAE88B4D7634EEDAF5B7334 /* AudioEngine.swift */; };
 		B363328784549AFB1DC1DE1F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1A3E8FA04E360F58A75A3DE1 /* Localizable.xcstrings */; };
+		CC0000000000000000000004 /* MusicModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000003 /* MusicModelTests.swift */; };
 		CC00000000000000000000A2 /* OMRExposureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00000000000000000000A1 /* OMRExposureTests.swift */; };
 		CC00000000000000000000A4 /* OMRBeamedScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00000000000000000000A3 /* OMRBeamedScoreTests.swift */; };
-		CC0000000000000000000004 /* MusicModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000003 /* MusicModelTests.swift */; };
 		CFE18438ADB94E5D9F9A8007 /* StaffLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E770722A9A6445CB768B0EB /* StaffLayout.swift */; };
 		DD0000000000000000000002 /* OMR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0000000000000000000001 /* OMR.swift */; };
-		AC0110000000000000000002 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = AC0110000000000000000001 /* AppIcon.icon */; };
 		EAD0F75BD6DC427F80C0761C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D1B36449F4414884D04043 /* Assets.xcassets */; };
 		EE0000000000000000000002 /* ScoreTextFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000001 /* ScoreTextFormat.swift */; };
 		EE0000000000000000000004 /* ScoreTextFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0000000000000000000003 /* ScoreTextFormatTests.swift */; };
@@ -57,12 +57,12 @@
 /* Begin PBXFileReference section */
 		079D6A2F8E5B416DB84081CB /* StaffSinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StaffSinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EAE88B4D7634EEDAF5B7334 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
-		1A3E8FA04E360F58A75A3DE1 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		207FA4E4C77B4B89884B9FD5 /* Products.storekit */ = {isa = PBXFileReference; includeInIndex = 1; path = Products.storekit; sourceTree = "<group>"; };
+		1A3E8FA04E360F58A75A3DE1 /* Localizable.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		207FA4E4C77B4B89884B9FD5 /* Products.storekit */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
 		252173120F724CAEA34F22A7 /* TransportBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportBar.swift; sourceTree = "<group>"; };
 		384465D4DCDA4767959C4B08 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
 		502D8653D47A4E599759148D /* StaffSingerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffSingerApp.swift; sourceTree = "<group>"; };
-		5A1D0C0DE1F0A1B2C3D4E5F6 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		5A1D0C0DE1F0A1B2C3D4E5F6 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
 		5E770722A9A6445CB768B0EB /* StaffLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffLayout.swift; sourceTree = "<group>"; };
 		600872A2ACE94B9C86EF3ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		651F8936FF05DB3076E10CA1 /* ProAccessTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProAccessTests.swift; sourceTree = "<group>"; };
@@ -74,13 +74,13 @@
 		9F76C4695A60486ABD5FADC7 /* StaffView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffView.swift; sourceTree = "<group>"; };
 		A1B2C3D4E5F60002A1B2C3D4 /* UprightPianoKW.sf2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = UprightPianoKW.sf2; sourceTree = "<group>"; };
 		AA11BB22CC33DD44EE55F002 /* PianoKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyboard.swift; sourceTree = "<group>"; };
-		B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceFeature.swift; sourceTree = "<group>"; };
 		AC0110000000000000000001 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		B1B2C3D4E5F60003B1B2C3D4 /* ReferenceFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceFeature.swift; sourceTree = "<group>"; };
 		C6D1B36449F4414884D04043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC0000000000000000000002 /* StaffSingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaffSingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC0000000000000000000003 /* MusicModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModelTests.swift; sourceTree = "<group>"; };
 		CC00000000000000000000A1 /* OMRExposureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMRExposureTests.swift; sourceTree = "<group>"; };
 		CC00000000000000000000A3 /* OMRBeamedScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMRBeamedScoreTests.swift; sourceTree = "<group>"; };
-		CC0000000000000000000003 /* MusicModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModelTests.swift; sourceTree = "<group>"; };
 		D8843EF60C2F8E4BF546E6EF /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
 		D8C876E83B8B45C20E5777DC /* StaffSingerIntents.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StaffSingerIntents.swift; sourceTree = "<group>"; };
 		DD0000000000000000000001 /* OMR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMR.swift; sourceTree = "<group>"; };
@@ -120,7 +120,6 @@
 				8BFCC4A2575BF502756F183E /* StaffSingerPro.swift */,
 				FB6A293304F651719B204711 /* ProPaywallView.swift */,
 			);
-			name = Pro;
 			path = Pro;
 			sourceTree = "<group>";
 		};
@@ -272,7 +271,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 2720;
 				TargetAttributes = {
 					CC0000000000000000000001 = {
 						CreatedOnToolsVersion = 15.4;
@@ -409,22 +408,51 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -438,7 +466,6 @@
 				CODE_SIGN_ENTITLEMENTS = StaffSinger/StaffSinger.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 9;
-				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StaffSinger/Info.plist;
@@ -466,7 +493,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 9;
-				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -490,7 +516,6 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 9;
-				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_TESTING_SEARCH_PATHS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -512,16 +537,45 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -536,7 +590,6 @@
 				CODE_SIGN_ENTITLEMENTS = StaffSinger/StaffSinger.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 9;
-				DEVELOPMENT_TEAM = QGAQ3AY3R3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StaffSinger/Info.plist;
