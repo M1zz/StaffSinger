@@ -56,6 +56,32 @@ final class OMRBeamedScoreTests: XCTestCase {
         XCTAssertEqual(reading.marks.count, 7)
     }
 
+    /// 꼬리 달린 8분음표 하나 — 실제 글꼴의 ♪ 를 머리가 그 자리에 오도록 그린다.
+    /// `up` 이 아니면 위아래로 뒤집어 기둥과 꼬리가 아래로 간다.
+    private func flagged(x: CGFloat, step: Int, up: Bool, in c: CGContext) {
+        let font = CTFontCreateWithName("Apple Symbols" as CFString, 100, nil)
+        var character = Array("♪".utf16), glyph: [CGGlyph] = [0]
+        guard CTFontGetGlyphsForCharacters(font, &character, &glyph, 1),
+              let path = CTFontCreatePathForGlyph(font, glyph[0], nil) else { return XCTFail("no ♪ glyph") }
+        let box = path.boundingBoxOfPath                 // 글리프는 위가 +y
+        let k = 3.9 * S / box.height                     // 머리 0.9칸 + 기둥 3칸
+        var t = CGAffineTransform(translationX: x - 0.62 * S, y: y(step) + (up ? 0.45 : -0.45) * S)
+            .scaledBy(x: k, y: up ? -k : k)
+            .translatedBy(x: -box.minX, y: -box.minY)
+        if let placed = path.copy(using: &t) { c.addPath(placed); c.fillPath() }
+    }
+
+    func testAFlagIsNotAnotherNote() {
+        // 꼬리 달린 8분음표 둘(기둥 위로 · 아래로) 사이에 4분음표 하나 — 음표는 셋뿐이다.
+        let image = score([Drawn(x: 600, step: 4)]) { c in
+            self.flagged(x: 250, step: 6, up: true, in: c)       // 솔4
+            self.flagged(x: 950, step: 1, up: false, in: c)      // 미5
+        }
+        let reading = OMR.transcribe(image)
+        XCTAssertEqual(reading.notes.map(\.pitch.midi), [67, 71, 76])
+        XCTAssertEqual(reading.notes.map(\.duration), [.eighth, .quarter, .eighth])
+    }
+
     func testReadsOpenHeads() {
         let notes = [Drawn(x: 200, step: 4), Drawn(x: 500, step: 3, open: true),
                      Drawn(x: 800, step: 5, open: true, stem: false)]

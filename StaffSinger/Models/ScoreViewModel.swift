@@ -403,6 +403,13 @@ final class ScoreViewModel: ObservableObject {
         replaceNotes(notes, unsure: unsure)
     }
 
+    /// Take in what the photo reader read. A printed notehead only says which
+    /// line or space it sits on, so each note gets the score's key signature.
+    func importReading(_ reading: OMR.Reading) {
+        importNotes(reading.notes.map { var note = $0; note.pitch = keyed(note.pitch); return note },
+                    unsure: reading.unsure)
+    }
+
     // MARK: - Score settings
 
     func setTempo(_ bpm: Double) {

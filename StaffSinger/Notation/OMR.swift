@@ -273,6 +273,9 @@ enum OMR {
         let centerX: Int; let centerY: Int
         var duration: NoteDuration; let unsure: Bool
         var dotted = false
+        /// Its stem — the column it runs in and the row of its far end — and how
+        /// much solid ink the head has. Tells a head from the flag on its stem.
+        var stemX = 0, stemEnd = 0, size = 0
         var beats: Double { duration.beats * (dotted ? 1.5 : 1) }
     }
 
@@ -286,7 +289,11 @@ enum OMR {
     ///     away; beams survive only as long bars, which are dropped);
     ///  2. its stem is traced to the far end, where the beams or flag are counted
     ///     to tell a quarter, an eighth and a sixteenth apart;
-    ///  3. open heads (half, whole) are found the same way once their holes are
+    ///  3. a flag sits at the far end of a head's stem. It can look like a second
+    ///     note there — as a small solid lump, or as the pocket it closes off
+    ///     against the stem and a staff line, which looks like an open head —
+    ///     so anything at the far end of a filled head's stem is its flag;
+    ///  4. open heads (half, whole) are found the same way once their holes are
     ///     filled in.
     private static func detectNotes(_ gray: Gray, ink: [Bool], threshold: Int, staff: Staff,
                                     stroke: Double) -> [Head] {
@@ -377,11 +384,29 @@ enum OMR {
             // Unsure: the head lands between two staff positions rather than on one.
             let steps = Double(high - cy) / (S / 2)
             return Head(centerX: blob.cx, centerY: cy, duration: duration,
-                        unsure: abs(steps - steps.rounded()) > 0.3)
+                        unsure: abs(steps - steps.rounded()) > 0.3,
+                        stemX: stemX, stemEnd: cy + dir * stem, size: blob.core.count)
         }
 
         let filled = solidBlobs(zone, width: w, height: zh, spacing: S, thickR: thickR, coreR: coreR)
         var heads = filled.compactMap { head($0, open: false) }
+
+        // A flag: something at the far end of a filled head's stem. Two heads of
+        // a chord share a stem too, but they sit together at its near end.
+        func atFarEnd(_ f: Head, of n: Head) -> Bool {
+            Double(abs(f.stemX - n.stemX)) < 0.5 * S
+                && Double(abs(f.centerY - n.stemEnd)) < 2.2 * S
+                && Double(abs(n.centerY - f.stemEnd)) < 2.2 * S
+        }
+        // Of two solid lumps on one stem, the clearly smaller one is the flag.
+        func isFlag(_ f: Head, of n: Head) -> Bool { atFarEnd(f, of: n) && f.size * 3 < n.size * 2 }
+        let lumps = heads
+        heads = lumps.filter { f in !lumps.contains { isFlag(f, of: $0) } }.map { n in
+            var n = n   // 꼬리가 달렸으면 적어도 8분음표다
+            if n.duration == .quarter, lumps.contains(where: { isFlag($0, of: n) }) { n.duration = .eighth }
+            return n
+        }
+        let solid = heads.count
 
         // Open heads: fill head-sized holes, then keep what became solid there.
         let plugged = fillHoles(zone, width: w, height: zh, spacing: S)
@@ -391,7 +416,11 @@ enum OMR {
                 let isNew = !filled.contains {
                     Double(abs($0.cx - blob.cx)) < 0.8 * S && Double(abs($0.cy - blob.cy)) < 0.8 * S
                 }
-                if isNew, fromHole * 10 >= blob.core.count * 3, let h = head(blob, open: true) {
+                guard isNew, fromHole * 10 >= blob.core.count * 3, let h = head(blob, open: true) else { continue }
+                // 꼬리가 기둥 · 오선과 둘러싼 빈칸은 속 빈 음표가 아니라 그 음표의 꼬리다.
+                if let i = heads[..<solid].firstIndex(where: { atFarEnd(h, of: $0) }) {
+                    if heads[i].duration == .quarter { heads[i].duration = .eighth }
+                } else {
                     heads.append(h)
                 }
             }

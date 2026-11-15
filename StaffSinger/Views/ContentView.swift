@@ -119,10 +119,10 @@ struct ContentView: View {
                     reference.set(img)
                     // 읽는 모습은 누구에게나 보여 주고, 악보로 받는 데서 Pro 를 묻는다.
                     guard pro.allows(.transcribe) else { paywallFeature = .transcribe; return }
-                    vm.importNotes(reading.notes, unsure: reading.unsure)
+                    vm.importReading(reading)
                     pro.recordUse(.transcribe)
                 },
-                onNote: { audio.audition($0) },
+                onNote: { audio.audition(vm.keyed($0)) },
                 onCancel: { showApertureCamera = false }
             )
             .ignoresSafeArea()
@@ -436,7 +436,7 @@ struct ContentView: View {
             if notes.isEmpty {
                 omrMessage = String(localized: "악보를 인식하지 못했습니다. 깨끗한 인쇄·한 줄·정면 사진일수록 잘 됩니다.")
             } else {
-                vm.importNotes(notes, unsure: reading.unsure)
+                vm.importReading(reading)
                 pro.recordUse(.transcribe)
                 if announce {
                     omrMessage = String(localized: "\(notes.count)개 음표를 인식했습니다 (실험적).\n음높이·길이는 직접 확인하고 고쳐 주세요.")
