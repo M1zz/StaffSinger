@@ -75,8 +75,7 @@ struct DictationSheet: View {
     private var statusView: some View {
         switch dictation.phase {
         case .idle:
-            instruction("메트로놈 네 박을 세고 나면, 박에 맞춰 계이름을 말하세요.",
-                        detail: "도 레 미 파 솔 라 시 · 쉬는 곳은 \"쉼\"")
+            example
 
         case let .countIn(beatsLeft):
             VStack(spacing: 6) {
@@ -128,18 +127,29 @@ struct DictationSheet: View {
         }
     }
 
-    private func instruction(_ title: LocalizedStringKey, detail: LocalizedStringKey) -> some View {
+    /// Before the first take: a short score with the words to say written
+    /// under it. Telling someone to "say the note names on the beat" doesn't
+    /// land until they see one measure read out.
+    private var example: some View {
         VStack(spacing: 6) {
-            Image(systemName: "music.mic")
-                .font(.system(size: 40)).foregroundColor(.accentColor)
-                .accessibilityHidden(true)
-            Text(title).font(.subheadline).multilineTextAlignment(.center)
+            Text("메트로놈 네 박을 세고 나면, 박에 맞춰 계이름을 말하세요.")
+                .font(.subheadline).multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
-            Text(detail).font(.caption).foregroundColor(.secondary)
+            VStack(spacing: 2) {
+                Text("이 악보는 이렇게 읽어요", comment: "Heading above the worked example in solfège dictation")
+                    .font(.caption.weight(.semibold)).foregroundColor(.secondary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                ExampleScore()
+            }
+            .padding(.horizontal, 12).padding(.vertical, 8)
+            .background(Color(.systemGray6))
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            Text("박마다 한 음씩, 8분음표 둘은 한 박에 두 번 말해요. 긴 음은 한 번만 말하고, 쉬는 곳은 \"쉼\"이라고 말해요.",
+                 comment: "How to read the worked example aloud in solfège dictation")
+                .font(.caption).foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
         }
-        .frame(minHeight: 110)
     }
 
     private var recordButton: some View {
@@ -265,5 +275,74 @@ struct DictationSheet: View {
         let measure = Int(beat / perMeasure) + 1
         let inMeasure = Int(beat.truncatingRemainder(dividingBy: perMeasure)) + 1
         return String(localized: "\(measure)마디 \(inMeasure)박")
+    }
+}
+
+// MARK: - Worked example
+
+/// One measure — 도 레 | 미파 | 솔 — with the word to say under each note and
+/// the beat it falls on under that. Drawn by hand: it is five notes that never
+/// change, so it needn't carry the editor's staff along.
+private struct ExampleScore: View {
+    /// (steps above the bottom line E4, beat it starts on, where it sits across
+    /// the width). Spaced like print, not by the clock: the two eighths get
+    /// room for their words instead of half a beat's worth.
+    private static let notes: [(step: Int, beat: Double, at: CGFloat)] =
+        [(-2, 0, 0.08), (-1, 1, 0.3), (0, 2, 0.52), (1, 2.5, 0.72), (2, 3, 0.92)]
+    /// What to say — the app listens for 도레미 in Korean and "do re mi" elsewhere.
+    private static let words = ScoreTextFormat.usesKoreanNotation
+        ? ["도", "레", "미", "파", "솔"] : ["do", "re", "mi", "fa", "sol"]
+
+    var body: some View {
+        Canvas { ctx, size in
+            let gap: CGFloat = 9, top: CGFloat = 14, bottom = top + gap * 4
+            let left: CGFloat = 46, room = size.width - left - 8
+            let ink = GraphicsContext.Shading.color(.primary)
+
+            var lines = Path()
+            for i in 0..<5 {
+                lines.move(to: CGPoint(x: 0, y: top + gap * CGFloat(i)))
+                lines.addLine(to: CGPoint(x: size.width, y: top + gap * CGFloat(i)))
+            }
+            lines.move(to: CGPoint(x: size.width - 0.5, y: top))
+            lines.addLine(to: CGPoint(x: size.width - 0.5, y: bottom))
+            ctx.stroke(lines, with: .color(.primary.opacity(0.55)), lineWidth: 1)
+            ctx.draw(Text(verbatim: "𝄞").font(.system(size: 54)), at: CGPoint(x: 18, y: top + gap * 2 + 1))
+
+            var stemTops: [CGPoint] = []
+            for (index, note) in Self.notes.enumerated() {
+                let x = left + room * note.at
+                let y = bottom - CGFloat(note.step) * gap / 2
+                if note.step <= -2 {   // 도 sits on its own short line below the staff
+                    var ledger = Path()
+                    ledger.move(to: CGPoint(x: x - 11, y: y)); ledger.addLine(to: CGPoint(x: x + 11, y: y))
+                    ctx.stroke(ledger, with: .color(.primary.opacity(0.55)), lineWidth: 1)
+                }
+                var head = ctx
+                head.translateBy(x: x, y: y)
+                head.rotate(by: .degrees(-20))
+                head.fill(Path(ellipseIn: CGRect(x: -6.2, y: -4.3, width: 12.4, height: 8.6)), with: ink)
+                let stemTop = CGPoint(x: x + 5.4, y: y - 28)
+                var stem = Path()
+                stem.move(to: CGPoint(x: x + 5.4, y: y - 1.5)); stem.addLine(to: stemTop)
+                ctx.stroke(stem, with: ink, lineWidth: 1.4)
+                stemTops.append(stemTop)
+
+                ctx.draw(Text(verbatim: Self.words[index]).font(.subheadline.weight(.bold))
+                            .foregroundColor(.accentColor),
+                         at: CGPoint(x: x, y: bottom + 30))
+                if note.beat == note.beat.rounded() {
+                    ctx.draw(Text(verbatim: "\(Int(note.beat) + 1)").font(.caption2).foregroundColor(.secondary),
+                             at: CGPoint(x: x, y: bottom + 49))
+                }
+            }
+            // 미 · 파 share a beat: two eighths under one beam.
+            var beam = Path()
+            beam.move(to: stemTops[2]); beam.addLine(to: stemTops[3])
+            ctx.stroke(beam, with: ink, style: StrokeStyle(lineWidth: 4.5, lineCap: .butt))
+        }
+        .frame(height: 110)
+        .accessibilityElement()
+        .accessibilityLabel(Self.words.joined(separator: " "))
     }
 }

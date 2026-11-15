@@ -2,12 +2,9 @@
 //  ScoreTextFormat.swift
 //  StaffSinger
 //
-//  A tiny, human-writable text notation so a score can be carried in plain
-//  text. The intended flow: a user photographs a score, asks an AI to read it
-//  and write it out in *this* format, copies the result, and pastes it into the
-//  app — where `parse` turns it back into notes on the staff. `serialize` does
-//  the reverse, so the current score can be copied out as a worked example to
-//  hand the AI.
+//  A tiny, human-writable text notation: `parse` turns a line of text into
+//  notes and `serialize` writes a score back out. It seeds sample scores and
+//  keeps the note spellings in one tested place.
 //
 //  One note is one whitespace/comma-separated token, e.g. `4옥도8분음`:
 //    [점][셋잇단] [옥타브]옥 [계이름][임시표] [길이]
@@ -23,8 +20,7 @@
 //  which every AI and every reader can write without knowing Korean:
 //    [음이름][임시표][옥타브]:[길이][. 점][t 셋잇단]   e.g. `C4:4`, `F#4:8.`, `Bb3:8t`
 //    쉼표는 `R:4`. 옥타브나 `:길이` 를 빼면 직전 값을 그대로 쓴다.
-//  `parse` reads both notations in any language, so a pasted text never
-//  depends on which language the phone is set to.
+//  `parse` reads both notations in any language.
 //
 
 import Foundation
@@ -37,46 +33,6 @@ enum ScoreTextFormat {
     static var usesKoreanNotation: Bool {
         Bundle.main.preferredLocalizations.first?.hasPrefix("ko") ?? false
     }
-
-    /// The instruction block a user copies and hands to an AI ("read this score
-    /// and write it in this format"), in the notation this language uses.
-    static var ruleText: String {
-        usesKoreanNotation ? koreanRuleText : letterRuleText
-    }
-
-    /// The letter-notation rule, translated per language. Kept in sync with
-    /// `parseLetterToken` below.
-    static var letterRuleText: String {
-        String(localized: "score.rule.letters", defaultValue: """
-        아래 규칙으로 악보를 텍스트로 적어줘. 음표 하나를 한 덩어리로 쓰고, 음표끼리는 공백으로 구분해. 설명 없이 음표 텍스트만 한 줄로 줘.
-
-        음표 = [음이름][임시표][옥타브]:[길이][점·셋잇단]
-        · 음이름: C D E F G A B
-        · 임시표: 올림 #, 내림 b (없으면 생략)
-        · 옥타브: 숫자 (가온다=C4). 생략하면 직전 옥타브 유지
-        · 길이: 1 온음표, 2 2분음표, 4 4분음표, 8 8분음표, 16 16분음표. ":길이"를 생략하면 직전 길이 유지
-        · 점음표는 길이 뒤에 "." (C4:4.), 셋잇단음표는 "t" (C4:8t)
-        · 쉼표는 음이름 대신 R (R:4, R:8)
-
-        예시) C4:4 D4:4 E4:8 F4:8 G4:2
-        """)
-    }
-
-    /// The Korean notation's rule (shown only in Korean).
-    static let koreanRuleText = """
-    아래 규칙으로 악보를 텍스트로 적어줘. 음표 하나를 한 덩어리로 쓰고, 음표끼리는 \
-    공백으로 구분해. 설명 없이 음표 텍스트만 한 줄로 줘.
-
-    음표 = [옥타브]옥[계이름][임시표][길이]
-    · 옥타브: 숫자+"옥" (가온다=4옥). 생략하면 직전 옥타브 유지
-    · 계이름: 도 레 미 파 솔 라 시 (또는 C D E F G A B)
-    · 임시표: 올림 #, 내림 b (없으면 생략)
-    · 길이: 온음 / 2분음 / 4분음 / 8분음 / 16분음
-    · 점음표는 앞에 "점" (점4분음), 셋잇단음표는 앞에 "셋잇단" (셋잇단8분음)
-    · 쉼표는 계이름 대신 "쉼" (4분쉼, 8분쉼)
-
-    예시) 4옥도4분음 4옥레4분음 4옥미8분음 4옥파8분음 4옥솔2분음
-    """
 
     // MARK: - Pitch tables
 

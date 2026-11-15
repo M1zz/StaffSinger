@@ -17,7 +17,7 @@ for L in $LANGS; do
   OUT="$ROOT/docs/screenshots/marketing/$L"; mkdir -p "$OUT"
   echo "▸ $L"
   N=0
-  for S in piano playback dictation paste; do
+  for S in piano playback dictation; do
     N=$((N+1))
     xcrun simctl terminate "$UDID" $BID 2>/dev/null || true
     sleep 1

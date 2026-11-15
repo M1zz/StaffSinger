@@ -391,35 +391,16 @@ final class ScoreViewModel: ObservableObject {
         if let note = started.max(by: latest) { pick(note.id) }
     }
 
-    // MARK: - Paste from text
+    // MARK: - Import
 
-    /// Replace the score with notes parsed from pasted text (the AI-readable
-    /// format in `ScoreTextFormat`). Returns the imported notes so the caller
-    /// can report how many landed; an empty result means nothing parsed and the
-    /// existing score is left untouched.
-    @discardableResult
-    func importFromText(_ text: String) -> [ScoreNote] {
-        let notes = ScoreTextFormat.parse(text)
-        guard !notes.isEmpty else { return [] }
-        checkpoint()
-        replaceNotes(notes)
-        return notes
-    }
-
-    /// Replace the score with a ready-made list of notes (voice dictation).
-    /// Mirrors `importFromText` so every bulk import lands the same way.
+    /// Replace the score with a ready-made list of notes (voice dictation, the
+    /// photo reader).
     /// `unsure` marks the notes the source wasn't confident about (the photo
     /// reader), so the review can walk the user through just those.
     func importNotes(_ notes: [ScoreNote], unsure: Set<UUID> = []) {
         guard !notes.isEmpty else { return }
         checkpoint()
         replaceNotes(notes, unsure: unsure)
-    }
-
-    /// The current score rendered back into the text format — handy to copy out
-    /// as a worked example for the AI.
-    func exportToText() -> String {
-        ScoreTextFormat.serialize(score)
     }
 
     // MARK: - Score settings

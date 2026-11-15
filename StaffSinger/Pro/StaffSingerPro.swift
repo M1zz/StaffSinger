@@ -4,8 +4,8 @@
 //
 //  초견 Pro — 무료 · Pro 두 칸. **속은 전부 LeeoKit 의 `LeeoStore` 다.**
 //
-//  음표를 하나씩 찍고, 듣고, 고치는 것은 끝까지 무료다. 손을 덜어 주는 세 가지
-//  (계이름 받아쓰기 · 글로 붙여넣기 · 사진 자동 채보)만 Pro 이고, 각각 세 번씩 무료로 써 본다.
+//  음표를 하나씩 찍고, 듣고, 고치는 것은 끝까지 무료다. 손을 덜어 주는 두 가지
+//  (계이름 받아쓰기 · 사진 자동 채보)만 Pro 이고, 각각 세 번씩 무료로 써 본다.
 //
 //  이 파일이 정하는 것:
 //   · 상품 ID (`ProProduct`) — App Store Connect · Products.storekit 과 같아야 한다.
@@ -48,8 +48,6 @@ enum ProProduct {
 enum ProFeature: String, CaseIterable, Identifiable {
     /// 계이름 받아쓰기 (music.mic · DictationSheet)
     case dictation
-    /// 글로 붙여넣기의 '악보로 변환' (doc.on.clipboard · PasteScoreSheet)
-    case paste
     /// 참고 사진의 자동 채보 (ReferenceOverlay · OMR)
     case transcribe
 
@@ -61,7 +59,6 @@ enum ProFeature: String, CaseIterable, Identifiable {
     var title: String {
         switch self {
         case .dictation:  String(localized: "계이름 받아쓰기", comment: "Pro feature name: solfège dictation")
-        case .paste:      String(localized: "글로 붙여넣기", comment: "Pro feature name: paste a score written as text")
         case .transcribe: String(localized: "사진 자동 채보 (실험)", comment: "Pro feature name: read notes from a photo (experimental)")
         }
     }
@@ -69,7 +66,6 @@ enum ProFeature: String, CaseIterable, Identifiable {
     var systemImage: String {
         switch self {
         case .dictation:  "music.mic"
-        case .paste:      "doc.on.clipboard"
         case .transcribe: "camera.viewfinder"
         }
     }
@@ -228,7 +224,7 @@ final class ProAccess {
     // MARK: - 페이월 전에 설치한 사람
 
     /// 페이월이 없던 마지막 빌드(1.0.6 빌드 8). 이 빌드까지 받은 사람은 Pro 를 그대로 쓴다.
-    /// 받아쓰기 · 붙여넣기 · 채보를 무료로 쓰던 사람에게서 뺏지 않는다.
+    /// 받아쓰기 · 채보를 무료로 쓰던 사람에게서 뺏지 않는다.
     nonisolated static let lastBuildBeforePaywall = 8
 
     /// App Store 가 서명한 최초 다운로드 빌드로 알아본다. 지웠다 다시 받아도 같다.

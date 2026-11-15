@@ -25,7 +25,7 @@ enum StaffSingerSpec: LeeoAppSpec {
         createsAccounts: false)
 
     /// 무료 · Pro 두 칸 (→ Pro/StaffSingerPro.swift).
-    /// 음표를 찍고 듣는 것은 전부 무료, 손을 덜어 주는 세 가지만 Pro 이고 각각 세 번씩 무료로 써 본다.
+    /// 음표를 찍고 듣는 것은 전부 무료, 손을 덜어 주는 두 가지만 Pro 이고 각각 세 번씩 무료로 써 본다.
     /// Pro 는 주 · 월 · 연 구독과 평생, 구독자에게만 보이는 졸업 평생가.
     ///
     /// ⚠️ 팁 상품은 여기 넣지 않는다(아래 `StaffSingerTip`). 넣으면 팁을 낸 사람이 Pro 가 된다.

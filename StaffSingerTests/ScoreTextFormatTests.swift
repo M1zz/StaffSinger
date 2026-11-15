@@ -2,7 +2,7 @@
 //  ScoreTextFormatTests.swift
 //  StaffSingerTests
 //
-//  Tests for the pasteable text notation: parsing tokens into notes (octave,
+//  Tests for the text notation: parsing tokens into notes (octave,
 //  solfege, accidentals, durations, dots, triplets, rests, carry-over) and the
 //  serialize → parse round trip.
 //
@@ -165,9 +165,7 @@ final class ScoreTextFormatTests: XCTestCase {
         XCTAssertEqual(ScoreTextFormat.serialize(score, korean: false), "C4:4 R:8")
     }
 
-    func testRuleTextHasNoKoreanOutsideKorean() {
-        // The letter rule is what every non-Korean language shows; its example
-        // must parse with the same parser.
+    func testReadsAPlainLetterLine() {
         let example = "C4:4 D4:4 E4:8 F4:8 G4:2"
         XCTAssertEqual(ScoreTextFormat.parse(example).map(\.pitch.midi), [60, 62, 64, 65, 67])
     }

@@ -1,155 +1,6 @@
 {
   "sourceLanguage" : "ko",
   "strings" : {
-    "\n2마디를 넘는 음표는 화면에 보이지 않을 수 있어요." : {
-      "comment" : "Paste overflow warning (starts with newline)",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\n2마디를 넘는 음표는 화면에 보이지 않을 수 있어요."
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nNotes beyond the second bar may not be visible."
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nNotes beyond the second bar may not be visible."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\n超过第2小节的音符可能不会显示在屏幕上。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\n超過第2小節的音符可能不會顯示在畫面上。"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\n2小節を超える音符は画面に表示されないことがあります。"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nНоты за пределами второго такта могут не отображаться на экране."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nLas notas más allá del segundo compás pueden no verse en pantalla."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nNoten hinter dem zweiten Takt sind auf dem Bildschirm eventuell nicht zu sehen."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nLes notes au-delà de la deuxième mesure peuvent ne pas s’afficher à l’écran."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nLe note oltre la seconda battuta potrebbero non essere visibili sullo schermo."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nNotas além do segundo compasso podem não aparecer na tela."
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nโน้ตที่เกินห้องที่สองอาจไม่แสดงบนหน้าจอ"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nCác nốt sau ô nhịp thứ hai có thể không hiện trên màn hình."
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nNoty za druhým taktem nemusí být na obrazovce vidět."
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nNoder efter anden takt vises muligvis ikke på skærmen."
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nΟι νότες μετά το δεύτερο μέτρο μπορεί να μην εμφανίζονται στην οθόνη."
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nToisen tahdin jälkeiset nuotit eivät välttämättä näy näytöllä."
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nNot setelah birama kedua mungkin tidak terlihat di layar."
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nNoter etter andre takt vises kanskje ikke på skjermen."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nNoten na de tweede maat zijn mogelijk niet zichtbaar op het scherm."
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nNuty po drugim takcie mogą nie być widoczne na ekranie."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nNoter efter andra takten syns kanske inte på skärmen."
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "\nİkinci ölçüden sonraki notalar ekranda görünmeyebilir."
-          }
-        }
-      }
-    },
     "\"%@\" — 여기서 계이름을 찾지 못했습니다.\n도 레 미 파 솔 라 시 로 말해 주세요." : {
       "comment" : "Dictation error; %@ = what was heard",
       "localizations" : {
@@ -1040,155 +891,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dikte edilen nota: %lld.\nPerde veya süre yanlışsa notayı sürükleyerek düzelt."
-          }
-        }
-      }
-    },
-    "%lld개 음표를 불러왔습니다." : {
-      "comment" : "Paste success; %lld = note count",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "%lld개 음표를 불러왔습니다."
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notes imported: %lld."
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notes imported: %lld."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已导入音符：%lld。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已匯入音符：%lld。"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "読み込んだ音符：%lld。"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Загружено нот: %lld."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notas importadas: %lld."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importierte Noten: %lld."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notes importées : %lld."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Note importate: %lld."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notas importadas: %lld."
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "นำเข้าโน้ตแล้ว: %lld"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Số nốt đã nhập: %lld."
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importované noty: %lld."
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importerede noder: %lld."
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Νότες που εισήχθησαν: %lld."
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tuotuja nuotteja: %lld."
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Not yang diimpor: %lld."
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importerte noter: %lld."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Geïmporteerde noten: %lld."
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zaimportowane nuty: %lld."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importerade noter: %lld."
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "İçe aktarılan nota: %lld."
           }
         }
       }
@@ -2683,155 +2385,6 @@
         }
       }
     },
-    "AI에게 줄 규칙 복사" : {
-      "comment" : "Button",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AI에게 줄 규칙 복사"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copy Rule for AI"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copy Rule for AI"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "复制给AI的规则"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "複製給 AI 的規則"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "AIに渡すルールをコピー"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Скопировать правило для ИИ"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copiar regla para la IA"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Regel für die KI kopieren"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copier la règle pour l’IA"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copia la regola per l’IA"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copiar regra para a IA"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "คัดลอกกฎให้ AI"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sao chép quy tắc cho AI"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zkopírovat pravidlo pro AI"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopiér regel til AI"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Αντιγραφή κανόνα για το AI"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopioi sääntö tekoälylle"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Salin aturan untuk AI"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopier regel til KI"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopieer regel voor AI"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopiuj regułę dla AI"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopiera regel till AI"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yapay Zekâ İçin Kuralı Kopyala"
-          }
-        }
-      }
-    },
     "Siri에게 말하거나 단축어로 바로 실행해요." : {
       "comment" : "Roadmap item detail: Siri and Shortcuts",
       "localizations" : {
@@ -4020,155 +3573,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nota adları anlaşılamadı. Metronoma uyarak \"do re mi\" diye net bir şekilde söylemeyi dene."
-          }
-        }
-      }
-    },
-    "규칙을 복사했어요" : {
-      "comment" : "Button after copying",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "규칙을 복사했어요"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rule copied"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rule copied"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已复制规则"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "已複製規則"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ルールをコピーしました"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Правило скопировано"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Regla copiada"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Regel kopiert"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Règle copiée"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Regola copiata"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Regra copiada"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "คัดลอกกฎแล้ว"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Đã sao chép quy tắc"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pravidlo zkopírováno"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Regel kopieret"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ο κανόνας αντιγράφηκε"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sääntö kopioitu"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aturan disalin"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Regel kopiert"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Regel gekopieerd"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Reguła skopiowana"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Regeln kopierad"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kural kopyalandı"
           }
         }
       }
@@ -5957,155 +5361,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daha fazla dil"
-          }
-        }
-      }
-    },
-    "도 레 미 파 솔 라 시 · 쉬는 곳은 \"쉼\"" : {
-      "comment" : "Dictation idle detail: Korean solfège syllables are spoken; keep them",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "도 레 미 파 솔 라 시 · 쉬는 곳은 \"쉼\""
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "do re mi fa sol la ti · say \"rest\" for a rest"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "do re mi fa sol la ti · say \"rest\" for a rest"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "用英语说 do re mi fa sol la ti · 休止处说“rest”"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "用英語說 do re mi fa sol la ti · 休止處說「rest」"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "英語で do re mi fa sol la ti · 休符は「rest」"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "По-английски: do re mi fa sol la ti · пауза — «rest»"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "En inglés: do re mi fa sol la ti · para un silencio, di «rest»"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Auf Englisch: do re mi fa sol la ti · für eine Pause „rest“"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "En anglais : do re mi fa sol la ti · pour un silence, « rest »"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "In inglese: do re mi fa sol la ti · per una pausa, «rest»"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Em inglês: do re mi fa sol la ti · para uma pausa, diga \"rest\""
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "พูดเป็นภาษาอังกฤษ do re mi fa sol la ti · ตัวหยุดให้พูดว่า “rest”"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Đọc bằng tiếng Anh: do re mi fa sol la ti · chỗ nghỉ nói \"rest\""
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Anglicky: do re mi fa sol la ti · pomlka je „rest“"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "På engelsk: do re mi fa sol la ti · sig “rest” for en pause"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Στα αγγλικά: do re mi fa sol la ti · για παύση πείτε «rest»"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Englanniksi: do re mi fa sol la ti · tauko on ”rest”"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dalam bahasa Inggris: do re mi fa sol la ti · untuk tanda diam, ucapkan \"rest\""
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "På engelsk: do re mi fa sol la ti · si «rest» for en pause"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "In het Engels: do re mi fa sol la ti · zeg ‘rest’ voor een rust"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Po angielsku: do re mi fa sol la ti · pauza to „rest”"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "På engelska: do re mi fa sol la ti · säg ”rest” för en paus"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "İngilizce: do re mi fa sol la ti · es için \"rest\" de"
           }
         }
       }
@@ -9090,155 +8345,6 @@
         }
       }
     },
-    "붙여넣은 텍스트에서 음표를 찾지 못했습니다.\n규칙(예: 4옥도8분음)에 맞는지 확인해 주세요." : {
-      "comment" : "Paste failure; example is Korean format, keep",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "붙여넣은 텍스트에서 음표를 찾지 못했습니다.\n규칙(예: 4옥도8분음)에 맞는지 확인해 주세요."
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No notes found in the pasted text.\nCheck that it follows the rule (e.g. C4:8)."
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No notes found in the pasted text.\nCheck that it follows the rule (e.g. C4:8)."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "粘贴的文字中没有找到音符。\n请检查是否符合规则（例：C4:8）。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "貼上的文字中沒有找到音符。\n請檢查是否符合規則（例：C4:8）。"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "貼り付けたテキストから音符が見つかりませんでした。\nルール（例：C4:8）に合っているか確認してください。"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Во вставленном тексте не найдено нот.\nПроверьте, что он соответствует правилу (например, C4:8)."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "No se encontraron notas en el texto pegado.\nComprueba que siga la regla (p. ej., C4:8)."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Im eingefügten Text wurden keine Noten gefunden.\nPrüfe, ob er der Regel entspricht (z. B. C4:8)."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aucune note trouvée dans le texte collé.\nVérifiez qu’il suit la règle (ex. : C4:8)."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nessuna nota trovata nel testo incollato.\nVerifica che segua la regola (es. C4:8)."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nenhuma nota encontrada no texto colado.\nVerifique se ele segue a regra (ex.: C4:8)."
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ไม่พบโน้ตในข้อความที่วาง\nโปรดตรวจว่าเป็นไปตามกฎหรือไม่ (เช่น C4:8)"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Không tìm thấy nốt nào trong văn bản đã dán.\nHãy kiểm tra xem có đúng quy tắc không (vd: C4:8)."
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ve vloženém textu nebyly nalezeny žádné noty.\nZkontrolujte, zda odpovídá pravidlu (např. C4:8)."
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Der blev ikke fundet nogen noder i den indsatte tekst.\nTjek, at den følger reglen (f.eks. C4:8)."
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Δεν βρέθηκαν νότες στο κείμενο που επικολλήσατε.\nΕλέγξτε ότι ακολουθεί τον κανόνα (π.χ. C4:8)."
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Liitetystä tekstistä ei löytynyt nuotteja.\nTarkista, että se noudattaa sääntöä (esim. C4:8)."
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tidak ada not yang ditemukan di teks yang ditempel.\nPastikan teksnya mengikuti aturan (mis. C4:8)."
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fant ingen noter i teksten du limte inn.\nSjekk at den følger regelen (f.eks. C4:8)."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Er zijn geen noten gevonden in de geplakte tekst.\nControleer of die de regel volgt (bijv. C4:8)."
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "We wklejonym tekście nie znaleziono nut.\nSprawdź, czy jest zgodny z regułą (np. C4:8)."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Inga noter hittades i den inklistrade texten.\nKontrollera att den följer regeln (t.ex. C4:8)."
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yapıştırılan metinde nota bulunamadı.\nKurala uyup uymadığını kontrol et (ör. C4:8)."
-          }
-        }
-      }
-    },
     "빠르면 템포를 낮추세요 (현재 %lld BPM)" : {
       "comment" : "Tip; %lld = tempo",
       "localizations" : {
@@ -11176,155 +10282,6 @@
         }
       }
     },
-    "악보 붙여넣기" : {
-      "comment" : "Sheet title",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "악보 붙여넣기"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paste Score"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paste Score"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "粘贴乐谱"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "貼上樂譜"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "譜面を貼り付け"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вставка нот"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pegar partitura"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Partitur einfügen"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Coller une partition"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Incolla spartito"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Colar partitura"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "วางโน้ต"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dán bản nhạc"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vložit partituru"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sæt noder ind"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Επικόλληση παρτιτούρας"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Liitä nuotit"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tempel partitur"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lim inn noter"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Partituur plakken"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wklej partyturę"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Klistra in noter"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nota Yapıştır"
-          }
-        }
-      }
-    },
     "악보 사진" : {
       "comment" : "Button / dialog title: reference photo of a score",
       "localizations" : {
@@ -11470,155 +10427,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nota Fotoğrafı"
-          }
-        }
-      }
-    },
-    "악보 사진을 AI에게 주고 아래 규칙대로 적어 달라고 한 뒤, 받은 텍스트를 붙여넣으면 오선지에 들어갑니다." : {
-      "comment" : "Paste sheet intro",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "악보 사진을 AI에게 주고 아래 규칙대로 적어 달라고 한 뒤, 받은 텍스트를 붙여넣으면 오선지에 들어갑니다."
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Give a photo of the score to an AI, ask it to write it out by the rule below, then paste the text it returns to fill the staff."
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Give a photo of the score to an AI, ask it to write it out by the rule below, then paste the text it returns to fill the staff."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "把乐谱照片交给AI，请它按下面的规则写成文字，再把得到的文字粘贴进来，五线谱就填好了。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "把樂譜照片交給 AI，請它依下面的規則寫成文字，再把得到的文字貼上，五線譜就填好了。"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "譜面の写真をAIに渡して、下のルールどおりに書いてもらい、返ってきたテキストを貼り付けると五線に入ります。"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Отдайте фото нот ИИ, попросите записать их по правилу ниже, а полученный текст вставьте сюда — он заполнит нотный стан."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dale a una IA la foto de la partitura, pídele que la escriba con la regla de abajo y pega el texto que te devuelva para llenar el pentagrama."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gib ein Foto der Noten an eine KI, lass sie es nach der Regel unten aufschreiben und füge den zurückgegebenen Text ein, um das Notensystem zu füllen."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Donnez la photo de la partition à une IA, demandez-lui de l’écrire selon la règle ci-dessous, puis collez le texte reçu pour remplir la portée."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dai la foto dello spartito a un’IA, chiedile di scriverlo con la regola qui sotto, poi incolla il testo ricevuto per riempire il pentagramma."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Passe a foto da partitura para uma IA, peça que ela escreva pela regra abaixo e cole o texto que ela devolver para preencher a pauta."
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ส่งภาพโน้ตให้ AI แล้วให้เขียนตามกฎด้านล่าง จากนั้นวางข้อความที่ได้ โน้ตก็จะเข้าไปในบรรทัดห้าเส้น"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Đưa ảnh bản nhạc cho AI, nhờ nó viết ra theo quy tắc bên dưới, rồi dán văn bản nhận được để điền vào khuông nhạc."
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dejte fotku partitury umělé inteligenci, ať ji zapíše podle pravidla níže, a vložený text pak vyplní pětilinku."
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Giv et foto af noderne til en AI, bed den skrive dem efter reglen nedenfor, og sæt den tekst, du får, ind for at udfylde nodelinjerne."
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Δώστε μια φωτογραφία της παρτιτούρας σε ένα AI, ζητήστε του να τη γράψει με τον παρακάτω κανόνα και επικολλήστε το κείμενο που θα πάρετε για να γεμίσει το πεντάγραμμο."
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Anna nuottikuva tekoälylle, pyydä sitä kirjoittamaan se alla olevan säännön mukaan ja liitä saamasi teksti, niin nuottiviivasto täyttyy."
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Berikan foto partitur ke AI, minta AI menuliskannya sesuai aturan di bawah, lalu tempel teks yang diterima untuk mengisi paranada."
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Gi et bilde av notene til en KI, be den skrive dem etter regelen nedenfor, og lim inn teksten du får tilbake for å fylle notesystemet."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Geef een foto van de partituur aan een AI, laat die het opschrijven volgens de regel hieronder en plak de tekst die je terugkrijgt om de notenbalk te vullen."
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Daj zdjęcie nut sztucznej inteligencji, poproś o zapisanie ich według reguły poniżej, a otrzymany tekst wklej, aby wypełnić pięciolinię."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ge ett foto av noterna till en AI, be den skriva ut dem enligt regeln nedan och klistra in texten du får tillbaka för att fylla notsystemet."
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Nota fotoğrafını bir yapay zekâya ver, aşağıdaki kurala göre yazmasını iste, dönen metni yapıştır; porte dolsun."
           }
         }
       }
@@ -11917,155 +10725,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nota Başlığı"
-          }
-        }
-      }
-    },
-    "악보로 변환" : {
-      "comment" : "Button",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "악보로 변환"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Convert to Score"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Convert to Score"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "转换为乐谱"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "轉換為樂譜"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "譜面に変換"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Преобразовать в ноты"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Convertir en partitura"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "In Partitur umwandeln"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Convertir en partition"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Converti in spartito"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Converter em partitura"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "แปลงเป็นโน้ต"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Chuyển thành bản nhạc"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Převést na partituru"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Konverter til noder"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Μετατροπή σε παρτιτούρα"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Muunna nuoteiksi"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ubah menjadi partitur"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Konverter til noter"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Omzetten naar partituur"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zamień na partyturę"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Konvertera till noter"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notaya Çevir"
           }
         }
       }
@@ -13705,155 +12364,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yenilikler"
-          }
-        }
-      }
-    },
-    "여기에 붙여넣기" : {
-      "comment" : "Header",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "여기에 붙여넣기"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paste Here"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paste Here"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在此粘贴"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在此貼上"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ここに貼り付け"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вставьте сюда"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pega aquí"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hier einfügen"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Coller ici"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Incolla qui"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cole aqui"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "วางที่นี่"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dán vào đây"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vložte sem"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sæt ind her"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Επικόλληση εδώ"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Liitä tähän"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tempel di sini"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lim inn her"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Plak hier"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wklej tutaj"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Klistra in här"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Buraya Yapıştır"
           }
         }
       }
@@ -20116,155 +18626,6 @@
         }
       }
     },
-    "클립보드에서 붙여넣기" : {
-      "comment" : "Button",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "클립보드에서 붙여넣기"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paste from Clipboard"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paste from Clipboard"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "从剪贴板粘贴"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "從剪貼簿貼上"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "クリップボードから貼り付け"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вставить из буфера"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pegar del portapapeles"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aus der Zwischenablage einfügen"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Coller depuis le presse-papiers"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Incolla dagli appunti"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Colar da área de transferência"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "วางจากคลิปบอร์ด"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dán từ bảng nhớ tạm"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vložit ze schránky"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sæt ind fra udklipsholder"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Επικόλληση από το πρόχειρο"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Liitä leikepöydältä"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tempel dari papan klip"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lim inn fra utklippstavlen"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Plakken vanaf klembord"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wklej ze schowka"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Klistra in från urklipp"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Panodan Yapıştır"
-          }
-        }
-      }
-    },
     "템포" : {
       "comment" : "Section: tempo",
       "localizations" : {
@@ -20857,155 +19218,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notaları tek tek, net bir şekilde ve tam vuruşta söyle"
-          }
-        }
-      }
-    },
-    "현재 악보를 텍스트로 복사 (AI 예시용)" : {
-      "comment" : "Button",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "현재 악보를 텍스트로 복사 (AI 예시용)"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copy Current Score as Text (as an example for the AI)"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copy Current Score as Text (as an example for the AI)"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "将当前乐谱复制为文字（给AI做示例）"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "將目前的樂譜複製為文字（給 AI 當範例）"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "現在の譜面をテキストでコピー（AIへの例示用）"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Скопировать текущие ноты текстом (как пример для ИИ)"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copiar la partitura actual como texto (como ejemplo para la IA)"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aktuelle Partitur als Text kopieren (als Beispiel für die KI)"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copier la partition actuelle en texte (comme exemple pour l’IA)"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copia lo spartito attuale come testo (come esempio per l’IA)"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copiar a partitura atual como texto (como exemplo para a IA)"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "คัดลอกโน้ตปัจจุบันเป็นข้อความ (เป็นตัวอย่างให้ AI)"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sao chép bản nhạc hiện tại thành văn bản (làm ví dụ cho AI)"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zkopírovat aktuální partituru jako text (jako příklad pro AI)"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopiér de nuværende noder som tekst (som eksempel til AI)"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Αντιγραφή της τρέχουσας παρτιτούρας ως κείμενο (ως παράδειγμα για το AI)"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopioi nykyiset nuotit tekstinä (esimerkiksi tekoälylle)"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Salin partitur saat ini sebagai teks (sebagai contoh untuk AI)"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopier gjeldende noter som tekst (som eksempel til KI)"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopieer de huidige partituur als tekst (als voorbeeld voor de AI)"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopiuj bieżącą partyturę jako tekst (jako przykład dla AI)"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopiera nuvarande noter som text (som exempel till AI)"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mevcut Notayı Metin Olarak Kopyala (yapay zekâya örnek olsun diye)"
           }
         }
       }
@@ -21903,155 +20115,6 @@
         }
       },
       "comment" : "A rest in the dictated-notes strip"
-    },
-    "score.rule.letters" : {
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Write this score out as text using the rules below. Write each note as one token and separate notes with spaces. Reply with the note text only, on one line, with no explanation.\n\nNote = [letter][accidental][octave]:[length][dot/triplet]\n· Letter: C D E F G A B\n· Accidental: # for sharp, b for flat (leave out if none)\n· Octave: a number (middle C = C4). Leave it out to keep the previous octave\n· Length: 1 whole, 2 half, 4 quarter, 8 eighth, 16 sixteenth. Leave out \":length\" to keep the previous length\n· Dotted note: \".\" after the length (C4:4.), triplet: \"t\" (C4:8t)\n· Rest: R instead of the letter (R:4, R:8)\n\nExample: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Write this score out as text using the rules below. Write each note as one token and separate notes with spaces. Reply with the note text only, on one line, with no explanation.\n\nNote = [letter][accidental][octave]:[length][dot/triplet]\n· Letter: C D E F G A B\n· Accidental: # for sharp, b for flat (leave out if none)\n· Octave: a number (middle C = C4). Leave it out to keep the previous octave\n· Length: 1 semibreve, 2 minim, 4 crotchet, 8 quaver, 16 semiquaver. Leave out \":length\" to keep the previous length\n· Dotted note: \".\" after the length (C4:4.), triplet: \"t\" (C4:8t)\n· Rest: R instead of the letter (R:4, R:8)\n\nExample: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "请按下面的规则把乐谱写成文字。每个音符写成一个整体，音符之间用空格分隔。不要解释，只用一行给出音符文字。\n\n音符 = [音名][变音记号][八度]:[时值][附点/三连音]\n· 音名：C D E F G A B\n· 变音记号：升号 #，降号 b（没有就省略）\n· 八度：数字（中央C = C4）。省略则沿用前一个八度\n· 时值：1 全音符，2 二分音符，4 四分音符，8 八分音符，16 十六分音符。省略“:时值”则沿用前一个时值\n· 附点音符在时值后加“.”（C4:4.），三连音加“t”（C4:8t）\n· 休止符用 R 代替音名（R:4、R:8）\n\n示例：C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "請依照下面的規則把樂譜寫成文字。每個音符寫成一個整體，音符之間用空格分隔。不要解釋，只用一行給出音符文字。\n\n音符 = [音名][變音記號][八度]:[時值][附點/三連音]\n· 音名：C D E F G A B\n· 變音記號：升記號 #，降記號 b（沒有就省略）\n· 八度：數字（中央C = C4）。省略則沿用前一個八度\n· 時值：1 全音符，2 二分音符，4 四分音符，8 八分音符，16 十六分音符。省略「:時值」則沿用前一個時值\n· 附點音符在時值後加「.」（C4:4.），三連音加「t」（C4:8t）\n· 休止符用 R 取代音名（R:4、R:8）\n\n範例：C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "次のルールで楽譜をテキストに書き起こしてください。音符は1つずつひとまとまりで書き、音符どうしはスペースで区切ります。説明は付けず、音符のテキストだけを1行で返してください。\n\n音符 = [音名][臨時記号][オクターブ]:[長さ][付点・3連符]\n・音名：C D E F G A B\n・臨時記号：シャープ #、フラット b（なければ省略）\n・オクターブ：数字（中央のド = C4）。省略すると直前のオクターブのまま\n・長さ：1 全音符、2 2分音符、4 4分音符、8 8分音符、16 16分音符。「:長さ」を省略すると直前の長さのまま\n・付点音符は長さの後に「.」（C4:4.）、3連符は「t」（C4:8t）\n・休符は音名の代わりに R（R:4、R:8）\n\n例：C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Запиши эти ноты текстом по правилам ниже. Каждую ноту пиши одним словом, ноты разделяй пробелами. Ответь только строкой нот, без пояснений.\n\nНота = [буква][знак альтерации][октава]:[длительность][точка/триоль]\n· Буква: C D E F G A B\n· Знак: # — диез, b — бемоль (если нет, не пиши)\n· Октава: число (до первой октавы = C4). Если не указана, остаётся прежняя\n· Длительность: 1 целая, 2 половинная, 4 четверть, 8 восьмая, 16 шестнадцатая. Без «:длительности» остаётся прежняя\n· Нота с точкой: «.» после длительности (C4:4.), триоль: «t» (C4:8t)\n· Пауза: R вместо буквы (R:4, R:8)\n\nПример: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Escribe esta partitura como texto siguiendo las reglas de abajo. Escribe cada nota como un solo bloque y separa las notas con espacios. Responde solo con el texto de las notas, en una línea y sin explicaciones.\n\nNota = [letra][alteración][octava]:[duración][puntillo/tresillo]\n· Letra: C D E F G A B\n· Alteración: # sostenido, b bemol (omítela si no hay)\n· Octava: un número (do central = C4). Si la omites, se mantiene la anterior\n· Duración: 1 redonda, 2 blanca, 4 negra, 8 corchea, 16 semicorchea. Si omites \":duración\", se mantiene la anterior\n· Nota con puntillo: \".\" tras la duración (C4:4.), tresillo: \"t\" (C4:8t)\n· Silencio: R en lugar de la letra (R:4, R:8)\n\nEjemplo: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Schreib diese Noten nach den folgenden Regeln als Text auf. Schreib jede Note als ein Wort und trenne die Noten mit Leerzeichen. Antworte nur mit dem Notentext in einer Zeile, ohne Erklärung.\n\nNote = [Buchstabe][Vorzeichen][Oktave]:[Länge][Punkt/Triole]\n· Buchstabe: C D E F G A B (B steht hier für H)\n· Vorzeichen: # für Kreuz, b für B (sonst weglassen)\n· Oktave: eine Zahl (eingestrichenes C = C4). Weglassen behält die vorige Oktave\n· Länge: 1 Ganze, 2 Halbe, 4 Viertel, 8 Achtel, 16 Sechzehntel. Ohne „:Länge“ bleibt die vorige Länge\n· Punktierte Note: „.“ nach der Länge (C4:4.), Triole: „t“ (C4:8t)\n· Pause: R statt des Buchstabens (R:4, R:8)\n\nBeispiel: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Écris cette partition en texte selon les règles ci-dessous. Écris chaque note d’un seul bloc et sépare les notes par des espaces. Réponds uniquement avec le texte des notes, sur une ligne, sans explication.\n\nNote = [lettre][altération][octave]:[durée][point/triolet]\n· Lettre : C D E F G A B (do ré mi fa sol la si)\n· Altération : # pour dièse, b pour bémol (à omettre s’il n’y en a pas)\n· Octave : un nombre (do central = C4). Sans nombre, l’octave précédente est conservée\n· Durée : 1 ronde, 2 blanche, 4 noire, 8 croche, 16 double croche. Sans « :durée », la durée précédente est conservée\n· Note pointée : « . » après la durée (C4:4.), triolet : « t » (C4:8t)\n· Silence : R à la place de la lettre (R:4, R:8)\n\nExemple : C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Trascrivi questo spartito come testo seguendo le regole qui sotto. Scrivi ogni nota come un unico blocco e separa le note con spazi. Rispondi solo con il testo delle note, su una riga, senza spiegazioni.\n\nNota = [lettera][alterazione][ottava]:[durata][punto/terzina]\n· Lettera: C D E F G A B (do re mi fa sol la si)\n· Alterazione: # diesis, b bemolle (ometti se assente)\n· Ottava: un numero (do centrale = C4). Se omessa, resta quella precedente\n· Durata: 1 semibreve, 2 minima, 4 semiminima, 8 croma, 16 semicroma. Se ometti \":durata\", resta quella precedente\n· Nota puntata: \".\" dopo la durata (C4:4.), terzina: \"t\" (C4:8t)\n· Pausa: R al posto della lettera (R:4, R:8)\n\nEsempio: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Escreva esta partitura como texto seguindo as regras abaixo. Escreva cada nota como um bloco único e separe as notas com espaços. Responda só com o texto das notas, em uma linha, sem explicações.\n\nNota = [letra][acidente][oitava]:[duração][ponto/quiáltera]\n· Letra: C D E F G A B (dó ré mi fá sol lá si)\n· Acidente: # sustenido, b bemol (omita se não houver)\n· Oitava: um número (dó central = C4). Se omitir, vale a oitava anterior\n· Duração: 1 semibreve, 2 mínima, 4 semínima, 8 colcheia, 16 semicolcheia. Se omitir \":duração\", vale a anterior\n· Nota pontuada: \".\" depois da duração (C4:4.), tercina: \"t\" (C4:8t)\n· Pausa: R no lugar da letra (R:4, R:8)\n\nExemplo: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ช่วยเขียนโน้ตเพลงนี้เป็นข้อความตามกฎด้านล่าง เขียนโน้ตแต่ละตัวติดกันเป็นก้อนเดียว และเว้นวรรคคั่นระหว่างโน้ต ตอบเฉพาะข้อความโน้ตในบรรทัดเดียว ไม่ต้องอธิบาย\n\nโน้ต = [ชื่อตัวโน้ต][เครื่องหมายแปลงเสียง][อ็อกเทฟ]:[ความยาว][จุด/โน้ตสามพยางค์]\n· ชื่อตัวโน้ต: C D E F G A B\n· เครื่องหมายแปลงเสียง: ชาร์ป #, แฟล็ต b (ถ้าไม่มีให้เว้นไว้)\n· อ็อกเทฟ: ตัวเลข (โดกลาง = C4) ถ้าไม่ใส่จะใช้อ็อกเทฟเดิม\n· ความยาว: 1 โน้ตตัวกลม, 2 ตัวขาว, 4 ตัวดำ, 8 เขบ็ตหนึ่งชั้น, 16 เขบ็ตสองชั้น ถ้าไม่ใส่ \":ความยาว\" จะใช้ความยาวเดิม\n· โน้ตประจุด: ใส่ \".\" หลังความยาว (C4:4.) โน้ตสามพยางค์: ใส่ \"t\" (C4:8t)\n· ตัวหยุด: ใช้ R แทนชื่อตัวโน้ต (R:4, R:8)\n\nตัวอย่าง: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hãy viết bản nhạc này thành văn bản theo quy tắc dưới đây. Mỗi nốt viết liền thành một cụm, các nốt cách nhau bằng dấu cách. Chỉ trả lời bằng chuỗi nốt trên một dòng, không giải thích.\n\nNốt = [tên nốt][dấu hóa][quãng tám]:[trường độ][chấm/liên ba]\n· Tên nốt: C D E F G A B\n· Dấu hóa: thăng #, giáng b (không có thì bỏ qua)\n· Quãng tám: một con số (Đô giữa = C4). Bỏ trống thì giữ quãng tám trước đó\n· Trường độ: 1 nốt tròn, 2 nốt trắng, 4 nốt đen, 8 nốt móc đơn, 16 nốt móc kép. Bỏ \":trường độ\" thì giữ trường độ trước đó\n· Nốt chấm dôi: thêm \".\" sau trường độ (C4:4.), liên ba: thêm \"t\" (C4:8t)\n· Dấu lặng: dùng R thay cho tên nốt (R:4, R:8)\n\nVí dụ: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Přepiš tyto noty do textu podle pravidel níže. Každou notu napiš jako jeden celek a noty odděl mezerami. Odpověz jen textem not na jednom řádku, bez vysvětlování.\n\nNota = [písmeno][posuvka][oktáva]:[délka][tečka/triola]\n· Písmeno: C D E F G A B (B zde znamená H)\n· Posuvka: # křížek, b béčko (jinak vynech)\n· Oktáva: číslo (jednočárkované c = C4). Když chybí, platí předchozí oktáva\n· Délka: 1 celá, 2 půlová, 4 čtvrťová, 8 osminová, 16 šestnáctinová. Bez „:délky“ platí předchozí délka\n· Nota s tečkou: „.“ za délkou (C4:4.), triola: „t“ (C4:8t)\n· Pomlka: R místo písmene (R:4, R:8)\n\nPříklad: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Skriv disse noder som tekst efter reglerne nedenfor. Skriv hver node som ét ord, og adskil noderne med mellemrum. Svar kun med nodeteksten på én linje uden forklaring.\n\nNode = [bogstav][fortegn][oktav]:[længde][punktering/triol]\n· Bogstav: C D E F G A B (B betyder her H)\n· Fortegn: # for kryds, b for b (udelades, hvis der ikke er noget)\n· Oktav: et tal (det midterste C = C4). Udelades den, gælder den forrige oktav\n· Længde: 1 helnode, 2 halvnode, 4 fjerdedelsnode, 8 ottendedelsnode, 16 sekstendedelsnode. Udelades \":længde\", gælder den forrige længde\n· Punkteret node: \".\" efter længden (C4:4.), triol: \"t\" (C4:8t)\n· Pause: R i stedet for bogstavet (R:4, R:8)\n\nEksempel: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Γράψε αυτή την παρτιτούρα ως κείμενο με τους παρακάτω κανόνες. Γράψε κάθε νότα ως ένα ενιαίο κομμάτι και χώρισε τις νότες με κενά. Απάντησε μόνο με το κείμενο των νοτών, σε μία γραμμή, χωρίς εξηγήσεις.\n\nΝότα = [γράμμα][αλλοίωση][οκτάβα]:[διάρκεια][παρεστιγμένη/τρίηχο]\n· Γράμμα: C D E F G A B (ντο ρε μι φα σολ λα σι)\n· Αλλοίωση: # για δίεση, b για ύφεση (παραλείπεται αν δεν υπάρχει)\n· Οκτάβα: ένας αριθμός (μεσαίο ντο = C4). Αν λείπει, μένει η προηγούμενη\n· Διάρκεια: 1 ολόκληρο, 2 μισό, 4 τέταρτο, 8 όγδοο, 16 δέκατο έκτο. Αν λείπει το \":διάρκεια\", μένει η προηγούμενη\n· Παρεστιγμένη νότα: \".\" μετά τη διάρκεια (C4:4.), τρίηχο: \"t\" (C4:8t)\n· Παύση: R αντί για γράμμα (R:4, R:8)\n\nΠαράδειγμα: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kirjoita nämä nuotit tekstiksi alla olevien sääntöjen mukaan. Kirjoita jokainen nuotti yhtenä sanana ja erota nuotit välilyönneillä. Vastaa pelkällä nuottitekstillä yhdellä rivillä ilman selityksiä.\n\nNuotti = [kirjain][etumerkki][oktaavi]:[kesto][piste/trioli]\n· Kirjain: C D E F G A B (B tarkoittaa tässä H:ta)\n· Etumerkki: # ylennys, b alennus (jätä pois, jos ei ole)\n· Oktaavi: numero (keski-C = C4). Jos se puuttuu, edellinen oktaavi säilyy\n· Kesto: 1 kokonuotti, 2 puolinuotti, 4 neljäsosanuotti, 8 kahdeksasosanuotti, 16 kuudestoistaosanuotti. Jos \":kesto\" puuttuu, edellinen kesto säilyy\n· Pisteellinen nuotti: \".\" keston perään (C4:4.), trioli: \"t\" (C4:8t)\n· Tauko: R kirjaimen tilalle (R:4, R:8)\n\nEsimerkki: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tuliskan partitur ini sebagai teks dengan aturan di bawah. Tulis setiap not sebagai satu kesatuan dan pisahkan not dengan spasi. Balas hanya dengan teks not dalam satu baris, tanpa penjelasan.\n\nNot = [huruf][aksidental][oktaf]:[panjang][titik/triol]\n· Huruf: C D E F G A B\n· Aksidental: # untuk kres, b untuk mol (kosongkan jika tidak ada)\n· Oktaf: angka (C tengah = C4). Jika dikosongkan, oktaf sebelumnya dipakai\n· Panjang: 1 not penuh, 2 setengah, 4 seperempat, 8 seperdelapan, 16 seperenam belas. Jika \":panjang\" dikosongkan, panjang sebelumnya dipakai\n· Not bertitik: \".\" setelah panjang (C4:4.), triol: \"t\" (C4:8t)\n· Tanda diam: R sebagai ganti huruf (R:4, R:8)\n\nContoh: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Skriv disse notene som tekst etter reglene nedenfor. Skriv hver note som ett ord, og skill notene med mellomrom. Svar bare med noteteksten på én linje, uten forklaring.\n\nNote = [bokstav][fortegn][oktav]:[lengde][punktering/triol]\n· Bokstav: C D E F G A B (B betyr her H)\n· Fortegn: # for kryss, b for b (utelates hvis det ikke finnes)\n· Oktav: et tall (enstrøken C = C4). Utelates den, gjelder forrige oktav\n· Lengde: 1 helnote, 2 halvnote, 4 firedelsnote, 8 åttendedelsnote, 16 sekstendedelsnote. Utelates \":lengde\", gjelder forrige lengde\n· Punktert note: \".\" etter lengden (C4:4.), triol: \"t\" (C4:8t)\n· Pause: R i stedet for bokstaven (R:4, R:8)\n\nEksempel: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Schrijf deze partituur uit als tekst volgens de regels hieronder. Schrijf elke noot als één geheel en scheid de noten met spaties. Antwoord alleen met de notentekst op één regel, zonder uitleg.\n\nNoot = [letter][voorteken][octaaf]:[lengte][punt/triool]\n· Letter: C D E F G A B\n· Voorteken: # voor een kruis, b voor een mol (weglaten als er geen is)\n· Octaaf: een getal (centrale C = C4). Weglaten houdt het vorige octaaf aan\n· Lengte: 1 hele noot, 2 halve, 4 kwartnoot, 8 achtste, 16 zestiende. Zonder \":lengte\" blijft de vorige lengte\n· Gepunteerde noot: \".\" na de lengte (C4:4.), triool: \"t\" (C4:8t)\n· Rust: R in plaats van de letter (R:4, R:8)\n\nVoorbeeld: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zapisz te nuty jako tekst według poniższych zasad. Każdą nutę zapisz jako jeden ciąg znaków, a nuty oddziel spacjami. Odpowiedz tylko tekstem nut w jednej linii, bez wyjaśnień.\n\nNuta = [litera][znak chromatyczny][oktawa]:[długość][kropka/triola]\n· Litera: C D E F G A B (B oznacza tu H)\n· Znak: # krzyżyk, b bemol (pomiń, jeśli go nie ma)\n· Oktawa: liczba (c razkreślne = C4). Pominięta oznacza poprzednią oktawę\n· Długość: 1 cała nuta, 2 półnuta, 4 ćwierćnuta, 8 ósemka, 16 szesnastka. Bez „:długości” zostaje poprzednia\n· Nuta z kropką: „.” po długości (C4:4.), triola: „t” (C4:8t)\n· Pauza: R zamiast litery (R:4, R:8)\n\nPrzykład: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Skriv de här noterna som text enligt reglerna nedan. Skriv varje not som ett ord och skilj noterna åt med mellanslag. Svara bara med nottexten på en rad, utan förklaring.\n\nNot = [bokstav][förtecken][oktav]:[längd][punkt/triol]\n· Bokstav: C D E F G A B (B betyder här H)\n· Förtecken: # för kors, b för b (utelämnas om inget finns)\n· Oktav: en siffra (ettstrukna C = C4). Utelämnas den gäller föregående oktav\n· Längd: 1 helnot, 2 halvnot, 4 fjärdedelsnot, 8 åttondelsnot, 16 sextondelsnot. Utelämnas \":längd\" gäller föregående längd\n· Punkterad not: \".\" efter längden (C4:4.), triol: \"t\" (C4:8t)\n· Paus: R i stället för bokstaven (R:4, R:8)\n\nExempel: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bu notayı aşağıdaki kurallara göre metin olarak yaz. Her notayı tek parça yaz ve notaları boşlukla ayır. Açıklama yapmadan yalnızca nota metnini tek satırda ver.\n\nNota = [harf][değiştirici][oktav]:[süre][nokta/üçleme]\n· Harf: C D E F G A B (do re mi fa sol la si)\n· Değiştirici: diyez için #, bemol için b (yoksa yazma)\n· Oktav: bir sayı (orta do = C4). Yazılmazsa önceki oktav geçerli olur\n· Süre: 1 birlik, 2 ikilik, 4 dörtlük, 8 sekizlik, 16 on altılık. \":süre\" yazılmazsa önceki süre geçerli olur\n· Noktalı nota: süreden sonra \".\" (C4:4.), üçleme: \"t\" (C4:8t)\n· Es: harf yerine R (R:4, R:8)\n\nÖrnek: C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "아래 규칙으로 악보를 텍스트로 적어줘. 음표 하나를 한 덩어리로 쓰고, 음표끼리는 공백으로 구분해. 설명 없이 음표 텍스트만 한 줄로 줘.\n\n음표 = [음이름][임시표][옥타브]:[길이][점·셋잇단]\n· 음이름: C D E F G A B\n· 임시표: 올림 #, 내림 b (없으면 생략)\n· 옥타브: 숫자 (가온다=C4). 생략하면 직전 옥타브 유지\n· 길이: 1 온음표, 2 2분음표, 4 4분음표, 8 8분음표, 16 16분음표. \":길이\"를 생략하면 직전 길이 유지\n· 점음표는 길이 뒤에 \".\" (C4:4.), 셋잇단음표는 \"t\" (C4:8t)\n· 쉼표는 음이름 대신 R (R:4, R:8)\n\n예시) C4:4 D4:4 E4:8 F4:8 G4:2"
-          }
-        }
-      },
-      "comment" : "Letter-notation rule handed to an AI (every language but Korean shows this)"
     },
     "지금까지 목소리로 음표 %lld개를 받아썼어요" : {
       "comment" : "Tip ask card: how many notes the person has dictated by voice so far",
@@ -30455,156 +28518,6 @@
         }
       }
     },
-    "글로 붙여넣기" : {
-      "comment" : "Pro feature name: paste a score written as text",
-      "extractionState" : "manual",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "글로 붙여넣기"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paste as Text"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Paste as Text"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "以文字粘贴"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "以文字貼上"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "テキストで貼り付け"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вставка текстом"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Pegar como texto"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Als Text einfügen"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Coller en texte"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Incolla come testo"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Colar como texto"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "วางเป็นข้อความ"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dán dạng văn bản"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vložit jako text"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Indsæt som tekst"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Επικόλληση ως κείμενο"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Liitä tekstinä"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tempel sebagai teks"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Lim inn som tekst"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Plakken als tekst"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wklej jako tekst"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Klistra in som text"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Metin Olarak Yapıştır"
-          }
-        }
-      }
-    },
     "사진 자동 채보 (실험)" : {
       "comment" : "Pro feature name: read notes from a photo (experimental)",
       "extractionState" : "manual",
@@ -32701,156 +30614,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Referans fotoğraf"
-          }
-        }
-      }
-    },
-    "지금 악보 글로 복사" : {
-      "comment" : "Paywall comparison row (free): copy the current score as text",
-      "extractionState" : "manual",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "지금 악보 글로 복사"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copy current score as text"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copy current score as text"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "将当前乐谱复制为文字"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "將目前樂譜複製為文字"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "現在の譜面をテキストでコピー"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Копирование нот текстом"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copiar la partitura como texto"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aktuelle Partitur als Text kopieren"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copier la partition en texte"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copia lo spartito come testo"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Copiar a partitura como texto"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "คัดลอกโน้ตปัจจุบันเป็นข้อความ"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sao chép bản nhạc thành văn bản"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopírovat partituru jako text"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopiér noderne som tekst"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Αντιγραφή παρτιτούρας ως κείμενο"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopioi nuotit tekstinä"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Salin partitur sebagai teks"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopier notene som tekst"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Partituur kopiëren als tekst"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopiowanie partytury jako tekstu"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kopiera noterna som text"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Notayı metin olarak kopyala"
           }
         }
       }
@@ -35105,156 +32868,6 @@
         }
       }
     },
-    "계이름 받아쓰기 · 글로 붙여넣기 · 사진 자동 채보를 제한 없이" : {
-      "comment" : "Settings row under StaffSinger Pro: what Pro unlocks",
-      "extractionState" : "manual",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "계이름 받아쓰기 · 글로 붙여넣기 · 사진 자동 채보를 제한 없이"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unlimited solfège dictation, paste as text and photo auto-transcribe"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Unlimited solfège dictation, paste as text and photo auto-transcribe"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "唱名听写、以文字粘贴、照片自动识谱，不限次数"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "唱名聽寫、以文字貼上、照片自動辨識樂譜，不限次數"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "階名ディクテーション、テキストで貼り付け、写真から自動採譜を無制限に"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сольфеджио под диктовку, вставка текстом и распознавание по фото без ограничений"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dictado de solfeo, pegar como texto y transcripción desde foto sin límite"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Solmisations-Diktat, Einfügen als Text und Notieren per Foto ohne Limit"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dictée de solfège, collage en texte et transcription depuis une photo, sans limite"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dettato di solfeggio, incolla come testo e trascrizione da foto senza limiti"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ditado de solfejo, colar como texto e transcrição por foto sem limite"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "เขียนโน้ตตามเสียงโซลเฟจ วางเป็นข้อความ และถอดโน้ตจากภาพ ได้ไม่จำกัด"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Chép nhạc theo xướng âm, dán dạng văn bản và chép nhạc từ ảnh không giới hạn"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Solfeggio diktát, vkládání textu a přepis z fotky bez omezení"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Solfège-diktat, indsæt som tekst og nedskrivning fra foto uden grænser"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Υπαγόρευση σολφέζ, επικόλληση ως κείμενο και μεταγραφή από φωτογραφία χωρίς όριο"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Solfa-sanelu, tekstinä liittäminen ja litterointi kuvasta rajattomasti"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dikte solfeggio, tempel sebagai teks, dan transkripsi dari foto tanpa batas"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Solfège-diktat, lim inn som tekst og avskrift fra bilde uten grenser"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Solfège-dictaat, plakken als tekst en transcriberen van foto zonder limiet"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dyktando solfeżowe, wklejanie tekstu i przepis ze zdjęcia bez limitu"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Solfège-diktamen, klistra in som text och avskrift från foto utan gräns"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Solfej dikte, metin olarak yapıştırma ve fotoğraftan notaya dökme sınırsız"
-          }
-        }
-      }
-    },
     "초견 Pro 평생 사용 중" : {
       "comment" : "Settings: owns lifetime Pro",
       "extractionState" : "manual",
@@ -35851,6 +33464,452 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger Pro · etkin"
+          }
+        }
+      }
+    },
+    "계이름 받아쓰기 · 사진 자동 채보를 제한 없이" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfeggio diktát a přepis z fotky bez omezení"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfège-diktat og nedskrivning fra foto uden grænser"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solmisations-Diktat und Notieren per Foto ohne Limit"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Υπαγόρευση σολφέζ και μεταγραφή από φωτογραφία χωρίς όριο"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unlimited solfège dictation and photo auto-transcribe"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unlimited solfège dictation and photo auto-transcribe"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dictado de solfeo y transcripción desde foto sin límite"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfa-sanelu ja litterointi kuvasta rajattomasti"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dictée de solfège et transcription depuis une photo, sans limite"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dikte solfeggio dan transkripsi dari foto tanpa batas"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dettato di solfeggio e trascrizione da foto senza limiti"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "階名ディクテーションと写真からの自動採譜を無制限に"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "계이름 받아쓰기 · 사진 자동 채보를 제한 없이"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfège-diktat og avskrift fra bilde uten grenser"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfège-dictaat en transcriberen van foto zonder limiet"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dyktando solfeżowe i przepis ze zdjęcia bez limitu"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ditado de solfejo e transcrição por foto sem limite"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сольфеджио под диктовку и распознавание по фото без ограничений"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfège-diktamen och avskrift från foto utan gräns"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เขียนโน้ตตามเสียงโซลเฟจ และถอดโน้ตจากภาพ ได้ไม่จำกัด"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solfej dikte ve fotoğraftan notaya dökme sınırsız"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chép nhạc theo xướng âm và chép nhạc từ ảnh không giới hạn"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "唱名听写、照片自动识谱，不限次数"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "唱名聽寫、照片自動辨識樂譜，不限次數"
+          }
+        }
+      }
+    },
+    "이 악보는 이렇게 읽어요" : {
+      "comment" : "Heading above the worked example in solfège dictation",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tyto noty se čtou takto (anglicky)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sådan læses disse noder (på engelsk)"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "So liest du diese Noten (auf Englisch)"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αυτή η παρτιτούρα διαβάζεται έτσι (στα αγγλικά)"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Read this score like this"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Read this score like this"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Esta partitura se lee así (en inglés)"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tämä nuotti luetaan näin (englanniksi)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cette partition se lit ainsi (en anglais)"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partitur ini dibaca seperti ini (dalam bahasa Inggris)"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questo spartito si legge così (in inglese)"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この楽譜はこう読みます（英語で）"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 악보는 이렇게 읽어요"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slik leses disse notene (på engelsk)"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zo lees je deze noten (in het Engels)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Te nuty czyta się tak (po angielsku)"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leia esta partitura assim (em inglês)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Эти ноты читаются так (по-английски)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Så här läser du noterna (på engelska)"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โน้ตนี้อ่านแบบนี้ (เป็นภาษาอังกฤษ)"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu nota şöyle okunur (İngilizce)"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bản nhạc này đọc như sau (bằng tiếng Anh)"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这段乐谱这样读（用英语）"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "這段樂譜這樣讀（用英語）"
+          }
+        }
+      }
+    },
+    "박마다 한 음씩, 8분음표 둘은 한 박에 두 번 말해요. 긴 음은 한 번만 말하고, 쉬는 곳은 \"쉼\"이라고 말해요." : {
+      "comment" : "How to read the worked example aloud in solfège dictation",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na každou dobu jedna nota; dvě osminy řekněte během jedné doby. Dlouhou notu řekněte jen jednou a pro pomlku řekněte „rest“."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Én node pr. slag; to ottendedele siges inden for ét slag. En lang node siges kun én gang, og for en pause siger du “rest”."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro Schlag eine Note; zwei Achtel sprichst du innerhalb eines Schlags. Eine lange Note sagst du nur einmal, für eine Pause „rest“."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Μία νότα σε κάθε χρόνο· δύο όγδοα λέγονται μέσα σε έναν χρόνο. Τη μακριά νότα πείτε τη μόνο μία φορά και για παύση πείτε «rest»."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One note per beat; say two eighth notes within one beat. Say a long note just once, and say \"rest\" for a rest."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One note per beat; say two quavers within one beat. Say a long note just once, and say \"rest\" for a rest."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una nota por pulso; dos corcheas se dicen dentro de un mismo pulso. Una nota larga se dice una sola vez y, para un silencio, di «rest»."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yksi nuotti iskua kohden; kaksi kahdeksasosaa sanotaan yhden iskun aikana. Pitkä nuotti sanotaan vain kerran, ja tauon kohdalla sanotaan ”rest”."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Une note par temps ; deux croches se disent dans le même temps. Une note longue ne se dit qu’une fois et, pour un silence, dites « rest »."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Satu not per ketukan; dua not seperdelapan diucapkan dalam satu ketukan. Not panjang cukup diucapkan sekali, dan untuk tanda diam ucapkan \"rest\"."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Una nota per tempo; due crome si dicono nello stesso tempo. Una nota lunga si dice una volta sola e, per una pausa, di’ «rest»."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1拍に1音ずつ、8分音符2つは1拍のうちに2回言います。長い音は1回だけ言い、休符は「rest」と言います。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "박마다 한 음씩, 8분음표 둘은 한 박에 두 번 말해요. 긴 음은 한 번만 말하고, 쉬는 곳은 \"쉼\"이라고 말해요."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Én note per slag; to åttendedeler sies innenfor ett slag. En lang note sies bare én gang, og for en pause sier du «rest»."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eén noot per tel; twee achtsten zeg je binnen één tel. Een lange noot zeg je maar één keer en voor een rust zeg je ‘rest’."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jedna nuta na miarę; dwie ósemki wypowiedz w jednej mierze. Długą nutę powiedz tylko raz, a na pauzę powiedz „rest”."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uma nota por tempo; duas colcheias são ditas dentro de um tempo. Diga uma nota longa só uma vez e, para uma pausa, diga \"rest\"."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "На каждую долю — одна нота; две восьмые произносите за одну долю. Длинную ноту называйте один раз, а паузу — «rest»."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "En ton per slag; två åttondelar säger du inom ett slag. En lång ton säger du bara en gång, och för en paus säger du ”rest”."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พูดจังหวะละหนึ่งโน้ต โน้ตเขบ็ตหนึ่งชั้นสองตัวให้พูดสองครั้งในจังหวะเดียว โน้ตยาวพูดครั้งเดียว ส่วนตัวหยุดให้พูดว่า “rest”"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Her vuruşa bir nota; iki sekizlik notayı tek vuruş içinde söyle. Uzun notayı yalnızca bir kez söyle, es için \"rest\" de."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mỗi phách đọc một nốt; hai nốt móc đơn đọc trong cùng một phách. Nốt dài chỉ đọc một lần, chỗ nghỉ thì nói \"rest\"."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每拍说一个音，两个八分音符在一拍内说两次。长音只说一次，休止处说“rest”。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每拍說一個音，兩個八分音符在一拍內說兩次。長音只說一次，休止處說「rest」。"
           }
         }
       }

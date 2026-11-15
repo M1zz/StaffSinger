@@ -113,7 +113,6 @@ struct ProPaywallView: View {
             freeRow("음표 입력 · 재생 · 메트로놈")
             freeRow("화음 · 성부 · 조표 · 자리표")
             freeRow("참고 사진")
-            freeRow("지금 악보 글로 복사")
             ForEach(ProFeature.allCases) { proRow($0) }
         }
         .padding(16)
@@ -333,7 +332,7 @@ struct ProSettingsSection: View {
                     VStack(alignment: .leading, spacing: 4) {
                         Label("초견 Pro", systemImage: "sparkles")
                             .font(.body.weight(.semibold))
-                        Text("계이름 받아쓰기 · 글로 붙여넣기 · 사진 자동 채보를 제한 없이")
+                        Text("계이름 받아쓰기 · 사진 자동 채보를 제한 없이")
                             .font(.body)
                             .foregroundStyle(.secondary)
                             .fixedSize(horizontal: false, vertical: true)
