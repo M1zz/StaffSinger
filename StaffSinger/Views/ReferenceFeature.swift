@@ -51,6 +51,8 @@ struct ApertureCameraView: UIViewControllerRepresentable {
     var onCapture: (UIImage) -> Void
     /// 비추는 동안 악보가 다 읽혔을 때 — 그 장면과 읽은 음표.
     var onRead: (UIImage, OMR.Reading) -> Void = { _, _ in }
+    /// 음표 하나를 확정할 때마다 — 그 음.
+    var onNote: (Pitch) -> Void = { _ in }
     var onCancel: () -> Void
 
     func makeUIViewController(context: Context) -> ApertureCameraController {
@@ -59,6 +61,7 @@ struct ApertureCameraView: UIViewControllerRepresentable {
         vc.measureBeats = measureBeats
         vc.onCapture = onCapture
         vc.onRead = onRead
+        vc.onNote = onNote
         vc.onCancel = onCancel
         return vc
     }
@@ -72,6 +75,7 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
     var measureBeats: Double = 4
     var onCapture: ((UIImage) -> Void)?
     var onRead: ((UIImage, OMR.Reading) -> Void)?
+    var onNote: ((Pitch) -> Void)?
     var onCancel: (() -> Void)?
 
     private let session = AVCaptureSession()
@@ -91,14 +95,15 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
     private var dragsTopEdge = false
     private var tooWide = 0                   // 두 마디보다 많이 보인 읽기가 연달아 몇 번인지
 
-    // 비춰 읽기 — 긴 노출처럼, 들고 있는 동안 읽은 음표가 제자리에 떠오른다.
+    // 비춰 읽기 — 들고 있는 동안 왼쪽 음표부터 하나씩 확정된다.
     private let videoOut = AVCaptureVideoDataOutput()
     private let readQueue = DispatchQueue(label: "staffsinger.live-read", qos: .userInitiated)
     private let ciContext = CIContext()
-    private let marks = CAShapeLayer()          // 읽은 음표 자리
-    private let exposureLine = CAShapeLayer()   // 얼마나 찍혔는지 — 틀을 따라 차오른다
+    private let marks = CAShapeLayer()          // 확정한 음표
+    private let missedMarks = CAShapeLayer()    // 읽지 못해 포기한 음표
+    private let pendingMarks = CAShapeLayer()   // 보이지만 아직 확정하지 않은 음표
+    private let exposureLine = CAShapeLayer()   // 얼마나 읽었는지 — 틀을 따라 차오른다
     private var exposure = OMR.Exposure()
-    private var developed = false
     private var lastRead = Date.distantPast     // readQueue 에서만 쓴다
     private let geometryLock = NSLock()
     private var geometry: (aperture: CGRect, bounds: CGSize) = (.zero, .zero)
@@ -187,11 +192,16 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         staffGuide.lineWidth = 1.5
         view.layer.addSublayer(staffGuide)
 
-        marks.fillColor = UIColor.systemBlue.withAlphaComponent(0.6).cgColor
-        marks.strokeColor = UIColor.white.cgColor
-        marks.lineWidth = 1.5
-        marks.opacity = 0
-        view.layer.addSublayer(marks)
+        pendingMarks.fillColor = UIColor.clear.cgColor
+        pendingMarks.strokeColor = UIColor.white.withAlphaComponent(0.5).cgColor
+        pendingMarks.lineWidth = 1.5
+        view.layer.addSublayer(pendingMarks)
+        for (layer, color) in [(marks, UIColor.systemBlue), (missedMarks, UIColor.systemRed)] {
+            layer.fillColor = color.withAlphaComponent(0.7).cgColor
+            layer.strokeColor = UIColor.white.cgColor
+            layer.lineWidth = 1.5
+            view.layer.addSublayer(layer)
+        }
         exposureLine.fillColor = UIColor.clear.cgColor
         exposureLine.strokeColor = UIColor.systemBlue.cgColor
         exposureLine.lineWidth = 4
@@ -215,6 +225,7 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
     }
 
     private static let holdHint = String(localized: "이 칸에 두 마디를 맞추고 잠시 비춰 주세요", comment: "Camera hint when the score is read just by holding the camera over it")
+    private static let missedHint = String(localized: "빨간 음표는 읽지 못했어요", comment: "Camera hint when a note could not be read and is marked in red")
     private static let closerHint = String(localized: "두 마디만 보이게 더 가까이 대 주세요", comment: "Camera hint when more than two measures are inside the frame")
 
     /// 틀의 위나 아래를 끌어 높이를 바꾼다. 틀은 가운데에 머문다.
@@ -322,7 +333,7 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
     @objc private func cancelTapped() { onCancel?() }
 
     @objc private func shoot() {
-        guard session.isRunning, !developed else { return }
+        guard session.isRunning, exposure.result == nil else { return }
         orient(output.connection(with: .video))
         output.capturePhoto(with: AVCapturePhotoSettings(), delegate: self)
     }
@@ -369,19 +380,20 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         return UIImage(cgImage: cg)
     }
 
-    /// 한 번 읽은 결과를 겹친다. 읽힌 음표는 제자리에 떠오르고, 같은 악보가
-    /// 거듭 읽힐수록 진해지다가 다 찍히면 저절로 넘어간다.
+    /// 한 번 읽은 결과를 겹친다. 거듭 같게 읽힌 음표가 왼쪽부터 하나씩
+    /// 확정되고, 끝까지 가면 저절로 넘어간다.
     private func expose(_ reading: OMR.Reading, from image: UIImage) {
-        guard !developed else { return }
+        guard exposure.result == nil else { return }
         // 두 마디보다 많이 보이면 찍지 않고 알려 준다. 한 번 잘못 읽은 것에
         // 글이 깜빡이지 않게, 연달아 두 번일 때부터.
         tooWide = reading.measures > 2 ? tooWide + 1 : 0
         let far = tooWide >= 2
-        hint.text = far ? Self.closerHint : Self.holdHint
-        hint.textColor = far ? .systemYellow : .white
-        frameLine.strokeColor = (far ? UIColor.systemYellow : .white).cgColor
         if far { exposure = OMR.Exposure() }
-        developed = reading.measures <= 2 && exposure.add(reading)
+        let step = reading.measures <= 2 ? exposure.add(reading) : .waiting
+        let missed = !exposure.failed.isEmpty
+        hint.text = far ? Self.closerHint : missed ? Self.missedHint : Self.holdHint
+        hint.textColor = far ? .systemYellow : missed ? .systemRed : .white
+        frameLine.strokeColor = (far ? UIColor.systemYellow : .white).cgColor
 
         // 어느 오선을 읽고 있는지 — 찾은 그 자리에 다섯 줄을 겹쳐 보여 준다.
         let found = UIBezierPath()
@@ -392,25 +404,69 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         }
         staffGuide.path = found.cgPath
 
-        // 점의 크기는 읽은 오선의 한 칸에 맞춘다.
-        let space = reading.staffLines.count == 5
-            ? (reading.staffLines[4] - reading.staffLines[0]) / 4 * apertureRect.height : apertureRect.height * 0.08
+        // 확정한 음표는 파랗게, 포기한 음표는 빨갛게, 아직인 음표는 흐린 테두리로.
+        // 자리는 확정한 음표와 맞는 가장 새 장면에서 가져와, 손이 움직여도 따라간다.
+        let seen = exposure.view
+        let space = seen.staffLines.count == 5
+            ? (seen.staffLines[4] - seen.staffLines[0]) / 4 * apertureRect.height : apertureRect.height * 0.08
         let radius = space * 0.6
-        let dots = UIBezierPath()
-        for m in reading.marks {
+        let failed = Set(exposure.failed)
+        let (sure, lost, waiting) = (UIBezierPath(), UIBezierPath(), UIBezierPath())
+        for (i, m) in seen.marks.enumerated() {
             let c = CGPoint(x: apertureRect.minX + m.x * apertureRect.width,
                             y: apertureRect.minY + m.y * apertureRect.height)
-            dots.append(UIBezierPath(arcCenter: c, radius: radius, startAngle: 0,
+            let path = failed.contains(i) ? lost : i < exposure.settled ? sure : waiting
+            path.append(UIBezierPath(arcCenter: c, radius: radius, startAngle: 0,
                                      endAngle: .pi * 2, clockwise: true))
+            if i == exposure.settled - 1, step != .waiting, step != .done {
+                ring(at: c, radius: radius, color: failed.contains(i) ? .systemRed : .systemBlue)
+            }
         }
-        marks.path = dots.cgPath
-        marks.opacity = Float(0.3 + 0.7 * exposure.progress)
+        marks.path = sure.cgPath
+        missedMarks.path = lost.cgPath
+        pendingMarks.path = waiting.cgPath
         exposureLine.strokeEnd = exposure.progress
 
-        guard developed else { return }
-        UINotificationFeedbackGenerator().notificationOccurred(.success)
-        // 다 찍힌 모습을 잠깐 보여 주고 넘긴다.
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.35) { self.onRead?(image, reading) }
+        switch step {
+        case .waiting:
+            break
+        case .settled(let pitch):       // 팅 — 그 음이 울린다
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            onNote?(pitch)
+        case .failed:
+            UINotificationFeedbackGenerator().notificationOccurred(.warning)
+        case .done:
+            guard let whole = exposure.result else { return }
+            UINotificationFeedbackGenerator().notificationOccurred(.success)
+            // 다 읽은 모습을 잠깐 보여 주고 넘긴다.
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { self.onRead?(image, whole) }
+        }
+    }
+
+    /// 음표 하나가 정해지는 순간 — 그 자리에서 고리가 퍼졌다 사라진다.
+    private func ring(at center: CGPoint, radius: CGFloat, color: UIColor) {
+        let ring = CAShapeLayer()
+        ring.frame = CGRect(x: center.x - radius, y: center.y - radius, width: radius * 2, height: radius * 2)
+        ring.path = UIBezierPath(ovalIn: ring.bounds).cgPath
+        ring.fillColor = UIColor.clear.cgColor
+        ring.strokeColor = color.cgColor
+        ring.lineWidth = 2
+        ring.opacity = 0
+        view.layer.addSublayer(ring)
+        let spread = CABasicAnimation(keyPath: "transform.scale")
+        spread.fromValue = 1
+        spread.toValue = 2.6
+        let fade = CABasicAnimation(keyPath: "opacity")
+        fade.fromValue = 1
+        fade.toValue = 0
+        let pop = CAAnimationGroup()
+        pop.animations = [spread, fade]
+        pop.duration = 0.4
+        pop.timingFunction = CAMediaTimingFunction(name: .easeOut)
+        CATransaction.begin()
+        CATransaction.setCompletionBlock { ring.removeFromSuperlayer() }
+        ring.add(pop, forKey: nil)
+        CATransaction.commit()
     }
 
     /// Map the on-screen aperture rect into the captured image and crop to it.

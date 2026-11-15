@@ -37,25 +37,86 @@ enum OMR {
         var measures = 0
     }
 
-    /// Reading a live camera like a long exposure: one frame can be wrong, so a
-    /// score is trusted only once the same notes keep coming back.
+    /// Reading a live camera note by note. One frame can be wrong, so a note is
+    /// trusted only once frames keep agreeing on it — and the notes settle from
+    /// the left, one per frame, each resting on the ones before it. A note the
+    /// frames can't agree on is given up on (and flagged) so the rest can go on.
     struct Exposure {
-        static let needed = 5          // 같은 읽기가 이만큼 겹치면 다 찍힌 것
+        static let needed = 3          // 같은 음표가 이만큼 겹쳐 읽히면 확정
+        static let patience = 6        // 이만큼 봐도 안 겹치면 그 음표는 포기
         private static let window = 8  // 최근 몇 번을 겹쳐 볼지
 
-        private struct Key: Hashable { let pitch: Pitch; let beats: Double; let at: Double }
-        private var recent: [[Key]] = []
-        /// 0...1 — how developed the picture is. Drops back when the view changes.
-        private(set) var progress = 0.0
+        /// What one more frame did.
+        enum Step: Equatable { case waiting, settled(Pitch), failed, done }
 
-        /// Add one frame's reading; true once it has fully developed.
-        mutating func add(_ reading: Reading) -> Bool {
-            let key = reading.notes.map { Key(pitch: $0.pitch, beats: $0.beats, at: $0.beatOffset) }
-            recent.append(key)
+        private struct Key: Hashable { let pitch: Pitch; let beats: Double }
+        private enum Next: Hashable { case note(Key), end }
+
+        private var recent: [Reading] = []
+        private var slots: [Key?] = []   // 왼쪽부터 확정한 음표. nil 은 포기한 자리
+        private var waited = 0
+        /// The newest frame that agrees with everything settled so far — its
+        /// marks say where the settled notes are on screen right now.
+        private(set) var view = Reading()
+        /// The whole score, once every note has settled. Given-up notes are in `unsure`.
+        private(set) var result: Reading?
+
+        var settled: Int { slots.count }
+        var failed: [Int] { slots.indices.filter { slots[$0] == nil } }
+        /// 0...1 — how far along the score it has settled.
+        var progress: Double {
+            if result != nil { return 1 }
+            return view.notes.isEmpty ? 0 : min(1, Double(slots.count) / Double(view.notes.count))
+        }
+
+        private func key(_ note: ScoreNote) -> Key { Key(pitch: note.pitch, beats: note.beats) }
+
+        /// Does this frame read the settled notes the same way?
+        private func fits(_ reading: Reading) -> Bool {
+            !reading.notes.isEmpty && reading.notes.count >= slots.count
+                && zip(slots, reading.notes).allSatisfy { $0 == nil || $0 == key($1) }
+        }
+
+        /// Add one frame's reading. At most one note settles per frame.
+        mutating func add(_ reading: Reading) -> Step {
+            guard result == nil else { return .done }
+            recent.append(reading)
             if recent.count > Self.window { recent.removeFirst() }
-            let agreeing = key.isEmpty ? 0 : recent.filter { $0 == key }.count
-            progress = min(1, Double(agreeing) / Double(Self.needed))
-            return progress >= 1
+            let fitting = recent.filter(fits)
+            if fitting.isEmpty {
+                // 한동안 아무 장면도 맞지 않으면 다른 악보를 비춘 것 — 처음부터.
+                if recent.count == Self.window, !slots.isEmpty { slots = []; waited = 0; view = Reading() }
+                return .waiting
+            }
+            guard fits(reading) else { return .waiting }
+            view = reading
+
+            // 다음 자리에 무엇이 있는지 장면마다 한 표. 가장 많은 것, 같으면 더 새것.
+            let n = slots.count
+            let next: [Next] = fitting.map { $0.notes.count > n ? .note(key($0.notes[n])) : .end }
+            var best = Next.end, most = 0
+            for candidate in next.reversed() {
+                let votes = next.filter { $0 == candidate }.count
+                if votes > most { best = candidate; most = votes }
+            }
+            let agreed = most >= Self.needed
+            if !agreed {
+                waited += 1
+                guard waited >= Self.patience else { return .waiting }
+            }
+            waited = 0
+
+            switch best {
+            case .note(let key):
+                slots.append(agreed ? key : nil)
+                return agreed ? .settled(key.pitch) : .failed
+            case .end:
+                guard var whole = fitting.last(where: { $0.notes.count == n }) else { return .waiting }
+                for i in failed { whole.unsure.insert(whole.notes[i].id) }
+                view = whole
+                result = whole
+                return .done
+            }
         }
     }
 

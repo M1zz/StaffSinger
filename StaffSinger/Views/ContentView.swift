@@ -122,6 +122,7 @@ struct ContentView: View {
                     vm.importNotes(reading.notes, unsure: reading.unsure)
                     pro.recordUse(.transcribe)
                 },
+                onNote: { audio.audition($0) },
                 onCancel: { showApertureCamera = false }
             )
             .ignoresSafeArea()

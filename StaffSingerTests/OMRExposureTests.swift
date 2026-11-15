@@ -2,7 +2,8 @@
 //  OMRExposureTests.swift
 //  StaffSingerTests
 //
-//  비춰 읽기의 계약: 같은 악보가 거듭 읽혀야만 다 찍힌다 (→ Notation/OMR.swift).
+//  비춰 읽기의 계약: 거듭 같게 읽힌 음표가 왼쪽부터 하나씩 확정되고,
+//  끝내 안 겹치는 음표는 포기하고 표시한 채 넘어간다 (→ Notation/OMR.swift).
 //
 
 import XCTest
@@ -18,33 +19,58 @@ final class OMRExposureTests: XCTestCase {
         return r
     }
 
-    func testDevelopsOnlyAfterRepeatedAgreement() {
+    func testNotesSettleFromTheLeftOneAFrame() {
         var e = OMR.Exposure()
         for _ in 1..<OMR.Exposure.needed {
-            XCTAssertFalse(e.add(reading([60, 62, 64])))
+            XCTAssertEqual(e.add(reading([60, 62, 64])), .waiting)
         }
-        XCTAssertTrue(e.add(reading([60, 62, 64])))
+        XCTAssertEqual(e.add(reading([60, 62, 64])), .settled(Pitch(midi: 60)))
+        XCTAssertEqual(e.add(reading([60, 62, 64])), .settled(Pitch(midi: 62)))
+        XCTAssertEqual(e.add(reading([60, 62, 64])), .settled(Pitch(midi: 64)))
+        XCTAssertNil(e.result)
+        XCTAssertEqual(e.add(reading([60, 62, 64])), .done)
+        XCTAssertEqual(e.result?.notes.map(\.pitch.midi), [60, 62, 64])
+        XCTAssertEqual(e.result?.unsure, [])
         XCTAssertEqual(e.progress, 1)
     }
 
-    func testEmptyReadingsNeverDevelop() {
+    func testEmptyReadingsNeverSettle() {
         var e = OMR.Exposure()
-        for _ in 0..<20 { XCTAssertFalse(e.add(reading([]))) }
+        for _ in 0..<20 { XCTAssertEqual(e.add(reading([])), .waiting) }
         XCTAssertEqual(e.progress, 0)
     }
 
-    func testOneBadFrameDoesNotSpoilThePicture() {
+    func testOneBadFrameDoesNotSpoilTheReading() {
         var e = OMR.Exposure()
-        for _ in 0..<3 { _ = e.add(reading([60, 62])) }
-        XCTAssertFalse(e.add(reading([60, 65])))          // 흔들린 한 장
-        XCTAssertFalse(e.add(reading([60, 62])))
-        XCTAssertTrue(e.add(reading([60, 62])))
+        for _ in 0..<3 { _ = e.add(reading([60, 62])) }           // 60 확정
+        XCTAssertEqual(e.add(reading([65, 62])), .waiting)         // 흔들린 한 장
+        XCTAssertEqual(e.add(reading([60, 62])), .settled(Pitch(midi: 62)))
+        XCTAssertEqual(e.add(reading([60, 62])), .done)
+        XCTAssertEqual(e.result?.unsure, [])
+    }
+
+    func testANoteThatNeverAgreesIsGivenUpAndFlagged() {
+        var e = OMR.Exposure()
+        var steps: [OMR.Exposure.Step] = []
+        // 둘째 음표가 장면마다 다르게 읽힌다.
+        for i in 0..<30 where e.result == nil {
+            steps.append(e.add(reading([60, 70 + i, 64])))
+        }
+        XCTAssertEqual(steps.filter { $0 != .waiting },
+                       [.settled(Pitch(midi: 60)), .failed, .settled(Pitch(midi: 64)), .done])
+        XCTAssertEqual(e.failed, [1])
+        XCTAssertEqual(e.result?.notes.count, 3)
+        XCTAssertEqual(e.result?.unsure, (e.result?.notes[1].id).map { Set([$0]) })
     }
 
     func testMovingToAnotherScoreStartsOver() {
         var e = OMR.Exposure()
         for _ in 0..<4 { _ = e.add(reading([60, 62])) }
-        XCTAssertFalse(e.add(reading([67, 69])))
-        XCTAssertLessThan(e.progress, 0.5)
+        XCTAssertEqual(e.settled, 2)
+        var steps: [OMR.Exposure.Step] = []
+        for _ in 0..<14 where e.result == nil { steps.append(e.add(reading([67, 69]))) }
+        XCTAssertEqual(e.result?.notes.map(\.pitch.midi), [67, 69])
+        XCTAssertEqual(steps.filter { $0 != .waiting },
+                       [.settled(Pitch(midi: 67)), .settled(Pitch(midi: 69)), .done])
     }
 }
