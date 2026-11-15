@@ -43,12 +43,15 @@ final class PitchListener: ObservableObject {
         await audio.beginRecordingSession()
         guard wanted else { audio.endRecordingSession(); return false }   // let go while the mic was opening
         let input = engine.inputNode
-        let format = input.outputFormat(forBus: 0)
-        guard format.sampleRate > 0 else { audio.endRecordingSession(); return false }
-        let rate = format.sampleRate
+        // 마이크(하드웨어) 쪽 형식으로 본다. 세션을 막 바꾼 뒤에는 outputFormat 이 옛 값으로 남아
+        // 하드웨어와 어긋나고, 그 형식으로 탭을 걸면 AVAudioEngine 이 ObjC 예외를 던져 앱이 죽었다(1.0.6).
+        // 탭에는 형식을 넘기지 않아(nil) 버스의 지금 형식을 그대로 쓰게 한다.
+        let hardware = input.inputFormat(forBus: 0)
+        guard hardware.sampleRate > 0, hardware.channelCount > 0 else { audio.endRecordingSession(); return false }
 
         input.removeTap(onBus: 0)
-        input.installTap(onBus: 0, bufferSize: 2048, format: format) { [weak self] buffer, _ in
+        input.installTap(onBus: 0, bufferSize: 2048, format: nil) { [weak self] buffer, _ in
+            let rate = buffer.format.sampleRate
             guard let channel = buffer.floatChannelData?[0] else { return }
             let count = Int(buffer.frameLength)
             let window = min(count, 2048)   // enough for a 65 Hz period, cheap to scan
