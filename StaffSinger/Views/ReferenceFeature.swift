@@ -811,10 +811,10 @@ struct ImageCropView: View {
 
 // MARK: - Floating reference overlay
 
-/// The cropped photo, floating over the staff. By default the image ignores
-/// touches so notes underneath stay tappable, and the grip in the control bar
-/// moves the card. Tapping the "이동/크기" toggle hands the whole photo over to
-/// touch: drag it anywhere and pinch to resize, freely, until you toggle back.
+/// The cropped photo, floating over the staff. It is handled directly, like a
+/// picture on a desk: drag it anywhere, pinch it or pull its corner to resize.
+/// Pinning it down lets touches fall through, so notes under a see-through
+/// photo can be placed on the staff; the bar still moves it.
 struct ReferenceOverlay: View {
     @ObservedObject var store: ReferenceStore
     /// Run experimental auto-transcription on the current crop.
@@ -823,15 +823,18 @@ struct ReferenceOverlay: View {
     @State private var pos: CGSize = .zero
     @GestureState private var dragPos: CGSize = .zero
 
-    @State private var width: CGFloat = 520        // card width in points; pinch resizes it
+    @State private var width: CGFloat = 520        // card width in points
     @GestureState private var pinch: CGFloat = 1
-    @State private var editing = false             // when on, the whole photo is draggable & resizable
+    @GestureState private var pull: CGFloat = 0    // how far the corner has been pulled
+    @State private var pinned = false              // when on, the photo ignores touches
+
+    private let top: CGFloat = 64                  // where the card rests, below the top bar
 
     var body: some View {
         if let img = store.image {
             GeometryReader { geo in
                 if store.visible {
-                    card(img, available: geo.size.width)
+                    card(img, in: geo.size)
                 } else {
                     showButton
                 }
@@ -839,9 +842,13 @@ struct ReferenceOverlay: View {
         }
     }
 
-    private func card(_ img: UIImage, available: CGFloat) -> some View {
-        // Keep the card within the screen so a big pinch can't push it off-edge.
-        let liveWidth = max(220, min(width * pinch, available - 16))
+    /// The card can't grow past the screen.
+    private func fit(_ w: CGFloat, in size: CGSize) -> CGFloat { max(220, min(w, size.width - 16)) }
+
+    private func card(_ img: UIImage, in size: CGSize) -> some View {
+        let liveWidth = fit(width * pinch + 2 * pull, in: size)
+        let at = held(CGSize(width: pos.width + dragPos.width, height: pos.height + dragPos.height),
+                      width: liveWidth, in: size)
         return VStack(spacing: 0) {
             controlBar
             Image(uiImage: img)
@@ -850,54 +857,74 @@ struct ReferenceOverlay: View {
                 .frame(maxWidth: .infinity)
                 .opacity(store.opacity)
                 .accessibilityLabel("악보 사진")
-                .overlay {
-                    if editing {
-                        RoundedRectangle(cornerRadius: 4)
-                            .strokeBorder(Color.accentColor.opacity(0.9),
-                                          style: StrokeStyle(lineWidth: 1.5, dash: [6, 4]))
-                    }
-                }
-                .allowsHitTesting(editing)         // off → taps fall through to the staff
-                .gesture(moveResize(available: available))
+                .overlay(alignment: .bottomTrailing) { if !pinned { corner(in: size) } }
+                .allowsHitTesting(!pinned)         // pinned → taps fall through to the staff
         }
         .frame(width: liveWidth)
         .clipShape(RoundedRectangle(cornerRadius: 12))
         .overlay(RoundedRectangle(cornerRadius: 12).stroke(.black.opacity(0.12), lineWidth: 1))
         .shadow(color: .black.opacity(0.25), radius: 10, y: 4)
-        .offset(x: pos.width + dragPos.width, y: pos.height + dragPos.height)
+        .contentShape(Rectangle())
+        .gesture(move(width: liveWidth, in: size).simultaneously(with: MagnificationGesture()
+            .updating($pinch) { v, s, _ in s = v }
+            .onEnded { v in width = fit(width * v, in: size) }))
+        .offset(at)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .padding(.top, 64)
+        .padding(.top, top)
     }
 
-    /// Interactive control bar. The grip always moves the card; the pencil-hand
-    /// toggle frees the whole photo for free drag + pinch-to-resize.
+    /// Keep enough of the card on screen to grab it again.
+    private func held(_ p: CGSize, width w: CGFloat, in size: CGSize) -> CGSize {
+        let side = max(0, (size.width + w) / 2 - 80)
+        return CGSize(width: min(max(p.width, -side), side),
+                      height: min(max(p.height, 8 - top), max(8 - top, size.height - top - 52)))
+    }
+
+    /// Drag the card. Measured against the screen, not against the card — the
+    /// card moves under the finger, and a distance measured on it would shake.
+    private func move(width w: CGFloat, in size: CGSize) -> some Gesture {
+        DragGesture(coordinateSpace: .global)
+            .updating($dragPos) { v, s, _ in s = v.translation }
+            .onEnded { v in
+                pos = held(CGSize(width: pos.width + v.translation.width,
+                                  height: pos.height + v.translation.height), width: w, in: size)
+            }
+    }
+
+    /// The corner to pull: the card grows and shrinks about its middle, so the
+    /// corner stays under the finger.
+    private func corner(in size: CGSize) -> some View {
+        Image(systemName: "arrow.up.left.and.arrow.down.right")
+            .font(.caption.weight(.bold))
+            .foregroundColor(.white)
+            .frame(width: 30, height: 30)
+            .background(Color.black.opacity(0.45), in: RoundedRectangle(cornerRadius: 8))
+            .padding(6)
+            .frame(width: 52, height: 52, alignment: .bottomTrailing)
+            .contentShape(Rectangle())
+            .gesture(DragGesture(coordinateSpace: .global)
+                .updating($pull) { v, s, _ in s = v.translation.width }
+                .onEnded { v in width = fit(width + 2 * v.translation.width, in: size) })
+            .accessibilityLabel("크기 조절")
+    }
+
     private var controlBar: some View {
         HStack(spacing: 12) {
-            Image(systemName: "arrow.up.and.down.and.arrow.left.and.right")
+            Image(systemName: "line.3.horizontal")
                 .font(.subheadline).foregroundColor(.secondary)
-                .frame(width: 36, height: 30)
-                .accessibilityHidden(true)   // 끌기 손잡이(시각 보조)
-                .contentShape(Rectangle())
-                .gesture(
-                    DragGesture()
-                        .updating($dragPos) { v, s, _ in s = v.translation }
-                        .onEnded { v in
-                            pos.width += v.translation.width
-                            pos.height += v.translation.height
-                        }
-                )
+                .accessibilityHidden(true)   // 끌 수 있다는 표시
             Image(systemName: "circle.lefthalf.filled").foregroundColor(.secondary)
                 .accessibilityHidden(true)
             Slider(value: $store.opacity, in: 0.15...1).frame(width: 84)
                 .accessibilityLabel("투명도")
             Spacer(minLength: 4)
-            // Free move/resize: hand the whole photo over to touch.
-            Button { editing.toggle() } label: {
-                Image(systemName: editing ? "hand.draw.fill" : "hand.draw")
-                    .foregroundColor(editing ? .accentColor : .secondary)
+            // Pin the photo down so the staff under it takes the touches.
+            Button { pinned.toggle() } label: {
+                Image(systemName: pinned ? "pin.fill" : "pin")
+                    .foregroundColor(pinned ? .accentColor : .secondary)
             }
-            .accessibilityLabel("자유롭게 옮기기")
-            .accessibilityAddTraits(editing ? .isSelected : [])
+            .accessibilityLabel("사진 고정")
+            .accessibilityAddTraits(pinned ? .isSelected : [])
             // Experimental: read the photo into notes.
             Button(action: onTranscribe) {
                 Label("채보", systemImage: "wand.and.stars")
@@ -918,20 +945,6 @@ struct ReferenceOverlay: View {
         .background(.ultraThinMaterial)
     }
 
-    /// Drag the whole photo anywhere, pinch to resize. Only fires in edit mode
-    /// (otherwise the image isn't hit-testable and taps reach the staff).
-    private func moveResize(available: CGFloat) -> some Gesture {
-        DragGesture()
-            .updating($dragPos) { v, s, _ in s = v.translation }
-            .onEnded { v in
-                pos.width += v.translation.width
-                pos.height += v.translation.height
-            }
-            .simultaneously(with: MagnificationGesture()
-                .updating($pinch) { v, s, _ in s = v }
-                .onEnded { v in width = max(220, min(width * v, available - 16)) })
-    }
-
     private var showButton: some View {
         Button { store.visible = true } label: {
             Label("악보 사진", systemImage: "eye")
@@ -941,6 +954,6 @@ struct ReferenceOverlay: View {
                 .overlay(Capsule().stroke(.black.opacity(0.08), lineWidth: 1))
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .padding(.top, 64)
+        .padding(.top, top)
     }
 }
