@@ -41,19 +41,21 @@ enum OMR {
     /// trusted only once frames keep agreeing on it — and the notes settle from
     /// the left, one per frame, each resting on the ones before it. A note the
     /// frames can't agree on is given up on (and flagged) so the rest can go on.
+    /// Once it is done, `retry` reads just the notes that came out wrong again.
     struct Exposure {
         static let needed = 3          // 같은 음표가 이만큼 겹쳐 읽히면 확정
         static let patience = 6        // 이만큼 봐도 안 겹치면 그 음표는 포기
         private static let window = 8  // 최근 몇 번을 겹쳐 볼지
 
         /// What one more frame did.
-        enum Step: Equatable { case waiting, settled(Pitch), failed, done }
+        enum Step: Equatable { case waiting, settled(Int, Pitch), failed(Int), done }
 
         private struct Key: Hashable { let pitch: Pitch; let beats: Double }
         private enum Next: Hashable { case note(Key), end }
 
         private var recent: [Reading] = []
         private var slots: [Key?] = []   // 왼쪽부터 확정한 음표. nil 은 포기한 자리
+        private var redo: [Int]?         // 다시 읽을 자리들. nil 이면 처음 읽는 중
         private var waited = 0
         /// The newest frame that agrees with everything settled so far — its
         /// marks say where the settled notes are on screen right now.
@@ -85,14 +87,18 @@ enum OMR {
             let fitting = recent.filter(fits)
             if fitting.isEmpty {
                 // 한동안 아무 장면도 맞지 않으면 다른 악보를 비춘 것 — 처음부터.
-                if recent.count == Self.window, !slots.isEmpty { slots = []; waited = 0; view = Reading() }
+                // (다시 읽는 중에는 확정한 음표를 버리지 않고 기다린다.)
+                if redo == nil, recent.count == Self.window, !slots.isEmpty {
+                    slots = []; waited = 0; view = Reading()
+                }
                 return .waiting
             }
             guard fits(reading) else { return .waiting }
             view = reading
+            if redo?.isEmpty == true { return finish(fitting) }
 
-            // 다음 자리에 무엇이 있는지 장면마다 한 표. 가장 많은 것, 같으면 더 새것.
-            let n = slots.count
+            // 그 자리에 무엇이 있는지 장면마다 한 표. 가장 많은 것, 같으면 더 새것.
+            let n = redo?.first ?? slots.count
             let next: [Next] = fitting.map { $0.notes.count > n ? .note(key($0.notes[n])) : .end }
             var best = Next.end, most = 0
             for candidate in next.reversed() {
@@ -108,15 +114,34 @@ enum OMR {
 
             switch best {
             case .note(let key):
-                slots.append(agreed ? key : nil)
-                return agreed ? .settled(key.pitch) : .failed
+                if redo == nil { slots.append(agreed ? key : nil) } else {
+                    slots[n] = agreed ? key : nil
+                    redo?.removeFirst()
+                }
+                return agreed ? .settled(n, key.pitch) : .failed(n)
             case .end:
-                guard var whole = fitting.last(where: { $0.notes.count == n }) else { return .waiting }
-                for i in failed { whole.unsure.insert(whole.notes[i].id) }
-                view = whole
-                result = whole
-                return .done
+                return finish(fitting)
             }
+        }
+
+        /// The score is whole once a frame reads exactly the settled notes.
+        private mutating func finish(_ fitting: [Reading]) -> Step {
+            guard var whole = fitting.last(where: { $0.notes.count == slots.count }) else { return .waiting }
+            for i in failed { whole.unsure.insert(whole.notes[i].id) }
+            view = whole
+            result = whole
+            return .done
+        }
+
+        /// Read these notes again, from fresh frames, keeping all the others.
+        mutating func retry(_ indices: [Int]) {
+            guard result != nil else { return }
+            let again = Set(indices).union(failed).filter(slots.indices.contains).sorted()
+            for i in again { slots[i] = nil }
+            redo = again
+            recent = []
+            waited = 0
+            result = nil
         }
     }
 

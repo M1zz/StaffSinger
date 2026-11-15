@@ -86,13 +86,14 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
     private let staffGuide = CAShapeLayer()   // 지금 읽고 있는 오선 — 찾은 자리에 그린다
     private let shutter = UIButton(type: .system)
     private let hint = UILabel()
-    private let grips = CAShapeLayer()        // 틀의 위아래 손잡이 — 끌어서 높이를 바꾼다
+    private let grips = CAShapeLayer()        // 틀의 손잡이 — 가장자리와 모서리
     private var apertureRect: CGRect = .zero
-    /// 틀의 높이. 악보마다 오선 위아래로 차지하는 높이가 달라서 끌어서 맞춘다.
-    /// 0 이면 아직 정하지 않은 것 — 너비의 1/aspect 로 시작한다.
+    /// 틀의 크기. 악보마다 두 마디의 너비와 오선 위아래 높이가 달라서 끌어서 맞춘다.
+    /// 0 이면 아직 정하지 않은 것 — 너비는 가득, 높이는 너비의 1/aspect 로 시작한다.
+    private var apertureWidth = CGFloat(UserDefaults.standard.double(forKey: "camera.apertureWidth"))
     private var apertureHeight = CGFloat(UserDefaults.standard.double(forKey: "camera.apertureHeight"))
-    private var heightAtDragStart: CGFloat = 0
-    private var dragsTopEdge = false
+    private var sizeAtDragStart: CGSize = .zero
+    private var drag: (x: CGFloat, y: CGFloat) = (0, 0)   // 끄는 방향이 틀을 키우는 쪽(±1), 0 이면 그 축은 그대로
     private var tooWide = 0                   // 두 마디보다 많이 보인 읽기가 연달아 몇 번인지
 
     // 비춰 읽기 — 들고 있는 동안 왼쪽 음표부터 하나씩 확정된다.
@@ -104,6 +105,15 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
     private let pendingMarks = CAShapeLayer()   // 보이지만 아직 확정하지 않은 음표
     private let exposureLine = CAShapeLayer()   // 얼마나 읽었는지 — 틀을 따라 차오른다
     private var exposure = OMR.Exposure()
+
+    // 확인 — 다 읽으면 멈춘 장면 위에서 맞는지 보고, 틀린 음표만 다시 읽는다.
+    private let still = CALayer()               // 읽은 그 장면
+    private let names = CALayer()               // 음표마다 읽은 음 이름
+    private let reviewBar = UIStackView()
+    private let retryButton = UIButton(type: .system)
+    private var frames: [(reading: OMR.Reading, image: UIImage)] = []   // 최근 장면들
+    private var flagged: Set<Int> = []          // 사용자가 틀렸다고 짚은 음표
+    private var reviewed: UIImage?
     private var lastRead = Date.distantPast     // readQueue 에서만 쓴다
     private let geometryLock = NSLock()
     private var geometry: (aperture: CGRect, bounds: CGSize) = (.zero, .zero)
@@ -182,6 +192,9 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         dim.fillRule = .evenOdd
         dim.fillColor = UIColor.black.withAlphaComponent(0.6).cgColor
         view.layer.addSublayer(dim)
+        still.contentsGravity = .resize
+        still.isHidden = true
+        view.layer.addSublayer(still)
         frameLine.fillColor = UIColor.clear.cgColor
         frameLine.strokeColor = UIColor.white.cgColor
         frameLine.lineWidth = 2
@@ -208,9 +221,12 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         exposureLine.strokeEnd = 0
         view.layer.addSublayer(exposureLine)
 
+        view.layer.addSublayer(names)
         grips.fillColor = UIColor.white.cgColor
         view.layer.addSublayer(grips)
         view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(resize)))
+        view.addGestureRecognizer(UIPinchGestureRecognizer(target: self, action: #selector(pinch)))
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(flag)))
 
         hint.text = Self.holdHint
         hint.textColor = .white
@@ -228,22 +244,57 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
     private static let missedHint = String(localized: "빨간 음표는 읽지 못했어요", comment: "Camera hint when a note could not be read and is marked in red")
     private static let closerHint = String(localized: "두 마디만 보이게 더 가까이 대 주세요", comment: "Camera hint when more than two measures are inside the frame")
 
-    /// 틀의 위나 아래를 끌어 높이를 바꾼다. 틀은 가운데에 머문다.
+    private static let reviewHint = String(localized: "맞게 읽었나요? 틀린 음표는 눌러 주세요", comment: "Camera hint after the score was read: confirm it, or tap the notes that are wrong")
+
+    /// 틀을 끌어 크기를 바꾼다. 양옆 가장자리는 너비, 위아래는 높이, 모서리는 둘 다.
+    /// 틀은 가운데에 머문다.
     @objc private func resize(_ pan: UIPanGestureRecognizer) {
+        guard exposure.result == nil else { return }
         switch pan.state {
         case .began:
-            heightAtDragStart = apertureRect.height
-            dragsTopEdge = pan.location(in: view).y < view.bounds.midY
+            let p = pan.location(in: view), r = apertureRect
+            let dx = abs(p.x - r.midX) - r.width / 2, dy = abs(p.y - r.midY) - r.height / 2
+            let sideways = dx > -44                       // 왼쪽·오른쪽 가장자리나 그 바깥
+            let upDown = dy > -44 || !sideways            // 위·아래 가장자리, 아니면 한가운데도 높이
+            drag = (sideways ? (p.x < r.midX ? -1 : 1) : 0, upDown ? (p.y < r.midY ? -1 : 1) : 0)
+            sizeAtDragStart = r.size
         case .changed:
-            let dy = pan.translation(in: view).y
-            apertureHeight = heightAtDragStart + 2 * (dragsTopEdge ? -dy : dy)
-            exposure = OMR.Exposure()   // 틀이 바뀌면 처음부터 다시 찍는다
-            view.setNeedsLayout()
+            let t = pan.translation(in: view)
+            if drag.x != 0 { apertureWidth = max(1, sizeAtDragStart.width + 2 * drag.x * t.x) }
+            if drag.y != 0 { apertureHeight = max(1, sizeAtDragStart.height + 2 * drag.y * t.y) }
+            reframed()
         case .ended, .cancelled:
-            apertureHeight = apertureRect.height
-            UserDefaults.standard.set(Double(apertureHeight), forKey: "camera.apertureHeight")
+            keepFrame()
         default: break
         }
+    }
+
+    /// 두 손가락으로 벌리고 오므려 틀을 통째로 키우고 줄인다.
+    @objc private func pinch(_ pinch: UIPinchGestureRecognizer) {
+        guard exposure.result == nil else { return }
+        switch pinch.state {
+        case .began:
+            sizeAtDragStart = apertureRect.size
+        case .changed:
+            apertureWidth = max(1, sizeAtDragStart.width * pinch.scale)
+            apertureHeight = max(1, sizeAtDragStart.height * pinch.scale)
+            reframed()
+        case .ended, .cancelled:
+            keepFrame()
+        default: break
+        }
+    }
+
+    private func reframed() {
+        exposure = OMR.Exposure()   // 틀이 바뀌면 처음부터 다시 읽는다
+        frames = []
+        view.setNeedsLayout()
+    }
+
+    private func keepFrame() {
+        (apertureWidth, apertureHeight) = (apertureRect.width, apertureRect.height)
+        UserDefaults.standard.set(Double(apertureWidth), forKey: "camera.apertureWidth")
+        UserDefaults.standard.set(Double(apertureHeight), forKey: "camera.apertureHeight")
     }
 
     private func setupControls() {
@@ -264,7 +315,27 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         cancel.addTarget(self, action: #selector(cancelTapped), for: .touchUpInside)
         view.addSubview(cancel)
 
+        func pill(_ title: String, filled: Bool, _ action: Selector, on button: UIButton = UIButton(type: .system)) -> UIButton {
+            var look: UIButton.Configuration = filled ? .filled() : .gray()
+            look.title = title
+            look.cornerStyle = .capsule
+            look.baseForegroundColor = .white
+            look.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16)
+            button.configuration = look
+            button.addTarget(self, action: action, for: .touchUpInside)
+            return button
+        }
+        reviewBar.addArrangedSubview(pill(String(localized: "처음부터", comment: "Camera review: throw the reading away and read the score again from the start"), filled: false, #selector(startOver)))
+        reviewBar.addArrangedSubview(pill(String(localized: "빨간 음표만 다시", comment: "Camera review: read only the notes marked red again"), filled: false, #selector(readAgain), on: retryButton))
+        reviewBar.addArrangedSubview(pill(String(localized: "악보에 넣기"), filled: true, #selector(accept)))
+        reviewBar.spacing = 12
+        reviewBar.isHidden = true
+        reviewBar.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(reviewBar)
+
         NSLayoutConstraint.activate([
+            reviewBar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            reviewBar.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
             shutter.widthAnchor.constraint(equalToConstant: 66),
             shutter.heightAnchor.constraint(equalToConstant: 66),
             shutter.centerYAnchor.constraint(equalTo: view.centerYAnchor),
@@ -304,8 +375,9 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         // shutter — the shutter must never sit on top of the notes.
         let left = max(view.safeAreaInsets.left, 8) + 16
         let right = (shutter.superview == nil ? view.bounds.maxX : shutter.frame.minX) - 16
-        let w = max(1, min(right - left, 900))
-        let tallest = max(60, view.bounds.height - 140)
+        let widest = max(1, min(right - left, 900))
+        let w = min(max(apertureWidth > 0 ? apertureWidth : widest, min(160, widest)), widest)
+        let tallest = max(60, view.bounds.height - 180)
         let h = min(max(apertureHeight > 0 ? apertureHeight : w / aspect, 60), tallest)
         apertureRect = CGRect(x: (left + right) / 2 - w / 2,
                               y: view.bounds.midY - h / 2, width: w, height: h)
@@ -315,10 +387,20 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         dim.path = path.cgPath
         frameLine.path = UIBezierPath(roundedRect: apertureRect, cornerRadius: 6).cgPath
         exposureLine.path = frameLine.path
+        still.frame = apertureRect
+        // 손잡이 — 네 변의 가운데와 네 모서리.
         let grip = UIBezierPath()
-        for y in [apertureRect.minY, apertureRect.maxY] {
-            grip.append(UIBezierPath(roundedRect: CGRect(x: apertureRect.midX - 22, y: y - 3, width: 44, height: 6),
-                                     cornerRadius: 3))
+        let r = apertureRect
+        for y in [r.minY, r.maxY] {
+            grip.append(UIBezierPath(roundedRect: CGRect(x: r.midX - 22, y: y - 3, width: 44, height: 6), cornerRadius: 3))
+        }
+        for x in [r.minX, r.maxX] {
+            grip.append(UIBezierPath(roundedRect: CGRect(x: x - 3, y: r.midY - 22, width: 6, height: 44), cornerRadius: 3))
+        }
+        for (x, y) in [(r.minX, r.minY), (r.maxX, r.minY), (r.minX, r.maxY), (r.maxX, r.maxY)] {
+            let (inX, inY): (CGFloat, CGFloat) = (x == r.minX ? 1 : -1, y == r.minY ? 1 : -1)
+            grip.append(UIBezierPath(rect: CGRect(x: x - 3 * inX, y: y - 3 * inY, width: 24 * inX, height: 6 * inY).standardized))
+            grip.append(UIBezierPath(rect: CGRect(x: x - 3 * inX, y: y - 3 * inY, width: 6 * inX, height: 24 * inY).standardized))
         }
         grips.path = grip.cgPath
         orient(videoOut.connection(with: .video))
@@ -381,9 +463,11 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
     }
 
     /// 한 번 읽은 결과를 겹친다. 거듭 같게 읽힌 음표가 왼쪽부터 하나씩
-    /// 확정되고, 끝까지 가면 저절로 넘어간다.
+    /// 확정되고, 끝까지 가면 그 장면을 멈춰 놓고 맞는지 묻는다.
     private func expose(_ reading: OMR.Reading, from image: UIImage) {
         guard exposure.result == nil else { return }
+        frames.append((reading, image))
+        if frames.count > 8 { frames.removeFirst() }
         // 두 마디보다 많이 보이면 찍지 않고 알려 준다. 한 번 잘못 읽은 것에
         // 글이 깜빡이지 않게, 연달아 두 번일 때부터.
         tooWide = reading.measures > 2 ? tooWide + 1 : 0
@@ -395,53 +479,143 @@ final class ApertureCameraController: UIViewController, AVCapturePhotoCaptureDel
         hint.textColor = far ? .systemYellow : missed ? .systemRed : .white
         frameLine.strokeColor = (far ? UIColor.systemYellow : .white).cgColor
 
-        // 어느 오선을 읽고 있는지 — 찾은 그 자리에 다섯 줄을 겹쳐 보여 준다.
+        // 자리는 확정한 음표와 맞는 가장 새 장면에서 가져와, 손이 움직여도 따라간다.
+        draw(exposure.view, staff: reading.staffLines, red: Set(exposure.failed), settled: exposure.settled)
+        exposureLine.strokeEnd = exposure.progress
+
+        switch step {
+        case .waiting:
+            break
+        case .settled(let i, let pitch):   // 팅 — 그 음이 울린다
+            ring(at: spot(i, in: exposure.view), radius: dotRadius(exposure.view), color: .systemBlue)
+            UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            onNote?(pitch)
+        case .failed(let i):
+            ring(at: spot(i, in: exposure.view), radius: dotRadius(exposure.view), color: .systemRed)
+            UINotificationFeedbackGenerator().notificationOccurred(.warning)
+        case .done:
+            UINotificationFeedbackGenerator().notificationOccurred(.success)
+            review()
+        }
+    }
+
+    private func spot(_ i: Int, in reading: OMR.Reading) -> CGPoint {
+        guard reading.marks.indices.contains(i) else { return CGPoint(x: apertureRect.midX, y: apertureRect.midY) }
+        return CGPoint(x: apertureRect.minX + reading.marks[i].x * apertureRect.width,
+                       y: apertureRect.minY + reading.marks[i].y * apertureRect.height)
+    }
+
+    /// 점의 크기는 읽은 오선의 한 칸에 맞춘다.
+    private func dotRadius(_ reading: OMR.Reading) -> CGFloat {
+        let lines = reading.staffLines
+        return (lines.count == 5 ? (lines[4] - lines[0]) / 4 * apertureRect.height : apertureRect.height * 0.08) * 0.6
+    }
+
+    /// 읽은 것을 틀 위에 그린다 — 찾은 오선, 그리고 확정한 음표는 파랗게,
+    /// 못 읽었거나 틀렸다고 짚은 음표는 빨갛게, 아직인 음표는 흐린 테두리로.
+    private func draw(_ reading: OMR.Reading, staff: [Double], red: Set<Int>, settled: Int, named: Bool = false) {
         let found = UIBezierPath()
-        for line in reading.staffLines {
+        for line in staff {
             let y = apertureRect.minY + line * apertureRect.height
             found.move(to: CGPoint(x: apertureRect.minX + 6, y: y))
             found.addLine(to: CGPoint(x: apertureRect.maxX - 6, y: y))
         }
         staffGuide.path = found.cgPath
 
-        // 확정한 음표는 파랗게, 포기한 음표는 빨갛게, 아직인 음표는 흐린 테두리로.
-        // 자리는 확정한 음표와 맞는 가장 새 장면에서 가져와, 손이 움직여도 따라간다.
-        let seen = exposure.view
-        let space = seen.staffLines.count == 5
-            ? (seen.staffLines[4] - seen.staffLines[0]) / 4 * apertureRect.height : apertureRect.height * 0.08
-        let radius = space * 0.6
-        let failed = Set(exposure.failed)
+        let radius = dotRadius(reading)
         let (sure, lost, waiting) = (UIBezierPath(), UIBezierPath(), UIBezierPath())
-        for (i, m) in seen.marks.enumerated() {
-            let c = CGPoint(x: apertureRect.minX + m.x * apertureRect.width,
-                            y: apertureRect.minY + m.y * apertureRect.height)
-            let path = failed.contains(i) ? lost : i < exposure.settled ? sure : waiting
-            path.append(UIBezierPath(arcCenter: c, radius: radius, startAngle: 0,
-                                     endAngle: .pi * 2, clockwise: true))
-            if i == exposure.settled - 1, step != .waiting, step != .done {
-                ring(at: c, radius: radius, color: failed.contains(i) ? .systemRed : .systemBlue)
-            }
+        names.sublayers = nil
+        for i in reading.marks.indices {
+            let c = spot(i, in: reading)
+            let path = red.contains(i) ? lost : i < settled ? sure : waiting
+            path.append(UIBezierPath(arcCenter: c, radius: radius, startAngle: 0, endAngle: .pi * 2, clockwise: true))
+            guard named, reading.notes.indices.contains(i) else { continue }
+            // 무엇으로 읽었는지 — 틀 바로 아래, 그 음표 밑에 적는다.
+            let pitch = reading.notes[i].pitch
+            let name = CATextLayer()
+            name.string = ScoreTextFormat.usesKoreanNotation ? pitch.solfege : pitch.label
+            name.fontSize = 13
+            name.alignmentMode = .center
+            name.contentsScale = traitCollection.displayScale
+            name.foregroundColor = (red.contains(i) ? UIColor.systemRed : .white).cgColor
+            name.frame = CGRect(x: c.x - 24, y: apertureRect.maxY + 6, width: 48, height: 18)
+            names.addSublayer(name)
         }
         marks.path = sure.cgPath
         missedMarks.path = lost.cgPath
         pendingMarks.path = waiting.cgPath
-        exposureLine.strokeEnd = exposure.progress
+    }
 
-        switch step {
-        case .waiting:
-            break
-        case .settled(let pitch):       // 팅 — 그 음이 울린다
-            UIImpactFeedbackGenerator(style: .light).impactOccurred()
-            onNote?(pitch)
-        case .failed:
-            UINotificationFeedbackGenerator().notificationOccurred(.warning)
-        case .done:
-            guard let whole = exposure.result else { return }
-            UINotificationFeedbackGenerator().notificationOccurred(.success)
-            // 다 읽은 모습을 잠깐 보여 주고 넘긴다.
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { self.onRead?(image, whole) }
+    // MARK: Review
+
+    /// 다 읽었다 — 읽은 그 장면을 멈춰 보여 주고 맞는지 묻는다.
+    private func review() {
+        guard let whole = exposure.result else { return }
+        // 음표 자리가 꼭 맞도록, 결과가 나온 바로 그 장면을 쓴다.
+        let image = frames.last { $0.reading.notes.first?.id == whole.notes.first?.id }?.image ?? frames.last?.image
+        reviewed = image
+        CATransaction.begin()
+        CATransaction.setDisableActions(true)
+        still.contents = image?.cgImage
+        still.isHidden = false
+        CATransaction.commit()
+        setReviewing(true)
+        redrawReview()
+    }
+
+    private func setReviewing(_ on: Bool) {
+        reviewBar.isHidden = !on
+        shutter.isHidden = on
+        grips.isHidden = on
+        exposureLine.isHidden = on
+        if !on {
+            still.isHidden = true
+            names.sublayers = nil
+            flagged = []
         }
     }
+
+    private func redrawReview() {
+        guard let whole = exposure.result else { return }
+        let red = flagged.union(exposure.failed)
+        draw(whole, staff: whole.staffLines, red: red, settled: whole.notes.count, named: true)
+        hint.text = Self.reviewHint
+        hint.textColor = .white
+        retryButton.isEnabled = !red.isEmpty
+    }
+
+    /// 확인 중에 음표를 누르면 틀렸다고 짚는다. 다시 누르면 푼다.
+    @objc private func flag(_ tap: UITapGestureRecognizer) {
+        guard let whole = exposure.result else { return }
+        let p = tap.location(in: view)
+        func distance(_ i: Int) -> CGFloat { let c = spot(i, in: whole); return hypot(c.x - p.x, c.y - p.y) }
+        guard let i = whole.marks.indices.min(by: { distance($0) < distance($1) }),
+              distance(i) < max(32, dotRadius(whole) * 2.5), !exposure.failed.contains(i) else { return }
+        flagged.formSymmetricDifference([i])
+        UISelectionFeedbackGenerator().selectionChanged()
+        redrawReview()
+    }
+
+    @objc private func startOver() {
+        exposure = OMR.Exposure()
+        frames = []
+        setReviewing(false)
+        draw(OMR.Reading(), staff: [], red: [], settled: 0)
+    }
+
+    /// 빨간 음표만 다시 읽는다 — 나머지는 그대로 둔다.
+    @objc private func readAgain() {
+        exposure.retry(Array(flagged))
+        frames = []
+        setReviewing(false)
+    }
+
+    @objc private func accept() {
+        guard var whole = exposure.result, let image = reviewed else { return }
+        for i in flagged { whole.unsure.insert(whole.notes[i].id) }   // 틀렸다고 짚은 채 넣으면 '확인 필요'로
+        onRead?(image, whole)
+    }
+
 
     /// 음표 하나가 정해지는 순간 — 그 자리에서 고리가 퍼졌다 사라진다.
     private func ring(at center: CGPoint, radius: CGFloat, color: UIColor) {
