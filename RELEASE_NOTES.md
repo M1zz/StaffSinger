@@ -1,344 +1,198 @@
 # 릴리즈 노트
 
-## 1.0.7
-
-### 앱스토어 (한국어)
-
-이제 iPad에서도 쓸 수 있어요
-카메라로 악보를 비추면 음표를 읽어요
-악보를 말로 읽으면 음표로 받아써요
-Apple Pencil을 두 번 톡 치면 쉼표 입력으로 바뀌어요
-앱 아이콘이 새로워졌어요
-
-### App Store (English)
-
-Now available on iPad
-Hold the camera over a score to read it
-Read a score aloud to write its notes
-Double-tap Apple Pencil for Rest Mode
-A fresh new app icon
-
-### App Store (en-GB)
-
-Now available on iPad
-Hold the camera over a score to read it
-Read a score aloud to write its notes
-Double-tap Apple Pencil for Rest Mode
-A fresh new app icon
-
-### 앱스토어 (중국어 간체)
-
-现在也可以在 iPad 上使用
-用相机对准乐谱即可读出音符
-把乐谱读出来就能记成音符
-轻点两下 Apple Pencil 切换到休止符模式
-全新的 App 图标
-
-### 앱스토어 (중국어 번체)
-
-現在也可以在 iPad 上使用
-用相機對準樂譜即可讀出音符
-把樂譜讀出來就能記成音符
-點兩下 Apple Pencil 切換成休止符模式
-全新的 App 圖像
-
-### 앱스토어 (일본어)
-
-iPadでも使えるようになりました
-カメラを楽譜にかざすと音符を読み取ります
-楽譜を声に出して読むと音符になります
-Apple Pencilをダブルタップで休符モードに
-アプリアイコンが新しくなりました
-
-### 앱스토어 (러시아어)
-
-Теперь и на iPad
-Наведите камеру на ноты, и они считаны
-Читайте ноты вслух, и они запишутся
-Режим пауз двойным касанием Apple Pencil
-Новый значок приложения
-
-### 앱스토어 (스페인어)
-
-Ya disponible en iPad
-Enfoca la partitura y se leen las notas
-Lee la partitura en voz alta y se anota
-Doble toque de Apple Pencil: silencios
-Nuevo icono de la app
-
-### 앱스토어 (독일어)
-
-Jetzt auch auf dem iPad
-Kamera auf die Noten halten und einlesen
-Noten laut vorlesen und notieren lassen
-Apple Pencil doppeltippen: Pausenmodus
-Neues App-Symbol
-
-### 앱스토어 (프랑스어)
-
-Désormais disponible sur iPad
-Visez la partition pour lire les notes
-Lisez la partition à voix haute
-Double toucher l’Apple Pencil : silences
-Nouvelle icône de l’app
-
-### 앱스토어 (이탈리아어)
-
-Ora disponibile su iPad
-Inquadra lo spartito per leggere le note
-Leggi lo spartito ad alta voce
-Doppio tocco su Apple Pencil: pause
-Nuova icona dell’app
-
-### 앱스토어 (포르투갈어 브라질)
-
-Agora também no iPad
-Aponte a câmera e as notas são lidas
-Leia a partitura em voz alta
-Toque duas vezes no Apple Pencil: pausas
-Novo ícone do app
-
-### 앱스토어 (태국어)
-
-ใช้งานบน iPad ได้แล้ว
-ส่องกล้องที่โน้ตเพลงเพื่ออ่านตัวโน้ต
-อ่านโน้ตออกเสียงเพื่อจดเป็นตัวโน้ต
-แตะ Apple Pencil สองครั้งสลับโหมดตัวหยุด
-ไอคอนแอปใหม่
-
-### 앱스토어 (베트남어)
-
-Nay đã dùng được trên iPad
-Đưa camera lên bản nhạc để đọc nốt
-Đọc to bản nhạc để chép thành nốt
-Chạm hai lần Apple Pencil: dấu lặng
-Biểu tượng ứng dụng mới
-
-### 앱스토어 (체코어)
-
-Nově také na iPadu
-Namiřte fotoaparát na noty a načtou se
-Čtěte noty nahlas a zapíší se
-Dvojí klepnutí Apple Pencil: režim pomlk
-Nová ikona aplikace
-
-### 앱스토어 (덴마크어)
-
-Nu også på iPad
-Hold kameraet over noderne for at læse
-Læs noderne højt, så skrives de ned
-Dobbelttryk Apple Pencil for pauser
-Nyt appsymbol
-
-### 앱스토어 (그리스어)
-
-Τώρα και στο iPad
-Στρέψτε την κάμερα στην παρτιτούρα
-Διαβάστε τις νότες φωναχτά
-Διπλό άγγιγμα Apple Pencil: παύσεις
-Νέο εικονίδιο εφαρμογής
-
-### 앱스토어 (핀란드어)
-
-Nyt myös iPadilla
-Näytä nuotit kameralle, niin ne luetaan
-Lue nuotit ääneen, niin ne kirjataan
-Kaksoisnapauta Apple Penciliä: taukotila
-Uusi appikuvake
-
-### 앱스토어 (인도네시아어)
-
-Kini tersedia di iPad
-Arahkan kamera ke partitur untuk membaca
-Bacakan partitur untuk mencatat not
-Ketuk dua kali Apple Pencil: tanda diam
-Ikon app baru
-
-### 앱스토어 (Norsk bokmål)
-
-Nå også på iPad
-Hold kameraet over notene for å lese
-Les notene høyt, så skrives de ned
-Dobbelttrykk Apple Pencil for pauser
-Nytt appsymbol
-
-### 앱스토어 (네덜란드어)
-
-Nu ook op iPad
-Houd de camera boven de noten
-Lees de noten hardop om ze te noteren
-Dubbeltik op Apple Pencil voor rusten
-Nieuw appsymbool
-
-### 앱스토어 (폴란드어)
-
-Teraz także na iPadzie
-Skieruj aparat na nuty, by je odczytać
-Czytaj nuty na głos, a zostaną zapisane
-Dwukrotne stuknięcie Apple Pencil: pauzy
-Nowa ikona aplikacji
-
-### 앱스토어 (스웨덴어)
-
-Nu även på iPad
-Håll kameran över noterna för att läsa
-Läs noterna högt så skrivs de ned
-Dubbeltryck Apple Pencil för pauser
-Ny appsymbol
-
-### 앱스토어 (튀르키예어)
-
-Artık iPad’de de kullanılabilir
-Kamerayı notaya tut, notalar okunsun
-Notayı sesli oku, notalar yazılsın
-Apple Pencil’a iki kez dokunun: sus
-Yeni uygulama simgesi
-
 ## 1.0.6
 
 ### 앱스토어 (한국어)
 
 Siri에게 말하면 바로 악보를 찍을 수 있어요
-Siri로 지금 악보를 바로 들려줘요
-Siri로 계이름 받아쓰기를 바로 열어요
+이제 iPad에서도 쓸 수 있어요
+카메라로 악보를 비추면 음표를 읽어요
+악보를 말로 읽으면 음표로 받아써요
+앱 아이콘이 새로워졌어요
 
 ### App Store (English)
 
 Ask Siri to scan a score right away
-Ask Siri to play your current score
-Open Solfège Dictation with Siri
+Now available on iPad
+Hold the camera over a score to read it
+Read a score aloud to write its notes
+A fresh new app icon
 
 ### App Store (en-GB)
 
 Ask Siri to scan a score right away
-Ask Siri to play your current score
-Open Solfège Dictation with Siri
+Now available on iPad
+Hold the camera over a score to read it
+Read a score aloud to write its notes
+A fresh new app icon
 
 ### 앱스토어 (중국어 간체)
 
 对 Siri 说一声就能扫描乐谱
-让 Siri 播放当前的乐谱
-用 Siri 直接打开唱名听写
+现在也可以在 iPad 上使用
+用相机对准乐谱即可读出音符
+把乐谱读出来就能记成音符
+全新的 App 图标
 
 ### 앱스토어 (중국어 번체)
 
 對 Siri 說一聲就能掃描樂譜
-讓 Siri 播放目前的樂譜
-用 Siri 直接打開唱名聽寫
+現在也可以在 iPad 上使用
+用相機對準樂譜即可讀出音符
+把樂譜讀出來就能記成音符
+全新的 App 圖像
 
 ### 앱스토어 (일본어)
 
 Siriに話すだけで楽譜を撮れます
-今の楽譜をSiriで再生できます
-Siriで階名ディクテーションをすぐ開けます
+iPadでも使えるようになりました
+カメラを楽譜にかざすと音符を読み取ります
+楽譜を声に出して読むと音符になります
+アプリアイコンが新しくなりました
 
 ### 앱스토어 (러시아어)
 
 Попросите Siri снять ноты
-Siri сыграет текущие ноты
-Сольфеджио под диктовку через Siri
+Теперь и на iPad
+Наведите камеру на ноты, и они считаны
+Читайте ноты вслух, и они запишутся
+Новый значок приложения
 
 ### 앱스토어 (스페인어)
 
 Pide a Siri que escanee una partitura
-Pide a Siri que toque tu partitura
-Abre el dictado de solfeo con Siri
+Ya disponible en iPad
+Enfoca la partitura y se leen las notas
+Lee la partitura en voz alta y se anota
+Nuevo icono de la app
 
 ### 앱스토어 (독일어)
 
 Noten per Siri sofort scannen
-Aktuelle Noten per Siri abspielen
-Solmisations-Diktat per Siri öffnen
+Jetzt auch auf dem iPad
+Kamera auf die Noten halten und einlesen
+Noten laut vorlesen und notieren lassen
+Neues App-Symbol
 
 ### 앱스토어 (프랑스어)
 
 Scannez une partition avec Siri
-Faites jouer votre partition par Siri
-Ouvrez la dictée de solfège avec Siri
+Désormais disponible sur iPad
+Visez la partition pour lire les notes
+Lisez la partition à voix haute
+Nouvelle icône de l’app
 
 ### 앱스토어 (이탈리아어)
 
 Scansiona uno spartito con Siri
-Fai suonare lo spartito a Siri
-Apri il dettato di solfeggio con Siri
+Ora disponibile su iPad
+Inquadra lo spartito per leggere le note
+Leggi lo spartito ad alta voce
+Nuova icona dell’app
 
 ### 앱스토어 (포르투갈어 브라질)
 
 Peça à Siri para escanear a partitura
-Peça à Siri para tocar sua partitura
-Abra o ditado de solfejo com a Siri
+Agora também no iPad
+Aponte a câmera e as notas são lidas
+Leia a partitura em voz alta
+Novo ícone do app
 
 ### 앱스토어 (태국어)
 
 สั่ง Siri ให้สแกนโน้ตเพลงได้ทันที
-ให้ Siri เล่นโน้ตเพลงที่เปิดอยู่
-เปิดเขียนโน้ตตามเสียงโซลเฟจด้วย Siri
+ใช้งานบน iPad ได้แล้ว
+ส่องกล้องที่โน้ตเพลงเพื่ออ่านตัวโน้ต
+อ่านโน้ตออกเสียงเพื่อจดเป็นตัวโน้ต
+ไอคอนแอปใหม่
 
 ### 앱스토어 (베트남어)
 
 Nhờ Siri quét bản nhạc ngay
-Nhờ Siri phát bản nhạc đang mở
-Mở chép nhạc theo xướng âm bằng Siri
+Nay đã dùng được trên iPad
+Đưa camera lên bản nhạc để đọc nốt
+Đọc to bản nhạc để chép thành nốt
+Biểu tượng ứng dụng mới
 
 ### 앱스토어 (체코어)
 
 Naskenujte noty pomocí Siri
-Siri přehraje aktuální noty
-Solfeggio diktát spustíte přes Siri
+Nově také na iPadu
+Namiřte fotoaparát na noty a načtou se
+Čtěte noty nahlas a zapíší se
+Nová ikona aplikace
 
 ### 앱스토어 (덴마크어)
 
 Scan noder med Siri med det samme
-Lad Siri afspille dine noder
-Åbn solfège-diktat med Siri
+Nu også på iPad
+Hold kameraet over noderne for at læse
+Læs noderne højt, så skrives de ned
+Nyt appsymbol
 
 ### 앱스토어 (그리스어)
 
 Σαρώστε παρτιτούρα με τη Siri
-Η Siri παίζει την τρέχουσα παρτιτούρα
-Ανοίξτε την υπαγόρευση σολφέζ με Siri
+Τώρα και στο iPad
+Στρέψτε την κάμερα στην παρτιτούρα
+Διαβάστε τις νότες φωναχτά
+Νέο εικονίδιο εφαρμογής
 
 ### 앱스토어 (핀란드어)
 
 Skannaa nuotit heti Sirin avulla
-Siri soittaa nykyiset nuotit
-Avaa solfa-sanelu Sirin avulla
+Nyt myös iPadilla
+Näytä nuotit kameralle, niin ne luetaan
+Lue nuotit ääneen, niin ne kirjataan
+Uusi appikuvake
 
 ### 앱스토어 (인도네시아어)
 
 Pindai partitur langsung lewat Siri
-Minta Siri memutar partitur saat ini
-Buka dikte solfeggio lewat Siri
+Kini tersedia di iPad
+Arahkan kamera ke partitur untuk membaca
+Bacakan partitur untuk mencatat not
+Ikon app baru
 
 ### 앱스토어 (Norsk bokmål)
 
 Skann noter med Siri med en gang
-La Siri spille av notene dine
-Åpne solfège-diktat med Siri
+Nå også på iPad
+Hold kameraet over notene for å lese
+Les notene høyt, så skrives de ned
+Nytt appsymbol
 
 ### 앱스토어 (네덜란드어)
 
 Scan bladmuziek direct met Siri
-Laat Siri je bladmuziek afspelen
-Open het solfège-dictaat met Siri
+Nu ook op iPad
+Houd de camera boven de noten
+Lees de noten hardop om ze te noteren
+Nieuw appsymbool
 
 ### 앱스토어 (폴란드어)
 
 Skanuj nuty od razu przez Siri
-Siri odtworzy bieżące nuty
-Otwieraj dyktando solfeżowe przez Siri
+Teraz także na iPadzie
+Skieruj aparat na nuty, by je odczytać
+Czytaj nuty na głos, a zostaną zapisane
+Nowa ikona aplikacji
 
 ### 앱스토어 (스웨덴어)
 
 Skanna noter direkt med Siri
-Låt Siri spela upp dina noter
-Öppna solfège-diktamen med Siri
+Nu även på iPad
+Håll kameran över noterna för att läsa
+Läs noterna högt så skrivs de ned
+Ny appsymbol
 
 ### 앱스토어 (튀르키예어)
 
 Siri ile hemen nota tarayın
-Açık notayı Siri’ye çaldırın
-Solfej dikteyi Siri ile açın
+Artık iPad’de de kullanılabilir
+Kamerayı notaya tut, notalar okunsun
+Notayı sesli oku, notalar yazılsın
+Yeni uygulama simgesi
 
 ## 1.0.5
 
