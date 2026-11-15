@@ -41,11 +41,6 @@
       "title": "Powiedz nazwy nut, a staną się nutami",
       "text": "Po czterech kliknięciach metronomu mów `do` `re` `mi` do taktu, a nuty pojawią się na pięciolinii. Jeśli trafiasz w miarę, zapisze się też wartość: ćwierćnuty, ósemki lub szesnastki. Pauzę oznacz słowem `rest`.\nNazwy nut wymawiaj po angielsku. Mowa jest rozpoznawana tylko na urządzeniu i nie jest zapisywana.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Zdjęcie nut dla AI, wynik wklej",
-      "text": "Stuknij `Kopiuj regułę dla AI`, przekaż ją AI razem ze zdjęciem nut i wklej tekst, który dostaniesz. Pięciolinia wypełni się sama. Format znajdziesz w tabeli poniżej.\nMożesz też sfotografować papierowe nuty, trzymać zdjęcie na ekranie i przepisywać, patrząc na nie.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,44 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Format tekstu do wklejenia",
-    "rows": [
-      [
-        "C4:4",
-        "C w oktawie 4, ćwierćnuta (środkowe C to C4)"
-      ],
-      [
-        "D:8",
-        "Bez oktawy zostaje poprzednia"
-      ],
-      [
-        "F#4:8 · Bb4:4",
-        "# to krzyżyk, b to bemol"
-      ],
-      [
-        "E4",
-        "Bez „:wartości” zostaje poprzednia"
-      ],
-      [
-        ":1 · :2 · :4 · :8 · :16",
-        "cała nuta, półnuta, ćwierćnuta, ósemka, szesnastka"
-      ],
-      [
-        "C4:4.",
-        "nuta z kropką"
-      ],
-      [
-        "C4:8t",
-        "triola"
-      ],
-      [
-        "R:4 · R:8",
-        "pauzy"
-      ]
-    ],
-    "note": "Przycisk Kopiuj regułę dla AI w aplikacji kopiuje dokładnie te instrukcje. Nuty oddzielaj spacjami."
-  },
   "pricing": {
     "title": "Zapis i odsłuch są bezpłatne",
     "free": {
@@ -112,15 +69,14 @@
         "Odtwarzanie z odliczaniem i metronomem",
         "Akordy i trzy głosy",
         "Znaki przykluczowe i trzy klucze",
-        "Zdjęcie pomocnicze i kopiowanie partytury jako tekstu",
-        "Wypróbuj dyktando, wklejanie i przepis ze zdjęcia po 3 razy"
+        "Zdjęcie pomocnicze",
+        "Wypróbuj dyktando i przepis ze zdjęcia po 3 razy"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Dyktando solfeżowe (mówiąc do rytmu, zapiszesz też rytm)",
-        "Wklejanie partytury jako tekstu",
         "Automatyczny przepis ze zdjęcia (eksperyment)"
       ],
       "note": "Wybierz subskrypcję tygodniową, miesięczną lub roczną albo jednorazowy zakup dożywotni. Napiwki z Ustawień to osobna sprawa i niczego nie odblokowują."

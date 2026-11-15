@@ -16,8 +16,7 @@
   "shots": [
     "01-piano",
     "02-playback",
-    "03-dictation",
-    "04-paste"
+    "03-dictation"
   ],
   "shotsFrom": "raw",
   "shotsFallback": "en",

@@ -41,11 +41,6 @@
       "title": "Sig nodenavnene, så bliver de til noder",
       "text": "Efter fire klik fra metronomen siger du `do` `re` `mi` i takt, og noderne lander i nodesystemet. Rammer du slaget, kommer nodeværdien med, som fjerdedele, ottendedele eller sekstendedele. Til en pause siger du `rest`.\nSig nodenavnene på engelsk. Talen genkendes kun på enheden og gemmes ikke.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Giv nodebilledet til en AI, og indsæt svaret",
-      "text": "Tryk på `Kopiér regel til AI`, giv den til en AI sammen med et foto af noderne, og indsæt den tekst, du får tilbage. Nodesystemet udfylder sig selv. Formatet står i tabellen nedenfor.\nDu kan også fotografere papirnoderne, have billedet på skærmen og skrive af, mens du kigger.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,44 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Tekstformat til indsættelse",
-    "rows": [
-      [
-        "C4:4",
-        "C i oktav 4, fjerdedel (enstreget c er C4)"
-      ],
-      [
-        "D:8",
-        "Uden oktav gælder den forrige"
-      ],
-      [
-        "F#4:8 · Bb4:4",
-        "# for kryds, b for b"
-      ],
-      [
-        "E4",
-        "Uden :nodeværdi gælder den forrige"
-      ],
-      [
-        ":1 · :2 · :4 · :8 · :16",
-        "helnode, halvnode, fjerdedel, ottendedel, sekstendedel"
-      ],
-      [
-        "C4:4.",
-        "punkteret node"
-      ],
-      [
-        "C4:8t",
-        "triol"
-      ],
-      [
-        "R:4 · R:8",
-        "pauser"
-      ]
-    ],
-    "note": "Kopiér regel til AI i appen kopierer præcis disse instruktioner. Adskil noderne med mellemrum."
-  },
   "pricing": {
     "title": "Det er gratis at skrive og lytte",
     "free": {
@@ -112,15 +69,14 @@
         "Afspilning med indtælling og metronom",
         "Akkorder og tre stemmer",
         "Faste fortegn og tre nøgler",
-        "Referencefoto og kopiering af noderne som tekst",
-        "Prøv diktat, indsæt tekst og nedskrivning fra foto 3 gange hver"
+        "Referencefoto",
+        "Prøv diktat og nedskrivning fra foto 3 gange hver"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Solfège-diktat (sig noderne i takt, så kommer rytmen også med)",
-        "Indsæt noder som tekst",
         "Automatisk nedskrivning fra foto (eksperiment)"
       ],
       "note": "Vælg et uge-, måneds- eller årsabonnement, eller betal én gang for livstid. Drikkepenge fra Indstillinger er noget andet og låser ikke op for noget."

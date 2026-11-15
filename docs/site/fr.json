@@ -41,11 +41,6 @@
       "title": "Chantez le nom des notes, elles s’écrivent",
       "text": "Après quatre clics de métronome, dites `do` `re` `mi` à voix haute, en rythme, et les notes se placent sur la portée. En parlant pile sur le temps, le rythme est aussi saisi, en noires, croches ou doubles croches. Dites `rest` pour un silence.\nLes noms se prononcent en anglais : do re mi fa sol la ti, avec ti à la place de si. La reconnaissance vocale se fait sur votre appareil et rien n’est enregistré.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Confiez la photo à une IA, collez le résultat",
-      "text": "Touchez `Copier la règle pour l’IA`, donnez-la à une IA avec une photo de votre partition, puis collez ce qu’elle écrit. La portée se remplit. Le format figure dans le tableau ci-dessous.\nVous pouvez aussi photographier la page imprimée et la garder à l’écran pendant que vous la recopiez à la main.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,20 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Format texte à coller",
-    "rows": [
-      ["C4:4", "do à l’octave 4, noire (le do central s’écrit C4)"],
-      ["D:8", "Sans octave, la précédente est conservée"],
-      ["F#4:8 · Bb4:4", "# pour dièse, b pour bémol"],
-      ["E4", "Sans :durée, la durée précédente est conservée"],
-      [":1 · :2 · :4 · :8 · :16", "ronde, blanche, noire, croche, double croche"],
-      ["C4:4.", "note pointée"],
-      ["C4:8t", "triolet"],
-      ["R:4 · R:8", "silences"]
-    ],
-    "note": "Le bouton Copier la règle pour l’IA copie exactement ces consignes. Les lettres C D E F G A B correspondent à do ré mi fa sol la si. Séparez les notes par des espaces."
-  },
   "pricing": {
     "title": "Écrire et écouter, c’est gratuit",
     "free": {
@@ -88,15 +69,14 @@
         "Lecture avec décompte et métronome",
         "Accords et trois voix",
         "Armures et trois clés",
-        "Photos de référence et copie de la partition en texte",
-        "Essayez la dictée, le collage et la transcription photo 3 fois chacun"
+        "Photos de référence",
+        "Essayez la dictée et la transcription photo 3 fois chacune"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Dictée de solfège (en parlant en rythme, le rythme est noté aussi)",
-        "Coller une partition en texte",
         "Transcription auto depuis une photo (expérimental)"
       ],
       "note": "Choisissez un abonnement hebdomadaire, mensuel ou annuel, ou un achat unique à vie. Les pourboires des Réglages sont à part et ne débloquent rien."

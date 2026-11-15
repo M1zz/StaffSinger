@@ -41,11 +41,6 @@
       "title": "Đọc tên nốt, thành nốt nhạc",
       "text": "Sau bốn tiếng đếm của máy đếm nhịp, đọc `do` `re` `mi` theo phách là nốt hiện lên khuông. Đọc đúng phách thì trường độ cũng được ghi theo nốt đen, móc đơn hoặc móc kép. Chỗ nghỉ thì nói `rest`.\nHãy đọc tên nốt theo cách phát âm tiếng Anh. Giọng nói chỉ được nhận dạng trên máy và không được lưu lại.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Ảnh bản nhạc cho AI, kết quả thì dán vào",
-      "text": "Chạm `Sao chép quy tắc cho AI`, gửi cho AI kèm ảnh bản nhạc, rồi dán đoạn chữ nhận được vào. Khuông nhạc sẽ tự điền. Định dạng xem ở bảng bên dưới.\nBạn cũng có thể chụp bản nhạc giấy, để trên màn hình rồi vừa nhìn vừa chép.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,44 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Định dạng khi dán chữ",
-    "rows": [
-      [
-        "C4:4",
-        "Nốt C ở quãng tám 4, nốt đen (Đô giữa là C4)"
-      ],
-      [
-        "D:8",
-        "Bỏ quãng tám thì dùng tiếp quãng tám trước đó"
-      ],
-      [
-        "F#4:8 · Bb4:4",
-        "# là thăng, b là giáng"
-      ],
-      [
-        "E4",
-        "Bỏ :trường độ thì dùng tiếp trường độ trước đó"
-      ],
-      [
-        ":1 · :2 · :4 · :8 · :16",
-        "nốt tròn, trắng, đen, móc đơn, móc kép"
-      ],
-      [
-        "C4:4.",
-        "nốt chấm dôi"
-      ],
-      [
-        "C4:8t",
-        "chùm ba"
-      ],
-      [
-        "R:4 · R:8",
-        "dấu lặng"
-      ]
-    ],
-    "note": "Chạm Sao chép quy tắc cho AI trong ứng dụng để sao chép nguyên phần hướng dẫn này. Các nốt cách nhau bằng dấu cách."
-  },
   "pricing": {
     "title": "Viết nốt và nghe lại đều miễn phí",
     "free": {
@@ -112,15 +69,14 @@
         "Phát kèm đếm vào và máy đếm nhịp",
         "Hợp âm và ba bè",
         "Hóa biểu và ba loại khóa nhạc",
-        "Ảnh tham khảo và sao chép bản nhạc thành văn bản",
-        "Thử chép theo xướng âm, dán văn bản và chép nhạc từ ảnh mỗi thứ 3 lần"
+        "Ảnh tham khảo",
+        "Thử chép theo xướng âm và chép nhạc từ ảnh mỗi thứ 3 lần"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Chép nhạc theo xướng âm (nói đúng phách là ghi được cả nhịp)",
-        "Dán bản nhạc dạng văn bản",
         "Tự động chép nhạc từ ảnh (thử nghiệm)"
       ],
       "note": "Chọn gói tuần, tháng, năm hoặc trả một lần dùng trọn đời. Tip gửi trong Cài đặt là riêng và không mở thêm tính năng nào."

@@ -41,11 +41,6 @@
       "title": "Säg notnamnen så blir de noter",
       "text": "Efter fyra klick från metronomen säger du `do` `re` `mi` i takt, och noterna hamnar i notsystemet. Träffar du slaget fångas notvärdet också, som fjärdedelar, åttondelar eller sextondelar. För paus säger du `rest`.\nSäg notnamnen på engelska. Talet tolkas bara på enheten och sparas inte.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Ge notbilden till en AI och klistra in svaret",
-      "text": "Tryck på `Kopiera regel till AI`, ge den till en AI tillsammans med ett foto av noterna och klistra in texten du får tillbaka. Notsystemet fylls i av sig självt. Formatet står i tabellen nedan.\nDu kan också fota pappersnoterna, ha bilden på skärmen och skriva av medan du tittar.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,44 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Textformat för inklistring",
-    "rows": [
-      [
-        "C4:4",
-        "C i oktav 4, fjärdedel (ettstrukna c är C4)"
-      ],
-      [
-        "D:8",
-        "Utan oktav gäller den förra"
-      ],
-      [
-        "F#4:8 · Bb4:4",
-        "# för kors, b för b-förtecken"
-      ],
-      [
-        "E4",
-        "Utan :notvärde gäller det förra"
-      ],
-      [
-        ":1 · :2 · :4 · :8 · :16",
-        "helnot, halvnot, fjärdedel, åttondel, sextondel"
-      ],
-      [
-        "C4:4.",
-        "punkterad not"
-      ],
-      [
-        "C4:8t",
-        "triol"
-      ],
-      [
-        "R:4 · R:8",
-        "pauser"
-      ]
-    ],
-    "note": "Kopiera regel till AI i appen kopierar exakt de här instruktionerna. Skilj noterna åt med mellanslag."
-  },
   "pricing": {
     "title": "Att skriva och lyssna är gratis",
     "free": {
@@ -112,15 +69,14 @@
         "Uppspelning med inräkning och metronom",
         "Ackord och tre stämmor",
         "Förtecken och tre klavar",
-        "Referensfoto och kopiera noterna som text",
-        "Prova diktering, inklistring och avskrift från foto 3 gånger var"
+        "Referensfoto",
+        "Prova diktering och avskrift från foto 3 gånger var"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Solfège-diktamen (säg noterna i takt så kommer rytmen också med)",
-        "Klistra in noter som text",
         "Automatisk avskrift från foto (experimentell)"
       ],
       "note": "Välj vecko-, månads- eller årsabonnemang, eller betala en gång för livstid. Dricks från Inställningar är separat och låser inte upp något."

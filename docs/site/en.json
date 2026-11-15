@@ -41,11 +41,6 @@
       "title": "Sing the note names, get notes",
       "text": "After four metronome clicks, say `do` `re` `mi` out loud on the beat and they land on the staff. Speak in time and the rhythm is captured too, in quarters, eighths or sixteenths. Say `rest` for a rest.\nSay the names in English. Speech is recognized on your device and never stored.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Hand the photo to an AI, paste the result",
-      "text": "Tap `Copy Rule for AI`, give it to an AI along with a photo of your score, and paste back what it writes. The staff fills in. The format is in the table below.\nYou can also snap the printed page and keep it on screen while you copy it out by hand.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,20 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Text format for pasting",
-    "rows": [
-      ["C4:4", "C in octave 4, quarter note (middle C is C4)"],
-      ["D:8", "Leave out the octave and the previous one carries over"],
-      ["F#4:8 · Bb4:4", "# for sharp, b for flat"],
-      ["E4", "Leave out :length and the previous length carries over"],
-      [":1 · :2 · :4 · :8 · :16", "whole, half, quarter, eighth, sixteenth"],
-      ["C4:4.", "dotted note"],
-      ["C4:8t", "triplet"],
-      ["R:4 · R:8", "rests"]
-    ],
-    "note": "Copy Rule for AI in the app copies these exact instructions. Separate notes with spaces."
-  },
   "pricing": {
     "title": "Writing and listening are free",
     "free": {
@@ -88,15 +69,14 @@
         "Playback with count-in and metronome",
         "Chords and three voices",
         "Key signatures and three clefs",
-        "Reference photos and copying the score as text",
-        "Try dictation, paste and photo transcription 3 times each"
+        "Reference photos",
+        "Try dictation and photo transcription 3 times each"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Solfège dictation (speak on the beat to capture the rhythm too)",
-        "Paste a score as text",
         "Photo auto-transcription (experimental)"
       ],
       "note": "Choose a weekly, monthly or yearly subscription, or pay once for lifetime. Tips from Settings are separate and unlock nothing."

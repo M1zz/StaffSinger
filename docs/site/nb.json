@@ -41,11 +41,6 @@
       "title": "Si notenavnene, så blir de noter",
       "text": "Etter fire klikk fra metronomen sier du `do` `re` `mi` i takt, og notene havner i notesystemet. Treffer du slaget, kommer noteverdien med også, som firedeler, åttendedeler eller sekstendedeler. For pause sier du `rest`.\nSi notenavnene på engelsk. Talen gjenkjennes bare på enheten og lagres ikke.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Gi notebildet til en KI og lim inn svaret",
-      "text": "Trykk på `Kopier regel til KI`, gi den til en KI sammen med et bilde av notene, og lim inn teksten du får tilbake. Notesystemet fylles ut av seg selv. Formatet står i tabellen nedenfor.\nDu kan også ta bilde av papirnotene, ha det på skjermen og skrive av mens du ser på.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,44 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Tekstformat for innliming",
-    "rows": [
-      [
-        "C4:4",
-        "C i oktav 4, firedel (enstrøken c er C4)"
-      ],
-      [
-        "D:8",
-        "Uten oktav gjelder den forrige"
-      ],
-      [
-        "F#4:8 · Bb4:4",
-        "# for kryss, b for b"
-      ],
-      [
-        "E4",
-        "Uten :noteverdi gjelder den forrige"
-      ],
-      [
-        ":1 · :2 · :4 · :8 · :16",
-        "helnote, halvnote, firedel, åttendedel, sekstendedel"
-      ],
-      [
-        "C4:4.",
-        "punktert note"
-      ],
-      [
-        "C4:8t",
-        "triol"
-      ],
-      [
-        "R:4 · R:8",
-        "pauser"
-      ]
-    ],
-    "note": "Kopier regel til KI i appen kopierer nøyaktig disse instruksjonene. Skill notene med mellomrom."
-  },
   "pricing": {
     "title": "Det er gratis å skrive og lytte",
     "free": {
@@ -112,15 +69,14 @@
         "Avspilling med inntelling og metronom",
         "Akkorder og tre stemmer",
         "Faste fortegn og tre nøkler",
-        "Referansebilde og kopiering av notene som tekst",
-        "Prøv diktat, innliming og avskrift fra bilde 3 ganger hver"
+        "Referansebilde",
+        "Prøv diktat og avskrift fra bilde 3 ganger hver"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Solfège-diktat (si notene i takt, så kommer rytmen også med)",
-        "Lim inn noter som tekst",
         "Automatisk avskrift fra bilde (eksperimentell)"
       ],
       "note": "Velg uke-, måneds- eller årsabonnement, eller betal én gang for livstid. Tips fra Innstillinger er noe annet og låser ikke opp noe."

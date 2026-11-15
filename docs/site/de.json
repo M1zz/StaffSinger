@@ -41,11 +41,6 @@
       "title": "Notennamen singen, Noten bekommen",
       "text": "Nach vier Metronomklicks sagst du `do` `re` `mi` laut im Takt, und sie landen im Notensystem. Sprichst du genau auf den Schlag, wird auch der Rhythmus erfasst, in Vierteln, Achteln oder Sechzehnteln. Für eine Pause sagst du `rest`.\nDie Namen sprichst du auf Englisch: do re mi fa sol la ti. Die Spracherkennung läuft auf deinem Gerät, gespeichert wird nichts.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Foto an die KI, Ergebnis einfügen",
-      "text": "Tippe auf `Regel für die KI kopieren`, gib die Regel zusammen mit einem Foto deiner Noten an eine KI und füg ihre Antwort ein. Schon ist das Notensystem gefüllt. Das Format steht in der Tabelle unten.\nDu kannst die gedruckte Seite auch fotografieren und beim Abschreiben auf dem Bildschirm behalten.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,20 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Textformat zum Einfügen",
-    "rows": [
-      ["C4:4", "C in Oktave 4, Viertelnote (eingestrichenes C = C4)"],
-      ["D:8", "Ohne Oktave gilt die vorige weiter"],
-      ["F#4:8 · Bb4:4", "# für Kreuz, b für Be"],
-      ["E4", "Ohne :Länge gilt die vorige Länge weiter"],
-      [":1 · :2 · :4 · :8 · :16", "Ganze, Halbe, Viertel, Achtel, Sechzehntel"],
-      ["C4:4.", "punktierte Note"],
-      ["C4:8t", "Triole"],
-      ["R:4 · R:8", "Pausen"]
-    ],
-    "note": "„Regel für die KI kopieren“ in der App kopiert genau diese Anleitung. Die Buchstaben sind C D E F G A B, wobei B für H steht. Trenn die Noten durch Leerzeichen."
-  },
   "pricing": {
     "title": "Schreiben und Anhören sind gratis",
     "free": {
@@ -88,15 +69,14 @@
         "Wiedergabe mit Vorzähler und Metronom",
         "Akkorde und drei Stimmen",
         "Vorzeichen und drei Schlüssel",
-        "Referenzfotos und Partitur als Text kopieren",
-        "Diktat, Einfügen und Notieren per Foto je 3-mal ausprobieren"
+        "Referenzfotos",
+        "Diktat und Notieren per Foto je 3-mal ausprobieren"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Solmisations-Diktat (im Takt gesprochen, wird auch der Rhythmus notiert)",
-        "Partitur als Text einfügen",
         "Automatisch notieren per Foto (experimentell)"
       ],
       "note": "Wähle ein Wochen-, Monats- oder Jahresabo oder zahle einmal für immer. Trinkgeld in den Einstellungen ist davon getrennt und schaltet nichts frei."

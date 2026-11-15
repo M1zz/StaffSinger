@@ -41,11 +41,6 @@
       "title": "Canta los nombres, aparecen las notas",
       "text": "Tras cuatro clics del metrónomo, di `do` `re` `mi` en voz alta y a tiempo, y aparecen en el pentagrama. Si hablas justo en el pulso, también se registra el ritmo, en negras, corcheas o semicorcheas. Di `rest` para un silencio.\nLos nombres se dicen en inglés: do re mi fa sol la ti, con ti en lugar de si. El reconocimiento de voz se hace en tu dispositivo y no se guarda nada.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Pásale la foto a una IA y pega el resultado",
-      "text": "Toca `Copiar regla para la IA`, dásela a una IA junto con una foto de tu partitura y pega lo que te responda. El pentagrama se llena solo. El formato está en la tabla de abajo.\nTambién puedes tomarle una foto a la hoja impresa y dejarla en pantalla mientras la copias a mano.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,20 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Formato de texto para pegar",
-    "rows": [
-      ["C4:4", "do en la octava 4, negra (el do central es C4)"],
-      ["D:8", "Si omites la octava, se mantiene la anterior"],
-      ["F#4:8 · Bb4:4", "# para sostenido, b para bemol"],
-      ["E4", "Si omites :duración, se mantiene la anterior"],
-      [":1 · :2 · :4 · :8 · :16", "redonda, blanca, negra, corchea, semicorchea"],
-      ["C4:4.", "nota con puntillo"],
-      ["C4:8t", "tresillo"],
-      ["R:4 · R:8", "silencios"]
-    ],
-    "note": "El botón Copiar regla para la IA copia exactamente estas instrucciones. Las letras C D E F G A B equivalen a do re mi fa sol la si. Separa las notas con espacios."
-  },
   "pricing": {
     "title": "Escribir y escuchar es gratis",
     "free": {
@@ -88,15 +69,14 @@
         "Reproducción con cuenta previa y metrónomo",
         "Acordes y tres voces",
         "Armaduras y tres claves",
-        "Fotos de referencia y copiar la partitura como texto",
-        "Prueba el dictado, pegar y la transcripción desde foto 3 veces cada uno"
+        "Fotos de referencia",
+        "Prueba el dictado y la transcripción desde foto 3 veces cada uno"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Dictado de solfeo (si hablas a tempo, también capta el ritmo)",
-        "Pegar una partitura como texto",
         "Transcripción automática desde foto (experimental)"
       ],
       "note": "Elige suscripción semanal, mensual o anual, o un pago único de por vida. Las propinas desde Ajustes van aparte y no desbloquean nada."

@@ -41,11 +41,6 @@
       "title": "Řekněte názvy not a vzniknou noty",
       "text": "Po čtyřech kliknutích metronomu říkejte v rytmu `do` `re` `mi` a noty se objeví v osnově. Když trefíte dobu, zapíše se i délka: čtvrťové, osminové nebo šestnáctinové. Pomlku označíte slovem `rest`.\nNázvy not vyslovujte anglicky. Řeč se rozpoznává jen v zařízení a neukládá se.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Fotku not dejte AI, výsledek vložte",
-      "text": "Klepněte na `Zkopírovat pravidlo pro AI`, předejte ho AI spolu s fotkou not a vložte text, který vám vrátí. Osnova se vyplní sama. Formát najdete v tabulce níže.\nPapírové noty si také můžete vyfotit, nechat je na obrazovce a přepisovat podle nich.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,44 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Formát textu pro vložení",
-    "rows": [
-      [
-        "C4:4",
-        "C ve 4. oktávě, čtvrťová (jednočárkované c je C4)"
-      ],
-      [
-        "D:8",
-        "Bez oktávy zůstává předchozí"
-      ],
-      [
-        "F#4:8 · Bb4:4",
-        "# je křížek, b je béčko"
-      ],
-      [
-        "E4",
-        "Bez „:hodnoty“ zůstává předchozí"
-      ],
-      [
-        ":1 · :2 · :4 · :8 · :16",
-        "celá, půlová, čtvrťová, osminová, šestnáctinová"
-      ],
-      [
-        "C4:4.",
-        "tečkovaná nota"
-      ],
-      [
-        "C4:8t",
-        "triola"
-      ],
-      [
-        "R:4 · R:8",
-        "pomlky"
-      ]
-    ],
-    "note": "Tlačítko Zkopírovat pravidlo pro AI v aplikaci zkopíruje přesně tyto pokyny. Noty oddělujte mezerami."
-  },
   "pricing": {
     "title": "Zápis a poslech jsou zdarma",
     "free": {
@@ -112,15 +69,14 @@
         "Přehrávání s předtaktím a metronomem",
         "Akordy a tři hlasy",
         "Předznamenání a tři klíče",
-        "Referenční fotka a kopírování partitury jako textu",
-        "Diktát, vložení textu a přepis z fotky můžete každý 3× vyzkoušet"
+        "Referenční fotka",
+        "Diktát a přepis z fotky můžete každý 3× vyzkoušet"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Solfeggio diktát (když mluvíte do rytmu, zapíše se i rytmus)",
-        "Vložení partitury jako textu",
         "Automatický přepis z fotky (experimentální)"
       ],
       "note": "Vyberte týdenní, měsíční nebo roční předplatné, nebo jednorázový doživotní nákup. Spropitné z Nastavení je zvlášť a nic neodemyká."

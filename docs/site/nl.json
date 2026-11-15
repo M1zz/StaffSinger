@@ -41,11 +41,6 @@
       "title": "Zing de nootnamen, krijg de noten",
       "text": "Na vier tikken van de metronoom zeg je `do` `re` `mi` hardop op de maat, en ze komen op de notenbalk. Spreek je precies op de tel, dan wordt ook het ritme vastgelegd, in kwarten, achtsten of zestienden. Zeg `rest` voor een rust.\nZeg de namen in het Engels: do re mi fa sol la ti, dus ti in plaats van si. De spraakherkenning gebeurt op je apparaat en er wordt niets bewaard.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Geef de foto aan een AI, plak het resultaat",
-      "text": "Tik op `Kopieer regel voor AI`, geef die samen met een foto van je partituur aan een AI en plak wat je terugkrijgt. De notenbalk vult zich. Het formaat staat in de tabel hieronder.\nJe kunt ook de gedrukte bladzijde fotograferen en op het scherm houden terwijl je hem met de hand overschrijft.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,20 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Tekstformaat om te plakken",
-    "rows": [
-      ["C4:4", "C in octaaf 4, kwartnoot (de centrale C is C4)"],
-      ["D:8", "Laat je het octaaf weg, dan geldt het vorige"],
-      ["F#4:8 · Bb4:4", "# voor een kruis, b voor een mol"],
-      ["E4", "Laat je :lengte weg, dan geldt de vorige lengte"],
-      [":1 · :2 · :4 · :8 · :16", "hele, halve, kwart, achtste, zestiende"],
-      ["C4:4.", "gepunteerde noot"],
-      ["C4:8t", "triool"],
-      ["R:4 · R:8", "rusten"]
-    ],
-    "note": "De knop Kopieer regel voor AI in de app kopieert precies deze instructies. Scheid de noten met spaties."
-  },
   "pricing": {
     "title": "Schrijven en luisteren is gratis",
     "free": {
@@ -88,15 +69,14 @@
         "Afspelen met voortel en metronoom",
         "Akkoorden en drie stemmen",
         "Voortekeningen en drie sleutels",
-        "Referentiefoto's en de partituur als tekst kopiëren",
-        "Probeer dictaat, plakken en transcriberen van foto elk 3 keer"
+        "Referentiefoto's",
+        "Probeer dictaat en transcriberen van foto elk 3 keer"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Solfège-dictaat (spreek op de tel en ook het ritme wordt genoteerd)",
-        "Een partituur plakken als tekst",
         "Automatisch transcriberen van foto (experimenteel)"
       ],
       "note": "Kies een week-, maand- of jaarabonnement, of betaal eenmalig voor altijd. Fooien via Instellingen staan daar los van en ontgrendelen niets."

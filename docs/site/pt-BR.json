@@ -41,11 +41,6 @@
       "title": "Cante os nomes, ganhe as notas",
       "text": "Depois de quatro cliques do metrônomo, diga `do` `re` `mi` em voz alta, no tempo, e elas vão para a pauta. Falando bem no tempo, o ritmo também é registrado, em semínimas, colcheias ou semicolcheias. Diga `rest` para uma pausa.\nOs nomes são falados em inglês: do re mi fa sol la ti, com ti no lugar de si. O reconhecimento de voz acontece no seu dispositivo e nada é guardado.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Entregue a foto a uma IA e cole o resultado",
-      "text": "Toque em `Copiar regra para a IA`, entregue a regra a uma IA junto com uma foto da partitura e cole o que ela escrever. A pauta se preenche. O formato está na tabela abaixo.\nVocê também pode fotografar a página impressa e deixá-la na tela enquanto copia à mão.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,20 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Formato de texto para colar",
-    "rows": [
-      ["C4:4", "dó na oitava 4, semínima (o dó central é C4)"],
-      ["D:8", "Se omitir a oitava, vale a anterior"],
-      ["F#4:8 · Bb4:4", "# para sustenido, b para bemol"],
-      ["E4", "Se omitir :duração, vale a duração anterior"],
-      [":1 · :2 · :4 · :8 · :16", "semibreve, mínima, semínima, colcheia, semicolcheia"],
-      ["C4:4.", "nota pontuada"],
-      ["C4:8t", "tercina"],
-      ["R:4 · R:8", "pausas"]
-    ],
-    "note": "O botão Copiar regra para a IA copia exatamente estas instruções. As letras C D E F G A B correspondem a dó ré mi fá sol lá si. Separe as notas com espaços."
-  },
   "pricing": {
     "title": "Escrever e ouvir é grátis",
     "free": {
@@ -88,15 +69,14 @@
         "Reprodução com contagem e metrônomo",
         "Acordes e três vozes",
         "Armaduras de clave e três claves",
-        "Fotos de referência e copiar a partitura como texto",
-        "Experimente ditado, colar e transcrição por foto 3 vezes cada"
+        "Fotos de referência",
+        "Experimente ditado e transcrição por foto 3 vezes cada"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Ditado de solfejo (falando no tempo, o ritmo também entra)",
-        "Colar uma partitura como texto",
         "Transcrição automática por foto (experimental)"
       ],
       "note": "Escolha assinatura semanal, mensal ou anual, ou pague uma vez pelo vitalício. Gorjetas pelos Ajustes são à parte e não desbloqueiam nada."

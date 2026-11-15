@@ -47,9 +47,6 @@ https://m1zz.github.io/StaffSinger/
 계이름 받아쓰기
 메트로놈 박에 맞춰 도레미를 소리 내어 말하면 음표로 들어갑니다. 박에 맞춰 말하면 박자까지 함께 잡힙니다. 음성 인식은 기기 안에서만 처리됩니다.
 
-텍스트로 악보 붙여넣기
-정해진 규칙대로 적은 텍스트를 붙여넣으면 오선지가 채워집니다. 규칙을 복사해 악보 사진과 함께 AI에게 건네고, 받은 글을 그대로 붙여넣으면 됩니다.
-
 참고 사진
 보고 있는 악보를 찍어 두면 화면에 함께 띄워 놓고 비교하며 옮겨 적을 수 있습니다.
 
@@ -106,9 +103,6 @@ Stack notes on the same beat to make a chord, and split the music into separate 
 
 Solfege dictation
 Say the note names in time with the metronome and they go onto the staff as notes. Speak on the beat and the rhythm is captured too. Say do re mi fa sol la ti in English; speech recognition runs entirely on your device.
-
-Paste a score as text
-Paste text written in a fixed format and the staff fills in. Copy the rule, give it to an AI along with a photo of your score, then paste what it returns.
 
 Reference photo
 Take a photo of the score you are reading and keep it on screen to compare while you copy it out.
@@ -167,9 +161,6 @@ Stack notes on the same beat to make a chord, and split the music into separate 
 Solfege dictation
 Say the note names in time with the metronome and they go onto the staff as notes. Speak on the beat and the rhythm is captured too. Say do re mi fa sol la ti in English; speech recognition runs entirely on your device.
 
-Paste a score as text
-Paste text written in a fixed format and the staff fills in. Copy the rule, give it to an AI along with a photo of your score, then paste what it returns.
-
 Reference photo
 Take a photo of the score you are reading and keep it on screen to compare while you copy it out.
 
@@ -226,9 +217,6 @@ StaffSinger 能把让你犯难的两个小节抄到五线谱上，并按原本�
 
 唱名听写
 跟着节拍器的节拍说出唱名，音符就会写进五线谱；踩准拍子说，节奏也会一并记录。用英语说出 do re mi fa sol la ti 即可，语音识别完全在设备上进行。
-
-用文字粘贴乐谱
-粘贴按固定规则写成的文字，五线谱就会自动填好。复制规则，连同乐谱照片一起交给AI，再把得到的文字粘贴进来即可。
 
 参考照片
 把正在看的乐谱拍下来，留在屏幕上，一边对照一边抄写。
@@ -287,9 +275,6 @@ StaffSinger 能把讓你困擾的兩個小節抄到五線譜上，並依原本�
 唱名聽寫
 跟著節拍器的拍子說出唱名，音符就會寫進五線譜；踩準拍子說，節奏也會一併記錄。用英語唸出 do re mi fa sol la ti 即可，語音辨識完全在裝置上進行。
 
-用文字貼上樂譜
-貼上依固定規則寫成的文字，五線譜就會自動填好。複製規則，連同樂譜照片一起交給 AI，再把得到的文字貼上即可。
-
 參考照片
 把正在看的樂譜拍下來，留在畫面上，一邊對照一邊抄寫。
 
@@ -346,9 +331,6 @@ StaffSingerは、わかりにくい2小節を五線に書き写し、リズム�
 
 階名ディクテーション
 メトロノームの拍に合わせて階名を声に出すと、音符として入ります。拍に合わせて話せばリズムも一緒に取り込めます。英語で do re mi fa sol la ti と言えばよく、音声認識は端末内だけで処理されます。
-
-テキストで楽譜を貼り付け
-決まった書式で書いたテキストを貼り付けると、五線が埋まります。書式のルールをコピーして、楽譜の写真と一緒にAIに渡し、返ってきた文章をそのまま貼り付けるだけです。
 
 参考写真
 見ている楽譜を撮影しておくと、画面に表示したまま見比べながら書き写せます。
@@ -407,9 +389,6 @@ StaffSinger переносит трудные два такта на нотны�
 Сольфеджио под диктовку
 Называйте ноты в такт метроному — они появятся на стане. Если говорить точно в долю, запишется и ритм. Произносите по-английски do re mi fa sol la ti — речь обрабатывается только на вашем устройстве.
 
-Вставка нот из текста
-Вставьте текст, записанный по заданному правилу, и стан заполнится. Скопируйте правило, передайте его ИИ вместе с фото нот и вставьте полученный текст.
-
 Опорное фото
 Сфотографируйте ноты, по которым играете, и держите снимок на экране, пока переписываете их.
 
@@ -466,9 +445,6 @@ Apila notas en el mismo pulso para formar un acorde y separa la música en voces
 
 Dictado de solfeo
 Di los nombres de las notas al ritmo del metrónomo y pasan al pentagrama como notas. Si hablas justo en el pulso, también se registra el ritmo. Basta con decir do re mi fa sol la ti en inglés, y el reconocimiento de voz se hace por completo en tu dispositivo.
-
-Pega una partitura como texto
-Pega un texto escrito con un formato fijo y el pentagrama se llena. Copia la regla, pásasela a una IA junto con la foto de tu partitura y pega lo que te devuelva.
 
 Foto de referencia
 Haz una foto de la partitura que estás leyendo y déjala en pantalla para compararla mientras la copias.
@@ -527,9 +503,6 @@ Lege Noten auf denselben Schlag, und es wird ein Akkord; die Musik lässt sich a
 Solmisations-Diktat
 Sprich die Notennamen im Takt des Metronoms, und sie landen als Noten im Notensystem. Wer genau auf den Schlag spricht, erfasst auch den Rhythmus. Sprich dazu do re mi fa sol la ti auf Englisch; die Spracherkennung läuft vollständig auf deinem Gerät.
 
-Partitur als Text einfügen
-Füge einen Text in festem Format ein, und das Notensystem füllt sich. Kopiere die Regel, gib sie mit einem Foto deiner Noten an eine KI und füge die Antwort ein.
-
 Referenzfoto
 Fotografiere die Noten, nach denen du spielst, und lass sie beim Abschreiben zum Vergleichen auf dem Bildschirm.
 
@@ -586,9 +559,6 @@ Empilez des notes sur le même temps pour former un accord, et répartissez la m
 
 Dictée de solfège
 Dites les noms des notes en rythme avec le métronome : elles se placent sur la portée. En parlant pile sur le temps, le rythme est aussi saisi. Il suffit de dire do re mi fa sol la ti en anglais, et la reconnaissance vocale se fait entièrement sur votre appareil.
-
-Coller une partition en texte
-Collez un texte écrit selon un format fixe et la portée se remplit. Copiez la règle, donnez-la à une IA avec la photo de votre partition, puis collez ce qu’elle renvoie.
 
 Photo de référence
 Photographiez la partition que vous lisez et gardez-la à l’écran pour comparer pendant que vous la recopiez.
@@ -647,9 +617,6 @@ Sovrapponi note sullo stesso battito per formare un accordo e dividi la musica i
 Dettato di solfeggio
 Di’ i nomi delle note a tempo con il metronomo e finiscono sul pentagramma come note. Se parli proprio sul battito, viene catturato anche il ritmo. Basta dire do re mi fa sol la ti in inglese e il riconoscimento vocale avviene interamente sul tuo dispositivo.
 
-Incolla uno spartito come testo
-Incolla un testo scritto in un formato fisso e il pentagramma si riempie. Copia la regola, passala a un’IA insieme alla foto dello spartito e incolla ciò che ti restituisce.
-
 Foto di riferimento
 Fotografa lo spartito che stai leggendo e tienilo sullo schermo per confrontarlo mentre lo ricopi.
 
@@ -706,9 +673,6 @@ Empilhe notas no mesmo tempo para formar um acorde e divida a música em vozes. 
 
 Ditado de solfejo
 Diga os nomes das notas no ritmo do metrônomo e elas entram na pauta como notas. Falando bem no tempo, o ritmo também é registrado. Basta dizer do re mi fa sol la ti em inglês, e o reconhecimento de voz acontece inteiramente no seu dispositivo.
-
-Cole uma partitura como texto
-Cole um texto escrito em um formato fixo e a pauta se preenche. Copie a regra, entregue a uma IA junto com a foto da partitura e cole o que ela devolver.
 
 Foto de referência
 Fotografe a partitura que está lendo e deixe na tela para comparar enquanto copia.
@@ -767,9 +731,6 @@ StaffSinger คัดลอกสองห้องที่ทำให้ส�
 เขียนโน้ตตามเสียงโซลเฟจ
 พูดชื่อตัวโน้ตตามจังหวะเมโทรนอมแล้วโน้ตจะเข้าไปในบรรทัดห้าเส้น ถ้าพูดตรงจังหวะ ก็จะจับจังหวะไปด้วย พูด do re mi fa sol la ti เป็นภาษาอังกฤษ และการรู้จำเสียงทำงานบนอุปกรณ์ของคุณทั้งหมด
 
-วางโน้ตเป็นข้อความ
-วางข้อความที่เขียนตามรูปแบบที่กำหนด บรรทัดห้าเส้นก็จะเต็ม คัดลอกกฎ ส่งให้ AI พร้อมภาพโน้ต แล้วนำข้อความที่ได้มาวาง
-
 ภาพอ้างอิง
 ถ่ายภาพโน้ตที่กำลังอ่านไว้ แล้วเปิดค้างบนหน้าจอเพื่อเทียบระหว่างคัดลอก
 
@@ -826,9 +787,6 @@ Xếp chồng các nốt trên cùng một phách để tạo hợp âm, và tá
 
 Chép nhạc theo xướng âm
 Đọc tên nốt đúng nhịp máy đếm nhịp, nốt sẽ được đưa vào khuông nhạc. Nói đúng phách thì tiết tấu cũng được ghi lại. Chỉ cần đọc do re mi fa sol la ti bằng tiếng Anh, và việc nhận dạng giọng nói diễn ra hoàn toàn trên thiết bị của bạn.
-
-Dán bản nhạc dưới dạng văn bản
-Dán văn bản viết theo định dạng cố định là khuông nhạc được điền sẵn. Sao chép quy tắc, đưa cho AI cùng ảnh bản nhạc, rồi dán kết quả nhận được.
 
 Ảnh tham chiếu
 Chụp bản nhạc bạn đang đọc và để trên màn hình để đối chiếu khi chép.
@@ -887,9 +845,6 @@ Noty na stejné době vytvoří akord a hudbu můžete rozdělit do hlasů. Podp
 Solfeggio diktát
 Říkejte názvy not v rytmu metronomu a objeví se v pětilince jako noty. Mluvíte-li přesně na dobu, zachytí se i rytmus. Stačí anglicky říkat do re mi fa sol la ti a rozpoznávání řeči probíhá celé ve vašem zařízení.
 
-Vložení partitury jako textu
-Vložte text zapsaný v pevném formátu a pětilinka se vyplní. Zkopírujte pravidlo, předejte je AI spolu s fotkou partitury a vložte, co vám vrátí.
-
 Referenční foto
 Vyfoťte partituru, kterou čtete, a nechte ji na obrazovce, abyste ji mohli při přepisu porovnávat.
 
@@ -946,9 +901,6 @@ Læg noder oven på hinanden på samme slag, så får du en akkord, og del musik
 
 Solfège-diktat
 Sig nodenavnene i takt med metronomen, så havner de som noder på nodelinjerne. Taler du lige på slaget, bliver rytmen også fanget. Sig blot do re mi fa sol la ti på engelsk, og talegenkendelsen foregår helt på din enhed.
-
-Sæt noder ind som tekst
-Sæt tekst ind, som er skrevet i et fast format, og nodelinjerne udfyldes. Kopiér reglen, giv den til en AI sammen med et foto af noderne, og sæt det, du får tilbage, ind.
 
 Referencebillede
 Tag et billede af de noder, du læser, og lad det stå på skærmen, så du kan sammenligne, mens du skriver af.
@@ -1007,9 +959,6 @@ StaffSinger: Πρώτη ανάγνωση
 Υπαγόρευση σολφέζ
 Πείτε τα ονόματα των νοτών στο ρυθμό του μετρονόμου και μπαίνουν ως νότες στο πεντάγραμμο. Αν μιλάτε ακριβώς στο χτύπημα, καταγράφεται και ο ρυθμός. Αρκεί να πείτε do re mi fa sol la ti στα αγγλικά, και η αναγνώριση ομιλίας γίνεται εξ ολοκλήρου στη συσκευή σας.
 
-Επικόλληση παρτιτούρας ως κείμενο
-Επικολλήστε κείμενο γραμμένο σε σταθερή μορφή και το πεντάγραμμο γεμίζει. Αντιγράψτε τον κανόνα, δώστε τον σε ένα AI μαζί με φωτογραφία της παρτιτούρας και επικολλήστε ό,τι σας επιστρέψει.
-
 Φωτογραφία αναφοράς
 Φωτογραφίστε την παρτιτούρα που διαβάζετε και αφήστε την στην οθόνη για να τη συγκρίνετε καθώς την αντιγράφετε.
 
@@ -1066,9 +1015,6 @@ Pinoa nuotteja samalle iskulle, niin saat soinnun, ja jaa musiikki eri äänien 
 
 Solfa-saneluharjoitus
 Sano nuottien nimet metronomin tahtiin, niin ne päätyvät nuoteiksi viivastolle. Kun puhut tasan iskulle, myös rytmi tallentuu. Sano vain do re mi fa sol la ti englanniksi, ja puheentunnistus tapahtuu kokonaan laitteellasi.
-
-Liitä nuotit tekstinä
-Liitä kiinteässä muodossa kirjoitettu teksti, niin viivasto täyttyy. Kopioi sääntö, anna se tekoälylle nuottikuvan kanssa ja liitä saamasi teksti.
 
 Vertailukuva
 Ota kuva nuotista, jota luet, ja pidä se näytöllä vertailua varten kopioidessasi.
@@ -1127,9 +1073,6 @@ Tumpuk not pada ketukan yang sama untuk membuat akord, dan bagi musik ke beberap
 Dikte solfeggio
 Sebutkan nama nada sesuai irama metronom, lalu nada masuk ke paranada sebagai not. Jika kamu berbicara tepat di ketukan, ritmenya ikut tercatat. Cukup ucapkan do re mi fa sol la ti dalam bahasa Inggris, dan pengenalan suara berlangsung sepenuhnya di perangkatmu.
 
-Tempel partitur sebagai teks
-Tempel teks yang ditulis dengan format tetap, dan paranada terisi. Salin aturannya, berikan ke AI bersama foto partitur, lalu tempel hasil yang kamu terima.
-
 Foto referensi
 Potret partitur yang sedang kamu baca dan biarkan di layar untuk dibandingkan saat menyalin.
 
@@ -1186,9 +1129,6 @@ Stable noter på samme slag for å lage en akkord, og del musikken i flere stemm
 
 Solfège-diktat
 Si notenavnene i takt med metronomen, så havner de som noter på notesystemet. Snakker du rett på slaget, fanges rytmen også opp. Si bare do re mi fa sol la ti på engelsk, og talegjenkjenningen skjer helt på enheten din.
-
-Lim inn noter som tekst
-Lim inn tekst skrevet i et fast format, så fylles notesystemet. Kopier regelen, gi den til en KI sammen med et bilde av notene, og lim inn det du får tilbake.
 
 Referansebilde
 Ta bilde av notene du leser, og la det stå på skjermen så du kan sammenligne mens du skriver av.
@@ -1247,9 +1187,6 @@ Stapel noten op dezelfde tel voor een akkoord en verdeel de muziek over stemmen.
 Solfège-dictaat
 Zeg de nootnamen op de maat van de metronoom en ze komen als noten op de notenbalk. Spreek je precies op de tel, dan wordt ook het ritme vastgelegd. Zeg gewoon do re mi fa sol la ti in het Engels, en de spraakherkenning gebeurt volledig op je apparaat.
 
-Partituur als tekst plakken
-Plak tekst die in een vast formaat is geschreven en de notenbalk vult zich. Kopieer de regel, geef hem aan een AI samen met een foto van je partituur en plak wat je terugkrijgt.
-
 Referentiefoto
 Maak een foto van de partituur die je leest en laat die op het scherm staan om te vergelijken terwijl je overschrijft.
 
@@ -1306,9 +1243,6 @@ Nałóż nuty na tę samą miarę, aby powstał akord, i podziel muzykę na gło
 
 Dyktando solfeżowe
 Mów nazwy nut w rytm metronomu, a trafią na pięciolinię jako nuty. Gdy mówisz równo na uderzenie, rejestrowany jest też rytm. Wystarczy mówić po angielsku do re mi fa sol la ti, a rozpoznawanie mowy odbywa się w całości na Twoim urządzeniu.
-
-Wklejanie partytury jako tekstu
-Wklej tekst zapisany w ustalonym formacie, a pięciolinia się wypełni. Skopiuj regułę, daj ją sztucznej inteligencji razem ze zdjęciem partytury i wklej to, co zwróci.
 
 Zdjęcie referencyjne
 Zrób zdjęcie czytanej partytury i zostaw je na ekranie, aby porównywać podczas przepisywania.
@@ -1367,9 +1301,6 @@ Stapla noter på samma slag för att göra ett ackord, och dela upp musiken i st
 Solfège-diktamen
 Säg notnamnen i takt med metronomen så hamnar de som noter på notsystemet. Pratar du precis på slaget fångas rytmen också. Säg bara do re mi fa sol la ti på engelska, och taligenkänningen sker helt på din enhet.
 
-Klistra in noter som text
-Klistra in text skriven i ett fast format så fylls notsystemet. Kopiera regeln, ge den till en AI tillsammans med ett foto av noterna och klistra in det du får tillbaka.
-
 Referensfoto
 Ta ett foto av noterna du läser och låt det ligga kvar på skärmen så att du kan jämföra medan du skriver av.
 
@@ -1426,9 +1357,6 @@ Notaları aynı vuruşa üst üste koyarak akor oluştur, müziği sesler halind
 
 Solfej dikte
 Nota adlarını metronoma uyarak söyle, porteye nota olarak girsin. Tam vuruşta konuşursan ritim de yakalanır. İngilizce do re mi fa sol la ti demen yeterli; konuşma tanıma tamamen cihazında çalışır.
-
-Notayı metin olarak yapıştır
-Belirli bir biçimde yazılmış metni yapıştır, porte dolsun. Kuralı kopyala, nota fotoğrafınla birlikte bir yapay zekâya ver ve dönen metni yapıştır.
 
 Referans fotoğraf
 Okuduğun notanın fotoğrafını çek ve kopyalarken karşılaştırman için ekranda açık tut.

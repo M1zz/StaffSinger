@@ -41,11 +41,6 @@
       "title": "Nota adlarını söyleyin, notaya dönüşsün",
       "text": "Metronom dört vuruş saydıktan sonra vuruşa uyarak `do` `re` `mi` deyin, notalar portreye yazılır. Vuruşu tutturursanız süre de dörtlük, sekizlik ya da onaltılık olarak alınır. Sus için `rest` deyin.\nNota adlarını İngilizce söyleyin. Konuşma yalnızca cihazda tanınır ve kaydedilmez.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Nota fotoğrafını yapay zekâya verin, sonucu yapıştırın",
-      "text": "`Yapay Zekâ İçin Kuralı Kopyala` düğmesine dokunun, kuralı notanın fotoğrafıyla birlikte yapay zekâya verin ve döndüğü metni yapıştırın. Portre kendiliğinden dolar. Biçim aşağıdaki tabloda.\nKâğıt notanın fotoğrafını çekip ekranda tutabilir, bakarak da aktarabilirsiniz.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,44 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Yapıştırma için metin biçimi",
-    "rows": [
-      [
-        "C4:4",
-        "4. oktavdaki Do, dörtlük (orta Do, C4)"
-      ],
-      [
-        "D:8",
-        "Oktav yazılmazsa bir öncekiyle devam eder"
-      ],
-      [
-        "F#4:8 · Bb4:4",
-        "Diyez için #, bemol için b"
-      ],
-      [
-        "E4",
-        "“:süre” yazılmazsa bir öncekiyle devam eder"
-      ],
-      [
-        ":1 · :2 · :4 · :8 · :16",
-        "birlik, ikilik, dörtlük, sekizlik, onaltılık"
-      ],
-      [
-        "C4:4.",
-        "noktalı nota"
-      ],
-      [
-        "C4:8t",
-        "triole"
-      ],
-      [
-        "R:4 · R:8",
-        "suslar"
-      ]
-    ],
-    "note": "Uygulamadaki Yapay Zekâ İçin Kuralı Kopyala düğmesi bu talimatları aynen kopyalar. Notaları boşlukla ayırın."
-  },
   "pricing": {
     "title": "Yazmak ve dinlemek ücretsiz",
     "free": {
@@ -112,15 +69,14 @@
         "Girişli ve metronomlu çalma",
         "Akorlar ve üç ses partisi",
         "Donanım ve üç anahtar",
-        "Referans fotoğrafı ve notayı metin olarak kopyalama",
-        "Dikte, yapıştırma ve fotoğraftan notaya dökmeyi üçer kez deneyin"
+        "Referans fotoğrafı",
+        "Dikte ve fotoğraftan notaya dökmeyi üçer kez deneyin"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Solfej dikte (vuruşa uyarak söylerseniz ritim de yazılır)",
-        "Notayı metin olarak yapıştırma",
         "Fotoğraftan otomatik notaya dökme (deneysel)"
       ],
       "note": "Haftalık, aylık ya da yıllık abonelik veya tek seferlik ömür boyu satın alma arasından seçin. Ayarlar’dan gönderilen bahşiş ayrıdır ve hiçbir şeyin kilidini açmaz."

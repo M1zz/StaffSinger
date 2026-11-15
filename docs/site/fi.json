@@ -41,11 +41,6 @@
       "title": "Sano sävelten nimet, ja niistä tulee nuotteja",
       "text": "Kun metronomi on naksuttanut neljä iskua, sano `do` `re` `mi` tahdissa, ja nuotit ilmestyvät viivastolle. Kun osut iskuun, myös nuottiarvo tallentuu neljäsosina, kahdeksasosina tai kuudestoistaosina. Tauon kohdalla sano `rest`.\nSano sävelten nimet englanniksi. Puhe tunnistetaan vain laitteella eikä sitä tallenneta.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Nuottikuva tekoälylle, vastaus liitetään",
-      "text": "Napauta `Kopioi sääntö tekoälylle`, anna se tekoälylle yhdessä nuottikuvan kanssa ja liitä saamasi teksti. Viivasto täyttyy itsestään. Muoto on alla olevassa taulukossa.\nVoit myös kuvata paperinuotit, pitää kuvan näytöllä ja kirjoittaa niitä katsoen.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,44 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Tekstimuoto liittämistä varten",
-    "rows": [
-      [
-        "C4:4",
-        "C oktaavissa 4, neljäsosa (keski-C on C4)"
-      ],
-      [
-        "D:8",
-        "Ilman oktaavia edellinen jatkuu"
-      ],
-      [
-        "F#4:8 · Bb4:4",
-        "# on ylennysmerkki, b alennusmerkki"
-      ],
-      [
-        "E4",
-        "Ilman :nuottiarvoa edellinen jatkuu"
-      ],
-      [
-        ":1 · :2 · :4 · :8 · :16",
-        "kokonuotti, puolinuotti, neljäsosa, kahdeksasosa, kuudestoistaosa"
-      ],
-      [
-        "C4:4.",
-        "pisteellinen nuotti"
-      ],
-      [
-        "C4:8t",
-        "trioli"
-      ],
-      [
-        "R:4 · R:8",
-        "tauot"
-      ]
-    ],
-    "note": "Sovelluksen Kopioi sääntö tekoälylle -painike kopioi juuri nämä ohjeet. Erota nuotit välilyönneillä."
-  },
   "pricing": {
     "title": "Kirjoittaminen ja kuuntelu ovat ilmaisia",
     "free": {
@@ -112,15 +69,14 @@
         "Toisto sisäänlaskun ja metronomin kanssa",
         "Soinnut ja kolme ääntä",
         "Etumerkinnät ja kolme avainta",
-        "Vertailukuva ja nuottien kopiointi tekstinä",
-        "Kokeile sanelua, tekstin liittämistä ja kuvasta litterointia kutakin 3 kertaa"
+        "Vertailukuva",
+        "Kokeile sanelua ja kuvasta litterointia kumpaakin 3 kertaa"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Solfa-sanelu (kun puhut tahdissa, myös rytmi kirjoitetaan)",
-        "Nuottien liittäminen tekstinä",
         "Automaattinen litterointi kuvasta (kokeellinen)"
       ],
       "note": "Valitse viikko-, kuukausi- tai vuositilaus tai maksa kerran elinikäisestä. Asetusten tipit ovat erillisiä eivätkä avaa mitään."

@@ -41,11 +41,6 @@
       "title": "Ucapkan nama not, jadilah not",
       "text": "Setelah empat ketukan metronom, ucapkan `do` `re` `mi` sesuai ketukan dan not langsung masuk ke paranada. Ucapkan tepat di ketukan, maka panjang not ikut tercatat sebagai 1/4, 1/8, atau 1/16. Untuk tanda diam, ucapkan `rest`.\nUcapkan nama not dengan lafal bahasa Inggris. Suara dikenali hanya di perangkat dan tidak disimpan.",
       "shot": "03-dictation"
-    },
-    {
-      "title": "Foto partitur untuk AI, hasilnya tinggal tempel",
-      "text": "Ketuk `Salin aturan untuk AI`, berikan ke AI bersama foto partitur Anda, lalu tempel teks yang dikembalikannya. Paranada langsung terisi. Formatnya ada di tabel di bawah.\nAnda juga bisa memotret partitur kertas, menampilkannya di layar, lalu menyalinnya sambil melihat.",
-      "shot": "04-paste"
     }
   ],
   "steps": {
@@ -65,44 +60,6 @@
       }
     ]
   },
-  "reference": {
-    "title": "Format teks untuk ditempel",
-    "rows": [
-      [
-        "C4:4",
-        "C di oktaf 4, not 1/4 (C tengah adalah C4)"
-      ],
-      [
-        "D:8",
-        "Tanpa oktaf, oktaf sebelumnya dipakai lagi"
-      ],
-      [
-        "F#4:8 · Bb4:4",
-        "# untuk kres, b untuk mol"
-      ],
-      [
-        "E4",
-        "Tanpa :panjang, panjang sebelumnya dipakai lagi"
-      ],
-      [
-        ":1 · :2 · :4 · :8 · :16",
-        "not penuh, 1/2, 1/4, 1/8, 1/16"
-      ],
-      [
-        "C4:4.",
-        "not bertitik"
-      ],
-      [
-        "C4:8t",
-        "triol"
-      ],
-      [
-        "R:4 · R:8",
-        "tanda diam"
-      ]
-    ],
-    "note": "Salin aturan untuk AI di aplikasi menyalin petunjuk format ini apa adanya. Pisahkan not dengan spasi."
-  },
   "pricing": {
     "title": "Menulis dan mendengarkan gratis",
     "free": {
@@ -112,15 +69,14 @@
         "Pemutaran dengan hitungan masuk dan metronom",
         "Akord dan tiga suara",
         "Tanda kunci dan tiga jenis kunci",
-        "Foto referensi dan menyalin partitur sebagai teks",
-        "Coba dikte, tempel teks, dan transkripsi dari foto masing-masing 3 kali"
+        "Foto referensi",
+        "Coba dikte dan transkripsi dari foto masing-masing 3 kali"
       ]
     },
     "pro": {
       "name": "StaffSinger Pro",
       "items": [
         "Dikte solfeggio (ucapkan sesuai ketukan, ritmenya ikut tercatat)",
-        "Tempel partitur sebagai teks",
         "Transkripsi otomatis dari foto (eksperimen)"
       ],
       "note": "Pilih langganan mingguan, bulanan, atau tahunan, atau bayar sekali untuk seumur hidup. Tip dari Pengaturan terpisah dan tidak membuka fitur apa pun."
