@@ -217,3 +217,56 @@ final class SpokenSolfegeEnglishTests: XCTestCase {
         XCTAssertNotNil(SpokenSolfege.modifier(for: "High"))
     }
 }
+
+/// A score read out loud with the lengths in words — "도 4분음표, 레 8분음표".
+final class SpokenReadingTests: XCTestCase {
+
+    private func read(_ transcript: String) -> [ScoreNote] {
+        SpokenSolfege.notes(reading: transcript, baseOctave: 4, autoOctave: true, capacityBeats: 8)
+    }
+
+    func testNameThenLength() {
+        let n = read("도 4분음표 레 4분음표 미 8분음표 파 8분음표 솔 2분음표")
+        XCTAssertEqual(n.map(\.pitch.midi), [60, 62, 64, 65, 67])
+        XCTAssertEqual(n.map(\.duration), [.quarter, .quarter, .eighth, .eighth, .half])
+        XCTAssertEqual(n.map(\.beatOffset), [0, 1, 2, 2.5, 3])
+    }
+
+    func testLengthsAsTheRecognizerWritesThem() {
+        // Number words, stray spaces, and a name glued to its length.
+        let n = read("도사분음표 레 팔 분 음표 미 십육분음표 파 이분 음표 솔 온음표")
+        XCTAssertEqual(n.map(\.duration), [.quarter, .eighth, .sixteenth, .half, .whole])
+    }
+
+    func testRestsAndDots() {
+        let n = read("도 점4분음표 8분쉼표 레 4분음표")
+        XCTAssertEqual(n.map(\.isRest), [false, true, false])
+        XCTAssertEqual(n.map(\.dotted), [true, false, false])
+        XCTAssertEqual(n.map(\.beatOffset), [0, 1.5, 2])
+    }
+
+    func testNamesAloneLeaveTheRhythmForLater() {
+        // No lengths said: everything lands as quarters, ready to be set after.
+        var n = read("도 레 미")
+        XCTAssertEqual(n.map(\.duration), [.quarter, .quarter, .quarter])
+        n[1].duration = .half
+        XCTAssertEqual(SpokenSolfege.endToEnd(n).map(\.beatOffset), [0, 1, 3])
+    }
+
+    func testALengthCarriesToTheNamesThatFollow() {
+        let n = read("도 8분음표 레 미 4분음표")
+        XCTAssertEqual(n.map(\.duration), [.eighth, .eighth, .quarter])
+    }
+
+    func testEnglish() {
+        let n = read("do quarter note re eighth note mi dotted quarter quarter rest")
+        XCTAssertEqual(n.map(\.pitch.midi).prefix(3), [60, 62, 64])
+        XCTAssertEqual(n.map(\.duration), [.quarter, .eighth, .quarter, .quarter])
+        XCTAssertEqual(n.map(\.dotted), [false, false, true, false])
+        XCTAssertEqual(n.last?.isRest, true)
+    }
+
+    func testStopsAtTwoMeasures() {
+        XCTAssertEqual(read("도 온음표 레 온음표 미 온음표").count, 2)
+    }
+}

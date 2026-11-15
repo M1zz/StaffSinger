@@ -5663,304 +5663,6 @@
         }
       }
     },
-    "리듬 스냅" : {
-      "comment" : "Dictation setting",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "리듬 스냅"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rhythm Snap"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rhythm Snap"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "节奏对齐"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "節奏對齊"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "リズムスナップ"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Привязка ритма"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ajuste rítmico"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rhythmus-Raster"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Calage rythmique"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Quantizzazione ritmica"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ajuste de ritmo"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ปรับจังหวะให้ตรง"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Căn nhịp"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rytmická kvantizace"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rytmetilpasning"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ευθυγράμμιση ρυθμού"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rytmin kohdistus"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Penyelarasan ritme"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rytmetilpasning"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ritme uitlijnen"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dopasowanie rytmu"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Rytmjustering"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ritim Hizalama"
-          }
-        }
-      }
-    },
-    "리듬 없이" : {
-      "comment" : "Rhythm snap: no rhythm",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "리듬 없이"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Free"
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Free"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "自由"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "自由"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "フリー"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Свободно"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Libre"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Frei"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Libre"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Libero"
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Livre"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "อิสระ"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tự do"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Volně"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Frit"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ελεύθερο"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vapaa"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bebas"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fritt"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vrij"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Swobodnie"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Fritt"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Serbest"
-          }
-        }
-      }
-    },
     "마이크 권한이 필요합니다. 설정에서 허용해 주세요." : {
       "comment" : "Dictation error",
       "localizations" : {
@@ -6553,155 +6255,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Konuşmaya Başla"
-          }
-        }
-      }
-    },
-    "말한 순서만 씁니다. 길이는 모두 4분음표로 넣고 나중에 고치세요." : {
-      "comment" : "Dictation snap explanation (free)",
-      "localizations" : {
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "말한 순서만 씁니다. 길이는 모두 4분음표로 넣고 나중에 고치세요."
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Only the order you spoke is used. Every note goes in as a quarter note; fix lengths later."
-          }
-        },
-        "en-GB" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Only the order you spoke is used. Every note goes in as a quarter note; fix lengths later."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "只记录你说话的先后顺序。所有音符都按四分音符写入，之后再修改。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "只記錄你說話的先後順序。所有音符都以四分音符寫入，之後再修改。"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "話した順番だけを使います。長さはすべて4分音符で入るので、あとで直してください。"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Учитывается только порядок слов. Все ноты ставятся четвертными — длительность поправите позже."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Solo se usa el orden en que hablaste. Todas las notas entran como negras; corrige las duraciones después."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Es zählt nur die Reihenfolge, in der du sprichst. Alle Noten werden als Viertel eingefügt; die Längen korrigierst du danach."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Seul l’ordre dans lequel vous parlez est utilisé. Toutes les notes sont des noires ; corrigez les durées ensuite."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conta solo l’ordine in cui parli. Tutte le note entrano come semiminime; correggi le durate dopo."
-          }
-        },
-        "pt-BR" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Só a ordem em que você fala é usada. Todas as notas entram como semínimas; corrija as durações depois."
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ใช้เฉพาะลำดับที่พูดเท่านั้น โน้ตทุกตัวจะเป็นโน้ตตัวดำ แล้วค่อยแก้ความยาวทีหลัง"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Chỉ dùng thứ tự bạn nói. Mọi nốt đều thành nốt đen; hãy sửa độ dài sau."
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Použije se jen pořadí, v jakém mluvíte. Všechny noty se vloží jako čtvrťové; délky opravíte později."
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kun rækkefølgen af det, du siger, bruges. Alle noder bliver til kvartnoder; ret længderne bagefter."
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Χρησιμοποιείται μόνο η σειρά που μιλάτε. Όλες οι νότες μπαίνουν ως τέταρτα· διορθώστε τις διάρκειες μετά."
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vain sanomisjärjestys otetaan huomioon. Kaikki nuotit tulevat neljäsosina; korjaa pituudet jälkeenpäin."
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Hanya urutan ucapanmu yang dipakai. Semua not masuk sebagai not seperempat; perbaiki panjangnya nanti."
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bare rekkefølgen du sier tonene i, brukes. Alle noter blir firedelsnoter; rett lengdene etterpå."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alleen de volgorde van wat je zegt wordt gebruikt. Alle noten komen erin als kwartnoten; pas de lengtes daarna aan."
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Liczy się tylko kolejność, w jakiej mówisz. Wszystkie nuty wchodzą jako ćwierćnuty; długości popraw później."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bara ordningen du säger tonerna i används. Alla noter blir fjärdedelsnoter; rätta längderna efteråt."
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Yalnızca söylediğin sıra kullanılır. Tüm notalar dörtlük olarak girer; süreleri sonra düzelt."
           }
         }
       }
@@ -33910,6 +33463,1193 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "每拍說一個音，兩個八分音符在一拍內說兩次。長音只說一次，休止處說「rest」。"
+          }
+        }
+      }
+    },
+    "음 길이" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Délka not"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nodelængde"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notenlänge"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διάρκεια"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Note Length"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Note Length"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duración"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuotin pituus"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durée des notes"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Panjang not"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durata"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音の長さ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "음 길이"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notelengde"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nootlengte"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Długość nut"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Duração"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Длительность"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notlängd"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ความยาวโน้ต"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nota Uzunluğu"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trường độ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音符时值"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音符時值"
+          }
+        }
+      }
+    },
+    "말로" : {
+      "comment" : "Dictation: note lengths are said in words rather than timed",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Slovy"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sagt"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gesagt"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προφορικά"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spoken"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Spoken"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hablada"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sanoin"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dictée"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diucapkan"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A voce"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "言葉で"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "말로"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sagt"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gezegd"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Słownie"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Falada"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Словами"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sagt"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พูด"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sözle"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nói"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "口述"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "口述"
+          }
+        }
+      }
+    },
+    "계이름 뒤에 음 길이를 말합니다. 메트로놈 없이 편한 속도로 읽으세요." : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Řekněte název noty a potom její délku. Bez metronomu, čtěte vlastním tempem."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sig nodenavnet og derefter længden. Ingen metronom: læs i dit eget tempo."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sag den Notennamen und dann die Länge. Ohne Metronom, in deinem eigenen Tempo."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πείτε το όνομα της νότας και μετά τη διάρκειά της. Χωρίς μετρονόμο: διαβάστε με τον ρυθμό σας."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Say each note name, then its length. No metronome: read at your own pace."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Say each note name, then its length. No metronome: read at your own pace."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di el nombre de la nota y luego su duración. Sin metrónomo: lee a tu ritmo."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sano nuotin nimi ja sitten sen pituus. Ei metronomia: lue omaan tahtiisi."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dites le nom de la note, puis sa durée. Sans métronome : lisez à votre rythme."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ucapkan nama not, lalu panjangnya. Tanpa metronom: baca dengan kecepatanmu sendiri."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Di’ il nome della nota e poi la durata. Senza metronomo: leggi al tuo ritmo."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "階名のあとに音の長さを言います。メトロノームなしで、自分のペースで読んでください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "계이름 뒤에 음 길이를 말합니다. 메트로놈 없이 편한 속도로 읽으세요."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si notenavnet og deretter lengden. Ingen metronom: les i ditt eget tempo."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeg de nootnaam en daarna de lengte. Geen metronoom: lees in je eigen tempo."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Powiedz nazwę nuty, a potem jej długość. Bez metronomu: czytaj we własnym tempie."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diga o nome da nota e depois a duração. Sem metrônomo: leia no seu ritmo."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Назовите ноту, затем её длительность. Метронома нет: читайте в удобном темпе."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Säg tonnamnet och sedan längden. Ingen metronom: läs i din egen takt."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พูดชื่อโน้ตแล้วตามด้วยความยาว ไม่มีเมโทรนอม อ่านตามจังหวะของคุณได้เลย"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nota adını, ardından uzunluğunu söyle. Metronom yok: kendi hızında oku."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nói tên nốt rồi đến trường độ. Không có máy đếm nhịp: cứ đọc theo tốc độ của bạn."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "先说唱名，再说时值。没有节拍器，按自己的速度读即可。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "先說唱名，再說時值。沒有節拍器，照自己的速度讀即可。"
+          }
+        }
+      }
+    },
+    "악보를 소리 내어 읽어 주세요. 계이름을 말하고, 이어서 음 길이를 말합니다." : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přečtěte noty nahlas: název noty a potom její délku."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Læs noderne højt: først nodenavnet, så længden."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lies die Noten laut vor: erst den Notennamen, dann die Länge."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Διαβάστε την παρτιτούρα φωναχτά: το όνομα κάθε νότας και μετά τη διάρκειά της."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Read the score out loud: each note name, then its length."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Read the score out loud: each note name, then its length."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lee la partitura en voz alta: el nombre de cada nota y luego su duración."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lue nuotit ääneen: ensin nuotin nimi, sitten sen pituus."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lisez la partition à voix haute : le nom de chaque note, puis sa durée."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bacakan partitur dengan suara: nama tiap not, lalu panjangnya."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leggi lo spartito ad alta voce: il nome di ogni nota e poi la durata."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "楽譜を声に出して読んでください。階名を言い、続けて音の長さを言います。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "악보를 소리 내어 읽어 주세요. 계이름을 말하고, 이어서 음 길이를 말합니다."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les notene høyt: først notenavnet, så lengden."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lees de noten hardop voor: eerst de nootnaam, dan de lengte."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przeczytaj nuty na głos: nazwa nuty, a potem jej długość."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leia a partitura em voz alta: o nome de cada nota e depois a duração."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прочитайте ноты вслух: название ноты, затем её длительность."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Läs noterna högt: först tonnamnet, sedan längden."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "อ่านโน้ตออกเสียง พูดชื่อโน้ตแล้วตามด้วยความยาว"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notayı sesli oku: her notanın adı, ardından uzunluğu."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hãy đọc to bản nhạc: tên từng nốt, rồi đến trường độ."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请把乐谱读出来：先说唱名，再说时值。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請把樂譜讀出來：先說唱名，再說時值。"
+          }
+        }
+      }
+    },
+    "쉼표는 \"4분쉼표\", 점음표는 \"도 점4분음표\"처럼 말해요. 계이름만 말하고 길이는 받아쓴 뒤에 정해도 돼요." : {
+      "comment" : "How to read a score aloud, with lengths in words, in solfège dictation",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro pomlku řekněte „quarter rest“, pro notu s tečkou „do dotted quarter“. Můžete také říct jen názvy a délky nastavit potom."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sig “quarter rest” for en pause og “do dotted quarter” for en punkteret node. Du kan også nøjes med navnene og vælge længderne bagefter."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Für eine Pause sagst du „quarter rest“, für eine punktierte Note „do dotted quarter“. Du kannst auch nur die Namen sagen und die Längen danach festlegen."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Για παύση πείτε «quarter rest» και για νότα με στιγμή «do dotted quarter». Μπορείτε επίσης να πείτε μόνο τα ονόματα και να ορίσετε τις διάρκειες μετά."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Say \"quarter rest\" for a rest and \"do dotted quarter\" for a dotted note. You can also say just the names and set the lengths afterwards."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Say \"quarter rest\" for a rest and \"do dotted quarter\" for a dotted note. You can also say just the names and set the lengths afterwards."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para un silencio di «quarter rest» y para una nota con puntillo «do dotted quarter». También puedes decir solo los nombres y fijar las duraciones después."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tauko on ”quarter rest” ja pisteellinen nuotti ”do dotted quarter”. Voit myös sanoa pelkät nimet ja asettaa pituudet jälkikäteen."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pour un silence, dites « quarter rest » ; pour une note pointée, « do dotted quarter ». Vous pouvez aussi ne dire que les noms et régler les durées ensuite."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Untuk tanda diam ucapkan \"quarter rest\", untuk not bertitik \"do dotted quarter\". Kamu juga bisa menyebut namanya saja dan mengatur panjangnya nanti."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Per una pausa di’ «quarter rest», per una nota puntata «do dotted quarter». Puoi anche dire solo i nomi e impostare le durate dopo."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休符は「quarter rest」、付点音符は「do dotted quarter」のように言います。階名だけ言って、長さはあとで決めてもかまいません。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "쉼표는 \"4분쉼표\", 점음표는 \"도 점4분음표\"처럼 말해요. 계이름만 말하고 길이는 받아쓴 뒤에 정해도 돼요."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si «quarter rest» for en pause og «do dotted quarter» for en punktert note. Du kan også si bare navnene og velge lengdene etterpå."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeg ‘quarter rest’ voor een rust en ‘do dotted quarter’ voor een gepunteerde noot. Je kunt ook alleen de namen zeggen en de lengtes daarna instellen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Na pauzę powiedz „quarter rest”, a na nutę z kropką „do dotted quarter”. Możesz też powiedzieć same nazwy i ustawić długości później."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para uma pausa diga \"quarter rest\" e para uma nota pontuada \"do dotted quarter\". Você também pode dizer só os nomes e definir as durações depois."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Для паузы скажите «quarter rest», для ноты с точкой — «do dotted quarter». Можно назвать только ноты, а длительности задать потом."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Säg ”quarter rest” för en paus och ”do dotted quarter” för en punkterad ton. Du kan också säga bara namnen och ställa in längderna efteråt."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ตัวหยุดให้พูดว่า “quarter rest” โน้ตประจุดให้พูดว่า “do dotted quarter” จะพูดแค่ชื่อโน้ตแล้วค่อยกำหนดความยาวทีหลังก็ได้"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es için \"quarter rest\", noktalı nota için \"do dotted quarter\" de. Yalnızca adları söyleyip uzunlukları sonradan da ayarlayabilirsin."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dấu lặng thì nói \"quarter rest\", nốt chấm dôi thì nói \"do dotted quarter\". Bạn cũng có thể chỉ nói tên nốt rồi đặt trường độ sau."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休止符说“quarter rest”，附点音符说“do dotted quarter”。也可以只说唱名，听写后再设定时值。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "休止符說「quarter rest」，附點音符說「do dotted quarter」。也可以只說唱名，聽寫後再設定時值。"
+          }
+        }
+      }
+    },
+    "듣는 중 · 다 읽으면 멈추기를 누르세요" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Poslouchám · Až dočtete, klepněte na Zastavit"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lytter · Tryk på Stop, når du er færdig med at læse"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hört zu · Tippe auf Stopp, wenn du fertig bist"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ακούω · Πατήστε Διακοπή όταν τελειώσετε την ανάγνωση"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listening · Tap Stop when you finish reading"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listening · Tap Stop when you finish reading"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escuchando · Toca Detener cuando termines de leer"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kuunnellaan · Napauta Pysäytä, kun olet lukenut"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Écoute en cours · Touchez Arrêter une fois la lecture terminée"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mendengarkan · Ketuk Berhenti setelah selesai membaca"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "In ascolto · Tocca Ferma quando hai finito di leggere"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "聞いています · 読み終えたら停止を押してください"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "듣는 중 · 다 읽으면 멈추기를 누르세요"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lytter · Trykk på Stopp når du er ferdig med å lese"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luistert · Tik op Stop als je klaar bent met lezen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Słucham · Stuknij Zatrzymaj, gdy skończysz czytać"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvindo · Toque em Parar quando terminar de ler"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Слушаю · Когда дочитаете, нажмите «Стоп»"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lyssnar · Tryck på Stoppa när du har läst klart"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "กำลังฟัง · อ่านจบแล้วแตะหยุด"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dinliyor · Okumayı bitirince Durdur'a dokun"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang nghe · Đọc xong hãy chạm Dừng"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在聆听 · 读完后请点停止"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正在聆聽 · 讀完後請點停止"
+          }
+        }
+      }
+    },
+    "계이름을 알아듣지 못했습니다. \"도 4분음표, 레 8분음표\"처럼 또박또박 말해 보세요." : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Názvy not se nepodařilo rozpoznat. Mluvte zřetelně, například „do quarter note, re eighth note“."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke høre nogen nodenavne. Tal tydeligt, for eksempel “do quarter note, re eighth note”."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Keine Notennamen erkannt. Sprich deutlich, zum Beispiel „do quarter note, re eighth note“."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Δεν αναγνωρίστηκαν ονόματα νοτών. Μιλήστε καθαρά, π.χ. «do quarter note, re eighth note»."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't make out any note names. Try saying them clearly, like \"do quarter note, re eighth note\"."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn't make out any note names. Try saying them clearly, like \"do quarter note, re eighth note\"."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se entendieron los nombres de las notas. Dilos con claridad, por ejemplo «do quarter note, re eighth note»."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nuottien nimiä ei tunnistettu. Puhu selkeästi, esimerkiksi ”do quarter note, re eighth note”."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucun nom de note reconnu. Articulez bien, par exemple « do quarter note, re eighth note »."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nama not tidak terdengar jelas. Ucapkan dengan jelas, misalnya \"do quarter note, re eighth note\"."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non ho riconosciuto i nomi delle note. Pronunciali chiaramente, ad esempio «do quarter note, re eighth note»."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "階名を聞き取れませんでした。「do quarter note, re eighth note」のようにはっきり言ってみてください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "계이름을 알아듣지 못했습니다. \"도 4분음표, 레 8분음표\"처럼 또박또박 말해 보세요."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunne ikke oppfatte noen notenavn. Snakk tydelig, for eksempel «do quarter note, re eighth note»."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geen nootnamen herkend. Spreek duidelijk, bijvoorbeeld ‘do quarter note, re eighth note’."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nie udało się rozpoznać nazw nut. Mów wyraźnie, na przykład „do quarter note, re eighth note”."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível entender os nomes das notas. Fale com clareza, por exemplo \"do quarter note, re eighth note\"."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось разобрать названия нот. Говорите чётко, например: «do quarter note, re eighth note»."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunde inte uppfatta några tonnamn. Tala tydligt, till exempel ”do quarter note, re eighth note”."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ฟังชื่อโน้ตไม่ออก ลองพูดให้ชัด เช่น “do quarter note, re eighth note”"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nota adları anlaşılamadı. Net konuş, örneğin \"do quarter note, re eighth note\"."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không nghe rõ tên nốt. Hãy nói rõ ràng, ví dụ \"do quarter note, re eighth note\"."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "没有听出唱名。请清楚地说，例如“do quarter note, re eighth note”。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "沒有聽出唱名。請清楚地說，例如「do quarter note, re eighth note」。"
+          }
+        }
+      }
+    },
+    "누르면 길이를 바꿀 수 있어요" : {
+      "comment" : "Hint beside the dictated notes: tap one to change its length",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klepnutím na notu změníte její délku"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryk på en node for at ændre længden"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tippe auf eine Note, um ihre Länge zu ändern"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πατήστε μια νότα για να αλλάξετε τη διάρκειά της"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap a note to change its length"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap a note to change its length"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toca una nota para cambiar su duración"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Napauta nuottia muuttaaksesi sen pituutta"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Touchez une note pour changer sa durée"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ketuk not untuk mengubah panjangnya"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tocca una nota per cambiarne la durata"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "音符をタップすると長さを変えられます"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "누르면 길이를 바꿀 수 있어요"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trykk på en note for å endre lengden"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tik op een noot om de lengte te wijzigen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stuknij nutę, aby zmienić jej długość"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque numa nota para mudar a duração"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Коснитесь ноты, чтобы изменить длительность"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tryck på en ton för att ändra längden"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "แตะโน้ตเพื่อเปลี่ยนความยาว"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uzunluğunu değiştirmek için notaya dokun"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chạm vào nốt để đổi trường độ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "点按音符可更改时值"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "點按音符可更改時值"
           }
         }
       }

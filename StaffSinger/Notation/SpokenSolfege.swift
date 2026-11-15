@@ -41,14 +41,15 @@ struct SpokenEvent: Equatable {
 
 enum SpokenSolfege {
 
-    /// How finely spoken timing is snapped. `.free` throws timing away and
-    /// lays the notes out back to back at the current tool duration — the
-    /// escape hatch for users who'd rather set rhythm by hand.
+    /// Where a note's length comes from. `.spoken` is reading the score out
+    /// loud — "도 4분음표, 레 8분음표" — at any pace, no metronome: the length
+    /// is whatever was said (or left for later). The others listen for note
+    /// names only, said in time, and snap the moment each was said to a grid.
     enum Grid: Double, CaseIterable, Identifiable {
+        case spoken = 0
         case quarter = 1.0
         case eighth = 0.5
         case sixteenth = 0.25
-        case free = 0
 
         var id: Double { rawValue }
 
@@ -57,7 +58,7 @@ enum SpokenSolfege {
             case .quarter: return String(localized: "4분")
             case .eighth: return String(localized: "8분")
             case .sixteenth: return String(localized: "16분")
-            case .free: return String(localized: "리듬 없이")
+            case .spoken: return String(localized: "말로", comment: "Dictation: note lengths are said in words rather than timed")
             }
         }
     }
@@ -121,8 +122,12 @@ enum SpokenSolfege {
 
     static func contextualStrings(korean: Bool) -> [String] {
         korean
-            ? syllables.map(\.text) + ["높은", "낮은", "쉼", "샵", "플랫", "올림", "내림"]
-            : ["do", "re", "mi", "fa", "sol", "la", "ti", "rest", "high", "low", "sharp", "flat"]
+            ? syllables.map(\.text) + ["높은", "낮은", "쉼", "샵", "플랫", "올림", "내림",
+                                       "온음표", "2분음표", "4분음표", "8분음표", "16분음표",
+                                       "점4분음표", "점8분음표", "4분쉼표", "8분쉼표"]
+            : ["do", "re", "mi", "fa", "sol", "la", "ti", "rest", "high", "low", "sharp", "flat",
+               "whole note", "half note", "quarter note", "eighth note", "sixteenth note",
+               "dotted quarter note", "quarter rest", "eighth rest"]
     }
 
     /// A word that is only a modifier ("high", "flat", "높은"), or nil.
@@ -241,7 +246,7 @@ enum SpokenSolfege {
     ///
     /// - Parameters:
     ///   - tempo: BPM the count-in ran at; converts seconds to beats.
-    ///   - grid: snap resolution, or `.free` to ignore timing entirely.
+    ///   - grid: snap resolution.
     ///   - baseOctave: octave the first note lands in.
     ///   - autoOctave: when true, later notes take the octave that keeps the
     ///     interval smallest; when false everything stays in `baseOctave`.
@@ -253,8 +258,7 @@ enum SpokenSolfege {
                       baseOctave: Int,
                       autoOctave: Bool,
                       measureBeats: Double,
-                      capacityBeats: Double,
-                      freeDuration: NoteDuration = .quarter) -> [ScoreNote] {
+                      capacityBeats: Double) -> [ScoreNote] {
 
         // 1. Expand words into tokens, keeping each one's time.
         var placed: [(token: Token, beat: Double)] = []
@@ -286,23 +290,17 @@ enum SpokenSolfege {
         }
         guard !placed.isEmpty else { return [] }
 
-        // 2. Put them on the grid. `.free` discards the timing and lays the
-        //    notes end to end; otherwise every start snaps to the nearest
+        // 2. Put them on the grid: every start snaps to the nearest
         //    subdivision and collisions are pushed forward so no syllable is
         //    silently swallowed by its neighbour.
         var starts: [Double] = []
-        if grid == .free {
-            let step = freeDuration.beats
-            starts = placed.indices.map { Double($0) * step }
-        } else {
-            let step = grid.rawValue
-            var previous = -Double.greatestFiniteMagnitude
-            for entry in placed {
-                var slot = (max(0, entry.beat) / step).rounded() * step
-                if slot <= previous + 1e-6 { slot = previous + step }
-                starts.append(slot)
-                previous = slot
-            }
+        let step = grid == .spoken ? 1 : grid.rawValue
+        var previous = -Double.greatestFiniteMagnitude
+        for entry in placed {
+            var slot = (max(0, entry.beat) / step).rounded() * step
+            if slot <= previous + 1e-6 { slot = previous + step }
+            starts.append(slot)
+            previous = slot
         }
 
         // 3. Keep only what fits on the two visible measures.
@@ -317,10 +315,8 @@ enum SpokenSolfege {
         //    against, so it runs to the end of ITS OWN bar — stretching it to
         //    the end of the staff instead would turn a closing quarter note
         //    into a whole note.
-        var result: [ScoreNote] = []
-        var previousMidi: Int? = nil
         let bar = measureBeats > 0 ? measureBeats : capacityBeats
-        for (i, entry) in kept.enumerated() {
+        let timed = kept.enumerated().map { i, entry -> Placed in
             let next: Double
             if i + 1 < kept.count {
                 next = kept[i + 1].start
@@ -329,12 +325,28 @@ enum SpokenSolfege {
                 next = min(barEnd, capacityBeats)
             }
             let (duration, dotted) = value(forBeats: next - entry.start)
+            return Placed(token: entry.token, start: entry.start, duration: duration, dotted: dotted)
+        }
+        return scoreNotes(timed, baseOctave: baseOctave, autoOctave: autoOctave)
+    }
 
+    /// A token with its place and length decided — all that's left is the octave.
+    private struct Placed {
+        var token: Token
+        var start: Double
+        var duration: NoteDuration
+        var dotted: Bool
+    }
+
+    private static func scoreNotes(_ placed: [Placed], baseOctave: Int, autoOctave: Bool) -> [ScoreNote] {
+        var result: [ScoreNote] = []
+        var previousMidi: Int? = nil
+        for entry in placed {
             switch entry.token {
             case .rest:
-                result.append(ScoreNote(pitch: .middleC, duration: duration,
+                result.append(ScoreNote(pitch: .middleC, duration: entry.duration,
                                         beatOffset: entry.start, isRest: true,
-                                        dotted: dotted))
+                                        dotted: entry.dotted))
             case let .pitch(semitone, alteration, octave, nudge):
                 let midi = resolveOctave(semitone: semitone, alteration: alteration,
                                          explicit: octave, nudge: nudge,
@@ -342,11 +354,115 @@ enum SpokenSolfege {
                                          previous: autoOctave ? previousMidi : nil)
                 previousMidi = midi
                 result.append(ScoreNote(pitch: Pitch(midi: midi, prefersFlat: alteration < 0),
-                                        duration: duration, beatOffset: entry.start,
-                                        dotted: dotted))
+                                        duration: entry.duration, beatOffset: entry.start,
+                                        dotted: entry.dotted))
             }
         }
         return result
+    }
+
+    // MARK: - Reading aloud → notes
+
+    /// A length said in words, with what it was said about: "점4분음표",
+    /// "8분쉼표", "dotted quarter note", "eighth rest". Number words are
+    /// accepted as the recognizer writes them ("사분", "4 분", "십육분").
+    private static let lengthPattern = try! NSRegularExpression(pattern:
+        "(점\\s*|dotted\\s+)?" +
+        "(?:(16|십\\s*육|2|이|4|사|8|팔)\\s*분|(온)\\s*(?=음|쉼)|(whole|half|quarter|eighth|8th|sixteenth|16th))" +
+        "\\s*(음표|쉼표|음|쉼|notes?|rests?)?")
+
+    private static let lengthWords: [String: NoteDuration] = [
+        "온": .whole, "whole": .whole,
+        "2": .half, "이": .half, "half": .half,
+        "4": .quarter, "사": .quarter, "quarter": .quarter,
+        "8": .eighth, "팔": .eighth, "eighth": .eighth, "8th": .eighth,
+        "16": .sixteenth, "십육": .sixteenth, "sixteenth": .sixteenth, "16th": .sixteenth
+    ]
+
+    /// Turn a score read out loud into notes, laid end to end.
+    ///
+    /// Each note is its name followed by its length — "도 4분음표, 레 8분음표",
+    /// "do quarter note, re eighth note" — and a rest is its length alone
+    /// ("4분쉼표", "quarter rest"). A note said without a length takes the
+    /// length of the one before it (a quarter to begin with), so names alone
+    /// — "도 레 미" — are a complete reading whose lengths can be set after.
+    static func notes(reading transcript: String,
+                      baseOctave: Int,
+                      autoOctave: Bool,
+                      capacityBeats: Double) -> [ScoreNote] {
+        typealias Length = (duration: NoteDuration, dotted: Bool)
+        var read: [(token: Token, length: Length?)] = []
+        var waiting: Length?     // a length said before the thing it belongs to
+        var pendingNudge = 0
+
+        func take(words: Substring) {
+            for word in words.split(whereSeparator: { $0 == " " || $0 == "," || $0 == "." }) {
+                for part in split(String(word)) {
+                    if let mod = modifier(for: part) {
+                        pendingNudge += mod.nudge
+                        if mod.alteration != 0, let last = read.indices.last,
+                           case let .pitch(semi, 0, oct, nudge) = read[last].token {
+                            read[last].token = .pitch(semitone: semi, alteration: mod.alteration,
+                                                      octave: oct, nudge: nudge)
+                        }
+                        continue
+                    }
+                    guard var token = token(for: part) else { continue }
+                    if pendingNudge != 0, case let .pitch(semi, alt, oct, nudge) = token {
+                        token = .pitch(semitone: semi, alteration: alt, octave: oct, nudge: nudge + pendingNudge)
+                        pendingNudge = 0
+                    }
+                    read.append((token, waiting))
+                    waiting = nil
+                }
+            }
+        }
+
+        let text = transcript.lowercased()
+        let whole = NSRange(text.startIndex..., in: text)
+        var cursor = text.startIndex
+        for match in lengthPattern.matches(in: text, range: whole) {
+            guard let range = Range(match.range, in: text) else { continue }
+            take(words: text[cursor..<range.lowerBound])
+            cursor = range.upperBound
+
+            func group(_ i: Int) -> String? {
+                Range(match.range(at: i), in: text).map { String(text[$0]).filter { !$0.isWhitespace } }
+            }
+            guard let word = group(2) ?? group(3) ?? group(4), let duration = lengthWords[word] else { continue }
+            let length: Length = (duration, group(1) != nil)
+            let kind = group(5) ?? ""
+            if kind.hasPrefix("쉼") || kind.hasPrefix("rest") {
+                read.append((.rest, length))
+            } else if let last = read.indices.last, read[last].length == nil {
+                read[last].length = length
+            } else {
+                waiting = length
+            }
+        }
+        take(words: text[cursor...])
+
+        var placed: [Placed] = []
+        var start = 0.0
+        var length: Length = (.quarter, false)
+        for item in read where start < capacityBeats - 1e-6 {
+            length = item.length ?? length
+            placed.append(Placed(token: item.token, start: start,
+                                 duration: length.duration, dotted: length.dotted))
+            start += length.duration.beats * (length.dotted ? 1.5 : 1)
+        }
+        return scoreNotes(placed, baseOctave: baseOctave, autoOctave: autoOctave)
+    }
+
+    /// The same notes set back to back — after one of them was given a new length.
+    static func endToEnd(_ notes: [ScoreNote]) -> [ScoreNote] {
+        var start = 0.0
+        return notes.map { note in
+            var note = note
+            note.beatOffset = start
+            start += note.beats
+            return note
+        }
     }
 
     /// Where a syllable sits in absolute pitch.

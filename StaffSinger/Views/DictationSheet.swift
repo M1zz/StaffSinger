@@ -95,7 +95,9 @@ struct DictationSheet: View {
                     .foregroundColor(.red)
                     .symbolEffect(.variableColor.iterative, options: .repeating, isActive: !reduceMotion)
                     .accessibilityHidden(true)
-                Text("\(measureLabel(for: beat)) · 듣는 중")
+                Text(dictation.grid == .spoken
+                     ? String(localized: "듣는 중 · 다 읽으면 멈추기를 누르세요")
+                     : String(localized: "\(measureLabel(for: beat)) · 듣는 중"))
                     .font(.subheadline).foregroundColor(.secondary)
             }
             .frame(height: 110)
@@ -131,21 +133,27 @@ struct DictationSheet: View {
     /// under it. Telling someone to "say the note names on the beat" doesn't
     /// land until they see one measure read out.
     private var example: some View {
-        VStack(spacing: 6) {
-            Text("메트로놈 네 박을 세고 나면, 박에 맞춰 계이름을 말하세요.")
+        let spoken = dictation.grid == .spoken
+        return VStack(spacing: 6) {
+            Text(spoken
+                 ? String(localized: "악보를 소리 내어 읽어 주세요. 계이름을 말하고, 이어서 음 길이를 말합니다.")
+                 : String(localized: "메트로놈 네 박을 세고 나면, 박에 맞춰 계이름을 말하세요."))
                 .font(.subheadline).multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
             VStack(spacing: 2) {
                 Text("이 악보는 이렇게 읽어요", comment: "Heading above the worked example in solfège dictation")
                     .font(.caption.weight(.semibold)).foregroundColor(.secondary)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                ExampleScore()
+                ExampleScore(spoken: spoken)
             }
             .padding(.horizontal, 12).padding(.vertical, 8)
             .background(Color(.systemGray6))
             .clipShape(RoundedRectangle(cornerRadius: 12))
-            Text("박마다 한 음씩, 8분음표 둘은 한 박에 두 번 말해요. 긴 음은 한 번만 말하고, 쉬는 곳은 \"쉼\"이라고 말해요.",
-                 comment: "How to read the worked example aloud in solfège dictation")
+            Text(spoken
+                 ? String(localized: "쉼표는 \"4분쉼표\", 점음표는 \"도 점4분음표\"처럼 말해요. 계이름만 말하고 길이는 받아쓴 뒤에 정해도 돼요.",
+                          comment: "How to read a score aloud, with lengths in words, in solfège dictation")
+                 : String(localized: "박마다 한 음씩, 8분음표 둘은 한 박에 두 번 말해요. 긴 음은 한 번만 말하고, 쉬는 곳은 \"쉼\"이라고 말해요.",
+                          comment: "How to read the worked example aloud in solfège dictation"))
                 .font(.caption).foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
                 .fixedSize(horizontal: false, vertical: true)
@@ -186,27 +194,64 @@ struct DictationSheet: View {
     /// produced, so a wrong rhythm is visible before it hits the staff.
     private var resultStrip: some View {
         VStack(alignment: .leading, spacing: 4) {
-            Text("악보에 들어갈 음표").font(.caption).foregroundColor(.secondary)
+            HStack(spacing: 6) {
+                Text("악보에 들어갈 음표")
+                if dictation.grid == .spoken {
+                    Text("누르면 길이를 바꿀 수 있어요", comment: "Hint beside the dictated notes: tap one to change its length")
+                }
+            }
+            .font(.caption).foregroundColor(.secondary)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 6) {
                     ForEach(dictation.notes) { note in
-                        VStack(spacing: 1) {
-                            Text(note.isRest ? String(localized: "쉼", comment: "A rest in the dictated-notes strip") : note.pitch.label)
-                                .font(.subheadline.weight(.semibold))
-                            Text(note.durationLabel)
-                                .font(.caption2).foregroundColor(.secondary)
+                        if dictation.grid == .spoken {
+                            Menu { lengthMenu(for: note) } label: { chip(note) }
+                                .buttonStyle(.plain)
+                        } else {
+                            chip(note)
                         }
-                        .accessibilityElement(children: .ignore)
-                        .accessibilityLabel((note.isRest ? String(localized: "쉼표") : note.pitch.accessibilityLabel)
-                                            + ", " + note.durationLabel)
-                        .padding(.horizontal, 8).padding(.vertical, 5)
-                        .background(Color.accentColor.opacity(0.12))
-                        .clipShape(RoundedRectangle(cornerRadius: 8))
                     }
                 }
                 .padding(.horizontal, 2)
             }
         }
+    }
+
+    private func chip(_ note: ScoreNote) -> some View {
+        VStack(spacing: 1) {
+            Text(note.isRest ? String(localized: "쉼", comment: "A rest in the dictated-notes strip") : note.pitch.label)
+                .font(.subheadline.weight(.semibold))
+                .foregroundColor(.primary)
+            Text(note.durationLabel)
+                .font(.caption2).foregroundColor(.secondary)
+        }
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel((note.isRest ? String(localized: "쉼표") : note.pitch.accessibilityLabel)
+                            + ", " + note.durationLabel)
+        .padding(.horizontal, 8).padding(.vertical, 5)
+        .background(Color.accentColor.opacity(0.12))
+        .clipShape(RoundedRectangle(cornerRadius: 8))
+    }
+
+    /// Lengths for one dictated note — how a reading that named the notes
+    /// first gets its rhythm afterwards.
+    @ViewBuilder
+    private func lengthMenu(for note: ScoreNote) -> some View {
+        ForEach(NoteDuration.allCases) { duration in
+            Button {
+                dictation.setLength(of: note.id, to: duration, dotted: note.dotted)
+            } label: {
+                if duration == note.duration {
+                    Label(duration.displayName, systemImage: "checkmark")
+                } else {
+                    Text(duration.displayName)
+                }
+            }
+        }
+        Divider()
+        Toggle("점음표", isOn: Binding(
+            get: { note.dotted },
+            set: { dictation.setLength(of: note.id, to: note.duration, dotted: $0) }))
     }
 
     // MARK: - Settings
@@ -220,15 +265,15 @@ struct DictationSheet: View {
                                                 reached: StaffSingerTipMoments.reachedNow)
             }
             VStack(alignment: .leading, spacing: 6) {
-                Text("리듬 스냅").font(.subheadline.weight(.semibold))
-                Picker("리듬 스냅", selection: $dictation.grid) {
+                Text("음 길이").font(.subheadline.weight(.semibold))
+                Picker("음 길이", selection: $dictation.grid) {
                     ForEach(SpokenSolfege.Grid.allCases) { grid in
                         Text(grid.label).tag(grid)
                     }
                 }
                 .pickerStyle(.segmented)
-                Text(dictation.grid == .free
-                     ? String(localized: "말한 순서만 씁니다. 길이는 모두 4분음표로 넣고 나중에 고치세요.")
+                Text(dictation.grid == .spoken
+                     ? String(localized: "계이름 뒤에 음 길이를 말합니다. 메트로놈 없이 편한 속도로 읽으세요.")
                      : String(localized: "말한 시점을 가장 가까운 \(dictation.grid.label)음표 자리로 맞춥니다."))
                     .font(.caption).foregroundColor(.secondary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -251,10 +296,14 @@ struct DictationSheet: View {
 
             VStack(alignment: .leading, spacing: 5) {
                 Text("잘 되게 하려면").font(.caption.weight(.semibold))
-                tip("이어폰을 쓰면 메트로놈이 마이크에 섞이지 않습니다")
-                tip("한 음씩 또박또박, 박에 딱 맞춰 말하세요")
+                if dictation.grid != .spoken {
+                    tip("이어폰을 쓰면 메트로놈이 마이크에 섞이지 않습니다")
+                    tip("한 음씩 또박또박, 박에 딱 맞춰 말하세요")
+                }
                 tip("4도보다 넓게 뛸 땐 \"높은 솔\", \"낮은 시\"처럼 말하세요")
-                tip("빠르면 템포를 낮추세요 (현재 \(Int(score.tempo)) BPM)")
+                if dictation.grid != .spoken {
+                    tip("빠르면 템포를 낮추세요 (현재 \(Int(score.tempo)) BPM)")
+                }
             }
 
             Spacer(minLength: 0)
@@ -284,6 +333,13 @@ struct DictationSheet: View {
 /// the beat it falls on under that. Drawn by hand: it is five notes that never
 /// change, so it needn't carry the editor's staff along.
 private struct ExampleScore: View {
+    /// Reading aloud shows the length to say under each name; timed dictation
+    /// shows the beat it falls on.
+    var spoken = false
+    /// The lengths as they are said, in the language the app listens in.
+    private static let lengths = ScoreTextFormat.usesKoreanNotation
+        ? ["4분음표", "4분음표", "8분음표", "8분음표", "4분음표"]
+        : ["quarter", "quarter", "eighth", "eighth", "quarter"]
     /// (steps above the bottom line E4, beat it starts on, where it sits across
     /// the width). Spaced like print, not by the clock: the two eighths get
     /// room for their words instead of half a beat's worth.
@@ -331,7 +387,10 @@ private struct ExampleScore: View {
                 ctx.draw(Text(verbatim: Self.words[index]).font(.subheadline.weight(.bold))
                             .foregroundColor(.accentColor),
                          at: CGPoint(x: x, y: bottom + 30))
-                if note.beat == note.beat.rounded() {
+                if spoken {
+                    ctx.draw(Text(verbatim: Self.lengths[index]).font(.caption2).foregroundColor(.secondary),
+                             at: CGPoint(x: x, y: bottom + 49))
+                } else if note.beat == note.beat.rounded() {
                     ctx.draw(Text(verbatim: "\(Int(note.beat) + 1)").font(.caption2).foregroundColor(.secondary),
                              at: CGPoint(x: x, y: bottom + 49))
                 }
@@ -343,6 +402,8 @@ private struct ExampleScore: View {
         }
         .frame(height: 110)
         .accessibilityElement()
-        .accessibilityLabel(Self.words.joined(separator: " "))
+        .accessibilityLabel(spoken
+            ? zip(Self.words, Self.lengths).map { "\($0) \($1)" }.joined(separator: ", ")
+            : Self.words.joined(separator: " "))
     }
 }

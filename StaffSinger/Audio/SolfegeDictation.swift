@@ -49,11 +49,11 @@ final class SolfegeDictation: ObservableObject {
     /// The take's result, ready to be dropped on the staff.
     @Published private(set) var notes: [ScoreNote] = []
 
-    /// Snap resolution for spoken timing. Persisted — a user who reads in
-    /// eighths keeps reading in eighths.
+    /// Where note lengths come from: said in words (the default), or timed
+    /// against the metronome at this resolution. Persisted.
     @Published var grid: SpokenSolfege.Grid = {
         let raw = UserDefaults.standard.double(forKey: gridKey)
-        return SpokenSolfege.Grid(rawValue: raw) ?? .eighth
+        return SpokenSolfege.Grid(rawValue: raw) ?? .spoken
     }() {
         didSet { UserDefaults.standard.set(grid.rawValue, forKey: Self.gridKey) }
     }
@@ -217,6 +217,16 @@ final class SolfegeDictation: ObservableObject {
         try Task.checkCancellation()
         try startListening()
 
+        // Reading aloud: no count-in and no clock. Listen until the reader
+        // stops (or a minute and a half goes by with the mic still open).
+        if grid == .spoken {
+            phase = .recording(beat: 0)
+            musicStartTime = currentAudioTime()
+            try await Task.sleep(nanoseconds: 90 * 1_000_000_000)
+            await finish()
+            return
+        }
+
         let secondsPerBeat = 60.0 / max(20.0, tempo)
         let nanosPerBeat = UInt64(secondsPerBeat * 1_000_000_000)
 
@@ -289,6 +299,8 @@ final class SolfegeDictation: ObservableObject {
                 if let result {
                     self.latestResult = result
                     self.heard = result.bestTranscription.formattedString
+                    // Read aloud, the notes can be shown as they are said.
+                    if self.grid == .spoken, self.request != nil { self.notes = self.read(self.heard) }
                 }
                 if error != nil { self.latestError = error }
             }
@@ -328,25 +340,45 @@ final class SolfegeDictation: ObservableObject {
 
         guard let result, !result.bestTranscription.segments.isEmpty else {
             phase = .failed(latestError == nil
-                ? String(localized: "계이름을 알아듣지 못했습니다. 메트로놈에 맞춰 또박또박 \"도 레 미\"처럼 말해 보세요.")
+                ? (grid == .spoken
+                    ? String(localized: "계이름을 알아듣지 못했습니다. \"도 4분음표, 레 8분음표\"처럼 또박또박 말해 보세요.")
+                    : String(localized: "계이름을 알아듣지 못했습니다. 메트로놈에 맞춰 또박또박 \"도 레 미\"처럼 말해 보세요."))
                 : String(localized: "음성 인식에 실패했습니다. 잠시 후 다시 시도해 주세요."))
             return
         }
 
-        let events = self.events(from: result.bestTranscription.segments,
-                                 musicEnd: endTime)
-        let placed = SpokenSolfege.notes(from: events,
+        heard = result.bestTranscription.formattedString
+        let placed: [ScoreNote]
+        if grid == .spoken {
+            placed = read(heard)
+        } else {
+            let events = self.events(from: result.bestTranscription.segments, musicEnd: endTime)
+            placed = SpokenSolfege.notes(from: events,
                                          tempo: tempo,
                                          grid: grid,
                                          baseOctave: baseOctave,
                                          autoOctave: autoOctave,
                                          measureBeats: measureBeats,
                                          capacityBeats: capacityBeats)
+        }
         notes = placed
-        heard = result.bestTranscription.formattedString
         phase = placed.isEmpty
             ? .failed(String(localized: "\"\(heard)\" — 여기서 계이름을 찾지 못했습니다.\n도 레 미 파 솔 라 시 로 말해 주세요."))
             : .done(noteCount: placed.count)
+    }
+
+    private func read(_ transcript: String) -> [ScoreNote] {
+        SpokenSolfege.notes(reading: transcript, baseOctave: baseOctave,
+                            autoOctave: autoOctave, capacityBeats: capacityBeats)
+    }
+
+    /// Give one dictated note a length after the fact — for a reading that
+    /// named the notes first and left the rhythm for later.
+    func setLength(of id: ScoreNote.ID, to duration: NoteDuration, dotted: Bool) {
+        guard let index = notes.firstIndex(where: { $0.id == id }) else { return }
+        notes[index].duration = duration
+        notes[index].dotted = dotted
+        notes = SpokenSolfege.endToEnd(notes)
     }
 
     /// Recognized segments → events timed from the downbeat.
