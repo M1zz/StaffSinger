@@ -117,8 +117,14 @@ struct SettingsSidePanel: View {
 
             Divider()
 
-            SettingsForm(vm: vm, audio: audio)
-                .scrollContentBackground(.hidden)   // let the panel material show
+            // The rows that lead somewhere (support the developer, feedback…)
+            // are navigation links: without a stack around them they are dead
+            // and grey. The panel has its own header, so the root bar is hidden.
+            NavigationStack {
+                SettingsForm(vm: vm, audio: audio)
+                    .scrollContentBackground(.hidden)   // let the panel material show
+                    .toolbar(.hidden, for: .navigationBar)
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(.regularMaterial)
