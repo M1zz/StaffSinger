@@ -6,7 +6,7 @@
 //  classic-CV pipeline for the score people actually photograph: one printed,
 //  monophonic staff with beamed groups, lyrics underneath and a little blur. It
 //  is NOT a general OMR engine — rests, dots, chords, accidentals and key
-//  signatures are not understood, and the clef is assumed to be treble. The user
+//  signatures are not understood; the clef is the one the staff is set to. The user
 //  is expected to fix the result by hand afterwards.
 //
 //  Pipeline: upright → grayscale → Otsu binarize → staff-line detection
@@ -148,7 +148,8 @@ enum OMR {
     /// Best-effort transcription; empty if no staff could be found.
     /// `measureBeats` is how long one measure is; when barlines are found, each
     /// measure starts on its own downbeat instead of running on from the last.
-    static func transcribe(_ image: UIImage, maxBeats: Double = 8, measureBeats: Double = 4) -> Reading {
+    static func transcribe(_ image: UIImage, maxBeats: Double = 8, measureBeats: Double = 4,
+                           clef: Clef = .treble) -> Reading {
         guard let gray = grayscale(upright(image)) else { return Reading() }
         let (ink, threshold) = binarize(gray)
         guard let staff = detectStaff(ink, width: gray.w, height: gray.h) else { return Reading() }
@@ -158,7 +159,7 @@ enum OMR {
         let bars = detectBarlines(ink, width: w, height: h, staff: staff, heads: heads)
         heads = joinTies(heads, barlines: bars, ink: ink, width: w, height: h, staff: staff)
         var reading = assignBeats(heads, barlines: bars, staff: staff, measureBeats: measureBeats,
-                                  maxBeats: maxBeats, width: w, height: h)
+                                  maxBeats: maxBeats, clef: clef, width: w, height: h)
         reading.staffLines = staff.lineYs.map { 1 - Double($0) / Double(gray.h) }.sorted()   // rows run bottom-up
         return reading
     }
@@ -647,7 +648,7 @@ enum OMR {
     /// scrap of a neighbouring measure caught at the edge of the picture is
     /// left out rather than counted as the first beat.
     private static func assignBeats(_ heads: [Head], barlines: [Int], staff: Staff,
-                                    measureBeats: Double, maxBeats: Double,
+                                    measureBeats: Double, maxBeats: Double, clef: Clef,
                                     width w: Int, height h: Int) -> Reading {
         // Split at the barlines; remember how wide each piece is.
         let edges = [0] + barlines + [w]
@@ -676,7 +677,7 @@ enum OMR {
             let end = byMeasure ? min(beat + measureBeats, maxBeats) : maxBeats
             for head in measure.heads {
                 if beat + head.beats > end + 1e-6 { break }   // keep within the measure / the score
-                var note = ScoreNote(pitch: pitch(forY: head.centerY, staff: staff),
+                var note = ScoreNote(pitch: pitch(forY: head.centerY, staff: staff, clef: clef),
                                      duration: head.duration, beatOffset: beat)
                 note.dotted = head.dotted
                 reading.notes.append(note)
@@ -689,13 +690,13 @@ enum OMR {
         return reading
     }
 
-    /// Buffer Y → natural treble pitch. The grayscale buffer's rows run bottom
-    /// (row 0) to top, so the visually highest staff line — F5 on a treble staff
-    /// — is the one with the LARGEST row index. Each half spacing toward smaller
+    /// Buffer Y → natural pitch in `clef`. The grayscale buffer's rows run bottom
+    /// (row 0) to top, so the visually highest staff line — F5 on a treble staff,
+    /// A3 on a bass staff — is the one with the LARGEST row index. Each half spacing toward smaller
     /// rows is one diatonic step down, matching `StaffLayout`.
-    private static func pitch(forY y: Int, staff: Staff) -> Pitch {
+    private static func pitch(forY y: Int, staff: Staff, clef: Clef = .treble) -> Pitch {
         let topRow = staff.lineYs.max() ?? staff.topY
         let steps = Int((Double(topRow - y) / (staff.spacing / 2)).rounded())
-        return StaffLayout(clef: .treble).pitch(diatonicStepsBelowTop: steps)
+        return StaffLayout(clef: clef).pitch(diatonicStepsBelowTop: steps)
     }
 }

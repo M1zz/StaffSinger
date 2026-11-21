@@ -114,6 +114,7 @@ struct StaffView: View {
                 .accessibilityHidden(true)
                 tapCatcher(layout: layout)        // empty-staff taps (add) — below notes
                     .accessibilityHidden(true)    // VoiceOver 는 건반으로 음을 넣는다
+                clefMenu(layout: layout, m: m)    // tap the clef to switch it
                 beamLayer(beams.groups, layout: layout)             // stems + beams
                     .accessibilityHidden(true)
                 noteLayer(layout: layout, m: m,
@@ -211,6 +212,27 @@ struct StaffView: View {
                 .foregroundColor(.primary)
                 .position(x: m.leftEdge + 20, y: midLineY)
         }
+    }
+
+    /// The clef glyph is also the place to change it: tap → pick treble, alto
+    /// or bass. Same choice as in Settings, just where people look for it.
+    private func clefMenu(layout: StaffLayout, m: Metrics) -> some View {
+        Menu {
+            Picker("음자리표", selection: Binding(
+                get: { vm.score.clef },
+                set: { vm.setClef($0) })) {
+                ForEach(Clef.allCases) { c in
+                    Text(c.displayName).tag(c)
+                }
+            }
+        } label: {
+            Color.clear
+                .frame(width: 44, height: layout.lineSpacing * 6)
+                .contentShape(Rectangle())
+        }
+        .position(x: m.leftEdge + 20, y: layout.topLineY + 2 * layout.lineSpacing)
+        .accessibilityLabel(vm.score.clef.displayName)
+        .accessibilityHint(Text("음자리표 바꾸기"))
     }
 
     // MARK: - Key signature (accidentals after the clef)
