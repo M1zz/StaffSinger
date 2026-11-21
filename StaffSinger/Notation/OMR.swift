@@ -35,6 +35,9 @@ enum OMR {
         /// How many measures were in view. More than the score holds means the
         /// camera is too far away — the caller can say so.
         var measures = 0
+        /// The clef printed at the start of the staff, when the picture shows
+        /// it. The notes were read in this clef; nil means the caller's clef.
+        var clef: Clef? = nil
     }
 
     /// Reading a live camera note by note. One frame can be wrong, so a note is
@@ -155,11 +158,14 @@ enum OMR {
         guard let staff = detectStaff(ink, width: gray.w, height: gray.h) else { return Reading() }
         let w = gray.w, h = gray.h
         let stroke = strokeWidth(ink, width: w, height: h, staff: staff)
+        let printed = detectClef(ink, width: w, height: h, staff: staff, stroke: stroke)
         var heads = detectNotes(gray, ink: ink, threshold: threshold, staff: staff, stroke: stroke)
+        if let printed { heads.removeAll { $0.centerX <= printed.endX } }   // the clef is no note
         let bars = detectBarlines(ink, width: w, height: h, staff: staff, heads: heads)
         heads = joinTies(heads, barlines: bars, ink: ink, width: w, height: h, staff: staff)
         var reading = assignBeats(heads, barlines: bars, staff: staff, measureBeats: measureBeats,
-                                  maxBeats: maxBeats, clef: clef, width: w, height: h)
+                                  maxBeats: maxBeats, clef: printed?.clef ?? clef, width: w, height: h)
+        reading.clef = printed?.clef
         reading.staffLines = staff.lineYs.map { 1 - Double($0) / Double(gray.h) }.sorted()   // rows run bottom-up
         return reading
     }
@@ -266,6 +272,74 @@ enum OMR {
             if norm < 0.15, norm < (uniform?.norm ?? .greatestFiniteMagnitude) { uniform = (norm, staff) }
         }
         return middle?.staff ?? uniform?.staff
+    }
+
+    // MARK: - Clef
+
+    /// The clef printed where the staff begins — if the picture shows that
+    /// beginning. The three shapes differ by how far they reach: 𝄞 runs well
+    /// past both outer lines, 𝄡 fills the staff from the top line to the
+    /// bottom one, 𝄢 hangs from the top line and stops short of the bottom.
+    /// Also says where it ends, so nothing inside it is read as a note.
+    /// Nil when the lines run in from the picture's edge (no clef in view) or
+    /// the shape isn't clearly one of the three.
+    private static func detectClef(_ ink: [Bool], width w: Int, height h: Int,
+                                   staff: Staff, stroke: Double) -> (clef: Clef, endX: Int)? {
+        let S = staff.spacing
+        let lines = staff.lineYs.sorted()            // rows run bottom-up: first is the bottom line
+        guard lines.count == 5, w > Int(8 * S) else { return nil }
+        let low = lines[0], high = lines[4], middle = lines[2]
+
+        // Where the lines begin: the first column from which the middle line runs on.
+        let run = Int(2 * S)
+        func onLine(_ x: Int) -> Bool {
+            (middle - 1...middle + 1).contains { $0 >= 0 && $0 < h && ink[$0 * w + x] }
+        }
+        guard let start = (0..<(w - run)).first(where: { x in
+                  (x..<x + run).filter(onLine).count * 10 >= run * 9 }),
+              Double(start) > S else { return nil }
+
+        // Ink off the staff lines, column by column, from there on.
+        let band = Int(stroke / 2) + 1
+        let z0 = max(0, low - Int(3 * S)), z1 = min(h - 1, high + Int(3 * S))
+        func offLine(_ y: Int) -> Bool { !lines.contains { abs($0 - y) <= band } }
+        var columns: [(x: Int, lo: Int, hi: Int)?] = []
+        for x in start..<min(w, start + Int(5 * S)) {
+            let rows = (z0...z1).filter { ink[$0 * w + x] && offLine($0) }
+            columns.append(rows.count >= 2 ? (x, rows.first!, rows.last!) : nil)
+        }
+
+        // The first shape wider than a barline — small breaks inside it bridged.
+        let bridge = max(1, Int(0.25 * S))
+        var i = 0
+        while i < columns.count {
+            guard columns[i] != nil else { i += 1; continue }
+            var j = i, blank = 0
+            while j + 1 < columns.count, blank <= bridge {
+                j += 1
+                blank = columns[j] == nil ? blank + 1 : 0
+            }
+            let shape = columns[i...j].compactMap { $0 }
+            let width = (shape.last?.x ?? 0) - (shape.first?.x ?? 0)
+            if Double(width) < 0.6 * S { i = j + 1; continue }    // a barline
+            guard Double(width) >= 1.2 * S,
+                  let top = shape.map(\.hi).max(), let bottom = shape.map(\.lo).min() else { return nil }
+
+            let above = Double(top - high) / S              // past the top line
+            let below = Double(low - bottom) / S            // past the bottom line
+            let clef: Clef
+            if above > 0.7 && below > 0.7 {
+                clef = .treble
+            } else if above < 0.6 && below < 0.6 && above > -0.6 {
+                if below < -0.7 { clef = .bass }            // stops above the bottom line
+                else if below > -0.4 { clef = .alto }
+                else { return nil }
+            } else {
+                return nil
+            }
+            return (clef, shape.last!.x + Int(S))
+        }
+        return nil
     }
 
     // MARK: - Notes

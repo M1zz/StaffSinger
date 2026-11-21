@@ -30,6 +30,7 @@
 		B28E59ABD4FD4D81A49E8CD2 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAE88B4D7634EEDAF5B7334 /* AudioEngine.swift */; };
 		B363328784549AFB1DC1DE1F /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1A3E8FA04E360F58A75A3DE1 /* Localizable.xcstrings */; };
 		CC0000000000000000000004 /* MusicModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0000000000000000000003 /* MusicModelTests.swift */; };
+		CC00000000000000000000B2 /* OMRClefTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00000000000000000000B1 /* OMRClefTests.swift */; };
 		CC00000000000000000000A2 /* OMRExposureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00000000000000000000A1 /* OMRExposureTests.swift */; };
 		CC00000000000000000000A4 /* OMRBeamedScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00000000000000000000A3 /* OMRBeamedScoreTests.swift */; };
 		CFE18438ADB94E5D9F9A8007 /* StaffLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E770722A9A6445CB768B0EB /* StaffLayout.swift */; };
@@ -79,6 +80,7 @@
 		C6D1B36449F4414884D04043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC0000000000000000000002 /* StaffSingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaffSingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC0000000000000000000003 /* MusicModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModelTests.swift; sourceTree = "<group>"; };
+		CC00000000000000000000B1 /* OMRClefTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMRClefTests.swift; sourceTree = "<group>"; };
 		CC00000000000000000000A1 /* OMRExposureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMRExposureTests.swift; sourceTree = "<group>"; };
 		CC00000000000000000000A3 /* OMRBeamedScoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OMRBeamedScoreTests.swift; sourceTree = "<group>"; };
 		D8843EF60C2F8E4BF546E6EF /* AppShortcuts.xcstrings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.json.xcstrings; path = AppShortcuts.xcstrings; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				CC0000000000000000000003 /* MusicModelTests.swift */,
+				CC00000000000000000000B1 /* OMRClefTests.swift */,
 				CC00000000000000000000A1 /* OMRExposureTests.swift */,
 				CC00000000000000000000A3 /* OMRBeamedScoreTests.swift */,
 				EE0000000000000000000003 /* ScoreTextFormatTests.swift */,
@@ -386,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC0000000000000000000004 /* MusicModelTests.swift in Sources */,
+				CC00000000000000000000B2 /* OMRClefTests.swift in Sources */,
 				CC00000000000000000000A2 /* OMRExposureTests.swift in Sources */,
 				CC00000000000000000000A4 /* OMRBeamedScoreTests.swift in Sources */,
 				EE0000000000000000000004 /* ScoreTextFormatTests.swift in Sources */,
@@ -649,7 +653,7 @@
 			repositoryURL = "https://github.com/M1zz/LeeoKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.46.2;
+				minimumVersion = 3.46.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

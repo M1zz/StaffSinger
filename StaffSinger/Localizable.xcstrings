@@ -14156,6 +14156,304 @@
         }
       }
     },
+    "주로 어떤 악보를 보세요?" : {
+      "comment" : "First-launch alert title: which clef the user reads",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jaký klíč nejčastěji čtete?"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvilken nøgle læser du oftest?"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welchen Schlüssel liest du meistens?"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ποιο κλειδί διαβάζετε συνήθως;"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Which clef do you usually read?"
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Which clef do you usually read?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Qué clave lees normalmente?"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mitä avainta luet yleensä?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quelle clé lisez-vous le plus souvent ?"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kunci nada apa yang biasa Anda baca?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quale chiave leggi di solito?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ふだん読むのはどの音部記号ですか？"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "주로 어떤 악보를 보세요?"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvilken nøkkel leser du oftest?"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welke sleutel lees je meestal?"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jaki klucz zwykle czytasz?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qual clave você costuma ler?"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Какой ключ вы обычно читаете?"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vilken klav läser du oftast?"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ปกติคุณอ่านโน้ตกุญแจไหน"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genellikle hangi anahtarı okuyorsunuz?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn thường đọc khóa nhạc nào?"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你平时看哪种谱号？"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你平時看哪種譜號？"
+          }
+        }
+      }
+    },
+    "새 악보가 그 음자리표로 열려요. 악보의 음자리표를 누르면 언제든 바꿀 수 있어요." : {
+      "comment" : "First-launch clef alert message",
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nové noty se otevřou v tomto klíči. Klepnutím na klíč na osnově ho kdykoli změníte."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nye noder åbner med den nøgle. Tryk på nøglen på nodesystemet for at skifte når som helst."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neue Noten öffnen sich in diesem Schlüssel. Tippe auf den Schlüssel im Notensystem, um ihn jederzeit zu wechseln."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οι νέες παρτιτούρες θα ανοίγουν με αυτό το κλειδί. Πατήστε το κλειδί στο πεντάγραμμο για να το αλλάξετε όποτε θέλετε."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New scores will open in that clef. Tap the clef on the staff to change it any time."
+          }
+        },
+        "en-GB" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New scores will open in that clef. Tap the clef on the staff to change it at any time."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las partituras nuevas se abrirán en esa clave. Toca la clave del pentagrama para cambiarla cuando quieras."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uudet nuotit avautuvat tällä avaimella. Napauta avainta viivastolla vaihtaaksesi sen milloin tahansa."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les nouvelles partitions s’ouvriront dans cette clé. Touchez la clé sur la portée pour la changer à tout moment."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Partitur baru akan terbuka dengan kunci itu. Ketuk kunci di paranada untuk menggantinya kapan saja."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le nuove partiture si apriranno in quella chiave. Tocca la chiave sul pentagramma per cambiarla quando vuoi."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新しい楽譜はその音部記号で開きます。五線の音部記号をタップすればいつでも変えられます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "새 악보가 그 음자리표로 열려요. 악보의 음자리표를 누르면 언제든 바꿀 수 있어요."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nye noter åpnes med den nøkkelen. Trykk på nøkkelen i notesystemet for å bytte når som helst."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nieuwe partituren openen in die sleutel. Tik op de sleutel op de notenbalk om hem altijd te wijzigen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nowe nuty otworzą się w tym kluczu. Stuknij klucz na pięciolinii, aby zmienić go w dowolnej chwili."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As novas partituras vão abrir nessa clave. Toque na clave da pauta para trocar quando quiser."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Новые ноты будут открываться в этом ключе. Коснитесь ключа на нотном стане, чтобы сменить его в любой момент."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nya noter öppnas med den klaven. Tryck på klaven i notsystemet för att byta när som helst."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "โน้ตใหม่จะเปิดด้วยกุญแจนี้ แตะที่กุญแจบนบรรทัดห้าเส้นเพื่อเปลี่ยนได้ทุกเมื่อ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yeni notalar bu anahtarla açılır. Değiştirmek için porteedeki anahtara istediğiniz zaman dokunun."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bản nhạc mới sẽ mở với khóa nhạc đó. Chạm vào khóa nhạc trên khuông để đổi bất cứ lúc nào."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新乐谱会用这个谱号打开。点一下五线谱上的谱号，随时都能更换。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "新樂譜會用這個譜號開啟。點一下五線譜上的譜號，隨時都能更換。"
+          }
+        }
+      }
+    },
     "이 기기에서 한국어 음성 인식을 쓸 수 없습니다." : {
       "comment" : "Dictation error",
       "localizations" : {

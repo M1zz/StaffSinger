@@ -13,7 +13,13 @@ import Combine
 @MainActor
 final class ScoreViewModel: ObservableObject {
 
-    @Published var score = Score()
+    /// New scores open in the clef the user last chose (asked once on first
+    /// launch) — a cellist shouldn't have to switch to bass clef every time.
+    @Published var score: Score = {
+        var s = Score()
+        s.clef = ScoreViewModel.savedClef ?? .treble
+        return s
+    }()
 
     // Current editing tools. The duration & dot persist across launches so the
     // editor reopens with whatever the user set last, instead of resetting to a
@@ -40,6 +46,12 @@ final class ScoreViewModel: ObservableObject {
 
     private static let durationKey = "editor.selectedDuration"
     private static let dottedKey = "editor.selectedDotted"
+    private static let clefKey = "staff.clef"
+
+    /// The clef the user last picked; nil until they've picked one.
+    static var savedClef: Clef? {
+        UserDefaults.standard.string(forKey: clefKey).flatMap(Clef.init(rawValue:))
+    }
 
     /// The last duration the user chose, or a quarter note on first launch.
     private static var savedDuration: NoteDuration {
@@ -406,6 +418,7 @@ final class ScoreViewModel: ObservableObject {
     /// Take in what the photo reader read. A printed notehead only says which
     /// line or space it sits on, so each note gets the score's key signature.
     func importReading(_ reading: OMR.Reading) {
+        if let clef = reading.clef { setClef(clef) }   // the photo showed its clef
         importNotes(reading.notes.map { var note = $0; note.pitch = keyed(note.pitch); return note },
                     unsure: reading.unsure)
     }
@@ -427,6 +440,7 @@ final class ScoreViewModel: ObservableObject {
 
     func setClef(_ clef: Clef) {
         score.clef = clef
+        UserDefaults.standard.set(clef.rawValue, forKey: Self.clefKey)
     }
 
     /// Apply the current key signature to a natural (white-key) pitch tapped on

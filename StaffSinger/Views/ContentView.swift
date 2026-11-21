@@ -35,6 +35,9 @@ struct ContentView: View {
     @State private var showLibrary = false
     @State private var cropItem: PickedImage? = nil
     @State private var omrMessage: String? = nil
+    /// First launch: ask once which clef they read, so a cellist starts in bass clef.
+    @State private var askClef = ScoreViewModel.savedClef == nil
+        && UserDefaults.standard.string(forKey: "screenshotScene") == nil
 
     // Voice dictation ("read the score out loud"). Owns the mic + recognizer.
     @StateObject private var dictation: SolfegeDictation
@@ -91,6 +94,13 @@ struct ContentView: View {
             Button("확인", role: .cancel) { omrMessage = nil }
         } message: {
             Text(omrMessage ?? "")
+        }
+        .alert("주로 어떤 악보를 보세요?", isPresented: $askClef) {
+            ForEach(Clef.allCases) { c in
+                Button(c.displayName) { vm.setClef(c) }
+            }
+        } message: {
+            Text("새 악보가 그 음자리표로 열려요. 악보의 음자리표를 누르면 언제든 바꿀 수 있어요.")
         }
         .confirmationDialog("악보 사진", isPresented: $showSourceDialog,
                             titleVisibility: .visible) {

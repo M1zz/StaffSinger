@@ -1,5 +1,151 @@
 # 릴리즈 노트
 
+## 1.0.7
+
+### 앱스토어 (한국어)
+
+처음 열 때 주로 보는 음자리표를 고를 수 있어요
+악보의 음자리표를 누르면 바로 바꿀 수 있어요
+카메라가 낮은음자리표 악보도 알아보고 읽어요
+
+### App Store (English)
+
+Pick the clef you usually read on first launch
+Tap the clef on the staff to switch it
+The camera now recognizes bass clef scores too
+
+### App Store (en-GB)
+
+Pick the clef you usually read on first launch
+Tap the clef on the staff to switch it
+The camera now recognises bass clef scores too
+
+### 앱스토어 (중국어 간체)
+
+首次打开时可选择常用的谱号
+点一下五线谱上的谱号即可切换
+相机现在也能识别低音谱号乐谱
+
+### 앱스토어 (중국어 번체)
+
+首次開啟時可選擇常用的譜號
+點一下五線譜上的譜號即可切換
+相機現在也能辨識低音譜號樂譜
+
+### 앱스토어 (일본어)
+
+最初によく読む音部記号を選べます
+五線の音部記号をタップしてすぐ切り替え
+カメラがヘ音記号の楽譜も読み取ります
+
+### 앱스토어 (러시아어)
+
+При первом запуске выберите свой ключ
+Коснитесь ключа на стане, чтобы сменить его
+Камера теперь читает и басовый ключ
+
+### 앱스토어 (스페인어)
+
+Elige tu clave habitual al abrir la app
+Toca la clave del pentagrama para cambiarla
+La cámara ahora reconoce la clave de fa
+
+### 앱스토어 (독일어)
+
+Wähle beim ersten Start deinen Schlüssel
+Tippe auf den Schlüssel, um ihn zu wechseln
+Die Kamera erkennt jetzt auch den Bassschlüssel
+
+### 앱스토어 (프랑스어)
+
+Choisissez votre clé dès la première ouverture
+Touchez la clé sur la portée pour la changer
+L’appareil photo lit aussi la clé de fa
+
+### 앱스토어 (이탈리아어)
+
+Scegli la tua chiave al primo avvio
+Tocca la chiave sul pentagramma per cambiarla
+La fotocamera ora legge anche la chiave di basso
+
+### 앱스토어 (포르투갈어 브라질)
+
+Escolha sua clave ao abrir o app pela primeira vez
+Toque na clave da pauta para trocar
+A câmera agora reconhece a clave de fá
+
+### 앱스토어 (태국어)
+
+เลือกกุญแจที่อ่านประจำได้ตั้งแต่เปิดครั้งแรก
+แตะกุญแจบนบรรทัดห้าเส้นเพื่อเปลี่ยนได้ทันที
+กล้องอ่านโน้ตกุญแจฟาได้แล้ว
+
+### 앱스토어 (베트남어)
+
+Chọn khóa nhạc quen dùng ngay lần đầu mở
+Chạm vào khóa nhạc trên khuông để đổi
+Camera giờ nhận ra cả khóa Fa
+
+### 앱스토어 (체코어)
+
+Při prvním spuštění si vyberte svůj klíč
+Klepnutím na klíč na osnově ho změníte
+Fotoaparát teď čte i basový klíč
+
+### 앱스토어 (덴마크어)
+
+Vælg din nøgle første gang du åbner appen
+Tryk på nøglen på nodesystemet for at skifte
+Kameraet kan nu også læse basnøgle
+
+### 앱스토어 (그리스어)
+
+Διαλέξτε το κλειδί σας στο πρώτο άνοιγμα
+Πατήστε το κλειδί στο πεντάγραμμο για αλλαγή
+Η κάμερα διαβάζει πλέον και κλειδί του φα
+
+### 앱스토어 (핀란드어)
+
+Valitse tuttu avaimesi ensimmäisellä kerralla
+Vaihda avain napauttamalla sitä viivastolla
+Kamera tunnistaa nyt myös bassoavaimen
+
+### 앱스토어 (인도네시아어)
+
+Pilih kunci nada favorit saat pertama membuka
+Ketuk kunci di paranada untuk menggantinya
+Kamera kini juga mengenali kunci F
+
+### 앱스토어 (Norsk bokmål)
+
+Velg nøkkelen din første gang du åpner appen
+Trykk på nøkkelen i notesystemet for å bytte
+Kameraet leser nå også bassnøkkel
+
+### 앱스토어 (네덜란드어)
+
+Kies je vaste sleutel bij de eerste start
+Tik op de sleutel op de notenbalk om te wisselen
+De camera herkent nu ook de bassleutel
+
+### 앱스토어 (폴란드어)
+
+Wybierz swój klucz przy pierwszym uruchomieniu
+Stuknij klucz na pięciolinii, by go zmienić
+Aparat odczytuje teraz też klucz basowy
+
+### 앱스토어 (스웨덴어)
+
+Välj din klav första gången du öppnar appen
+Tryck på klaven i notsystemet för att byta
+Kameran läser nu även basklav
+
+### 앱스토어 (튀르키예어)
+
+İlk açılışta en çok okuduğunuz anahtarı seçin
+Değiştirmek için porteedeki anahtara dokunun
+Kamera artık fa anahtarını da tanıyor
+
 ## 1.0.6
 
 ### 앱스토어 (한국어)
