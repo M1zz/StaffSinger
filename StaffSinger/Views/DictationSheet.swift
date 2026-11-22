@@ -323,7 +323,7 @@ struct DictationSheet: View {
         let perMeasure = max(1.0, score.quarterBeatsPerMeasure)
         let measure = Int(beat / perMeasure) + 1
         let inMeasure = Int(beat.truncatingRemainder(dividingBy: perMeasure)) + 1
-        return String(localized: "\(measure)마디 \(inMeasure)박")
+        return String(localized: "\(measure)마디 \(inMeasure)박", locale: .app)
     }
 }
 
@@ -401,6 +401,7 @@ private struct ExampleScore: View {
             ctx.stroke(beam, with: ink, style: StrokeStyle(lineWidth: 4.5, lineCap: .butt))
         }
         .frame(height: 110)
+        .environment(\.layoutDirection, .leftToRight)   // 오선 예시는 아랍어에서도 왼쪽에서 오른쪽
         .accessibilityElement()
         .accessibilityLabel(spoken
             ? zip(Self.words, Self.lengths).map { "\($0) \($1)" }.joined(separator: ", ")

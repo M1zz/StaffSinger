@@ -147,6 +147,12 @@
             "state" : "translated",
             "value" : "StaffSinger"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger"
+          }
         }
       }
     },
@@ -295,6 +301,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger, bir notanın fotoğrafını çekip referans görüntü olarak yüklemek için kamerayı kullanır."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يستخدم StaffSinger الكاميرا لتصوير النوتة الموسيقية وتحميلها كصورة مرجعية."
           }
         }
       }
@@ -445,6 +457,12 @@
             "state" : "translated",
             "value" : "StaffSinger, söylediğin nota adlarını ya da mırıldandığın notaları porte üzerinde notaya çevirmek için mikrofonu kullanır. Ses yalnızca bu cihazda işlenir ve asla kaydedilmez."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يستخدم StaffSinger الميكروفون لتحويل أسماء النوتات التي تقولها، أو النغمات التي تدندنها، إلى نوتات على المدرج. يُعالَج الصوت على هذا الجهاز فقط ولا يُحفظ أبدًا."
+          }
         }
       }
     },
@@ -593,6 +611,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger, söylediğin nota adlarını notaya çevirmek için konuşma tanımayı kullanır. Tanıma yalnızca bu cihazda yapılır."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يستخدم StaffSinger التعرّف على الكلام لتحويل أسماء النوتات التي تقولها إلى نوتات. يجري التعرّف على هذا الجهاز فقط."
           }
         }
       }

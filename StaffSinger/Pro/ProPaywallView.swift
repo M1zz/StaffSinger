@@ -132,7 +132,7 @@ struct ProPaywallView: View {
     }
 
     private func proRow(_ feature: ProFeature) -> some View {
-        let trial = String(localized: "\(ProFeature.freeUses)번 체험",
+        let trial = String(localized: "\(ProFeature.freeUses)번 체험", locale: .app,
                            comment: "Paywall comparison: free column for a Pro feature. %lld = number of free tries")
         return GridRow {
             Text(feature.title).fixedSize(horizontal: false, vertical: true)

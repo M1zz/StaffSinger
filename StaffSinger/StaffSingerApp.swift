@@ -18,6 +18,8 @@ struct StaffSingerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                // 아랍어에서도 숫자는 0-9 (박자표 4/4 · C4 · 120 BPM 과 섞이지 않게).
+                .environment(\.locale, .app)
                 .leeoSatisfactionCheck(StaffSingerSpec.self)
                 // 개발자가 보낸 의견에 답장하면, 앱이 앞으로 올 때 답장을 시트로 보여 준다 (LeeoKit).
                 .leeoFeedbackReplyNotice(StaffSingerSpec.self)
@@ -25,5 +27,21 @@ struct StaffSingerApp: App {
                 // 창 크기로 접힘을 재서 아래로 흘린다. 시트 · 알림창도 접힌 선을 비킨다 (LeeoKit Fold).
                 .foldAware()
         }
+    }
+}
+
+// MARK: - Numbers in Arabic
+
+extension Locale {
+    /// The locale numbers are written in. Arabic keeps 0-9: the staff, the time signature,
+    /// note names (C4) and tempo (120 BPM) carry digits that can't follow the device, and a
+    /// Saudi device's default ١٢٣ next to them reads as two scripts. Every other language is
+    /// the device's own locale.
+    static var app: Locale {
+        guard Bundle.main.preferredLocalizations.first?.hasPrefix("ar") == true else { return .current }
+        var components = Locale.Components(locale: .current)
+        components.languageComponents = Locale.Language.Components(identifier: "ar")
+        components.numberingSystem = "latn"
+        return Locale(components: components)
     }
 }

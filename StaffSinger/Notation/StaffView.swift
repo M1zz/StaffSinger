@@ -87,6 +87,8 @@ struct StaffView: View {
                 .scaleEffect(k, anchor: .topLeading)
         }
         .background(Color(.systemBackground))
+        // 악보는 어느 언어에서도 왼쪽에서 오른쪽으로 흐른다 (아랍어에서도 뒤집지 않는다).
+        .environment(\.layoutDirection, .leftToRight)
     }
 
     /// iPhone 가로(약 960 x 520pt)보다 넓은 만큼 키운다. 최대 1.6배.
@@ -382,7 +384,7 @@ struct StaffView: View {
     private func noteAccessibilityLabel(_ note: ScoreNote) -> String {
         var parts = [note.isRest ? String(localized: "쉼표") : note.pitch.accessibilityLabel,
                      note.durationLabel]
-        if note.layer > 0 { parts.append(String(localized: "성부 \(note.layer + 1)")) }
+        if note.layer > 0 { parts.append(String(localized: "성부 \(note.layer + 1)", locale: .app)) }
         if vm.unsureIDs.contains(note.id) { parts.append(String(localized: "확인 필요")) }
         return parts.joined(separator: ", ")
     }

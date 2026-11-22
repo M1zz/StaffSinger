@@ -54,6 +54,7 @@ struct ContentView: View {
     @StateObject private var hum: PitchListener
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.foldLayout) private var fold
+    @Environment(\.layoutDirection) private var layoutDirection
 
     /// 건반이 서 있나. 아이폰 듀오를 펴면 악보는 위(가로면 오른쪽) 판에 따로 서고,
     /// 아래(왼쪽) 판은 건반이 기본이다. 음표 도구를 열면 그 자리를 음표 도구가 쓴다.
@@ -398,7 +399,9 @@ struct ContentView: View {
     /// docked to the chosen side. Tapping the staff area closes it.
     @ViewBuilder
     private var settingsPanelLayer: some View {
-        ZStack(alignment: settingsPanelOnLeft ? .leading : .trailing) {
+        // settingsPanelOnLeft 는 화면의 실제 왼쪽이다. 아랍어(RTL)에서는 leading 이 오른쪽이라 바꿔 준다.
+        let edge: Edge = settingsPanelOnLeft == (layoutDirection == .leftToRight) ? .leading : .trailing
+        ZStack(alignment: edge == .leading ? .leading : .trailing) {
             Color.black.opacity(0.1)
                 .ignoresSafeArea()
                 .contentShape(Rectangle())
@@ -411,7 +414,7 @@ struct ContentView: View {
                 onLeft: $settingsPanelOnLeft,
                 onClose: { showSettings = false })
                 .frame(maxWidth: 360)   // 펼친 화면의 좁은 판에서는 판 폭까지만
-                .transition(.move(edge: settingsPanelOnLeft ? .leading : .trailing))
+                .transition(.move(edge: edge))
                 .accessibilityAddTraits(.isModal)
         }
     }
@@ -451,7 +454,7 @@ struct ContentView: View {
                 vm.importReading(reading)
                 pro.recordUse(.transcribe)
                 if announce {
-                    omrMessage = String(localized: "\(notes.count)개 음표를 인식했습니다 (실험적).\n음높이·길이는 직접 확인하고 고쳐 주세요.")
+                    omrMessage = String(localized: "\(notes.count)개 음표를 인식했습니다 (실험적).\n음높이·길이는 직접 확인하고 고쳐 주세요.", locale: .app)
                 }
             }
         }
@@ -463,7 +466,7 @@ struct ContentView: View {
         vm.importNotes(notes)
         pro.recordUse(.dictation)
         StaffSingerTipMoments.recordDictated(notes.count)
-        omrMessage = String(localized: "\(notes.count)개 음표를 받아썼습니다.\n음높이나 길이가 다르면 음표를 끌어서 고쳐 주세요.")
+        omrMessage = String(localized: "\(notes.count)개 음표를 받아썼습니다.\n음높이나 길이가 다르면 음표를 끌어서 고쳐 주세요.", locale: .app)
     }
 
     /// Pro 기능을 연다. 무료 체험 세 번을 다 썼으면 그 기능의 페이월을 띄운다.
@@ -610,7 +613,7 @@ struct ContentView: View {
         return Button {
             if onUnsure { vm.confirmCursor() } else { vm.reviewNext() }
         } label: {
-            Label(onUnsure ? String(localized: "맞아요") : String(localized: "확인할 음 \(count)개"),
+            Label(onUnsure ? String(localized: "맞아요") : String(localized: "확인할 음 \(count)개", locale: .app),
                   systemImage: onUnsure ? "checkmark" : "questionmark.circle")
                 .font(.subheadline.weight(.semibold))
                 .foregroundColor(.orange)
@@ -619,7 +622,7 @@ struct ContentView: View {
                 .background(.ultraThinMaterial, in: Capsule())
                 .overlay(Capsule().stroke(Color.orange.opacity(0.6), lineWidth: 1.5))
         }
-        .accessibilityValue(onUnsure ? String(localized: "확인할 음 \(count)개") : "")
+        .accessibilityValue(onUnsure ? String(localized: "확인할 음 \(count)개", locale: .app) : "")
         .transition(.scale.combined(with: .opacity))
     }
 

@@ -71,6 +71,8 @@ struct PianoKeyboard: View {
         .frame(height: 116)
         .padding(.horizontal, 14)
         .padding(.vertical, 8)
+        // 건반은 낮은 음이 왼쪽이다. 아랍어에서도 뒤집지 않는다.
+        .environment(\.layoutDirection, .leftToRight)
     }
 
     // MARK: - Keys

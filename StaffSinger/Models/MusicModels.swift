@@ -229,8 +229,8 @@ struct KeySignature {
         let sharpTonic = ["C","G","D","A","E","B","F♯","C♯"]
         let flatTonic  = ["C","F","B♭","E♭","A♭","D♭","G♭","C♭"]
         if count == 0 { return String(localized: "다장조 C (조표 없음)") }
-        if count > 0 { return String(localized: "\(sharpTonic[min(count,7)])장조 (♯\(count))") }
-        return String(localized: "\(flatTonic[min(-count,7)])장조 (♭\(-count))")
+        if count > 0 { return String(localized: "\(sharpTonic[min(count,7)])장조 (♯\(count))", locale: .app) }
+        return String(localized: "\(flatTonic[min(-count,7)])장조 (♭\(-count))", locale: .app)
     }
 
     /// Compact label for the header, e.g. "♯2" / "♭3" / "" for C major.

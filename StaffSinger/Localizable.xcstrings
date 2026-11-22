@@ -147,6 +147,12 @@
             "state" : "translated",
             "value" : "\"%@\" — burada nota adı bulunamadı.\nİngilizce olarak do re mi fa sol la ti de."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "«%@»: لم أجد أسماء نوتات في ما قلته.\nقلها بالإنجليزية: do re mi fa sol la ti."
+          }
         }
       }
     },
@@ -295,6 +301,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ · Dinleniyor"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ · أستمع الآن"
           }
         }
       }
@@ -445,6 +457,12 @@
             "state" : "translated",
             "value" : "%@ majör (♭%lld)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سلّم %@ الكبير (⁦♭%lld⁩)"
+          }
         }
       }
     },
@@ -593,6 +611,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ majör (♯%lld)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سلّم %@ الكبير (⁦♯%lld⁩)"
           }
         }
       }
@@ -743,6 +767,12 @@
             "state" : "translated",
             "value" : "Dikte edilen nota: %lld"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عدد النوتات المدوّنة: %lld"
+          }
         }
       }
     },
@@ -891,6 +921,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dikte edilen nota: %lld.\nPerde veya süre yanlışsa notayı sürükleyerek düzelt."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عدد النوتات المدوّنة: %lld.\nإن اختلفت حدّة نوتة أو مدّتها، اسحبها لتصحيحها."
           }
         }
       }
@@ -1041,6 +1077,12 @@
             "state" : "translated",
             "value" : "Tanınan nota: %lld (deneysel).\nPerde ve süreleri kendin kontrol edip düzelt."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عدد النوتات المقروءة: %lld (ميزة تجريبية).\nراجع الحدّة والمدّة بنفسك وصحّح ما يلزم."
+          }
         }
       }
     },
@@ -1189,6 +1231,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ölçü %lld, vuruş %lld"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المازورة %lld، الزمن %lld"
           }
         }
       }
@@ -1339,6 +1387,12 @@
             "state" : "translated",
             "value" : "1/16"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ذات السنين"
+          }
         }
       }
     },
@@ -1487,6 +1541,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Onaltılık nota"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ذات السنين"
           }
         }
       }
@@ -1637,6 +1697,12 @@
             "state" : "translated",
             "value" : "İkilik nota"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بيضاء"
+          }
         }
       }
     },
@@ -1785,6 +1851,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dörtlüden geniş atlamalarda \"high sol\" ya da \"low ti\" de"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إذا قفزت أكثر من رابعة، فقل «high sol» أو «low ti»"
           }
         }
       }
@@ -1935,6 +2007,12 @@
             "state" : "translated",
             "value" : "1/4"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سوداء"
+          }
         }
       }
     },
@@ -2083,6 +2161,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dörtlük nota"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سوداء"
           }
         }
       }
@@ -2233,6 +2317,12 @@
             "state" : "translated",
             "value" : "1/8"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ذات السن"
+          }
         }
       }
     },
@@ -2381,6 +2471,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sekizlik nota"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ذات السن"
           }
         }
       }
@@ -2531,6 +2627,12 @@
             "state" : "translated",
             "value" : "Siri’ye söyleyerek veya bir kısayol çalıştırarak hemen başla."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اطلب من Siri أو شغّل اختصارًا لتبدأ فورًا."
+          }
         }
       }
     },
@@ -2679,6 +2781,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Siri ve Kısayollar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri والاختصارات"
           }
         }
       }
@@ -2829,6 +2937,12 @@
             "state" : "translated",
             "value" : "Daha iyi VoiceOver"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دعم أفضل لـ VoiceOver"
+          }
         }
       }
     },
@@ -2977,6 +3091,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "⚠︎ %@/%@ vuruş"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "⚠︎ ⁦%@/%@⁩ زمن"
           }
         }
       }
@@ -3127,6 +3247,12 @@
             "state" : "translated",
             "value" : "Do anahtarı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مفتاح دو"
+          }
         }
       }
     },
@@ -3275,6 +3401,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geliştiriciye Ulaş"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تواصل مع المطوّر"
           }
         }
       }
@@ -3425,6 +3557,12 @@
             "state" : "translated",
             "value" : "Solfej Dikte"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إملاء السولفيج"
+          }
         }
       }
     },
@@ -3573,6 +3711,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nota adları anlaşılamadı. Metronoma uyarak \"do re mi\" diye net bir şekilde söylemeyi dene."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم أتعرّف على أسماء النوتات. قل «do re mi» بالإنجليزية بوضوح ومع إيقاع المترونوم."
           }
         }
       }
@@ -3723,6 +3867,12 @@
             "state" : "translated",
             "value" : "Metni büyüttüğünde ekranlar kesilmek yerine yeniden düzenlenir."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عند تكبير الخط تُعاد ترتيب الشاشات بأناقة دون أن يُقصّ شيء."
+          }
         }
       }
     },
@@ -3871,6 +4021,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cihaz içi İngilizce konuşma tanıma hazır değil.\nGerekli dosyaların inmesi için Ayarlar ▸ Genel ▸ Klavye ▸ Dikte bölümünden İngilizce’yi aç."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التعرّف على الكلام بالإنجليزية داخل الجهاز غير جاهز بعد.\nفعّل الإنجليزية من الإعدادات ▸ عام ▸ لوحة المفاتيح ▸ الإملاء لتنزيل الملفات اللازمة."
           }
         }
       }
@@ -4021,6 +4177,12 @@
             "state" : "translated",
             "value" : "Fa anahtarı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مفتاح فا"
+          }
         }
       }
     },
@@ -4169,6 +4331,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kayıt başlatılamadı: %@"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّر بدء التسجيل: %@"
           }
         }
       }
@@ -4319,6 +4487,12 @@
             "state" : "translated",
             "value" : "Sol anahtarı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مفتاح صول"
+          }
         }
       }
     },
@@ -4467,6 +4641,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Do majör"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "C الكبير"
           }
         }
       }
@@ -4617,6 +4797,12 @@
             "state" : "translated",
             "value" : "Do majör (alterasyon yok)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سلّم C الكبير (بلا علامات تحويل)"
+          }
         }
       }
     },
@@ -4765,6 +4951,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Koyu Mod"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوضع الداكن"
           }
         }
       }
@@ -4915,6 +5107,12 @@
             "state" : "translated",
             "value" : "Kapat"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إغلاق"
+          }
         }
       }
     },
@@ -5063,6 +5261,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kontrastı artırsan veya renkleri ayırt etmekte zorlansan da her şey okunaklı kalır."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يبقى كل شيء واضحًا حتى مع زيادة التباين أو صعوبة تمييز الألوان."
           }
         }
       }
@@ -5213,6 +5417,12 @@
             "state" : "translated",
             "value" : "Uygulamayı daha fazla dilde kullan."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استخدم التطبيق بلغات أكثر."
+          }
         }
       }
     },
@@ -5361,6 +5571,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daha fazla dil"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لغات أكثر"
           }
         }
       }
@@ -5511,6 +5727,12 @@
             "state" : "translated",
             "value" : "İki ölçü kutuyu dolduruncaya kadar parmaklarınla yakınlaştır ve kaydır"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "كبّر وحرّك بإصبعيك حتى تملأ مازورتان الإطار"
+          }
         }
       }
     },
@@ -5659,6 +5881,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Duyulan"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما سمعته"
           }
         }
       }
@@ -5809,6 +6037,12 @@
             "state" : "translated",
             "value" : "Mikrofon izni gerekiyor. Lütfen Ayarlar’dan izin ver."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يلزم إذن الميكروفون. اسمح به من الإعدادات."
+          }
         }
       }
     },
@@ -5957,6 +6191,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mikrofon girişi bulunamadı."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم يُعثر على مدخل للميكروفون."
           }
         }
       }
@@ -6107,6 +6347,12 @@
             "state" : "translated",
             "value" : "Notalarını bir dosyaya kaydet ve sonra yeniden aç."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "احفظ مدوّناتك في ملف وافتحها لاحقًا."
+          }
         }
       }
     },
@@ -6255,6 +6501,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Konuşmaya Başla"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ الكلام"
           }
         }
       }
@@ -6405,6 +6657,12 @@
             "state" : "translated",
             "value" : "Söylediğin her anı en yakın %@ nota konumuna hizalar."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يضبط لحظة كل نطق على أقرب موضع لنوتة %@."
+          }
         }
       }
     },
@@ -6553,6 +6811,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Durdur"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إيقاف"
           }
         }
       }
@@ -6703,6 +6967,12 @@
             "state" : "translated",
             "value" : "Metronom (vuruş tıkı)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المترونوم (نقرة كل زمن)"
+          }
         }
       }
     },
@@ -6851,6 +7121,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metronomu kapat"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إيقاف المترونوم"
           }
         }
       }
@@ -7001,6 +7277,12 @@
             "state" : "translated",
             "value" : "Metronomun dört vuruşunu say, sonra nota adlarını ritme uyarak söyle."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بعد أربع نقرات من المترونوم، قل أسماء النوتات مع الإيقاع."
+          }
         }
       }
     },
@@ -7149,6 +7431,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Metronomu aç"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تشغيل المترونوم"
           }
         }
       }
@@ -7299,6 +7587,12 @@
             "state" : "translated",
             "value" : "Tüm notalar başlangıç oktavında kalır."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تبقى كل النوتات في الأوكتاف الأول."
+          }
         }
       }
     },
@@ -7447,6 +7741,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ölçü"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الميزان"
           }
         }
       }
@@ -7597,6 +7897,12 @@
             "state" : "translated",
             "value" : "Ölçü"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الميزان الإيقاعي"
+          }
         }
       }
     },
@@ -7745,6 +8051,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hata bildirimleri ve özellik önerileri bizim için değerli."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يسعدنا تلقّي بلاغات الأخطاء واقتراحات الميزات."
           }
         }
       }
@@ -7895,6 +8207,12 @@
             "state" : "translated",
             "value" : "Daha rahat renkler ve kontrast"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ألوان وتباين أريح للعين"
+          }
         }
       }
     },
@@ -8043,6 +8361,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Çok hızlıysa tempoyu düşür (şu an %lld BPM)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إن كانت سريعة فخفّض السرعة (الآن ⁦%lld BPM⁩)"
           }
         }
       }
@@ -8193,6 +8517,12 @@
             "state" : "translated",
             "value" : "Kullan"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استخدام"
+          }
         }
       }
     },
@@ -8341,6 +8671,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fotoğraf Kitaplığından Seç"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختيار من مكتبة الصور"
           }
         }
       }
@@ -8491,6 +8827,12 @@
             "state" : "translated",
             "value" : "Yeni Nota"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مدوّنة جديدة"
+          }
         }
       }
     },
@@ -8639,6 +8981,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ayarlar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الإعدادات"
           }
         }
       }
@@ -8789,6 +9137,12 @@
             "state" : "translated",
             "value" : "Üçleme: %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ ثلاثية"
+          }
         }
       }
     },
@@ -8937,6 +9291,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Üçleme modu: üç nota bir vuruşu (veya iki vuruşu) paylaşır"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وضع الثلاثيات: ثلاث نوتات تتقاسم زمنًا واحدًا (أو زمنين)"
           }
         }
       }
@@ -9087,6 +9447,12 @@
             "state" : "translated",
             "value" : "Noktalı üçleme: %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ ثلاثية منقوطة"
+          }
         }
       }
     },
@@ -9235,6 +9601,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Es modu: es eklemek için bir süreye dokun"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وضع السكتات: اضغط مدّة لإدراج سكتة"
           }
         }
       }
@@ -9385,6 +9757,12 @@
             "state" : "translated",
             "value" : "Başlangıç oktavı  %lld"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الأوكتاف الأول  %lld"
+          }
         }
       }
     },
@@ -9533,6 +9911,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Faydalı ipuçları"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نصائح مفيدة"
           }
         }
       }
@@ -9683,6 +10067,12 @@
             "state" : "translated",
             "value" : "Notana kaldığın yerden devam et"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أكمل مدوّنتك من حيث توقفت"
+          }
         }
       }
     },
@@ -9831,6 +10221,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aşağıda kontrol et, sonra “Notaya Ekle”ye dokun"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "راجعها في الأسفل، ثم اضغط «أضف إلى المدوّنة»"
           }
         }
       }
@@ -9981,6 +10377,12 @@
             "state" : "translated",
             "value" : "Nota Fotoğrafı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صورة النوتة"
+          }
         }
       }
     },
@@ -10129,6 +10531,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notaları kaydet ve dışa aktar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حفظ المدوّنات وتصديرها"
           }
         }
       }
@@ -10279,6 +10687,12 @@
             "state" : "translated",
             "value" : "Nota Başlığı"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عنوان المدوّنة"
+          }
         }
       }
     },
@@ -10427,6 +10841,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nota okunamadı. Net basılmış nota, tek satır ve karşıdan çekilmiş fotoğraf en iyi sonucu verir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّرت قراءة النوتة. تنجح القراءة أكثر مع نوتة مطبوعة واضحة، وسطر واحد، وصورة ملتقطة من الأمام."
           }
         }
       }
@@ -10577,6 +10997,12 @@
             "state" : "translated",
             "value" : "Notaya Ekle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أضف إلى المدوّنة"
+          }
         }
       }
     },
@@ -10725,6 +11151,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eklenecek Notalar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "النوتات التي ستُضاف"
           }
         }
       }
@@ -10875,6 +11307,12 @@
             "state" : "translated",
             "value" : "Faydalı özellikler hakkında tam gerektiği anda nazik ipuçları."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تلميحات لطيفة عن الميزات المفيدة، في الوقت المناسب."
+          }
         }
       }
     },
@@ -11023,6 +11461,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Önceki notaya en yakın oktavı seçer; böylece \"ti do\" yarım ses yükselir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يختار الأوكتاف الأقرب إلى النوتة السابقة، فيصعد «ti do» نصف درجة."
           }
         }
       }
@@ -11173,6 +11617,12 @@
             "state" : "translated",
             "value" : "Uygulamayı açmadan doğrudan Ana Ekran’dan çalışmaya başla."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ التمرين مباشرة من الشاشة الرئيسية دون فتح التطبيق."
+          }
         }
       }
     },
@@ -11321,6 +11771,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uygulamanın tamamını İngilizce kullan."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استخدم التطبيق كاملًا بالإنجليزية."
           }
         }
       }
@@ -11471,6 +11927,12 @@
             "state" : "translated",
             "value" : "Uygulama kapansa bile notan bıraktığın gibi kalır."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تبقى مدوّنتك كما تركتها، حتى لو أُغلق التطبيق."
+          }
         }
       }
     },
@@ -11619,6 +12081,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Koyu Mod’da notalar ve düğmeler net ve belirgin kalır."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تبقى المدوّنة والأزرار واضحة وحادّة في الوضع الداكن."
           }
         }
       }
@@ -11769,6 +12237,12 @@
             "state" : "translated",
             "value" : "Bir güncellemeden sonra uygulamayı ilk açtığında nelerin yeni olduğunu gör."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عند أول فتح بعد كل تحديث، اعرف ما الجديد."
+          }
         }
       }
     },
@@ -11917,6 +12391,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yenilikler"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما الجديد"
           }
         }
       }
@@ -12067,6 +12547,12 @@
             "state" : "translated",
             "value" : "Çalışma hatırlatıcıları"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تذكيرات التمرين"
+          }
         }
       }
     },
@@ -12215,6 +12701,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tam İngilizce desteği"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دعم كامل للإنجليزية"
           }
         }
       }
@@ -12365,6 +12857,12 @@
             "state" : "translated",
             "value" : "Sağda göster"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض على اليمين"
+          }
         }
       }
     },
@@ -12513,6 +13011,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Perdeyi seçmek için porteyi basılı tut, eklemek için bırak"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اضغط مطوّلًا على المدرج لاختيار الحدّة، ثم ارفع إصبعك لإضافتها"
           }
         }
       }
@@ -12663,6 +13167,12 @@
             "state" : "translated",
             "value" : "Oktavı otomatik ayarla"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ضبط الأوكتاف تلقائيًا"
+          }
         }
       }
     },
@@ -12811,6 +13321,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Birlik nota"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مستديرة"
           }
         }
       }
@@ -12961,6 +13477,12 @@
             "state" : "translated",
             "value" : "Bitti"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تم"
+          }
         }
       }
     },
@@ -13109,6 +13631,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Solda göster"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض على اليسار"
           }
         }
       }
@@ -13259,6 +13787,12 @@
             "state" : "translated",
             "value" : "Hareketi Azalt"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تقليل الحركة"
+          }
         }
       }
     },
@@ -13407,6 +13941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hareketi Azalt açıkken ekran efektleri sakinleşir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مع تفعيل تقليل الحركة، تهدأ مؤثرات الشاشة."
           }
         }
       }
@@ -13557,6 +14097,12 @@
             "state" : "translated",
             "value" : "Konuşma tanıma izni gerekiyor. Lütfen Ayarlar’dan izin ver."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يلزم إذن التعرّف على الكلام. اسمح به من الإعدادات."
+          }
         }
       }
     },
@@ -13705,6 +14251,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Konuşma tanıma başarısız oldu. Lütfen biraz sonra tekrar dene."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّر التعرّف على الكلام. حاول مرة أخرى بعد قليل."
           }
         }
       }
@@ -13855,6 +14407,12 @@
             "state" : "translated",
             "value" : "Anahtar"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المفتاح"
+          }
         }
       }
     },
@@ -14003,6 +14561,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Anahtar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المفتاح الموسيقي (Clef)"
           }
         }
       }
@@ -14153,6 +14717,12 @@
             "state" : "translated",
             "value" : "更換譜號"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تغيير المفتاح"
+          }
         }
       }
     },
@@ -14301,6 +14871,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "你平時看哪種譜號？"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أي مفتاح تقرأ عادةً؟"
           }
         }
       }
@@ -14451,6 +15027,12 @@
             "state" : "translated",
             "value" : "新樂譜會用這個譜號開啟。點一下五線譜上的譜號，隨時都能更換。"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ستُفتح المدوّنات الجديدة بهذا المفتاح. اضغط المفتاح على المدرج لتغييره متى شئت."
+          }
         }
       }
     },
@@ -14599,6 +15181,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bu cihazda İngilizce konuşma tanıma kullanılamıyor."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التعرّف على الكلام بالإنجليزية غير متاح على هذا الجهاز."
           }
         }
       }
@@ -14749,6 +15337,12 @@
             "state" : "translated",
             "value" : "把兩個小節對準框內，稍候片刻"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ضع مازورتين داخل هذا الإطار وثبّت الكاميرا قليلًا"
+          }
         }
       }
     },
@@ -14897,6 +15491,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "再靠近一點，只讓兩個小節入框"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اقترب أكثر حتى تظهر مازورتان فقط"
           }
         }
       }
@@ -15047,6 +15647,12 @@
             "state" : "translated",
             "value" : "E-posta ile Ulaş"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تواصل عبر البريد الإلكتروني"
+          }
         }
       }
     },
@@ -15195,6 +15801,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Kulaklık takarsan metronom mikrofona karışmaz"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مع سماعات الأذن، لا يتسرّب صوت المترونوم إلى الميكروفون"
           }
         }
       }
@@ -15345,6 +15957,12 @@
             "state" : "translated",
             "value" : "Instagram DM (@lee25_ios)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رسالة على إنستغرام (⁦@lee25_ios⁩)"
+          }
         }
       }
     },
@@ -15493,6 +16111,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Seçtiğin saatte solfej çalışmanı hatırlatan bildirim al."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تذكير بتمرين الغناء من النوتة في الوقت الذي تختاره."
           }
         }
       }
@@ -15643,6 +16267,12 @@
             "state" : "translated",
             "value" : "Otomatik Notaya Dökme (Deneysel)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تدوين تلقائي (تجريبي)"
+          }
         }
       }
     },
@@ -15791,6 +16421,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daha iyi sonuç için"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لأفضل نتيجة"
           }
         }
       }
@@ -15941,6 +16577,12 @@
             "state" : "translated",
             "value" : "Çalma Yardımcıları"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مساعدات التشغيل"
+          }
         }
       }
     },
@@ -16089,6 +16731,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tümünü Temizle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مسح الكل"
           }
         }
       }
@@ -16239,6 +16887,12 @@
             "state" : "translated",
             "value" : "Noktalı %@"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ منقوطة"
+          }
         }
       }
     },
@@ -16387,6 +17041,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Başlık"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العنوان"
           }
         }
       }
@@ -16537,6 +17197,12 @@
             "state" : "translated",
             "value" : "Donanım"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الدليل"
+          }
         }
       }
     },
@@ -16685,6 +17351,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Donanım"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دليل السلّم (Key)"
           }
         }
       }
@@ -16835,6 +17507,12 @@
             "state" : "translated",
             "value" : "Hazırlan"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استعد"
+          }
         }
       }
     },
@@ -16983,6 +17661,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Destek"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الدعم"
           }
         }
       }
@@ -17133,6 +17817,12 @@
             "state" : "translated",
             "value" : "Referans Fotoğrafı Sil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف الصورة المرجعية"
+          }
         }
       }
     },
@@ -17281,6 +17971,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notaya Dök"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تدوين"
           }
         }
       }
@@ -17431,6 +18127,12 @@
             "state" : "translated",
             "value" : "Yeni kullanıcılar için kısa tur"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جولة سريعة للمستخدمين الجدد"
+          }
         }
       }
     },
@@ -17579,6 +18281,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Uygulamayı ilk açtığında neler yapabileceğine dair kısa bir tanıtım."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعريف قصير بما يمكنك فعله عند أول فتح للتطبيق."
           }
         }
       }
@@ -17729,6 +18437,12 @@
             "state" : "translated",
             "value" : "İptal"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إلغاء"
+          }
         }
       }
     },
@@ -17877,6 +18591,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fotoğraf Çek (2 ölçüye sığdır)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التقاط صورة (مازورتان في الإطار)"
           }
         }
       }
@@ -18027,6 +18747,12 @@
             "state" : "translated",
             "value" : "Kamera kullanılamıyor.\nBunun yerine kitaplığından bir fotoğraf seç."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الكاميرا غير متاحة.\nاختر صورة من مكتبتك بدلًا منها."
+          }
         }
       }
     },
@@ -18175,6 +18901,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Geri sayım (başlamadan önce bir ölçü)"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عدّ تمهيدي (مازورة قبل البدء)"
           }
         }
       }
@@ -18325,6 +19057,12 @@
             "state" : "translated",
             "value" : "Büyük yazıya uygun ekranlar"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تخطيطات للخطوط الكبيرة"
+          }
         }
       }
     },
@@ -18473,6 +19211,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tempo"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "السرعة"
           }
         }
       }
@@ -18623,6 +19367,12 @@
             "state" : "translated",
             "value" : "Katlanabilir iPhone düzeni"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تخطيط iPhone القابل للطي"
+          }
         }
       }
     },
@@ -18771,6 +19521,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Katlanabilir iPhone’un geniş ekranını yan yana iki bölme olarak kullan."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استخدم الشاشة العريضة في iPhone القابل للطي كلوحتين متجاورتين."
           }
         }
       }
@@ -18921,6 +19677,12 @@
             "state" : "translated",
             "value" : "Notaları tek tek, net bir şekilde ve tam vuruşta söyle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قل نوتة واحدة في كل مرة، بوضوح وعلى الزمن تمامًا"
+          }
         }
       }
     },
@@ -19069,6 +19831,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ana Ekran widget’ları"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدوات الشاشة الرئيسية"
           }
         }
       }
@@ -19219,6 +19987,12 @@
             "state" : "translated",
             "value" : "VoiceOver her düğmeyi ve notayı doğru sırayla okur."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يقرأ VoiceOver كل زر وكل نوتة بالترتيب الصحيح."
+          }
         }
       }
     },
@@ -19367,6 +20141,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Akor"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تآلف"
           }
         }
       }
@@ -19517,6 +20297,12 @@
             "state" : "translated",
             "value" : "Akor modu: notalar seçili notanın üstüne yığılır"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وضع التآلف: تتراكب النوتات فوق النوتة المحددة"
+          }
         }
       }
     },
@@ -19666,6 +20452,12 @@
             "state" : "translated",
             "value" : "Tamam"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حسنًا"
+          }
         }
       }
     },
@@ -19813,6 +20605,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "쉼"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سكتة"
           }
         }
       },
@@ -20228,6 +21026,48 @@
             "state" : "translated",
             "value" : "你已經用聲音記下了 %lld 個音符"
           }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "لم تدوّن بصوتك أي نوتة بعد"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "دوّنت بصوتك نوتة واحدة حتى الآن"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "دوّنت بصوتك نوتتين حتى الآن"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "دوّنت بصوتك %lld نوتات حتى الآن"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "دوّنت بصوتك %lld نوتة حتى الآن"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "دوّنت بصوتك %lld نوتة حتى الآن"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -20370,6 +21210,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ diyez"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ دييز"
           }
         }
       }
@@ -20514,6 +21360,12 @@
             "state" : "translated",
             "value" : "%@ bemol"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ بيمول"
+          }
         }
       }
     },
@@ -20656,6 +21508,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sus"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سكتة"
           }
         }
       }
@@ -20800,6 +21658,12 @@
             "state" : "translated",
             "value" : "Ses %lld"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الصوت %lld"
+          }
         }
       }
     },
@@ -20942,6 +21806,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Düzenle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعديل"
           }
         }
       }
@@ -21086,6 +21956,12 @@
             "state" : "translated",
             "value" : "Sil"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف"
+          }
         }
       }
     },
@@ -21228,6 +22104,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yarım ses pes"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خفض نصف درجة"
           }
         }
       }
@@ -21372,6 +22254,12 @@
             "state" : "translated",
             "value" : "Yarım ses tiz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رفع نصف درجة"
+          }
         }
       }
     },
@@ -21514,6 +22402,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bir oktav pes"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "خفض أوكتاف"
           }
         }
       }
@@ -21658,6 +22552,12 @@
             "state" : "translated",
             "value" : "Bir oktav tiz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رفع أوكتاف"
+          }
         }
       }
     },
@@ -21800,6 +22700,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Noktalı nota"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نوتة منقوطة"
           }
         }
       }
@@ -21944,6 +22850,12 @@
             "state" : "translated",
             "value" : "Üçleme"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ثلاثية"
+          }
         }
       }
     },
@@ -22086,6 +22998,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Son notayı sil"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حذف آخر نوتة"
           }
         }
       }
@@ -22230,6 +23148,12 @@
             "state" : "translated",
             "value" : "Nota araçları"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أدوات النوتة"
+          }
         }
       }
     },
@@ -22372,6 +23296,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nota araçlarını kapat"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إغلاق أدوات النوتة"
           }
         }
       }
@@ -22516,6 +23446,12 @@
             "state" : "translated",
             "value" : "Klavye"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لوحة المفاتيح"
+          }
         }
       }
     },
@@ -22658,6 +23594,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Çal"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تشغيل"
           }
         }
       }
@@ -22802,6 +23744,12 @@
             "state" : "translated",
             "value" : "Durdur"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إيقاف"
+          }
         }
       }
     },
@@ -22944,6 +23892,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bemollere doğru"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نحو البيمولات"
           }
         }
       }
@@ -23088,6 +24042,12 @@
             "state" : "translated",
             "value" : "Diyezlere doğru"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نحو الدييزات"
+          }
         }
       }
     },
@@ -23230,6 +24190,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Donanımı temizle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مسح دليل السلّم"
           }
         }
       }
@@ -23374,6 +24340,12 @@
             "state" : "translated",
             "value" : "Sus modu"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "وضع السكتات"
+          }
         }
       }
     },
@@ -23516,6 +24488,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Alt oktav"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أوكتاف أخفض"
           }
         }
       }
@@ -23660,6 +24638,12 @@
             "state" : "translated",
             "value" : "Üst oktav"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أوكتاف أعلى"
+          }
         }
       }
     },
@@ -23802,6 +24786,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fotoğraf çek"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التقاط صورة"
           }
         }
       }
@@ -23946,6 +24936,12 @@
             "state" : "translated",
             "value" : "Opaklık"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الشفافية"
+          }
         }
       }
     },
@@ -24088,6 +25084,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gizle"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إخفاء"
           }
         }
       }
@@ -24238,6 +25240,12 @@
             "state" : "translated",
             "value" : "Doğrudan fotoğrafın üzerinde çal"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "العزف مباشرة على صورتك"
+          }
         }
       }
     },
@@ -24386,6 +25394,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Basılı bir notayı fotoğrafla; her nota çalarken fotoğrafın üzerinde yanar. Yanlış okunan notayı olduğu yerde hemen düzelt."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صوّر نوتة مطبوعة فتضيء كل نوتة على الصورة أثناء عزفها. وصحّح أي نوتة قُرئت خطأً في مكانها."
           }
         }
       }
@@ -24536,6 +25550,12 @@
             "state" : "translated",
             "value" : "Her açıdan çek"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صوّر من أي زاوية"
+          }
         }
       }
     },
@@ -24684,6 +25704,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Çerçeveye oturtmana gerek yok; uygulama sayfayı bulup senin için düzeltir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لا حاجة إلى ضبط إطار. يجد التطبيق الصفحة ويعدّلها لك."
           }
         }
       }
@@ -24834,6 +25860,12 @@
             "state" : "translated",
             "value" : "Notaları daha doğru okuma"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قراءة أدق للنوتة"
+          }
         }
       }
     },
@@ -24982,6 +26014,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Daha çok nota türünü daha doğru tanır."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يتعرّف على أنواع أكثر من النوتات بدقة أعلى."
           }
         }
       }
@@ -25132,6 +26170,12 @@
             "state" : "translated",
             "value" : "Eşlik et, sesini kontrol et"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غنِّ وتحقق من دقة نغمتك"
+          }
         }
       }
     },
@@ -25280,6 +26324,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notayı söyle ve her notada doğru mu, fazla tiz mi, fazla pes mi olduğunu gör."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غنِّ المدوّنة واعرف عند كل نوتة إن كنت مصيبًا أو أعلى أو أخفض."
           }
         }
       }
@@ -25430,6 +26480,12 @@
             "state" : "translated",
             "value" : "Zor ölçüleri yavaşça dinle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إبطاء المازورات الصعبة"
+          }
         }
       }
     },
@@ -25578,6 +26634,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Zor bir ölçüyü seç; aynı perdede, daha yavaş ve tekrar tekrar dinle."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اختر مازورة صعبة واسمعها تتكرر ببطء، بالطبقة نفسها."
           }
         }
       }
@@ -25728,6 +26790,12 @@
             "state" : "translated",
             "value" : "Geri Al"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تراجع"
+          }
         }
       }
     },
@@ -25876,6 +26944,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Doğru"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صحيحة"
           }
         }
       }
@@ -26026,6 +27100,12 @@
             "state" : "translated",
             "value" : "Kontrol edilecek: %lld"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "للمراجعة: %lld"
+          }
         }
       }
     },
@@ -26174,6 +27254,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Basılı tut ve mırıldan"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اضغط مطوّلًا ودندن"
           }
         }
       }
@@ -26324,6 +27410,12 @@
             "state" : "translated",
             "value" : "Kontrol gerekli"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تحتاج إلى مراجعة"
+          }
         }
       }
     },
@@ -26472,6 +27564,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Notaları düzeltmek artık daha kolay"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تصحيح أسهل للنوتات"
           }
         }
       }
@@ -26622,6 +27720,12 @@
             "state" : "translated",
             "value" : "Geri al, tuşlarda yeniden çal ya da doğru notayı mırıldan; hatalar hemen düzelsin."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تراجع، أو أعد العزف على المفاتيح، أو دندن النوتة الصحيحة لتصحيح الأخطاء بسرعة."
+          }
         }
       }
     },
@@ -26763,6 +27867,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "掃描樂譜"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تصوير النوتة"
           }
         }
       }
@@ -26906,6 +28016,12 @@
             "state" : "translated",
             "value" : "拍下樂譜並辨識音符。"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يلتقط صورة للنوتة الموسيقية ويقرأ نوتاتها."
+          }
         }
       }
     },
@@ -27047,6 +28163,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "播放樂譜"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تشغيل المدوّنة"
           }
         }
       }
@@ -27190,6 +28312,12 @@
             "state" : "translated",
             "value" : "播放目前的樂譜。"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يعزف المدوّنة الحالية بصوت مسموع."
+          }
         }
       }
     },
@@ -27331,6 +28459,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "說出 Do Re Mi，就會寫成音符。"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قل do re mi فتُكتب النوتات لك."
           }
         }
       }
@@ -27480,6 +28614,12 @@
             "state" : "translated",
             "value" : "掃描樂譜"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تصوير النوتة"
+          }
         }
       }
     },
@@ -27628,6 +28768,12 @@
             "state" : "translated",
             "value" : "播放樂譜"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تشغيل المدوّنة"
+          }
         }
       }
     },
@@ -27775,6 +28921,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "唱名聽寫"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إملاء النوتات"
           }
         }
       }
@@ -27925,6 +29077,12 @@
             "state" : "translated",
             "value" : "不必說出 App 名稱的 Siri"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siri دون ذكر اسم التطبيق"
+          }
         }
       }
     },
@@ -28073,6 +29231,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "就算不說 App 名稱，Siri 也能拍下樂譜、播放出來，還能把你唱的唱名記成音符。"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حتى دون ذكر اسم التطبيق، يصوّر Siri النوتة ويعزفها ويكتب النوتات التي تغنيها بالسولفيج."
           }
         }
       }
@@ -28224,6 +29388,12 @@
             "state" : "translated",
             "value" : "Fotoğraftan Otomatik Notaya Dökme (Deneysel)"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تدوين تلقائي من الصورة (تجريبي)"
+          }
         }
       }
     },
@@ -28373,6 +29543,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bu Apple Hesabı için satın alma bulunamadı."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم يُعثر على مشتريات لحساب Apple هذا."
           }
         }
       }
@@ -28524,6 +29700,12 @@
             "state" : "translated",
             "value" : "StaffSinger Pro kullanıyorsunuz. Teşekkürler!"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أنت تستخدم StaffSinger Pro. شكرًا لك!"
+          }
         }
       }
     },
@@ -28673,6 +29855,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Şimdi Değil"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ليس الآن"
           }
         }
       }
@@ -28824,6 +30012,12 @@
             "state" : "translated",
             "value" : "Satın Alımları Geri Yükle"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استعادة المشتريات"
+          }
         }
       }
     },
@@ -28970,6 +30164,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger Pro"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger Pro"
@@ -29124,6 +30324,12 @@
             "state" : "translated",
             "value" : "Nota adlarını söyleyin, yazsın. Notanın fotoğrafını çekin, doldursun. Yıllık ya da ömür boyu seçin."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غنِّ أسماء النوتات فتُكتب، وصوّر النوتة فتُملأ المدوّنة. اختر اشتراكًا سنويًا أو مدى الحياة."
+          }
         }
       }
     },
@@ -29273,6 +30479,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ için %2$lld ücretsiz denemenin hepsini kullandınız."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "استخدمت كل المحاولات المجانية (%2$lld) لميزة «%1$@»."
           }
         }
       }
@@ -29424,6 +30636,12 @@
             "state" : "translated",
             "value" : "Özellik"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الميزة"
+          }
         }
       }
     },
@@ -29574,6 +30792,12 @@
             "state" : "translated",
             "value" : "Ücretsiz"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مجانًا"
+          }
         }
       }
     },
@@ -29720,6 +30944,12 @@
           }
         },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pro"
+          }
+        },
+        "ar" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pro"
@@ -29874,6 +31104,12 @@
             "state" : "translated",
             "value" : "Nota girişi · Çalma · Metronom"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إدخال النوتات · التشغيل · المترونوم"
+          }
         }
       }
     },
@@ -30023,6 +31259,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Akorlar · Sesler · Donanımlar · Anahtarlar"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "التآلفات · الأصوات · دليل السلّم · المفاتيح"
           }
         }
       }
@@ -30174,6 +31416,12 @@
             "state" : "translated",
             "value" : "Referans fotoğraf"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صورة مرجعية"
+          }
         }
       }
     },
@@ -30323,6 +31571,48 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld ücretsiz deneme"
+          }
+        },
+        "ar" : {
+          "variations" : {
+            "plural" : {
+              "zero" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "لا محاولات مجانية"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "محاولة مجانية واحدة"
+                }
+              },
+              "two" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "محاولتان مجانيتان"
+                }
+              },
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld محاولات مجانية"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld محاولة مجانية"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld محاولة مجانية"
+                }
+              }
+            }
           }
         }
       }
@@ -30474,6 +31764,12 @@
             "state" : "translated",
             "value" : "Ücretsiz: %@. Pro: sınırsız."
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "المجاني: %@. وPro: بلا حدود."
+          }
         }
       }
     },
@@ -30623,6 +31919,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Haftalık ve aylık planları göster"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "عرض الخطط الأسبوعية والشهرية"
           }
         }
       }
@@ -30774,6 +32076,12 @@
             "state" : "translated",
             "value" : "Haftalık · %@/hafta"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أسبوعي · %@ / أسبوع"
+          }
         }
       }
     },
@@ -30923,6 +32231,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aylık · %@/ay"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شهري · %@ / شهر"
           }
         }
       }
@@ -31074,6 +32388,12 @@
             "state" : "translated",
             "value" : "Haftalık Planı Başlat"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ الخطة الأسبوعية"
+          }
         }
       }
     },
@@ -31223,6 +32543,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Aylık Planı Başlat"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ الخطة الشهرية"
           }
         }
       }
@@ -31374,6 +32700,12 @@
             "state" : "translated",
             "value" : "Yıllık Planı Başlat"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ابدأ الخطة السنوية"
+          }
         }
       }
     },
@@ -31523,6 +32855,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ömür Boyu Satın Al"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشترِ مدى الحياة"
           }
         }
       }
@@ -31674,6 +33012,12 @@
             "state" : "translated",
             "value" : "Planlar yükleniyor…"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جارٍ تحميل الخطط…"
+          }
         }
       }
     },
@@ -31823,6 +33167,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Planlar yüklenemedi. İnternet bağlantınızı kontrol edip tekrar deneyin."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّر تحميل الخطط. تحقق من اتصالك بالإنترنت وحاول مرة أخرى."
           }
         }
       }
@@ -31974,6 +33324,12 @@
             "state" : "translated",
             "value" : "Tekrar Dene"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعادة المحاولة"
+          }
         }
       }
     },
@@ -32123,6 +33479,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abonelikler, dönem bitmeden en az 24 saat önce iptal edilmedikçe aynı fiyattan otomatik olarak yenilenir ve Apple Hesabınızdan ücretlendirilir. Yıllık planı ilk kez başlatırsanız ilk yıl indirimli fiyattan ücretlendirilir, ardından normal fiyattan yenilenir. Yönetmek veya iptal etmek için App Store hesap ayarlarınızı kullanın. Ömür boyu seçeneği abonelik değil, tek seferlik bir ödemedir."
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تتجدد الاشتراكات تلقائيًا بالسعر نفسه ما لم تُلغَ قبل انتهاء الفترة بـ 24 ساعة على الأقل، ويُخصم المبلغ من حساب Apple. إذا بدأت الخطة السنوية لأول مرة، تُحتسب السنة الأولى بالسعر المخفّض ثم تتجدد بالسعر العادي. يمكنك الإدارة أو الإلغاء من إعدادات حسابك في App Store. خيار مدى الحياة دفعة واحدة وليس اشتراكًا."
           }
         }
       }
@@ -32274,6 +33636,12 @@
             "state" : "translated",
             "value" : "Kullanım Koşulları"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شروط الاستخدام"
+          }
         }
       }
     },
@@ -32423,6 +33791,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gizlilik Politikası"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سياسة الخصوصية"
           }
         }
       }
@@ -32574,6 +33948,12 @@
             "state" : "translated",
             "value" : "StaffSinger Pro · ömür boyu"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger Pro · مدى الحياة"
+          }
         }
       }
     },
@@ -32723,6 +34103,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "StaffSinger Pro · abonelik etkin"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger Pro · مشترك"
           }
         }
       }
@@ -32874,6 +34260,12 @@
             "state" : "translated",
             "value" : "Aboneliği Yönet"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إدارة الاشتراك"
+          }
         }
       }
     },
@@ -33024,6 +34416,12 @@
             "state" : "translated",
             "value" : "StaffSinger Pro · etkin"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "StaffSinger Pro · مفعّل"
+          }
         }
       }
     },
@@ -33171,6 +34569,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "唱名聽寫、照片自動辨識樂譜，不限次數"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إملاء سولفيج وتدوين تلقائي من الصور بلا حدود"
           }
         }
       }
@@ -33321,6 +34725,12 @@
             "state" : "translated",
             "value" : "這段樂譜這樣讀（用英語）"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اقرأ هذه المدوّنة هكذا"
+          }
         }
       }
     },
@@ -33470,6 +34880,12 @@
             "state" : "translated",
             "value" : "每拍說一個音，兩個八分音符在一拍內說兩次。長音只說一次，休止處說「rest」。"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "نوتة لكل زمن، وقل نوتتي ذات السن داخل زمن واحد. قل النوتة الطويلة مرة واحدة فقط، وقل «rest» عند السكتة."
+          }
         }
       }
     },
@@ -33617,6 +35033,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "音符時值"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مدّة النوتة"
           }
         }
       }
@@ -33767,6 +35189,12 @@
             "state" : "translated",
             "value" : "口述"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "بالكلام"
+          }
         }
       }
     },
@@ -33915,6 +35343,12 @@
             "state" : "translated",
             "value" : "先說唱名，再說時值。沒有節拍器，照自己的速度讀即可。"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قل اسم كل نوتة ثم مدّتها. بلا مترونوم: اقرأ بالسرعة التي تريحك."
+          }
         }
       }
     },
@@ -34062,6 +35496,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "請把樂譜讀出來：先說唱名，再說時值。"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اقرأ المدوّنة بصوت عالٍ: اسم كل نوتة ثم مدّتها."
           }
         }
       }
@@ -34212,6 +35652,12 @@
             "state" : "translated",
             "value" : "休止符說「quarter rest」，附點音符說「do dotted quarter」。也可以只說唱名，聽寫後再設定時值。"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "قل «quarter rest» للسكتة، و«do dotted quarter» للنوتة المنقوطة. ويمكنك قول الأسماء فقط وتحديد المدد لاحقًا."
+          }
         }
       }
     },
@@ -34360,6 +35806,12 @@
             "state" : "translated",
             "value" : "正在聆聽 · 讀完後請點停止"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أستمع الآن · اضغط إيقاف عند الانتهاء من القراءة"
+          }
         }
       }
     },
@@ -34507,6 +35959,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "沒有聽出唱名。請清楚地說，例如「do quarter note, re eighth note」。"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "لم أتعرّف على أسماء النوتات. قلها بوضوح، مثل «do quarter note, re eighth note»."
           }
         }
       }
@@ -34657,6 +36115,12 @@
             "state" : "translated",
             "value" : "點按音符可更改時值"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اضغط نوتة لتغيير مدّتها"
+          }
         }
       }
     },
@@ -34805,6 +36269,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "紅色的音符沒能讀出"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تعذّرت قراءة النوتات الحمراء"
           }
         }
       }
@@ -34955,6 +36425,12 @@
             "state" : "translated",
             "value" : "讀得對嗎？讀錯的音符請點一下"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "هل القراءة صحيحة؟ اضغط أي نوتة خاطئة"
+          }
         }
       }
     },
@@ -35103,6 +36579,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "重新開始"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "البدء من جديد"
           }
         }
       }
@@ -35253,6 +36735,12 @@
             "state" : "translated",
             "value" : "只重讀紅色音符"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعادة قراءة النوتات الحمراء"
+          }
         }
       }
     },
@@ -35402,6 +36890,12 @@
             "state" : "translated",
             "value" : "固定照片"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تثبيت الصورة"
+          }
         }
       }
     },
@@ -35550,6 +37044,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "調整大小"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تغيير الحجم"
           }
         }
       }

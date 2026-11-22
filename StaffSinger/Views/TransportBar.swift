@@ -102,6 +102,7 @@ struct SettingsSidePanel: View {
                           : "rectangle.lefthalf.inset.filled")
                         .font(.title3)
                         .foregroundColor(.accentColor)
+                        .environment(\.layoutDirection, .leftToRight)   // 그림은 실제 왼쪽 · 오른쪽을 가리킨다
                 }
                 .accessibilityLabel(onLeft ? String(localized: "오른쪽에 표시") : String(localized: "왼쪽에 표시"))
 

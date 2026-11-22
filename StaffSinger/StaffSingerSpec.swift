@@ -69,7 +69,7 @@ enum StaffSingerTipMoments {
     static func reached(dictatedNotes n: Int) -> [LeeoTipMoment] {
         dictatedNotes.filter { n >= $0 }.map { threshold in
             LeeoTipMoment(id: "dictated.\(threshold)",
-                          message: String(localized: "지금까지 목소리로 음표 \(n)개를 받아썼어요",
+                          message: String(localized: "지금까지 목소리로 음표 \(n)개를 받아썼어요", locale: .app,
                                           comment: "Tip ask card: how many notes the person has dictated by voice so far"))
         }
     }

@@ -140,6 +140,12 @@
             "state" : "translated",
             "value" : "用${applicationName}掃描樂譜"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "صوّر نوتة موسيقية بـ ${applicationName}"
+          }
         }
       }
     },
@@ -281,6 +287,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "用${applicationName}掃一份樂譜"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "امسح نوتة في ${applicationName}"
           }
         }
       }
@@ -424,6 +436,12 @@
             "state" : "translated",
             "value" : "在${applicationName}播放樂譜"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "شغّل المدوّنة في ${applicationName}"
+          }
         }
       }
     },
@@ -565,6 +583,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "${applicationName}播放"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "${applicationName} تشغيل"
           }
         }
       }
@@ -708,6 +732,12 @@
             "state" : "translated",
             "value" : "在${applicationName}用唱名輸入"
           }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "أملِ النوتات في ${applicationName}"
+          }
         }
       }
     },
@@ -849,6 +879,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "在${applicationName}裡唱出音符"
+          }
+        },
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "غنِّ النوتات في ${applicationName}"
           }
         }
       }
