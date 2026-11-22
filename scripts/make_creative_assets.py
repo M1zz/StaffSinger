@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """App Store 크리에이티브 자산(제품 페이지 헤더 · 검색 결과) 생성: HTML → 헤드리스 Chrome.
 
 사용법: python3 scripts/make_creative_assets.py [언어 ...]     (없으면 전부)
@@ -23,8 +24,9 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 # 앱 언어 코드 → App Store Connect 로케일 (make_marketing_screenshots.py 와 같다)
 # 폴더 이름은 앱 언어 코드 그대로다(en · en-GB · es · nb …). DeployBar 가 스토어 로케일로 맞춘다.
-LANGS = ["ko", "en", "en-GB", "zh-Hans", "zh-Hant", "ja", "ru", "es", "de", "fr", "it", "pt-BR", "th", "vi", "cs", "da", "el", "fi", "id", "nb", "nl", "pl", "sv", "tr"]
+LANGS = ["ko", "en", "en-GB", "zh-Hans", "zh-Hant", "ja", "ru", "es", "de", "fr", "it", "pt-BR", "th", "vi", "cs", "da", "el", "fi", "id", "nb", "nl", "pl", "sv", "tr", "ar"]
 STORE = {l: l for l in LANGS}
+RTL = {"ar"}
 
 # (가로, 세로, 안전 영역 left, top, right, bottom)
 SPEC = {
@@ -59,6 +61,7 @@ SEARCH = {
     "tr": ("Nota", "Yazdığın notaları<br>hemen dinle", "Tuşlarla gir,<br>doğru ritimle çal"),
     "zh-Hans": ("五线谱", "写下的音符，<br>马上就能听", "用琴键输入，<br>按准确节奏播放"),
     "zh-Hant": ("五線譜", "寫下的音符，<br>馬上就能聽", "用琴鍵輸入，<br>依正確節奏播放"),
+    "ar": ("نوتة موسيقية", "اسمع النوتات<br>التي تكتبها", "أدخلها بالمفاتيح<br>واسمعها بإيقاعها الصحيح"),
 }
 
 # 헤더는 한 가지 약속: 처음 보는 악보(초견)도 소리로 확인한다.
@@ -87,6 +90,7 @@ HEADER = {
     "tr": ("StaffSinger", "Yeni bir notayı<br>kulakla kontrol et"),
     "zh-Hans": ("StaffSinger", "新的乐谱，<br>用耳朵确认"),
     "zh-Hant": ("StaffSinger", "新的樂譜，<br>用耳朵確認"),
+    "ar": ("StaffSinger", "تحقّق من نوتة جديدة<br>بأذنك"),
 }
 
 # ⚠️ 바탕 · 글자색은 앱 아이콘(파란 바탕 위 흰 오선과 음표)과 AccentColor(#3373D9) 에서 왔다.
@@ -104,6 +108,9 @@ body { background:linear-gradient(150deg,#5AA6F7 0%%,#3B82E6 45%%,#2459C4 100%%)
 .sub { font-weight:500; color:rgba(255,255,255,.82); letter-spacing:-0.01em; line-height:1.35; text-wrap:balance; }
 /* 한국어는 낱말 중간에서 끊지 않는다. */
 :lang(ko) .headline, :lang(ko) .sub, :lang(ko) .eyebrow { word-break:keep-all; }
+/* 아랍어: 글자 사이를 좁히면 낱말이 붙는다. */
+body:lang(ar) { font-family:-apple-system, "SF Arabic", "Geeza Pro", sans-serif; }
+:lang(ar) .headline, :lang(ar) .sub, :lang(ar) .eyebrow { letter-spacing:0; line-height:1.3; }
 .phone { position:absolute; background:#10213f; border:6px solid #5b7fb8; padding:36px; border-radius:170px;
   box-shadow: 0 60px 160px rgba(10,30,80,.45); }
 .phone img { width:100%%; display:block; border-radius:136px; }
@@ -157,13 +164,17 @@ def search_html(lang):
     # 가로 기기가 안전 영역 오른쪽 몫에서 화면 오른쪽 밖으로 넘친다(기기 그림은 잘려도 된다).
     ph_w = 1740
     ph_left = l + col + 40
+    text_left = l
+    if lang in RTL:   # 오른쪽에서 왼쪽으로 읽는 언어: 글은 오른쪽, 기기는 왼쪽으로 넘친다
+        text_left = r - col
+        ph_left = W - ph_left - ph_w
     ph_top = (H - int(ph_w * 1320 / 2868) - 84) // 2
     img = (RAW / lang / "01-piano.png").as_uri()
     return f"""
 {staff_lines(250)}{staff_lines(2000)}
 <div class="glow" style="left:{ph_left - 200}px;top:600px;width:2000px;height:1400px;background:rgba(255,255,255,.18)"></div>
 {phone(img, ph_left, ph_top, ph_w, 0)}
-<div class="text" style="left:{l}px;top:{t}px;width:{col}px;height:{sh}px">
+<div class="text" style="left:{text_left}px;top:{t}px;width:{col}px;height:{sh}px">
   <div class="eyebrow" style="font-size:96px">{eyebrow}</div>
   <div class="headline" data-max="250" data-min="140" style="margin-top:36px">{headline}</div>
   <div class="sub" style="font-size:84px;margin-top:52px">{sub}</div>
@@ -199,7 +210,8 @@ def html_lang(lang):
 def render(lang, kind):
     W, H, _ = SPEC[kind]
     body = search_html(lang) if kind == "search" else header_html(lang)
-    page = (f'<!doctype html><html lang="{html_lang(lang)}"><head><meta charset="utf-8"><style>'
+    direction = "rtl" if lang in RTL else "ltr"
+    page = (f'<!doctype html><html lang="{html_lang(lang)}" dir="{direction}"><head><meta charset="utf-8"><style>'
             f'{BASE_CSS % {"W": W, "H": H}}</style></head><body>{body}{FIT_JS}</body></html>')
     html_path = pathlib.Path(tempfile.gettempdir()) / f"staffsinger-creative-{lang}-{kind}.html"
     html_path.write_text(page, encoding="utf-8")
