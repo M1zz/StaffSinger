@@ -1,5 +1,157 @@
 # 릴리즈 노트
 
+## 1.0.8
+
+### 앱스토어 (한국어)
+
+이제 아랍어로도 쓸 수 있어요
+아랍어 화면은 오른쪽에서 왼쪽으로 놓여요
+악보와 건반은 늘 왼쪽에서 오른쪽이에요
+
+### 앱스토어 (아랍어)
+
+التطبيق متاح الآن بالعربية
+الواجهة العربية من اليمين إلى اليسار
+المدرج والمفاتيح دائمًا من اليسار لليمين
+
+### App Store (English)
+
+StaffSinger now speaks Arabic
+Arabic screens read right to left
+The staff and keys stay left to right
+
+### App Store (en-GB)
+
+StaffSinger now speaks Arabic
+Arabic screens read right to left
+The staff and keys stay left to right
+
+### 앱스토어 (중국어 간체)
+
+现已支持阿拉伯语
+阿拉伯语界面从右向左排列
+五线谱和琴键始终从左向右
+
+### 앱스토어 (중국어 번체)
+
+現已支援阿拉伯語
+阿拉伯語介面由右至左排列
+五線譜和琴鍵始終由左至右
+
+### 앱스토어 (일본어)
+
+アラビア語に対応しました
+アラビア語の画面は右から左に並びます
+五線と鍵盤はいつも左から右です
+
+### 앱스토어 (러시아어)
+
+Теперь приложение есть на арабском
+Арабский интерфейс идёт справа налево
+Нотный стан и клавиши идут слева направо
+
+### 앱스토어 (스페인어)
+
+La app ya está en árabe
+En árabe, la pantalla va al revés
+El pentagrama y el teclado no cambian
+
+### 앱스토어 (독일어)
+
+Die App gibt es jetzt auf Arabisch
+Arabisch läuft von rechts nach links
+Noten und Tasten bleiben wie gewohnt
+
+### 앱스토어 (프랑스어)
+
+L’app est désormais en arabe
+En arabe, l’écran va de droite à gauche
+Portée et clavier ne changent pas
+
+### 앱스토어 (이탈리아어)
+
+Ora l’app è anche in arabo
+In arabo lo schermo va da destra
+Pentagramma e tasti restano come prima
+
+### 앱스토어 (포르투갈어 브라질)
+
+Agora o app também está em árabe
+Em árabe, a tela vai da direita
+Pauta e teclado seguem da esquerda
+
+### 앱스토어 (태국어)
+
+ตอนนี้ใช้แอปเป็นภาษาอาหรับได้แล้ว
+หน้าจอภาษาอาหรับเรียงจากขวาไปซ้าย
+บรรทัดห้าเส้นและคีย์ยังเรียงซ้ายไปขวา
+
+### 앱스토어 (베트남어)
+
+Ứng dụng nay có tiếng Ả Rập
+Tiếng Ả Rập hiển thị từ phải sang trái
+Khuông nhạc và phím vẫn từ trái sang
+
+### 앱스토어 (체코어)
+
+Aplikace je nyní i v arabštině
+Arabské rozhraní běží zprava doleva
+Osnova a klávesy zůstávají zleva
+
+### 앱스토어 (덴마크어)
+
+Appen findes nu på arabisk
+Arabisk vises fra højre mod venstre
+Noder og tangenter går fra venstre
+
+### 앱스토어 (그리스어)
+
+Η εφαρμογή είναι πλέον στα αραβικά
+Τα αραβικά διαβάζονται από δεξιά
+Πεντάγραμμο και πλήκτρα μένουν ίδια
+
+### 앱스토어 (핀란드어)
+
+Sovellus on nyt myös arabiaksi
+Arabia etenee oikealta vasemmalle
+Viivasto ja koskettimet ennallaan
+
+### 앱스토어 (인도네시아어)
+
+Aplikasi kini hadir dalam bahasa Arab
+Bahasa Arab tampil dari kanan ke kiri
+Paranada dan tuts tetap dari kiri
+
+### 앱스토어 (Norsk bokmål)
+
+Appen finnes nå på arabisk
+Arabisk vises fra høyre mot venstre
+Noter og tangenter går fra venstre
+
+### 앱스토어 (네덜란드어)
+
+De app is nu ook in het Arabisch
+Arabisch loopt van rechts naar links
+Notenbalk en toetsen blijven gelijk
+
+### 앱스토어 (폴란드어)
+
+Aplikacja jest teraz po arabsku
+Arabski układa się od prawej
+Pięciolinia i klawisze bez zmian
+
+### 앱스토어 (스웨덴어)
+
+Appen finns nu på arabiska
+Arabiska visas från höger till vänster
+Noter och tangenter går från vänster
+
+### 앱스토어 (튀르키예어)
+
+Uygulama artık Arapça da var
+Arapça ekran sağdan sola dizilir
+Porte ve tuşlar soldan sağa kalır
+
 ## 1.0.7
 
 ### 앱스토어 (한국어)
