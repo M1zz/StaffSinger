@@ -26,7 +26,7 @@
 .chip:hover { background: color-mix(in srgb, var(--accent) 14%, var(--bg)); }
 .chip:active { transform: scale(.95); }
 .chip[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
-.sd-play { font: inherit; font-weight: 700; min-height: 52px; padding: 0 var(--s6); margin-left: auto; border: 0;
+.sd-play { font: inherit; font-weight: 700; min-height: 52px; padding: 0 var(--s6); margin-inline-start: auto; border: 0;
            border-radius: 999px; background: #248A3D; color: #fff; cursor: pointer;
            transition: transform .15s var(--ease), filter .15s var(--ease); }
 .sd-play:hover { filter: brightness(1.06); }
@@ -37,9 +37,19 @@
 
 @media (prefers-reduced-motion: reduce) { .sd-play.hint { animation: none; } .sd-note { transition: none; } }
 @media (max-width: 760px) {
-  .sd-play { margin-left: 0; width: 100%; }
+  .sd-play { margin-inline-start: 0; width: 100%; }
   /* 좁은 화면: 오선을 줄이지 않고 옆으로 밀어 본다. 세로 끌기는 음높이, 가로 밀기는 스크롤. */
   .sd-stage { overflow-x: auto; }
   .sd-staff { min-width: 640px; touch-action: pan-x; }
   .sd-readout { position: sticky; left: 0; }
 }
+
+/* 오른쪽에서 왼쪽으로 쓰는 언어(아랍어). 오선은 어느 언어에서도 왼쪽에서 오른쪽으로 흐른다.
+   공용 sitegen.css 는 왼쪽 · 오른쪽으로 적혀 있어 여기서 뒤집는다. */
+[dir="rtl"] .sd-stage { direction: ltr; }
+[dir="rtl"] .sd-tempo span { direction: ltr; unicode-bidi: isolate; }   /* "90 BPM · 4/4" 가 뒤섞이지 않게 */
+[dir="rtl"] .plan ul { padding-left: 0; padding-right: 1.2em; }
+[dir="rtl"] summary { padding-left: var(--s6); padding-right: 0; }
+[dir="rtl"] summary::after { right: auto; left: 0; }
+[dir="rtl"] .skip { left: auto; right: var(--s4); }
+@media (max-width: 760px) { [dir="rtl"] .hero { text-align: right; } }
