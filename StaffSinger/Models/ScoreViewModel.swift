@@ -9,6 +9,7 @@
 
 import Foundation
 import Combine
+import LeeoKit
 
 @MainActor
 final class ScoreViewModel: ObservableObject {
@@ -511,6 +512,9 @@ final class ScoreViewModel: ObservableObject {
 
     func play() {
         audio.play(score: scoreForPlayback())
+        if !score.notes.isEmpty {
+            LeeoAnalyticsCenter.track(.custom(name: "score_played", parameters: [:]))
+        }
     }
     func stop() { audio.stop() }
 }
